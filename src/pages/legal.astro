@@ -1,0 +1,82 @@
+---
+import Layout from "../layouts/Layout.astro";
+import raw from "../data/impressum.txt?raw";
+
+// Zeilenumbrüche in Fließtext-Absätze rekonstruieren:
+// - Seitenummerierungen "N / M" raus
+// - einzelne Line-Breaks innerhalb eines Absatzes zusammenführen
+// - Absatztrennung an doppelten Line-Breaks
+const cleaned = raw
+  .split("\n")
+  .map((line) => line.trim())
+  .filter((line) => !/^\d+\s*\/\s*\d+$/.test(line))
+  .join("\n")
+  .replace(/\n{2,}/g, "\n\n");
+
+const paragraphs = cleaned
+  .split(/\n{2,}/)
+  .map((p) => p.replace(/\n/g, " ").trim())
+  .filter(Boolean);
+
+// Kurze Zeilen ohne Satzzeichen als Headings interpretieren.
+const isHeading = (t: string) => {
+  if (t.length > 90) return false;
+  if (/[.!?:]$/.test(t)) return false;
+  if (/^\d+\./.test(t)) return true;
+  if (t === t.toUpperCase() && t.length < 90) return true;
+  if (/^[A-ZÄÖÜ][^.]{0,80}$/.test(t)) return true;
+  return false;
+};
+---
+
+<Layout title="Impressum & Datenschutz — Designstudio Daniel Thiele">
+  <article class="legal">
+    {
+      paragraphs.map((p, i) => {
+        if (i === 0) return <h1 class="legal-title">{p}</h1>;
+        if (isHeading(p)) return <h2 class="legal-heading">{p}</h2>;
+        return <p class="legal-para">{p}</p>;
+      })
+    }
+  </article>
+</Layout>
+
+<style>
+  .legal {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: calc(var(--pad) * 4) var(--pad) calc(var(--pad) * 2);
+  }
+
+  .legal-title {
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    margin-bottom: calc(var(--pad) * 2);
+  }
+
+  .legal-heading {
+    font-size: var(--fs-h3);
+    line-height: var(--lh-h3);
+    font-weight: 500;
+    margin-top: calc(var(--pad) * 2);
+    margin-bottom: 12px;
+  }
+
+  .legal-para {
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    margin: 0 0 1em 0;
+  }
+
+  @media (max-width: 768px) {
+    .legal {
+      padding-top: calc(var(--pad) * 3);
+    }
+
+    .legal-title {
+      font-size: 48px;
+    }
+  }
+</style>

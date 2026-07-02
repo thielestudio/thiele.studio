@@ -1,0 +1,332 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection, render } from "astro:content";
+import { imageSize } from "image-size";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("cases");
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry, all: entries },
+  }));
+}
+
+const { entry, all } = Astro.props;
+const { Content } = await render(entry);
+
+const sorted = [...all].sort((a, b) => a.data.order - b.data.order);
+const currentIndex = sorted.findIndex((e) => e.id === entry.id);
+const nextEntry = sorted[(currentIndex + 1) % sorted.length];
+
+// AR pro Bild ermitteln, dann Portrait-Bilder (AR < 1) zu Pair-Gruppen
+// zusammenfassen. Landscape und Square bleiben Solo.
+const projectRoot = process.cwd();
+
+function getAR(publicPath: string): number {
+  const fsPath = join(projectRoot, "public", publicPath);
+  const dim = imageSize(readFileSync(fsPath));
+  return dim.width / dim.height;
+}
+
+type Group =
+  | { kind: "solo"; src: string }
+  | { kind: "pair"; srcs: [string, string] };
+
+function groupImages(srcs: string[]): Group[] {
+  const groups: Group[] = [];
+  let i = 0;
+  while (i < srcs.length) {
+    const current = srcs[i];
+    const currentAR = getAR(current);
+    if (currentAR < 1 && i + 1 < srcs.length && getAR(srcs[i + 1]) < 1) {
+      groups.push({ kind: "pair", srcs: [current, srcs[i + 1]] });
+      i += 2;
+    } else {
+      groups.push({ kind: "solo", src: current });
+      i += 1;
+    }
+  }
+  return groups;
+}
+
+const heroImage = entry.data.images[0];
+const restImages = entry.data.images.slice(1);
+const groupedRest = groupImages(restImages);
+---
+
+<Layout
+  title={`${entry.data.title} — Designstudio Daniel Thiele`}
+  description={entry.data.subtitle}
+>
+  <article class="case">
+    <section class="case-header">
+      <div class="case-header-title">
+        <h1>{entry.data.title}</h1>
+        <h2 class="case-subtitle">{entry.data.subtitle}</h2>
+      </div>
+      <span class="case-marker" aria-hidden="true"></span>
+    </section>
+
+    <section class="case-meta">
+      <div class="case-description">
+        <Content />
+      </div>
+      <div class="case-facts">
+        <div class="fact-block">
+          <p class="small label">Client</p>
+          <p class="small value">{entry.data.client}</p>
+        </div>
+        <div class="fact-block">
+          <p class="small label">Deliverables</p>
+          <ul class="value-list small">
+            {entry.data.deliverables.map((d) => <li>{d}</li>)}
+          </ul>
+        </div>
+      </div>
+      <div class="case-facts">
+        <div class="fact-block">
+          <p class="small label">Year</p>
+          <p class="small value">{entry.data.year}</p>
+        </div>
+        <div class="fact-block">
+          <p class="small label">Role</p>
+          <p class="small value">{entry.data.role}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-hero-image">
+      <img src={heroImage} alt={entry.data.title} loading="eager" />
+    </section>
+
+    <section class="case-images">
+      {
+        groupedRest.map((g) =>
+          g.kind === "pair" ? (
+            <div class="image-pair">
+              <img src={g.srcs[0]} alt={entry.data.title} loading="lazy" />
+              <img src={g.srcs[1]} alt={entry.data.title} loading="lazy" />
+            </div>
+          ) : (
+            <img src={g.src} alt={entry.data.title} loading="lazy" />
+          )
+        )
+      }
+    </section>
+
+    <a href={`/projects/${nextEntry.id}`} class="next-project">
+      <span class="next-label small">Next Project</span>
+      <span class="next-title">{nextEntry.data.title} →</span>
+    </a>
+  </article>
+</Layout>
+
+<style>
+  .case {
+    padding-top: calc(var(--pad) * 4);
+  }
+
+  .case-header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--pad);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--gap);
+  }
+
+  .case-header-title {
+    flex: 1;
+  }
+
+  .case-header-title h1 {
+    letter-spacing: -0.03em;
+    font-weight: 500;
+  }
+
+  .case-subtitle {
+    margin-top: var(--gap);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  .case-marker {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--color-fg);
+    margin-top: 12px;
+    flex-shrink: 0;
+  }
+
+  .case-meta {
+    max-width: 1400px;
+    margin: calc(var(--pad) * 3) auto 0;
+    padding: 0 var(--pad);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--gap);
+    align-items: start;
+  }
+
+  .case-description {
+    grid-column: span 6;
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+  }
+
+  .case-facts {
+    grid-column: span 3;
+  }
+
+  .case-description :global(p) {
+    margin: 0 0 1em 0;
+  }
+
+  .case-description :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .case-facts {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--gap) * 0.75);
+  }
+
+  .fact-block .label {
+    color: var(--color-muted);
+    margin-bottom: 6px;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .fact-block .value,
+  .value-list {
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .value-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .value-list li {
+    line-height: 1.6;
+  }
+
+  .case-hero-image {
+    max-width: 1400px;
+    margin: calc(var(--pad) * 4) auto 0;
+    padding: 0 var(--pad);
+  }
+
+  .case-hero-image img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+  }
+
+  .case-images {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--gap) var(--pad) calc(var(--pad) * 4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+  }
+
+  .case-images > img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .image-pair {
+    display: flex;
+    gap: var(--gap);
+    align-items: flex-start;
+  }
+
+  .image-pair img {
+    flex: 1 1 0;
+    min-width: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .image-pair {
+      flex-direction: column;
+    }
+  }
+
+  .next-project {
+    display: block;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: calc(var(--pad) * 3) var(--pad) calc(var(--pad) * 4);
+    text-decoration: none;
+    color: inherit;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .next-label {
+    display: block;
+    color: var(--color-muted);
+    margin-bottom: var(--gap);
+  }
+
+  .next-title {
+    display: block;
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .next-project:hover .next-title {
+    transform: translateX(12px);
+  }
+
+  @media (max-width: 768px) {
+    .case-header {
+      flex-direction: column;
+      gap: var(--gap);
+    }
+
+    .case-header-title {
+      max-width: none;
+    }
+
+    .case-subtitle {
+      margin-top: 12px;
+    }
+
+    .case-meta {
+      grid-template-columns: 1fr;
+      margin-top: calc(var(--pad) * 2);
+    }
+
+    .case-description,
+    .case-facts {
+      grid-column: auto;
+    }
+
+    .case-hero-image {
+      margin-top: calc(var(--pad) * 2);
+    }
+
+    .next-title {
+      font-size: 48px;
+    }
+  }
+</style>

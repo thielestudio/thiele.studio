@@ -1,0 +1,117 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Designstudio Daniel Thiele",
+  description = "Design that makes a difference in a way that makes sense.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/" class="logo small">Designstudio Daniel Thiele</a>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer small">
+      <div>Designstudio Daniel Thiele, {new Date().getFullYear()}</div>
+      <div class="footer-links">
+        <a href="mailto:post@thiele.studio">post@thiele.studio</a>
+        <a href="https://www.linkedin.com/in/danielthiele/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="/legal">Impressum</a>
+      </div>
+    </footer>
+
+    <script>
+      import Lenis from "lenis";
+
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smoothWheel: true,
+      });
+
+      function raf(time: number) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+
+      const parallaxItems = Array.from(
+        document.querySelectorAll<HTMLElement>("[data-speed]")
+      );
+
+      function updateParallax() {
+        const vh = window.innerHeight;
+        for (const el of parallaxItems) {
+          const speed = parseFloat(el.dataset.speed || "1");
+          const rect = el.getBoundingClientRect();
+          const itemCenter = rect.top + rect.height / 2;
+          const relative = (itemCenter - vh / 2) / vh;
+          const offset = relative * (1 - speed) * 260;
+          el.style.transform = `translate3d(0, ${offset.toFixed(2)}px, 0)`;
+        }
+      }
+
+      lenis.on("scroll", updateParallax);
+      updateParallax();
+      window.addEventListener("resize", updateParallax);
+    </script>
+
+    <style>
+      .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--pad);
+      }
+
+      .logo {
+        font-weight: 500;
+      }
+
+      .site-footer {
+        padding: var(--pad);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 24px;
+      }
+
+      @media (max-width: 768px) {
+        .site-footer {
+          flex-direction: column;
+          gap: 16px;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </body>
+</html>

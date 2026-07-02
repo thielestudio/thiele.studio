@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Switzer";
+  src: url("/fonts/Switzer-Variable.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Switzer";
+  src: url("/fonts/Switzer-VariableItalic.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --color-bg: #f7f4ec;
+  --color-fg: #111;
+  --color-muted: #999;
+
+  --pad: 48px;
+  --gap: 48px;
+
+  --fs-h1: 80px;
+  --lh-h1: 0.9;
+  --fs-h2: 50px;
+  --lh-h2: 0.9;
+  --fs-h3: 28px;
+  --lh-h3: 1.0;
+  --fs-body: 20px;
+  --lh-body: 1.4;
+  --fs-small: 12px;
+  --lh-small: 1.2;
+
+  --font: "Switzer", system-ui, sans-serif;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --pad: 24px;
+    --gap: 24px;
+    --fs-h1: 48px;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  font-weight: 500;
+}
+
+.small {
+  font-size: var(--fs-small);
+  line-height: var(--lh-small);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
