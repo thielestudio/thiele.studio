@@ -10,7 +10,7 @@ deliverables:
   - "Creative Direction"
   - "Marketing Collateral"
 order: 6
-cover: "/images/cases/anny-herbs/annyherbs-01.jpg"
+cover: "/images/cases/anny-herbs/annyherbs-06.jpg"
 images:
   - "/images/cases/anny-herbs/annyherbs-01.jpg"
   - "/images/cases/anny-herbs/annyherbs-02.jpg"
