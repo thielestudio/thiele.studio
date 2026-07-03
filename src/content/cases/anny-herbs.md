@@ -10,24 +10,15 @@ deliverables:
   - "Creative Direction"
   - "Marketing Collateral"
 order: 6
-cover: "/images/cases/anny-herbs/mockup-flasche-hand.png"
+cover: "/images/cases/anny-herbs/annyherbs-01.jpg"
 images:
-  - "/images/cases/anny-herbs/mockup-flasche-hand.png"
-  - "/images/cases/anny-herbs/annyherbs-packaging.png"
-  - "/images/cases/anny-herbs/boxes.png"
-  - "/images/cases/anny-herbs/boxes-gift.png"
-  - "/images/cases/anny-herbs/boxes-b.png"
-  - "/images/cases/anny-herbs/Gift Package Set Mockup Kopie.png"
-  - "/images/cases/anny-herbs/store.png"
-  - "/images/cases/anny-herbs/ooh-streetposter.png"
-  - "/images/cases/anny-herbs/ooh-streetposter-b.jpg"
-  - "/images/cases/anny-herbs/ooh-rsr-a.jpg"
-  - "/images/cases/anny-herbs/9-Billboard Mockup Kopie.jpg"
-  - "/images/cases/anny-herbs/annyherbs-print-poster-a.jpg"
-  - "/images/cases/anny-herbs/Businesscard Hands Mockup 02 Kopie.png"
-  - "/images/cases/anny-herbs/tshirt-a.jpg"
-  - "/images/cases/anny-herbs/TOTE-BAG-MOCKUP-06 Kopie.png"
-  - "/images/cases/anny-herbs/annyherbs-moodboard-01.png"
+  - "/images/cases/anny-herbs/annyherbs-01.jpg"
+  - "/images/cases/anny-herbs/annyherbs-02.jpg"
+  - "/images/cases/anny-herbs/annyherbs-03.jpg"
+  - "/images/cases/anny-herbs/annyherbs-04.jpg"
+  - "/images/cases/anny-herbs/annyherbs-05.jpg"
+  - "/images/cases/anny-herbs/annyherbs-06.jpg"
+  - "/images/cases/anny-herbs/annyherbs-07.jpg"
 ---
 
 ANNY HERBS was born out of the conviction that CBD can be more than a feel-good promise. It's a statement of mental independence and physical empowerment.
