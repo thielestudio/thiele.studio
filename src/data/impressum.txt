@@ -120,31 +120,15 @@ Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Date
 
 Wir setzen folgende(n) Hoster ein:
 
-Anbieter ist die Framer B.V., Rozengracht 207B, 1016 LZ Amsterdam, Niederlande (nachfolgend Framer).
+Anbieter ist die Cloudflare Inc., 101 Townsend Street, San Francisco, CA 94107, USA (nachfolgend Cloudflare).
 
-Wenn Sie unsere Website besuchen, erfasst Framer verschiedene Logfiles inklusive Ihrer IP-3 / 8Adressen.
+Wenn Sie unsere Website besuchen, erfasst Cloudflare Server-Logfiles einschließlich Ihrer IP-Adresse, aufgerufene URL, verwendeter Browser und Betriebssystem, Datum und Uhrzeit des Zugriffs sowie Referrer-URL.
 
-Framer ist ein Tool zum Erstellen und zum Hosten von Websites. Framer speichert Cookies oder sonstige
+Cloudflare ist ein Content Delivery Network und Sicherheitsdienst, der die Erreichbarkeit und Sicherheit unserer Website gewährleistet. Zu diesem Zweck setzt Cloudflare technisch notwendige Cookies ein, insbesondere zur Erkennung automatisierter Zugriffe und Bot-Abwehr (unter anderem das Cookie __cf_bm mit einer Speicherdauer von in der Regel 30 Minuten sowie bei Verdachtsfällen cf_clearance).
 
-Wiedererkennungstechnologien, die für die Darstellung der Seite, zur Bereitstellung bestimmter
+Die Verwendung von Cloudflare erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen, schnellen und sicheren Darstellung unserer Website. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TDDDG umfasst. Die Einwilligung ist jederzeit widerrufbar.
 
-Webseitenfunktionen und zur Gewährleistung der Sicherheit erforderlich sind (notwendige Cookies).
-
-Details entnehmen Sie der Datenschutzerklärung von Framer: https://www.framer.com/legal/privacystatement/. Die Verwendung von Framer erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben
-
-einberechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern
-
-eineentsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von
-
-Art.6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TTDSG, soweit die Einwilligung die Speicherung von Cookies oder
-
-den Zugriff auf Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TTDSG
-
-umfasst. Die Einwilligung ist jederzeit widerrufbar. Die Datenübertragung in die Niederlande wird auf die
-
-Standardvertragsklauseln der EU-Kommission gestützt. Details finden Sie hier:
-
-https://www.framer.com/legal/privacy-statement/.
+Die Datenübertragung in die USA wird auf die Standardvertragsklauseln der EU-Kommission gestützt. Cloudflare Inc. ist zudem unter dem EU-U.S. Data Privacy Framework zertifiziert. Details entnehmen Sie der Datenschutzerklärung von Cloudflare: https://www.cloudflare.com/de-de/privacypolicy/ sowie den Auftragsverarbeitungs-Bedingungen: https://www.cloudflare.com/cloudflare-customer-dpa/.
 
 3. Allgemeine Hinweise und Pflichtinformationen
 
@@ -452,19 +436,11 @@ Datenschutzerklärung entnehmen.
 
 5. Plugins und Tools
 
-Google Fonts (lokales Hosting)
+Switzer (lokales Hosting)
 
-Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Google Fonts, die von Google
+Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten die Schriftart Switzer, die von Fontshare (Indian Type Foundry) unter der SIL Open Font License bereitgestellt wird. Die Schriftart ist lokal auf unserem Hosting installiert. Eine Verbindung zu Servern von Fontshare oder Dritten findet beim Aufruf dieser Seite nicht statt.
 
-bereitgestellt werden. Die Google Fonts sind lokal installiert. Eine Verbindung zu Servern von Google findet
-
-dabei nicht statt.
-
-Weitere Informationen zu Google Fonts finden Sie unter
-
-https://developers.google.com/fonts/faq und in der Datenschutzerklärung von Google:
-
-https://policies.google.com/privacy?hl=de.
+Weitere Informationen zu Switzer finden Sie unter https://www.fontshare.com/fonts/switzer.
 
 Quelle:
 
