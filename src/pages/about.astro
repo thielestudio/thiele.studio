@@ -1,0 +1,442 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const clients = [
+  "AMG",
+  "Audi",
+  "Campany",
+  "Nike",
+  "Red Bull",
+  "Federal Ministry of Education & Research",
+  "Wikinger Reisen",
+];
+
+const services = [
+  "Brand Strategy",
+  "Naming",
+  "Brand Design",
+  "Creative Direction",
+  "UX Consultancy",
+  "Product Design",
+];
+
+const approach = [
+  {
+    title: "Form follows fuckups.",
+    body: "I learn through experiments and mistakes, then bake what worked into systems. Progress over polish.",
+  },
+  {
+    title: "Question the brief.",
+    body: "I don't accept assumptions at face value. Strategy comes before pixels. If the framing is off, the output will be off.",
+  },
+  {
+    title: "Systems thinking.",
+    body: "I see the whole, not just the part. Design decisions cascade into product, brand and business. I design the cascade.",
+  },
+  {
+    title: "Pragmatism over perfection.",
+    body: "Pareto applied. Ship what matters. Iterate what stays.",
+  },
+];
+
+const faq = [
+  {
+    q: "How does a project usually start?",
+    a: "With a call, not a brief. I want to hear the actual problem before we frame it. Usually followed by a paid discovery sprint or a strategy workshop. No blind pitches, no lengthy proposal rituals.",
+  },
+  {
+    q: "What do you charge?",
+    a: "Fixed price per phase with clear deliverables for project work. Monthly retainer for fractional design leadership. Both scale with scope, not with hours.",
+  },
+  {
+    q: "When are you available?",
+    a: "Placeholder: konkretes Datum oder Monat einfügen.",
+  },
+  {
+    q: "What don't you do?",
+    a: "Corporate work without direct access to decision makers. Pitch requests without a budget. Logo-only redesigns without strategic substance. Anything a template could solve.",
+  },
+  {
+    q: "Solo or team?",
+    a: "Solo with collaborators per project. If a team is what you actually need, I'll route you to curios, my AI-first design studio JV with David Latz.",
+  },
+  {
+    q: "Why solo instead of an agency?",
+    a: "Because the value is in the direct thinking, not the layers between it and you. No account managers, no handoff delays, no diluted vision.",
+  },
+];
+---
+
+<Layout
+  title="About Daniel Thiele - Strategy, Direction & Design for digital-first brands"
+  description="Freelance Creative Director and Product Designer from Bochum. Strategy, direction and design for digital-first brands."
+>
+  <article class="about">
+    <section class="about-hero">
+      <div class="about-hero-copy">
+        <p class="small label">About</p>
+        <h1>Hi, I'm Daniel.</h1>
+        <p class="hero-lede">
+          I help digital-first brands find their strategic foundation,
+          sharpen their direction, and turn both into design that works
+          in the real world. Freelance Creative Director and Product
+          Designer, based in Bochum, working with startups, venture
+          studios and established brands across Europe.
+        </p>
+      </div>
+      <div class="about-hero-photo" aria-hidden="true">
+        <div class="photo-placeholder">
+          <span class="small">Portrait Placeholder</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-intro">
+      <p>
+        I'm a rare generalist with real depth: brand strategy, hands-on
+        design, tech literacy, UX and growth thinking. I don't operate
+        as a pure designer. I operate at the intersection of strategy,
+        design and business.
+      </p>
+      <p>
+        The goal for every engagement is the same:
+        <strong>reduce noise, raise trust, elevate sustainable growth.</strong>
+      </p>
+    </section>
+
+    <section class="about-clients">
+      <p class="small label">Selected Clients</p>
+      <ul class="clients-list">
+        {clients.map((c) => <li>{c}</li>)}
+      </ul>
+    </section>
+
+    <section class="about-services">
+      <p class="small label">Services</p>
+      <ul class="services-list">
+        {services.map((s) => <li>{s}</li>)}
+      </ul>
+    </section>
+
+    <section class="about-approach">
+      <p class="small label">Approach</p>
+      <div class="approach-grid">
+        {
+          approach.map((a) => (
+            <div class="approach-item">
+              <h3>{a.title}</h3>
+              <p>{a.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="about-faq">
+      <p class="small label">Working Together</p>
+      <div class="faq-grid">
+        {
+          faq.map((f) => (
+            <div class="faq-item">
+              <h3>{f.q}</h3>
+              <p>{f.a}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="about-cta">
+      <h2>Let's talk.</h2>
+      <p class="cta-body">
+        Fastest way to start: 20-minute intro call. No slides, no pitch,
+        just the problem you're trying to solve.
+      </p>
+      <div class="cta-links">
+        <a href="#" class="cta-primary">Book a call (Cal.com Placeholder)</a>
+        <a href="mailto:post@thiele.studio" class="cta-secondary">
+          post@thiele.studio
+        </a>
+      </div>
+    </section>
+  </article>
+</Layout>
+
+<style>
+  .about {
+    padding-top: calc(var(--pad) * 4);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .about > section {
+    padding: 0 var(--pad);
+  }
+
+  .label {
+    color: var(--color-muted);
+    margin-bottom: var(--gap);
+    display: block;
+  }
+
+  /* Hero */
+  .about-hero {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: calc(var(--gap) * 2);
+    align-items: end;
+    margin-bottom: calc(var(--pad) * 4);
+  }
+
+  .about-hero h1 {
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    margin-bottom: var(--gap);
+  }
+
+  .hero-lede {
+    font-size: var(--fs-h3);
+    line-height: 1.35;
+    max-width: 40ch;
+  }
+
+  .photo-placeholder {
+    aspect-ratio: 4 / 5;
+    background: #e6e2d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-muted);
+  }
+
+  /* Intro */
+  .about-intro {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--gap);
+    padding-top: calc(var(--pad) * 2);
+    padding-bottom: calc(var(--pad) * 2);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .about-intro p {
+    grid-column: span 12;
+    font-size: var(--fs-h2);
+    line-height: 1.15;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  .about-intro p:last-child {
+    grid-column: 5 / -1;
+    font-size: var(--fs-h3);
+    line-height: 1.3;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  .about-intro strong {
+    font-weight: 500;
+  }
+
+  /* Clients */
+  .about-clients {
+    padding-top: calc(var(--pad) * 3);
+    padding-bottom: calc(var(--pad) * 3);
+  }
+
+  .clients-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    font-size: var(--fs-h3);
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  .clients-list li {
+    padding-right: var(--gap);
+  }
+
+  .clients-list li:not(:last-child) {
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  /* Services */
+  .about-services {
+    padding-top: calc(var(--pad) * 3);
+    padding-bottom: calc(var(--pad) * 3);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    font-size: var(--fs-h3);
+    font-weight: 500;
+  }
+
+  /* Approach */
+  .about-approach {
+    padding-top: calc(var(--pad) * 3);
+    padding-bottom: calc(var(--pad) * 3);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .approach-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc(var(--gap) * 1.5);
+  }
+
+  .approach-item h3 {
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+
+  .approach-item p {
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    max-width: 50ch;
+  }
+
+  /* FAQ */
+  .about-faq {
+    padding-top: calc(var(--pad) * 3);
+    padding-bottom: calc(var(--pad) * 3);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap);
+  }
+
+  .faq-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--gap);
+    padding: var(--gap) 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    align-items: start;
+  }
+
+  .faq-item:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .faq-item h3 {
+    letter-spacing: -0.01em;
+    max-width: 22ch;
+  }
+
+  .faq-item p {
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    max-width: 60ch;
+  }
+
+  /* CTA */
+  .about-cta {
+    padding-top: calc(var(--pad) * 4);
+    padding-bottom: calc(var(--pad) * 4);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .about-cta h2 {
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin-bottom: var(--gap);
+  }
+
+  .cta-body {
+    font-size: var(--fs-h3);
+    line-height: 1.3;
+    max-width: 50ch;
+    margin-bottom: calc(var(--gap) * 1.5);
+  }
+
+  .cta-links {
+    display: flex;
+    gap: var(--gap);
+    flex-wrap: wrap;
+    font-size: var(--fs-h3);
+    font-weight: 500;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    padding-bottom: 4px;
+    border-bottom: 2px solid var(--color-fg);
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .cta-primary:hover,
+  .cta-secondary:hover {
+    transform: translateX(6px);
+  }
+
+  @media (max-width: 900px) {
+    .about-hero {
+      grid-template-columns: 1fr;
+      align-items: start;
+      gap: var(--gap);
+    }
+
+    .photo-placeholder {
+      max-width: 320px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about {
+      padding-top: calc(var(--pad) * 3);
+    }
+
+    .about-intro p,
+    .about-intro p:last-child {
+      grid-column: span 12;
+      font-size: 28px;
+      line-height: 1.25;
+    }
+
+    .clients-list {
+      font-size: 20px;
+      gap: 16px;
+    }
+
+    .clients-list li {
+      padding-right: 16px;
+    }
+
+    .services-list {
+      grid-template-columns: 1fr;
+      font-size: 24px;
+    }
+
+    .approach-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .faq-item {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    .about-cta h2 {
+      font-size: 48px;
+    }
+  }
+</style>
