@@ -39,6 +39,12 @@ const {
       </div>
     </footer>
 
+    <div class="scroll-blur" aria-hidden="true">
+      <div class="scroll-blur__layer" data-l="1"></div>
+      <div class="scroll-blur__layer" data-l="2"></div>
+      <div class="scroll-blur__layer" data-l="3"></div>
+    </div>
+
     <script>
       import Lenis from "lenis";
 
@@ -73,6 +79,37 @@ const {
       lenis.on("scroll", updateParallax);
       updateParallax();
       window.addEventListener("resize", updateParallax);
+
+      // Scroll-velocity driven blur zone at the bottom edge.
+      // Faster scroll → taller blur. Comes to rest → eases back down.
+      const blur = document.querySelector<HTMLElement>(".scroll-blur");
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      if (blur && !reduceMotion) {
+        const MIN_H = 90; // resting height in px
+        const MAX_H = 300; // peak height at high velocity
+        const SENSITIVITY = 9; // px of height per unit of velocity
+        let target = MIN_H;
+        let current = MIN_H;
+
+        lenis.on("scroll", ({ velocity }: { velocity: number }) => {
+          const v = Math.abs(velocity);
+          target = Math.min(MAX_H, MIN_H + v * SENSITIVITY);
+        });
+
+        function tick() {
+          // target decays back toward the resting height
+          target += (MIN_H - target) * 0.06;
+          // current chases target smoothly
+          current += (target - current) * 0.14;
+          blur.style.setProperty("--blur-h", current.toFixed(1) + "px");
+          requestAnimationFrame(tick);
+        }
+        blur.style.setProperty("--blur-h", MIN_H + "px");
+        requestAnimationFrame(tick);
+      }
     </script>
 
     <style>
@@ -116,6 +153,82 @@ const {
           flex-direction: column;
           gap: 16px;
           align-items: flex-start;
+        }
+      }
+
+      /*
+        Progressive blur zone pinned to the bottom edge.
+        Three stacked layers with increasing blur, each masked so the
+        blur ramps up toward the bottom (gaussian-style falloff).
+        Height is driven by --blur-h, set from scroll velocity in JS.
+      */
+      .scroll-blur {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: var(--blur-h, 90px);
+        z-index: 20;
+        pointer-events: none;
+      }
+
+      .scroll-blur__layer {
+        position: absolute;
+        inset: 0;
+      }
+
+      .scroll-blur__layer[data-l="1"] {
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        -webkit-mask-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 1) 40%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        mask-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 1) 40%,
+          rgba(0, 0, 0, 0) 100%
+        );
+      }
+
+      .scroll-blur__layer[data-l="2"] {
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        -webkit-mask-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 1) 18%,
+          rgba(0, 0, 0, 0) 62%
+        );
+        mask-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 1) 18%,
+          rgba(0, 0, 0, 0) 62%
+        );
+      }
+
+      .scroll-blur__layer[data-l="3"] {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        -webkit-mask-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 32%
+        );
+        mask-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 32%
+        );
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .scroll-blur {
+          height: 90px;
         }
       }
     </style>
