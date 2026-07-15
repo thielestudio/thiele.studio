@@ -45,6 +45,8 @@ const {
       <div class="scroll-blur__layer" data-l="3"></div>
     </div>
 
+    <div class="cursor" aria-hidden="true"></div>
+
     <script>
       import Lenis from "lenis";
 
@@ -118,6 +120,57 @@ const {
         }
         blur.style.setProperty("--blur-h", MIN_H + "px");
         requestAnimationFrame(tick);
+      }
+
+      // Custom cursor: trailing circle that grows over interactive elements.
+      const cursor = document.querySelector<HTMLElement>(".cursor");
+      const finePointer = window.matchMedia("(pointer: fine)").matches;
+
+      if (cursor && finePointer) {
+        document.documentElement.classList.add("has-cursor");
+
+        const HOVER_SELECTOR = 'a, button, [data-cursor="hover"], .item, .next-project';
+        let mouseX = window.innerWidth / 2;
+        let mouseY = window.innerHeight / 2;
+        let curX = mouseX;
+        let curY = mouseY;
+        let seen = false;
+
+        window.addEventListener("mousemove", (e) => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+          if (!seen) {
+            seen = true;
+            cursor.classList.add("is-visible");
+          }
+        });
+
+        // hide when the pointer leaves the window, show again on re-entry
+        document.addEventListener("mouseleave", () =>
+          cursor.classList.remove("is-visible")
+        );
+        document.addEventListener("mouseenter", () =>
+          cursor.classList.add("is-visible")
+        );
+
+        // delegate hover growth for any interactive target
+        document.addEventListener("mouseover", (e) => {
+          if ((e.target as HTMLElement).closest(HOVER_SELECTOR))
+            cursor.classList.add("is-hover");
+        });
+        document.addEventListener("mouseout", (e) => {
+          if ((e.target as HTMLElement).closest(HOVER_SELECTOR))
+            cursor.classList.remove("is-hover");
+        });
+
+        function cursorTick() {
+          curX += (mouseX - curX) * 0.2;
+          curY += (mouseY - curY) * 0.2;
+          cursor.style.left = curX.toFixed(2) + "px";
+          cursor.style.top = curY.toFixed(2) + "px";
+          requestAnimationFrame(cursorTick);
+        }
+        requestAnimationFrame(cursorTick);
       }
     </script>
 
@@ -239,6 +292,48 @@ const {
         .scroll-blur {
           height: 90px;
         }
+      }
+
+      /*
+        Custom cursor: a small circle that trails the mouse with a light
+        lerp, inverted against everything via mix-blend-mode so it stays
+        visible over cream, ink and imagery alike. Grows over anything
+        interactive. Only active for a real (fine) pointer.
+      */
+      .cursor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #fff;
+        mix-blend-mode: difference;
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0;
+        transform: translate3d(-50%, -50%, 0) scale(1);
+        transition:
+          width 260ms cubic-bezier(0.2, 0.8, 0.2, 1),
+          height 260ms cubic-bezier(0.2, 0.8, 0.2, 1),
+          opacity 300ms ease;
+        will-change: transform, width, height;
+      }
+
+      html.has-cursor .cursor.is-visible {
+        opacity: 1;
+      }
+
+      html.has-cursor .cursor.is-hover {
+        width: 64px;
+        height: 64px;
+      }
+
+      /* hide the native pointer only when the custom one is active */
+      html.has-cursor,
+      html.has-cursor a,
+      html.has-cursor button {
+        cursor: none;
       }
     </style>
   </body>
