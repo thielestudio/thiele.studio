@@ -45,7 +45,7 @@ const {
       <div class="scroll-blur__layer" data-l="3"></div>
     </div>
 
-    <div class="cursor" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"><span class="cursor__label">view</span></div>
 
     <script>
       import Lenis from "lenis";
@@ -129,7 +129,10 @@ const {
       if (cursor && finePointer) {
         document.documentElement.classList.add("has-cursor");
 
-        const HOVER_SELECTOR = 'a, button, [data-cursor="hover"], .item, .next-project';
+        // GROW: anything interactive makes the cursor expand.
+        // VIEW: only project-like targets also show the "view" label.
+        const GROW_SELECTOR = 'a, button, .item, .next-project, [data-cursor]';
+        const VIEW_SELECTOR = '.item, .next-project, [data-cursor="view"]';
         let mouseX = window.innerWidth / 2;
         let mouseY = window.innerHeight / 2;
         let curX = mouseX;
@@ -153,14 +156,17 @@ const {
           cursor.classList.add("is-visible")
         );
 
-        // delegate hover growth for any interactive target
+        // delegate hover growth for any interactive target,
+        // and the "view" label for project-like targets
         document.addEventListener("mouseover", (e) => {
-          if ((e.target as HTMLElement).closest(HOVER_SELECTOR))
-            cursor.classList.add("is-hover");
+          const t = e.target as HTMLElement;
+          if (t.closest(GROW_SELECTOR)) cursor.classList.add("is-hover");
+          if (t.closest(VIEW_SELECTOR)) cursor.classList.add("is-view");
         });
         document.addEventListener("mouseout", (e) => {
-          if ((e.target as HTMLElement).closest(HOVER_SELECTOR))
-            cursor.classList.remove("is-hover");
+          const t = e.target as HTMLElement;
+          if (t.closest(GROW_SELECTOR)) cursor.classList.remove("is-hover");
+          if (t.closest(VIEW_SELECTOR)) cursor.classList.remove("is-view");
         });
 
         function cursorTick() {
@@ -232,6 +238,9 @@ const {
         height: var(--blur-h, 90px);
         z-index: 20;
         pointer-events: none;
+        /* own compositing context so backdrop-filter keeps rendering
+           even though the custom cursor uses mix-blend-mode */
+        isolation: isolate;
       }
 
       .scroll-blur__layer {
@@ -304,20 +313,35 @@ const {
         position: fixed;
         top: 0;
         left: 0;
-        width: 14px;
-        height: 14px;
-        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        border-radius: 5px;
         background: #fff;
         mix-blend-mode: difference;
         pointer-events: none;
         z-index: 9999;
         opacity: 0;
-        transform: translate3d(-50%, -50%, 0) scale(1);
+        transform: translate3d(-50%, -50%, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         transition:
-          width 260ms cubic-bezier(0.2, 0.8, 0.2, 1),
-          height 260ms cubic-bezier(0.2, 0.8, 0.2, 1),
+          width 300ms cubic-bezier(0.2, 0.8, 0.2, 1),
+          height 300ms cubic-bezier(0.2, 0.8, 0.2, 1),
+          border-radius 300ms cubic-bezier(0.2, 0.8, 0.2, 1),
           opacity 300ms ease;
         will-change: transform, width, height;
+      }
+
+      .cursor__label {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #000;
+        opacity: 0;
+        transition: opacity 200ms ease;
+        pointer-events: none;
       }
 
       html.has-cursor .cursor.is-visible {
@@ -325,8 +349,14 @@ const {
       }
 
       html.has-cursor .cursor.is-hover {
-        width: 64px;
-        height: 64px;
+        width: 74px;
+        height: 74px;
+        border-radius: 16px;
+      }
+
+      html.has-cursor .cursor.is-view .cursor__label {
+        opacity: 1;
+        transition: opacity 200ms ease 80ms;
       }
 
       /* hide the native pointer only when the custom one is active */
