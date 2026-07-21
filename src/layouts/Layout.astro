@@ -178,6 +178,50 @@ const {
         }
         requestAnimationFrame(cursorTick);
       }
+
+      // Text scramble on hover: letters flicker through random glyphs
+      // and settle back into the word. Refined, quick, letter-based.
+      const GLYPHS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#%*/·";
+
+      function scramble(el: HTMLElement) {
+        const original = el.dataset.text ?? el.textContent ?? "";
+        el.dataset.text = original;
+        const len = original.length;
+        let frame = 0;
+        const total = Math.min(26, len + 12);
+        const timer = window.setInterval(() => {
+          frame++;
+          let out = "";
+          for (let i = 0; i < len; i++) {
+            const ch = original[i];
+            // reveal left-to-right; keep spaces and punctuation stable
+            const revealAt = (i / len) * total * 0.7;
+            if (ch === " " || ch === "@" || ch === "." || frame >= revealAt) {
+              out += ch;
+            } else {
+              out += GLYPHS[(Math.random() * GLYPHS.length) | 0];
+            }
+          }
+          el.textContent = out;
+          if (frame >= total) {
+            window.clearInterval(timer);
+            el.textContent = original;
+          }
+        }, 28);
+        el.dataset.timer = String(timer);
+      }
+
+      const scrambleEls = document.querySelectorAll<HTMLElement>(
+        '[data-scramble], .logo, .footer-links a, .next-title'
+      );
+      scrambleEls.forEach((el) => {
+        el.dataset.text = (el.textContent ?? "").trim();
+        el.addEventListener("mouseenter", () => {
+          const prev = Number(el.dataset.timer);
+          if (prev) window.clearInterval(prev);
+          scramble(el);
+        });
+      });
     </script>
 
     <style>
