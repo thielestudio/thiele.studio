@@ -175,6 +175,8 @@ const cases = [
       gap: var(--gap);
     }
 
+    /* plain stack on mobile: drop the editorial column spans and the
+       vertical offsets so every teaser sits at the same rhythm */
     .item-1,
     .item-2,
     .item-3,
@@ -184,6 +186,8 @@ const cases = [
       grid-column: auto;
       grid-row: auto;
       width: 100%;
+      margin-top: 0;
+      transform: none !important;
     }
 
     .claim {
