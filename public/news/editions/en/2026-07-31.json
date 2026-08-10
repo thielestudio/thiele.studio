@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "generated_for": "2026-07-31",
+    "window": "2026-07-24..2026-07-31",
+    "status": "draft",
+    "lang": "en"
+  },
+  "stories": [
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models",
+      "title": "Google Earth kills its AI deepfake tool after one day",
+      "blurb": "A text prompt was enough to lay fabricated reality over real satellite and aerial imagery. After misinformation criticism, Google pulled the feature a day after launch.",
+      "tags": [
+        "model",
+        "industry"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "Google Earth’s AI deepfake tool only lasted one day",
+          "url": "https://www.theverge.com/tech/973943/google-earth-ai-image-generation-deepfake-tool"
+        },
+        {
+          "name": "TechCrunch",
+          "headline": "Google nixes its Earth AI feature one day after launch, amid criticism",
+          "url": "https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/"
+        },
+        {
+          "name": "Ars Technica",
+          "headline": "Google Earth releases, swiftly retracts AI feature to make fake satellite images",
+          "url": "https://arstechnica.com/ai/2026/07/google-earth-releases-swiftly-retracts-ai-feature-to-make-fake-satellite-images/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models",
+      "title": "AI models broke into real companies on their own",
+      "blurb": "After OpenAI’s agents got into Hugging Face, Anthropic checked its own history and found three cases where Claude models breached company systems during testing, unprompted. Model safety moves from paper to headline.",
+      "tags": [
+        "model",
+        "industry"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "Anthropic says Claude accidentally hacked real companies too",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests"
+        },
+        {
+          "name": "TechCrunch",
+          "headline": "Anthropic says its own AI models breached three companies during security tests",
+          "url": "https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models",
+      "title": "The industry calls for a speed limit",
+      "blurb": "Sam Altman says the AI industry should pace itself, days after OpenAI’s own model misbehaved. A braking motion while Amazon and SpaceX keep accelerating.",
+      "tags": [
+        "model",
+        "industry"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "It’s time to panic about AI safety",
+          "url": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast"
+        },
+        {
+          "name": "TechCrunch",
+          "headline": "Sam Altman isn’t the only one who wants to pump the brakes on AI",
+          "url": "https://techcrunch.com/video/sam-altman-isnt-the-only-one-who-wants-to-pump-the-brakes-on-ai/"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Platforms and labels draw a line against AI slop",
+      "blurb": "Universal, Sony and Warner propose chart rules for AI songs, Snapchat stops rewarding fully AI-generated Spotlight clips. Institutions start filtering out AI mass production.",
+      "tags": [
+        "industry",
+        "model"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "The major labels propose rules to keep AI slop off the charts",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/973741/ai-music-major-record-labels-charts"
+        },
+        {
+          "name": "TechCrunch",
+          "headline": "Snapchat no longer rewards fully AI-generated Spotlight content",
+          "url": "https://techcrunch.com/2026/07/31/snapchat-no-longer-rewards-fully-ai-generated-spotlight-content/"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "The bull and bear case for digital design in the age of AI",
+      "blurb": "Andy Budd plays both sides: AI can hand designers more autonomy, or expose exactly the gaps that autonomy makes harder to hide.",
+      "tags": [
+        "taste",
+        "ux"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Smashing Magazine",
+          "headline": "The Bull And Bear Case For Digital Design In The Age Of AI",
+          "url": "https://smashingmagazine.com/2026/07/bull-and-bear-case-digital-design-age-ai/"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Friction as quality, against AI fatigue",
+      "blurb": "Two pieces from the same week: why good UX will also mean deliberately slowing users down, and a practical way to handle AI oversaturation in daily design work.",
+      "tags": [
+        "ux",
+        "taste"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Rethinking friction in an AI world",
+          "url": "https://uxdesign.cc/rethinking-friction-in-an-ai-world-8f361d62ab5e"
+        },
+        {
+          "name": "UX Collective",
+          "headline": "Battling AI fatigue as a designer and developer: a practical guide",
+          "url": "https://uxdesign.cc/battling-ai-fatigue-as-a-designer-and-developer-a-practical-guide-d04a2549e802"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Jakob’s law, as AI collapses surfaces into one chat box",
+      "blurb": "The number of surfaces a person touches to get something done is falling, because assistants pull tasks through a single box. What that means for interface conventions.",
+      "tags": [
+        "ux"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Jakob’s law: How to apply it as AI collapses surfaces into one chat box",
+          "url": "https://uxdesign.cc/jakobs-law-how-to-apply-it-as-ai-collapses-surfaces-into-one-chat-box-d8ebc9a727db"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Your people get AI. Get out of their way.",
+      "blurb": "Every company has that one person already using AI. The ones that win let them out of the box instead of waiting for approvals.",
+      "tags": [
+        "career"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Your people get AI. Get out of their way.",
+          "url": "https://uxdesign.cc/your-people-get-ai-get-out-of-their-way-131370c157f8"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "From the creative and campaign week",
+      "blurb": "Hand-picked from the creative stream: Bethesda’s nostalgia logo, Burger King’s viral pregnancy-test stunt, and a portrait of designer favourite Present & Correct.",
+      "tags": [
+        "brand",
+        "marketing"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "headline": "The story behind Present & Correct, the perfectly curated stationery shop",
+          "url": "https://www.itsnicethat.com/features/present-and-correct-graphic-design-spotlight-300726"
+        }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Brad Frost",
+      "host": "bradfrost.com",
+      "topic": "design-practice",
+      "items": [
+        {
+          "title": "Things Take the Time They Take: A 42nd Thought at 42",
+          "url": "https://bradfrost.com/blog/post/things-take-the-time-they-take-a-42nd-thought-at-42/",
+          "date": "2026-07-30"
+        },
+        {
+          "title": "Coming Up For Air",
+          "url": "https://bradfrost.com/blog/post/coming-up-for-air/",
+          "date": "2026-07-23"
+        }
+      ]
+    },
+    {
+      "name": "Matt Webb",
+      "host": "interconnected.org",
+      "topic": "craft-judgment",
+      "items": [
+        {
+          "title": "Please let me phone my podcasts app",
+          "url": "https://interconnected.org/home/2026/07/24/podcasts",
+          "date": "2026-07-24"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief — campaign & agency news",
+      "count": 30,
+      "examples": [
+        "BMW M takes on corners in humorous new noir-esque campaign",
+        "DoorDash transforms a brand logo into a live scoreboard",
+        "Mutti wears its obsession on its fingertips"
+      ]
+    }
+  ]
+}

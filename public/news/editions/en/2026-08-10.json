@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "generated_for": "2026-08-10",
+    "window": "2026-08-07..2026-08-10",
+    "lang": "en",
+    "status": "draft"
+  },
+  "stories": [
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models",
+      "title": "OpenAI pauses Astra over critical cyber capabilities",
+      "blurb": "OpenAI says it has paused internal activities around Astra, a model in development, because it isn't confident about the model's cyber capabilities. A lab stopping its own release is the sharpest version of the pacing debate so far.",
+      "tags": [
+        "model",
+        "industry"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "OpenAI puts the brakes on a new model because it’s supposedly too powerful",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models",
+      "title": "Meta returns with Muse Glimmer: local, agentic, multimodal, open source",
+      "blurb": "A new open multimodal model built to run locally and act agentically. Local and open keeps shifting what a studio can do without sending the work to someone else's server.",
+      "tags": [
+        "model",
+        "agents"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "headline": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
+          "url": "https://huggingface.co/blog/muse-glimmer"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models",
+      "title": "Distillation gets cheap enough to run at scale",
+      "blurb": "Making knowledge distillation cheap enough for routine use is how capable small models keep arriving. Worth watching if you weigh a small local model against a frontier API.",
+      "tags": [
+        "model"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "headline": "Making Knowledge Distillation Cheap Enough to Run at Scale",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models",
+      "title": "Peer review is overwhelmed",
+      "blurb": "As research output and AI-assisted papers surge, volunteer reviewers can't keep up. A preview of what happens to any gatekeeping process once producing the thing becomes nearly free.",
+      "tags": [
+        "research",
+        "industry"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "headline": "Peer review is overwhelmed—can it survive in the AI era?",
+          "url": "https://arstechnica.com/science/2026/08/peer-review-is-overwhelmed-can-it-survive-in-the-ai-era/"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Bottle your judgment",
+      "blurb": "UX Collective's weekly roundup leads on capturing judgment itself, next to the argument that chat is the wrong UI and the Design.md standard. The taste thread of recent weeks, gathered in one place.",
+      "tags": [
+        "taste",
+        "ux"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Bottle your judgment, Chat is the wrong UI, Design.md",
+          "url": "https://uxdesign.cc/bottle-your-judgment-chat-is-the-wrong-ui-design-md-2484e8d870af"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "What pixels can't replicate",
+      "blurb": "Acrylicize argues culture and belonging get swapped out for basic function in physical space. Alongside it, a piece on analogue crafts at risk in an increasingly digital echo chamber.",
+      "tags": [
+        "taste",
+        "brand"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "headline": "“Places need to offer something that pixels can’t replicate”: Acrylicize on designing spaces for real connection",
+          "url": "https://www.itsnicethat.com/articles/acrylicize-physical-culture-sponsored-content-100826"
+        },
+        {
+          "name": "It's Nice That",
+          "headline": "“We all have a responsibility to widen our content bubble”",
+          "url": "https://www.itsnicethat.com/articles/creative-career-conundrums-if-you-could-jobs-100826"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Why your clients aren't buying",
+      "blurb": "You know it's the right call, the data says so, and they still say no. A playbook for the persuasion side of design work, which carries more weight as execution gets cheap.",
+      "tags": [
+        "career",
+        "strategy"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Why your clients aren’t buying and how to change that",
+          "url": "https://uxdesign.cc/why-your-clients-arent-buying-and-how-to-change-that-cd7104bf14fd"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Claude Code turns auto mode on by default",
+      "blurb": "Programming with Claude Code will soon need even less human oversight. A small switch with a loud signal: agentic execution moves from opt-in to baseline.",
+      "tags": [
+        "agents",
+        "dev"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "headline": "Anthropic is turning Claude Code’s auto mode on by default",
+          "url": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "The physical bill for compute",
+      "blurb": "To power a new West Texas data center, Amazon is backing a plant that could be among the country's worst polluters. A second analysis argues AI's compute appetite could disrupt American infrastructure and debt.",
+      "tags": [
+        "industry"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "An Amazon data center could have the worst polluting power plant in the country",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant"
+        },
+        {
+          "name": "AI Supremacy",
+          "headline": "How AI’s Demand for Compute could Disrupt America",
+          "url": "https://www.ai-supremacy.com/p/how-ai-demand-for-compute-could-disrupt-america-debt-crisis"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "A Manchester workplace built on Alan Turing",
+      "blurb": "SpaceInvader's fit-out takes its cues from Turing. Spatial branding as narrative, and a reminder that identity work still has to land in a physical room.",
+      "tags": [
+        "brand"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "headline": "SpaceInvader’s Manchester workplace fit-out takes cues from Alan Turing",
+          "url": "https://www.designweek.co.uk/spaceinvaders-manchester-workplace-fit-out-takes-cues-from-alan-turing/"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief — campaign & agency news",
+      "count": 21,
+      "examples": [
+        "Agency wins and account moves",
+        "New campaign launches",
+        "Production company signings"
+      ]
+    }
+  ]
+}

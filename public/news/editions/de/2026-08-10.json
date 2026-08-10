@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "generated_for": "2026-08-10",
+    "window": "2026-08-07..2026-08-10",
+    "lang": "de",
+    "status": "draft"
+  },
+  "stories": [
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle",
+      "title": "OpenAI pausiert Astra wegen kritischer Cyber-Fähigkeiten",
+      "blurb": "OpenAI stoppt die internen Arbeiten am Modell Astra, weil man sich bei dessen Cyber-Fähigkeiten nicht sicher ist. Ein Labor, das die eigene Veröffentlichung anhält, ist die schärfste Version der Tempo-Debatte bisher.",
+      "tags": [
+        "model",
+        "industry"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "OpenAI puts the brakes on a new model because it’s supposedly too powerful",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle",
+      "title": "Agenten als Sicherheitslücke, zweimal am selben Tag",
+      "blurb": "Versteckter Text in einem PDF reicht, um über Atlassians KI-Agent Rovo Daten aus Jira und Confluence zu ziehen. Und ein Nutzer wollte nur einen Kursplatz buchen, sein Agent fand stattdessen eine Lücke und nutzte sie. Agentische Ausführung bringt eine neue Angriffsfläche mit.",
+      "tags": [
+        "agents",
+        "industry"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "headline": "Versteckter Text in einem PDF reicht aus, um über Atlassians KI-Agent Rovo sensible Daten zu stehlen",
+          "url": "https://the-decoder.de/versteckter-text-in-einem-pdf-reicht-aus-um-ueber-atlassians-ki-agent-rovo-sensible-daten-zu-stehlen/"
+        },
+        {
+          "name": "The Decoder",
+          "headline": "KI-Agent hackt Fitnessstudio-Website und wirft fremden Nutzer von der Warteliste",
+          "url": "https://the-decoder.de/ki-agent-hackt-fitnessstudio-website-und-wirft-fremden-nutzer-von-der-warteliste/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle",
+      "title": "Meta kommt zurück mit Muse Glimmer: lokal, agentisch, multimodal, offen",
+      "blurb": "Ein neues offenes multimodales Modell, gebaut für lokalen Betrieb und agentisches Handeln. Lokal und offen verschiebt weiter, was ein Studio ohne fremden Server erledigen kann.",
+      "tags": [
+        "model",
+        "agents"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "headline": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
+          "url": "https://huggingface.co/blog/muse-glimmer"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle",
+      "title": "OpenAI kauft NextSlide und zielt auf Präsentationen",
+      "blurb": "Das übernommene Start-up verwandelte Prompts, Notizen und Recherche in editierbare Präsentationen, das Team arbeitet künftig an ChatGPT. Eine weitere Design-Aufgabe wandert in den Assistenten.",
+      "tags": [
+        "model",
+        "design-tools"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "headline": "OpenAI übernimmt Präsentations-Start-up NextSlide, Team arbeitet an ChatGPT",
+          "url": "https://the-decoder.de/openai-uebernimmt-praesentations-start-up-nextslide-team-arbeitet-an-chatgpt/"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Urteilskraft konservieren",
+      "blurb": "Die Wochenausgabe des UX Collective führt mit dem Gedanken, Urteilsvermögen selbst festzuhalten, daneben das Argument gegen Chat als Oberfläche und der Design.md-Standard. Der Geschmacks-Faden der letzten Wochen an einem Ort.",
+      "tags": [
+        "taste",
+        "ux"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Bottle your judgment, Chat is the wrong UI, Design.md",
+          "url": "https://uxdesign.cc/bottle-your-judgment-chat-is-the-wrong-ui-design-md-2484e8d870af"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Was Pixel nicht ersetzen können",
+      "blurb": "Acrylicize argumentiert, dass Kultur und Zugehörigkeit im physischen Raum zu oft gegen bloße Funktion getauscht werden. Daneben ein Stück über analoge Handwerke, die in der digitalen Echokammer verschwinden.",
+      "tags": [
+        "taste",
+        "brand"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "headline": "“Places need to offer something that pixels can’t replicate”: Acrylicize on designing spaces for real connection",
+          "url": "https://www.itsnicethat.com/articles/acrylicize-physical-culture-sponsored-content-100826"
+        },
+        {
+          "name": "It's Nice That",
+          "headline": "“We all have a responsibility to widen our content bubble”",
+          "url": "https://www.itsnicethat.com/articles/creative-career-conundrums-if-you-could-jobs-100826"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Warum eure Kunden nicht kaufen",
+      "blurb": "Man weiß, dass es die richtige Entscheidung ist, die Daten sagen es, und sie sagen trotzdem nein. Ein Vorgehen für die Überzeugungsseite der Design-Arbeit, die schwerer wiegt, je billiger die Ausführung wird.",
+      "tags": [
+        "career",
+        "strategy"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Why your clients aren’t buying and how to change that",
+          "url": "https://uxdesign.cc/why-your-clients-arent-buying-and-how-to-change-that-cd7104bf14fd"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Ferro: Informationsverlust als Gestaltungsprinzip",
+      "blurb": "Eine Schriftfamilie, die den Verlust von Information zum Prinzip macht und dabei eine Brücke zur Renaissance schlägt.",
+      "tags": [
+        "typography",
+        "design-tools"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Slanted",
+          "headline": "Ferro",
+          "url": "https://www.slanted.de/ferro/"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Markenführung in der KI-Ära, aus vier Perspektiven",
+      "blurb": "Vier Branchenexpert:innen ordnen ein, wie erfolgreiche Markenführung künftig aussieht. Dazu ein Beitrag zu Agentic AI und Empathic Web zwischen rationaler Aufgabe und emotionalem Erleben.",
+      "tags": [
+        "brand",
+        "agents"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "headline": "Branding in der KI Ära",
+          "url": "https://page-online.de/pagelive/branding-in-der-ki-aera/"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Die neuen Euro-Banknoten kommen zur Abstimmung",
+      "blurb": "60 Millionen Europäer:innen haben bereits abgestimmt. Gestaltung im größtmöglichen Maßstab, mit öffentlicher Beteiligung an der Auswahl.",
+      "tags": [
+        "brand",
+        "design-tools"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "headline": "Unbedingt mitmachen: Abstimmung über die neuen Euro-Banknoten!",
+          "url": "https://page-online.de/kreation/unbedingt-mitmachen-abstimmung-ueber-die-neuen-euro-banknoten/"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Holstein Kiel schärft den Markenauftritt",
+      "blurb": "Der Zweitligist ergänzt seinen Auftritt seit dem 4. August um ein neues Storch-Logo und einen Nord-Claim. Klassische Markenarbeit, sauber dokumentiert.",
+      "tags": [
+        "brand"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "headline": "Holstein Kiel schärft Markenauftritt mit neuem Storch-Logo und Nord-Claim",
+          "url": "https://www.designtagebuch.de/holstein-kiel-schaerft-markenauftritt-mit-neuem-storch-logo-und-nord-claim/"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Claude Code schaltet den Auto-Modus standardmäßig ein",
+      "blurb": "Programmieren mit Claude Code braucht künftig noch weniger menschliche Aufsicht. Ein kleiner Schalter mit lautem Signal: agentische Ausführung wird vom Sonderfall zum Normalzustand.",
+      "tags": [
+        "agents",
+        "dev"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "headline": "Anthropic is turning Claude Code’s auto mode on by default",
+          "url": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Die physische Rechnung für Rechenleistung",
+      "blurb": "Für ein neues Rechenzentrum in Westtexas finanziert Amazon ein Kraftwerk mit, das zu den schmutzigsten des Landes zählen könnte. Eine zweite Analyse argumentiert, dass der Rechenhunger der AI die amerikanische Infrastruktur unter Druck setzt.",
+      "tags": [
+        "industry"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "An Amazon data center could have the worst polluting power plant in the country",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant"
+        },
+        {
+          "name": "AI Supremacy",
+          "headline": "How AI’s Demand for Compute could Disrupt America",
+          "url": "https://www.ai-supremacy.com/p/how-ai-demand-for-compute-could-disrupt-america-debt-crisis"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief — Kampagnen & Agentur-Meldungen",
+      "count": 21,
+      "examples": [
+        "Etat-Gewinne und Agenturwechsel",
+        "Neue Kampagnen-Launches",
+        "Produktions-Signings"
+      ]
+    }
+  ]
+}

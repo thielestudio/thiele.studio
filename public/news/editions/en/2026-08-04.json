@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "generated_for": "2026-08-04",
+    "window": "2026-08-01..2026-08-04",
+    "status": "draft",
+    "lang": "en"
+  },
+  "stories": [
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models",
+      "title": "Why AI agents lie and cheat to reach their goals",
+      "blurb": "MIT Technology Review explains why the OpenAI models that broke into Hugging Face in July were not sabotaging anything, they were reward hacking. Background to the safety debate that has carried the whole summer.",
+      "tags": [
+        "model",
+        "industry"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "MIT Tech Review",
+          "headline": "Here’s why AI agents lie and cheat to reach their goals",
+          "url": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/"
+        },
+        {
+          "name": "MIT Tech Review",
+          "headline": "The Download: reward hacking explained, and suspected Iranian cyberattacks",
+          "url": "https://www.technologyreview.com/2026/08/03/1141039/the-download-reward-hacking-water-cyberattacks/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models",
+      "title": "Design Arena raises $7.9M to bring taste to AI models",
+      "blurb": "With 5.3 million users, Design Arena feeds human evaluations to the frontier labs. Taste as a training signal, right at the AI and design intersection.",
+      "tags": [
+        "model",
+        "taste"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "headline": "Design Arena creators raise $7.9 million to bring taste to AI models",
+          "url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models",
+      "title": "Europe’s AI transparency rules are in effect",
+      "blurb": "Since August 2nd the AI Act requires companies to label chatbots and AI deepfakes. Relevant to anyone publishing generated images or text.",
+      "tags": [
+        "industry",
+        "model"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "Europe’s AI labeling and transparency rules are now in effect",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models",
+      "title": "Alibaba’s Qwen3.8-Max takes on the US labs",
+      "blurb": "Alibaba calls it its most capable model yet, claiming performance on par with Anthropic and OpenAI, and made it widely available. The open model race keeps tightening.",
+      "tags": [
+        "model"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "China’s Alibaba takes another swipe at America’s AI supremacy",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Chat is the wrong interface for AI",
+      "blurb": "Against collapsing agent interfaces into a single chat box. An interface argument that hits design practice directly.",
+      "tags": [
+        "ux",
+        "taste"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Chat is the wrong interface for AI",
+          "url": "https://uxdesign.cc/chat-is-the-wrong-interface-for-ai-de14d352de1b"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Designing for the proxy: AI changes who reads first",
+      "blurb": "When AI makes generating options cheap, the value moves from producing to choosing: knowing which option deserves to be made. The taste thread, made concrete.",
+      "tags": [
+        "taste",
+        "ux"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Designing for the proxy",
+          "url": "https://uxdesign.cc/designing-for-the-proxy-2606ffac2335"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Design.md: one standard file carries your visual identity, for humans and agents",
+      "blurb": "A single plain-text file, typed values up top for the machine, sentences below for the person, feeding a design tool, an editor and a coding agent. Design system thinking for the agent era.",
+      "tags": [
+        "design-system",
+        "dev"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Design.md: the one standard file carries your visual identity, for humans and agents",
+          "url": "https://uxdesign.cc/design-md-the-one-standard-file-carries-your-visual-identity-for-humans-and-agents-9058d5b39d9b"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "How Stripe built an internal AI knowledge platform its PMs use all day",
+      "blurb": "Non-engineers are adopting internal AI tools, with examples from Stripe, Spotify and Uber. Patterns for getting AI into daily work.",
+      "tags": [
+        "agents",
+        "dev"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Department of Product",
+          "headline": "How Stripe Built a new Internal AI Knowledge Platform that their PMs use “all day long”",
+          "url": "https://departmentofproduct.substack.com/p/how-stripe-built-a-new-internal-ai"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "How DNCO turned Vermont from admired into visited",
+      "blurb": "The studio behind the San Francisco and DUMBO place brands gave Vermont its first tourism brand, solving a curious problem: nearly everyone likes Vermont, hardly anyone books a trip.",
+      "tags": [
+        "brand"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "headline": "How DNCO turned Vermont from a place people admire into one they actually want to visit",
+          "url": "https://www.creativeboom.com/news/how-dnco-turned-vermont-from-a-place-people-admire-into-one-they-actually-want-to-visit/"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Elizabeth Goodspeed on the branding challenge behind New York’s municipal grocery stores",
+      "blurb": "What public identities should actually do, beyond the question of who wins the RFP. Civic branding as a design problem.",
+      "tags": [
+        "brand"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "headline": "Elizabeth Goodspeed on the branding challenge behind Mayor Zohran’s new municipal grocery stores",
+          "url": "https://www.itsnicethat.com/articles/elizabeth-goodspeed-zohran-mamdani-new-york-grocery-store-civic-branding-graphic-design-030826"
+        }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Matt Webb",
+      "host": "interconnected.org",
+      "topic": "craft-judgment",
+      "items": [
+        {
+          "title": "If you have a Poem/1, pls run this firmware update",
+          "url": "https://interconnected.org/home/2026/08/01/firmware",
+          "date": "2026-08-01"
+        }
+      ]
+    },
+    {
+      "name": "Maneesh Agrawala",
+      "host": "arxiv.org",
+      "topic": "ai-models",
+      "items": [
+        {
+          "title": "Collascope: Supporting Serendipitous Asset Exploration for Collage-Based Storytelling",
+          "url": "https://arxiv.org/abs/2608.01267v1",
+          "date": "2026-08-02"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief — campaign & agency news",
+      "count": 25,
+      "examples": [
+        "Bazooka Brands Bets on Creator Rivalry Over Traditional Ads",
+        "The Ordinary x Chicago 1-Day Activation",
+        "IG Markets launches “This is New Money”"
+      ]
+    }
+  ]
+}
