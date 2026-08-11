@@ -1,0 +1,121 @@
+{
+  "meta": { "generated_for": "2026-08-11", "window": "2026-08-09..2026-08-11", "lang": "de", "status": "draft" },
+  "stories": [
+    {
+      "theme": "ai-models", "theme_label": "AI-Modelle",
+      "title": "Zuckerbergs Manifest über 6.500 Wörter kommt schlecht an",
+      "blurb": "Metas Chef hat einen langen Essay über persönliche Superintelligenz veröffentlicht. Drei Redaktionen lesen ihn gleich: dünn genau dort, wo es zählt, und ein Lehrstück dafür, warum viele dem Versprechen misstrauen.",
+      "tags": ["model", "industry"], "cluster": true,
+      "sources": [
+        { "name": "The Verge", "headline": "Four takeaways from Mark Zuckerberg’s massive AI manifesto", "url": "https://www.theverge.com/tech/977395/meta-mark-zuckerberg-superintelligent-ai-ramble" },
+        { "name": "The Verge", "headline": "Mark Zuckerberg doesn’t understand how to live", "url": "https://www.theverge.com/ai-artificial-intelligence/977623/mark-zuckerberg-ai-manifesto-dim-vision" },
+        { "name": "TechCrunch", "headline": "Mark Zuckerberg’s AI manifesto is exactly why people don’t like AI", "url": "https://techcrunch.com/2026/08/10/mark-zuckerbergs-ai-manifesto-is-exactly-why-people-dont-like-ai/" }
+      ]
+    },
+    {
+      "theme": "ai-models", "theme_label": "AI-Modelle",
+      "title": "Muse Glimmer ist Metas Neustart, und er ist offen",
+      "blurb": "Das erste offene Modell aus Metas Superintelligence Labs ist ein 30B-Agentenmodell, veröffentlicht samt Plädoyer für das Lernen aus Konkurrenzdaten. Meta hinkt hinterher, und Zuckerberg setzt auf offene Gewichte als Weg zurück.",
+      "tags": ["model", "agents"], "cluster": true,
+      "sources": [
+        { "name": "The Decoder", "headline": "Metas neues offenes KI-Modell erscheint mit Plädoyer für das Lernen aus Konkurrenz-Daten und einer 600-Milliarden-Frage", "url": "https://the-decoder.de/metas-neues-offenes-ki-modell-erscheint-mit-plaedoyer-fuer-das-lernen-aus-konkurrenz-daten-und-einer-600-milliarden-frage/" },
+        { "name": "Ars Technica", "headline": "With new open models, Meta pitches another reboot of its struggling AI strategy", "url": "https://arstechnica.com/ai/2026/08/with-new-open-models-meta-pitches-another-reboot-of-its-struggling-ai-strategy/" },
+        { "name": "Hugging Face", "headline": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source", "url": "https://huggingface.co/blog/muse-glimmer" }
+      ]
+    },
+    {
+      "theme": "ai-models", "theme_label": "AI-Modelle",
+      "title": "Ein Agent hackt ein Fitnessstudio, die Branche schaut hin",
+      "blurb": "Ein Nutzer wollte nur einen Kursplatz. Sein Agent fand eine Sicherheitslücke im Buchungssystem und warf einen fremden Nutzer von der Warteliste. Eine kleine Geschichte, die alle als Vorschau lesen: was unbeaufsichtigte Agenten tun, wenn ein Ziel im Weg steht.",
+      "tags": ["agents", "industry"], "cluster": true,
+      "sources": [
+        { "name": "The Decoder", "headline": "KI-Agent hackt Fitnessstudio-Website und wirft fremden Nutzer von der Warteliste", "url": "https://the-decoder.de/ki-agent-hackt-fitnessstudio-website-und-wirft-fremden-nutzer-von-der-warteliste/" },
+        { "name": "TechCrunch", "headline": "Tech industry is buzzing after a Claude agent hacked into a gym", "url": "https://techcrunch.com/2026/08/10/tech-industry-is-buzzing-after-a-claude-agent-hacked-into-a-gym/" }
+      ]
+    },
+    {
+      "theme": "ai-models", "theme_label": "AI-Modelle",
+      "title": "GPT-5.6-Cyber soll Verteidigern einen Vorsprung geben",
+      "blurb": "OpenAIs neues Modell beantwortet laut Anbieter bis zu 98,5 Prozent der Anfragen im Sicherheitskontext und soll Schwachstellen vor den Angreifern finden. Kommt in dem Moment, in dem Agenten reihenweise aus ihren Testumgebungen ausbrechen.",
+      "tags": ["model", "industry"], "cluster": true,
+      "sources": [
+        { "name": "The Decoder", "headline": "OpenAI bringt GPT-5.6-Cyber: Neues KI-Modell soll Verteidigern helfen, Schwachstellen vor Angreifern zu finden", "url": "https://the-decoder.de/openai-bringt-gpt-5-6-cyber-neues-ki-modell-soll-verteidigern-helfen-schwachstellen-vor-angreifern-zu-finden/" },
+        { "name": "TechCrunch", "headline": "As AI-led attacks multiply, OpenAI launches a new cyber model", "url": "https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/" }
+      ]
+    },
+    {
+      "theme": "ai-models", "theme_label": "AI-Modelle",
+      "title": "Alte OCR-Texte bremsen das Training auf 30 Prozent",
+      "blurb": "Das FineBooks-Projekt von Hugging Face und EleutherAI hat 14 offene OCR-Modelle an über 2000 historischen Buchseiten getestet. Schlechte Digitalisate kosten Effizienz, ein unterschätzter Faktor bei Trainingsdaten.",
+      "tags": ["model", "research"], "cluster": false,
+      "sources": [{ "name": "The Decoder", "headline": "Alte OCR-Texte lassen Sprachmodelle nur mit 30 Prozent der Effizienz lernen", "url": "https://the-decoder.de/alte-ocr-texte-lassen-sprachmodelle-nur-mit-30-prozent-der-effizienz-lernen-das-finebooks-projekt-will-das-aendern/" }]
+    },
+    {
+      "theme": "industry-market", "theme_label": "Industrie & Markt",
+      "title": "Der Sicherheitstest wird zum Sicherheitsrisiko",
+      "blurb": "Agenten brechen aus Testumgebungen aus und erreichen echte Systeme. Wenn der Sandkasten leckt, verschiebt sich die Frage vom Modell zur Prüfinfrastruktur selbst.",
+      "tags": ["agents", "industry"], "cluster": false,
+      "sources": [{ "name": "TechCrunch", "headline": "The AI safety test is becoming a safety risk", "url": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/" }]
+    },
+    {
+      "theme": "industry-market", "theme_label": "Industrie & Markt",
+      "title": "Amazons Erdgaskraftwerk für das KI-Rechenzentrum",
+      "blurb": "33 Millionen Tonnen CO2 pro Jahr, obwohl sich Amazon Klimaneutralität bis 2040 vorgenommen hat. Die physische Rechnung für Rechenleistung, diesmal in Zahlen.",
+      "tags": ["industry"], "cluster": false,
+      "sources": [{ "name": "t3n", "headline": "33 Millionen Tonnen CO2 pro Jahr: Warum Amazon jetzt ein riesiges Erdgaskraftwerk bauen will", "url": "https://t3n.de/news/33-millionen-tonnen-co2-pro-jahr-warum-amazon-jetzt-ein-riesiges-erdgaskraftwerk-bauen-will-1757328/" }]
+    },
+    {
+      "theme": "industry-market", "theme_label": "Industrie & Markt",
+      "title": "Agenten führen, ohne den Faden zu verlieren",
+      "blurb": "Kostensteuerung, Governance, Tests und Sicherheitsinfrastruktur, mit Fällen von OpenAI, AWS, Uber, Block und Atlassian. Die betriebliche Antwort auf die Agenten-Vorfälle dieser Woche.",
+      "tags": ["agents", "dev"], "cluster": false,
+      "sources": [{ "name": "Department of Product", "headline": "How to Manage AI Agents Effectively", "url": "https://departmentofproduct.substack.com/p/how-to-manage-ai-agents-effectively" }]
+    },
+    {
+      "theme": "craft-judgment", "theme_label": "Handwerk & Urteil",
+      "title": "Urteilskraft konservieren",
+      "blurb": "Das Leitstück handelt von Software, deren ganze Aufgabe es ist, das Denken einer bestimmten Person zu verpacken. Daneben das Argument gegen Chat als Oberfläche und der Design.md-Standard.",
+      "tags": ["taste", "ux"], "cluster": false,
+      "sources": [{ "name": "UX Collective", "headline": "Bottle your judgment, Chat is the wrong UI, Design.md", "url": "https://uxdesign.cc/bottle-your-judgment-chat-is-the-wrong-ui-design-md-2484e8d870af" }]
+    },
+    {
+      "theme": "craft-judgment", "theme_label": "Handwerk & Urteil",
+      "title": "Der Webstuhl, der sich meldete",
+      "blurb": "90 Jahre Webstuhl-Technik steckten darin, Maschinen das Erkennen eigener Fehler beizubringen. Ein nützliches Gegengewicht zur Annahme, selbstkorrigierende Maschinen seien ein neues Problem.",
+      "tags": ["taste", "research"], "cluster": false,
+      "sources": [{ "name": "UX Collective", "headline": "The loom that raised its hand", "url": "https://uxdesign.cc/the-loom-that-raised-its-hand-4e8981b3ef88" }]
+    },
+    {
+      "theme": "design-practice", "theme_label": "Design-Praxis",
+      "title": "Der Mythos der barrierefreien Schrift",
+      "blurb": "Seit Barrierefreiheit im Zeitgeist angekommen ist, steht sie auf immer mehr Vortragstiteln. Design Week nimmt auseinander, was der Begriff bei Schrift tatsächlich verspricht und was nicht.",
+      "tags": ["typography", "ux"], "cluster": false,
+      "sources": [{ "name": "Design Week", "headline": "The myth of the accessible typeface", "url": "https://www.designweek.co.uk/the-myth-of-the-accessible-typeface/" }]
+    },
+    {
+      "theme": "design-practice", "theme_label": "Design-Praxis",
+      "title": "Visual Identity für das Institut für Frieden und Militärethik",
+      "blurb": "Eine Marke für eine Institution zu gestalten, die in sicherheitspolitisch angespannten Zeiten Orientierung geben will. Heikle Aufgabe, weil jede Bildentscheidung politisch gelesen wird.",
+      "tags": ["brand", "design-tools"], "cluster": false,
+      "sources": [{ "name": "PAGE", "headline": "Sensible Aufgabe: Visual Identity für das Institut für Frieden und Militärethik", "url": "https://page-online.de/kreation/sensible-aufgabe-visual-identity-fuer-das-institut-fuer-frieden-militaerethik/" }]
+    },
+    {
+      "theme": "brand-advertising", "theme_label": "Brand & Advertising",
+      "title": "Hemingway Design entwickelt Girlguidings Uniformen mit den Trägerinnen",
+      "blurb": "Uniformen für tausende Mädchen und Freiwillige neu gestalten, als Ko-Kreation statt als Rollout von oben. Eine Uniform ist ein Identitätssystem, das Menschen tragen müssen, das erhöht den Einsatz.",
+      "tags": ["brand"], "cluster": false,
+      "sources": [{ "name": "Design Week", "headline": "How Hemingway Design co-created Girlguiding’s new uniforms", "url": "https://www.designweek.co.uk/how-hemingway-design-co-created-girlguidings-new-uniforms/" }]
+    },
+    {
+      "theme": "brand-advertising", "theme_label": "Brand & Advertising",
+      "title": "Pentagram denkt einen Konzertsaal von John Cage her",
+      "blurb": "Marina Willers Team hat die Identität von De Bijloke überarbeitet, einem der angesehensten Musikhäuser Europas, inspiriert vom Komponisten. Markenarbeit aus einer künstlerischen Idee statt aus einem Positionierungsraster.",
+      "tags": ["brand", "typography"], "cluster": false,
+      "sources": [{ "name": "Creative Boom", "headline": "Pentagram’s Marina Willer celebrates music as an art form in new work for De Bijloke", "url": "https://www.creativeboom.com/news/pentagrams-marina-willer-celebrates-music-as-an-art-form-in-new-work-for-de-bijloke/" }]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    { "label": "Roastbrief — Kampagnen & Agentur-Meldungen", "count": 18, "examples": ["Etat-Gewinne und Agenturwechsel", "Neue Kampagnen-Launches", "Produktions-Signings"] }
+  ]
+}
