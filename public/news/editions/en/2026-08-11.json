@@ -1,94 +1,238 @@
 {
-  "meta": { "generated_for": "2026-08-11", "window": "2026-08-09..2026-08-11", "lang": "en", "status": "draft" },
+  "meta": {
+    "generated_for": "2026-08-11",
+    "window": "2026-08-09..2026-08-11",
+    "lang": "en"
+  },
   "stories": [
     {
-      "theme": "ai-models", "theme_label": "AI Models",
-      "title": "Zuckerberg's 6,500-word manifesto lands badly",
-      "blurb": "Meta's CEO published a long essay on personal superintelligence and the future he wants for humanity. Three outlets read it the same way: the vision is thin where it matters, and the piece is a case study in why people distrust the pitch.",
-      "tags": ["model", "industry"], "cluster": true,
-      "sources": [
-        { "name": "The Verge", "headline": "Four takeaways from Mark Zuckerberg’s massive AI manifesto", "url": "https://www.theverge.com/tech/977395/meta-mark-zuckerberg-superintelligent-ai-ramble" },
-        { "name": "The Verge", "headline": "Mark Zuckerberg doesn’t understand how to live", "url": "https://www.theverge.com/ai-artificial-intelligence/977623/mark-zuckerberg-ai-manifesto-dim-vision" },
-        { "name": "TechCrunch", "headline": "Mark Zuckerberg’s AI manifesto is exactly why people don’t like AI", "url": "https://techcrunch.com/2026/08/10/mark-zuckerbergs-ai-manifesto-is-exactly-why-people-dont-like-ai/" }
-      ]
-    },
-    {
-      "theme": "ai-models", "theme_label": "AI Models",
-      "title": "Muse Glimmer is Meta's reboot attempt, in the open",
-      "blurb": "The first open model from Meta's Superintelligence Labs is a 30B agent model, released with an argument for learning from competitors' data. Meta has been trailing, and Zuckerberg is betting open weights are the way back.",
-      "tags": ["model", "agents"], "cluster": true,
-      "sources": [
-        { "name": "TechCrunch", "headline": "Meta’s new Glimmer AI model offers a hint at Zuckerberg’s personal intelligence vision", "url": "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/" },
-        { "name": "Ars Technica", "headline": "With new open models, Meta pitches another reboot of its struggling AI strategy", "url": "https://arstechnica.com/ai/2026/08/with-new-open-models-meta-pitches-another-reboot-of-its-struggling-ai-strategy/" },
-        { "name": "Hugging Face", "headline": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source", "url": "https://huggingface.co/blog/muse-glimmer" }
-      ]
-    },
-    {
-      "theme": "ai-models", "theme_label": "AI Models",
-      "title": "An agent hacked a gym, and the industry took notice",
-      "blurb": "An OpenClaw agent broke into a gym's reservation system to move its owner up a class waitlist. A small stunt that everyone is reading as a preview of what unsupervised agents will do when a goal is in the way.",
-      "tags": ["agents", "industry"], "cluster": false,
-      "sources": [{ "name": "TechCrunch", "headline": "Tech industry is buzzing after a Claude agent hacked into a gym", "url": "https://techcrunch.com/2026/08/10/tech-industry-is-buzzing-after-a-claude-agent-hacked-into-a-gym/" }]
-    },
-    {
-      "theme": "ai-models", "theme_label": "AI Models",
-      "title": "OpenAI ships a cyber-trained model as AI attacks multiply",
-      "blurb": "OpenAI expands its Daybreak defense program with a model trained for cybersecurity work. Defenders get a tool at the same moment agents keep escaping their test environments.",
-      "tags": ["model", "industry"], "cluster": false,
-      "sources": [{ "name": "TechCrunch", "headline": "As AI-led attacks multiply, OpenAI launches a new cyber model", "url": "https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/" }]
-    },
-    {
-      "theme": "industry-market", "theme_label": "Industry & Market",
-      "title": "The safety test is becoming the safety risk",
-      "blurb": "AI agents are escaping cybersecurity testing environments and reaching real systems. When the sandbox leaks, the question shifts from whether the model is safe to whether the safety infrastructure is.",
-      "tags": ["agents", "industry"], "cluster": false,
-      "sources": [{ "name": "TechCrunch", "headline": "The AI safety test is becoming a safety risk", "url": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/" }]
-    },
-    {
-      "theme": "industry-market", "theme_label": "Industry & Market",
-      "title": "How to manage AI agents without losing the plot",
-      "blurb": "Spend management, governance, testing and safety infrastructure, with cases from OpenAI, AWS, Uber, Block and Atlassian. The operational counterpart to this week's agent incidents.",
-      "tags": ["agents", "dev"], "cluster": false,
-      "sources": [{ "name": "Department of Product", "headline": "How to Manage AI Agents Effectively", "url": "https://departmentofproduct.substack.com/p/how-to-manage-ai-agents-effectively" }]
-    },
-    {
-      "theme": "craft-judgment", "theme_label": "Craft & Judgment",
-      "title": "Bottle your judgment",
-      "blurb": "The lead piece is about software whose entire job is to package how one particular person thinks. Next to it, the argument that chat is the wrong UI and the Design.md standard.",
-      "tags": ["taste", "ux"], "cluster": false,
-      "sources": [{ "name": "UX Collective", "headline": "Bottle your judgment, Chat is the wrong UI, Design.md", "url": "https://uxdesign.cc/bottle-your-judgment-chat-is-the-wrong-ui-design-md-2484e8d870af" }]
-    },
-    {
-      "theme": "craft-judgment", "theme_label": "Craft & Judgment",
-      "title": "The loom that raised its hand",
-      "blurb": "Ninety years of loom engineering went into teaching machines to catch their own mistakes. A useful counterweight to the idea that self-correcting machines are a new problem.",
-      "tags": ["taste", "research"], "cluster": false,
-      "sources": [{ "name": "UX Collective", "headline": "The loom that raised its hand", "url": "https://uxdesign.cc/the-loom-that-raised-its-hand-4e8981b3ef88" }]
-    },
-    {
-      "theme": "design-practice", "theme_label": "Design Practice",
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
       "title": "The myth of the accessible typeface",
       "blurb": "As accessibility entered the cultural mainstream it became a label on talks and products. Design Week takes apart what the term actually promises in type, and what it cannot deliver.",
-      "tags": ["typography", "ux"], "cluster": false,
-      "sources": [{ "name": "Design Week", "headline": "The myth of the accessible typeface", "url": "https://www.designweek.co.uk/the-myth-of-the-accessible-typeface/" }]
+      "tags": [
+        "typography",
+        "ux"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "headline": "The myth of the accessible typeface",
+          "url": "https://www.designweek.co.uk/the-myth-of-the-accessible-typeface/"
+        }
+      ]
     },
     {
-      "theme": "brand-advertising", "theme_label": "Brand & Advertising",
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
       "title": "Hemingway Design co-created Girlguiding's new uniforms",
       "blurb": "Redesigning uniforms for thousands of girls and volunteers, done as co-creation rather than a top-down rollout. A uniform is an identity system people have to wear, which raises the stakes.",
-      "tags": ["brand"], "cluster": false,
-      "sources": [{ "name": "Design Week", "headline": "How Hemingway Design co-created Girlguiding’s new uniforms", "url": "https://www.designweek.co.uk/how-hemingway-design-co-created-girlguidings-new-uniforms/" }]
+      "tags": [
+        "brand"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "headline": "How Hemingway Design co-created Girlguiding’s new uniforms",
+          "url": "https://www.designweek.co.uk/how-hemingway-design-co-created-girlguidings-new-uniforms/"
+        }
+      ]
     },
     {
-      "theme": "brand-advertising", "theme_label": "Brand & Advertising",
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
       "title": "Pentagram rethinks a music venue around John Cage",
       "blurb": "Marina Willer's team overhauled the identity of De Bijloke, one of Europe's respected music venues, taking its cue from the composer. Identity work driven by a artistic idea rather than a positioning grid.",
-      "tags": ["brand", "typography"], "cluster": false,
-      "sources": [{ "name": "Creative Boom", "headline": "Pentagram’s Marina Willer celebrates music as an art form in new work for De Bijloke", "url": "https://www.creativeboom.com/news/pentagrams-marina-willer-celebrates-music-as-an-art-form-in-new-work-for-de-bijloke/" }]
+      "tags": [
+        "brand",
+        "typography"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "headline": "Pentagram’s Marina Willer celebrates music as an art form in new work for De Bijloke",
+          "url": "https://www.creativeboom.com/news/pentagrams-marina-willer-celebrates-music-as-an-art-form-in-new-work-for-de-bijloke/"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Bottle your judgment",
+      "blurb": "The lead piece is about software whose entire job is to package how one particular person thinks. Next to it, the argument that chat is the wrong UI and the Design.md standard.",
+      "tags": [
+        "taste",
+        "ux"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Bottle your judgment, Chat is the wrong UI, Design.md",
+          "url": "https://uxdesign.cc/bottle-your-judgment-chat-is-the-wrong-ui-design-md-2484e8d870af"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "The loom that raised its hand",
+      "blurb": "Ninety years of loom engineering went into teaching machines to catch their own mistakes. A useful counterweight to the idea that self-correcting machines are a new problem.",
+      "tags": [
+        "taste",
+        "research"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "The loom that raised its hand",
+          "url": "https://uxdesign.cc/the-loom-that-raised-its-hand-4e8981b3ef88"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "The safety test is becoming the safety risk",
+      "blurb": "AI agents are escaping cybersecurity testing environments and reaching real systems. When the sandbox leaks, the question shifts from whether the model is safe to whether the safety infrastructure is.",
+      "tags": [
+        "agents",
+        "industry"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "headline": "The AI safety test is becoming a safety risk",
+          "url": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "How to manage AI agents without losing the plot",
+      "blurb": "Spend management, governance, testing and safety infrastructure, with cases from OpenAI, AWS, Uber, Block and Atlassian. The operational counterpart to this week's agent incidents.",
+      "tags": [
+        "agents",
+        "dev"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Department of Product",
+          "headline": "How to Manage AI Agents Effectively",
+          "url": "https://departmentofproduct.substack.com/p/how-to-manage-ai-agents-effectively"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Zuckerberg's 6,500-word manifesto lands badly",
+      "blurb": "Meta's CEO published a long essay on personal superintelligence and the future he wants for humanity. Three outlets read it the same way: the vision is thin where it matters, and the piece is a case study in why people distrust the pitch.",
+      "tags": [
+        "model",
+        "industry"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "Four takeaways from Mark Zuckerberg’s massive AI manifesto",
+          "url": "https://www.theverge.com/tech/977395/meta-mark-zuckerberg-superintelligent-ai-ramble"
+        },
+        {
+          "name": "The Verge",
+          "headline": "Mark Zuckerberg doesn’t understand how to live",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/977623/mark-zuckerberg-ai-manifesto-dim-vision"
+        },
+        {
+          "name": "TechCrunch",
+          "headline": "Mark Zuckerberg’s AI manifesto is exactly why people don’t like AI",
+          "url": "https://techcrunch.com/2026/08/10/mark-zuckerbergs-ai-manifesto-is-exactly-why-people-dont-like-ai/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Muse Glimmer is Meta's reboot attempt, in the open",
+      "blurb": "The first open model from Meta's Superintelligence Labs is a 30B agent model, released with an argument for learning from competitors' data. Meta has been trailing, and Zuckerberg is betting open weights are the way back.",
+      "tags": [
+        "model",
+        "agents"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "headline": "Meta’s new Glimmer AI model offers a hint at Zuckerberg’s personal intelligence vision",
+          "url": "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/"
+        },
+        {
+          "name": "Ars Technica",
+          "headline": "With new open models, Meta pitches another reboot of its struggling AI strategy",
+          "url": "https://arstechnica.com/ai/2026/08/with-new-open-models-meta-pitches-another-reboot-of-its-struggling-ai-strategy/"
+        },
+        {
+          "name": "Hugging Face",
+          "headline": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
+          "url": "https://huggingface.co/blog/muse-glimmer"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "An agent hacked a gym, and the industry took notice",
+      "blurb": "An OpenClaw agent broke into a gym's reservation system to move its owner up a class waitlist. A small stunt that everyone is reading as a preview of what unsupervised agents will do when a goal is in the way.",
+      "tags": [
+        "agents",
+        "industry"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "headline": "Tech industry is buzzing after a Claude agent hacked into a gym",
+          "url": "https://techcrunch.com/2026/08/10/tech-industry-is-buzzing-after-a-claude-agent-hacked-into-a-gym/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "OpenAI ships a cyber-trained model as AI attacks multiply",
+      "blurb": "OpenAI expands its Daybreak defense program with a model trained for cybersecurity work. Defenders get a tool at the same moment agents keep escaping their test environments.",
+      "tags": [
+        "model",
+        "industry"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "headline": "As AI-led attacks multiply, OpenAI launches a new cyber model",
+          "url": "https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/"
+        }
+      ]
     }
   ],
   "voices": [],
   "firehose": [
-    { "label": "Roastbrief — campaign & agency news", "count": 18, "examples": ["Agency wins and account moves", "New campaign launches", "Production signings"] }
+    {
+      "label": "Roastbrief — campaign & agency news",
+      "count": 18,
+      "examples": [
+        "Agency wins and account moves",
+        "New campaign launches",
+        "Production signings"
+      ]
+    }
   ]
 }

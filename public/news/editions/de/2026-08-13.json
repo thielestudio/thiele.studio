@@ -1,105 +1,265 @@
 {
-  "meta": { "generated_for": "2026-08-13", "window": "2026-08-11..2026-08-13", "lang": "de", "status": "draft", "sources_scanned": 42, "items_in_window": 166, "note": "Trainingsdaten waren das durchgehende Thema: ein Opt-out auf einer Plattform, eine Schrift gegen Crawler, Agenten im Produktionsalltag." },
+  "meta": {
+    "generated_for": "2026-08-13",
+    "window": "2026-08-11..2026-08-13",
+    "lang": "de",
+    "sources_scanned": 42,
+    "items_in_window": 166,
+    "note": "Trainingsdaten waren das durchgehende Thema: ein Opt-out auf einer Plattform, eine Schrift gegen Crawler, Agenten im Produktionsalltag."
+  },
   "stories": [
     {
-      "theme": "ai-models", "theme_label": "AI-Modelle",
-      "title": "Twitch hat Amazons KI jahrelang trainiert, jetzt gibt es ein Opt-out",
-      "blurb": "Streams, VODs, Clips, Chats und Kanalbilder sind in die generativen Modelle geflossen, künftig lässt sich das abwählen. Der Produktchef von Twitch sagte den entscheidenden Satz selbst: wäre es Opt-in, würde niemand zustimmen.",
-      "tags": ["policy", "industry"], "cluster": true,
-      "sources": [
-        { "name": "The Verge", "headline": "Twitch streamers can now opt out from training Amazon's AI", "url": "https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai" },
-        { "name": "TechCrunch", "headline": "Amazon will train on Twitch streamers' content by default, unless they opt out", "url": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/" },
-        { "name": "Ars Technica", "headline": "Twitch content has trained Amazon AI for years, but users can opt out now", "url": "https://arstechnica.com/ai/2026/08/twitch-content-has-trained-amazon-ai-for-years-but-users-can-opt-out-now/" }
-      ]
-    },
-    {
-      "theme": "ai-models", "theme_label": "AI-Modelle",
-      "title": "Eine Schrift als Waffe gegen Crawler",
-      "blurb": "ShieldFont verwandelt gewöhnliche Webseiten in Unsinn für KI-Scraper, für Menschen bleiben sie lesbar. Typografie als Infrastruktur, nicht als Dekoration.",
-      "tags": ["typography", "policy"], "cluster": false,
-      "sources": [{ "name": "Ars Technica", "headline": "The web's newest weapon against AI scrapers is a font", "url": "https://arstechnica.com/ai/2026/08/new-font-turns-ordinary-webpages-into-nonsense-for-ai-scrapers/" }]
-    },
-    {
-      "theme": "ai-models", "theme_label": "AI-Modelle",
-      "title": "Grok Bot will ein Teammitglied sein, dem man Arbeit zuweist",
-      "blurb": "SpaceXAI startet dauerhaft laufende Agenten, die sich eine Cloud-Umgebung teilen, sich in vorhandene Werkzeuge einloggen und erst nach erledigter Aufgabe zurückmelden. Nach Anthropic und OpenAI zieht damit der dritte Anbieter nach.",
-      "tags": ["model", "design-tools"], "cluster": true,
-      "sources": [
-        { "name": "The Verge", "headline": "Grok is now an AI 'teammate' you can assign work", "url": "https://www.theverge.com/ai-artificial-intelligence/978666/spacexai-grok-bot-ai-agent-beta-launch" },
-        { "name": "t3n", "headline": "Grok Bot vorgestellt: Das kann der neue KI-Agent von Elon Musks KI-Firma", "url": "https://t3n.de/news/grok-bot-vorgestellt-das-kann-der-neue-ki-agent-von-elon-musks-ki-firma-1757749/" }
-      ]
-    },
-    {
-      "theme": "ai-models", "theme_label": "AI-Modelle",
-      "title": "Worldclaw baut komplette 3D-Welten aus einer Zeile",
-      "blurb": "Das Werkzeug erzeugt ganze Szenen aus kurzen Prompts und kombiniert mehrere Techniken, damit die Ergebnisse nicht wie zusammengewürfelte Versatzstücke wirken. Genau daran entscheidet sich, ob so etwas im Produktionsalltag taugt.",
-      "tags": ["design-tools", "model"], "cluster": false,
-      "sources": [{ "name": "t3n", "headline": "Mit nur einer Zeile: Dieses KI-Tool erschafft per Prompt komplette 3D-Welten", "url": "https://t3n.de/news/ki-tool-3d-welten-einzeiliger-prompt-1757702/" }]
-    },
-    {
-      "theme": "design-practice", "theme_label": "Design-Praxis",
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
       "title": "„Jeder kann designen“ kommt zurück, diesmal von innen",
       "blurb": "Der Satz, den Designer seit Jahren fürchten, taucht wieder auf. Das Argument dreht ihn um: Designer müssen nicht mehr auf Erlaubnis warten.",
-      "tags": ["taste", "industry"], "cluster": false,
-      "sources": [{ "name": "UX Collective", "headline": "Design's dreaded phrase is coming back. This time we're in control.", "url": "https://uxdesign.cc/designs-dreaded-phrase-is-coming-back-this-time-we-re-in-control-ab0c6996dc1e?source=rss----138adf9c44c---4" }]
+      "tags": [
+        "taste",
+        "industry"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Design's dreaded phrase is coming back. This time we're in control.",
+          "url": "https://uxdesign.cc/designs-dreaded-phrase-is-coming-back-this-time-we-re-in-control-ab0c6996dc1e?source=rss----138adf9c44c---4"
+        }
+      ]
     },
     {
-      "theme": "design-practice", "theme_label": "Design-Praxis",
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
       "title": "Good Screens fragt, wie ausgewogene Technik aussähe",
       "blurb": "Der Report von It's Nice That Insights beschreibt eine wachsende Nachfrage nach Geräten, die etwas Gutes bewirken, und fragt, wie Marken darauf gestalterisch antworten. Ein Briefing für alle, die Aufmerksamkeit gestalten.",
-      "tags": ["ux", "brand"], "cluster": false,
-      "sources": [{ "name": "It's Nice That", "headline": "How can tech serve us better? Insights explores in new report, Good Screens", "url": "https://www.itsnicethat.com/features/good-screens-report-its-nice-that-insights-120826" }]
+      "tags": [
+        "ux",
+        "brand"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "headline": "How can tech serve us better? Insights explores in new report, Good Screens",
+          "url": "https://www.itsnicethat.com/features/good-screens-report-its-nice-that-insights-120826"
+        }
+      ]
     },
     {
-      "theme": "craft-judgment", "theme_label": "Handwerk & Urteil",
-      "title": "Geliehenes Vertrauen ist die Währung, die gerade ausgegeben wird",
-      "blurb": "Der vertraute Name ist die Maske, die Maschine darunter merkt nicht, wenn sie falsch liegt. Je mehr wir dem Namen vertrauen, desto weniger prüfen wir, und desto mehr hat dieser Name zu verlieren.",
-      "tags": ["taste", "brand"], "cluster": false,
-      "sources": [{ "name": "UX Collective", "headline": "We're gorging on borrowed trust and it's going to cost us.", "url": "https://uxdesign.cc/were-gorging-on-borrowed-trust-and-it-s-going-to-cost-us-2bc3f918caf5?source=rss----138adf9c44c---4" }]
-    },
-    {
-      "theme": "craft-judgment", "theme_label": "Handwerk & Urteil",
-      "title": "Ein Förderprogramm, das die Moderne ablösen soll",
-      "blurb": "Stripe-Chef Patrick Collison und der Ökonom Tyler Cowen finanzieren den Versuch, einen neuen Look für das 21. Jahrhundert zu definieren. Geschmack als gefördertes Projekt, bezahlt aus der Techbranche.",
-      "tags": ["taste", "industry"], "cluster": false,
-      "sources": [{ "name": "Fast Company", "headline": "What should the future look like? Inside the tech-funded program to create a new aesthetic", "url": "https://www.fastcompany.com/91581814/what-should-the-future-look-like-inside-the-tech-funded-program-to-create-a-new-aesthetic" }]
-    },
-    {
-      "theme": "brand-advertising", "theme_label": "Brand & Advertising",
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
       "title": "D'Addario gibt zu, dass die Musik im Werbefilm von Suno kam",
       "blurb": "Fast zwei Wochen hat der Saitenhersteller bestritten und wechselnde Erklärungen angeboten, angefangen bei angeblich schlechten Exporten, während sich die Belege häuften. Eine Marke, die von Instrumenten lebt, wurde beim Generieren erwischt.",
-      "tags": ["brand", "policy"], "cluster": false,
-      "sources": [{ "name": "The Verge", "headline": "Guitar company D'Addario admits that AI music was used in a promotional video", "url": "https://www.theverge.com/ai-artificial-intelligence/978982/daddario-guitar-ai-music-suno" }]
+      "tags": [
+        "brand",
+        "policy"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "Guitar company D'Addario admits that AI music was used in a promotional video",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/978982/daddario-guitar-ai-music-suno"
+        }
+      ]
     },
     {
-      "theme": "brand-advertising", "theme_label": "Brand & Advertising",
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
       "title": "Recup verschiebt die Position weg von Nachhaltigkeit",
       "blurb": "Zum zehnjährigen Bestehen erneuert das Mehrwegsystem seinen Auftritt. Im Kern steht nicht die Optik, sondern die veränderte Positionierung: weg vom Nachhaltigkeitsargument, hin zum alltäglichen To-go-Moment.",
-      "tags": ["brand"], "cluster": false,
-      "sources": [{ "name": "Design Tagebuch", "headline": "Recup erneuert Markenauftritt", "url": "https://www.designtagebuch.de/recup-erneuert-markenauftritt/" }]
+      "tags": [
+        "brand"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "headline": "Recup erneuert Markenauftritt",
+          "url": "https://www.designtagebuch.de/recup-erneuert-markenauftritt/"
+        }
+      ]
     },
     {
-      "theme": "industry-market", "theme_label": "Industrie & Markt",
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Geliehenes Vertrauen ist die Währung, die gerade ausgegeben wird",
+      "blurb": "Der vertraute Name ist die Maske, die Maschine darunter merkt nicht, wenn sie falsch liegt. Je mehr wir dem Namen vertrauen, desto weniger prüfen wir, und desto mehr hat dieser Name zu verlieren.",
+      "tags": [
+        "taste",
+        "brand"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "We're gorging on borrowed trust and it's going to cost us.",
+          "url": "https://uxdesign.cc/were-gorging-on-borrowed-trust-and-it-s-going-to-cost-us-2bc3f918caf5?source=rss----138adf9c44c---4"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Ein Förderprogramm, das die Moderne ablösen soll",
+      "blurb": "Stripe-Chef Patrick Collison und der Ökonom Tyler Cowen finanzieren den Versuch, einen neuen Look für das 21. Jahrhundert zu definieren. Geschmack als gefördertes Projekt, bezahlt aus der Techbranche.",
+      "tags": [
+        "taste",
+        "industry"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Fast Company",
+          "headline": "What should the future look like? Inside the tech-funded program to create a new aesthetic",
+          "url": "https://www.fastcompany.com/91581814/what-should-the-future-look-like-inside-the-tech-funded-program-to-create-a-new-aesthetic"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
       "title": "Erfahrene Kreative gehen früher als geplant",
       "blurb": "Creative Boom greift eine Debatte auf, die gerade durch die Branche läuft: Senior-Kreative planen ihren Ausstieg vor der Zeit. Wohin die Erfahrung geht, wenn sie geht, bleibt offen.",
-      "tags": ["industry"], "cluster": false,
-      "sources": [{ "name": "Creative Boom", "headline": "Is there a retirement crisis in the creative industry?", "url": "https://www.creativeboom.com/tips/is-there-a-retirement-crisis-in-the-creative-industry/" }]
+      "tags": [
+        "industry"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "headline": "Is there a retirement crisis in the creative industry?",
+          "url": "https://www.creativeboom.com/tips/is-there-a-retirement-crisis-in-the-creative-industry/"
+        }
+      ]
     },
     {
-      "theme": "industry-market", "theme_label": "Industrie & Markt",
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
       "title": "Die Neuzugänge im August deuten auf einen Boden",
       "blurb": "Die monatliche Übersicht über Wechsel, Launches und gewonnene Etats fällt besser aus als lange, das Fazit der Redaktion ist verhalten optimistisch. Ein Monat ist kein Trend, aber ein Datenpunkt.",
-      "tags": ["industry"], "cluster": false,
-      "sources": [{ "name": "Creative Boom", "headline": "Booms & Shakes: Why August's hires and launches might suggest the worst is behind us", "url": "https://www.creativeboom.com/news/booms-shakes-augusts-biggest-hires-launches-and-wins-from-across-the-industry/" }]
+      "tags": [
+        "industry"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "headline": "Booms & Shakes: Why August's hires and launches might suggest the worst is behind us",
+          "url": "https://www.creativeboom.com/news/booms-shakes-augusts-biggest-hires-launches-and-wins-from-across-the-industry/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Twitch hat Amazons KI jahrelang trainiert, jetzt gibt es ein Opt-out",
+      "blurb": "Streams, VODs, Clips, Chats und Kanalbilder sind in die generativen Modelle geflossen, künftig lässt sich das abwählen. Der Produktchef von Twitch sagte den entscheidenden Satz selbst: wäre es Opt-in, würde niemand zustimmen.",
+      "tags": [
+        "policy",
+        "industry"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "Twitch streamers can now opt out from training Amazon's AI",
+          "url": "https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai"
+        },
+        {
+          "name": "TechCrunch",
+          "headline": "Amazon will train on Twitch streamers' content by default, unless they opt out",
+          "url": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/"
+        },
+        {
+          "name": "Ars Technica",
+          "headline": "Twitch content has trained Amazon AI for years, but users can opt out now",
+          "url": "https://arstechnica.com/ai/2026/08/twitch-content-has-trained-amazon-ai-for-years-but-users-can-opt-out-now/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Eine Schrift als Waffe gegen Crawler",
+      "blurb": "ShieldFont verwandelt gewöhnliche Webseiten in Unsinn für KI-Scraper, für Menschen bleiben sie lesbar. Typografie als Infrastruktur, nicht als Dekoration.",
+      "tags": [
+        "typography",
+        "policy"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "headline": "The web's newest weapon against AI scrapers is a font",
+          "url": "https://arstechnica.com/ai/2026/08/new-font-turns-ordinary-webpages-into-nonsense-for-ai-scrapers/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Grok Bot will ein Teammitglied sein, dem man Arbeit zuweist",
+      "blurb": "SpaceXAI startet dauerhaft laufende Agenten, die sich eine Cloud-Umgebung teilen, sich in vorhandene Werkzeuge einloggen und erst nach erledigter Aufgabe zurückmelden. Nach Anthropic und OpenAI zieht damit der dritte Anbieter nach.",
+      "tags": [
+        "model",
+        "design-tools"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "Grok is now an AI 'teammate' you can assign work",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/978666/spacexai-grok-bot-ai-agent-beta-launch"
+        },
+        {
+          "name": "t3n",
+          "headline": "Grok Bot vorgestellt: Das kann der neue KI-Agent von Elon Musks KI-Firma",
+          "url": "https://t3n.de/news/grok-bot-vorgestellt-das-kann-der-neue-ki-agent-von-elon-musks-ki-firma-1757749/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Worldclaw baut komplette 3D-Welten aus einer Zeile",
+      "blurb": "Das Werkzeug erzeugt ganze Szenen aus kurzen Prompts und kombiniert mehrere Techniken, damit die Ergebnisse nicht wie zusammengewürfelte Versatzstücke wirken. Genau daran entscheidet sich, ob so etwas im Produktionsalltag taugt.",
+      "tags": [
+        "design-tools",
+        "model"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "t3n",
+          "headline": "Mit nur einer Zeile: Dieses KI-Tool erschafft per Prompt komplette 3D-Welten",
+          "url": "https://t3n.de/news/ki-tool-3d-welten-einzeiliger-prompt-1757702/"
+        }
+      ]
     }
   ],
   "voices": [
     {
-      "name": "Brad Frost", "host": "bradfrost.com", "topic": "design-practice",
-      "items": [{ "title": "Just You Wait, by Chris Shiflett", "url": "https://bradfrost.com/links/post/just-you-wait-by-chris-shiflett/", "date": "2026-08-11" }]
+      "name": "Brad Frost",
+      "host": "bradfrost.com",
+      "topic": "design-practice",
+      "items": [
+        {
+          "title": "Just You Wait, by Chris Shiflett",
+          "url": "https://bradfrost.com/links/post/just-you-wait-by-chris-shiflett/",
+          "date": "2026-08-11"
+        }
+      ]
     }
   ],
   "firehose": [
-    { "label": "Roastbrief — Kampagnen & Agentur-Meldungen", "count": 25, "examples": ["AIM macht Only Music zur neuen Markenplattform, von Fenton Stephens", "Die virale Wasserflasche von The Ordinary wird Teil des festen Sortiments", "Gravity Global beruft Jennifer Coulson zur Chief Communications Officer"] }
+    {
+      "label": "Roastbrief — Kampagnen & Agentur-Meldungen",
+      "count": 25,
+      "examples": [
+        "AIM macht Only Music zur neuen Markenplattform, von Fenton Stephens",
+        "Die virale Wasserflasche von The Ordinary wird Teil des festen Sortiments",
+        "Gravity Global beruft Jennifer Coulson zur Chief Communications Officer"
+      ]
+    }
   ]
 }

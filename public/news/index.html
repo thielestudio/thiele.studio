@@ -124,23 +124,23 @@ const $=s=>document.querySelector(s);
 const esc=s=>(s==null?"":String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 const STR={
-  en:{ topics:"Topics", voices:"Voices", all:"All", edition:"Edition", draft:"draft",
+  en:{ topics:"Topics", voices:"Voices", all:"All", edition:"Edition",
        sources:n=>`${n} source${n>1?"s":""} · view headlines`, multi:"corroborated · view headlines", badge:n=>`${n} sources`,
        noTopic:"Nothing in this filter.", noVoice:"No voice in this filter.",
        voiceNote:"Independent writers publish infrequently. Some days this axis is thin; over a week it fills up.",
        foot:"PULSE · AI × Design, daily digest from curated sources.", loadFail:"Could not load editions." },
-  de:{ topics:"Themen", voices:"Stimmen", all:"Alle", edition:"Ausgabe", draft:"Entwurf",
+  de:{ topics:"Themen", voices:"Stimmen", all:"Alle", edition:"Ausgabe",
        sources:n=>`${n} Quelle${n>1?"n":""} · Headlines ansehen`, multi:"mehrfach belegt · Headlines ansehen", badge:n=>`${n} Quellen`,
        noTopic:"Kein Thema in diesem Filter.", noVoice:"Keine Stimme in diesem Filter.",
        voiceNote:"Denker-Feeds sind niederfrequent. An manchen Tagen ist die Achse dünn, über die Woche füllt sie sich.",
        foot:"PULSE · AI × Design, täglich verdichtet aus kuratierten Quellen.", loadFail:"Konnte Ausgaben nicht laden." }
 };
 const THEMES=[
-  {id:"ai-models",     en:"AI Models",          de:"AI-Modelle"},
   {id:"design-practice",en:"Design Practice",   de:"Design-Praxis"},
-  {id:"craft-judgment",en:"Craft & Judgment",   de:"Handwerk & Urteil"},
   {id:"brand-advertising",en:"Brand & Advertising",de:"Brand & Advertising"},
-  {id:"industry-market",en:"Industry & Market", de:"Industrie & Markt"}
+  {id:"craft-judgment",en:"Craft & Judgment",   de:"Handwerk & Urteil"},
+  {id:"industry-market",en:"Industry & Market", de:"Industrie & Markt"},
+  {id:"ai-models",     en:"AI Models (+Tools)", de:"AI-Modelle (+Tools)"}
 ];
 
 let state={lang:"en",lens:"topics",topic:"all",edition:null,index:null};
@@ -174,7 +174,7 @@ async function loadEdition(date){
     state.edition=ed; state.topic="all";
     const meta=state.index.editions.find(e=>e.date===date);
     const lbl=(meta&&meta.label&&meta.label[state.lang])||date;
-    $("#edLabel").textContent=`${t().edition} ${lbl}`+(ed.meta&&ed.meta.status==="draft"?` · ${t().draft}`:"");
+    $("#edLabel").textContent=`${t().edition} ${lbl}`;
     $("#archive").value=date;
     renderChrome(); renderTopics(); render();
   }catch(e){ $("#edLabel").textContent=t().loadFail; }

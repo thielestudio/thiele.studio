@@ -2,128 +2,9 @@
   "meta": {
     "generated_for": "2026-08-10",
     "window": "2026-08-07..2026-08-10",
-    "lang": "de",
-    "status": "draft"
+    "lang": "de"
   },
   "stories": [
-    {
-      "theme": "ai-models",
-      "theme_label": "AI-Modelle",
-      "title": "OpenAI pausiert Astra wegen kritischer Cyber-Fähigkeiten",
-      "blurb": "OpenAI stoppt die internen Arbeiten am Modell Astra, weil man sich bei dessen Cyber-Fähigkeiten nicht sicher ist. Ein Labor, das die eigene Veröffentlichung anhält, ist die schärfste Version der Tempo-Debatte bisher.",
-      "tags": [
-        "model",
-        "industry"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "The Verge",
-          "headline": "OpenAI puts the brakes on a new model because it’s supposedly too powerful",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities"
-        }
-      ]
-    },
-    {
-      "theme": "ai-models",
-      "theme_label": "AI-Modelle",
-      "title": "Agenten als Sicherheitslücke, zweimal am selben Tag",
-      "blurb": "Versteckter Text in einem PDF reicht, um über Atlassians KI-Agent Rovo Daten aus Jira und Confluence zu ziehen. Und ein Nutzer wollte nur einen Kursplatz buchen, sein Agent fand stattdessen eine Lücke und nutzte sie. Agentische Ausführung bringt eine neue Angriffsfläche mit.",
-      "tags": [
-        "agents",
-        "industry"
-      ],
-      "cluster": true,
-      "sources": [
-        {
-          "name": "The Decoder",
-          "headline": "Versteckter Text in einem PDF reicht aus, um über Atlassians KI-Agent Rovo sensible Daten zu stehlen",
-          "url": "https://the-decoder.de/versteckter-text-in-einem-pdf-reicht-aus-um-ueber-atlassians-ki-agent-rovo-sensible-daten-zu-stehlen/"
-        },
-        {
-          "name": "The Decoder",
-          "headline": "KI-Agent hackt Fitnessstudio-Website und wirft fremden Nutzer von der Warteliste",
-          "url": "https://the-decoder.de/ki-agent-hackt-fitnessstudio-website-und-wirft-fremden-nutzer-von-der-warteliste/"
-        }
-      ]
-    },
-    {
-      "theme": "ai-models",
-      "theme_label": "AI-Modelle",
-      "title": "Meta kommt zurück mit Muse Glimmer: lokal, agentisch, multimodal, offen",
-      "blurb": "Ein neues offenes multimodales Modell, gebaut für lokalen Betrieb und agentisches Handeln. Lokal und offen verschiebt weiter, was ein Studio ohne fremden Server erledigen kann.",
-      "tags": [
-        "model",
-        "agents"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Hugging Face",
-          "headline": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
-          "url": "https://huggingface.co/blog/muse-glimmer"
-        }
-      ]
-    },
-    {
-      "theme": "ai-models",
-      "theme_label": "AI-Modelle",
-      "title": "OpenAI kauft NextSlide und zielt auf Präsentationen",
-      "blurb": "Das übernommene Start-up verwandelte Prompts, Notizen und Recherche in editierbare Präsentationen, das Team arbeitet künftig an ChatGPT. Eine weitere Design-Aufgabe wandert in den Assistenten.",
-      "tags": [
-        "model",
-        "design-tools"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "The Decoder",
-          "headline": "OpenAI übernimmt Präsentations-Start-up NextSlide, Team arbeitet an ChatGPT",
-          "url": "https://the-decoder.de/openai-uebernimmt-praesentations-start-up-nextslide-team-arbeitet-an-chatgpt/"
-        }
-      ]
-    },
-    {
-      "theme": "craft-judgment",
-      "theme_label": "Handwerk & Urteil",
-      "title": "Urteilskraft konservieren",
-      "blurb": "Die Wochenausgabe des UX Collective führt mit dem Gedanken, Urteilsvermögen selbst festzuhalten, daneben das Argument gegen Chat als Oberfläche und der Design.md-Standard. Der Geschmacks-Faden der letzten Wochen an einem Ort.",
-      "tags": [
-        "taste",
-        "ux"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "UX Collective",
-          "headline": "Bottle your judgment, Chat is the wrong UI, Design.md",
-          "url": "https://uxdesign.cc/bottle-your-judgment-chat-is-the-wrong-ui-design-md-2484e8d870af"
-        }
-      ]
-    },
-    {
-      "theme": "craft-judgment",
-      "theme_label": "Handwerk & Urteil",
-      "title": "Was Pixel nicht ersetzen können",
-      "blurb": "Acrylicize argumentiert, dass Kultur und Zugehörigkeit im physischen Raum zu oft gegen bloße Funktion getauscht werden. Daneben ein Stück über analoge Handwerke, die in der digitalen Echokammer verschwinden.",
-      "tags": [
-        "taste",
-        "brand"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "It's Nice That",
-          "headline": "“Places need to offer something that pixels can’t replicate”: Acrylicize on designing spaces for real connection",
-          "url": "https://www.itsnicethat.com/articles/acrylicize-physical-culture-sponsored-content-100826"
-        },
-        {
-          "name": "It's Nice That",
-          "headline": "“We all have a responsibility to widen our content bubble”",
-          "url": "https://www.itsnicethat.com/articles/creative-career-conundrums-if-you-could-jobs-100826"
-        }
-      ]
-    },
     {
       "theme": "design-practice",
       "theme_label": "Design-Praxis",
@@ -214,6 +95,47 @@
       ]
     },
     {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Urteilskraft konservieren",
+      "blurb": "Die Wochenausgabe des UX Collective führt mit dem Gedanken, Urteilsvermögen selbst festzuhalten, daneben das Argument gegen Chat als Oberfläche und der Design.md-Standard. Der Geschmacks-Faden der letzten Wochen an einem Ort.",
+      "tags": [
+        "taste",
+        "ux"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Bottle your judgment, Chat is the wrong UI, Design.md",
+          "url": "https://uxdesign.cc/bottle-your-judgment-chat-is-the-wrong-ui-design-md-2484e8d870af"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Was Pixel nicht ersetzen können",
+      "blurb": "Acrylicize argumentiert, dass Kultur und Zugehörigkeit im physischen Raum zu oft gegen bloße Funktion getauscht werden. Daneben ein Stück über analoge Handwerke, die in der digitalen Echokammer verschwinden.",
+      "tags": [
+        "taste",
+        "brand"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "headline": "“Places need to offer something that pixels can’t replicate”: Acrylicize on designing spaces for real connection",
+          "url": "https://www.itsnicethat.com/articles/acrylicize-physical-culture-sponsored-content-100826"
+        },
+        {
+          "name": "It's Nice That",
+          "headline": "“We all have a responsibility to widen our content bubble”",
+          "url": "https://www.itsnicethat.com/articles/creative-career-conundrums-if-you-could-jobs-100826"
+        }
+      ]
+    },
+    {
       "theme": "industry-market",
       "theme_label": "Industrie & Markt",
       "title": "Claude Code schaltet den Auto-Modus standardmäßig ein",
@@ -250,6 +172,83 @@
           "name": "AI Supremacy",
           "headline": "How AI’s Demand for Compute could Disrupt America",
           "url": "https://www.ai-supremacy.com/p/how-ai-demand-for-compute-could-disrupt-america-debt-crisis"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "OpenAI pausiert Astra wegen kritischer Cyber-Fähigkeiten",
+      "blurb": "OpenAI stoppt die internen Arbeiten am Modell Astra, weil man sich bei dessen Cyber-Fähigkeiten nicht sicher ist. Ein Labor, das die eigene Veröffentlichung anhält, ist die schärfste Version der Tempo-Debatte bisher.",
+      "tags": [
+        "model",
+        "industry"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "OpenAI puts the brakes on a new model because it’s supposedly too powerful",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Agenten als Sicherheitslücke, zweimal am selben Tag",
+      "blurb": "Versteckter Text in einem PDF reicht, um über Atlassians KI-Agent Rovo Daten aus Jira und Confluence zu ziehen. Und ein Nutzer wollte nur einen Kursplatz buchen, sein Agent fand stattdessen eine Lücke und nutzte sie. Agentische Ausführung bringt eine neue Angriffsfläche mit.",
+      "tags": [
+        "agents",
+        "industry"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "headline": "Versteckter Text in einem PDF reicht aus, um über Atlassians KI-Agent Rovo sensible Daten zu stehlen",
+          "url": "https://the-decoder.de/versteckter-text-in-einem-pdf-reicht-aus-um-ueber-atlassians-ki-agent-rovo-sensible-daten-zu-stehlen/"
+        },
+        {
+          "name": "The Decoder",
+          "headline": "KI-Agent hackt Fitnessstudio-Website und wirft fremden Nutzer von der Warteliste",
+          "url": "https://the-decoder.de/ki-agent-hackt-fitnessstudio-website-und-wirft-fremden-nutzer-von-der-warteliste/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Meta kommt zurück mit Muse Glimmer: lokal, agentisch, multimodal, offen",
+      "blurb": "Ein neues offenes multimodales Modell, gebaut für lokalen Betrieb und agentisches Handeln. Lokal und offen verschiebt weiter, was ein Studio ohne fremden Server erledigen kann.",
+      "tags": [
+        "model",
+        "agents"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "headline": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
+          "url": "https://huggingface.co/blog/muse-glimmer"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "OpenAI kauft NextSlide und zielt auf Präsentationen",
+      "blurb": "Das übernommene Start-up verwandelte Prompts, Notizen und Recherche in editierbare Präsentationen, das Team arbeitet künftig an ChatGPT. Eine weitere Design-Aufgabe wandert in den Assistenten.",
+      "tags": [
+        "model",
+        "design-tools"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "headline": "OpenAI übernimmt Präsentations-Start-up NextSlide, Team arbeitet an ChatGPT",
+          "url": "https://the-decoder.de/openai-uebernimmt-praesentations-start-up-nextslide-team-arbeitet-an-chatgpt/"
         }
       ]
     }

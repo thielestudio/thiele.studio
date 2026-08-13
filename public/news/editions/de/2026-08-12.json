@@ -1,109 +1,275 @@
 {
-  "meta": { "generated_for": "2026-08-12", "window": "2026-08-10..2026-08-12", "lang": "de", "status": "draft", "sources_scanned": 42, "items_in_window": 155, "note": "Tag der Herkunftsnachweise: Wasserzeichen, Kamera-Signatur und Plattform-Kennzeichnung kamen gleichzeitig." },
+  "meta": {
+    "generated_for": "2026-08-12",
+    "window": "2026-08-10..2026-08-12",
+    "lang": "de",
+    "sources_scanned": 42,
+    "items_in_window": 155,
+    "note": "Tag der Herkunftsnachweise: Wasserzeichen, Kamera-Signatur und Plattform-Kennzeichnung kamen gleichzeitig."
+  },
   "stories": [
     {
-      "theme": "ai-models", "theme_label": "AI-Modelle",
-      "title": "Claude bekommt unsichtbare Wasserzeichen in Text und Bild",
-      "blurb": "Anthropic versieht generierte Texte künftig mit maschinenlesbaren Markierungen und signiert Dateien nach dem C2PA-Standard. Grund sind die europäischen Transparenzvorgaben, die Regelung gilt weltweit und wird auch auf ältere Modelle ausgeweitet.",
-      "tags": ["model", "policy"], "cluster": true,
-      "sources": [
-        { "name": "The Verge", "headline": "Claude will apply invisible watermarks to AI text and images", "url": "https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images" },
-        { "name": "The Decoder", "headline": "KI-Texterkennung: Anthropic versieht Claude mit unsichtbarem Wasserzeichen", "url": "https://the-decoder.de/ki-texterkennung-anthropic-versieht-claude-mit-unsichtbarem-wasserzeichen/" },
-        { "name": "t3n", "headline": "Keine Chance für Schummler: Claude bekommt jetzt ein unsichtbares Wasserzeichen", "url": "https://t3n.de/news/keine-chance-fuer-schummler-claude-bekommt-jetzt-ein-unsichtbares-wasserzeichen-1757439/" }
-      ]
-    },
-    {
-      "theme": "ai-models", "theme_label": "AI-Modelle",
-      "title": "Spotify kennzeichnet KI-Künstler und nimmt sie aus den Empfehlungen",
-      "blurb": "Ab Mitte September tragen Profile, die eine KI-generierte Identität darstellen, ein Label. Ihre Musik fällt standardmäßig aus redaktionellen, algorithmischen und personalisierten Empfehlungen heraus. Eine Plattform behandelt synthetische Urheberschaft damit als Verteilungsfrage, nicht nur als Kennzeichnungsfrage.",
-      "tags": ["policy", "industry"], "cluster": true,
-      "sources": [
-        { "name": "The Verge", "headline": "Spotify says it won’t recommend music from AI Personas", "url": "https://www.theverge.com/entertainment/977815/spotify-ai-persona-label-recommendations" },
-        { "name": "TechCrunch", "headline": "Spotify will label AI Persona profiles and exclude their music from recommendations", "url": "https://techcrunch.com/2026/08/11/spotify-will-label-ai-persona-profiles-and-exclude-their-music-from-recommendations/" }
-      ]
-    },
-    {
-      "theme": "ai-models", "theme_label": "AI-Modelle",
-      "title": "Apple arbeitet am Nachweis, dass ein Foto aus einer Kamera stammt",
-      "blurb": "Im iOS-27-Beta finden sich Verweise auf ein System namens Apple Reference Image, das belegen soll, dass eine Aufnahme mit der iPhone-Kamera entstanden ist. Signatur beim Aufnehmen, als Gegenstück zum Wasserzeichen beim Generieren.",
-      "tags": ["policy", "design-tools"], "cluster": false,
-      "sources": [{ "name": "The Verge", "headline": "Apple could help you prove your iPhone photos aren’t deepfakes", "url": "https://www.theverge.com/tech/977921/apple-reference-image-iphone-metadata" }]
-    },
-    {
-      "theme": "ai-models", "theme_label": "AI-Modelle",
-      "title": "Vergiftete Daten als Schutz, und als Risiko",
-      "blurb": "Kreative setzen Data Poisoning ein, um eigene Werke vor KI-Crawlern zu schützen. t3n zeigt die Kehrseite: dieselbe Technik ist ein Angriffsweg auf die IT-Sicherheit.",
-      "tags": ["policy", "model"], "cluster": false,
-      "sources": [{ "name": "t3n", "headline": "KI-Modelle vergiften: Warum Data Poisoning eine wachsende Gefahr für die IT-Sicherheit ist", "url": "https://t3n.de/news/ki-modelle-vergiften-data-poisoning-it-sicherheit-1756214/" }]
-    },
-    {
-      "theme": "industry-market", "theme_label": "Industrie & Markt",
-      "title": "Gemini bei einer Milliarde Nutzern, und 150 Millionen Bildern pro Tag",
-      "blurb": "Google nennt Gemini sein am schnellsten wachsendes Produkt überhaupt, 63 Prozent der Nutzer sprechen mit dem Assistenten. Die Zahl, die für Gestalter zählt, ist eine andere: 150 Millionen generierte Bilder täglich.",
-      "tags": ["industry", "model"], "cluster": true,
-      "sources": [
-        { "name": "The Verge", "headline": "ChatGPT and Gemini both just passed 1 billion users", "url": "https://www.theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users" },
-        { "name": "TechCrunch", "headline": "Google’s Gemini app surges to 1 billion users", "url": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/" },
-        { "name": "Ars Technica", "headline": "Gemini becomes Google’s fastest-growing product ever as it hits 1B users", "url": "https://arstechnica.com/ai/2026/08/google-says-gemini-has-reached-1b-users-faster-than-any-other-google-product/" }
-      ]
-    },
-    {
-      "theme": "industry-market", "theme_label": "Industrie & Markt",
-      "title": "ArtStation und Sketchfab wechseln den Besitzer",
-      "blurb": "Der Verkauf führt zwei Plattformen zusammen, auf denen digitale Künstler ihre Arbeit zeigen und ablegen. Creative Bloq fragt, was die Bündelung über den gesamten kreativen Prozess für die Künstler auf beiden Seiten bedeutet.",
-      "tags": ["industry", "design-tools"], "cluster": false,
-      "sources": [{ "name": "Creative Bloq", "headline": "What does the sale of ArtStation and Sketchfab mean for digital artists?", "url": "https://www.creativebloq.com/art/digital-art/what-does-the-sale-of-artstation-and-sketchfab-mean-for-digital-artists" }]
-    },
-    {
-      "theme": "design-practice", "theme_label": "Design-Praxis",
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
       "title": "Sie verlor ein Geschäft an KI und setzt jetzt auf die Hand",
       "blurb": "Nosheen Ahmed arbeitete zwei Jahrzehnte als Zahnärztin, bevor sie sich Illustratorin nannte. Während KI den Buchmarkt flutet, macht sie handgemachte Arbeit zur Position, nicht zum Rückzugsort.",
-      "tags": ["taste", "industry"], "cluster": false,
-      "sources": [{ "name": "Creative Boom", "headline": "How Nosheen Ahmed lost her side business to AI, and bet her whole career on the human hand", "url": "https://www.creativeboom.com/insight/how-nosheen-ahmed-lost-her-side-business-to-ai-and-bet-her-whole-career-on-the-human-hand/" }]
+      "tags": [
+        "taste",
+        "industry"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "headline": "How Nosheen Ahmed lost her side business to AI, and bet her whole career on the human hand",
+          "url": "https://www.creativeboom.com/insight/how-nosheen-ahmed-lost-her-side-business-to-ai-and-bet-her-whole-career-on-the-human-hand/"
+        }
+      ]
     },
     {
-      "theme": "design-practice", "theme_label": "Design-Praxis",
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
       "title": "Code als Material behandeln",
       "blurb": "Studio Dial gestaltet an einem Tag eine Cocktailkarte und programmiert am nächsten Motion Design für ganze Stadtpläne. Der Satz über Code als Material ist der brauchbare Teil: das Medium wird geformt, nicht bestellt.",
-      "tags": ["design-tools", "taste"], "cluster": false,
-      "sources": [{ "name": "It's Nice That", "headline": "“We treat code as material”: Studio Dial weaves motion design into cocktail menus, Afghan textiles and city plans", "url": "https://www.itsnicethat.com/articles/studio-dial-graphic-design-discover-110826" }]
+      "tags": [
+        "design-tools",
+        "taste"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "headline": "“We treat code as material”: Studio Dial weaves motion design into cocktail menus, Afghan textiles and city plans",
+          "url": "https://www.itsnicethat.com/articles/studio-dial-graphic-design-discover-110826"
+        }
+      ]
     },
     {
-      "theme": "craft-judgment", "theme_label": "Handwerk & Urteil",
-      "title": "Architektur im Dienst der Art Direction",
-      "blurb": "Alexey Kopytin beschreibt den Bau einer stark taktilen Web-Erfahrung und begründet, warum die technische Architektur der Art Direction folgen muss. Diese Abhängigkeit wird selten so ausgeschrieben.",
-      "tags": ["ux", "design-tools"], "cluster": false,
-      "sources": [{ "name": "Smashing Magazine", "headline": "Building Tactile UX: Honoring Intentional Design With Lottie", "url": "https://smashingmagazine.com/2026/08/building-tactile-ux-honoring-intentional-design-lottie/" }]
-    },
-    {
-      "theme": "craft-judgment", "theme_label": "Handwerk & Urteil",
-      "title": "Ferro macht Informationsverlust zum Gestaltungsprinzip",
-      "blurb": "Eine Schriftfamilie, die den Verlust von Information nicht kaschiert, sondern zur Regel erhebt, und dabei eine Brücke zur Renaissance schlägt. Kurz gemeldet bei Slanted.",
-      "tags": ["typography"], "cluster": false,
-      "sources": [{ "name": "Slanted", "headline": "Ferro", "url": "https://www.slanted.de/ferro/" }]
-    },
-    {
-      "theme": "brand-advertising", "theme_label": "Brand & Advertising",
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
       "title": "7UP zeichnet sich zum ersten Mal seit 15 Jahren neu",
       "blurb": "Die größte Änderung an Identität und Geschmack seit 2011. Creative Bloq rechnet mit Streit, das übliche Schicksal einer Massenmarken-Auffrischung.",
-      "tags": ["brand"], "cluster": false,
-      "sources": [{ "name": "Creative Bloq", "headline": "The new 7UP rebrand is bound to be contentious", "url": "https://www.creativebloq.com/design/branding/the-new-7up-rebrand-is-bound-to-be-contentious" }]
+      "tags": [
+        "brand"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "headline": "The new 7UP rebrand is bound to be contentious",
+          "url": "https://www.creativebloq.com/design/branding/the-new-7up-rebrand-is-bound-to-be-contentious"
+        }
+      ]
     },
     {
-      "theme": "brand-advertising", "theme_label": "Brand & Advertising",
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
       "title": "Holstein Kiel ergänzt Storch-Logo und Nord-Claim",
       "blurb": "Der Zweitligist erweitert seinen bestehenden Auftritt um den Claim „Wir sind der Norden“ und ein neues Storch-Zeichen. Erweiterung statt Bruch, was bei Vereinsmarken meist die klügere Variante ist.",
-      "tags": ["brand"], "cluster": false,
-      "sources": [{ "name": "Design Tagebuch", "headline": "Holstein Kiel schärft Markenauftritt mit neuem Storch-Logo und Nord-Claim", "url": "https://www.designtagebuch.de/holstein-kiel-schaerft-markenauftritt-mit-neuem-storch-logo-und-nord-claim/" }]
+      "tags": [
+        "brand"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "headline": "Holstein Kiel schärft Markenauftritt mit neuem Storch-Logo und Nord-Claim",
+          "url": "https://www.designtagebuch.de/holstein-kiel-schaerft-markenauftritt-mit-neuem-storch-logo-und-nord-claim/"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Architektur im Dienst der Art Direction",
+      "blurb": "Alexey Kopytin beschreibt den Bau einer stark taktilen Web-Erfahrung und begründet, warum die technische Architektur der Art Direction folgen muss. Diese Abhängigkeit wird selten so ausgeschrieben.",
+      "tags": [
+        "ux",
+        "design-tools"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Smashing Magazine",
+          "headline": "Building Tactile UX: Honoring Intentional Design With Lottie",
+          "url": "https://smashingmagazine.com/2026/08/building-tactile-ux-honoring-intentional-design-lottie/"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Ferro macht Informationsverlust zum Gestaltungsprinzip",
+      "blurb": "Eine Schriftfamilie, die den Verlust von Information nicht kaschiert, sondern zur Regel erhebt, und dabei eine Brücke zur Renaissance schlägt. Kurz gemeldet bei Slanted.",
+      "tags": [
+        "typography"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Slanted",
+          "headline": "Ferro",
+          "url": "https://www.slanted.de/ferro/"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Gemini bei einer Milliarde Nutzern, und 150 Millionen Bildern pro Tag",
+      "blurb": "Google nennt Gemini sein am schnellsten wachsendes Produkt überhaupt, 63 Prozent der Nutzer sprechen mit dem Assistenten. Die Zahl, die für Gestalter zählt, ist eine andere: 150 Millionen generierte Bilder täglich.",
+      "tags": [
+        "industry",
+        "model"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "ChatGPT and Gemini both just passed 1 billion users",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users"
+        },
+        {
+          "name": "TechCrunch",
+          "headline": "Google’s Gemini app surges to 1 billion users",
+          "url": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/"
+        },
+        {
+          "name": "Ars Technica",
+          "headline": "Gemini becomes Google’s fastest-growing product ever as it hits 1B users",
+          "url": "https://arstechnica.com/ai/2026/08/google-says-gemini-has-reached-1b-users-faster-than-any-other-google-product/"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "ArtStation und Sketchfab wechseln den Besitzer",
+      "blurb": "Der Verkauf führt zwei Plattformen zusammen, auf denen digitale Künstler ihre Arbeit zeigen und ablegen. Creative Bloq fragt, was die Bündelung über den gesamten kreativen Prozess für die Künstler auf beiden Seiten bedeutet.",
+      "tags": [
+        "industry",
+        "design-tools"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "headline": "What does the sale of ArtStation and Sketchfab mean for digital artists?",
+          "url": "https://www.creativebloq.com/art/digital-art/what-does-the-sale-of-artstation-and-sketchfab-mean-for-digital-artists"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Claude bekommt unsichtbare Wasserzeichen in Text und Bild",
+      "blurb": "Anthropic versieht generierte Texte künftig mit maschinenlesbaren Markierungen und signiert Dateien nach dem C2PA-Standard. Grund sind die europäischen Transparenzvorgaben, die Regelung gilt weltweit und wird auch auf ältere Modelle ausgeweitet.",
+      "tags": [
+        "model",
+        "policy"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "Claude will apply invisible watermarks to AI text and images",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images"
+        },
+        {
+          "name": "The Decoder",
+          "headline": "KI-Texterkennung: Anthropic versieht Claude mit unsichtbarem Wasserzeichen",
+          "url": "https://the-decoder.de/ki-texterkennung-anthropic-versieht-claude-mit-unsichtbarem-wasserzeichen/"
+        },
+        {
+          "name": "t3n",
+          "headline": "Keine Chance für Schummler: Claude bekommt jetzt ein unsichtbares Wasserzeichen",
+          "url": "https://t3n.de/news/keine-chance-fuer-schummler-claude-bekommt-jetzt-ein-unsichtbares-wasserzeichen-1757439/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Spotify kennzeichnet KI-Künstler und nimmt sie aus den Empfehlungen",
+      "blurb": "Ab Mitte September tragen Profile, die eine KI-generierte Identität darstellen, ein Label. Ihre Musik fällt standardmäßig aus redaktionellen, algorithmischen und personalisierten Empfehlungen heraus. Eine Plattform behandelt synthetische Urheberschaft damit als Verteilungsfrage, nicht nur als Kennzeichnungsfrage.",
+      "tags": [
+        "policy",
+        "industry"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "Spotify says it won’t recommend music from AI Personas",
+          "url": "https://www.theverge.com/entertainment/977815/spotify-ai-persona-label-recommendations"
+        },
+        {
+          "name": "TechCrunch",
+          "headline": "Spotify will label AI Persona profiles and exclude their music from recommendations",
+          "url": "https://techcrunch.com/2026/08/11/spotify-will-label-ai-persona-profiles-and-exclude-their-music-from-recommendations/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Apple arbeitet am Nachweis, dass ein Foto aus einer Kamera stammt",
+      "blurb": "Im iOS-27-Beta finden sich Verweise auf ein System namens Apple Reference Image, das belegen soll, dass eine Aufnahme mit der iPhone-Kamera entstanden ist. Signatur beim Aufnehmen, als Gegenstück zum Wasserzeichen beim Generieren.",
+      "tags": [
+        "policy",
+        "design-tools"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "Apple could help you prove your iPhone photos aren’t deepfakes",
+          "url": "https://www.theverge.com/tech/977921/apple-reference-image-iphone-metadata"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Vergiftete Daten als Schutz, und als Risiko",
+      "blurb": "Kreative setzen Data Poisoning ein, um eigene Werke vor KI-Crawlern zu schützen. t3n zeigt die Kehrseite: dieselbe Technik ist ein Angriffsweg auf die IT-Sicherheit.",
+      "tags": [
+        "policy",
+        "model"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "t3n",
+          "headline": "KI-Modelle vergiften: Warum Data Poisoning eine wachsende Gefahr für die IT-Sicherheit ist",
+          "url": "https://t3n.de/news/ki-modelle-vergiften-data-poisoning-it-sicherheit-1756214/"
+        }
+      ]
     }
   ],
   "voices": [
     {
-      "name": "Brad Frost", "host": "bradfrost.com", "topic": "design-practice",
-      "items": [{ "title": "Just You Wait, by Chris Shiflett", "url": "https://bradfrost.com/links/post/just-you-wait-by-chris-shiflett/", "date": "2026-08-11" }]
+      "name": "Brad Frost",
+      "host": "bradfrost.com",
+      "topic": "design-practice",
+      "items": [
+        {
+          "title": "Just You Wait, by Chris Shiflett",
+          "url": "https://bradfrost.com/links/post/just-you-wait-by-chris-shiflett/",
+          "date": "2026-08-11"
+        }
+      ]
     }
   ],
   "firehose": [
-    { "label": "Roastbrief — Kampagnen & Agentur-Meldungen", "count": 25, "examples": ["Neue QuikTrip-Kampagne von Laughlin Constable", "Liquid Death und goodwipes mit einer Walmart-Sonderedition", "Acast übernimmt Backyard Ventures"] }
+    {
+      "label": "Roastbrief — Kampagnen & Agentur-Meldungen",
+      "count": 25,
+      "examples": [
+        "Neue QuikTrip-Kampagne von Laughlin Constable",
+        "Liquid Death und goodwipes mit einer Walmart-Sonderedition",
+        "Acast übernimmt Backyard Ventures"
+      ]
+    }
   ]
 }

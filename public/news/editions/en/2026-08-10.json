@@ -2,78 +2,41 @@
   "meta": {
     "generated_for": "2026-08-10",
     "window": "2026-08-07..2026-08-10",
-    "lang": "en",
-    "status": "draft"
+    "lang": "en"
   },
   "stories": [
     {
-      "theme": "ai-models",
-      "theme_label": "AI Models",
-      "title": "OpenAI pauses Astra over critical cyber capabilities",
-      "blurb": "OpenAI says it has paused internal activities around Astra, a model in development, because it isn't confident about the model's cyber capabilities. A lab stopping its own release is the sharpest version of the pacing debate so far.",
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Why your clients aren't buying",
+      "blurb": "You know it's the right call, the data says so, and they still say no. A playbook for the persuasion side of design work, which carries more weight as execution gets cheap.",
       "tags": [
-        "model",
-        "industry"
+        "career",
+        "strategy"
       ],
       "cluster": false,
       "sources": [
         {
-          "name": "The Verge",
-          "headline": "OpenAI puts the brakes on a new model because it’s supposedly too powerful",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities"
+          "name": "UX Collective",
+          "headline": "Why your clients aren’t buying and how to change that",
+          "url": "https://uxdesign.cc/why-your-clients-arent-buying-and-how-to-change-that-cd7104bf14fd"
         }
       ]
     },
     {
-      "theme": "ai-models",
-      "theme_label": "AI Models",
-      "title": "Meta returns with Muse Glimmer: local, agentic, multimodal, open source",
-      "blurb": "A new open multimodal model built to run locally and act agentically. Local and open keeps shifting what a studio can do without sending the work to someone else's server.",
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "A Manchester workplace built on Alan Turing",
+      "blurb": "SpaceInvader's fit-out takes its cues from Turing. Spatial branding as narrative, and a reminder that identity work still has to land in a physical room.",
       "tags": [
-        "model",
-        "agents"
+        "brand"
       ],
       "cluster": false,
       "sources": [
         {
-          "name": "Hugging Face",
-          "headline": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
-          "url": "https://huggingface.co/blog/muse-glimmer"
-        }
-      ]
-    },
-    {
-      "theme": "ai-models",
-      "theme_label": "AI Models",
-      "title": "Distillation gets cheap enough to run at scale",
-      "blurb": "Making knowledge distillation cheap enough for routine use is how capable small models keep arriving. Worth watching if you weigh a small local model against a frontier API.",
-      "tags": [
-        "model"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Hugging Face",
-          "headline": "Making Knowledge Distillation Cheap Enough to Run at Scale",
-          "url": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation"
-        }
-      ]
-    },
-    {
-      "theme": "ai-models",
-      "theme_label": "AI Models",
-      "title": "Peer review is overwhelmed",
-      "blurb": "As research output and AI-assisted papers surge, volunteer reviewers can't keep up. A preview of what happens to any gatekeeping process once producing the thing becomes nearly free.",
-      "tags": [
-        "research",
-        "industry"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Ars Technica",
-          "headline": "Peer review is overwhelmed—can it survive in the AI era?",
-          "url": "https://arstechnica.com/science/2026/08/peer-review-is-overwhelmed-can-it-survive-in-the-ai-era/"
+          "name": "Design Week",
+          "headline": "SpaceInvader’s Manchester workplace fit-out takes cues from Alan Turing",
+          "url": "https://www.designweek.co.uk/spaceinvaders-manchester-workplace-fit-out-takes-cues-from-alan-turing/"
         }
       ]
     },
@@ -119,24 +82,6 @@
       ]
     },
     {
-      "theme": "design-practice",
-      "theme_label": "Design Practice",
-      "title": "Why your clients aren't buying",
-      "blurb": "You know it's the right call, the data says so, and they still say no. A playbook for the persuasion side of design work, which carries more weight as execution gets cheap.",
-      "tags": [
-        "career",
-        "strategy"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "UX Collective",
-          "headline": "Why your clients aren’t buying and how to change that",
-          "url": "https://uxdesign.cc/why-your-clients-arent-buying-and-how-to-change-that-cd7104bf14fd"
-        }
-      ]
-    },
-    {
       "theme": "industry-market",
       "theme_label": "Industry & Market",
       "title": "Claude Code turns auto mode on by default",
@@ -177,19 +122,73 @@
       ]
     },
     {
-      "theme": "brand-advertising",
-      "theme_label": "Brand & Advertising",
-      "title": "A Manchester workplace built on Alan Turing",
-      "blurb": "SpaceInvader's fit-out takes its cues from Turing. Spatial branding as narrative, and a reminder that identity work still has to land in a physical room.",
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "OpenAI pauses Astra over critical cyber capabilities",
+      "blurb": "OpenAI says it has paused internal activities around Astra, a model in development, because it isn't confident about the model's cyber capabilities. A lab stopping its own release is the sharpest version of the pacing debate so far.",
       "tags": [
-        "brand"
+        "model",
+        "industry"
       ],
       "cluster": false,
       "sources": [
         {
-          "name": "Design Week",
-          "headline": "SpaceInvader’s Manchester workplace fit-out takes cues from Alan Turing",
-          "url": "https://www.designweek.co.uk/spaceinvaders-manchester-workplace-fit-out-takes-cues-from-alan-turing/"
+          "name": "The Verge",
+          "headline": "OpenAI puts the brakes on a new model because it’s supposedly too powerful",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Meta returns with Muse Glimmer: local, agentic, multimodal, open source",
+      "blurb": "A new open multimodal model built to run locally and act agentically. Local and open keeps shifting what a studio can do without sending the work to someone else's server.",
+      "tags": [
+        "model",
+        "agents"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "headline": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
+          "url": "https://huggingface.co/blog/muse-glimmer"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Distillation gets cheap enough to run at scale",
+      "blurb": "Making knowledge distillation cheap enough for routine use is how capable small models keep arriving. Worth watching if you weigh a small local model against a frontier API.",
+      "tags": [
+        "model"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "headline": "Making Knowledge Distillation Cheap Enough to Run at Scale",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Peer review is overwhelmed",
+      "blurb": "As research output and AI-assisted papers surge, volunteer reviewers can't keep up. A preview of what happens to any gatekeeping process once producing the thing becomes nearly free.",
+      "tags": [
+        "research",
+        "industry"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "headline": "Peer review is overwhelmed—can it survive in the AI era?",
+          "url": "https://arstechnica.com/science/2026/08/peer-review-is-overwhelmed-can-it-survive-in-the-ai-era/"
         }
       ]
     }

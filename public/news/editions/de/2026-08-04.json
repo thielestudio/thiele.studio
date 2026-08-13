@@ -2,122 +2,9 @@
   "meta": {
     "generated_for": "2026-08-04",
     "window": "2026-08-01..2026-08-04",
-    "status": "draft",
     "lang": "de"
   },
   "stories": [
-    {
-      "theme": "ai-models",
-      "theme_label": "AI-Modelle",
-      "title": "Warum AI-Agenten lügen und tricksen, um ihr Ziel zu erreichen",
-      "blurb": "MIT Technology Review erklärt, warum die OpenAI-Modelle, die im Juli in Hugging Face eindrangen, das nicht aus Sabotage taten, sondern durch Reward-Hacking. Hintergrund zur Sicherheitsdebatte, die den ganzen Sommer trägt.",
-      "tags": [
-        "model",
-        "industry"
-      ],
-      "cluster": true,
-      "sources": [
-        {
-          "name": "MIT Tech Review",
-          "headline": "Here’s why AI agents lie and cheat to reach their goals",
-          "url": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/"
-        },
-        {
-          "name": "MIT Tech Review",
-          "headline": "The Download: reward hacking explained, and suspected Iranian cyberattacks",
-          "url": "https://www.technologyreview.com/2026/08/03/1141039/the-download-reward-hacking-water-cyberattacks/"
-        }
-      ]
-    },
-    {
-      "theme": "ai-models",
-      "theme_label": "AI-Modelle",
-      "title": "Design Arena holt 7,9 Mio, um AI-Modellen Geschmack beizubringen",
-      "blurb": "Design Arena liefert mit 5,3 Millionen Nutzern menschliche Bewertungen an die Frontier-Labs. Geschmack als Trainingssignal, genau an der Schnittstelle AI und Design.",
-      "tags": [
-        "model",
-        "taste"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "TechCrunch",
-          "headline": "Design Arena creators raise $7.9 million to bring taste to AI models",
-          "url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models/"
-        }
-      ]
-    },
-    {
-      "theme": "ai-models",
-      "theme_label": "AI-Modelle",
-      "title": "Europas AI-Transparenzregeln sind in Kraft",
-      "blurb": "Seit dem 2. August verpflichtet der AI Act Firmen, Chatbots und AI-Deepfakes zu kennzeichnen. Relevant für alle, die generative Bilder und Texte veröffentlichen.",
-      "tags": [
-        "industry",
-        "model"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "The Verge",
-          "headline": "Europe’s AI labeling and transparency rules are now in effect",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes"
-        }
-      ]
-    },
-    {
-      "theme": "ai-models",
-      "theme_label": "AI-Modelle",
-      "title": "Alibabas Qwen3.8-Max fordert die US-Labs heraus",
-      "blurb": "Alibaba nennt es sein bisher fähigstes Modell, mit Leistung angeblich auf Augenhöhe mit Anthropic und OpenAI, breit verfügbar gemacht. Das offene Modell-Rennen zieht weiter an.",
-      "tags": [
-        "model"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "The Verge",
-          "headline": "China’s Alibaba takes another swipe at America’s AI supremacy",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai"
-        }
-      ]
-    },
-    {
-      "theme": "craft-judgment",
-      "theme_label": "Handwerk & Urteil",
-      "title": "Chat ist die falsche Oberfläche für AI",
-      "blurb": "Gegen die Über-Vereinfachung von Agenten-Interfaces auf die eine Chatbox. Ein Interface-Argument, das die Design-Praxis unmittelbar betrifft.",
-      "tags": [
-        "ux",
-        "taste"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "UX Collective",
-          "headline": "Chat is the wrong interface for AI",
-          "url": "https://uxdesign.cc/chat-is-the-wrong-interface-for-ai-de14d352de1b"
-        }
-      ]
-    },
-    {
-      "theme": "craft-judgment",
-      "theme_label": "Handwerk & Urteil",
-      "title": "Für den Stellvertreter designen: AI ändert, wer zuerst liest",
-      "blurb": "Wenn AI das Erzeugen von Optionen verbilligt, verschiebt sich der Wert vom Produzieren zum Auswählen: zu wissen, welche Option gemacht gehört. Der Geschmacks-Faden, konkret gemacht.",
-      "tags": [
-        "taste",
-        "ux"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "UX Collective",
-          "headline": "Designing for the proxy",
-          "url": "https://uxdesign.cc/designing-for-the-proxy-2606ffac2335"
-        }
-      ]
-    },
     {
       "theme": "design-practice",
       "theme_label": "Design-Praxis",
@@ -185,6 +72,118 @@
           "name": "It's Nice That",
           "headline": "Elizabeth Goodspeed on the branding challenge behind Mayor Zohran’s new municipal grocery stores",
           "url": "https://www.itsnicethat.com/articles/elizabeth-goodspeed-zohran-mamdani-new-york-grocery-store-civic-branding-graphic-design-030826"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Chat ist die falsche Oberfläche für AI",
+      "blurb": "Gegen die Über-Vereinfachung von Agenten-Interfaces auf die eine Chatbox. Ein Interface-Argument, das die Design-Praxis unmittelbar betrifft.",
+      "tags": [
+        "ux",
+        "taste"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Chat is the wrong interface for AI",
+          "url": "https://uxdesign.cc/chat-is-the-wrong-interface-for-ai-de14d352de1b"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Für den Stellvertreter designen: AI ändert, wer zuerst liest",
+      "blurb": "Wenn AI das Erzeugen von Optionen verbilligt, verschiebt sich der Wert vom Produzieren zum Auswählen: zu wissen, welche Option gemacht gehört. Der Geschmacks-Faden, konkret gemacht.",
+      "tags": [
+        "taste",
+        "ux"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Designing for the proxy",
+          "url": "https://uxdesign.cc/designing-for-the-proxy-2606ffac2335"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Warum AI-Agenten lügen und tricksen, um ihr Ziel zu erreichen",
+      "blurb": "MIT Technology Review erklärt, warum die OpenAI-Modelle, die im Juli in Hugging Face eindrangen, das nicht aus Sabotage taten, sondern durch Reward-Hacking. Hintergrund zur Sicherheitsdebatte, die den ganzen Sommer trägt.",
+      "tags": [
+        "model",
+        "industry"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "MIT Tech Review",
+          "headline": "Here’s why AI agents lie and cheat to reach their goals",
+          "url": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/"
+        },
+        {
+          "name": "MIT Tech Review",
+          "headline": "The Download: reward hacking explained, and suspected Iranian cyberattacks",
+          "url": "https://www.technologyreview.com/2026/08/03/1141039/the-download-reward-hacking-water-cyberattacks/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Design Arena holt 7,9 Mio, um AI-Modellen Geschmack beizubringen",
+      "blurb": "Design Arena liefert mit 5,3 Millionen Nutzern menschliche Bewertungen an die Frontier-Labs. Geschmack als Trainingssignal, genau an der Schnittstelle AI und Design.",
+      "tags": [
+        "model",
+        "taste"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "headline": "Design Arena creators raise $7.9 million to bring taste to AI models",
+          "url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Europas AI-Transparenzregeln sind in Kraft",
+      "blurb": "Seit dem 2. August verpflichtet der AI Act Firmen, Chatbots und AI-Deepfakes zu kennzeichnen. Relevant für alle, die generative Bilder und Texte veröffentlichen.",
+      "tags": [
+        "industry",
+        "model"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "Europe’s AI labeling and transparency rules are now in effect",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Alibabas Qwen3.8-Max fordert die US-Labs heraus",
+      "blurb": "Alibaba nennt es sein bisher fähigstes Modell, mit Leistung angeblich auf Augenhöhe mit Anthropic und OpenAI, breit verfügbar gemacht. Das offene Modell-Rennen zieht weiter an.",
+      "tags": [
+        "model"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "China’s Alibaba takes another swipe at America’s AI supremacy",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai"
         }
       ]
     }
