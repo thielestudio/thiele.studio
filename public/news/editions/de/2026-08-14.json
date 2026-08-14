@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "generated_for": "2026-08-14",
+    "window": "2026-08-12..2026-08-14",
+    "lang": "de",
+    "sources_scanned": 42,
+    "items_in_window": 181,
+    "note": "Der Tag dreht sich um die Frage, wem ein Look zugeschrieben wird. Instagrams neue Wortmarke gilt in einem Interview als Handwerk und woanders als KI-Schrott. Drei weitere Stücke argumentieren, dass die sichtbare Hand jetzt das Argument ist."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Die EU sagt, ein Glitzer-Icon ist kein KI-Label",
+      "blurb": "Neue EU-Leitlinien legen fest, wann eine KI-Kennzeichnung Pflicht ist und was das für KI-gestützte Funktionen und Produkte heißt. Das Sparkle-Symbol, zu dem alle gegriffen haben, reicht nicht.",
+      "tags": ["regulierung", "ux"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Smashing Magazine",
+          "headline": "New EU Guidelines For AI Labelling",
+          "url": "https://smashingmagazine.com/2026/08/eu-guidelines-ai-labelling/"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Clay verweigert den geometrischen Standard der eigenen Branche",
+      "blurb": "Gemeinsam mit dem Illustrator und Animator Hudson Christie hält Clay seine Identität von den generischen, geometrischen Mustern fern, die man mit Tech verbindet. Als Grund nennt das Studio die Ästhetik, die aus KI-Prompts entsteht.",
+      "tags": ["identity", "geschmack"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "headline": "Clay embraces imperfection in the face of AI-prompted aesthetics",
+          "url": "https://www.itsnicethat.com/articles/clay-illustration-sponsored-content-130826"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Zehn Kontroversen später: schließt Framer seinen Marktplatz?",
+      "blurb": "Ein Creator, der den Framer-Marktplatz seit Jahren beobachtet, geht dessen Geschichte und zehn Streitfälle durch. Interessant für alle, deren Einkommen an einer fremden Plattform hängt.",
+      "tags": ["tools", "markt"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Framer is killing the marketplace… or are they?",
+          "url": "https://uxdesign.cc/framer-is-killing-the-marketplace-or-are-they-cc96a67763b3?source=rss----138adf9c44c---4"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Eine Identity, die Raum selbst zum Thema macht",
+      "blurb": "Schmid/Widmaier hat für eine Ausstellung in der Pinakothek der Moderne den Raum in eine Identity übersetzt, mit einer eigens gebauten Schrift. Die Ausstellung selbst handelt von Raum in der Kunst.",
+      "tags": ["identity", "typografie"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "headline": "»Between Beyond«: Wie eine Identity Raum wird",
+          "url": "https://page-online.de/kreation/between-beyond-wie-eine-identity-raum-wird/"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Instagrams erster Refresh seit zehn Jahren, zweimal gelesen",
+      "blurb": "Creative Director Christy Silva und Brand-Design-Chefin Cynthia Pratomo erklären das neue Markensystem und die Wortmarke. An anderer Stelle gilt dieselbe Wortmarke als perfekte Verkörperung von KI-Schrott.",
+      "tags": ["identity", "geschmack"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "headline": "“Instagram has evolved”: the process and craft behind Instagram's first major refresh in over ten years",
+          "url": "https://www.itsnicethat.com/features/behind-instagrams-first-major-refresh-in-10-years-partnership-130826"
+        },
+        {
+          "name": "PRINT Magazine",
+          "headline": "Instagram Refreshes Its Look for a New Era",
+          "url": "https://www.printmag.com/branding-identity-design/instagram-refreshes-its-look-for-a-new-era/"
+        },
+        {
+          "name": "Ars Technica",
+          "headline": "The new Instagram logo is the perfect embodiment of AI slop",
+          "url": "https://arstechnica.com/ai/2026/08/the-new-instagram-logo-is-the-perfect-embodiment-of-ai-slop/"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Jaguar trägt den Rebrand-Streit in den Innenraum",
+      "blurb": "Das Interieur des Type 01 ist gezeigt, der Nachfolger jenes Type 00, der ab Dezember 2024 im Autoumfeld und im Kulturkampf für Lärm sorgte. Eine Rezension liest die geteilte Kabine als Provokation gegen die Kritiker.",
+      "tags": ["identity", "produkt"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "headline": "Jaguar doubles down on its controversial rebrand with a (literally) divisive interior design",
+          "url": "https://www.creativebloq.com/design/product-design/jaguar-interiors-feel-built-to-troll-the-haters-of-its-rebrand"
+        },
+        {
+          "name": "Design Week",
+          "headline": "Jaguar's new car's interior has been revealed, welcome to the inside of the Type 01",
+          "url": "https://www.designweek.co.uk/jaguars-new-cars-interior-has-been-revealed-welcome-to-the-inside-of-the-type-01/"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Ein handgezeichnetes Spider-Man-Poster schlägt das offizielle",
+      "blurb": "Ein viral gegangenes handgezeichnetes Poster gilt als Beleg dafür, dass Publikum mehr Kunst und Eigenständigkeit in Filmwerbung will. Der Spitzname hat sich schneller festgesetzt als das Studio-Artwork.",
+      "tags": ["werbung", "geschmack"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "headline": "Viral hand-drawn Spider-Man poster shows people are craving more originality in movie art",
+          "url": "https://www.creativebloq.com/design/poster-design/viral-hand-drawn-spider-man-ad-shows-how-people-crave-more-art-and-originality-in-advertising"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Im KI-Film waren die besten Teile die menschlichen",
+      "blurb": "Ein Blick in eine Higgsfield-Produktion über drei Typen in einem Londoner Pub, die vom großen Ruhm träumen. Das Urteil von innen: es funktioniert genau das, was Menschen gemacht haben.",
+      "tags": ["film", "geschmack"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "I looked inside an AI generated movie, and the best parts were all human",
+          "url": "https://www.theverge.com/entertainment/977994/higgsfield-ai-cully-hill-boys-black-list"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Zwei Fotografen, die das Unmögliche vor dem Auslöser bauen",
+      "blurb": "Londons October Gallery stellt Benji Reid und Zana Masombuka zusammen, die ihre Szenen von Hand gebaut haben statt sie hinterher am Bildschirm zu erzeugen. Der Text setzt das gegen die übliche Produktionsweise in Agenturen.",
+      "tags": ["handwerk", "fotografie"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "headline": "What artists Benji Reid and Zana Masombuka can teach us about building believable fantasy",
+          "url": "https://www.creativeboom.com/news/show-your-working-what-benji-reid-and-zana-masombuka-can-teach-creatives-about-building-believable-fantasy/"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Constrictor, neu von Frere-Jones Type",
+      "blurb": "Frere-Jones Type hat im Juni 2026 die Schriftfamilie Constrictor veröffentlicht. Slanted zeichnet nach, woraus sie entstanden ist.",
+      "tags": ["typografie", "handwerk"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Slanted",
+          "headline": "Constrictor",
+          "url": "https://www.slanted.de/constrictor/"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "YouTubes neue Regeln teilen die Animatoren in zwei Lager",
+      "blurb": "Etablierte Creator verdienen unter der Änderung womöglich mehr. Für alle anderen wird es schwerer.",
+      "tags": ["plattformen", "animation"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "headline": "YouTube's new policy is bad news for animators",
+          "url": "https://www.creativebloq.com/art/animation/youtubes-new-policy-is-bad-news-for-animators"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Buchhändler wehren sich gegen stille Massenkäufe seltener Bücher",
+      "blurb": "Buchhändler vermuten, dass KI-Firmen seltene Bücher in großer Zahl kaufen und anschließend zerstören. Sie fangen an, sich dem Handel zu verweigern.",
+      "tags": ["trainingsdaten", "rechte"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "headline": "Booksellers suspect AI firms are buying and then destroying rare books",
+          "url": "https://arstechnica.com/tech-policy/2026/08/heres-a-balm-if-the-idea-of-destroying-books-to-train-ai-breaks-your-heart/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Gemini 3.7 Flash kommt drei Wochen nach 3.6",
+      "blurb": "Google spricht von substanziellen Verbesserungen gegenüber einer Version, die drei Wochen alt ist. Laut eigenen Benchmarks soll das Modell bei Codequalität vor Claude Sonnet 5 und GPT-5.6 Terra liegen.",
+      "tags": ["modelle", "taktung"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "headline": "Google announces Gemini 3.7 Flash just three weeks after previous release",
+          "url": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release/"
+        },
+        {
+          "name": "Google DeepMind",
+          "headline": "Introducing Gemini 3.7 Flash",
+          "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/"
+        },
+        {
+          "name": "The Decoder",
+          "headline": "Googles neues Gemini 3.7 Flash soll Claude Sonnet 5 und GPT-5.6 Terra bei der Codequalität übertreffen",
+          "url": "https://the-decoder.de/googles-neues-gemini-3-7-flash-soll-claude-sonnet-5-und-gpt-5-6-terra-bei-der-codequalitaet-uebertreffen/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Suno bekommt MIDI und benimmt sich wie eine DAW",
+      "blurb": "Studio 2.0 rückt Suno näher an eine Digital Audio Workstation als an einen dünnen Editor mit generativen Funktionen. Neu sind MIDI-Import, unbegrenzter 32-Bit-Export und eine Chat-Funktion, die Instrumente und Plugins per Text erzeugt.",
+      "tags": ["tools", "audio"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "Suno is trying to look more like a real music production tool",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/979345/suno-studio-2-0-midi-chatbot-custom-effects"
+        },
+        {
+          "name": "The Decoder",
+          "headline": "Suno Studio 2.0 macht Musikproduktion zum Chat mit der eigenen KI-Band",
+          "url": "https://the-decoder.de/suno-studio-2-0-macht-musikproduktion-zum-chat-mit-der-eigenen-ki-band/"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: Kampagnen und Agentur-Meldungen",
+      "count": 25,
+      "examples": [
+        "Starbucks macht aus der Karte eine Sammelserie mit Plüsch-Kapseln",
+        "Virgin Atlantic Holidays fragt „If not now, when?“, Kampagne von Lucky Generals",
+        "DonerColle Partners stellt ein Framework zu geteilten Werten und Markenwachstum vor"
+      ]
+    }
+  ]
+}

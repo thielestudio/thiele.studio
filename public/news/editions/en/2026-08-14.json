@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "generated_for": "2026-08-14",
+    "window": "2026-08-12..2026-08-14",
+    "lang": "en",
+    "sources_scanned": 42,
+    "items_in_window": 132,
+    "note": "A day about who gets credit for a look. Instagram's new wordmark read as craft in one interview and as AI slop in another, while two more pieces argue that the visible human hand is now the point."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "The EU says a sparkle icon is not an AI label",
+      "blurb": "New EU guidelines set out when AI labelling is actually required and what that means for AI-powered features and products. The short version is that the sparkle icon everyone reached for is not enough.",
+      "tags": ["regulation", "ux"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Smashing Magazine",
+          "headline": "New EU Guidelines For AI Labelling",
+          "url": "https://smashingmagazine.com/2026/08/eu-guidelines-ai-labelling/"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Clay refuses the geometric default of its own industry",
+      "blurb": "Working with illustrator and animator Hudson Christie, Clay keeps its identity away from the generic geometric look associated with tech. The stated reason is the aesthetics that AI prompting produces.",
+      "tags": ["identity", "taste"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "headline": "Clay embraces imperfection in the face of AI-prompted aesthetics",
+          "url": "https://www.itsnicethat.com/articles/clay-illustration-sponsored-content-130826"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Ten controversies later, is Framer closing its marketplace?",
+      "blurb": "A creator who has watched the Framer marketplace evolve walks through its history and ten disputes along the way. Relevant to anyone whose income depends on someone else's platform.",
+      "tags": ["tools", "industry"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "headline": "Framer is killing the marketplace… or are they?",
+          "url": "https://uxdesign.cc/framer-is-killing-the-marketplace-or-are-they-cc96a67763b3?source=rss----138adf9c44c---4"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Instagram's first refresh in ten years, read two ways",
+      "blurb": "Creative director Christy Silva and brand design director Cynthia Pratomo walk through the new brand system and wordmark. Elsewhere the same wordmark is called a perfect embodiment of AI slop.",
+      "tags": ["identity", "taste"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "headline": "“Instagram has evolved”: the process and craft behind Instagram's first major refresh in over ten years",
+          "url": "https://www.itsnicethat.com/features/behind-instagrams-first-major-refresh-in-10-years-partnership-130826"
+        },
+        {
+          "name": "PRINT Magazine",
+          "headline": "Instagram Refreshes Its Look for a New Era",
+          "url": "https://www.printmag.com/branding-identity-design/instagram-refreshes-its-look-for-a-new-era/"
+        },
+        {
+          "name": "Ars Technica",
+          "headline": "The new Instagram logo is the perfect embodiment of AI slop",
+          "url": "https://arstechnica.com/ai/2026/08/the-new-instagram-logo-is-the-perfect-embodiment-of-ai-slop/"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Jaguar takes the rebrand fight into the cabin",
+      "blurb": "The Type 01 interior has been revealed, the follow-up to a Type 00 concept that turned into a culture-war story from December 2024 onwards. One reviewer reads the split cabin as built to troll the critics.",
+      "tags": ["identity", "product"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "headline": "Jaguar doubles down on its controversial rebrand with a (literally) divisive interior design",
+          "url": "https://www.creativebloq.com/design/product-design/jaguar-interiors-feel-built-to-troll-the-haters-of-its-rebrand"
+        },
+        {
+          "name": "Design Week",
+          "headline": "Jaguar's new car's interior has been revealed, welcome to the inside of the Type 01",
+          "url": "https://www.designweek.co.uk/jaguars-new-cars-interior-has-been-revealed-welcome-to-the-inside-of-the-type-01/"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "A hand-drawn Spider-Man poster outperforms the official one",
+      "blurb": "A viral hand-drawn poster is being read as evidence that people want more art and originality in movie advertising. The nickname stuck faster than the studio artwork did.",
+      "tags": ["advertising", "taste"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "headline": "Viral hand-drawn Spider-Man poster shows people are craving more originality in movie art",
+          "url": "https://www.creativebloq.com/design/poster-design/viral-hand-drawn-spider-man-ad-shows-how-people-crave-more-art-and-originality-in-advertising"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Inside an AI generated movie, the best parts were human",
+      "blurb": "A look at a Higgsfield production about three lads in a London pub fantasising about stardom. The verdict from inside the process is that what works is what people made.",
+      "tags": ["film", "taste"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "I looked inside an AI generated movie, and the best parts were all human",
+          "url": "https://www.theverge.com/entertainment/977994/higgsfield-ai-cully-hill-boys-black-list"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Two photographers who built the impossible before the shutter",
+      "blurb": "London's October Gallery pairs Benji Reid and Zana Masombuka, who constructed their imaginative scenes by hand rather than afterwards on a screen. The piece sets that against how most agencies produce a surreal image.",
+      "tags": ["craft", "photography"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "headline": "What artists Benji Reid and Zana Masombuka can teach us about building believable fantasy",
+          "url": "https://www.creativeboom.com/news/show-your-working-what-benji-reid-and-zana-masombuka-can-teach-creatives-about-building-believable-fantasy/"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "YouTube's new policy splits animators into two groups",
+      "blurb": "Established creators may earn more under the change. For everyone else it gets harder.",
+      "tags": ["platforms", "animation"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "headline": "YouTube's new policy is bad news for animators",
+          "url": "https://www.creativebloq.com/art/animation/youtubes-new-policy-is-bad-news-for-animators"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Booksellers push back on quiet bulk buying of rare books",
+      "blurb": "Booksellers suspect AI firms are buying rare books in bulk and destroying them. They are starting to resist the trade.",
+      "tags": ["training-data", "rights"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "headline": "Booksellers suspect AI firms are buying and then destroying rare books",
+          "url": "https://arstechnica.com/tech-policy/2026/08/heres-a-balm-if-the-idea-of-destroying-books-to-train-ai-breaks-your-heart/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Gemini 3.7 Flash lands three weeks after 3.6",
+      "blurb": "Google says the new Flash release carries substantial improvements over a version that shipped three weeks ago. The release cadence is now shorter than most design review cycles.",
+      "tags": ["models", "cadence"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "headline": "Google announces Gemini 3.7 Flash just three weeks after previous release",
+          "url": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release/"
+        },
+        {
+          "name": "Google DeepMind",
+          "headline": "Introducing Gemini 3.7 Flash",
+          "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Suno adds MIDI and starts behaving like a DAW",
+      "blurb": "Studio 2.0 pushes Suno closer to a digital audio workstation instead of a thin editor with generative features. MIDI support is the headline addition.",
+      "tags": ["tools", "audio"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "headline": "Suno is trying to look more like a real music production tool",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/979345/suno-studio-2-0-midi-chatbot-custom-effects"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief — campaign and agency wire",
+      "count": 25,
+      "examples": [
+        "Starbucks turns its menu into mini collectibles with a plush capsule collection",
+        "Virgin Atlantic Holidays asks travellers “If not now, when?” in a campaign by Lucky Generals",
+        "DonerColle Partners unveils a framework on shared values and brand growth"
+      ]
+    }
+  ]
+}
