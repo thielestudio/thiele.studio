@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "generated_for": "2026-08-15",
+    "window": "2026-08-13..2026-08-15",
+    "sources_scanned": 42,
+    "items_in_window": 114,
+    "lang": "en",
+    "note": "Watermarking is the thread of the day: Google lets users switch its visible mark off, Anthropic marks anything Claude touched. Provenance is turning into an interface decision."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "The EU spells out when an AI label is required",
+      "blurb": "New EU guidelines set out when AI-powered features have to be labelled, and Smashing Magazine argues the usual sparkle icon does not meet the bar. Anyone shipping generative features in a product now has a compliance surface to design for.",
+      "tags": ["regulation", "eu", "interface"],
+      "sources": [
+        { "name": "Smashing Magazine", "url": "https://smashingmagazine.com/2026/08/eu-guidelines-ai-labelling/" }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Where AI looks reliable but is not",
+      "blurb": "A practitioner with three years of building agents, workflows and MCPs argues the damage sits in the gap between what AI is reliable for and what it appears reliable for. The piece frames enablement, not tooling, as the failure point.",
+      "tags": ["workflow", "team", "agents"],
+      "sources": [
+        { "name": "UX Collective", "url": "https://uxdesign.cc/getting-started-is-not-getting-it-right-e76270614d14?source=rss----138adf9c44c---4" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Instagram straightens out its script, and the room splits",
+      "blurb": "Instagram's first refresh in ten years keeps the handwritten script but straightens it, adds a new wordmark and three typefaces; the design team says it tried hundreds of directions before returning to the handwritten route. The reception ranges from a craft interview to Ars Technica calling the result an embodiment of AI slop.",
+      "tags": ["rebrand", "wordmark", "typography"],
+      "cluster": true,
+      "sources": [
+        { "name": "Creative Boom", "url": "https://www.creativeboom.com/news/instagram-reveals-its-first-brand-refresh-in-10-years-with-a-new-wordmark-and-three-typefaces/" },
+        { "name": "It's Nice That", "url": "https://www.itsnicethat.com/features/behind-instagrams-first-major-refresh-in-10-years-partnership-130826" },
+        { "name": "PRINT Magazine", "url": "https://www.printmag.com/branding-identity-design/instagram-refreshes-its-look-for-a-new-era/" },
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/design/branding/instagram-redesigned-its-logo-for-the-worst-possible-reason" },
+        { "name": "Ars Technica", "url": "https://arstechnica.com/ai/2026/08/the-new-instagram-logo-is-the-perfect-embodiment-of-ai-slop/" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Monoprix wakes up a French icon",
+      "blurb": "Creative Bloq walks through the new Monoprix identity and why it holds together. A useful counterweight to the week's louder rebrand.",
+      "tags": ["rebrand", "retail", "identity"],
+      "sources": [
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/design/branding/the-new-monoprix-rebrand-awakens-a-french-icon" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Inside an AI-generated movie, the best parts were human",
+      "blurb": "The Verge went through an AI-made short about three English lads chasing stardom and found the parts that land are the human ones. A concrete look at where generated footage still needs a director.",
+      "tags": ["film", "generative-video", "judgment"],
+      "sources": [
+        { "name": "The Verge", "url": "https://www.theverge.com/entertainment/977994/higgsfield-ai-cully-hill-boys-black-list" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Borrowed trust is the thing you stop checking",
+      "blurb": "The argument: the more we trust a name, the less we question the machine wearing it, and the more that name has to lose when the machine is confidently wrong. Relevant to anyone putting a brand's face on a generated answer.",
+      "tags": ["trust", "brand-risk", "judgment"],
+      "sources": [
+        { "name": "UX Collective", "url": "https://uxdesign.cc/were-gorging-on-borrowed-trust-and-it-s-going-to-cost-us-2bc3f918caf5?source=rss----138adf9c44c---4" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Framer's marketplace, from the seller's side",
+      "blurb": "A creator who has sold Framer templates since 2022 lays out ten controversies and a short history of the marketplace. Worth reading if part of your income depends on someone else's platform.",
+      "tags": ["platform", "marketplace", "framer"],
+      "sources": [
+        { "name": "UX Collective", "url": "https://uxdesign.cc/framer-is-killing-the-marketplace-or-are-they-cc96a67763b3?source=rss----138adf9c44c---4" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Price war at the top as Chinese labs keep pace",
+      "blurb": "US labs are releasing cheaper models as Chinese rivals gain ground, and Interconnects reads GLM-5.3 as evidence that this is not a distillation story. The cost floor for anything you build on top keeps moving.",
+      "tags": ["market", "open-weights", "pricing"],
+      "cluster": true,
+      "sources": [
+        { "name": "Ars Technica", "url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/" },
+        { "name": "Interconnects", "url": "https://www.interconnects.ai/p/glm-53-how-chinese-labs-keep-stride" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Google lets you switch the visible watermark off",
+      "blurb": "A new media watermark setting in Gemini and Flow removes the sparkle mark from generated images, video and music. The invisible markers used to identify AI files stay in place.",
+      "tags": ["provenance", "watermark", "google"],
+      "cluster": true,
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/" },
+        { "name": "The Verge", "url": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Claude's new watermark is invisible, and broad",
+      "blurb": "Ars Technica reports the mark flags anything Claude processed, including human writing it only edited. That scope matters for anyone using an assistant late in a copy workflow.",
+      "tags": ["provenance", "watermark", "anthropic"],
+      "sources": [
+        { "name": "Ars Technica", "url": "https://arstechnica.com/tech-policy/2026/08/claudes-new-scarlet-letter-watermark-is-invisible-for-now/" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Gemini 3.7 Flash, three weeks after 3.6",
+      "blurb": "Google shipped another Flash release barely three weeks after the last one, claiming substantial improvements. The release cadence itself is the story for anyone pinning a model version in a product.",
+      "tags": ["model-release", "google"],
+      "cluster": true,
+      "sources": [
+        { "name": "Google DeepMind", "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/" },
+        { "name": "Ars Technica", "url": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release/" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Suno Studio 2.0 moves toward being a real DAW",
+      "blurb": "Studio 2.0 adds MIDI support, its most requested feature, pushing Suno past a bare-bones editor with generative features. A generative tool growing the plumbing professionals expect.",
+      "tags": ["tools", "audio", "production"],
+      "sources": [
+        { "name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/979345/suno-studio-2-0-midi-chatbot-custom-effects" }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief agency wire",
+      "count": 25,
+      "examples": [
+        "Daps Directs Quavo Through A Euro Summer Fever Dream In Trance",
+        "Jimyi Xu to Lead F5 Shanghai's Global Voice",
+        "Generation Media bolsters Senior Leadership team with appointment of"
+      ]
+    }
+  ]
+}

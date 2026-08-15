@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "generated_for": "2026-08-15",
+    "window": "2026-08-13..2026-08-15",
+    "sources_scanned": 42,
+    "items_in_window": 159,
+    "lang": "de",
+    "note": "Wasserzeichen ziehen sich durch den Tag. Google lässt seine sichtbare Markierung abschalten, Anthropic markiert alles, was Claude angefasst hat. Herkunftsnachweis wird zur Gestaltungsfrage."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "EU-Leitlinien sagen, wann ein AI-Label Pflicht ist",
+      "blurb": "Neue EU-Leitlinien regeln, wann AI-gestützte Funktionen gekennzeichnet werden müssen. Smashing Magazine argumentiert, dass das übliche Glitzer-Symbol dafür nicht reicht. Wer generative Funktionen ausliefert, hat damit eine neue Gestaltungsaufgabe.",
+      "tags": ["regulierung", "eu", "interface"],
+      "sources": [
+        { "name": "Smashing Magazine", "url": "https://smashingmagazine.com/2026/08/eu-guidelines-ai-labelling/" }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Wo AI verlässlich aussieht, aber keine ist",
+      "blurb": "Ein Praktiker, der seit drei Jahren Agenten, Workflows und MCPs baut, verortet den Schaden in der Lücke zwischen dem, wofür AI verlässlich ist, und dem, wofür sie verlässlich aussieht. Sein Befund: die Befähigung im Team scheitert, nicht das Werkzeug.",
+      "tags": ["workflow", "team", "agenten"],
+      "sources": [
+        { "name": "UX Collective", "url": "https://uxdesign.cc/getting-started-is-not-getting-it-right-e76270614d14?source=rss----138adf9c44c---4" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Instagram zieht die Schrift gerade, die Branche streitet",
+      "blurb": "Der erste Refresh seit zehn Jahren behält die handgeschriebene Schrift, begradigt sie und bringt eine neue Wortmarke plus drei Schriften. Das Designteam sagt, es habe hunderte Richtungen probiert, bevor es zur handschriftlichen zurückkehrte. Die Reaktionen reichen vom Werkstattgespräch bis zum Urteil von Ars Technica, das Ergebnis sei die perfekte Verkörperung von AI-Schrott.",
+      "tags": ["rebrand", "wortmarke", "typografie"],
+      "cluster": true,
+      "sources": [
+        { "name": "Creative Boom", "url": "https://www.creativeboom.com/news/instagram-reveals-its-first-brand-refresh-in-10-years-with-a-new-wordmark-and-three-typefaces/" },
+        { "name": "It's Nice That", "url": "https://www.itsnicethat.com/features/behind-instagrams-first-major-refresh-in-10-years-partnership-130826" },
+        { "name": "PRINT Magazine", "url": "https://www.printmag.com/branding-identity-design/instagram-refreshes-its-look-for-a-new-era/" },
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/design/branding/instagram-redesigned-its-logo-for-the-worst-possible-reason" },
+        { "name": "Ars Technica", "url": "https://arstechnica.com/ai/2026/08/the-new-instagram-logo-is-the-perfect-embodiment-of-ai-slop/" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Markenführung, wenn Kampagnen in Sekunden entstehen",
+      "blurb": "Designer Paul-Ch. Thiele spricht bei PAGE über Branding im KI-Zeitalter und sein Buch »Marke entspannt«. Kernfrage des Gesprächs: Was macht eine Marke unverwechselbar, wenn Texte, Bilder und Kampagnen in Sekunden entworfen sind.",
+      "tags": ["markenführung", "interview", "dach"],
+      "sources": [
+        { "name": "PAGE", "url": "https://page-online.de/kreation/interview-mit-dem-designer-paul-ch-thiele-ueber-branding-im-ki-zeitalter-und-sein-buch-marke-entspannt/" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Monoprix weckt eine französische Ikone",
+      "blurb": "Creative Bloq geht durch die neue Identity von Monoprix und begründet, warum sie trägt. Ein ruhiger Gegenpol zum lauten Rebrand der Woche.",
+      "tags": ["rebrand", "handel", "identity"],
+      "sources": [
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/design/branding/the-new-monoprix-rebrand-awakens-a-french-icon" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Im AI-Film waren die besten Stellen die menschlichen",
+      "blurb": "The Verge hat sich einen AI-generierten Kurzfilm über drei englische Möchtegern-Stars angesehen. Was trägt, kam von Menschen. Ein konkreter Blick darauf, wo generiertes Material weiterhin Regie braucht.",
+      "tags": ["film", "generatives-video", "urteil"],
+      "sources": [
+        { "name": "The Verge", "url": "https://www.theverge.com/entertainment/977994/higgsfield-ai-cully-hill-boys-black-list" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Geliehenes Vertrauen ist das, was niemand mehr prüft",
+      "blurb": "Je mehr wir einem Namen vertrauen, desto weniger hinterfragen wir die Maschine, die diesen Namen trägt. Und desto mehr verliert der Name, wenn die Maschine selbstbewusst danebenliegt. Relevant für jeden, der ein Markengesicht auf generierte Antworten setzt.",
+      "tags": ["vertrauen", "markenrisiko", "urteil"],
+      "sources": [
+        { "name": "UX Collective", "url": "https://uxdesign.cc/were-gorging-on-borrowed-trust-and-it-s-going-to-cost-us-2bc3f918caf5?source=rss----138adf9c44c---4" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Framers Marktplatz aus Sicht der Verkäufer",
+      "blurb": "Ein Creator, der seit 2022 Framer-Templates verkauft, listet zehn Streitpunkte und die kurze Geschichte des Marktplatzes auf. Lesenswert, wenn ein Teil des Einkommens auf fremder Plattform liegt.",
+      "tags": ["plattform", "marktplatz", "framer"],
+      "sources": [
+        { "name": "UX Collective", "url": "https://uxdesign.cc/framer-is-killing-the-marketplace-or-are-they-cc96a67763b3?source=rss----138adf9c44c---4" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Preiskampf an der Spitze, chinesische Labs halten mit",
+      "blurb": "US-Labs schieben billigere Modelle nach, während chinesische Anbieter aufholen. Interconnects liest GLM-5.3 ausdrücklich nicht als Destillations-Geschichte. Für alles, was darauf aufsetzt, verschiebt sich damit die Kostenbasis.",
+      "tags": ["markt", "open-weights", "preise"],
+      "cluster": true,
+      "sources": [
+        { "name": "Ars Technica", "url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/" },
+        { "name": "Interconnects", "url": "https://www.interconnects.ai/p/glm-53-how-chinese-labs-keep-stride" },
+        { "name": "The Decoder", "url": "https://the-decoder.de/zhipu-ai-veroeffentlicht-glm-5-3-chinas-neues-open-weights-modell-soll-das-staerkste-fuer-code-sein/" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Google lässt das sichtbare Wasserzeichen abschalten",
+      "blurb": "Eine neue Einstellung in Gemini und Flow entfernt die Glitzer-Markierung aus generierten Bildern, Videos und Musik. Die unsichtbaren Kennungen zur Erkennung bleiben aktiv.",
+      "tags": ["herkunft", "wasserzeichen", "google"],
+      "cluster": true,
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/" },
+        { "name": "The Verge", "url": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Claudes Wasserzeichen ist unsichtbar und greift weit",
+      "blurb": "Laut Ars Technica markiert das Verfahren alles, was Claude verarbeitet hat, auch von Menschen geschriebenen Text, den das Modell nur redigiert hat. The Decoder berichtet dazu eine Prüf-API für Dritte, die auf Googles SynthID-Methode aufsetzt und die Zufallsquelle bei der Wortwahl verändert.",
+      "tags": ["herkunft", "wasserzeichen", "anthropic"],
+      "cluster": true,
+      "sources": [
+        { "name": "Ars Technica", "url": "https://arstechnica.com/tech-policy/2026/08/claudes-new-scarlet-letter-watermark-is-invisible-for-now/" },
+        { "name": "The Decoder", "url": "https://the-decoder.de/neue-watermarking-api-von-anthropic-soll-ki-generierte-texte-von-claude-nachweisbar-machen/" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Gemini 3.7 Flash, drei Wochen nach 3.6",
+      "blurb": "Google schiebt die nächste Flash-Version nur drei Wochen nach der letzten nach und verspricht deutliche Verbesserungen, laut eigenen Benchmarks vor Claude Sonnet 5 und GPT-5.6 Terra bei Code. Die Taktung selbst ist die Nachricht für alle, die eine Modellversion im Produkt festschreiben.",
+      "tags": ["modell-release", "google"],
+      "cluster": true,
+      "sources": [
+        { "name": "Google DeepMind", "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/" },
+        { "name": "Ars Technica", "url": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release/" },
+        { "name": "The Decoder", "url": "https://the-decoder.de/googles-neues-gemini-3-7-flash-soll-claude-sonnet-5-und-gpt-5-6-terra-bei-der-codequalitaet-uebertreffen/" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Suno Studio 2.0 nähert sich einer echten DAW",
+      "blurb": "Studio 2.0 bringt MIDI-Unterstützung, die meistgewünschte Funktion, dazu unbegrenzten 32-Bit-Export und eine Chat-Funktion, die Instrumente und Plugins per Text erstellt. Ein generatives Werkzeug baut die Infrastruktur nach, die Profis erwarten.",
+      "tags": ["tools", "audio", "produktion"],
+      "cluster": true,
+      "sources": [
+        { "name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/979345/suno-studio-2-0-midi-chatbot-custom-effects" },
+        { "name": "The Decoder", "url": "https://the-decoder.de/suno-studio-2-0-macht-musikproduktion-zum-chat-mit-der-eigenen-ki-band/" }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief Agentur-Ticker",
+      "count": 25,
+      "examples": [
+        "Daps Directs Quavo Through A Euro Summer Fever Dream In Trance",
+        "Jimyi Xu to Lead F5 Shanghai's Global Voice",
+        "Generation Media bolsters Senior Leadership team with appointment of"
+      ]
+    }
+  ]
+}
