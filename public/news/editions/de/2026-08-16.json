@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "generated_for": "2026-08-16",
+    "window": "2026-08-14..2026-08-16",
+    "sources_scanned": 42,
+    "items_in_window": 107,
+    "lang": "de",
+    "note": "Dünner Samstag. Ein großer Teil des Zwei-Tage-Fensters wiederholt die Ausgabe von gestern, deshalb fehlen hier Instagram, Monoprix, das abschaltbare Google-Wasserzeichen und der Preiskampf. Übrig bleiben Herkunftsnachweis, Marktbewegungen und drei Texte über die Frage, was Agenten im Arbeitsalltag anrichten."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Eine Rollenbeschreibung gegen das Rauschen",
+      "blurb": "UX Collective sortiert, woraus die Rolle AI Designer tatsächlich besteht. Der Text beginnt mit dem Druck drumherum: Token-Vorgaben von oben, Entwicklung liefert schneller als jeder Prototyp entsteht, der Feed ist voll mit hingeschludertem Zeug. Gedacht als Anleitung zum Ausliefern eigener Entwürfe, nicht als Manifest.",
+      "tags": ["rolle", "workflow", "karriere"],
+      "sources": [
+        { "name": "UX Collective", "url": "https://uxdesign.cc/how-to-become-an-ai-designer-ff8ee8aed205?source=rss----138adf9c44c---4" }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Adobe hängt jetzt direkt an ChatGPT",
+      "blurb": "Die Adobe-Werkzeuge lassen sich direkt mit ChatGPT verbinden. Creative Bloq feiert das nicht, sondern stellt die naheliegende Frage: Vertragen sich Chatbots und Gestaltungswerkzeuge überhaupt?",
+      "tags": ["adobe", "chatgpt", "werkzeug"],
+      "sources": [
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/design/you-can-now-plug-adobe-straight-into-chatgpt-but-should-you" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Wenn ein Wappen allein nicht mehr reicht",
+      "blurb": "Das Vereinslogo war lange der einzige visuelle Absender eines Sportvereins, über Jahrzehnte gewachsen und emotional aufgeladen. Design Tagebuch zeigt, wie Sekundärlogos die Markensprache erweitern, ohne das Unantastbare anzufassen.",
+      "tags": ["sport", "logo", "markensprache"],
+      "sources": [
+        { "name": "Design Tagebuch", "url": "https://www.designtagebuch.de/mehr-als-ein-wappen-wie-sekundaerlogos-die-markensprache-im-sport-erweitern/" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Landmark Space heißt jetzt Elementa und steht auf einem Raster",
+      "blurb": "Manifest hat den Betreiber flexibler Büroflächen umbenannt, ausgerollt über alle dreißig Standorte. Die Identity dreht sich um ein dynamisches Raster nach dem Vorbild des Periodensystems. Die Positionierung stützt sich auf Forschung zu Leistung, Konzentration und Wohlbefinden am Arbeitsplatz.",
+      "tags": ["rebrand", "identity", "arbeitswelt"],
+      "sources": [
+        { "name": "Design Week", "url": "https://www.designweek.co.uk/manifest-rebrands-flexible-workspace-operator-landmark-space-as-elementa-workspace/" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Wer bekommt die Rechnung?",
+      "blurb": "Ein Essay darüber, dass Kosten wieder spürbar werden. Die These: 180 Jahre lang ging es darum, den Preis der Maschine unsichtbar zu machen. AI hat den Zähler wieder angeworfen.",
+      "tags": ["kosten", "essay", "infrastruktur"],
+      "sources": [
+        { "name": "UX Collective", "url": "https://uxdesign.cc/who-gets-the-meter-7cd1cd1ad5e4?source=rss----138adf9c44c---4" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Maschinen schreiben Tickets, Maschinen beantworten sie",
+      "blurb": "Agenten legen Issues an, Agenten arbeiten sie ab, und die Mail kommt auch immer öfter nicht mehr von einem Menschen. Heise hält das für sich genommen nicht für das Problem. Gefährlich wird es, wenn niemand im Team darüber spricht.",
+      "tags": ["agenten", "team", "zusammenarbeit"],
+      "sources": [
+        { "name": "heise online", "url": "https://www.heise.de/hintergrund/Wenn-Agenten-nur-noch-mit-Agenten-reden-reden-Menschen-aneinander-vorbei-11409160.html" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Jede gestrichene Einstiegsstelle rechnet sich einzeln",
+      "blurb": "Ein Forschungspapier beschreibt die Einführung von AI als Tragödie der Allmende. Wer Einstiegspositionen streicht, profitiert für sich genommen. Die gemeinsame Fachexpertise ganzer Berufsgruppen bleibt dabei auf der Strecke.",
+      "tags": ["arbeitsmarkt", "expertise", "studie"],
+      "sources": [
+        { "name": "the decoder", "url": "https://the-decoder.de/tragoedie-der-kognitiven-allmende-ki-koennte-kollektive-expertise-ganzer-berufe-zerstoeren/" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Wie Claudes Wasserzeichen konkret arbeitet",
+      "blurb": "Anthropic legt Details zu dem Wasserzeichen nach, das diese Woche angekündigt wurde: wie es technisch funktioniert, ob es sich durch Nachbearbeitung entfernen lässt, und was es für Code bedeutet. Genau die Fragen, die die Ankündigung offen gelassen hatte.",
+      "tags": ["wasserzeichen", "herkunft", "anthropic"],
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "KI-Bücher machen ein Fünftel des Katalogs, aber weniger Umsatz",
+      "blurb": "Laut einer Studie stellen KI-generierte Bücher bereits 20 Prozent des selbstverlegten Katalogs bei Amazon und kommen dabei auf 12 Prozent der Verkäufe. Der Umsatz pro Buch sinkt trotzdem, auch bei rein menschlich geschriebenen Titeln.",
+      "tags": ["publishing", "amazon", "studie"],
+      "sources": [
+        { "name": "the decoder", "url": "https://the-decoder.de/ki-generierte-buecher-ueberschwemmen-amazon-und-druecken-den-umsatz-fuer-menschliche-autoren/" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Cursor gehört jetzt zu SpaceX",
+      "blurb": "Die Übernahme ist offiziell abgeschlossen. Das Werkzeug, durch das bei vielen ein guter Teil der Produktionsarbeit läuft, sitzt damit bei SpaceX.",
+      "tags": ["übernahme", "werkzeug", "cursor"],
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Meta gibt Glimmer frei und behält das stärkere Modell",
+      "blurb": "Glimmer ist ein Modell mit offenen Gewichten, das jeder herunterladen und auf eigener Hardware betreiben kann. Muse Spark, das leistungsfähigere, bleibt hinter Metas eigenen Schnittstellen. Dazu ein Brief von Zuckerberg, laut dem AI allen gehören soll.",
+      "tags": ["open-weights", "meta", "release"],
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Sehen bleibt die schwache Stelle der Modelle",
+      "blurb": "Moonshot AI prüft mit PerceptionBench, wie gut multimodale Modelle tatsächlich sehen, getrennt vom logischen Schließen. Kein Spitzenmodell kommt über 60 Prozent Genauigkeit. Vorne liegt GPT-5.6 Sol.",
+      "tags": ["benchmark", "multimodal", "wahrnehmung"],
+      "sources": [
+        { "name": "the decoder", "url": "https://the-decoder.de/neuer-benchmark-bestaetigt-ki-modelle-sehen-weiterhin-schlecht/" }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Matt Webb",
+      "host": "interconnected.org",
+      "topic": "craft-judgment",
+      "items": [
+        {
+          "title": "Filtered for some poetry in modern English",
+          "url": "https://interconnected.org/home/2026/08/15/filtered",
+          "date": "2026-08-15"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 16,
+      "examples": [
+        "Daps Directs Quavo Through A Euro Summer Fever Dream In Trance",
+        "After Two Years of Building Brand Love, Giant Adds Value to the Conversation",
+        "Jimyi Xu to Lead F5 Shanghai's Global Voice"
+      ]
+    }
+  ]
+}

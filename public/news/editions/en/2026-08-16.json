@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "generated_for": "2026-08-16",
+    "window": "2026-08-14..2026-08-16",
+    "sources_scanned": 42,
+    "items_in_window": 66,
+    "lang": "en",
+    "note": "A thin Saturday. Much of the two-day window repeats what yesterday's edition already carried, so the Instagram refresh, Monoprix, the Google watermark toggle and the price war are left out here. What remains is provenance, market moves and two essays on what AI is actually reliable for."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "A job description written against the noise",
+      "blurb": "UX Collective runs through what the AI designer role actually consists of, opening with the pressure it comes with: token quotas, engineers shipping faster than anyone can prototype, vibecoded work filling the feed. It is framed as a guide to shipping your own designs rather than a manifesto.",
+      "tags": ["role", "workflow", "career"],
+      "sources": [
+        { "name": "UX Collective", "url": "https://uxdesign.cc/how-to-become-an-ai-designer-ff8ee8aed205?source=rss----138adf9c44c---4" }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Adobe now plugs straight into ChatGPT",
+      "blurb": "Adobe tools can now be connected directly to ChatGPT. Creative Bloq asks the obvious follow-up rather than celebrating it: whether chatbots and design tools mix at all.",
+      "tags": ["adobe", "chatgpt", "tooling"],
+      "sources": [
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/design/you-can-now-plug-adobe-straight-into-chatgpt-but-should-you" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Landmark Space becomes Elementa, built on a grid",
+      "blurb": "Manifest has rebranded the flexible workspace operator Landmark Space as Elementa Workspace, rolling out across all thirty properties. The identity centres on a dynamic grid drawn from the periodic table, with the positioning anchored in research on human performance, focus and wellbeing at work.",
+      "tags": ["rebrand", "identity", "workplace"],
+      "sources": [
+        { "name": "Design Week", "url": "https://www.designweek.co.uk/manifest-rebrands-flexible-workspace-operator-landmark-space-as-elementa-workspace/" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Spotify's AI problem is one it built itself",
+      "blurb": "Creative Bloq reads the Spotify AI row as self-inflicted. The short version of its argument: infinite content is not automatically a good thing.",
+      "tags": ["platform", "content", "spotify"],
+      "sources": [
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/entertainment/spotifys-ai-debacle-is-a-mess-of-its-own-making" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Who gets the meter?",
+      "blurb": "An essay on cost becoming visible again. The argument: 180 years were spent making the price of the machine imperceptible, and AI has turned the meter back on.",
+      "tags": ["cost", "essay", "infrastructure"],
+      "sources": [
+        { "name": "UX Collective", "url": "https://uxdesign.cc/who-gets-the-meter-7cd1cd1ad5e4?source=rss----138adf9c44c---4" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "A phone invented an eclipse that was not there",
+      "blurb": "A smartphone's AI-enhanced photography produced a solar eclipse image that does not match what happened in the sky. Creative Bloq uses the failure to point at the wider problem with computational image enhancement.",
+      "tags": ["photography", "computational", "provenance"],
+      "sources": [
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/ai/this-smartphones-solar-eclipse-fail-shows-the-problem-with-ai-enhanced-photography" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "How Claude's watermark actually works",
+      "blurb": "Anthropic has published more detail on the watermarking announced earlier this week: how it works in practice, whether editing can strip it, and what it means for code. The open questions from the announcement are the ones being answered.",
+      "tags": ["watermarking", "provenance", "anthropic"],
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Cursor is now part of SpaceX",
+      "blurb": "The acquisition has formally closed. The AI coding tool that a lot of production work runs through now sits inside SpaceX.",
+      "tags": ["m&a", "tooling", "cursor"],
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "A childhood photo, run through Grok",
+      "blurb": "A woman says her stepfather used Grok to turn a photo of her as a child into explicit imagery. Her charge against the tools, quoted directly: they take everyday life and turn it into child sexual abuse material.",
+      "tags": ["harm", "image-models", "policy"],
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Meta ships Glimmer as open weights, keeps the good one",
+      "blurb": "Glimmer is an open-weight model anyone can download and run on their own hardware. Muse Spark, the more powerful one, stays behind Meta's APIs. The release came with a letter from Zuckerberg arguing AI should be for everyone.",
+      "tags": ["open-weights", "meta", "release"],
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Hugging Face takes stock of open models",
+      "blurb": "A summer 2026 status report on the open model landscape. The feed carried no summary, so the title is all there is to go on until you open it.",
+      "tags": ["open-weights", "overview", "report"],
+      "sources": [
+        { "name": "Hugging Face", "url": "https://huggingface.co/blog/state-of-open-models-summer-2026" }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Matt Webb",
+      "host": "interconnected.org",
+      "topic": "craft-judgment",
+      "items": [
+        {
+          "title": "Filtered for some poetry in modern English",
+          "url": "https://interconnected.org/home/2026/08/15/filtered",
+          "date": "2026-08-15"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 16,
+      "examples": [
+        "Daps Directs Quavo Through A Euro Summer Fever Dream In Trance",
+        "After Two Years of Building Brand Love, Giant Adds Value to the Conversation",
+        "Jimyi Xu to Lead F5 Shanghai's Global Voice"
+      ]
+    }
+  ]
+}
