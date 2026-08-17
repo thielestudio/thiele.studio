@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "generated_for": "2026-08-17",
+    "window": "2026-08-15..2026-08-17",
+    "sources_scanned": 42,
+    "items_in_window": 79,
+    "lang": "de",
+    "note": "Dünner Montag. Das Zwei-Tage-Fenster wiederholt zu großen Teilen die Ausgabe von Samstag, deshalb fehlen hier die Claude-Wasserzeichen, der Cursor-Kauf und der Grok-Fall. Übrig bleiben eine Verschiebung in der Ästhetik, zwei Markenauftritte, zwei Marktbewegungen und zwei Änderungen bei den Anbietern."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Der Fehler wird wieder zum Signal",
+      "blurb": "Creative Bloq beobachtet, dass digitale Künstler bewusst Unvollkommenheiten zurück in ihre Arbeiten holen, während KI-Bilder sich ausbreiten. Es geht um sichtbare Urheberschaft, nicht um Nostalgie.",
+      "tags": ["ästhetik", "ki-bilder", "urheberschaft"],
+      "sources": [
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/art/digital-art/ai-art-is-making-digital-artists-embrace-imperfections-heres-how" }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Wenn die Maschine produziert, bleibt das Dirigieren",
+      "blurb": "Cedric Kiefer von onformative spricht am 26. August bei PAGE live in Berlin über Creative Orchestration. These: KI verändert die kreative Produktion und damit die Rolle der Kreativen.",
+      "tags": ["rolle", "produktion", "vortrag"],
+      "sources": [
+        { "name": "PAGE", "url": "https://page-online.de/pagelive/wenn-ki-produziert-wird-creative-orchestration-zur-schluesselkompetenz/" }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Barrierefreiheit ist keine zweite Disziplin",
+      "blurb": "UX Collective übersetzt Barrierefreiheit in Handgriffe, die Gestalter ohnehin beherrschen. Ausgangspunkt ist der jährliche WebAIM-Scan der Startseiten der Top-Million-Websites, der 2026 auf 95,9 Prozent davon Fehler fand.",
+      "tags": ["barrierefreiheit", "prozess", "webaim"],
+      "sources": [
+        { "name": "UX Collective", "url": "https://uxdesign.cc/you-already-know-how-to-make-it-accessible-b29513a9b217?source=rss----138adf9c44c---4" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Pentagram baut eine Identität um ein Dach von 1251",
+      "blurb": "Das Muziekcentrum De Bijloke in Gent sitzt in einem mittelalterlichen Hospital, gegründet 1251, mit Eichenkonstruktion aus dem 13. Jahrhundert über einem Saal, der das Publikum um die Bühne legt. Pentagram gibt dem Haus einen beweglichen Auftritt statt eines festen Zeichens.",
+      "tags": ["identität", "pentagram", "kultur"],
+      "sources": [
+        { "name": "Design Week", "url": "https://www.designweek.co.uk/pentagram-unveils-dynamic-visual-identity-for-historic-music-venue-de-bijloke/" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Das Instagram-Logo wird zur Kampagne der anderen",
+      "blurb": "Von McDonald's bis ChatGPT hängen sich Marken mit eigenen »time for a refresh«-Posts an das neue Instagram-Zeichen. Ein zweiter Text widerspricht dem Reflex, den Geschmack der Gen Z für den Umbau verantwortlich zu machen.",
+      "tags": ["instagram", "logo", "reaktionen"],
+      "cluster": true,
+      "sources": [
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/design/logos-icons/other-brands-are-throwing-shade-at-the-new-instagram-logo" },
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/design/logos-icons/no-gen-z-isnt-to-blame-for-instagrams-controversial-new-logo" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Campingplätze mit vollem Markenauftritt",
+      "blurb": "Hella Studio hat den Auftritt der TCS Campingplätze in der Schweiz komplett ausgerollt, von den Visuals bis zur Beschilderung vor Ort. PAGE zeigt die Arbeit.",
+      "tags": ["markenauftritt", "leitsystem", "schweiz"],
+      "sources": [
+        { "name": "PAGE", "url": "https://page-online.de/kreation/schoener-campen-in-der-schweiz-mit-hella-studio/" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "KI beschleunigt auch den schlechten Prozess",
+      "blurb": "Oliver Nocon und Lukas Heimann berichten, wie Agentic Engineering bei SAP im Alltag läuft. Der Befund im Titel: schneller wird das Team in jedem Fall, auch dort wo der Prozess nicht taugt.",
+      "tags": ["agenten", "prozess", "praxis"],
+      "sources": [
+        { "name": "heise", "url": "https://www.heise.de/news/KI-macht-Teams-schneller-leider-auch-bei-schlechten-Prozessen-11401027.html" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Concept Art in VR gebaut, in Blender fertig gemacht",
+      "blurb": "Bart Tchorzewski kombiniert VR-Modellierung mit klassischem 3D, um eine futuristische Roboterfigur zu bauen. Ein Werkstattbericht, keine Werkzeugmeldung.",
+      "tags": ["3d", "blender", "werkstatt"],
+      "sources": [
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/art/animation/how-to-make-sci-fi-concept-art-using-vr-and-blender" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Stripe kauft laut Bericht die Vermittlungsschicht",
+      "blurb": "TechCrunch berichtet, Stripe übernehme das KI-Gateway OpenRouter für mehr als sieben Milliarden Dollar. Der OpenRouter-Chef hatte die eigene Firma zuletzt als Stripe für KI beschrieben.",
+      "tags": ["übernahme", "infrastruktur", "stripe"],
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Anthropic-Chef nennt die Gegenwehr eine Vertrauensfrage",
+      "blurb": "Dario Amodei ordnet den Gegenwind gegen KI als Vertrauenskrise ein und weist den Vorwurf zurück, er zeichne ein zu düsteres Bild.",
+      "tags": ["vertrauen", "anthropic", "debatte"],
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "OpenAI löst sein Risiko-Team auf",
+      "blurb": "Laut Financial Times hat OpenAI Ende des vergangenen Monats das Preparedness-Team aufgelöst, das schwere Risiken der eigenen Modelle bewerten und Gegenmaßnahmen entwickeln sollte. Die Zuständigkeiten wandern in bestehende Teams, mehrere Sicherheitsleute sind betroffen.",
+      "tags": ["openai", "sicherheit", "organisation"],
+      "cluster": true,
+      "sources": [
+        { "name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team" },
+        { "name": "The Decoder", "url": "https://the-decoder.de/openai-loest-sicherheitsteam-fuer-katastrophale-ki-risiken-auf/" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "ChatGPT schneidet mit, wie du arbeitest",
+      "blurb": "Die macOS-App hat eine Funktion namens Computer History, die Klicks und Tastenanschläge zu Trainingsdaten macht, daraus eine Zeitleiste baut, Automatisierungen vorschlägt und liegengebliebene Aufgaben aufgreift. ChatGPT und Codex können sie lesen.",
+      "tags": ["chatgpt", "datenschutz", "automatisierung"],
+      "sources": [
+        { "name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes" }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Matt Webb",
+      "host": "interconnected.org",
+      "topic": "craft-judgment",
+      "items": [
+        {
+          "title": "Filtered for some poetry in modern English",
+          "url": "https://interconnected.org/home/2026/08/15/filtered",
+          "date": "2026-08-15"
+        }
+      ]
+    }
+  ],
+  "firehose": []
+}

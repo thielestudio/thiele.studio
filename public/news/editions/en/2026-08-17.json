@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "generated_for": "2026-08-17",
+    "window": "2026-08-15..2026-08-17",
+    "sources_scanned": 42,
+    "items_in_window": 34,
+    "lang": "en",
+    "note": "A thin Monday. The two-day window largely repeats Saturday's edition, so the Claude watermark details, the Cursor acquisition and the Grok imagery case are not repeated here. What is left: one aesthetic shift, one identity, two market moves and two changes inside the model providers."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Flaws are becoming a signal again",
+      "blurb": "Creative Bloq reports that digital artists are deliberately bringing imperfections back into their work as AI-generated images spread. The argument is about visible authorship, not nostalgia.",
+      "tags": ["aesthetics", "ai-art", "authorship"],
+      "sources": [
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/art/digital-art/ai-art-is-making-digital-artists-embrace-imperfections-heres-how" }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Accessibility is not a second skill set",
+      "blurb": "UX Collective reframes accessibility as a translation of things designers already do rather than a separate discipline. The starting point is WebAIM's annual crawl of the top million home pages, whose 2026 results found errors on 95.9% of them.",
+      "tags": ["accessibility", "process", "webaim"],
+      "sources": [
+        { "name": "UX Collective", "url": "https://uxdesign.cc/you-already-know-how-to-make-it-accessible-b29513a9b217?source=rss----138adf9c44c---4" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Pentagram builds an identity around a 13th-century roof",
+      "blurb": "Muziekcentrum De Bijloke in Ghent sits inside a medieval hospital founded in 1251, with an oak roof structure over a modern hall that wraps the audience around the stage. Pentagram's new identity for the venue is dynamic rather than fixed.",
+      "tags": ["identity", "pentagram", "culture"],
+      "sources": [
+        { "name": "Design Week", "url": "https://www.designweek.co.uk/pentagram-unveils-dynamic-visual-identity-for-historic-music-venue-de-bijloke/" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "The Instagram logo becomes everyone else's campaign",
+      "blurb": "Brands from McDonald's to ChatGPT have jumped on the new Instagram mark with their own \"time for a refresh\" posts. A second piece pushes back on the reflex of blaming Gen Z taste for the redesign.",
+      "tags": ["instagram", "logo", "reactions"],
+      "cluster": true,
+      "sources": [
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/design/logos-icons/other-brands-are-throwing-shade-at-the-new-instagram-logo" },
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/design/logos-icons/no-gen-z-isnt-to-blame-for-instagrams-controversial-new-logo" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Concept art built in VR, finished in Blender",
+      "blurb": "Bart Tchorzewski walks through combining VR sculpting with conventional 3D modelling to build a futuristic robot figure. A process piece, not a tool announcement.",
+      "tags": ["3d", "blender", "process"],
+      "sources": [
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/art/animation/how-to-make-sci-fi-concept-art-using-vr-and-blender" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Stripe reportedly buys the router layer",
+      "blurb": "TechCrunch reports Stripe is set to acquire AI gateway startup OpenRouter for more than $7B. OpenRouter's CEO recently described the company as Stripe for AI.",
+      "tags": ["m&a", "infrastructure", "stripe"],
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Anthropic's CEO calls the backlash a trust problem",
+      "blurb": "Dario Amodei frames the current backlash against AI as fundamentally a crisis of trust, and pushes back on the claim that he has been painting an overly pessimistic picture.",
+      "tags": ["trust", "anthropic", "discourse"],
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "OpenAI disbands its preparedness team",
+      "blurb": "According to the Financial Times, OpenAI dissolved the team that assessed whether models posed serious risks and developed mitigations for them at the end of last month.",
+      "tags": ["openai", "safety", "org"],
+      "sources": [
+        { "name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "ChatGPT starts recording how you work",
+      "blurb": "The macOS desktop app has a feature called Computer History that turns clicks and keystrokes into training data, builds a timeline of your activity and suggests automations or picks up unfinished tasks. ChatGPT and Codex can both read it.",
+      "tags": ["chatgpt", "privacy", "automation"],
+      "sources": [
+        { "name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes" }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Matt Webb",
+      "host": "interconnected.org",
+      "topic": "craft-judgment",
+      "items": [
+        {
+          "title": "Filtered for some poetry in modern English",
+          "url": "https://interconnected.org/home/2026/08/15/filtered",
+          "date": "2026-08-15"
+        }
+      ]
+    }
+  ],
+  "firehose": []
+}
