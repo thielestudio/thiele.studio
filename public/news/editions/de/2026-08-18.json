@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "generated_for": "2026-08-18",
+    "window": "2026-08-16..2026-08-18",
+    "sources_scanned": 42,
+    "items_in_window": 141,
+    "lang": "de"
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Agenten werden zur Nutzergruppe, für die Produktdesign mitdenken muss",
+      "blurb": "Linears CPO meldet stark steigende MCP-Nutzung. Der Beitrag ordnet das in sechs aufkommende UX- und Design-Trends ein, mit Beispielen von Linear, Netflix, Runway, FullStory und Square. Die Frage dahinter: Sind Agenten die nächsten Nutzer, für die entworfen wird?",
+      "tags": ["agenten", "produkt-ux", "mcp"],
+      "sources": [
+        { "name": "Department of Product", "url": "https://departmentofproduct.substack.com/p/linears-cpo-says-mcp-usage-is-through" }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Wie Kundenarbeit und Deadlines die Haltung zu AI verschieben",
+      "blurb": "Ein Erfahrungsbericht darüber, wie Jahre kommerzieller Praxis das Verhältnis von Designerinnen und Designern zu neuer Technologie verändern. Kein Manifest, eher ein Blick auf die Bedingungen, unter denen Haltungen entstehen.",
+      "tags": ["praxis", "ai-adoption"],
+      "sources": [
+        { "name": "UX Collective", "url": "https://uxdesign.cc/ai-adoption-and-the-slow-erosion-of-design-idealism-fab75761ebd6?source=rss----138adf9c44c---4" }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Creative Orchestration als Rollenbeschreibung, wenn die Maschine produziert",
+      "blurb": "Cedric Kiefer von onformative argumentiert bei PAGE live am 26. August, dass sich mit KI in der Produktion auch die Rolle der Kreativen verschiebt. Orchestrieren statt selbst ausführen.",
+      "tags": ["produktion", "rollenbild", "ki"],
+      "sources": [
+        { "name": "PAGE", "url": "https://page-online.de/pagelive/wenn-ki-produziert-wird-creative-orchestration-zur-schluesselkompetenz/" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Instagram überarbeitet Wortmarke und Markensystem",
+      "blurb": "Erste Änderung des Typologos seit 2016, laut Meta anschließend an die Markenherkunft und angelegt darauf, sich zu dehnen und mitzuwachsen. It's Nice That zeigt mit Jasmine Probst und May Hartono, wie das System im Team entstanden ist und warum die mühsamste Arbeit unsichtbar bleiben soll.",
+      "tags": ["rebrand", "identity", "designsystem"],
+      "cluster": true,
+      "sources": [
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/design/branding/instagrams-new-brand-identity-is-more-than-just-a-wordmark" },
+        { "name": "It's Nice That", "url": "https://www.itsnicethat.com/features/designing-for-3-billion-how-instagram-built-a-brand-system-that-celebrates-everyones-point-of-view-partnership-170826" },
+        { "name": "dt", "url": "https://www.designtagebuch.de/instagram-erneuert-wortmarke-und-markendesign/" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Serviceplan gibt einer kaum bekannten Krankheit eine Markenidentität",
+      "blurb": "Der neue Auftritt für Ultra Rare Sarcoma e.V. hat die Aufgabe, sichtbar zu machen, worüber kaum jemand spricht. Ein Fall dafür, dass Identitätsarbeit auch Aufmerksamkeitsarbeit ist.",
+      "tags": ["identity", "non-profit"],
+      "sources": [
+        { "name": "PAGE", "url": "https://page-online.de/kreation/unsichtbares-sichtbar-machen-serviceplan-redesignt-ultra-rare-sarcoma-e-v/" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Das Werkzeugwechsel-Argument, vorgetragen von jemandem mit mehreren im Rücken",
+      "blurb": "Von der Tuschefeder zum Mac, von handgezeichneter Schrift zu digitalen Foundries, vom Markervisual zum 3D-Render. Die These: Die Branche hat neue Werkzeuge immer aufgenommen, und der glückliche Zufall ist der Teil, der sich nicht mitüberträgt.",
+      "tags": ["urteil", "handwerk", "ki-in-der-produktion"],
+      "sources": [
+        { "name": "Design Week", "url": "https://www.designweek.co.uk/ai-cant-replace-happy-accidents/" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Typografie als Infrastruktur gedacht, nicht als Dekoration",
+      "blurb": "Friedrich Althausen vom Monotype Studio Berlin erklärt bei PAGE live am 26. August, wie Schrift in der KI-Ära zur aktiven Infrastruktur wird. Eine Zuspitzung, die man an eigenen Projekten prüfen kann.",
+      "tags": ["typografie", "ki"],
+      "sources": [
+        { "name": "PAGE", "url": "https://page-online.de/typografie/intelligente-schriften-typografie-ist-infrastruktur-nicht-dekoration/" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Gotham bekommt mit 25 eine variable Achse",
+      "blurb": "Monotype öffnet die Schrift für Variabilität. Sara Soskolne fragt daran, wie gewachsene Identitäten Flexibilität und neue Technik aufnehmen, ohne als Identität unkenntlich zu werden.",
+      "tags": ["typografie", "variable-fonts", "identity"],
+      "sources": [
+        { "name": "PRINT Magazine", "url": "https://www.printmag.com/type-tuesday/gotham-variable-and-the-art-of-evolution/" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Amazon kauft seltene Bücher, scannt sie und zerstört sie danach",
+      "blurb": "Ein versteckter AirTag hat den Weg nachgezeichnet. Gedrucktes ist für Modellbauer gerade deshalb wertvoll, weil es nie online war. Damit rückt die Beschaffung von Trainingsmaterial als körperlicher und nicht rückholbarer Vorgang ins Bild.",
+      "tags": ["trainingsdaten", "rechte", "verlage"],
+      "cluster": true,
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/17/amazon-once-an-online-bookseller-is-destroying-rare-books-to-train-ai-models/" },
+        { "name": "Ars Technica", "url": "https://arstechnica.com/tech-policy/2026/08/hidden-airtag-reveals-amazon-is-trashing-rare-books-to-train-ai/" },
+        { "name": "The Decoder", "url": "https://the-decoder.de/airtag-enthuellt-wie-amazon-seltene-buecher-fuer-ki-zerstoert/" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Der KI-Videomarkt hat sich nach Soras Fehlstart neu sortiert",
+      "blurb": "Rund um Hollywoods Studios siedeln sich Produktionsfirmen wie Promise an, die mit Echtzeit-Hintergründen und anderen KI-Werkzeugen arbeiten. Genannt werden Kostensenkungen von bis zu 50 Prozent.",
+      "tags": ["bewegtbild", "produktionsmarkt"],
+      "sources": [
+        { "name": "The Decoder", "url": "https://the-decoder.de/von-soras-fehlstart-zur-funktionierenden-branche-ki-video-markt-hat-sich-neu-sortiert/" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Anthropic erklärt die unsichtbaren Wasserzeichen für Claude-Texte",
+      "blurb": "Das Verfahren zielt auf die europäischen Transparenzregeln und markiert Text, nicht Bild. Kritiker bezweifeln laut The Decoder, dass die Wortwahl dabei unbeeinflusst bleibt, und juristisch ist die Sache ebenfalls offen.",
+      "tags": ["wasserzeichen", "herkunftsnachweis", "eu-ai-act"],
+      "cluster": true,
+      "sources": [
+        { "name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system" },
+        { "name": "The Decoder", "url": "https://the-decoder.de/warum-claudes-unsichtbare-wasserzeichen-weder-unsichtbar-noch-harmlos-sein-koennten/" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "ChatGPT zeichnet auf dem Mac auf, wie du arbeitest",
+      "blurb": "Computer History macht aus Klicks und Tastenanschlägen Trainingsdaten, lernt Arbeitsmuster, schlägt Automatisierungen vor und übernimmt Aufgaben. Auf Rechnern mit Kundenmaterial ist das eine Einstellungsfrage, keine Randnotiz.",
+      "tags": ["werkzeuge", "datenschutz", "automatisierung"],
+      "sources": [
+        { "name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes" }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Luke Wroblewski",
+      "host": "lukew.com",
+      "topic": "design-practice",
+      "items": [
+        { "title": "Ask LukeW: A New Retrieval System", "url": "https://www.lukew.com/ff/entry.asp?2157", "date": "2026-08-17" }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief Agenturticker",
+      "count": 25,
+      "examples": [
+        "DAVID holt das Kreativduo Rog Pretto als CCOs zurück nach São Paulo",
+        "Turtlebox Audio ernennt McGarrah Jessee zur ersten Leadagentur",
+        "Wonderhood Studios startet Recruiting-Kampagne für das RAF Regiment"
+      ]
+    }
+  ]
+}
