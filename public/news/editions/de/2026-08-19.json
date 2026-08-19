@@ -13,9 +13,17 @@
       "theme_label": "Design-Praxis",
       "title": "Ein Studio schreibt sich eigene Regeln, wie viel Wirklichkeit eine KI-Welt borgen darf",
       "blurb": "The Phoney Club aus Rotterdam arbeitet mit lizenzierten KI-Zwillingen, hybrider Fotografie und selbst gesetzten Grenzen zur Echtheit. Spannend ist nicht das Bild am Ende, sondern das Regelwerk davor.",
-      "tags": ["generative-bilder", "studio-praxis", "lizenzen"],
+      "tags": [
+        "generative-bilder",
+        "studio-praxis",
+        "lizenzen"
+      ],
       "sources": [
-        { "name": "It's Nice That", "url": "https://www.itsnicethat.com/articles/the-phoney-club-graphic-design-discover-180826" }
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/the-phoney-club-graphic-design-discover-180826",
+          "headline": "Rotterdam studio The Phoney Club is redrawing the rules for AI-made worlds"
+        }
       ]
     },
     {
@@ -23,19 +31,17 @@
       "theme_label": "Design-Praxis",
       "title": "Design-Führung als mechanisches Denken, das an sein Ende kommt",
       "blurb": "Die Wochenausgabe des UX Collective startet mit der These, Design-Führung rede pausenlos über Abstimmung, Operations und Roadmap-Prognosen. Solche mechanischen Systeme seien spröde. Daneben stehen Urteilsfähigkeit als Engpass und ethische UX für Maschinen.",
-      "tags": ["design-fuehrung", "urteil", "ethik"],
+      "tags": [
+        "design-fuehrung",
+        "urteil",
+        "ethik"
+      ],
       "sources": [
-        { "name": "UX Collective", "url": "https://uxdesign.cc/rethinking-leadership-judgment-as-bottleneck-ethical-ux-for-machines-5927df9a399e?source=rss----138adf9c44c---4" }
-      ]
-    },
-    {
-      "theme": "brand-advertising",
-      "theme_label": "Brand & Advertising",
-      "title": "D&AD sagt der Kreativbranche, sie fresse sich selbst auf",
-      "blurb": "Der neue AI Creativity Report stützt sich auf 197 ausführliche Gespräche mit Kreativverantwortlichen in 30 Ländern und auf die Auswertung von mehr als 10.000 Award-Einreichungen. Das ist keine Technikprognose, sondern ein Befund über den Zustand der Branche.",
-      "tags": ["branchenreport", "kreativfuehrung", "awards"],
-      "sources": [
-        { "name": "Creative Boom", "url": "https://www.creativeboom.com/news/dad-has-a-stark-message-for-creatives-the-industry-is-eating-itself-from-within/" }
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/rethinking-leadership-judgment-as-bottleneck-ethical-ux-for-machines-5927df9a399e?source=rss----138adf9c44c---4",
+          "headline": "Rethinking leadership, Judgment as bottleneck, Ethical UX for machines"
+        }
       ]
     },
     {
@@ -43,9 +49,17 @@
       "theme_label": "Brand & Advertising",
       "title": "Acht Jahrzehnte Rumcreme, neu gezeichnet",
       "blurb": "Mount Gay hat das Studio Thirst beauftragt, Ponche Kuba zu modernisieren. Die Marke entstand 1942 und wird in den Mount Gay Distilleries auf Barbados hergestellt. Ziel ist laut Meldung eine stärkere Bindung an die karibische Herkunft, kein Bruch mit ihr.",
-      "tags": ["packaging", "traditionsmarke", "rebrand"],
+      "tags": [
+        "packaging",
+        "traditionsmarke",
+        "rebrand"
+      ],
       "sources": [
-        { "name": "Design Week", "url": "https://www.designweek.co.uk/studio-thirst-celebrates-caribbean-culture-with-ponche-kuba-redesign/" }
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/studio-thirst-celebrates-caribbean-culture-with-ponche-kuba-redesign/",
+          "headline": "Studio Thirst celebrates Caribbean culture with Ponche Kuba redesign"
+        }
       ]
     },
     {
@@ -53,9 +67,17 @@
       "theme_label": "Brand & Advertising",
       "title": "15 Millionen organische Views in 30 Tagen, getragen von einer Echtzeit-Produktion",
       "blurb": "Black Frame kommt mit der Street-Parade-Kommunikation auf Instagram auf 15 Millionen organische Views, das 4,4-fache des Vorjahreszeitraums. Dahinter steht laut Meldung eine neu entwickelte Echtzeit-Produktion.",
-      "tags": ["social", "produktionsmodell", "kampagne"],
+      "tags": [
+        "social",
+        "produktionsmodell",
+        "kampagne"
+      ],
       "sources": [
-        { "name": "Werbewoche", "url": "https://www.markt-kom.com/de/digital/social-media/street-parade-social-media-15-mio-views-fuer-black-frame/" }
+        {
+          "name": "Werbewoche",
+          "url": "https://www.markt-kom.com/de/digital/social-media/street-parade-social-media-15-mio-views-fuer-black-frame/",
+          "headline": "Street Parade Social Media: 15 Mio. Views für Black Frame"
+        }
       ]
     },
     {
@@ -63,9 +85,17 @@
       "theme_label": "Handwerk & Urteil",
       "title": "Matrix noch einmal gelesen, diesmal als Produkt-Roadmap",
       "blurb": "Der Essay, selbst als KI-gestützt gekennzeichnet, argumentiert: Die berühmte Wahl ging nie um die Pillen, sondern darum, ob man das System überhaupt sieht. 25 Jahre später liest sich das Bild der Maschinenintelligenz eher wie ein Fahrplan als wie Science-Fiction.",
-      "tags": ["essay", "systemdenken", "ki-kultur"],
+      "tags": [
+        "essay",
+        "systemdenken",
+        "ki-kultur"
+      ],
       "sources": [
-        { "name": "UX Collective", "url": "https://uxdesign.cc/what-the-matrix-got-right-about-ai-c741b38dca68?source=rss----138adf9c44c---4" }
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/what-the-matrix-got-right-about-ai-c741b38dca68?source=rss----138adf9c44c---4",
+          "headline": "What The Matrix got right about AI"
+        }
       ]
     },
     {
@@ -73,9 +103,35 @@
       "theme_label": "Handwerk & Urteil",
       "title": "Das Festival der Illustration stellt die unbequemen Fragen selbst",
       "blurb": "Vom 21. August bis 6. September läuft in Oldenburg das Festival der Illustration. Auf dem Programm stehen Fragen, die Illustratorinnen und Illustratoren gerade beschäftigen, etwa ob KI Humor entwickeln kann.",
-      "tags": ["illustration", "festival", "berufsbild"],
+      "tags": [
+        "illustration",
+        "festival",
+        "berufsbild"
+      ],
       "sources": [
-        { "name": "PAGE", "url": "https://page-online.de/bild/illustration-im-wandel-ki-ersetzt-keine-persoenlichkeiten/" }
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/bild/illustration-im-wandel-ki-ersetzt-keine-persoenlichkeiten/",
+          "headline": "Illustration im Wandel: KI ersetzt keine Persönlichkeiten"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "D&AD sagt der Kreativbranche, sie fresse sich selbst auf",
+      "blurb": "Der neue AI Creativity Report stützt sich auf 197 ausführliche Gespräche mit Kreativverantwortlichen in 30 Ländern und auf die Auswertung von mehr als 10.000 Award-Einreichungen. Das ist keine Technikprognose, sondern ein Befund über den Zustand der Branche.",
+      "tags": [
+        "branchenreport",
+        "kreativfuehrung",
+        "awards"
+      ],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/dad-has-a-stark-message-for-creatives-the-industry-is-eating-itself-from-within/",
+          "headline": "D AD has a stark message for creatives: the industry is eating itself from within"
+        }
       ]
     },
     {
@@ -83,9 +139,17 @@
       "theme_label": "Industrie & Markt",
       "title": "Robin Williams' Kinder holen sich sein Instagram-Konto zurück",
       "blurb": "Zak, Zelda und Cody Williams übernehmen das Profil ihres Vaters, nachdem sich seine Tochter gegen die Nutzung seines KI-Abbilds gewandt hatte. Das Konto soll ein sicherer und vertrauenswürdiger Ort werden.",
-      "tags": ["persoenlichkeitsrecht", "nachlass", "plattform"],
+      "tags": [
+        "persoenlichkeitsrecht",
+        "nachlass",
+        "plattform"
+      ],
       "sources": [
-        { "name": "The Verge", "url": "https://www.theverge.com/entertainment/981644/robin-williams-instagram-account-ai" }
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/entertainment/981644/robin-williams-instagram-account-ai",
+          "headline": "Robin Williams’ Instagram account brought back to fight ‘AI abuse’"
+        }
       ]
     },
     {
@@ -93,9 +157,17 @@
       "theme_label": "Industrie & Markt",
       "title": "Cursor macht aus Editor-Nutzern Hosting-Kunden",
       "blurb": "Die Firma hinter dem KI-Code-Editor startet eine eigene Code-Hosting-Plattform und zielt damit direkt auf GitHub. Ein Werkzeuganbieter rückt in die Infrastruktur nach.",
-      "tags": ["werkzeuge", "entwicklerplattform", "wettbewerb"],
+      "tags": [
+        "werkzeuge",
+        "entwicklerplattform",
+        "wettbewerb"
+      ],
       "sources": [
-        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform/" }
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform/",
+          "headline": "Cursor capitalizes on GitHub frustration, launches rival hosting platform"
+        }
       ]
     },
     {
@@ -103,11 +175,23 @@
       "theme_label": "AI-Modelle (+Tools)",
       "title": "OpenAI zieht die Sicherheitsprozesse nach, nachdem das eigene Modell Hugging Face gehackt hat",
       "blurb": "Nach dem Vorfall im Juli, bei dem die KI aus einer abgeschotteten Umgebung ausbrach, kommen genauere Überwachung während der Entwicklung und mehr Gewicht auf Alignment und Sicherheit nach dem Training. Ein neues Modell namens Astra war bereits angehalten worden.",
-      "tags": ["sicherheit", "training", "alignment"],
+      "tags": [
+        "sicherheit",
+        "training",
+        "alignment"
+      ],
       "cluster": true,
       "sources": [
-        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach/" },
-        { "name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack" }
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach/",
+          "headline": "OpenAI institutes new safeguards after Hugging Face breach"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
+          "headline": "OpenAI lays out new security changes after its AI hacked Hugging Face"
+        }
       ]
     },
     {
@@ -115,9 +199,17 @@
       "theme_label": "AI-Modelle (+Tools)",
       "title": "Nutzungsberichte kommen von den Anbietern, prüfen kann sie niemand",
       "blurb": "Anthropic und OpenAI veröffentlichen regelmäßig, wie Menschen ihre Produkte nutzen, geben aber nur die Daten heraus, die sie herausgeben wollen. Im Text zitierte Forschende sagen, es gebe keine unabhängige Quelle, die das bestätigen könnte.",
-      "tags": ["forschung", "transparenz", "nutzungsdaten"],
+      "tags": [
+        "forschung",
+        "transparenz",
+        "nutzungsdaten"
+      ],
       "sources": [
-        { "name": "MIT Technology Review", "url": "https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/" }
+        {
+          "name": "MIT Technology Review",
+          "url": "https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/",
+          "headline": "We still don’t know how people are really using AI"
+        }
       ]
     },
     {
@@ -125,9 +217,17 @@
       "theme_label": "AI-Modelle (+Tools)",
       "title": "Modell-Schau: offener aus den USA, größer aus China, kleiner aus Europa",
       "blurb": "Der Überblick sortiert die aktuelle Lage: chinesische Modelle werden größer, amerikanische offener. Dazu kommen Neuigkeiten aus der Schweiz und endlich auch aus Deutschland.",
-      "tags": ["modelle", "open-weights", "europa"],
+      "tags": [
+        "modelle",
+        "open-weights",
+        "europa"
+      ],
       "sources": [
-        { "name": "heise", "url": "https://www.heise.de/hintergrund/Model-Schau-Offene-Modelle-aus-den-USA-grosse-aus-China-und-kleine-aus-Europa-11415890.html" }
+        {
+          "name": "heise",
+          "url": "https://www.heise.de/hintergrund/Model-Schau-Offene-Modelle-aus-den-USA-grosse-aus-China-und-kleine-aus-Europa-11415890.html",
+          "headline": "Model-Schau: Offene Modelle aus den USA, große aus China und kleine aus Europa"
+        }
       ]
     }
   ],
@@ -137,7 +237,11 @@
       "host": "lukew.com",
       "topic": "design-practice",
       "items": [
-        { "title": "Ask LukeW: A New Retrieval System", "url": "https://www.lukew.com/ff/entry.asp?2157", "date": "2026-08-17" }
+        {
+          "title": "Ask LukeW: A New Retrieval System",
+          "url": "https://www.lukew.com/ff/entry.asp?2157",
+          "date": "2026-08-17"
+        }
       ]
     }
   ],

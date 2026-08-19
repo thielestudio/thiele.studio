@@ -64,6 +64,11 @@
   .srclist .out{font-family:var(--mono);font-size:11px;color:var(--tx3);white-space:nowrap;min-width:96px;}
   .srclist .hl{color:var(--tx);}
   .srclist a:hover .hl{text-decoration:underline;}
+  a.srcone{display:flex;gap:10px;align-items:baseline;padding:9px 12px;border:1px solid var(--line);background:var(--surface);font-size:13.5px;line-height:1.4;}
+  a.srcone:hover{background:var(--bg);}
+  a.srcone .out{font-family:var(--mono);font-size:11px;color:var(--tx3);white-space:nowrap;min-width:96px;}
+  a.srcone .hl{color:var(--tx);}
+  a.srcone:hover .hl{text-decoration:underline;}
   .tagline{margin-top:9px;display:flex;gap:6px;flex-wrap:wrap;}
   .tg{font-family:var(--mono);font-size:10.5px;color:var(--tx3);}
   .tg::before{content:"#";color:var(--line2);}
@@ -125,12 +130,12 @@ const esc=s=>(s==null?"":String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;
 
 const STR={
   en:{ topics:"Topics", voices:"Voices", all:"All", edition:"Edition",
-       sources:n=>`${n} source${n>1?"s":""} · view headlines`, multi:"corroborated · view headlines", badge:n=>`${n} sources`,
+       multi:n=>`${n} outlets reported this · view headlines`, badge:n=>`${n} sources`,
        noTopic:"Nothing in this filter.", noVoice:"No voice in this filter.",
        voiceNote:"Independent writers publish infrequently. Some days this axis is thin; over a week it fills up.",
        foot:"PULSE · AI × Design, daily digest from curated sources.", loadFail:"Could not load editions." },
   de:{ topics:"Themen", voices:"Stimmen", all:"Alle", edition:"Ausgabe",
-       sources:n=>`${n} Quelle${n>1?"n":""} · Headlines ansehen`, multi:"mehrfach belegt · Headlines ansehen", badge:n=>`${n} Quellen`,
+       multi:n=>`${n} Redaktionen berichten dasselbe · Headlines ansehen`, badge:n=>`${n} Quellen`,
        noTopic:"Kein Thema in diesem Filter.", noVoice:"Keine Stimme in diesem Filter.",
        voiceNote:"Denker-Feeds sind niederfrequent. An manchen Tagen ist die Achse dünn, über die Woche füllt sie sich.",
        foot:"PULSE · AI × Design, täglich verdichtet aus kuratierten Quellen.", loadFail:"Konnte Ausgaben nicht laden." }
@@ -193,8 +198,13 @@ function renderTopics(){
 function render(){ state.lens==="topics"?renderTopicsView():renderVoicesView(); }
 function srcBlock(s){
   const n=s.sources.length;
-  const rows=s.sources.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener"><span class="out">${esc(x.name)}</span><span class="hl">${esc(x.headline||x.name)}</span></a>`).join("");
-  return `<details class="srcs"><summary><span class="chev">▸</span>${s.cluster?`<span class="badge">${esc(t().badge(n))}</span>`:""}<span>${s.cluster?esc(t().multi):esc(t().sources(n))}</span></summary><div class="srclist">${rows}</div></details>`;
+  const row=x=>`<span class="out">${esc(x.name)}</span><span class="hl">${esc(x.headline||x.name)}</span>`;
+  if(n===1){
+    const x=s.sources[0];
+    return `<a class="srcone" href="${esc(x.url)}" target="_blank" rel="noopener">${row(x)}</a>`;
+  }
+  const rows=s.sources.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${row(x)}</a>`).join("");
+  return `<details class="srcs"><summary><span class="chev">▸</span><span class="badge">${esc(t().badge(n))}</span><span>${esc(t().multi(n))}</span></summary><div class="srclist">${rows}</div></details>`;
 }
 function renderTopicsView(){
   const ed=state.edition;
