@@ -5,7 +5,7 @@
     "sources_scanned": 42,
     "items_in_window": 177,
     "lang": "de",
-    "note": "Das Fenster überschneidet sich mit der Ausgabe von gestern. Was am 18. August schon lief (Instagram-Rebrand, Gotham Variable, Amazons Buchscans, Claude-Wasserzeichen), bleibt hier draußen."
+    "note": "Das Fenster überschneidet sich mit der Ausgabe von gestern. Was am 18. August schon lief (Instagram-Rebrand, Gotham Variable, Amazons Buchscans, Claude-Wasserzeichen), bleibt hier draußen. Nachtrag am selben Tag: der /design-Befehl in Claude Code war beim ersten Durchgang übersehen worden."
   },
   "stories": [
     {
@@ -215,18 +215,18 @@
     {
       "theme": "ai-models",
       "theme_label": "AI-Modelle (+Tools)",
-      "title": "Modell-Schau: offener aus den USA, größer aus China, kleiner aus Europa",
-      "blurb": "Der Überblick sortiert die aktuelle Lage: chinesische Modelle werden größer, amerikanische offener. Dazu kommen Neuigkeiten aus der Schweiz und endlich auch aus Deutschland.",
+      "title": "Claude Code entwirft jetzt im Terminal, bevor gebaut wird",
+      "blurb": "Anthropic hat eine frühe Vorschau des /design-Befehls veröffentlicht. Ein Aufruf wie »/design a few options for {feature}« erzeugt mehrere Entwürfe als Artboards, aus denen sich einer auswählen und weiterbearbeiten lässt. Laut dem Entwickler Nate Parrott liest Claude dabei die bestehende Codebasis und richtet sich nach dem vorhandenen UI-Stil. Editor und Prompting kommen aus Claude Design, gespeichert werden muss noch von Hand.",
       "tags": [
-        "modelle",
-        "open-weights",
-        "europa"
+        "werkzeuge",
+        "ui-entwurf",
+        "claude-code"
       ],
       "sources": [
         {
-          "name": "heise",
-          "url": "https://www.heise.de/hintergrund/Model-Schau-Offene-Modelle-aus-den-USA-grosse-aus-China-und-kleine-aus-Europa-11415890.html",
-          "headline": "Model-Schau: Offene Modelle aus den USA, große aus China und kleine aus Europa"
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/claude-code-bekommt-design-befehl-anthropic-laesst-entwickler-ui-entwuerfe-direkt-im-terminal-erstellen/",
+          "headline": "Claude Code bekommt /design-Befehl: Anthropic lässt Entwickler UI-Entwürfe direkt im Terminal erstellen"
         }
       ]
     }
