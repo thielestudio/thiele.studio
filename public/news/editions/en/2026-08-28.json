@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "generated_for": "2026-08-28",
+    "window": "2026-08-26..2026-08-28",
+    "sources_scanned": 42,
+    "items_in_window": 108,
+    "lang": "en",
+    "note": "The two-day window overlaps yesterday's edition. Pieces already carried on 27 August (CBI report, Untold rebrand, the AI-accusation pair, Gemini branding, Gemini 3.5 Transcribe) are left out rather than repeated."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "A locked model trained on nothing but his own sprites",
+      "blurb": "HaZ Dulull turned his pixel-art game Astro Burn into ten vertical episodes using Nura Studios' Showcraft, and the condition he set was ownership of the training set: a model trained exclusively on his own character sprites, animation and artwork. Voices and music stayed human, and one episode took about a working week end to end.",
+      "tags": ["animation", "ip", "production"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/ai/this-indie-dev-found-a-use-for-ai-but-says-the-project-was-still-firmly-human-led",
+          "headline": "This indie dev found a use for AI but says the project was still firmly human led"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "The bartender who could read a drink he had never tasted",
+      "blurb": "Dan Maccarone builds a whole argument about AI interfaces out of one bar anecdote: a partner who declared a martini perfect on sight, and the drink came back undrinkable. His point is that confidence and accuracy are only loosely coupled, in people and in models, and that the industry is designing for power users who assume everyone is them.",
+      "tags": ["ux", "judgment", "service-design"],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/ai-has-a-hospitality-problem-money-cant-fix-e8fa34e91d62",
+          "headline": "AI has a hospitality problem money can't fix"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Calendly rebrands because it stopped being a calendar",
+      "blurb": "Smith & Diction replaced the neon shapes with something softer, and the trigger was not the logo everyone read as a toilet bowl. Calendly now ships an AI email assistant and a meeting notetaker, and it needs an identity that argues for itself against tools users could vibe-code in an afternoon.",
+      "tags": ["rebrand", "saas", "identity"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/calendlys-finally-fixed-its-toilet-bowl-of-a-logo-design",
+          "headline": "Calendly's finally fixed its toilet bowl of a logo design"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "A wordmark with no single author",
+      "blurb": "ONBOX built the identity for Vancouver's Bar Supernova around a process rather than a drawing: guests at a pop-up hand-painted a hundred letters, and the modular wordmark is assembled from them. It matches a bar whose kitchen turns other people's food byproducts into shelf-stable ingredients.",
+      "tags": ["identity", "lettering", "hospitality"],
+      "sources": [
+        {
+          "name": "PRINT Magazine",
+          "url": "https://www.printmag.com/branding-identity-design/bar-supernova-onbox-brand-identity/",
+          "headline": "ONBOX Crowdsourced 100 Letters Hand-Painted at a Pop-Up for Bar Supernova's Crafted Identity"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Arc'teryx gives its repair infrastructure a front door",
+      "blurb": "forpeople named and designed System 0, the umbrella that pulls Arc'teryx's product creation, repair services and circular programmes into one customer-facing platform. Arc'teryx creative director Eugenie Frerichs describes the job as translation: turning back-end operations into something a customer can see and use.",
+      "tags": ["identity", "circularity", "service"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/forpeople-designs-brand-identity-and-guest-journey-for-arcteryx-circularity-platform-system-0/",
+          "headline": "forpeople designs brand identity and guest journey for Arc'teryx circularity platform System 0"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Being torn apart on the internet is the proof it landed",
+      "blurb": "Tom Carey watched Newcastle's 2026/27 home shirt get renamed the barcode shirt within hours and reads the pile-on as a compliment. Every summer thousands of clubs unveil kits at once, and few other categories produce an audience willing to argue about the thickness of a stripe.",
+      "tags": ["criticism", "sport", "identity"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/shirt-storm-the-beautiful-game-and-its-critical-clients/",
+          "headline": "Shirt storm: the beautiful game and its critical clients"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "The illustrator who left the meaning to the viewer",
+      "blurb": "Steven Heller marks the first Brad Holland legacy show, opening at SVA's Gramercy Gallery on 8 September, a year and a half after Holland's death at 81. The case Heller makes is technical: Holland built pictures with deliberate entry points, giving the reader clues rather than a literal restatement of the text.",
+      "tags": ["illustration", "exhibition", "legacy"],
+      "sources": [
+        {
+          "name": "PRINT Magazine",
+          "url": "https://www.printmag.com/daily-heller/the-daily-heller-brad-holland-exhibition/",
+          "headline": "The Daily Heller: The Legacy of Brad Holland, American Illustrator"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "The warehouse for open models changes owner",
+      "blurb": "Nvidia is reported to be buying Hugging Face for around 12.9 billion dollars, and what it buys is position rather than profit: the site is not yet profitable but has become the default place open-weight models are stored, downloaded and fine-tuned. It arrives as frontier labs build their own silicon to escape Nvidia's leverage.",
+      "cluster": true,
+      "tags": ["open-models", "acquisition", "platforms"],
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion/",
+          "headline": "Report: Nvidia to acquire AI model repository Hugging Face for $13 billion"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition/",
+          "headline": "Nvidia closes in on Hugging Face acquisition"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Photoshop gets a second interface, and it is a prompt bar",
+      "blurb": "Adobe's AI Assisted Editor, in beta, collects the generative tools into one toolbar beside the Pro Editor, and adds markup: draw an arrow or brush a rough shape on the image instead of describing the edit. Firefly Image 5 now reads the whole image context, so masking every region by hand is no longer the price of a local change.",
+      "cluster": true,
+      "tags": ["adobe", "photoshop", "tooling"],
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/985491/adobe-photoshop-ai-assisted-editor-markup",
+          "headline": "Adobe is adding more AI to Photoshop"
+        },
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/design-software/adobe-just-added-a-brand-new-ai-assisted-editor-to-photoshop",
+          "headline": "Adobe just added a brand new AI-assisted editor to Photoshop"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Video generation grows a keyframe and a draft mode",
+      "blurb": "Gemini Omni 1.1 Flash extends a scene by reading up to ten seconds of the existing footage instead of the last second, takes first and last frames to interpolate a camera move, and accepts three seconds of external video as a style reference. A 360p draft mode runs at a third of the cost, which is the part that changes how you iterate.",
+      "tags": ["video", "google", "generation"],
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
+          "headline": "Gemini Omni 1.1 Flash lets you build with more control"
+        }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Luke Wroblewski",
+      "host": "lukew.com",
+      "topic": "design-practice",
+      "items": [
+        {
+          "title": "Little Bits of Intelligence",
+          "url": "https://www.lukew.com/ff/entry.asp?2158",
+          "date": "2026-08-27"
+        }
+      ]
+    },
+    {
+      "name": "Maneesh Agrawala",
+      "host": "arxiv.org",
+      "topic": "ai-models",
+      "items": [
+        {
+          "title": "Ring Forcing: Towards Precise Long-Term Memory for Autoregressive Video Diffusion",
+          "url": "https://arxiv.org/abs/2608.26794v1",
+          "date": "2026-08-27"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief press releases, reviewed and not carried",
+      "count": 2,
+      "examples": [
+        "Deel Partners with Snoop Dogg's Dr. Bombay to Find the Brand's First-Ever International Ice Cream Taste Tester",
+        "Stonyfield Organic Launches First-Ever Organic Cow Spa"
+      ]
+    }
+  ]
+}
