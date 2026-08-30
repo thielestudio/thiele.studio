@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "generated_for": "2026-08-30",
+    "window": "2026-08-28..2026-08-30",
+    "sources_scanned": 42,
+    "items_in_window": 62,
+    "lang": "en",
+    "note": "Thin international window at the AI-and-design intersection. Most of the English-language volume was commerce noise and general AI politics, so several themes carry a single piece."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Canterbury's signage problem was too much information, not too little",
+      "blurb": "Maynard's audit of the medieval city found fingerposts, wall plaques and station maps that differed in style and legibility, plus signs retrofitted with promotional content. Design associate Helen Garley frames the fix as removing competing information rather than adding more of it.",
+      "tags": ["wayfinding", "public realm", "audit"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/maynard-declutters-canterbury-with-heritage-inspired-wayfinding/",
+          "headline": "Maynard declutters Canterbury with heritage-inspired wayfinding"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Arc'teryx gives its circularity work a front door",
+      "blurb": "forpeople defined the naming, identity and guest journey for System 0, an umbrella platform pulling Arc'teryx's product creation, repair services and circular programmes into one customer-facing story. The brief was translating back-end operations into something a customer can see.",
+      "tags": ["identity", "circularity", "retail experience"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/forpeople-designs-brand-identity-and-guest-journey-for-arcteryx-circularity-platform-system-0/",
+          "headline": "forpeople designs brand identity and guest journey for Arc'teryx circularity platform System 0"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Landor drops the category's cracked-chocolate cliche for Häagen-Dazs",
+      "blurb": "The new stick packaging for France and the UK puts the coating front and centre instead of borrowing the standard bitten-ice-cream codes. Burgundy now wraps the whole pack, with vertical stripes for shelf recognition and a proprietary silhouette drawn from the logo.",
+      "tags": ["packaging", "FMCG", "shelf presence"],
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/landor-reimagines-haagen-dazs-ice-cream-stick-packaging-around-desire-texture-and-taste/",
+          "headline": "Landor reimagines Häagen-Dazs ice cream stick packaging around desire, texture and taste"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Someone is trying to reclaim Twitter as abandoned property",
+      "blurb": "Operation Bluebird has relaunched the name at Twitter.now, arguing the trademark was effectively abandoned when Musk rebranded to X in 2022. One founder ran trademarks at the original Twitter; X is suing in Delaware, and the judge's tentative April ruling suggested Bluebird may have a case.",
+      "tags": ["trademark", "rebrand", "social media"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/social-media/could-the-return-of-twitter-be-a-happy-ending-for-the-worst-rebrand-of-all-time",
+          "headline": "The return of Twitter could be a happy ending after the worst rebrand of all time"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "In dance music, spotting the fake has become a job",
+      "blurb": "EDM producer Max Harris and others are publicly calling out peers they believe are passing generative output off as human work, and some of the accused only admitted to it under scrutiny. The awkward part is professional courtesy: it is one thing for listeners to accuse a performer, another for artists to accuse each other.",
+      "tags": ["generative audio", "attribution", "peer norms"],
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai",
+          "headline": "Musicians-turned-detectives are hunting for AI grifters"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Music publishers put a per-work price on Anthropic's training data",
+      "blurb": "Sony Music and Warner Chappell are seeking up to $150,000 per work for tens of thousands of works, plus up to $25,000 for each instance of stripped copyright data. The complaint names Dario Amodei and Benjamin Mann personally and alleges torrenting of millions of books alongside scraping of licensed lyric sites.",
+      "tags": ["copyright", "training data", "litigation"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
+          "headline": "Sony Music, Warner sue Anthropic, alleging a \"brazen campaign\" of intellectual property theft"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
+          "headline": "Sony Music and Warner Chappell are suing Anthropic"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "DLSS 5 leaked early, and it shows what neural rendering does without artists in the loop",
+      "blurb": "Modders pulled Nvidia's unreleased Neural Rendering files out of an NBA 2K27 build and pointed them at Control and Final Fantasy 7 Rebirth. Foliage holds up; faces do not, which is the point, because nobody tuned the materials or set the boundaries the technology was meant to work inside.",
+      "tags": ["real-time rendering", "game art", "pipeline"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/3d/unsettling-nvidias-dlss-5-controversial-ai-filter-has-leaked-and-gamers-are-horrified",
+          "headline": "\"Unsettling\" – Nvidia's controversial DLSS 5 AI filter has leaked, and gamers are horrified"
+        }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Matt Webb",
+      "host": "interconnected.org",
+      "topic": "craft-judgment",
+      "items": [
+        {
+          "title": "New app: Yesterday, an iPhone app for yesterday's weather",
+          "url": "https://interconnected.org/home/2026/08/26/yesterday",
+          "date": "2026-08-28"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief, reviewed and left out",
+      "count": 24,
+      "examples": [
+        "Leo UK and Premier Inn bring 'You Know What You're Getting' to Pride",
+        "KFC Thailand Unboxes the Cuteness with \"KFC SANRIO CHARACTERS\" Blind-Box Keychains",
+        "Stagwell Expands Strategic Partnership with Adobe to Build the Future of Enterprise Marketing Together"
+      ]
+    }
+  ]
+}
