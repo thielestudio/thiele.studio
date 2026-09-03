@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "generated_for": "2026-09-03",
+    "window": "2026-09-01..2026-09-03",
+    "sources_scanned": 42,
+    "items_in_window": 168,
+    "lang": "de",
+    "note": "Keine Feed-Ausfälle. Das Fenster überlappt mit gestern, deshalb sind vier der größten Stücke des Tages schon in der Ausgabe vom 2. September gelaufen und hier nicht wiederholt: Google Pics, Claude Fable 5.1, das Bahn-Redesign und der After-Effects-Workflow. Creative Bloq lieferte überwiegend Rabatte und Spiele-Anspieltests, t3n überwiegend allgemeine Tech-Meldungen ohne Design-Bezug."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Die Fläche wartet nicht mehr auf Anweisungen",
+      "blurb": "Aurélie Radom nimmt Miros agentische Canvas als Beispiel: Kontext aus Slack, GitHub, Amplitude und Granola landet in einem Raum, Sidekicks lesen ihn und erzeugen Dokumente, Diagramme oder Prototypen, Flows machen daraus wiederverwendbare Abläufe. Ihr Punkt ist, dass Nielsens alte Heuristiken dadurch nicht veralten, sondern eine neue Bedeutung bekommen. Sichtbarkeit des Systemzustands heißt jetzt, dass jemand erkennen muss, was der Agent verstanden hat und was er bereits verändert hat.",
+      "tags": ["agentische werkzeuge", "miro", "figma", "heuristiken"],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/when-the-canvas-starts-acting-whos-really-in-control-0128f641223c?source=rss----138adf9c44c---4",
+          "headline": "When the canvas starts acting, who’s really in control?"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Ein Illustrator zeichnet zuerst, dann übernimmt der Agent seine Regeln",
+      "blurb": "Tom May hatte die Identity von The Working Assembly für die Journaling-App Untold kritisiert und bekam eine Erklärung des Verfahrens. Laut Gründerin Jolene Delisle entstand zuerst eine beauftragte menschliche Illustration, darum herum baute das Team einen eigenen Agenten mit festgelegten gestalterischen Regeln, dessen Ausgaben in Textur, Ton, Licht und Komposition nachgearbeitet wurden. Begründet wird der Aufwand mit der Funktion: Die Illustration soll auf das reagieren, was Nutzer gerade ausdrücken, eine feste Bibliothek könnte das nicht.",
+      "tags": ["identity", "ki-illustration", "prozess"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/insight/i-questioned-twas-use-of-ai-illustration-in-a-branding-project-heres-their-fascinating-response/",
+          "headline": "I questioned TWA's use of AI illustration in a branding project: here's their fascinating response"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Eine Universität holt sich ihren Ortsnamen zurück in die Wortmarke",
+      "blurb": "rbl hat die University of East Anglia auf die Leitidee Original by nature gestellt, nach Gesprächen mit über 100 Verantwortlichen und Rückmeldungen von mehr als 800 Angehörigen der Hochschule. Sichtbar wird das an drei Stellen: Der Ort steht jetzt in der Wortmarke, das alte Glint-Zeichen wurde zu einer gebogenen Bake weiterentwickelt, die Palette kommt aus der Landschaft Norfolks. Strategiechefin Rhiannon Lowe sagt, die Geschichte sei schon da gewesen, sie sei nur nicht erzählt worden.",
+      "tags": ["rebrand", "hochschule", "wortmarke"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/rbl-rebrands-university-of-east-anglia-around-original-by-nature-ethos/",
+          "headline": "rbl rebrands University of East Anglia around ‘Original By Nature’ ethos"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Ein Buch verbietet das Moodboard und schlägt drei Phasen vor",
+      "blurb": "Erik Herrström, früher Brand Design bei Spotify, legt mit The Echo eine Methode gegen die Referenzschleife vor: Immerse, Create, Impact. Die erste Phase erlaubt keine Moodboards und keine frühen visuellen Referenzen, stattdessen ethnografische und subkulturelle Recherche, bevor überhaupt ein Programm geöffnet wird. Rezensent Pushkar Mankar hält das Buch für ein sorgfältiges Stück Arbeit, glaubt aber nicht, dass es die wirtschaftlichen Zwänge aufhebt, die Studios zu sicheren und automatisierten Entscheidungen drängen.",
+      "tags": ["methode", "markenstrategie", "rezension"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/erik-herrstroms-first-book-on-designing-brands-that-move-culture-a-review/",
+          "headline": "Erik Herrström's first book on designing brands that move culture: a review"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Perplexity liefert erst nach mehreren Anläufen eine brauchbare Vierklang-Palette",
+      "blurb": "Theresa-Marie Rhyne prüft weiter, wie gut Sprachmodelle Farbharmonien für Datenvisualisierung bauen, nach DeepSeek, ChatGPT, Claude, Copilot und Gemini nun Perplexity. Das Modell konzentrierte sich zuerst auf Farbfehlsichtigkeit und lieferte gar keinen echten Tetrad, erst nach überarbeiteten Prompts kam ein annähernder heraus. Wer solche Vorschläge übernimmt, prüft sie also besser gegen die Regel und nicht nur gegen den Kontrasttest.",
+      "tags": ["farbe", "datenvisualisierung", "barrierefreiheit"],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/color-scheming-with-perplexity-tetrads-daad13b49732?source=rss----138adf9c44c---4",
+          "headline": "Color scheming with Perplexity tetrads"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Die US-Regierung erklärt das Training an fremden Texten für Fair Use",
+      "blurb": "Das US-Justizministerium hat im Verfahren der New York Times gegen OpenAI eine Stellungnahme als Amicus eingereicht und stellt sich auf die Seite der KI-Unternehmen. Argument: Das Kopieren zum Training sei rechtlich etwas anderes als die Ausgabe des Modells, und diese Ausgaben seien den Originalen meist nicht wesentlich ähnlich. Die Stellungnahme widerspricht damit dem Bericht des Copyright Office, das ein pauschales Fair Use für KI-Training abgelehnt hatte.",
+      "tags": ["urheberrecht", "fair use", "openai"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/",
+          "headline": "US government sides with OpenAI on issue of training LLMs on copyrighted material"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/988344/trump-administration-new-york-times-openai-lawsuit",
+          "headline": "The Trump administration is supporting OpenAI in the NYT copyright lawsuit"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/us-justizministerium-stellt-sich-im-ki-urheberrechtsstreit-klar-auf-die-seite-von-fair-use/",
+          "headline": "US-Justizministerium stellt sich im KI-Urheberrechtsstreit klar auf die Seite von Fair Use"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "ByteDance kauft sich in die Kreativpreise ein",
+      "blurb": "CapCut wird globaler KI-Partner des One Club, und die Liste ist konkret: präsentierender Partner der ADC Young Guns 24 und der Disziplin Creative Use of AI bei der One Show 2027, eigener Wettbewerbsbrief bei den Young Ones Student Awards, dazu eine neue KI-Kategorie bei den ADC Annual Awards, die im Oktober 2026 angekündigt wird. Wer über generative Arbeit urteilt, tut das künftig also in einem Rahmen, den ein Anbieter generativer Werkzeuge bezahlt.",
+      "tags": ["awards", "capcut", "one club"],
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/the-one-club-and-capcut-announce-major-global-ai-partnership/",
+          "headline": "The One Club and CapCut Announce Major Global AI Partnership"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Anthropic öffnet die Prüfung seines Wasserzeichens für Behörden und Redaktionen",
+      "blurb": "Seit dem 2. August 2026 verlangt der EU AI Act ein unsichtbares Wasserzeichen in KI-Texten, Anthropic setzt dafür auf Googles SynthID-Text und gibt nun eine Prüf-API frei. Zugang bekommen Aufsichtsbehörden, Strafverfolgung, Medien, Faktenchecker, Forschung und Bildungseinrichtungen in der EU. Kritik gibt es an zwei Punkten: Das Verfahren verändert die Wortwahl und kann dadurch die Textqualität kosten, und in Verträgen mit KI-Verbot wird die Prüfung selbst zum heiklen Instrument.",
+      "tags": ["eu ai act", "wasserzeichen", "anthropic"],
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/anthropic-oeffnet-claude-ki-text-erkennung-fuer-behoerden-medien-und-faktenchecker/",
+          "headline": "Anthropic öffnet Claude KI-Text-Erkennung für Behörden, Medien, Faktenchecker und andere"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Atlas rekonstruiert einen Raum aus zwei Handybildern",
+      "blurb": "World Labs, gegründet von Fei-Fei Li, hat mit Atlas ein Weltmodell angekündigt, das Text, Bild, Video und 3D in einem System verarbeitet und alle Eingaben an einer Position im Raum verankert. Aus zwei bis 25 Aufnahmen baut es Szenen nach und gibt sie als Punktwolken oder Gaussian Splats aus, die Kameraführung wird als geometrische Angabe übergeben statt per Textbefehl beschrieben. Bei der Rekonstruktion aus wenigen Ansichten liegt der mittlere Fehler laut Hersteller bei 25,3 gegen 28,7 bis 47,7 der Spezialmodelle. Verfügbar ist Atlas bisher nur für ausgewählte Partner.",
+      "tags": ["weltmodell", "3d", "gaussian splats"],
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/world-labs-will-mit-weltmodell-atlas-spezialisierte-3d-modelle-ueberfluessig-machen/",
+          "headline": "World Labs will mit Weltmodell Atlas spezialisierte 3D-Modelle überflüssig machen"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Gemini sucht sich aus, welche Stellen eines Videos es überhaupt ansieht",
+      "blurb": "Statt ein Video gleichmäßig Bild für Bild abzutasten, entscheidet das Modell jetzt selbst über Abschnitt, Bildrate und Modalität, also Bild, Ton oder Transkript. Google nennt bis zu 88 Prozent weniger Token auf LVBench und 1H-VideoQA, rund 66 Prozent niedrigere Kosten pro Anfrage und leicht bessere Genauigkeit. Verfügbar für Gemini 3.7 Flash, 3.6 Flash und 3.5 Flash-Lite.",
+      "tags": ["bewegtbild", "gemini", "kosten"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+          "headline": "Introducing agentic video understanding with Gemini"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/google-gemini-analysiert-videos-jetzt-agentisch-und-spart-bis-zu-88-prozent-token/",
+          "headline": "Google Gemini analysiert Videos jetzt agentisch und spart bis zu 88 Prozent Token"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Das dritte Flash-Modell in sechs Wochen denkt länger und verbraucht mehr",
+      "blurb": "Gemini 3.8 Flash kommt in zwei Varianten, allgemein und auf Cybersicherheit spezialisiert, und erreicht auf DeepSWE v1.1 für lange Software-Aufgaben 73,7 Prozent. Der Einführungspreis bleibt der des drei Wochen alten Vorgängers bei 0,75 und 3,75 Dollar pro Million Token, verdoppelt sich aber nach Januar 2027. Der Haken steht im Kleingedruckten: Die zusätzlichen Denkschritte kosten rund 40 Prozent mehr Token und fressen den Preisvorteil teilweise wieder auf.",
+      "tags": ["gemini", "preise", "benchmarks"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash",
+          "headline": "Google says its new Gemini 3.8 Flash model ‘works harder’ but might cost more"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/09/google-releases-gemini-3-8-flash-its-third-flash-model-in-six-weeks/",
+          "headline": "Google releases Gemini 3.8 Flash, its third Flash model in six weeks"
+        },
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+          "headline": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/googles-gemini-flash-3-8-arbeitet-haerter-als-der-gerade-mal-drei-wochen-alte-vorgaenger-3-7-flash/",
+          "headline": "Googles Gemini Flash 3.8 arbeitet härter als der gerade mal drei Wochen alte Vorgänger 3.7 Flash"
+        }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Brad Frost",
+      "host": "bradfrost.com",
+      "topic": "design-practice",
+      "items": [
+        {
+          "title": "GitHub CLI: Media in issues, pull requests, and comments - GitHub Changelog",
+          "url": "https://bradfrost.com/links/post/github-cli-media-in-issues-pull-requests-and-comments-github-changelog/",
+          "date": "2026-09-02"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief, gesichtet und nicht genommen",
+      "count": 24,
+      "examples": [
+        "Arla unveils Feed Life™ as ‘Breakfast Yourself to Victory’ kicks off new creative chapter",
+        "ALT Expands with Manchester Office Launch and New Senior Hires",
+        "OAAA Reveals 2026 OBIE Awards Shortlist as the Industry’s Premier Creative Awards Return to New York"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "generated_for": "2026-09-03",
+    "window": "2026-09-01..2026-09-03",
+    "sources_scanned": 42,
+    "items_in_window": 124,
+    "lang": "en",
+    "note": "No feed failures. The window overlaps yesterday's, so three of the day's larger items already ran on 2 September and are not repeated here: Google Pics, Claude Fable 5.1 and the DLSS 5 argument. Creative Bloq ran mostly discounts and games hands-ons."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "The canvas has stopped waiting for instructions",
+      "blurb": "Aurélie Radom uses Miro's agentic canvas as the worked example: context from Slack, GitHub, Amplitude and Granola lands in one space, Sidekicks read it and produce documents, diagrams or prototypes, and Flows turn those into reusable workflows. Her argument is that Nielsen's heuristics do not expire here, they change meaning. Visibility of system status now means a person has to be able to see what the agent understood and what it already changed.",
+      "tags": ["agentic tools", "miro", "figma", "heuristics"],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/when-the-canvas-starts-acting-whos-really-in-control-0128f641223c?source=rss----138adf9c44c---4",
+          "headline": "When the canvas starts acting, who’s really in control?"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "An illustrator draws first, then the agent inherits the rules",
+      "blurb": "Tom May had criticised The Working Assembly's identity for the journaling app Untold and got an account of the method back. Founder Jolene Delisle describes a commissioned human illustration made first, a custom agent built around it under a fixed set of creative rules, and outputs reworked for texture, tone, lighting and composition. The justification is functional rather than financial: the illustration has to respond to what someone is expressing, which a fixed library cannot do.",
+      "tags": ["identity", "ai illustration", "process"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/insight/i-questioned-twas-use-of-ai-illustration-in-a-branding-project-heres-their-fascinating-response/",
+          "headline": "I questioned TWA's use of AI illustration in a branding project: here's their fascinating response"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "A university puts its own place name back into the wordmark",
+      "blurb": "rbl has rebuilt the University of East Anglia around the organising idea 'Original by nature', after consulting over 100 stakeholders and gathering input from more than 800 members of the university. Three things carry it: the location now sits in the wordmark, the long-standing glint symbol has become a curved beacon, and the palette is drawn from Norfolk. Strategy director Rhiannon Lowe says the story was already there and simply was not being told.",
+      "tags": ["rebrand", "higher education", "wordmark"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/rbl-rebrands-university-of-east-anglia-around-original-by-nature-ethos/",
+          "headline": "rbl rebrands University of East Anglia around ‘Original By Nature’ ethos"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "A book bans the moodboard and proposes three phases instead",
+      "blurb": "Erik Herrström, formerly leading brand design at Spotify, sets out a method against the reference loop in The Echo: Immerse, Create, Impact. The first phase permits no moodboards and no early visual references, requiring ethnographic and subcultural research before any design software is opened. Reviewer Pushkar Mankar rates it a thoughtful piece of work but doubts it undoes the economic pressures pushing studios toward safe, automated choices.",
+      "tags": ["method", "brand strategy", "review"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/erik-herrstroms-first-book-on-designing-brands-that-move-culture-a-review/",
+          "headline": "Erik Herrström's first book on designing brands that move culture: a review"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Perplexity needed several passes to produce a usable tetrad",
+      "blurb": "Theresa-Marie Rhyne continues testing how well language models build colour harmonies for data visualisation, adding Perplexity after DeepSeek, ChatGPT, Claude, Copilot and Gemini. The model fixated on colour deficiency first and returned no proper tetrad at all; only revised prompts produced an approximate one. Take the suggestion, then check it against the rule, not only against a contrast test.",
+      "tags": ["colour", "data visualisation", "accessibility"],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/color-scheming-with-perplexity-tetrads-daad13b49732?source=rss----138adf9c44c---4",
+          "headline": "Color scheming with Perplexity tetrads"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "The US government calls training on other people's text fair use",
+      "blurb": "The Justice Department filed an amicus brief in the New York Times case against OpenAI, siding with the AI companies. Its argument separates the copying done for training from the model's public outputs, which it says are often not substantially similar to the originals. The filing runs against the Copyright Office report that had rejected a blanket fair use for AI training.",
+      "tags": ["copyright", "fair use", "openai"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/",
+          "headline": "US government sides with OpenAI on issue of training LLMs on copyrighted material"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/988344/trump-administration-new-york-times-openai-lawsuit",
+          "headline": "The Trump administration is supporting OpenAI in the NYT copyright lawsuit"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "ByteDance buys its way into the creative awards",
+      "blurb": "CapCut becomes the One Club's global AI partner, and the list is specific: presenting partner of ADC Young Guns 24 and of the One Show 2027 Creative Use of AI discipline, its own brief in the Young Ones Student Awards, plus a new custom AI category for the ADC Annual Awards to be announced in October 2026. Judgment on generative work will now happen inside a frame paid for by a maker of generative tools.",
+      "tags": ["awards", "capcut", "one club"],
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/the-one-club-and-capcut-announce-major-global-ai-partnership/",
+          "headline": "The One Club and CapCut Announce Major Global AI Partnership"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Gemini now picks which parts of a video it bothers to watch",
+      "blurb": "Instead of sampling a video evenly frame by frame, the model decides for itself which segment to look at, at what frame rate and through which modality, image, audio or transcript. Google reports up to 88 percent fewer tokens on LVBench and 1H-VideoQA, roughly 66 percent lower cost per request, and slightly better accuracy. Available for Gemini 3.7 Flash, 3.6 Flash and 3.5 Flash-Lite.",
+      "tags": ["video", "gemini", "cost"],
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+          "headline": "Introducing agentic video understanding with Gemini"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "The third Flash model in six weeks thinks longer and eats more",
+      "blurb": "Gemini 3.8 Flash ships in a general and a cyber-specialised variant and reaches 73.7 percent on DeepSWE v1.1 for long-horizon software engineering. Introductory pricing matches the three-week-old predecessor at $0.75 and $3.75 per million tokens, then doubles after January 2027. The catch sits in the mechanism: the extra reasoning steps consume around 40 percent more tokens, which eats part of the price advantage back.",
+      "tags": ["gemini", "pricing", "benchmarks"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash",
+          "headline": "Google says its new Gemini 3.8 Flash model ‘works harder’ but might cost more"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/09/google-releases-gemini-3-8-flash-its-third-flash-model-in-six-weeks/",
+          "headline": "Google releases Gemini 3.8 Flash, its third Flash model in six weeks"
+        },
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+          "headline": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber"
+        }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Brad Frost",
+      "host": "bradfrost.com",
+      "topic": "design-practice",
+      "items": [
+        {
+          "title": "GitHub CLI: Media in issues, pull requests, and comments - GitHub Changelog",
+          "url": "https://bradfrost.com/links/post/github-cli-media-in-issues-pull-requests-and-comments-github-changelog/",
+          "date": "2026-09-02"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief, reviewed and not taken",
+      "count": 24,
+      "examples": [
+        "Arla unveils Feed Life™ as ‘Breakfast Yourself to Victory’ kicks off new creative chapter",
+        "ALT Expands with Manchester Office Launch and New Senior Hires",
+        "OAAA Reveals 2026 OBIE Awards Shortlist as the Industry’s Premier Creative Awards Return to New York"
+      ]
+    }
+  ]
+}
