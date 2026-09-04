@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "generated_for": "2026-09-04",
+    "window": "2026-09-02..2026-09-04",
+    "sources_scanned": 42,
+    "items_in_window": 117,
+    "lang": "en",
+    "note": "Creative Bloq’s ArtStation piece on AI art was dropped: two fetch attempts returned no article body, so no reading-based judgement was possible."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "When the canvas acts on its own",
+      "blurb": "Aurélie Radom argues the designer’s job shifts from specifying every interaction to deciding what a system may see, may do and should leave alone. What gets designed is also the moment control moves back to a person.",
+      "tags": [
+        "agentic-ui",
+        "ux",
+        "tools"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/when-the-canvas-starts-acting-whos-really-in-control-0128f641223c?source=rss----138adf9c44c---4",
+          "headline": "When the canvas starts acting, who’s really in control?"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Engineering’s veto rested on an information gap",
+      "blurb": "Dan Maccarone traces engineering’s old right to say no not to skill but to illegibility: nobody else could check the code, so every feasibility call stood unchallenged. Once that gap closes, a no has to be argued rather than asserted.",
+      "tags": [
+        "teams",
+        "power",
+        "ai-in-practice"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/ai-took-away-engineerings-right-to-say-no-839b9b6256f2?source=rss----138adf9c44c---4",
+          "headline": "AI took away engineering’s right to say no"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "A custom agent instead of an illustration order",
+      "blurb": "The Working Assembly says it did not generate the Untold identity off the shelf: it built an agent around a human-made visual reference and a fixed set of creative rules, then spent time tuning texture, tone, lighting and composition. The aim was artwork that reacts to what people write in the app rather than sitting static.",
+      "tags": [
+        "identity",
+        "ai-illustration",
+        "process"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/insight/i-questioned-twas-use-of-ai-illustration-in-a-branding-project-heres-their-fascinating-response/",
+          "headline": "I questioned TWA s use of AI illustration in a branding project: here s their fascinating response"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Norfolk supplies the palette for UEA",
+      "blurb": "rbl rebuilds the University of East Anglia identity around the idea “Original by nature”, folds the location into the wordmark and makes bulrush green the lead colour. The long-standing glint symbol becomes a curved beacon, set with Inter.",
+      "tags": [
+        "rebrand",
+        "education",
+        "colour"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/rbl-rebrands-university-of-east-anglia-around-original-by-nature-ethos/",
+          "headline": "rbl rebrands University of East Anglia around Original By Nature ethos"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Why AI food images turn people off",
+      "blurb": "TechCrunch traces generated menu imagery to convergence: models fall back on chains like McDonald’s and shave off the edges until every dish looks the same. A University of Duisburg-Essen study found such images trigger more disgust than obviously fake alternatives.",
+      "tags": [
+        "generative-images",
+        "taste",
+        "research"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/03/the-sameness-problem-behind-those-unappetizing-ai-generated-menus/",
+          "headline": "The sameness problem behind those unappetizing AI-generated menus"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "A 1973 contour face gets a variable axis",
+      "blurb": "Kanon Foundry’s Tor Weibull takes Ad Werner’s Paperclip Contour to 15 styles, adds capitals, redraws the numerals and reduces diagonals for screen use. The variable axis runs between retalic, roman and italic, and the lowercase j swaps its wide hook for a straight tail.",
+      "tags": [
+        "type-design",
+        "revival",
+        "variable-fonts"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It’s Nice That",
+          "url": "https://www.itsnicethat.com/articles/tor-weibull-kanon-foundry-clippy-graphic-design-project-030926",
+          "headline": "Paperclip Contour, meet Clippy: Kanon Foundry takes a 1973 typeface and makes it flexible across 15 different styles"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Washington backs fair use for model training",
+      "blurb": "The US government filed an amicus brief in The New York Times’ case against OpenAI, calling training on copyrighted works transformative and citing an interest in a competitive AI industry. The brief carries no binding authority in that district court.",
+      "tags": [
+        "copyright",
+        "regulation",
+        "training-data"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/",
+          "headline": "US government sides with OpenAI on issue of training LLMs on copyrighted material"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/988344/trump-administration-new-york-times-openai-lawsuit",
+          "headline": "The Trump administration is supporting OpenAI in the NYT copyright lawsuit"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Nvidia buys the distribution point for open models",
+      "blurb": "Nvidia is paying about $13 billion for Hugging Face, which hosts three million models and serves more than 18 million developers. Nvidia pledges the platform stays open to the whole ecosystem; the deal is targeted to close by 2027 and faces competition review.",
+      "tags": [
+        "m-and-a",
+        "open-weights",
+        "infrastructure"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/",
+          "headline": "Nvidia confirms it will buy Hugging Face for $12.9 billion"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/985474/nvidia-buying-hugging-face-deal",
+          "headline": "Nvidia is buying Hugging Face for almost $13 billion"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/09/nvidia-buys-hugging-face-the-github-of-ai-for-13-billion/",
+          "headline": "Nvidia buys Hugging Face, the GitHub of AI, for $13 billion"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "OpenAI calls GPT-6 Astra the start of the AGI era",
+      "blurb": "Astra goes first to OpenAI’s cybersecurity customers, then to Plus, Pro, Business and Enterprise users plus the API and AWS. It is the first model OpenAI rates above its own critical cybersecurity threshold, and president Greg Brockman says the AGI era has begun.",
+      "tags": [
+        "model-release",
+        "agents",
+        "safety"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
+          "headline": "OpenAI’s next big AI model has ‘entered the AGI era’"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
+          "headline": "OpenAI launches Astra, its powerful (and controversial) new model"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Third Flash model in six weeks",
+      "blurb": "Google puts Gemini 3.8 Flash at the top of the DeepSWE coding leaderboard at an introductory $0.75 per million input tokens, twice that after the year. On the OSWorld test of agentic computer use it still trails Claude Opus by a wide margin.",
+      "tags": [
+        "model-release",
+        "coding",
+        "pricing"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/09/google-releases-gemini-3-8-flash-its-third-flash-model-in-six-weeks/",
+          "headline": "Google releases Gemini 3.8 Flash, its third Flash model in six weeks"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash",
+          "headline": "Google says its new Gemini 3.8 Flash model ‘works harder’ but might cost more"
+        },
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+          "headline": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber"
+        }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Brad Frost",
+      "host": "bradfrost.com",
+      "topic": "design-practice",
+      "items": [
+        {
+          "title": "GitHub CLI: Media in issues, pull requests, and comments - GitHub Changelog",
+          "url": "https://bradfrost.com/links/post/github-cli-media-in-issues-pull-requests-and-comments-github-changelog/",
+          "date": "2026-09-02"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief (PR wire, screened, nothing selected)",
+      "count": 25,
+      "examples": [
+        "Lucid Motors BarkleyOKRP Launch “Is Your Family Built for the Lucid Gravity?” Campaign",
+        "Championing the joy of childhood: Dalziel Pow creates a vibrant new brand for Newlife",
+        "The Laughing Cow Brings Its Iconic Cheese Wedge to Life for Summer Activation Wrapping This Weekend"
+      ]
+    }
+  ]
+}

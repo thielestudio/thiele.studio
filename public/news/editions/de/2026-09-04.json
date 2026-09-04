@@ -1,0 +1,315 @@
+{
+  "meta": {
+    "generated_for": "2026-09-04",
+    "window": "2026-09-02..2026-09-04",
+    "sources_scanned": 42,
+    "items_in_window": 160,
+    "lang": "de",
+    "note": "Das Stück von Creative Bloq zu ArtStation und KI-Kunst ist rausgefallen: zwei Abrufversuche lieferten keinen Artikeltext, damit war kein gelesenes Urteil möglich."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Wenn die Fläche selbst handelt",
+      "blurb": "Aurélie Radom beschreibt die Verschiebung vom Festlegen jeder Interaktion hin zur Frage, was ein System sehen, tun und in Ruhe lassen darf. Entworfen wird damit auch der Moment, in dem die Kontrolle an einen Menschen zurückgeht.",
+      "tags": [
+        "agentic-ui",
+        "ux",
+        "werkzeuge"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/when-the-canvas-starts-acting-whos-really-in-control-0128f641223c?source=rss----138adf9c44c---4",
+          "headline": "When the canvas starts acting, who’s really in control?"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Das Nein der Entwicklung war ein Wissensvorsprung",
+      "blurb": "Dan Maccarone führt das alte Vetorecht der Entwicklung nicht auf Können zurück, sondern auf Unlesbarkeit: Code konnte sonst niemand prüfen, also stand jede Machbarkeitsaussage. Fällt dieser Vorsprung, muss ein Nein wieder begründet werden.",
+      "tags": [
+        "teams",
+        "macht",
+        "ki-im-alltag"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/ai-took-away-engineerings-right-to-say-no-839b9b6256f2?source=rss----138adf9c44c---4",
+          "headline": "AI took away engineering’s right to say no"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Kennzeichnungspflicht mit Gestaltungsspielraum",
+      "blurb": "Die EU schlägt Icons für die KI-Kennzeichnung vor, schreibt laut Florian Zühlke aber weder ein verpflichtendes Icon noch ein festes Design vor. Wie weit der Spielraum reicht und wo die Kennzeichnung ein Asset ästhetisch stört, legen Marken und Agenturen gerade unterschiedlich aus.",
+      "tags": [
+        "ai-act",
+        "kennzeichnung",
+        "recht"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/branche-karriere/ki-labels-wasserzeichen-das-wichtigste-ist-transparenz/",
+          "headline": "KI-Labels Wasserzeichen – das Wichtigste ist Transparenz"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Ein eigener Agent statt einer Bildbestellung",
+      "blurb": "The Working Assembly hat für die Identity der App Untold nach eigener Auskunft keine fertigen Generierungen genommen, sondern einen Agenten um eine von Menschen erstellte Bildreferenz und einen festen Satz Regeln gebaut. Ziel waren Illustrationen, die auf die Einträge der Nutzer reagieren, statt statisch zu bleiben.",
+      "tags": [
+        "identity",
+        "ki-illustration",
+        "prozess"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/insight/i-questioned-twas-use-of-ai-illustration-in-a-branding-project-heres-their-fascinating-response/",
+          "headline": "I questioned TWA s use of AI illustration in a branding project: here s their fascinating response"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Norfolk liefert die Farbe für die UEA",
+      "blurb": "rbl richtet die Identity der University of East Anglia auf den Gedanken »Original by nature« aus, holt den Ort in die Wortmarke und macht Bulrush Green zur Leitfarbe. Aus dem alten Glint-Zeichen wird eine gebogene Bake, gesetzt wird in Inter.",
+      "tags": [
+        "rebrand",
+        "hochschule",
+        "farbe"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/rbl-rebrands-university-of-east-anglia-around-original-by-nature-ethos/",
+          "headline": "rbl rebrands University of East Anglia around Original By Nature ethos"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Die Bahn stellt die Macher in den Mittelpunkt",
+      "blurb": "Strichpunkt Identity und of Unicorns&Lions übersetzen die Neuausrichtung unter Evelyn Palla in ein Erscheinungsbild, das illustrationsstark ist und das Personal zeigt statt der Technik. Anlass ist ausdrücklich der Vertrauensverlust der vergangenen Jahre.",
+      "tags": [
+        "corporate-design",
+        "rebrand",
+        "deutschland"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/alles-auf-veraenderung-das-kluge-neue-corporate-design-der-deutschen-bahn/",
+          "headline": "Alles auf Veränderung: Das kluge neue Corporate Design der Deutschen Bahn"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Warum KI-Bilder von Essen den Appetit verderben",
+      "blurb": "Generierte Speisekarten laufen laut TechCrunch in eine Konvergenz: Die Modelle greifen auf Ketten wie McDonald’s zurück und schleifen die Kanten ab, bis jedes Gericht gleich aussieht. Eine Studie der Universität Duisburg-Essen findet dabei mehr Ekel als bei offensichtlich unechten Bildern.",
+      "tags": [
+        "bildgenerierung",
+        "geschmack",
+        "studie"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/03/the-sameness-problem-behind-those-unappetizing-ai-generated-menus/",
+          "headline": "The sameness problem behind those unappetizing AI-generated menus"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Eine Konturschrift von 1973 bekommt eine Variable-Achse",
+      "blurb": "Tor Weibull von Kanon Foundry führt Ad Werners Paperclip Contour in 15 Schnitte, ergänzt Versalien, zeichnet die Ziffern neu und reduziert Diagonalen fürs Display. Die Variable-Achse läuft zwischen Retalic, Roman und Italic, das kleine j tauscht den weiten Haken gegen eine gerade Fahne.",
+      "tags": [
+        "schriftgestaltung",
+        "revival",
+        "variable-fonts"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It’s Nice That",
+          "url": "https://www.itsnicethat.com/articles/tor-weibull-kanon-foundry-clippy-graphic-design-project-030926",
+          "headline": "Paperclip Contour, meet Clippy: Kanon Foundry takes a 1973 typeface and makes it flexible across 15 different styles"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Washington stellt sich beim Training hinter Fair Use",
+      "blurb": "Die US-Regierung reicht im Verfahren der New York Times gegen OpenAI einen Amicus-Schriftsatz ein und nennt das Training mit geschützten Werken transformativ. Bindend ist das für das Gericht nicht, als politisches Signal ist es deutlich.",
+      "tags": [
+        "urheberrecht",
+        "regulierung",
+        "trainingsdaten"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/",
+          "headline": "US government sides with OpenAI on issue of training LLMs on copyrighted material"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/988344/trump-administration-new-york-times-openai-lawsuit",
+          "headline": "The Trump administration is supporting OpenAI in the NYT copyright lawsuit"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/us-justizministerium-stellt-sich-im-ki-urheberrechtsstreit-klar-auf-die-seite-von-fair-use/",
+          "headline": "US-Justizministerium stellt sich im KI-Urheberrechtsstreit klar auf die Seite von Fair Use"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Nvidia kauft die Verteilstelle für offene Modelle",
+      "blurb": "Für rund 13 Milliarden Dollar übernimmt Nvidia Hugging Face, wo drei Millionen Modelle liegen und über 18 Millionen Entwickler arbeiten. Die Plattform soll für das ganze Ökosystem offen bleiben, der Abschluss ist für 2027 geplant und geht durch die Kartellprüfung.",
+      "tags": [
+        "übernahme",
+        "open-weights",
+        "infrastruktur"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/",
+          "headline": "Nvidia confirms it will buy Hugging Face for $12.9 billion"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/985474/nvidia-buying-hugging-face-deal",
+          "headline": "Nvidia is buying Hugging Face for almost $13 billion"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/09/nvidia-buys-hugging-face-the-github-of-ai-for-13-billion/",
+          "headline": "Nvidia buys Hugging Face, the GitHub of AI, for $13 billion"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/nvidias-strategischer-zug-warum-der-chiphersteller-129-milliarden-fuer-hugging-face-zahlt/",
+          "headline": "Nvidias strategischer Zug: Warum der Chiphersteller 12,9 Milliarden für Hugging Face zahlt"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "OpenAI ruft mit GPT-6 Astra die AGI-Ära aus",
+      "blurb": "Astra geht zuerst an die Cybersecurity-Kunden, danach an Plus, Pro, Business und Enterprise sowie über API und AWS. Es ist das erste Modell, das OpenAI oberhalb der eigenen kritischen Cybersecurity-Schwelle einstuft, Präsident Greg Brockman spricht vom Beginn der AGI-Ära.",
+      "tags": [
+        "modell-release",
+        "agenten",
+        "sicherheit"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
+          "headline": "OpenAI’s next big AI model has ‘entered the AGI era’"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
+          "headline": "OpenAI launches Astra, its powerful (and controversial) new model"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/openai-veroeffentlicht-gpt-6-astra-und-erklaert-die-agi-aera-fuer-eroeffnet/",
+          "headline": "OpenAI veröffentlicht GPT-6 Astra und erklärt die AGI-Ära für eröffnet"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Drittes Flash-Modell in sechs Wochen",
+      "blurb": "Google setzt Gemini 3.8 Flash an die Spitze der Coding-Rangliste DeepSWE, einführend zu 0,75 Dollar je Million Eingabe-Token und später zum doppelten Preis. Bei der agentischen Computernutzung im OSWorld-Test liegt es weiter deutlich hinter Claude Opus.",
+      "tags": [
+        "modell-release",
+        "coding",
+        "preise"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/09/google-releases-gemini-3-8-flash-its-third-flash-model-in-six-weeks/",
+          "headline": "Google releases Gemini 3.8 Flash, its third Flash model in six weeks"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash",
+          "headline": "Google says its new Gemini 3.8 Flash model ‘works harder’ but might cost more"
+        },
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+          "headline": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/googles-gemini-flash-3-8-arbeitet-haerter-als-der-gerade-mal-drei-wochen-alte-vorgaenger-3-7-flash/",
+          "headline": "Googles Gemini Flash 3.8 arbeitet härter als der gerade mal drei Wochen alte Vorgänger 3.7 Flash"
+        }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Brad Frost",
+      "host": "bradfrost.com",
+      "topic": "design-practice",
+      "items": [
+        {
+          "title": "GitHub CLI: Media in issues, pull requests, and comments - GitHub Changelog",
+          "url": "https://bradfrost.com/links/post/github-cli-media-in-issues-pull-requests-and-comments-github-changelog/",
+          "date": "2026-09-02"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief (PR-Meldungen, gesichtet, nichts genommen)",
+      "count": 25,
+      "examples": [
+        "Lucid Motors BarkleyOKRP Launch “Is Your Family Built for the Lucid Gravity?” Campaign",
+        "Championing the joy of childhood: Dalziel Pow creates a vibrant new brand for Newlife",
+        "The Laughing Cow Brings Its Iconic Cheese Wedge to Life for Summer Activation Wrapping This Weekend"
+      ]
+    }
+  ]
+}
