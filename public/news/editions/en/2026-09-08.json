@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "generated_for": "2026-09-08",
+    "window": "2026-09-06..2026-09-08",
+    "sources_scanned": 42,
+    "items_in_window": 79,
+    "lang": "en",
+    "note": "One feed failed (export.arxiv.org). A thin window: Creative Bloq contributed a large block of Labor Day deal posts, all filtered out, and five otherwise usable pieces had already run in earlier editions."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "The design system is becoming the file you hand the agent",
+      "blurb": "This week's product briefing collects two versions of the same move: Vercel published a single DESIGNmd file that teaches any agent to design like Vercel, reporting 57% fewer known layout failures in testing, and Coinbase rebuilt hundreds of Code Connect component mappings after agents kept inventing icon names and rebuilding components that already existed. In both cases the fix was not a better prompt, it was maintained design system documentation.",
+      "tags": [
+        "design-systems",
+        "agents",
+        "documentation"
+      ],
+      "sources": [
+        {
+          "name": "Department of Product",
+          "url": "https://departmentofproduct.substack.com/p/openais-astra-in-action",
+          "headline": "🔵 OpenAI’s Astra in Action"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Code.org becomes CodeAI, and the identity keeps the contradiction visible",
+      "blurb": "Public Address renamed the education non-profit and built a system its own brand lead describes as technical and human, dark and light, held in contrast instead of resolved. The trigger sits in the organisation's own research: 84% of US students use AI tools, while only 16% of high school leaders say all their students learn about it in school.",
+      "tags": [
+        "rebrand",
+        "education",
+        "identity"
+      ],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/public-address-rebrands-code-org-as-codeai-to-tackle-ai-literacy/",
+          "headline": "Public Address rebrands Code.org as CodeAI to tackle AI literacy"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Pentagram splits one district brand into two Arabic halves",
+      "blurb": "For Doha Design District, Samar Maakaroun's team named two facing venues Mada, meaning range or reach, and Sada, meaning echo, so a maker space and an exhibition space read as two ends of one creative cycle. The brand architecture has to stay coherent across Arabic and English and feed back into the master brand.",
+      "tags": [
+        "brand-architecture",
+        "naming",
+        "bilingual"
+      ],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/pentagram-creates-paired-identities-for-new-venues-at-doha-design-district/",
+          "headline": "Pentagram creates paired identities for new venues at Doha Design District"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "An ascetic ingredient list as the visual argument",
+      "blurb": "Studio Tyrrell moved Manta's raw, unrefined ingredients to the front of the pack instead of the back and catalogued them online as a visual archive. The handmade logotype sits deliberately outside the otherwise rigorous system, which is where the identity puts the tension between purity and pleasure rather than resolving it.",
+      "tags": [
+        "packaging",
+        "identity",
+        "typography"
+      ],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/studio-tyrrel-manta-chocolate-graphic-design-project-070926",
+          "headline": "Raw and unrefined: Studio Tyrrell’s identity for Manta Chocolate leans into the tension between purity and pleasure"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "The middle ground is not a decision, it is an accumulation",
+      "blurb": "Aporva Baxi argues that faster tools and new agents widened the competent centre instead of making originality easier, and that nobody chooses to settle: it arrives through briefs that nudge towards the familiar and clients who say bold and mean safe. His warning sign is concrete, feeling drained by work you can find nothing to criticise in.",
+      "tags": [
+        "judgment",
+        "originality",
+        "process"
+      ],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/pov-good-isnt-good-enough-beware-the-design-middle-ground-creative-industry-070926",
+          "headline": "Good isn’t good enough: beware the design middle ground"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "156 illustrations into a weekly slot, the method is subtraction",
+      "blurb": "Igor Bastidas has spent three years turning each instalment of The Guardian's You Be The Judge into one image. What he reports learning is usable outside his desk: simplicity beats hunting for a complex metaphor, and the job is reading between the lines for the real tension rather than illustrating the stated dispute.",
+      "tags": [
+        "illustration",
+        "editorial",
+        "method"
+      ],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/features/igor-bastidas-illustration-spotlight-070926",
+          "headline": "How do you illustrate arguments? Igor Bastidas on illustrating You Be The Judge, The Guardian column that settles the nation’s disputes"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "A trademark you loudly abandon is a trademark you lose",
+      "blurb": "A judge let Musk's company keep the Twitter name but ruled it forfeited the bird logo and the word Tweet, citing two 2023 posts announcing that the brand and the birds were going and that blow torches were being taken to the logo on the building. The 35-page ruling treats the announcements themselves as evidence of discontinued bona fide use.",
+      "tags": [
+        "trademark",
+        "rebrand",
+        "litigation"
+      ],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/how-two-tweets-cost-elon-musk-the-twitter-logo",
+          "headline": "How two tweets cost Elon Musk the Twitter logo"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Cease and desist over a cursive R, and the dispensary is not moving",
+      "blurb": "The University of Maryland claims a cannabis brand called Terps USA copied the flourishes of its heritage Terps script. The owner changed the colour to green and added a gold drop shadow, but refuses to give up the name, which leaves the university holding a letter and a similarity argument about two letterforms.",
+      "tags": [
+        "trademark",
+        "logo",
+        "dispute"
+      ],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/maryland-university-tangled-in-unlikely-logo-dispute",
+          "headline": "Maryland University tangled in unlikely logo dispute"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "NVIDIA's pitch at IFA: the model stays on your machine and generates half the frames",
+      "blurb": "RTX Spark ran local agents inside Photoshop on a 128GB unified-memory workstation, with the presenting artist stating plainly that her creative data never leaves the machine and the agent doing the heavy lifting without overwriting her sketch. The video pipeline generates at 30 FPS and lower resolution then infers the rest offline, cutting a two-second Full HD clip from roughly 6 minutes 30 to about 1 minute 25.",
+      "tags": [
+        "local-ai",
+        "photoshop",
+        "video",
+        "hardware"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/ai/can-nvidia-and-adobe-work-together-to-get-creatives-to-actually-like-ai",
+          "headline": "Can NVIDIA and Adobe work together to get creatives to actually like AI?"
+        },
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/ai/i-saw-nvidias-new-ai-video-tool-why-rtx-sparks-half-frame-trick-might-actually-matter-and-why-creatives-are-right-to-be-wary",
+          "headline": "I saw NVIDIA's new AI video tool: why RTX Spark’s half‐frame trick might actually matter... and why creatives are right to be wary"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, reviewed and not picked up",
+      "count": 25,
+      "examples": [
+        "Pizza Hut just pulled off one of Australia's largest Single-Moment Brand Activations",
+        "IKEA Wants Hong Kong to Make Space for What You Love in New Campaign with TBWA/Hong Kong",
+        "ReBid Adds ChatGPT Ads Activation and Analytics to Its Agentic AI Marketing Platform"
+      ]
+    }
+  ]
+}

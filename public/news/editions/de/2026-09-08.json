@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "generated_for": "2026-09-08",
+    "window": "2026-09-06..2026-09-08",
+    "sources_scanned": 42,
+    "items_in_window": 127,
+    "lang": "de",
+    "note": "Ein Feed ausgefallen (export.arxiv.org). Dünnes Fenster: Creative Bloq lieferte einen großen Block Labor-Day-Rabattposts, alle aussortiert, und fünf sonst brauchbare Stücke standen bereits in früheren Ausgaben."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Das Design-System wird zur Datei, die man dem Agenten hinlegt",
+      "blurb": "Das Produkt-Briefing dieser Woche sammelt zweimal denselben Schritt: Vercel veröffentlicht eine einzelne DESIGNmd-Datei, die jedem Agenten beibringt, wie Vercel gestaltet, mit 57 Prozent weniger bekannten Layout-Fehlern im Test. Coinbase baute hunderte Code-Connect-Zuordnungen neu auf, nachdem Agenten ständig Icon-Namen erfanden und vorhandene Komponenten noch einmal bauten. Die Lösung war beide Male kein besserer Prompt, sondern gepflegte Dokumentation.",
+      "tags": [
+        "design-systeme",
+        "agenten",
+        "dokumentation"
+      ],
+      "sources": [
+        {
+          "name": "Department of Product",
+          "url": "https://departmentofproduct.substack.com/p/openais-astra-in-action",
+          "headline": "🔵 OpenAI’s Astra in Action"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Aus Code.org wird CodeAI, und die Identity hält den Widerspruch sichtbar",
+      "blurb": "Public Address hat die Bildungsorganisation umbenannt und ein System gebaut, das ihr eigener Markenverantwortlicher als technisch und menschlich, dunkel und hell beschreibt, im Kontrast gehalten statt aufgelöst. Der Anlass steht in den eigenen Zahlen: 84 Prozent der US-Schüler nutzen KI-Werkzeuge, aber nur 16 Prozent der Schulleitungen sagen, dass alle ihre Schüler etwas darüber lernen.",
+      "tags": [
+        "rebrand",
+        "bildung",
+        "identity"
+      ],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/public-address-rebrands-code-org-as-codeai-to-tackle-ai-literacy/",
+          "headline": "Public Address rebrands Code.org as CodeAI to tackle AI literacy"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Pentagram teilt eine Distriktmarke in zwei arabische Hälften",
+      "blurb": "Für das Doha Design District hat das Team um Samar Maakaroun zwei gegenüberliegende Orte Mada und Sada genannt, also Reichweite und Echo. So lesen sich Werkstatt und Ausstellungsraum als zwei Enden eines Kreislaufs. Die Markenarchitektur muss dabei auf Arabisch und Englisch zusammenhalten und auf die Dachmarke zurückwirken.",
+      "tags": [
+        "markenarchitektur",
+        "naming",
+        "zweisprachig"
+      ],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/pentagram-creates-paired-identities-for-new-venues-at-doha-design-district/",
+          "headline": "Pentagram creates paired identities for new venues at Doha Design District"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Die karge Zutatenliste als das eigentliche Argument",
+      "blurb": "Studio Tyrrell hat die rohen, unraffinierten Zutaten von Manta auf die Vorderseite der Packung geholt statt auf die Rückseite und sie online als Bildarchiv sortiert. Das handgezeichnete Logo sitzt bewusst außerhalb des ansonsten strengen Systems. Genau dort hält die Identity die Spannung zwischen Reinheit und Genuss aus, statt sie aufzulösen.",
+      "tags": [
+        "verpackung",
+        "identity",
+        "typografie"
+      ],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/studio-tyrrel-manta-chocolate-graphic-design-project-070926",
+          "headline": "Raw and unrefined: Studio Tyrrell’s identity for Manta Chocolate leans into the tension between purity and pleasure"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Feldschlösschen korrigiert zum Jubiläum die Perspektive im eigenen Wappen",
+      "blurb": "Zum 150-jährigen Bestehen überarbeitet die Schweizer Brauerei ihren Auftritt, beginnend beim meistverkauften Lager. In der Bildmarke wurde die falsche perspektivische Darstellung der Zinnen korrigiert und die Stein-Stilistik entfernt, die Wortmarke bekam kräftigere Serifen und eine goldgelbe Kontur. Auf der Dose steht der Name jetzt so groß, dass er frontal nicht mehr vollständig zu sehen ist.",
+      "tags": [
+        "verpackung",
+        "redesign",
+        "typografie"
+      ],
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "url": "https://www.designtagebuch.de/schweizer-biermarke-feldschloesschen-im-neuen-design/",
+          "headline": "Schweizer Biermarke Feldschlösschen im neuen Design"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Die Mitte ist keine Entscheidung, sie sammelt sich an",
+      "blurb": "Aporva Baxi argumentiert, dass schnellere Werkzeuge und neue Agenten die kompetente Mitte verbreitert haben, statt Eigenständigkeit leichter zu machen. Niemand entscheide sich für Mittelmaß, es entstehe aus lauter vernünftigen Einzelschritten: Briefings, die zum Vertrauten schieben, Kunden, die mutig sagen und sicher meinen. Sein Warnsignal ist handfest, nämlich Arbeit, an der es nichts zu kritisieren gibt und die trotzdem leer lässt.",
+      "tags": [
+        "urteil",
+        "eigenständigkeit",
+        "prozess"
+      ],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/pov-good-isnt-good-enough-beware-the-design-middle-ground-creative-industry-070926",
+          "headline": "Good isn’t good enough: beware the design middle ground"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "156 Illustrationen in derselben Rubrik, und die Methode heißt weglassen",
+      "blurb": "Igor Bastidas verdichtet seit drei Jahren jede Folge der Guardian-Rubrik You Be The Judge zu einem einzigen Bild. Was er als Lehre benennt, gilt auch ohne ihn: Einfachheit schlägt die Suche nach der komplexen Metapher, und die Arbeit besteht darin, die eigentliche Spannung zwischen den Zeilen zu finden statt den genannten Streit zu bebildern.",
+      "tags": [
+        "illustration",
+        "redaktion",
+        "methode"
+      ],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/features/igor-bastidas-illustration-spotlight-070926",
+          "headline": "How do you illustrate arguments? Igor Bastidas on illustrating You Be The Judge, The Guardian column that settles the nation’s disputes"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Eine Marke, die man laut aufgibt, ist eine Marke, die man verliert",
+      "blurb": "Ein Gericht lässt Musks Unternehmen den Namen Twitter, spricht ihm aber das Vogel-Logo und das Wort Tweet ab. Als Beleg dienen zwei Posts aus dem Jahr 2023, in denen angekündigt wurde, sich von der Marke und den Vögeln zu verabschieden und dem Logo am Gebäude mit dem Schneidbrenner zu Leibe zu rücken. Die 35-seitige Entscheidung wertet genau diese Ankündigungen als Aufgabe der ernsthaften Benutzung.",
+      "tags": [
+        "markenrecht",
+        "rebrand",
+        "urteil"
+      ],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/how-two-tweets-cost-elon-musk-the-twitter-logo",
+          "headline": "How two tweets cost Elon Musk the Twitter logo"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Nairobi zeigt, wie schnell ein ganzer Dienstleistungsmarkt verschwindet",
+      "blurb": "Laut einem Bericht der New York Times arbeiteten auf dem Höhepunkt allein in Nairobi mindestens 40.000 Menschen daran, Studienarbeiten für ausländische Studierende zu schreiben. Nach dem Start von ChatGPT brachen Preise und Aufträge ein, auch Transkription, Datenannotation und Content-Moderation gingen zurück. Übrig bleiben Aufträge für sogenannte Humanizer, die KI-Texte an Prüfsystemen vorbeischreiben.",
+      "tags": [
+        "arbeitsmarkt",
+        "dienstleistung",
+        "verdrängung"
+      ],
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/wie-ki-eine-ganze-branche-in-nairobi-ausloeschte/",
+          "headline": "Wie KI eine ganze Branche in Nairobi auslöschte"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "NVIDIAs Angebot auf der IFA: das Modell bleibt lokal und rechnet nur jedes zweite Bild",
+      "blurb": "RTX Spark ließ lokale Agenten in Photoshop auf einer Workstation mit 128 GB Unified Memory laufen. Die vorführende Künstlerin sagte, ihre Daten blieben auf der Maschine, und der Agent übernahm die Fleissarbeit, ohne die Skizze zu überschreiben. Die Videopipeline erzeugt 30 Bilder pro Sekunde in geringerer Auflösung und rechnet den Rest offline dazu. Ein zwei Sekunden langer Full-HD-Clip fiel damit von rund 6 Minuten 30 auf etwa 1 Minute 25.",
+      "tags": [
+        "lokale-ki",
+        "photoshop",
+        "video",
+        "hardware"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/ai/can-nvidia-and-adobe-work-together-to-get-creatives-to-actually-like-ai",
+          "headline": "Can NVIDIA and Adobe work together to get creatives to actually like AI?"
+        },
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/ai/i-saw-nvidias-new-ai-video-tool-why-rtx-sparks-half-frame-trick-might-actually-matter-and-why-creatives-are-right-to-be-wary",
+          "headline": "I saw NVIDIA's new AI video tool: why RTX Spark’s half‐frame trick might actually matter... and why creatives are right to be wary"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, gesichtet und nicht genommen",
+      "count": 25,
+      "examples": [
+        "Pizza Hut just pulled off one of Australia's largest Single-Moment Brand Activations",
+        "IKEA Wants Hong Kong to Make Space for What You Love in New Campaign with TBWA/Hong Kong",
+        "ReBid Adds ChatGPT Ads Activation and Analytics to Its Agentic AI Marketing Platform"
+      ]
+    }
+  ]
+}
