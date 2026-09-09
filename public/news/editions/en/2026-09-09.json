@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "generated_for": "2026-09-09",
+    "window": "2026-09-07..2026-09-09",
+    "sources_scanned": 42,
+    "items_in_window": 116,
+    "lang": "en",
+    "note": "Full window, no feed failures. Two candidates were dropped behind hard paywalls (Department of Product, t3n)."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Judgment, written down so the model applies it",
+      "blurb": "Kai Wong argues designers are now valued for judgment more than for the screens they make, and that a SKILL.md file is where that judgment gets fixed so a model runs the job the same way every time. He points at the Awesome Design Skills registry, which requires each of its 67 files to cover mission, brand, style foundations, component families, accessibility rules, writing tone, do-and-don't rules and quality gates.",
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/if-you-can-externalize-your-design-process-you-can-win-back-your-time-59c531521346?source=rss----138adf9c44c---4",
+          "headline": "If you can externalize your design process, you can win back your time"
+        }
+      ],
+      "tags": [
+        "ai-workflow",
+        "design-systems"
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Mazda keeps clay in the loop and can show why",
+      "blurb": "While rivals compress cycles with CAD and VR, design chief Ikuo Maeda refuses to shorten the timeline and starts every car as hand-sculpted clay. Pressed on why not begin digitally, he pulled up a curve analysis of the sculpted MX-5 against a digital-only concept, and the hand-made surface carried visibly more subtlety.",
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/how-mazda-resolutely-retains-sculpting-craft-as-part-of-the-design-process/",
+          "headline": "How Mazda resolutely retains sculpting craft as part of the design process"
+        }
+      ],
+      "tags": [
+        "process",
+        "craft"
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "A brand for AI literacy that drops every AI cliche",
+      "blurb": "Public Address renamed Code.org to CodeAI and deliberately left out what the category normally reaches for: no sparkles, no mascots, no eyes on generative shapes, because the studio did not want young people forming an emotional attachment to AI. Space Grotesk plus freely available open-source fonts let teachers rebuild materials themselves, and layouts meet AA and AAA contrast.",
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/public-address-rebrands-code-org-as-codeai-to-tackle-ai-literacy/",
+          "headline": "Public Address rebrands Code.org as CodeAI to tackle AI literacy"
+        }
+      ],
+      "tags": [
+        "rebrand",
+        "education"
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "An identity lifted from a maintenance mark",
+      "blurb": "Hasan & Partners built the identity for Helsinki's Train Factory out of a functional symbol that once told engineers where to lift a carriage safely, redrawn into a sharp T. The palette comes from the brick and the yellow cranes still hanging in the hall, and the logotype follows Finnish train car numbering.",
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/inspiration/all-aboard-helsinkis-old-train-factory-new-identity/",
+          "headline": "A logo hiding in plain sight: how The Train Factory s new identity came from an old safety mark"
+        }
+      ],
+      "tags": [
+        "identity",
+        "archive"
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Audience research splits a club brand in two",
+      "blurb": "Manchester City Women is the first Women's Super League side to get an identity distinct from the men's team, after club research mapped three fan groups and found the women's-first audience skews younger, more female, more family and more LGBTQ+. The crest stays central; the difference is carried by a new monogram built as a light trail.",
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/nomad-manchester-city-women-graphic-design-project-080926",
+          "headline": "Manchester City Women becomes the first WSL team have its own distinct identity"
+        }
+      ],
+      "tags": [
+        "identity",
+        "research",
+        "sport"
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "How work drifts to the middle without anyone deciding it",
+      "blurb": "Aporva Baxi names the mechanism: nobody decides to make work that settles, it accumulates out of reasonable decisions, the brief that nudges towards the familiar, the client who says bold and means safe. His counter-move at DixonBaxi is scheduled rather than hoped for, with every person in the studio getting two to four weeks on a self-chosen project with no brief and no client.",
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/pov-good-isnt-good-enough-beware-the-design-middle-ground-creative-industry-070926",
+          "headline": "Good isn’t good enough: beware the design middle ground"
+        }
+      ],
+      "tags": [
+        "quality",
+        "studio-practice"
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "The rules under Japanese type, in English",
+      "blurb": "Koyubi Studio's J Type 101 is a 44-page primer on how hiragana, katakana, kanji and grid-based typesetting actually work, written because designers admire Japanese type while almost no English resource explains its logic. Ten lessons cover vertical versus horizontal setting, spacing, line breaks, punctuation, and mixing Japanese with Latin characters.",
+      "sources": [
+        {
+          "name": "PRINT Magazine",
+          "url": "https://www.printmag.com/type-tuesday/lost-in-translation-a-designers-guide-to-japanese-type/",
+          "headline": "Lost in Translation? A Designer’s Guide to Japanese Type"
+        }
+      ],
+      "tags": [
+        "typography",
+        "resource"
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "AI-written briefs are closing the door startups used to walk through",
+      "blurb": "Greatergood Brands founder Daniel Hinde says nearly 90% of startup briefs now landing are impersonal, identical across every agency in the top ten search results, and ask for ten times the scope the founder actually needs. The bet agencies used to take on a self-written brief is gone; what goes back is a global-client quote, or nothing.",
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/branding/your-ai-written-brief-might-wreck-your-brands-chances-of-finding-the-right-creatives",
+          "headline": "Your AI-written brief might wreck your brand's chances of finding the right creatives"
+        }
+      ],
+      "tags": [
+        "agency-market",
+        "briefing"
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Adobe pulls the generators into the Premiere timeline",
+      "blurb": "Instead of jumping to a browser or another app for missing B-roll, editors highlight a gap in the video or audio track and generate editable clips in place, choosing the underlying model from Firefly, Veo, Runway, Luma or Kling. In beta, Premiere also separates overlapping speakers and ducks music under speech automatically.",
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/991133/adobe-is-trying-to-make-its-ai-generators-idiot-proof-in-premiere",
+          "headline": "Adobe is trying to make its AI generators idiot-proof in Premiere"
+        }
+      ],
+      "tags": [
+        "tools",
+        "video"
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "ChatGPT now takes a doodle as the brief",
+      "blurb": "With Images 2.5, typing @Sketch opens a drawing window inside the chat and the sketch becomes part of the prompt, and comments can be left on specific parts of an image to steer edits. OpenAI puts the latency drop at up to 50% against Images 2.0.",
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+          "headline": "ChatGPT Sketch turns your bad drawings into detailed AI images"
+        }
+      ],
+      "tags": [
+        "tools",
+        "image-generation"
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Luke Wroblewski",
+      "host": "feeds.feedburner.com",
+      "topic": "design-practice",
+      "items": [
+        {
+          "title": "Always Asking People to Ask",
+          "url": "https://www.lukew.com/ff/entry.asp?2160",
+          "date": "2026-09-08"
+        }
+      ]
+    },
+    {
+      "name": "Matthew Strom-Awn",
+      "host": "mattstromawn.com",
+      "topic": "design-practice",
+      "items": [
+        {
+          "title": "The least wrong colors, version 2",
+          "url": "https://mattstromawn.com/writing/the-least-wrong-colors-version-2/",
+          "date": "2026-09-08"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief (PR wire, screened, nothing selected)",
+      "count": 25,
+      "examples": [
+        "SHIFT LAB: When AI Speaks for Your Brand, a New Battle for Influence Begins",
+        "Havas launches POP Australia, appoints Raoni Lima as Head of Creative Technology",
+        "O Boticário turns in-store experiences into a growth driver and expects Studio Boti channel revenue to grow fourfold by 2028"
+      ]
+    }
+  ]
+}
