@@ -51,7 +51,9 @@
              opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease;
              box-shadow:var(--hover-shadow);}
   .datetoast.show{opacity:1;transform:translateX(-50%) translateY(0);}
-  .topics{display:flex;gap:7px;flex-wrap:wrap;overflow:hidden;max-height:60px;opacity:1;
+  /* max-height traegt nur die Einklapp-Animation. Grosszuegig, damit auf
+     schmalen Fenstern umgebrochene Chips nicht abgeschnitten werden. */
+  .topics{display:flex;gap:7px;flex-wrap:wrap;overflow:hidden;max-height:240px;opacity:1;
           transition:max-height .22s ease,opacity .16s ease;}
   .runbar.compact{gap:0;}
   .runbar.compact .topics{max-height:0;opacity:0;}
