@@ -144,13 +144,13 @@
   }
   @media(max-width:600px){
     header{flex-direction:column;}
-    /* Mindestens 30px Weissraum bis zum Displayrand. Der negative Aussenabstand
-       der Eintraege frass das Polster vorher bis auf 2px auf, deshalb faellt er
-       hier weg. Die Hover-Flaeche ist ohnehin eine Maus-Angelegenheit. */
+    /* Mindestens 30px Weissraum bis zum Displayrand. Der Eintrag behaelt seinen
+       Innenabstand von 20px und den negativen Aussenabstand, sonst sitzt der
+       Text auf der Kante der Flaeche. Text steht damit bei 30px, die Flaeche
+       reicht bis 10px an den Rand. Gleiche Geometrie wie am Desktop. */
     .wrap{padding-left:30px;padding-right:30px;}
-    .entry{padding-left:0;padding-right:0;margin-left:0;margin-right:0;}
-    .foot .inner{padding:0 30px;}
     .entry{padding-top:14px;padding-bottom:14px;}
+    .foot .inner{padding:0 30px;}
   }
 </style>
 </head>
