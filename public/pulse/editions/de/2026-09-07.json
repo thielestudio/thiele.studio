@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "generated_for": "2026-09-07",
+    "window": "2026-09-04..2026-09-06",
+    "sources_scanned": 42,
+    "items_in_window": 122,
+    "lang": "de",
+    "note": "Beim Start des Laufs hatte noch keine Quelle etwas mit dem heutigen Datum veröffentlicht, das Fenster endet deshalb am 6. September. Stücke aus den Ausgaben vom 4., 5. und 6. September werden nicht wiederholt, damit fallen der OpenAI-Agenten-Vorfall und die Klage der Seattle Times heraus, obwohl beide noch im Kandidaten stehen. arXiv antwortete nicht. Die einzige gefolgte Stimme mit neuem Beitrag lief bereits gestern."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "KI in Produktteams wird planvoll statt verstreut",
+      "blurb": "Anna Lefour greift den Befund ihrer Masterarbeit von 2025 wieder auf, gestützt auf Interviews mit Designern und Entwicklern und eine eigene Umfrage: Unternehmen wussten, dass KI strategisch zählt, und wussten, dass die Belegschaft sie längst nutzt. Eine Strategie zur Einführung hatte fast keines, nur Stückwerk, mancherorts ein Verbot aus Sorge um Vertraulichkeit. Ein Jahr später fragt sie, ob sich auf Unternehmensebene etwas bewegt hat.",
+      "tags": [
+        "Produktteams",
+        "Einführung",
+        "Zusammenarbeit"
+      ],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/ai-in-product-teams-in-2026-the-growing-impact-on-collaboration-8ea9f6024dca?source=rss----138adf9c44c---4",
+          "headline": "AI in Product teams: In 2026, the growing impact on collaboration"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Neun Monate in Sortieranlagen, bevor gezeichnet wurde",
+      "blurb": "Fünfzehn Designerinnen und Designer liefen durch Sortieranlagen, eine Müllverbrennung und eine Möbelaufarbeitung, danach kamen sechs Wochen an echten Aufgaben von Biffa und Decathlon. Die Ergebnisse sind ungewöhnlich konkret. Eine Zahnbürste bekommt einen Fuß, der breit genug ist, um in der Sortiertrommel nicht durch die Löcher zu fallen, dazu kommt eine Plattform, die Materialwege zwischen Produktdesign und Entsorgern nachverfolgt.",
+      "tags": [
+        "Kreislaufwirtschaft",
+        "Design Council",
+        "Prozess"
+      ],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/ciwm-and-urge-collective-reveal-circular-design-sprint-outcomes-tackling-industrial-waste/",
+          "headline": "CIWM and URGE Collective reveal circular design sprint outcomes tackling industrial waste"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "OpenAI bewirbt den Design-Ablauf, nicht das Modell",
+      "blurb": "Im Spot zeichnet Astra eine Rakete, baut sie in Blender, setzt sie in ein Spiel und bestellt nebenbei Essen. Genau daran hängt sich die Kritik auf. Die Demoseite von OpenAI geht weiter und richtet Blender-nach-Unreal-Rundgänge ausdrücklich an Designer und deren Kunden, als Beleg dient Playco mit halbierten manuellen Korrekturen im Prototyping.",
+      "tags": [
+        "OpenAI",
+        "Astra",
+        "Werbung"
+      ],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/ai/even-just-the-advert-for-chatgpt-6-astra-is-creating-controversy",
+          "headline": "OpenAI's controversial ChatGPT-6 Astra advert paints a sad vision of the future"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Baden-Baden nimmt die Doppelung wörtlich",
+      "blurb": "Saint Elmo's Tourism baut die neue Kampagne auf der doppelten Silbe im Stadtnamen auf und übersetzt sie in gespiegelte Motive aus Thermen, Natur und Casino. Der Gedanke zieht sich durch bis in Spiegelinstallationen im Social-Auftritt und in Aktionstage mit doppeltem Vorteil. Eine Klangmarke soll folgen.",
+      "tags": [
+        "Tourismus",
+        "Kampagne",
+        "Stadtmarke"
+      ],
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/naheliegend-und-gekonnt-kampagne-doppelt-schoen-fuer-baden-baden/",
+          "headline": "Naheliegend – und gekonnt: Kampagne »Doppelt schön« für Baden-Baden"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Material zum Motiv passen, dann bewusst ungleich verteilen",
+      "blurb": "Helen Ahpornsiri baut Tiere aus gepressten Pflanzen, und zwar aus denen des jeweiligen Lebensraums, der Igel kommt in den Brauntönen und Ockern eines Waldbodens im Oktober. Übertragbar ist der zweite Schritt. Die Dichte der Technik schwillt im Bild an und wieder ab, statt gleichmäßig durchgezogen zu werden.",
+      "tags": [
+        "Illustration",
+        "Material",
+        "Technik"
+      ],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/art/illustration/animals-from-wildflowers-this-unique-illustration-style-shouldnt-work-but-it-does-and-heres-why",
+          "headline": "Animals from wildflowers? This unique illustration style shouldn't work, but it does - and here's why"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Eine Monospace als Gegenentwurf zur Gill Sans",
+      "blurb": "Charlotte Rohde legt Oficía Mono in acht Schnitten an, Hairline bis Bold, jeweils normal und schmal. Formal bezieht sie sich auf Antique Olive und Gill Sans, inhaltlich überschreibt sie mit der eigenen Autorschaft den Gestalter Eric Gill. Der Punkt auf dem i ist ein Herz.",
+      "tags": [
+        "Typografie",
+        "Schriftrelease",
+        "Autorschaft"
+      ],
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/typografie/oficia-mono-viel-mehr-als-typo-fuers-buero/",
+          "headline": "Oficía Mono: Viel mehr als Typo fürs Büro"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Britisches Design ist größer als der Einzelhandel, und der Wert entsteht außerhalb der Agenturen",
+      "blurb": "Der Design Council beziffert die Designwirtschaft für 2023 auf 136,7 Milliarden Pfund Bruttowertschöpfung, ein Plus von 40 Prozent seit 2019 und 5,5 Prozent der gesamten britischen Wertschöpfung. Zwei Drittel davon, 90,6 Milliarden, entstehen bei Designern in Industrie, Gesundheitswesen, Ingenieurwesen und Finanzsektor. Die Beschäftigung wuchs dort um 20 Prozent, in der Designbranche selbst um 6 Prozent.",
+      "tags": [
+        "Design Council",
+        "Designwirtschaft",
+        "Inhouse"
+      ],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/design-sector-outpaces-retail-to-become-136-7bn-pillar-of-uk-economy/",
+          "headline": "Design sector outpaces retail to become 136.7bn pillar of UK economy"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Verlage melden Ansprüche auf Rechte an, die sie längst zurückgegeben haben",
+      "blurb": "Der Vergleich mit Anthropic zahlt 3.000 Dollar je Werk, bei Verlagstiteln hälftig geteilt, im Selbstverlag vollständig an die Autorin oder den Autor. Autoren berichten von Ansprüchen auf Titel, deren Rechte lange vor dem Stichtag im August 2022 zurückgefallen sind, in einem Fall vor siebzehn Jahren. Die Authors Guild hält schlechte Buchführung für wahrscheinlicher als Absicht.",
+      "tags": [
+        "Urheberrecht",
+        "Anthropic",
+        "Rechte"
+      ],
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/",
+          "headline": "Authors push back as publishers and agents make claims on Anthropic settlement"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Astras Zahlen zur Rechnerbedienung, dazu ein Redesign, das die Nutzer spaltet",
+      "blurb": "Auf OSWorld 2.0 werden 72,6 Prozent Treffer bei rund 40 Minuten pro Aufgabe berichtet, gegenüber 65,7 Prozent bei 75 Minuten für den Vorgänger. Präsentationen füllt das Modell in vorhandene Vorlagen, statt generische Folien zu bauen. Dieselbe Ausgabe behandelt das Mobil-Redesign von Superhuman, das eingeübte Interaktionen gegen eine schnellere Suche eintauscht.",
+      "tags": [
+        "Astra",
+        "Benchmarks",
+        "Redesign"
+      ],
+      "sources": [
+        {
+          "name": "Department of Product",
+          "url": "https://departmentofproduct.substack.com/p/openais-astra-in-action",
+          "headline": "🔵 OpenAI’s Astra in Action"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Google schiebt Musikgenerierung in die Gemini-App",
+      "blurb": "Lyria 3.5 läuft ab sofort in der Gemini-App, in Flow Music, im AI Studio und in Google Vids. Wählbar sind Genre, Stil, Gesang oder Instrumental und Länge, mitgeliefert werden Vorlagen für Hintergrundmusik. Google sagt, das Modell sei nur auf lizenzierten Inhalten trainiert, nennt die Trainingsdaten aber nicht.",
+      "tags": [
+        "Google",
+        "Musikgenerierung",
+        "Lizenzen"
+      ],
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/google-bringt-musikgenerierung-mit-lyria-3-5-direkt-in-die-gemini-app/",
+          "headline": "Google bringt Musikgenerierung mit Lyria 3.5 direkt in die Gemini-App"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief (PR-Ticker, gesichtet, nichts übernommen)",
+      "count": 10,
+      "examples": [
+        "Guinness heroes the Iconic Harp in new ‘LoVely’ campaign",
+        "Vodafone and Leo UK launch new ‘Vodafone SuperMobile™’ campaign to help the nation feel unstoppable",
+        "Bruno Érnica Takes Over Marketing Leadership at Perdomo"
+      ]
+    }
+  ]
+}

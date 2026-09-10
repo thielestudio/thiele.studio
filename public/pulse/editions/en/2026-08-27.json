@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "generated_for": "2026-08-27",
+    "window": "2026-08-25..2026-08-27",
+    "sources_scanned": 42,
+    "items_in_window": 131,
+    "lang": "en"
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "title": "Agents that keep a site from drifting",
+      "blurb": "Strapi co-founder Pierre Burgy describes what came out of building for full website autonomy: agents that propagate a design-system change to the pricing page, compress images shipped raw in a rushed release, and flag accessibility regressions. The blocker turned out not to be technical. Almost nobody wants a site that changes entirely on its own.",
+      "tags": [
+        "agents",
+        "web",
+        "autonomy"
+      ],
+      "sources": [
+        {
+          "name": "Smashing Magazine",
+          "url": "https://smashingmagazine.com/2026/08/why-website-should-never-stop-changing/",
+          "headline": "Why Your Website Should Never Stop Changing"
+        }
+      ],
+      "theme_label": "Design Practice"
+    },
+    {
+      "theme": "design-practice",
+      "title": "Dashboards that end the meeting without a decision",
+      "blurb": "Meriem Benhabiles names the pattern: the numbers get shared, the room nods, nothing is decided. Her diagnosis is that the chart was built from the data that happened to be available rather than from the question that needed answering, and her remedy is UX method applied before any tool is opened.",
+      "tags": [
+        "data-viz",
+        "ux",
+        "method"
+      ],
+      "sources": [
+        {
+          "name": "Smashing Magazine",
+          "url": "https://smashingmagazine.com/2026/08/rethinking-data-visualisation-ux-approach-dashboards/",
+          "headline": "Rethinking Data Visualisation: A UX Approach To Dashboards That Actually Drives Decisions"
+        }
+      ],
+      "theme_label": "Design Practice"
+    },
+    {
+      "theme": "brand-advertising",
+      "title": "A rebrand that uses gen AI to avoid looking like gen AI",
+      "blurb": "The Working Assembly rebuilt the identity of voice-journalling app Untold to dodge generative AI clichés, and made it with generative AI. Creative Bloq's angle is that useful AI tools can still win over people who dislike the generic kind, provided the branding does not look like it.",
+      "tags": [
+        "identity",
+        "gen-ai",
+        "branding"
+      ],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/inspiration/this-rebrand-of-voice-journaling-app-untold-shows-what-happens-when-ai-branding-doesnt-look-like-ai/",
+          "headline": "This rebrand of a voice-journalling app looks lovely, but is an AI illustration system the right call?"
+        }
+      ],
+      "theme_label": "Brand & Advertising"
+    },
+    {
+      "theme": "brand-advertising",
+      "title": "An orchestra identity built on a slant axis",
+      "blurb": "Studio Thonik gave the touring Phion Symphony Orchestra an identity grounded in type rather than place, using Grilli Type's GT Planar and its continuous 90-degree slant axis. The ensemble has no building to anchor it, so each concert gets its own angle instead.",
+      "tags": [
+        "typography",
+        "identity",
+        "variable-fonts"
+      ],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/studio-thonik-phion-symphony-orchestra-graphic-design-discover-260826",
+          "headline": "Studio Thonik’s typographic orchestra identity mimics the movement of a conductor’s baton"
+        }
+      ],
+      "theme_label": "Brand & Advertising"
+    },
+    {
+      "theme": "craft-judgment",
+      "title": "Handmade work now comes with a receipt",
+      "blurb": "Two cases within days of each other. Apple published a behind-the-scenes video of animators sculpting and painting clay for the Mac mini spot. Amplitude had to state that the Humankind 2 trailer was shot with real actors, practical sets and custom-made props. Craft is increasingly expected to document itself.",
+      "tags": [
+        "ai-suspicion",
+        "craft",
+        "advertising"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/advertising/nope-the-new-apple-ad-isnt-ai-and-theres-a-bts-video-to-prove-it",
+          "headline": "Nope, the new Apple Mac mini ad isn't AI – and there's a delightful BTS video to prove it"
+        },
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/entertainment/gaming/the-humankind-2-trailer-looks-so-much-like-ai-the-developer-had-to-explain-its-not",
+          "headline": "The Humankind 2 trailer looks so much like AI the developer had to explain it's not"
+        }
+      ],
+      "theme_label": "Craft & Judgment"
+    },
+    {
+      "theme": "craft-judgment",
+      "title": "One deliberate slowdown, 45% fewer errors",
+      "blurb": "Chijindu Amadi audited a Nigerian lender losing roughly 1m naira a day and found the cause on an internal agent portal: near-identical customer records waved through under quota pressure. A confirmation step forcing verification against a unique customer identifier cut errors by about 45%.",
+      "tags": [
+        "internal-tools",
+        "ux",
+        "case-study"
+      ],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-boring-screens-that-run-the-world-a-designers-case-for-taking-admin-tools-seriously/",
+          "headline": "The boring screens that run the world: a designer’s case study"
+        }
+      ],
+      "theme_label": "Craft & Judgment"
+    },
+    {
+      "theme": "industry-market",
+      "title": "The CBI calls the experimentation phase over",
+      "blurb": "The Adoption Decade, from the CBI and Oliver Wyman, reports 63% of surveyed firms moving toward scaled or agentic AI in product design and R&D, and names an execution divide between isolated pilots and embedded operating models. Design Week draws out the consequences for studios: workflow redesign, asset provenance and copyright, and a shifting junior pipeline.",
+      "tags": [
+        "report",
+        "adoption",
+        "studios"
+      ],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-cbis-latest-ai-report-on-how-design-businesses-can-bridge-ais-execution-divide/",
+          "headline": "The CBI’s latest AI report on how design businesses can bridge AI’s execution divide"
+        }
+      ],
+      "theme_label": "Industry & Market"
+    },
+    {
+      "theme": "industry-market",
+      "title": "Meta's plan to cut teams by 60% did not survive contact",
+      "blurb": "Reuters reports that Meta explored reducing some team headcounts by as much as 60% under a project codenamed OT, with small groups of people overseeing AI doing the daily work. Meta confirmed the scenario-planning exercise, says it did not pursue every scenario, and cancelled the second round of layoffs.",
+      "tags": [
+        "agents",
+        "labour",
+        "meta"
+      ],
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/08/metas-scrapped-plans-to-go-ai-native-included-slashing-teams-by-60-percent/",
+          "headline": "AI agents meant to replace Meta workers made “large-scale, disruptive actions”"
+        }
+      ],
+      "theme_label": "Industry & Market"
+    },
+    {
+      "theme": "industry-market",
+      "title": "AI apps are shipping their org chart to users",
+      "blurb": "Sarah Perez's argument is that Gemini has given every feature its own brand, so a user has to decide between chat, Spark and Daily Brief before asking for anything. She finds the same pattern in Claude's Chat and Cowork split and in ChatGPT's Chat and Work.",
+      "tags": [
+        "branding",
+        "product",
+        "ai-ux"
+      ],
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/26/googles-gemini-has-a-branding-problem-and-so-does-the-rest-of-ai/",
+          "headline": "Google’s Gemini has a branding problem, and so does the rest of AI"
+        }
+      ],
+      "theme_label": "Industry & Market"
+    },
+    {
+      "theme": "ai-models",
+      "title": "Gemini 3.5 Transcribe strips the ums",
+      "blurb": "Google's new audio model detects specialised jargon, covers more than 85 languages, formats text automatically and removes filler words, with editing by voice. Google positions it against its previous transcription model Chirp 3 on multilingual performance and word error rate.",
+      "tags": [
+        "speech-to-text",
+        "google",
+        "tooling"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/985186/google-gemini-3-5-transcribe-audio-ai",
+          "headline": "Google’s new AI transcription edits out your ‘ums’ and ‘ahs’"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-5-transcribe-for-ai-powered-speech-to-text/",
+          "headline": "Google announces Gemini 3.5 Transcribe for AI-powered speech-to-text"
+        },
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+          "headline": "Intelligent transcription with Gemini 3.5 Transcribe"
+        }
+      ],
+      "theme_label": "AI Models (+Tools)"
+    },
+    {
+      "theme": "ai-models",
+      "title": "Apple builds the desktop around local inference",
+      "blurb": "The Mac mini and Mac Studio refresh brings the M6, Apple's first 2nm M-series chip, and the M5 Ultra. Ars Technica reads it as a specs bump aimed at a use case that only emerged after macOS 26.2 enabled low-latency Thunderbolt 5 links for distributed MLX inference, with people daisy-chaining Macs to run models larger than one machine could hold.",
+      "tags": [
+        "local-llm",
+        "hardware",
+        "apple"
+      ],
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/apple/2026/08/with-new-mac-studio-and-mac-mini-apple-leans-hard-into-local-ai-inference/",
+          "headline": "Apple’s new desktop computers are designed specifically for local AI development"
+        }
+      ],
+      "theme_label": "AI Models (+Tools)"
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, reviewed and not taken",
+      "count": 24,
+      "examples": [
+        "Betty Crocker Celebrates Bettier Than Ever™ Era with Fresh Packaging and Statement Handbags",
+        "Meow-out-of-home! Marro and Wonderful Things create the first billboards for cats that they can actually scratch",
+        "We Are Collider launches AI tool ‘ROXi’ to predict ROI for brand experiences"
+      ]
+    }
+  ]
+}

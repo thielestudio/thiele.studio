@@ -1,0 +1,235 @@
+{
+  "meta": {
+    "generated_for": "2026-08-29",
+    "window": "2026-08-27..2026-08-29",
+    "sources_scanned": 42,
+    "items_in_window": 165,
+    "lang": "de",
+    "note": "Das Zwei-Tage-Fenster überlappt mit der gestrigen Ausgabe. Stücke vom 28. August (Adobes AI Assisted Editor, Gemini Omni 1.1 Flash, Nvidia und Hugging Face, Arc'teryx System 0, Novaform, die Wharton-Studie zu Shopping-Agenten) stehen deshalb nicht noch einmal drin. arxiv.org hat nicht geantwortet, die Stimmen-Achse ist dadurch dünner."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Der Agent glaubt der Hersteller-Doku mehr als du",
+      "blurb": "Forschende haben 6.214 Domains gescannt und 8.265 llms.txt-Dateien gefunden, 120 davon verwiesen auf Paketnamen, die niemand registriert hatte. Sie haben einige davon übernommen, binnen einer Stunde meldete sich ein Rechner aus einem Fortune-500-Konzern. Die Prozesskette nannte Claude, Codex und Hermes: Coding-Agenten lesen Setup-Dokus als Tatsache und installieren, was dort steht.",
+      "tags": ["agenten", "lieferkette", "werkzeuge"],
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/security/2026/08/claude-codex-and-hermes-installed-unowned-code-inside-corporate-networks/",
+          "headline": "Claude, Codex, and Hermes installed unowned code inside corporate networks"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Kontextdateien kosten zwanzig Prozent mehr und bringen nichts",
+      "blurb": "Die ETH Zürich und Logicstar.ai haben vier Coding-Agenten mit und ohne Agents.md gegen 138 echte Github-Probleme aus zwölf Nischenprojekten laufen lassen, dazu SWE-Bench als Gegenprobe. Die Erfolgsquote stieg nicht, die Inferenzkosten im Schnitt um über zwanzig Prozent. Die Empfehlung der Agenten-Hersteller steht damit ohne Beleg da.",
+      "tags": ["agenten", "studie", "kosten"],
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/agents-md-und-co-beliebte-coding-praxis-erhoeht-ki-kosten-deutlich-ohne-erkennbaren-nutzen-1760349/",
+          "headline": "Agents.md und Co.: Beliebte Coding-Praxis erhöht KI-Kosten deutlich – ohne erkennbaren Nutzen"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Die Designerin, die selbst auf der falschen Spur fuhr",
+      "blurb": "Kelly Smith hat monatelang andere Autos an einem Kreisverkehr in Newcastle angehupt, bis Google Maps den Streit gegen sie entschied. Ihr Punkt ist nicht die Blamage, sondern das Muster: Die Kreuzung ist ein Unfallschwerpunkt. Eine Norman Door bei dreißig Meilen pro Stunde ist ein Gestaltungsproblem, kein Fahrerproblem.",
+      "tags": ["affordanz", "ux", "essay"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-smith-roundabout-or-the-shame-of-being-the-cutter-upper/",
+          "headline": "The Smith Roundabout; or, the shame of being the cutter-upper"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Häagen-Dazs zeigt nicht mehr den Biss, sondern die Hülle",
+      "blurb": "Landor hat die Stieleis-Verpackung für Frankreich und Großbritannien neu gestaltet und lässt die Kategorie-Konvention der aufgebrochenen Schokolade weg, die ihr Bild von einem bereits angebissenen Eis borgt. Die Schokolade legt sich jetzt um das Eis statt es zu bedecken, Bordeauxrot läuft über die ganze Packung, vertikale Streifen ordnen die Sorten im Regal.",
+      "tags": ["packaging", "identität", "handel"],
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/landor-reimagines-haagen-dazs-ice-cream-stick-packaging-around-desire-texture-and-taste/",
+          "headline": "Landor reimagines Häagen-Dazs ice cream stick packaging around desire, texture and taste"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Jemand hat den blauen Vogel wieder aufgehoben",
+      "blurb": "Operation Bluebird hat Twitter unter twitter.now neu gestartet, mit dem Argument, die Marke sei mit der Umbenennung zu X im Jahr 2022 aufgegeben worden. Einer der Gründer verantwortete bis 2016 Markenrecht und Domains beim ursprünglichen Twitter. X klagt in Delaware, ein vorläufiger Beschluss im April deutete an, dass Bluebird eine Chance hat.",
+      "tags": ["rebranding", "markenrecht", "social"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/social-media/could-the-return-of-twitter-be-a-happy-ending-for-the-worst-rebrand-of-all-time",
+          "headline": "The return of Twitter could be a happy ending after the worst rebrand of all time"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Eine Kompassnadel, die aussieht wie zwei Uhrzeiger",
+      "blurb": "Im Safari-Icon der iOS-27-Beta ist die Nadel nicht mehr gerade geteilt: Die rote Seite wölbt sich konvex in die konkave weiße Seite, dazu ein transluzenter Stift in der Mitte. Achim Schaffrinna liest das als Mechanik-Fehler, weil eine Kompassnadel nur als Ganzes rotiert. Eine verschobene Lichtkante reicht, um die Bedeutung eines Zeichens zu kippen.",
+      "tags": ["icon-design", "bildmetapher", "apple"],
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "url": "https://www.designtagebuch.de/safari-auf-abwegen/",
+          "headline": "Safari auf Abwegen"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Fehlerfreie Sprache ist jetzt der Mindeststandard, nicht das Argument",
+      "blurb": "Karl Taeuscher und Michael Lounsbury haben über 26.000 echte Kickstarter-Kampagnen maschinell überarbeiten lassen. Die generierten Fassungen streuten 43 Prozent weniger in der Abstraktheit und lagen bei Länge und Fehlerfreiheit rund 80 Prozent näher beieinander. Wo gutes Schreiben nichts mehr kostet, verschiebt sich die Beweislast auf harte Nachweise.",
+      "tags": ["storytelling", "studie", "differenzierung"],
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/ki-businessplaene-startup-storytelling-homogenisierung-1760522/",
+          "headline": "KI-Businesspläne: Warum perfekte Formulierungen Startups unsichtbar machen"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Das eine nüchterne Cover in einem Studio für das Surreale",
+      "blurb": "Wiedemann Lampe kuratieren zum London Design Festival fünf Jahrzehnte George Hardie, teils aus Arbeiten, die Benji Wiedemann bei Hardie zu Hause in West Sussex gefunden hat. Seine Lesart von Dark Side of the Moon ist der brauchbare Teil: entstanden bei Hipgnosis, aber rational und zurückgenommen, wo der Hausstil fantastisch war.",
+      "tags": ["illustration", "ausstellung", "plattencover"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/george-hardies-five-decade-career-celebrated-in-new-london-design-festival-exhibition/",
+          "headline": "George Hardie's five-decade career celebrated in new London Design Festival exhibition"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Beatport sortiert KI-Musik beim Upload aus",
+      "blurb": "Der DJ-Marktplatz verbietet Tracks, die ganz oder größtenteils von KI stammen, und lässt sie von einem Erkennungstool des Partners Beatdapp beim Upload filtern. Mit KI unterstützte, aber mehrheitlich menschliche Produktionen bleiben erlaubt und werden gekennzeichnet. Chef Matt Gralen zieht die Grenze zwischen einem Werkzeug, das unterstützt, und einem System, das ersetzt.",
+      "tags": ["plattformregeln", "musik", "kennzeichnung"],
+      "sources": [
+        {
+          "name": "the decoder",
+          "url": "https://the-decoder.de/dj-plattform-beatport-sperrt-ki-generierte-musik-und-setzt-auf-automatische-erkennung-beim-upload/",
+          "headline": "DJ-Plattform Beatport sperrt KI-generierte Musik und setzt auf automatische Erkennung beim Upload"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Eine LED ist der ganze Einwilligungsmechanismus, und sie hatte eine Lücke",
+      "blurb": "Meta stoppt künftig die Kamera, wenn das Aufnahmelicht während der Aufnahme abgeklebt wird. Die Umgehung bestand darin, die Reihenfolge der beiden Schritte zu tauschen. EU-Aufsichtsbehörden prüfen, ob das Licht je darauf getestet wurde, ob Umstehende es verstehen, Deutschland erwägt ein Verbot, in den USA läuft eine Sammelklage gegen die Datenschutz-Werbung.",
+      "cluster": true,
+      "tags": ["regulierung", "wearables", "einwilligung"],
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/tech-policy/2026/08/meta-tweaks-ai-glasses-to-block-some-creepy-recordings-but-privacy-risks-remain/",
+          "headline": "Meta makes AI glasses slightly less creepy with limit on nonconsensual recording"
+        },
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/meta-smartglasses-heimliches-aufnehmen-update-1760415/",
+          "headline": "Heimliche Aufnahmen mit Smartglasses: Meta schließt Lücke im System"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Eine Renderschicht, die das Bild nach der Arbeit der Artists übermalt",
+      "blurb": "Die Neural-Rendering-Dateien von DLSS 5 tauchten in einer Early-Access-Fassung von NBA 2K27 auf, Modder haben sie auf Control und Final Fantasy 7 Rebirth losgelassen. Vegetation hält stand, Gesichter nicht: Jesse Fadens Züge wirken wie mit einem Instagram-Filter belegt. Keines dieser Spiele wurde für ein System abgestimmt, das nach dem Rendern eingreift.",
+      "cluster": true,
+      "tags": ["rendering", "nvidia", "games"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/3d/unsettling-nvidias-dlss-5-controversial-ai-filter-has-leaked-and-gamers-are-horrified",
+          "headline": "\"Unsettling\" – Nvidia's controversial DLSS 5 AI filter has leaked, and gamers are horrified"
+        },
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/nvidia-dlss-5-geleakt-1760451/",
+          "headline": "Frühe Version von DLSS 5 geleakt: So sieht Nvidias Tool in Aktion aus"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Keine Seite sieht die Hausaufgaben der anderen",
+      "blurb": "Google Deepmind testet ein Modell der Reihe Gemini Flash Lite doppelblind, gemeinsam mit dem Singapore AI Safety Institute. Die Prüfung läuft in Confidential Space: Der Prüfer sieht die Gewichte nicht, Google sieht die Test-Prompts nicht. Adressiert ist die Benchmark-Kontamination, also der Grund, warum eine gute Note derzeit weniger beweist als sie aussieht.",
+      "cluster": true,
+      "tags": ["benchmarks", "evaluierung", "google"],
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+          "headline": "Piloting the world's first double-blind AI evaluations"
+        },
+        {
+          "name": "the decoder",
+          "url": "https://the-decoder.de/warum-ki-benchmarks-ein-vertrauensproblem-haben-und-wie-google-es-loesen-will/",
+          "headline": "Warum KI-Benchmarks ein Vertrauensproblem haben und wie Google es lösen will"
+        }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Luke Wroblewski",
+      "host": "lukew.com",
+      "topic": "design-practice",
+      "items": [
+        {
+          "title": "Little Bits of Intelligence",
+          "url": "https://www.lukew.com/ff/entry.asp?2158",
+          "date": "2026-08-27"
+        }
+      ]
+    },
+    {
+      "name": "Matt Webb",
+      "host": "interconnected.org",
+      "topic": "craft-judgment",
+      "items": [
+        {
+          "title": "New app: Yesterday, an iPhone app for yesterday's weather",
+          "url": "https://interconnected.org/home/2026/08/26/yesterday",
+          "date": "2026-08-28"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief-Pressemeldungen, gesichtet und nicht genommen",
+      "count": 24,
+      "examples": [
+        "Plenty Taps Bakery to Grow Its Premium, Vertically-Farmed Strawberry Brands",
+        "LEROY MERLIN Launches The 'Anti-Laziness' Range: 4,000 Products that Stay in the Cupboard",
+        "INNOCEAN Brazil Announces New Media Leadership"
+      ]
+    }
+  ]
+}

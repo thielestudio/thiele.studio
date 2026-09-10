@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "generated_for": "2026-08-29",
+    "window": "2026-08-27..2026-08-29",
+    "sources_scanned": 42,
+    "items_in_window": 98,
+    "lang": "en",
+    "note": "The two-day window overlaps with yesterday's edition. Pieces already covered on 28 August (Adobe's AI Assisted Editor, Gemini Omni 1.1 Flash, the Nvidia and Hugging Face deal, Arc'teryx System 0, the Wharton shopping-agent study) are not repeated here. arxiv.org failed to respond, so the voices axis is thinner than usual."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Your agent trusts the vendor docs more than you do",
+      "blurb": "Researchers scanned 6,214 domains and found 8,265 llms.txt files, 120 of which pointed at package names nobody had registered. They claimed a handful, and within an hour a Fortune 500 machine phoned home. The parent-process chain named Claude, Codex and Hermes: coding agents read setup docs as ground truth and install what they are told to install.",
+      "tags": ["agents", "supply-chain", "tooling"],
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/security/2026/08/claude-codex-and-hermes-installed-unowned-code-inside-corporate-networks/",
+          "headline": "Claude, Codex, and Hermes installed unowned code inside corporate networks"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "The designer who discovered she was the one in the wrong lane",
+      "blurb": "Kelly Smith spent months honking at other drivers on a Newcastle roundabout before Google Maps settled the argument against her. Her point is not the embarrassment but the pattern: the junction is an accident black spot, and a Norman door taken at thirty miles an hour is a design problem, not a driver problem.",
+      "tags": ["affordance", "ux", "essay"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-smith-roundabout-or-the-shame-of-being-the-cutter-upper/",
+          "headline": "The Smith Roundabout; or, the shame of being the cutter-upper"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Häagen-Dazs stops showing the bite and starts showing the coating",
+      "blurb": "Landor's new stick packaging for France and the UK drops the category's cracked-chocolate convention, which borrows its look from an ice cream someone has already bitten. The chocolate now drapes rather than covers, the burgundy runs across the whole pack, and vertical stripes carry range recognition on shelf.",
+      "tags": ["packaging", "identity", "retail"],
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/landor-reimagines-haagen-dazs-ice-cream-stick-packaging-around-desire-texture-and-taste/",
+          "headline": "Landor reimagines Häagen-Dazs ice cream stick packaging around desire, texture and taste"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Somebody picked the bird logo back up off the floor",
+      "blurb": "Operation Bluebird has relaunched Twitter at twitter.now, arguing the trademark was abandoned when the platform became X in 2022. One founder ran trademarks and domain names at the original Twitter until 2016. X is suing in Delaware, and a tentative ruling in April suggested Bluebird may have a case.",
+      "tags": ["rebranding", "trademark", "social"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/social-media/could-the-return-of-twitter-be-a-happy-ending-for-the-worst-rebrand-of-all-time",
+          "headline": "The return of Twitter could be a happy ending after the worst rebrand of all time"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "The one restrained cover in a studio built on the surreal",
+      "blurb": "Wiedemann Lampe have curated five decades of George Hardie for the London Design Festival, drawn partly from work Benji Wiedemann found at Hardie's home in West Sussex. His reading of Dark Side of the Moon is the useful part: made inside Hipgnosis, yet rational and restrained where the house style was fantastical.",
+      "tags": ["illustration", "exhibition", "album-art"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/george-hardies-five-decade-career-celebrated-in-new-london-design-festival-exhibition/",
+          "headline": "George Hardie's five-decade career celebrated in new London Design Festival exhibition"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "An LED is the whole consent mechanism, and it had a loophole",
+      "blurb": "Meta will stop the camera when the recording light is covered mid-capture, closing a bypass that only required reversing the order of two steps. EU regulators are probing whether the light was ever field-tested for bystander comprehension, Germany is weighing a ban, and a US class action over the privacy marketing is advancing.",
+      "tags": ["regulation", "wearables", "consent"],
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/tech-policy/2026/08/meta-tweaks-ai-glasses-to-block-some-creepy-recordings-but-privacy-risks-remain/",
+          "headline": "Meta makes AI glasses slightly less creepy with limit on nonconsensual recording"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "A rendering layer that repaints the frame after the artists are done",
+      "blurb": "DLSS 5 Neural Rendering files turned up in an early-access build of NBA 2K27 and modders have pointed them at Control and Final Fantasy 7 Rebirth. Foliage holds up; faces do not. The interesting part is what the leak exposes, since none of these games had lighting or materials tuned for a system that intervenes after rendering.",
+      "tags": ["rendering", "nvidia", "games"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/3d/unsettling-nvidias-dlss-5-controversial-ai-filter-has-leaked-and-gamers-are-horrified",
+          "headline": "\"Unsettling\" – Nvidia's controversial DLSS 5 AI filter has leaked, and gamers are horrified"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Neither side gets to see the other's homework",
+      "blurb": "DeepMind is piloting a double-blind evaluation of a Gemini Flash Lite model with the Singapore AI Safety Institute, running tests inside Confidential Space so the evaluator never sees the weights and Google never sees the prompts. It targets benchmark contamination, the reason a good score currently proves less than it looks.",
+      "tags": ["benchmarks", "evaluation", "google"],
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+          "headline": "Piloting the world's first double-blind AI evaluations"
+        }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Luke Wroblewski",
+      "host": "lukew.com",
+      "topic": "design-practice",
+      "items": [
+        {
+          "title": "Little Bits of Intelligence",
+          "url": "https://www.lukew.com/ff/entry.asp?2158",
+          "date": "2026-08-27"
+        }
+      ]
+    },
+    {
+      "name": "Matt Webb",
+      "host": "interconnected.org",
+      "topic": "craft-judgment",
+      "items": [
+        {
+          "title": "New app: Yesterday, an iPhone app for yesterday's weather",
+          "url": "https://interconnected.org/home/2026/08/26/yesterday",
+          "date": "2026-08-28"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief press releases, reviewed and not taken",
+      "count": 24,
+      "examples": [
+        "Plenty Taps Bakery to Grow Its Premium, Vertically-Farmed Strawberry Brands",
+        "LEROY MERLIN Launches The 'Anti-Laziness' Range: 4,000 Products that Stay in the Cupboard",
+        "INNOCEAN Brazil Announces New Media Leadership"
+      ]
+    }
+  ]
+}

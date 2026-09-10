@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "generated_for": "2026-08-18",
+    "window": "2026-08-16..2026-08-18",
+    "sources_scanned": 42,
+    "items_in_window": 87,
+    "lang": "en"
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Agents are becoming a user group product designers have to design for",
+      "blurb": "Linear's CPO reports MCP usage going through the roof, framed in a roundup of six emerging UX and design trends with examples from Linear, Netflix, Runway, FullStory and Square. The question raised is whether agents are the next users designers plan interfaces around.",
+      "tags": ["agents", "product-ux", "mcp"],
+      "sources": [
+        { "name": "Department of Product", "url": "https://departmentofproduct.substack.com/p/linears-cpo-says-mcp-usage-is-through" }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "How client work and deadlines quietly reshape a designer's stance on AI",
+      "blurb": "A first-person account of how years of commercial practice change the way designers relate to emerging technology. Less a position on AI than a look at the professional conditions that produce the position.",
+      "tags": ["practice", "ai-adoption"],
+      "sources": [
+        { "name": "UX Collective", "url": "https://uxdesign.cc/ai-adoption-and-the-slow-erosion-of-design-idealism-fab75761ebd6?source=rss----138adf9c44c---4" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Instagram's rebrand: a wordmark change and the system behind it",
+      "blurb": "Meta has given Instagram a reworked identity built to flex and grow. It's Nice That's long read with Meta's Jasmine Probst and May Hartono covers how the system was assembled across a large team and why the hardest work is the part nobody sees.",
+      "tags": ["rebrand", "identity", "design-system"],
+      "cluster": true,
+      "sources": [
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/design/branding/instagrams-new-brand-identity-is-more-than-just-a-wordmark" },
+        { "name": "It's Nice That", "url": "https://www.itsnicethat.com/features/designing-for-3-billion-how-instagram-built-a-brand-system-that-celebrates-everyones-point-of-view-partnership-170826" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Pentagram builds a dynamic identity for a concert hall inside a medieval hospital",
+      "blurb": "Muziekcentrum De Bijloke in Ghent occupies a hospital founded in 1251, with a 13th-century main hall. Pentagram's answer is a dynamic visual identity rather than a fixed mark.",
+      "tags": ["identity", "cultural-branding"],
+      "sources": [
+        { "name": "Design Week", "url": "https://www.designweek.co.uk/pentagram-unveils-dynamic-visual-identity-for-historic-music-venue-de-bijloke/" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "The tool shift argument, made by someone who has lived through several",
+      "blurb": "A practitioner traces the moves from ink pens to Macs, hand-drawn type to digital foundries, marker visuals to 3D renders, and argues the creative industry has always absorbed new tools. The claim under the headline is that happy accidents are the part that does not transfer.",
+      "tags": ["judgment", "craft", "ai-in-production"],
+      "sources": [
+        { "name": "Design Week", "url": "https://www.designweek.co.uk/ai-cant-replace-happy-accidents/" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Gotham at 25 gets a variable axis",
+      "blurb": "Monotype is giving Gotham room to move with a variable version. Sara Soskolne's angle is how legacy identities absorb flexibility and new technology without losing what made them legible as identities.",
+      "tags": ["typography", "variable-fonts", "identity"],
+      "sources": [
+        { "name": "PRINT Magazine", "url": "https://www.printmag.com/type-tuesday/gotham-variable-and-the-art-of-evolution/" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Why a Japanese potato chip bag lost its colour",
+      "blurb": "A packaging change read as a symptom: economic and political turbulence is resetting the defaults of Japanese design. Useful as a reminder that visual conventions have material causes.",
+      "tags": ["packaging", "design-culture", "japan"],
+      "sources": [
+        { "name": "It's Nice That", "url": "https://www.itsnicethat.com/articles/the-view-from-tokyo-why-a-japanese-potato-chip-bag-lost-its-colour-graphic-design-170826" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Amazon is buying rare books, scanning them and destroying them for training data",
+      "blurb": "A hidden AirTag traced the route. Rare print is valuable to model makers precisely because it was never online, which puts the acquisition of training corpora back in view as a physical, irreversible act.",
+      "tags": ["training-data", "rights", "publishing"],
+      "cluster": true,
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/17/amazon-once-an-online-bookseller-is-destroying-rare-books-to-train-ai-models/" },
+        { "name": "Ars Technica", "url": "https://arstechnica.com/tech-policy/2026/08/hidden-airtag-reveals-amazon-is-trashing-rare-books-to-train-ai/" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Stripe reportedly buying OpenRouter for more than $7B",
+      "blurb": "OpenRouter's CEO has described the company as Stripe for AI. If the deal lands, the layer most small teams use to reach several models at once sits with a payments company.",
+      "tags": ["m-and-a", "infrastructure"],
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Anthropic sets out how invisible watermarks in Claude text will work",
+      "blurb": "The mechanism is aimed at Europe's AI transparency rules and marks generated text rather than images. Anyone shipping written work through a model now has a provenance question attached to it.",
+      "tags": ["watermarking", "provenance", "eu-ai-act"],
+      "sources": [
+        { "name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "ChatGPT's desktop app starts recording how you work",
+      "blurb": "Computer History on macOS turns clicks and keystrokes into training data, learns your patterns, suggests automations and picks up tasks. For studio machines holding client material, that is a settings question, not a feature note.",
+      "tags": ["tooling", "privacy", "automation"],
+      "sources": [
+        { "name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "OpenAI disbanded its preparedness team",
+      "blurb": "Per the Financial Times, the group tasked with assessing serious model risks was dissolved at the end of last month. Responsibilities were not reported as replaced, only removed.",
+      "tags": ["governance", "safety"],
+      "sources": [
+        { "name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team" }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Luke Wroblewski",
+      "host": "lukew.com",
+      "topic": "design-practice",
+      "items": [
+        { "title": "Ask LukeW: A New Retrieval System", "url": "https://www.lukew.com/ff/entry.asp?2157", "date": "2026-08-17" }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief agency wire",
+      "count": 25,
+      "examples": [
+        "DAVID's creative duo Rog Pretto returns to lead the São Paulo office as CCOs",
+        "Turtlebox Audio names McGarrah Jessee its first creative agency of record",
+        "Wonderhood Studios asks what does your Monday look like for RAF Regiment recruitment"
+      ]
+    }
+  ]
+}

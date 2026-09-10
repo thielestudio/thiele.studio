@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "generated_for": "2026-08-30",
+    "window": "2026-08-28..2026-08-30",
+    "sources_scanned": 42,
+    "items_in_window": 116,
+    "lang": "de",
+    "note": "Das internationale Fenster war dünn an der Schnittstelle AI und Design. Der größere Teil des englischsprachigen Volumens war Commerce-Rauschen und allgemeine AI-Politik. Die deutschsprachigen Quellen trugen die Ausgabe heute stärker als sonst."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Canterbury hatte zu viel Beschilderung, nicht zu wenig",
+      "blurb": "Maynards Bestandsaufnahme fand Wegweiser, Wandtafeln und Bahnhofskarten in unterschiedlichen Stilen und Lesbarkeiten, dazu Schilder, die nachträglich mit Werbung bestückt wurden. Design Associate Helen Garley beschreibt die Aufgabe als Wegnehmen konkurrierender Information, nicht als Hinzufügen weiterer.",
+      "tags": ["Leitsystem", "öffentlicher Raum", "Bestandsaufnahme"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/maynard-declutters-canterbury-with-heritage-inspired-wayfinding/",
+          "headline": "Maynard declutters Canterbury with heritage-inspired wayfinding"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Für Sprachmodelle schreiben heißt: die Einheit wechselt von der Seite zum Absatz",
+      "blurb": "Sprachmodelle lesen keine ganzen Seiten, sie zerlegen Dokumente in Abschnitte und ziehen einzelne Passagen in die Antwort. Der Artikel leitet daraus konkrete Vorgaben ab: ein Gedanke pro Absatz, unter 250 Wörter, die wichtigste Aussage in den ersten 350 bis 400 Wörtern und im ersten Satz jedes Absatzes.",
+      "tags": ["GEO", "Content-Struktur", "Sichtbarkeit"],
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/seo-reicht-nicht-mehr-geo-1758412/",
+          "headline": "SEO reicht nicht mehr: Warum du jetzt für Sprachmodelle statt für Google schreiben musst"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Arc'teryx bekommt eine Eingangstür für seine Kreislaufarbeit",
+      "blurb": "forpeople hat Naming, Identität und Guest Journey für System 0 entwickelt, eine Dachplattform, die Produktentwicklung, Reparaturservice und Kreislaufprogramme in eine kundenseitige Erzählung bringt. Die Aufgabe war, Abläufe im Hintergrund in etwas Sichtbares zu übersetzen.",
+      "tags": ["Identity", "Kreislauf", "Markenerlebnis"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/forpeople-designs-brand-identity-and-guest-journey-for-arcteryx-circularity-platform-system-0/",
+          "headline": "forpeople designs brand identity and guest journey for Arc'teryx circularity platform System 0"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Landor streicht bei Häagen-Dazs das Klischee der aufgebrochenen Schokolade",
+      "blurb": "Die neue Stielverpackung für Frankreich und Großbritannien stellt den Überzug in den Mittelpunkt, statt die üblichen Codes des angebissenen Eises zu übernehmen. Burgunderrot umschließt jetzt die ganze Packung, vertikale Streifen strukturieren die Range, die Eis-Silhouette leitet sich aus der Logoform ab.",
+      "tags": ["Packaging", "FMCG", "Regalwirkung"],
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/landor-reimagines-haagen-dazs-ice-cream-stick-packaging-around-desire-texture-and-taste/",
+          "headline": "Landor reimagines Häagen-Dazs ice cream stick packaging around desire, texture and taste"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Apple bewirbt den Mac Mini mit Knetfiguren",
+      "blurb": "TBWA/Media Arts Lab hat den Spot »The Mighty Mac mini« in neun Wochen als Stop-Motion produziert, mit gegossenen 3D-Druckformen und geschnitzten Armen. Kein CGI, keine KI, und das Making-of hatte laut PAGE binnen eines Tages hunderttausende Aufrufe.",
+      "tags": ["Kampagne", "Stop-Motion", "Handwerk"],
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/apple-zeigt-mit-dem-mac-mini-muskeln-und-das-mit-handgemachter-animation/",
+          "headline": "Apple zeigt mit dem Mac Mini Muskeln – und das mit handgemachter Animation"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Jemand versucht, Twitter als aufgegebene Marke zurückzuholen",
+      "blurb": "Operation Bluebird hat den Namen unter Twitter.now neu gestartet, mit dem Argument, die Marke sei mit dem Wechsel zu X 2022 praktisch aufgegeben worden. Ein Gründer verantwortete beim alten Twitter die Markenrechte. X klagt in Delaware, die vorläufige Einschätzung des Richters im April deutete an, dass Bluebird eine Chance hat.",
+      "tags": ["Markenrecht", "Rebrand", "Social Media"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/social-media/could-the-return-of-twitter-be-a-happy-ending-for-the-worst-rebrand-of-all-time",
+          "headline": "The return of Twitter could be a happy ending after the worst rebrand of all time"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Das Safari-Icon zeigt eine Kompassnadel, die aus zwei Zeigern besteht",
+      "blurb": "In der iOS-27-Beta ist die rote Nadelseite konvex gewölbt und greift in die weiße hinein, dazu deutet ein Kreiselement in der Mitte einen Uhrwerkstift an. Eine Kompassnadel ist ein Teil und rotiert nur als Ganzes, die Gestaltung suggeriert das Gegenteil. Im Icon von iOS 1 bis 6 stimmte die Metaphorik noch.",
+      "tags": ["Icon-Design", "Bildmetaphorik", "Apple"],
+      "sources": [
+        {
+          "name": "dt Designtagebuch",
+          "url": "https://www.designtagebuch.de/safari-auf-abwegen/",
+          "headline": "Safari auf Abwegen"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "In der Dance-Szene ist das Erkennen von Fälschungen zur Aufgabe geworden",
+      "blurb": "Der EDM-Produzent Max Harris und andere benennen öffentlich Kollegen, bei denen sie generierte Musik als handgemacht verkauft sehen, manche gaben es erst unter wachsendem Druck zu. Heikel wird es durch die Kollegialität: Hörer dürfen Verdacht äußern, unter Künstlern gilt das anders.",
+      "tags": ["generative Musik", "Zuschreibung", "Szene-Normen"],
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai",
+          "headline": "Musicians-turned-detectives are hunting for AI grifters"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Musikverlage beziffern Anthropics Trainingsdaten pro Werk",
+      "blurb": "Sony Music und Warner Chappell fordern bis zu 150.000 Dollar je Werk für zehntausende Werke, dazu bis zu 25.000 Dollar für jeden Fall entfernter Urheberrechtsangaben. Die Klage nennt Dario Amodei und Benjamin Mann persönlich und wirft Anthropic Torrenting von Millionen Büchern sowie das Abgreifen lizenzierter Lyrics-Seiten vor.",
+      "tags": ["Urheberrecht", "Trainingsdaten", "Klage"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
+          "headline": "Sony Music, Warner sue Anthropic, alleging a \"brazen campaign\" of intellectual property theft"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
+          "headline": "Sony Music and Warner Chappell are suing Anthropic"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "In China waren 95 Prozent der neuen Kurzdramen generiert",
+      "blurb": "Im ersten Quartal 2026 erschienen laut China Netcasting Services Association rund 128.000 Kurzdramen, dreimal so viele wie im Vorjahr insgesamt. Eine Minute KI-Video kostet nach Einschätzung von Professor Shen Yang noch 90 bis 120 Dollar, ein Zehntel der früheren Produktionskosten. Die Financial Times berichtet von Darstellern, die Stimme und Aussehen übertragen mussten, bevor sie entlassen wurden.",
+      "tags": ["Videoproduktion", "Arbeitsrecht", "China"],
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/ki-generierte-videos-ersetzen-in-china-bereits-menschliche-schauspieler-und-influencer/",
+          "headline": "KI-generierte Videos ersetzen in China bereits menschliche Schauspieler und Influencer"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Gemini Omni Flash 1.1 arbeitet an der Konsistenz statt am nächsten Einzelbild",
+      "blurb": "Für die Szenenverlängerung zieht das Modell jetzt zehn Sekunden vorheriges Material als Kontext heran statt einer Sekunde, Videos wachsen in Zehn-Sekunden-Schritten auf bis zu 40 Sekunden. Dazu kommen Übergänge zwischen vorgegebenem Start- und Endframe, 4K-Upscaling und 360p-Vorschauen zu einem Drittel der Kosten.",
+      "tags": ["Videomodell", "Produktions-Loop", "Google"],
+      "sources": [
+        {
+          "name": "heise online",
+          "url": "https://www.heise.de/news/Google-erweitert-Video-KI-Gemini-Omni-Flash-auf-Version-1-1-11433066.html",
+          "headline": "Google erweitert Video-KI Gemini Omni Flash auf Version 1.1"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "DLSS 5 ist vorzeitig geleakt und zeigt Neural Rendering ohne Artists im Prozess",
+      "blurb": "Modder haben Nvidias unveröffentlichte Neural-Rendering-Dateien aus einem NBA-2K27-Build gezogen und auf Control und Final Fantasy 7 Rebirth angesetzt. Vegetation hält stand, Gesichter nicht, und genau darum geht es: Niemand hat Materialien abgestimmt oder festgelegt, wo das Verfahren eingreifen darf.",
+      "tags": ["Echtzeit-Rendering", "Game Art", "Pipeline"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/3d/unsettling-nvidias-dlss-5-controversial-ai-filter-has-leaked-and-gamers-are-horrified",
+          "headline": "\"Unsettling\" – Nvidia's controversial DLSS 5 AI filter has leaked, and gamers are horrified"
+        }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Matt Webb",
+      "host": "interconnected.org",
+      "topic": "craft-judgment",
+      "items": [
+        {
+          "title": "New app: Yesterday, an iPhone app for yesterday's weather",
+          "url": "https://interconnected.org/home/2026/08/26/yesterday",
+          "date": "2026-08-28"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief, gesichtet und nicht genommen",
+      "count": 24,
+      "examples": [
+        "Leo UK and Premier Inn bring 'You Know What You're Getting' to Pride",
+        "KFC Thailand Unboxes the Cuteness with \"KFC SANRIO CHARACTERS\" Blind-Box Keychains",
+        "Stagwell Expands Strategic Partnership with Adobe to Build the Future of Enterprise Marketing Together"
+      ]
+    }
+  ]
+}

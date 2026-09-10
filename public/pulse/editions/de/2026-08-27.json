@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "generated_for": "2026-08-27",
+    "window": "2026-08-25..2026-08-27",
+    "sources_scanned": 42,
+    "items_in_window": 189,
+    "lang": "de"
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "title": "Agenten, die eine Website nicht altern lassen",
+      "blurb": "Strapi-Mitgründer Pierre Burgy beschreibt, was beim Bau vollautonomer Websites herauskam. Agenten sollen nach dem Launch eine Design-System-Änderung auf die Preisseite nachziehen, unkomprimiert ausgelieferte Bilder optimieren und Accessibility-Regressionen melden. Der Widerstand war nicht technisch. Kaum jemand will eine Website, die sich ganz allein verändert.",
+      "tags": [
+        "agenten",
+        "web",
+        "autonomie"
+      ],
+      "sources": [
+        {
+          "name": "Smashing Magazine",
+          "url": "https://smashingmagazine.com/2026/08/why-website-should-never-stop-changing/",
+          "headline": "Why Your Website Should Never Stop Changing"
+        }
+      ],
+      "theme_label": "Design-Praxis"
+    },
+    {
+      "theme": "design-practice",
+      "title": "Dashboards, nach denen niemand entscheidet",
+      "blurb": "Meriem Benhabiles benennt das Muster: Die Zahlen werden gezeigt, die Runde nickt, entschieden wird nichts. Ihre Diagnose lautet, das Diagramm sei aus den zufällig vorhandenen Daten gebaut worden und nicht aus der Frage, die zu beantworten war. Ihr Gegenmittel ist UX-Methodik, bevor das erste Werkzeug aufgeht.",
+      "tags": [
+        "datenvisualisierung",
+        "ux",
+        "methode"
+      ],
+      "sources": [
+        {
+          "name": "Smashing Magazine",
+          "url": "https://smashingmagazine.com/2026/08/rethinking-data-visualisation-ux-approach-dashboards/",
+          "headline": "Rethinking Data Visualisation: A UX Approach To Dashboards That Actually Drives Decisions"
+        }
+      ],
+      "theme_label": "Design-Praxis"
+    },
+    {
+      "theme": "brand-advertising",
+      "title": "Ein Rebranding, das mit KI arbeitet, um nicht nach KI auszusehen",
+      "blurb": "The Working Assembly hat die Identität der Voice-Journaling-App Untold neu gebaut, um die Klischees generativer KI zu vermeiden, und hat sie mit generativer KI gemacht. Creative Bloq argumentiert, nützliche KI-Werkzeuge könnten auch Leute gewinnen, die den generischen Rest ablehnen, sofern das Branding nicht danach aussieht.",
+      "tags": [
+        "identity",
+        "gen-ki",
+        "branding"
+      ],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/inspiration/this-rebrand-of-voice-journaling-app-untold-shows-what-happens-when-ai-branding-doesnt-look-like-ai/",
+          "headline": "This rebrand of a voice-journalling app looks lovely, but is an AI illustration system the right call?"
+        }
+      ],
+      "theme_label": "Brand & Advertising"
+    },
+    {
+      "theme": "brand-advertising",
+      "title": "Eine Orchester-Identität auf der Neigungsachse",
+      "blurb": "Studio Thonik hat dem reisenden Phion Symphony Orchestra eine Identität gegeben, die auf Schrift ruht statt auf einem Ort. Im Zentrum steht GT Planar von Grilli Type mit einer durchgehenden Neigungsachse über 90 Grad. Das Ensemble hat kein Haus, also bekommt jedes Konzert seinen eigenen Winkel.",
+      "tags": [
+        "typografie",
+        "identity",
+        "variable-fonts"
+      ],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/studio-thonik-phion-symphony-orchestra-graphic-design-discover-260826",
+          "headline": "Studio Thonik’s typographic orchestra identity mimics the movement of a conductor’s baton"
+        }
+      ],
+      "theme_label": "Brand & Advertising"
+    },
+    {
+      "theme": "brand-advertising",
+      "title": "Santé wechselt von Script zu Serife",
+      "blurb": "Die 1975 gegründete Naturkosmetikmarke rollt einen neuen Auftritt unter dem Claim JOY, POWERED BY NATURE aus. Aus Sante wird Santé, die Wortmarke steht künftig in einer Serifenschrift statt im Scriptfont, als Headline-Schrift ersetzt RL Refusit den Freefont Edo-SZ. In den Regalen stehen altes und neues Design derzeit nebeneinander.",
+      "tags": [
+        "rebranding",
+        "verpackung",
+        "typografie"
+      ],
+      "sources": [
+        {
+          "name": "dt Designtagebuch",
+          "url": "https://www.designtagebuch.de/sante-im-neuen-look/",
+          "headline": "Santé im neuen Look"
+        }
+      ],
+      "theme_label": "Brand & Advertising"
+    },
+    {
+      "theme": "craft-judgment",
+      "title": "Handarbeit braucht jetzt einen Nachweis",
+      "blurb": "Zwei Fälle in wenigen Tagen. Apple veröffentlicht ein Making-of, in dem Animatoren für den Mac-mini-Spot Knete formen und bemalen. Amplitude muss erklären, dass der Trailer zu Humankind 2 mit echten Darstellern, gebauten Sets und angefertigten Requisiten entstand. Von Handwerk wird zunehmend erwartet, dass es sich selbst belegt.",
+      "tags": [
+        "ki-verdacht",
+        "handwerk",
+        "werbung"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/advertising/nope-the-new-apple-ad-isnt-ai-and-theres-a-bts-video-to-prove-it",
+          "headline": "Nope, the new Apple Mac mini ad isn't AI – and there's a delightful BTS video to prove it"
+        },
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/entertainment/gaming/the-humankind-2-trailer-looks-so-much-like-ai-the-developer-had-to-explain-its-not",
+          "headline": "The Humankind 2 trailer looks so much like AI the developer had to explain it's not"
+        }
+      ],
+      "theme_label": "Handwerk & Urteil"
+    },
+    {
+      "theme": "craft-judgment",
+      "title": "Ein bewusster Bremsklotz, 45 Prozent weniger Fehler",
+      "blurb": "Chijindu Amadi prüfte einen nigerianischen Kreditgeber, der täglich rund eine Million Naira verlor. Die Ursache lag im Backend der Vertriebsagenten: fast identische Kundendatensätze, unter Quotendruck durchgeklickt. Ein Bestätigungsschritt, der den Abgleich gegen eine eindeutige Kundenkennung erzwingt, senkte die Fehler um etwa 45 Prozent.",
+      "tags": [
+        "interne-tools",
+        "ux",
+        "case-study"
+      ],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-boring-screens-that-run-the-world-a-designers-case-for-taking-admin-tools-seriously/",
+          "headline": "The boring screens that run the world: a designer’s case study"
+        }
+      ],
+      "theme_label": "Handwerk & Urteil"
+    },
+    {
+      "theme": "industry-market",
+      "title": "Die CBI erklärt die Experimentierphase für beendet",
+      "blurb": "Der Report The Adoption Decade von CBI und Oliver Wyman meldet, dass 63 Prozent der befragten Firmen bei Produktdesign und Forschung auf skalierte oder agentische KI zugehen, und benennt eine Kluft zwischen isolierten Pilotprojekten und eingebetteten Betriebsmodellen. Design Week zieht die Folgen für Studios: Workflows umbauen, Herkunft und Rechte an Assets klären, Nachwuchsfrage neu stellen.",
+      "tags": [
+        "report",
+        "adoption",
+        "studios"
+      ],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-cbis-latest-ai-report-on-how-design-businesses-can-bridge-ais-execution-divide/",
+          "headline": "The CBI’s latest AI report on how design businesses can bridge AI’s execution divide"
+        }
+      ],
+      "theme_label": "Industrie & Markt"
+    },
+    {
+      "theme": "industry-market",
+      "title": "Metas Plan, Teams um 60 Prozent zu kürzen, hielt der Praxis nicht stand",
+      "blurb": "Laut Reuters prüfte Meta unter dem Projektnamen OT, einzelne Teams um bis zu 60 Prozent zu verkleinern und die tägliche Arbeit von KI erledigen zu lassen, beaufsichtigt von kleinen Gruppen. Meta bestätigt die Szenario-Übung, sagt, nicht jedes Szenario sei verfolgt worden, und strich die zweite Entlassungsrunde.",
+      "tags": [
+        "agenten",
+        "arbeit",
+        "meta"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/08/metas-scrapped-plans-to-go-ai-native-included-slashing-teams-by-60-percent/",
+          "headline": "AI agents meant to replace Meta workers made “large-scale, disruptive actions”"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/ki-agenten-lieferten-nicht-wie-metas-radikaler-personalumbau-implodierte/",
+          "headline": "KI-Agenten lieferten nicht: Wie Metas radikaler Personalumbau implodierte"
+        }
+      ],
+      "theme_label": "Industrie & Markt"
+    },
+    {
+      "theme": "industry-market",
+      "title": "KI-Apps liefern ihr Organigramm an die Nutzer aus",
+      "blurb": "Sarah Perez argumentiert, Gemini habe jeder Funktion eine eigene Marke gegeben, also müsse man sich zwischen Chat, Spark und Daily Brief entscheiden, bevor man überhaupt etwas fragt. Dasselbe Muster sieht sie bei Claude mit Chat und Cowork und bei ChatGPT mit Chat und Work.",
+      "tags": [
+        "branding",
+        "produkt",
+        "ki-ux"
+      ],
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/26/googles-gemini-has-a-branding-problem-and-so-does-the-rest-of-ai/",
+          "headline": "Google’s Gemini has a branding problem, and so does the rest of AI"
+        }
+      ],
+      "theme_label": "Industrie & Markt"
+    },
+    {
+      "theme": "industry-market",
+      "title": "99 Prozent nutzen KI, und trotzdem sinkt das Budget",
+      "blurb": "Die ZHAW-Trendstudie 2026 befragte 115 Kommunikationsleitende in der Deutschschweiz. 99 Prozent setzen generative KI ein, viele systematisch, während bei rund 40 Prozent der Organisationen das Budget in den vergangenen Jahren gesunken ist. Handwerkliche Fähigkeiten wie Texten verlieren an Gewicht, Strategie und Beratung gewinnen.",
+      "tags": [
+        "studie",
+        "kommunikation",
+        "schweiz"
+      ],
+      "sources": [
+        {
+          "name": "Werbewoche",
+          "url": "https://www.markt-kom.com/de/digital/zhaw-trendstudie-generative-ki-veraendert-kommunikationsabteilungen/",
+          "headline": "ZHAW-Trendstudie: Generative KI verändert Kommunikationsabteilungen"
+        }
+      ],
+      "theme_label": "Industrie & Markt"
+    },
+    {
+      "theme": "ai-models",
+      "title": "Gemini 3.5 Transcribe schneidet die Ähs heraus",
+      "blurb": "Googles neues Audiomodell erkennt Fachjargon, deckt mehr als 85 Sprachen ab, formatiert Text automatisch und entfernt Füllwörter, bearbeiten lässt es sich per Stimme. Google verortet es gegenüber dem Vorgänger Chirp 3 als Fortschritt bei Mehrsprachigkeit und Wortfehlerrate.",
+      "tags": [
+        "spracherkennung",
+        "google",
+        "werkzeuge"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/985186/google-gemini-3-5-transcribe-audio-ai",
+          "headline": "Google’s new AI transcription edits out your ‘ums’ and ‘ahs’"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-5-transcribe-for-ai-powered-speech-to-text/",
+          "headline": "Google announces Gemini 3.5 Transcribe for AI-powered speech-to-text"
+        },
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+          "headline": "Intelligent transcription with Gemini 3.5 Transcribe"
+        }
+      ],
+      "theme_label": "AI-Modelle (+Tools)"
+    },
+    {
+      "theme": "ai-models",
+      "title": "Apple baut den Desktop um lokale Inferenz herum",
+      "blurb": "Die Auffrischung von Mac mini und Mac Studio bringt den M6, Apples ersten M-Chip in 2 Nanometern, und den M5 Ultra. Ars Technica liest darin einen Spec-Sprung für einen Anwendungsfall, der erst mit macOS 26.2 entstand. Seit dort Thunderbolt 5 mit niedriger Latenz für verteilte MLX-Inferenz freigeschaltet wurde, koppeln Leute Macs, um Modelle zu rechnen, die auf eine Maschine nicht passen.",
+      "tags": [
+        "lokale-llm",
+        "hardware",
+        "apple"
+      ],
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/apple/2026/08/with-new-mac-studio-and-mac-mini-apple-leans-hard-into-local-ai-inference/",
+          "headline": "Apple’s new desktop computers are designed specifically for local AI development"
+        }
+      ],
+      "theme_label": "AI-Modelle (+Tools)"
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, gesichtet und nicht genommen",
+      "count": 24,
+      "examples": [
+        "Betty Crocker Celebrates Bettier Than Ever™ Era with Fresh Packaging and Statement Handbags",
+        "Meow-out-of-home! Marro and Wonderful Things create the first billboards for cats that they can actually scratch",
+        "We Are Collider launches AI tool ‘ROXi’ to predict ROI for brand experiences"
+      ]
+    }
+  ]
+}

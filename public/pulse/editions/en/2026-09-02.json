@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "generated_for": "2026-09-02",
+    "window": "2026-08-31..2026-09-02",
+    "sources_scanned": 42,
+    "items_in_window": 112,
+    "lang": "en",
+    "note": "No feed outages. Volume was high but thin in substance: a large share of the Creative Bloq feed was deals and gadget reviews, and the Roastbrief wire ran 25 campaign announcements, of which one was worth its own entry."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Four ways an agent can draw your form, and none of them agree",
+      "blurb": "The piece sorts assistant clients into four rendering approaches and names which product sits where: A2UI's declarative JSON against a catalog the client already holds, sandboxed HTML through a bundled renderer in ChatGPT and Claude, vendor-owned catalogs in Teams and Slack, and Gemini Consumer writing fresh code per prompt. A2UI is the one proposal on the table that no vendor owns, and version 1.0 is still a release candidate.",
+      "tags": ["agentic ui", "design systems", "standards"],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/the-call-for-an-agentic-standard-we-need-to-stop-shipping-the-same-form-four-different-times-be5b9d40e370?source=rss----138adf9c44c---4",
+          "headline": "The call for an agentic standard: We need to stop shipping the same form four different times"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "A catalogue of where agents actually landed inside companies",
+      "blurb": "More than fifty documented cases of companies running AI agents internally, with Square, DoorDash, Cursor, Replit, Gusto and Figma named among them.",
+      "tags": ["agents", "product practice", "adoption"],
+      "sources": [
+        {
+          "name": "Department of Product",
+          "url": "https://departmentofproduct.substack.com/p/ai-agents-in-practice-bf1",
+          "headline": "AI Agents in Practice"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Vrints-Kolsteren cut the name down and kept the gap",
+      "blurb": "Napoli on the Road becomes NotR, and the studio went to transport and industry for its references rather than the usual Italian restaurant cues: stamps, labels, codes, a monospaced face. The letterspacing is set so the space between the characters still points at what was removed.",
+      "tags": ["identity", "hospitality", "typography"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/vrints-kolsteren-napoli-on-the-road-graphic-design-project-010926",
+          "headline": "Stamps, labels, and codes: Vrints-Kolsteren draws on transport and industry to rebrand a pizza restaurant on the move"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Snickers made a candy bar you feed to a chatbot",
+      "blurb": "Hungr.AI is a digital bar users copy from the site and paste to an assistant that is misbehaving, which extends \"You're Not You When You're Hungry\" onto machine failure. BBDO wrote it, Pete Marquis directed the spots through Good Behavior, and it runs with interactive pieces on Reddit and Snapchat. AI is the joke here, not the production method.",
+      "tags": ["campaign", "brand platform", "ai culture"],
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/pete-marquis-directs-snickers-hungr-ai-campaign/",
+          "headline": "Pete Marquis Directs Snickers Hungr. AI Campaign"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Designers are redoing the AI flyers taped to the shop window",
+      "blurb": "Small businesses have moved their posters to image generators and the results have converged on one look. Designers on Instagram and TikTok are posting corrected versions, and the argument they make is not that the output is ugly but that treating a flyer as pure information says something about the business behind it.",
+      "tags": ["small business", "identity", "ai output"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/graphic-design/graphic-designers-are-trying-to-fix-peoples-terrible-ai-flyers",
+          "headline": "Graphic designers are trying to fix people's terrible AI flyers"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "DLSS 5 ships Wednesday with the argument unresolved",
+      "blurb": "Nvidia's upscaler arrives September 3rd alongside NBA 2K27 and wants serious GPU headroom. The Verge earlier likened the technique to a real-time generative filter over the frame, and Creative Bloq puts the open question plainly: slop machine, or a step closer to what the artists actually intended.",
+      "tags": ["real-time", "games", "upscaling"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/986378/nvidia-dlss-5-launch-nba-2k27",
+          "headline": "Nvidia s controversial DLSS 5 arrives September 3rd and requires serious GPU horsepower"
+        },
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/3d/is-nvidias-dlss-5-an-ai-slop-machine-or-a-game-changing-technology-that-will-take-us-closer-to-artists-original-vision",
+          "headline": "Is Nvidia's DLSS 5 an AI slop machine or a game-changing technology that will take us closer to artists' original vision?"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Google is offering studios money to train on their characters",
+      "blurb": "Per the LA Times, Google has approached Disney, Warner Bros. Discovery and Universal about licensing their libraries for model training, at figures around $40 million for the rights to generate outputs featuring a single copyrighted character, plus a possible share of ad revenue on that output. Nothing has been signed.",
+      "tags": ["licensing", "copyright", "training data"],
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/987429/google-needs-hollywood-more-than-the-studios-need-ai",
+          "headline": "Google needs Hollywood more than the studios need AI"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Music publishers say $1.5 billion did not hurt enough",
+      "blurb": "Sony, EMI and Warner Chappell argue the earlier settlement over pirated books deters nothing at a $2 trillion valuation, and their filing puts the internal chats back on the record, including the reply \"zlibrary my beloved\" to a torrenting instruction. They want an injunction on the training, not only money.",
+      "tags": ["copyright", "litigation", "training data"],
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit/",
+          "headline": "“Zlibrary my beloved”: Anthropic staff chats extolling piracy cited in Sony suit"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Instagram will throttle the AI profiles that don't say so",
+      "blurb": "Accounts identified as fully AI-generated get an \"AI-generated profile\" label and can appeal it, and those that should carry it but don't lose reach and recommendation placement. Using AI as a tool inside an otherwise human account is explicitly not covered.",
+      "tags": ["platform policy", "disclosure", "social"],
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
+          "headline": "Instagram puts new limits on undisclosed AI profiles"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Google put a prompt box where the design tool used to be",
+      "blurb": "Pics runs on Gemini and the Nano Banana model inside Workspace, as a standalone app and inside Docs and Slides, and lets users tap a specific object or piece of text and describe the change rather than reprompting the whole image. Google's own announcement names the problem it is aiming at: teams that cannot get usable marketing images out of a general chatbot.",
+      "tags": ["workspace", "image generation", "canva"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/987423/google-pics-ai-image-editor-generator",
+          "headline": "Google Pics is like Canva, but with even more AI"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/",
+          "headline": "Google s answer to Canva is an AI tool where you prompt instead of design"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Anthropic's answer to the complaints about the bill",
+      "blurb": "Fable 5.1 and Mythos 5.1 are aimed at customer criticism of price, data retention and over-eager safeguards: roughly 25 percent cheaper in ordinary use and up to 45 percent on complex agentic work, mostly through reduced pricing on cached input. Early testers report it as faster and more token-efficient than Fable 5.",
+      "tags": ["model release", "agents", "pricing"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
+          "headline": "Anthropic launches Claude Fable 5.1 and says it s up to 45 percent cheaper for agentic work"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive/",
+          "headline": "Anthropic s new Fable release is cheaper, less restrictive"
+        }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Luke Wroblewski",
+      "host": "lukew.com",
+      "topic": "design-practice",
+      "items": [
+        {
+          "title": "AI Agents and Layers of Abstraction",
+          "url": "https://www.lukew.com/ff/entry.asp?2159",
+          "date": "2026-08-31"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief campaign wire, reviewed and not taken",
+      "count": 24,
+      "examples": [
+        "Hellmann's “America's Sandwich” appears at the Smithsonian cafe with VML",
+        "Jellyfish HOKA Turn New York Running Into a Citywide Competition",
+        "Walmart Serves Up a Limited-Edition Rotisserie Chicken Purse for National Chicken Month"
+      ]
+    }
+  ]
+}

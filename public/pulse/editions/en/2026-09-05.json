@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "generated_for": "2026-09-05",
+    "window": "2026-09-03..2026-09-05",
+    "sources_scanned": 42,
+    "items_in_window": 100,
+    "lang": "en",
+    "note": "Thin day. Several of the strongest pieces in this window (GPT-6 Astra, the Hugging Face acquisition, the UEA rebrand, the Kanon Foundry revival) ran in yesterday's edition and are not repeated. Brand & Advertising has nothing new and is left out. Creative Bloq's ArtStation piece, dropped yesterday after two fetch attempts returned no body, was readable today and is included."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Not all friction in writing is worth keeping",
+      "blurb": "Michael Buckley splits the effort in reading and writing into friction that builds a capacity and friction that merely accompanies it, and argues only the first kind is worth defending. He concedes generative AI differs from spellcheck and citation managers because it reaches into interpretation, which moves the work from production to judgment.",
+      "tags": ["ux", "ki-im-alltag", "schreiben"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/reading-and-writing-are-interfaces-and-ai-can-reduce-their-friction-13623dea34c0?source=rss----138adf9c44c---4",
+          "headline": "Reading and writing are interfaces. And AI can reduce their friction."
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "The film's interface got copied, its warning did not",
+      "blurb": "Patrick Neeman argues the industry spent two decades rebuilding Minority Report's gesture rig, which kept failing on arm fatigue, while quietly building and keeping the predictive system the film was actually about. His test for any demo borrowed from science fiction: name the constraint the original was free to ignore, then check whether your users live inside it.",
+      "tags": ["interaktion", "prognose", "prototyp"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/what-minority-report-got-wrong-about-ai-so-far-9048573aa70f?source=rss----138adf9c44c---4",
+          "headline": "What Minority Report got wrong about AI (so far)"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Sameness comes from shared references, not from too little colour",
+      "blurb": "Ricardo Bezerra of Tátil Design reads Brazilcore as a symptom rather than a trend: brand worlds that could belong anywhere and therefore belong nowhere. He describes a year in Manhattan in which proximity to every reference flattened the work, and argues originality follows from having a specific place to look from.",
+      "tags": ["originalitaet", "markenwelt", "essay"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/beyond-brazilcore-finding-originality-by-origin/",
+          "headline": "Beyond brazilcore: finding originality by origin"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "ArtStation turns on NoAI and leaves the ban question open",
+      "blurb": "Under new owner KitBash the platform sets NoAI by default on all uploads and works with Cloudflare to block known AI crawlers, while conceding that its CreatedWithAI label and filters do not stop generated work from burying human portfolios. Asked why it does not simply ban AI art, ArtStation replied without answering.",
+      "tags": ["plattform", "trainingsdaten", "portfolio"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/art/digital-art/artstation-is-finally-taking-action-against-ai-art-but-theres-one-question-it-doesnt-want-to-answer",
+          "headline": "ArtStation is taking action against AI art, but there's one question it doesn't want to answer"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Microsoft counts 59,545 near matches in 8.2 million chat logs",
+      "blurb": "In discovery filings against the New York Times and book authors, Microsoft says fewer than one percent of 8.2 million keyword-selected Copilot logs share at least sixteen words with news content, and that an expert found 51 instances of substantial overlap with Center for Investigative Reporting work. The filing argues rarity, not absence.",
+      "tags": ["urheberrecht", "verfahren", "trainingsdaten"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
+          "headline": "Microsoft says virtually nobody was grabbing NYT articles through its chatbot"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Instagram labels a background removal as generated",
+      "blurb": "Meta is tagging original photos as AI while missing generated ones. Part of it traces to Canva, whose assistive tools were being reported as generative until the company says it corrected the tagging, and some users say the label persists anyway. In the reporter's own tests only images made or edited in the Meta AI app reliably drew it.",
+      "tags": ["kennzeichnung", "plattform", "c2pa"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/989617/instagram-ai-content-label-confusion",
+          "headline": "Instagram’s AI detection is a mess (again)"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Nvidia pools idle home machines for local inference",
+      "blurb": "PAIR is open-source software rather than hardware: it finds compatible machines on a home network and spreads local inference across them for tools like Ollama and LM Studio, using systems only while they are idle. It supports RTX 20-series and newer, RTX Pro, DGX Spark, and Apple chips from M4 on.",
+      "tags": ["werkzeuge", "lokale-inferenz", "open-source"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook",
+          "headline": "Nvidia launches free tool that links idle computers into a personal AI data center"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Roland ships loops, not finished songs",
+      "blurb": "Melody Flip is a DAW plug-in with around 250 genre palettes that generates melody, chords, bassline or drums, or builds on a reference track. There is no text prompt: you set genre, note density, BPM and key. The output is a starting point rather than a track, which sets it apart from Suno and Udio.",
+      "tags": ["werkzeuge", "musik", "produktions-loop"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/990197/roland-ai-music-melody-flip",
+          "headline": "Roland is getting into generative AI music with Melody Flip"
+        }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Matt Webb",
+      "host": "interconnected.org",
+      "topic": "craft-judgment",
+      "items": [
+        {
+          "title": "Harry Potter again again",
+          "url": "https://interconnected.org/home/2026/09/04/again",
+          "date": "2026-09-04"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief (PR wire, screened, nothing selected)",
+      "count": 25,
+      "examples": [
+        "Guinness heroes the Iconic Harp in new ‘LoVely’ campaign",
+        "Kerrygold appoints Born Social as global social AOR to drive next phase of the dairy brand’s growth",
+        "KFC Arabia Joins the Game: A Baloot-Inspired Campaign for Saudi Arabia"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "meta": {
+    "generated_for": "2026-09-10",
+    "window": "2026-09-08..2026-09-10",
+    "sources_scanned": 59,
+    "items_in_window": 167,
+    "lang": "de"
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "title": "Vier Muster, um die Kontrolle über einen Agenten zu behalten",
+      "blurb": "Eine UX-Forscherin führt heutige Agenten-Oberflächen auf Lucy Suchmans Kopierer-Studie aus den Achtzigern zurück und benennt vier konkrete Muster: sichtbare Unsicherheit mit Quellenbeleg, Nachsteuern mitten im Lauf ohne den Fortschritt zu verwerfen, geteilte Flächen auf denen mehrere Beteiligte die Begründung prüfen, und schrittweises Aufklappen der Maschinenlogik. Das Argument darunter: flüssige Sprache verdeckt die Wahrnehmungslücke der Maschine, sie schließt sie nicht.",
+      "tags": [
+        "agentic ux",
+        "hci",
+        "vertrauen"
+      ],
+      "sources": [
+        {
+          "name": "uxdesign.cc",
+          "url": "https://uxdesign.cc/persistent-lessons-in-human-centered-automation-45b53412e6a5?source=rss----138adf9c44c---4",
+          "headline": "Persistent lessons in human-centered automation"
+        }
+      ],
+      "theme_label": "Design-Praxis"
+    },
+    {
+      "theme": "design-practice",
+      "title": "Ein KI-Produkt startet mit einer Antwort, nicht mit einer Frage",
+      "blurb": "Wroblewski hat das leere Eingabefeld seiner Ask-Funktion durch eine täglich erzeugte Antwort darüber ersetzt, woran er gerade arbeitet. Seine Usability-Tests hatten schon vorher gezeigt, dass allein das Lesen der Vorschlagsfragen den Leuten klarmachte, wozu die Sache gut ist. Die vorangestellte Antwort greift dasselbe Problem direkter an.",
+      "tags": [
+        "ai ux",
+        "einstieg"
+      ],
+      "sources": [
+        {
+          "name": "Luke Wroblewski",
+          "url": "https://www.lukew.com/ff/entry.asp?2160",
+          "headline": "Always Asking People to Ask"
+        }
+      ],
+      "theme_label": "Design-Praxis"
+    },
+    {
+      "theme": "design-practice",
+      "title": "Der Reparaturzug, der wirkt, und der, den alle nehmen",
+      "blurb": "Ein Stanford-Team hat 249.834 echte Gespräche ausgewertet und in 49,7 Prozent davon Reibung gefunden. Die Begründung des Modells anzugreifen war zu 81,5 Prozent produktiv, dieselbe Anweisung nur anders zu formulieren scheiterte zu 19,8 Prozent. Unangenehmer Befund: Bei den Aufgaben mit dem höchsten Einsatz lässt die Kritik nach, also genau dort, wo Aufsicht am meisten zählt.",
+      "tags": [
+        "ki-kompetenz",
+        "belege"
+      ],
+      "sources": [
+        {
+          "name": "Sam Illingworth",
+          "url": "https://theslowai.substack.com/p/what-to-do-when-ai-gets-it-wrong",
+          "headline": "I Scold My AI. I Would Fail A Student For That."
+        }
+      ],
+      "theme_label": "Design-Praxis"
+    },
+    {
+      "theme": "brand-advertising",
+      "title": "Guinness modernisiert, indem es die Harfe versetzt statt neu zeichnet",
+      "blurb": "In der Kampagne LoVely von AMV BBDO ersetzt die Harfe, die seit über 160 Jahren auf der Flasche steht, das „v“ im Wort. Verzerrt wurde dafür nichts, und darin liegt der Punkt: die Silhouette las sich ohnehin schon als „v“. Ein Argument dafür, im vorhandenen Bestand zu suchen statt etwas Neues zu erfinden.",
+      "tags": [
+        "traditionsmarke",
+        "ooh"
+      ],
+      "sources": [
+        {
+          "name": "creativeboom.com",
+          "url": "https://www.creativeboom.com/inspiration/this-clever-design-trick-by-guinness-means-it-can-modernise-without-any-need-for-a-new-logo/",
+          "headline": "This clever design trick by Guinness means it can modernise without needing a new logo"
+        }
+      ],
+      "theme_label": "Brand & Advertising"
+    },
+    {
+      "theme": "brand-advertising",
+      "title": "Das Sponsorenproblem eine Ebene unter dem Logo gelöst",
+      "blurb": "Für die nationalen Serien von British Cycling mit Hauptpartner Lloyds hat Form eigene Schnitte der Anton gebaut, deren Kurven sowohl vom Vic-Zeichen als auch vom Lloyds-Pferd kommen. Creative Director Alex Andlaw beschreibt es so: weil beide Marken in der Typografie stecken, kam die Debatte um gleiches Gewicht im Logo-Block gar nicht erst auf.",
+      "tags": [
+        "sponsoring",
+        "typografie"
+      ],
+      "sources": [
+        {
+          "name": "creativeboom.com",
+          "url": "https://www.creativeboom.com/inspiration/how-form-solved-the-classic-two-logo-lockup-problem-for-british-cycling/",
+          "headline": "How Form solved the classic two-logo lockup problem for British Cycling and its sponsor, Lloyds"
+        }
+      ],
+      "theme_label": "Brand & Advertising"
+    },
+    {
+      "theme": "brand-advertising",
+      "title": "Ein Archiv als Arbeitsmaterial",
+      "blurb": "Baby Teeth behandelt beim Rebranding der 272 Jahre alten Royal Society of Arts das Archiv als Material, nicht als Schmuck. Historische Kollisionen, senkrecht geschnittene Porträts und versetzte Anschnitte unterbrechen die Kontinuität bewusst, vom Journal bis ins Gebäude. Das Monogramm stammt von der sechsteiligen Rosette im Oculus der Fassade, mit einem abgesenkten, gekippten A.",
+      "tags": [
+        "identity",
+        "archiv"
+      ],
+      "sources": [
+        {
+          "name": "designweek.co.uk",
+          "url": "https://www.designweek.co.uk/baby-teeth-rebrands-royal-society-of-arts-with-archival-system-and-dame-judi-dench-film/",
+          "headline": "Baby Teeth rebrands Royal Society of Arts with archival system and Dame Judi Dench film"
+        }
+      ],
+      "theme_label": "Brand & Advertising"
+    },
+    {
+      "theme": "brand-advertising",
+      "title": "Etoro nimmt dem Stier die Hörner",
+      "blurb": "Die Trading-Plattform hat die im Logo enthaltenen Stierhörner entfernt und die Wortmarke stattdessen in spitze Klammern gesetzt, wie eine Variable im Code. Begleitet wird das vom Claim „Know better“, einer neuen App mit dem KI-Agenten Tori und einem Website-Relaunch. Es ist das zweite Rebranding seit 2007 und das erste, das den Ansatz wechselt.",
+      "tags": [
+        "fintech",
+        "logo"
+      ],
+      "sources": [
+        {
+          "name": "designtagebuch.de",
+          "url": "https://www.designtagebuch.de/etoro-erneuert-markenauftritt/",
+          "headline": "Etoro erneuert Markenauftritt"
+        }
+      ],
+      "theme_label": "Brand & Advertising"
+    },
+    {
+      "theme": "craft-judgment",
+      "title": "Eine Farbpalette als Optimierungsproblem",
+      "blurb": "Ström-Awns zweite Fassung seines Farbalgorithmus erscheint als npm-Paket samt Oberfläche und bringt neue Bewertungsfunktionen mit: gerade noch unterscheidbarer Abstand, WCAG-AA-Kontrast gegen einen gewählten Hintergrund, und wie leicht sich eine Farbe benennen lässt. Die Prämisse bleibt: es gibt keine richtigen Farben, nur die am wenigsten falschen für eine benannte Kostenfunktion.",
+      "tags": [
+        "farbe",
+        "barrierefreiheit",
+        "werkzeug"
+      ],
+      "sources": [
+        {
+          "name": "Matthew Strom-Awn",
+          "url": "https://mattstromawn.com/writing/the-least-wrong-colors-version-2/",
+          "headline": "The least wrong colors, version 2"
+        }
+      ],
+      "theme_label": "Handwerk & Urteil"
+    },
+    {
+      "theme": "industry-market",
+      "title": "OpenAI kann nicht ausschließen, dass Nutzerarbeit ins Modell floss",
+      "cluster": true,
+      "blurb": "Der Mathematiker Tristan Buckmaster wirft OpenAI vor, ihn nach dem Bekanntwerden seiner Navier-Stokes-Fortschritte unter Druck gesetzt zu haben, samt Aufforderung, seinen bei Anthropic angestellten Koautor zu streichen. OpenAI bestreitet den Zugriff auf konkrete Nutzerdaten, räumt aber ein, nicht ausschließen zu können, dass anonymisierte Daten aus der Produktnutzung die eigenen Modelle verbessert haben. Wer unveröffentlichte Arbeit in solche Werkzeuge gibt, sollte diesen Satz zweimal lesen.",
+      "tags": [
+        "urheberrecht",
+        "vertrauen",
+        "openai"
+      ],
+      "sources": [
+        {
+          "name": "theverge.com",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
+          "headline": "OpenAI’s sly mathematical breakthrough sends a chill through academia"
+        },
+        {
+          "name": "the-decoder.de",
+          "url": "https://the-decoder.de/streit-um-ki-beweis-fuer-millennium-problem-wird-zur-vertrauensfrage-fuer-ki-labore/",
+          "headline": "Streit um KI-Beweis für Millennium-Problem wird zur Vertrauensfrage für KI-Labore"
+        }
+      ],
+      "theme_label": "Industrie & Markt"
+    },
+    {
+      "theme": "industry-market",
+      "title": "Koto fängt an, Studios zu kaufen",
+      "blurb": "Mit dem Geld eines Investors aus dem Jahr 2025 hat Koto die Agentur Stereo Creative übernommen und wächst damit von 170 auf 230 Leute an acht Standorten. Weitere Zukäufe inhabergeführter Agenturen sind angekündigt. Als Grund nennt Koto die Nachfrage nach Marke, Digital, Kampagne und Content aus einer Hand.",
+      "tags": [
+        "agenturmarkt",
+        "übernahme"
+      ],
+      "sources": [
+        {
+          "name": "designweek.co.uk",
+          "url": "https://www.designweek.co.uk/koto-acquires-stereo-creative-to-launch-new-global-studio-network/",
+          "headline": "Koto acquires Stereo Creative to launch new global studio network"
+        }
+      ],
+      "theme_label": "Industrie & Markt"
+    },
+    {
+      "theme": "ai-models",
+      "title": "Apple signiert das Foto schon im Sensor",
+      "cluster": true,
+      "blurb": "Reference Image signiert beim iPhone 18 Pro die Sensordaten bei der Aufnahme und entwickelt sie über Private Cloud Compute zu einer Fassung, die sich nicht mehr verändern lässt. Spätere Bearbeitungen kann man dagegen halten. Für fremde Apps gibt es eine Schnittstelle auf iOS, iPadOS und macOS. In der EU startet die Funktion nicht mit.",
+      "tags": [
+        "herkunftsnachweis",
+        "fotografie"
+      ],
+      "sources": [
+        {
+          "name": "theverge.com",
+          "url": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
+          "headline": "Apple’s new iPhone camera mode promises to prove your photo isn’t AI"
+        },
+        {
+          "name": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/09/09/apple-has-a-new-way-prove-your-iphone-photos-arent-ai-slop/",
+          "headline": "Apple has a new way to prove your iPhone photos aren’t AI slop"
+        }
+      ],
+      "theme_label": "AI-Modelle (+Tools)"
+    },
+    {
+      "theme": "ai-models",
+      "title": "Suno baut auf lizenzierten Daten neu und schaltet alles Ältere ab",
+      "cluster": true,
+      "blurb": "Suno v6 entstand zusammen mit Warner Music Group, BMG und Believe, nachdem sich die Klagen gehäuft hatten. Die Daten der Vorgängermodelle sollen nicht mehr enthalten sein, und alle bisherigen Versionen werden abgeschaltet. Geplant ist ein Remix-Programm, bei dem Rechteinhaber gegen Umsatzbeteiligung zustimmen können.",
+      "tags": [
+        "lizenzen",
+        "musik",
+        "urheberrecht"
+      ],
+      "sources": [
+        {
+          "name": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
+          "headline": "Suno replaces its AI models with a new one trained on licensed music as copyright suits pile up"
+        },
+        {
+          "name": "theverge.com",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+          "headline": "Suno releases its first AI music model made with record industry help"
+        },
+        {
+          "name": "the-decoder.de",
+          "url": "https://the-decoder.de/suno-stellt-mit-v6-drei-neue-ki-musikmodelle-vor-und-schaltet-alle-bisherigen-versionen-ab/",
+          "headline": "Suno stellt mit v6 drei neue KI-Musikmodelle vor und schaltet alle bisherigen Versionen ab"
+        }
+      ],
+      "theme_label": "AI-Modelle (+Tools)"
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "Interrail launches new global brand platform ‘The Interrail Effect’ by We Are Pi",
+        "MIRIMAR Named Creative AOR for Five Guys",
+        "Colossus Gives Boston Lyric Opera a Dramatic New Look for Its 50th Anniversary"
+      ]
+    }
+  ]
+}

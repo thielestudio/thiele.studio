@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "generated_for": "2026-09-05",
+    "window": "2026-09-03..2026-09-05",
+    "sources_scanned": 42,
+    "items_in_window": 151,
+    "lang": "de",
+    "note": "Dünner Tag. Mehrere starke Stücke aus diesem Fenster standen schon in der gestrigen Ausgabe (GPT-6 Astra, der Hugging-Face-Kauf, der UEA-Rebrand, das Kanon-Revival) und werden nicht wiederholt. Brand & Advertising bringt heute nichts Neues und fällt weg. Das ArtStation-Stück von Creative Bloq, gestern wegen zwei erfolglosen Abrufen ausgelassen, war heute lesbar und ist drin."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Nicht jede Mühe beim Schreiben ist die Mühe wert",
+      "blurb": "Michael Buckley trennt den Aufwand beim Lesen und Schreiben in zwei Sorten. Die eine baut eine Fähigkeit auf, die andere begleitet sie nur, und nur die erste sei verteidigenswert. Generative KI unterscheidet sich für ihn von Rechtschreibprüfung und Zitationsprogramm, weil sie bis in die Deutung reicht und die Arbeit von der Herstellung zur Beurteilung verschiebt.",
+      "tags": ["ux", "ki-im-alltag", "schreiben"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/reading-and-writing-are-interfaces-and-ai-can-reduce-their-friction-13623dea34c0?source=rss----138adf9c44c---4",
+          "headline": "Reading and writing are interfaces. And AI can reduce their friction."
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Die Handschuhe wurden nachgebaut, die Warnung nicht",
+      "blurb": "Patrick Neeman schreibt, die Branche habe zwanzig Jahre lang die Gestensteuerung aus Minority Report nachgebaut, die immer wieder an ermüdeten Armen scheiterte. Das Vorhersagesystem, um das der Film eigentlich ging, wurde still gebaut und behalten. Sein Prüfschritt für jede Demo aus dem Kino: Benenne die Einschränkung, die die Vorlage ignorieren durfte, und prüfe, ob deine Nutzer darin leben.",
+      "tags": ["interaktion", "prognose", "prototyp"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/what-minority-report-got-wrong-about-ai-so-far-9048573aa70f?source=rss----138adf9c44c---4",
+          "headline": "What Minority Report got wrong about AI (so far)"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Gleichförmigkeit kommt von geteilten Referenzen",
+      "blurb": "Ricardo Bezerra von Tátil Design liest Brazilcore als Symptom, nicht als Trend: Markenwelten, die überall herkommen könnten und deshalb nirgends. Ein Jahr in Manhattan habe ihm gezeigt, dass Nähe zu allen Referenzen die Arbeit einebnet. Originalität entstehe daraus, einen bestimmten Ort zu haben, von dem aus man schaut.",
+      "tags": ["originalitaet", "markenwelt", "essay"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/beyond-brazilcore-finding-originality-by-origin/",
+          "headline": "Beyond brazilcore: finding originality by origin"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Ein Erkennungswerkzeug misst das Ob, der Pranger unterstellt das Wie",
+      "blurb": "Pangram beschäftigte zeitweise einen Journalisten, der mutmaßliche KI-Nutzer öffentlich bloßstellte. The Decoder trennt die zwei Ebenen, die dabei verschwimmen. Der Score sagt nur, ob KI im Spiel war. Der Vorwurf, nicht selbst gedacht zu haben, ist eine Aussage darüber, wie gearbeitet wurde, und die misst das Werkzeug nicht.",
+      "tags": ["ki-erkennung", "urteil", "stigmatisierung"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/pangrams-groesstes-problem-sind-die-eigenen-nutzer/",
+          "headline": "Pangrams größtes Problem sind die eigenen Nutzer"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "ArtStation setzt NoAI als Vorgabe und weicht der Verbotsfrage aus",
+      "blurb": "Unter dem neuen Eigentümer KitBash gilt NoAI künftig für alle Uploads, dazu blockiert die Plattform mit Cloudflare bekannte KI-Crawler. Das eigene Label CreatedWithAI und die Filter reichen nach eigener Aussage nicht, um zu verhindern, dass generierte Arbeiten menschliche Portfolios zuschütten. Auf die Frage, warum KI-Bilder nicht einfach verboten werden, antwortete ArtStation, ohne zu antworten.",
+      "tags": ["plattform", "trainingsdaten", "portfolio"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/art/digital-art/artstation-is-finally-taking-action-against-ai-art-but-theres-one-question-it-doesnt-want-to-answer",
+          "headline": "ArtStation is taking action against AI art, but there's one question it doesn't want to answer"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Microsoft zählt 59.545 Fast-Treffer in 8,2 Millionen Chatprotokollen",
+      "blurb": "In den Unterlagen zum Verfahren gegen die New York Times und mehrere Buchautoren gibt Microsoft an, weniger als ein Prozent der 8,2 Millionen nach Stichworten ausgewählten Copilot-Protokolle teilten mindestens sechzehn Wörter mit Nachrichtentexten. Ein Gutachter fand 51 Fälle deutlicher Überschneidung mit Arbeiten des Center for Investigative Reporting. Der Schriftsatz argumentiert mit Seltenheit, nicht mit Abwesenheit.",
+      "tags": ["urheberrecht", "verfahren", "trainingsdaten"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
+          "headline": "Microsoft says virtually nobody was grabbing NYT articles through its chatbot"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Instagram hält eine Freistellung für Bildgenerierung",
+      "blurb": "Meta markiert eigene Fotos als KI und übersieht generierte Bilder. Ein Teil geht auf Canva zurück, dessen assistierende Werkzeuge als generativ gemeldet wurden, bis das Unternehmen die Kennzeichnung nach eigener Aussage korrigierte. Manche Nutzer berichten, das Label erscheine weiterhin. Im Test der Autorin bekamen nur Bilder aus der Meta-AI-App zuverlässig eines.",
+      "tags": ["kennzeichnung", "plattform", "c2pa"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/989617/instagram-ai-content-label-confusion",
+          "headline": "Instagram’s AI detection is a mess (again)"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Wasserzeichen im Text, Schutzschicht im Quellcode",
+      "blurb": "Anthropic kennzeichnet neue Claude-Modelle in der EU mit einem unsichtbaren Wasserzeichen im Text, bei unterstützten Dateien zusätzlich mit signierten Herkunftsangaben nach C2PA. PAGE stellt dem ShieldFont gegenüber, das menschliche Texte im Quellcode gegen Scraper verändert. Anthropic selbst schreibt, ein erkanntes Wasserzeichen belege nur, dass Claude beteiligt war.",
+      "tags": ["ai-act", "kennzeichnung", "provenienz"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/ki-texte-erhalten-ein-wasserzeichen-verstaerkt-das-aber-wirklich-den-wert-von-von-menschen-geschriebenen-texten/",
+          "headline": "KI-Texte erhalten ein Wasserzeichen. Verstärkt das aber wirklich den Wert von von Menschen geschriebenen Texten?"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Nvidia bündelt ungenutzte Rechner im Heimnetz",
+      "blurb": "PAIR ist quelloffene Software, kein Gerät. Das Werkzeug findet passende Rechner im Heimnetz und verteilt lokale Inferenz für Ollama oder LM Studio auf sie, und zwar nur, solange die Maschinen im Leerlauf sind. Unterstützt werden RTX ab der 20er-Serie, RTX Pro, DGX Spark sowie Apple-Chips ab M4.",
+      "tags": ["werkzeuge", "lokale-inferenz", "open-source"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook",
+          "headline": "Nvidia launches free tool that links idle computers into a personal AI data center"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/nvidia-pair-open-source-tool-macht-das-heimnetzwerk-zum-ki-cluster/",
+          "headline": "Nvidia PAIR: Open-Source-Tool macht das Heimnetzwerk zum KI-Cluster"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Roland liefert Schleifen, keine fertigen Stücke",
+      "blurb": "Melody Flip ist ein Plug-in für die Audiosoftware, mit rund 250 Paletten nach Genre. Es erzeugt Melodie, Akkorde, Bass oder Schlagzeug, wahlweise aufbauend auf einem Referenzstück. Einen Textprompt gibt es nicht, eingestellt werden Genre, Notendichte, Tempo und Tonart. Was herauskommt, ist ein Ausgangspunkt und kein Track, anders als bei Suno oder Udio.",
+      "tags": ["werkzeuge", "musik", "produktions-loop"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/990197/roland-ai-music-melody-flip",
+          "headline": "Roland is getting into generative AI music with Melody Flip"
+        }
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "name": "Matt Webb",
+      "host": "interconnected.org",
+      "topic": "craft-judgment",
+      "items": [
+        {
+          "title": "Harry Potter again again",
+          "url": "https://interconnected.org/home/2026/09/04/again",
+          "date": "2026-09-04"
+        }
+      ]
+    }
+  ],
+  "firehose": [
+    {
+      "label": "Roastbrief (PR-Meldungen, gesichtet, nichts genommen)",
+      "count": 25,
+      "examples": [
+        "Guinness heroes the Iconic Harp in new ‘LoVely’ campaign",
+        "Kerrygold appoints Born Social as global social AOR to drive next phase of the dairy brand’s growth",
+        "KFC Arabia Joins the Game: A Baloot-Inspired Campaign for Saudi Arabia"
+      ]
+    }
+  ]
+}
