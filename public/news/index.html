@@ -3,13 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PULSE — AI × Design</title>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>PULSE</title>
 <style>
   :root{
     --bg:#fbfbfa; --surface:#ffffff; --line:#e6e5e1; --line2:#d3d2cc;
     --tx:#17161a; --tx2:#54535a; --tx3:#8a8991; --accent:#17161a; --accent-tx:#fbfbfa;
     --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
     --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --footh:44px;
   }
   :root[data-theme="dark"]{
     --bg:#0b0b0c; --surface:#141416; --line:#242427; --line2:#34343a;
@@ -18,229 +22,302 @@
   *{box-sizing:border-box;} html,body{margin:0;}
   body{background:var(--bg);color:var(--tx);font-family:var(--sans);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased;}
   a{color:inherit;text-decoration:none;}
-  .wrap{max-width:760px;margin:0 auto;padding:0 22px 90px;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px calc(var(--footh) + 70px);}
   .label{font-family:var(--mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--tx3);}
   .tnum{font-variant-numeric:tabular-nums;}
 
-  header{padding:34px 0 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;}
-  .brand h1{font-size:25px;line-height:1.05;margin:0 0 4px;letter-spacing:-0.01em;}
-  .brand h1{letter-spacing:0.02em;}
-  .brand h1 .x{color:var(--tx3);font-weight:400;font-size:15px;letter-spacing:0;margin-left:6px;}
+  header{padding:34px 0 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;}
+  .brand h1{font-size:25px;line-height:1.05;margin:0 0 4px;letter-spacing:0.02em;}
   .brand .ed{font-family:var(--mono);font-size:12px;color:var(--tx3);}
   .htools{display:flex;gap:8px;align-items:center;}
-  select,.tbtn{font-family:var(--mono);font-size:12px;color:var(--tx2);background:var(--surface);border:1px solid var(--line2);padding:7px 10px;cursor:pointer;border-radius:0;}
-  select:hover,.tbtn:hover{border-color:var(--tx3);color:var(--tx);}
+  .tbtn{font-family:var(--mono);font-size:12px;color:var(--tx2);background:var(--surface);border:1px solid var(--line2);padding:7px 10px;cursor:pointer;border-radius:0;}
+  .tbtn:hover{border-color:var(--tx3);color:var(--tx);}
   .langsw{display:flex;border:1px solid var(--line2);}
   .langsw button{font-family:var(--mono);font-size:12px;letter-spacing:0.04em;background:none;border:none;color:var(--tx2);padding:7px 11px;cursor:pointer;}
   .langsw button[aria-pressed="true"]{background:var(--accent);color:var(--accent-tx);}
 
-  .controls{position:sticky;top:0;background:var(--bg);padding:13px 0;border-bottom:1px solid var(--line);z-index:5;display:flex;flex-direction:column;gap:11px;}
-  .lens{display:flex;border:1px solid var(--line2);width:fit-content;}
-  .lens button{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:0.05em;background:none;border:none;color:var(--tx2);padding:8px 17px;cursor:pointer;}
-  .lens button[aria-current="true"]{background:var(--accent);color:var(--accent-tx);}
+  /* Sticky Kopf: Datum laeuft beim Scrollen mit */
+  .runbar{position:sticky;top:0;background:var(--bg);z-index:5;padding:12px 0 13px;display:flex;flex-direction:column;gap:11px;}
+  .runbar .now{font-family:var(--mono);font-size:12px;letter-spacing:0.05em;color:var(--tx2);}
   .topics{display:flex;gap:7px;flex-wrap:wrap;}
   .chip{font-family:var(--mono);font-size:11px;letter-spacing:0.03em;text-transform:uppercase;color:var(--tx2);background:var(--surface);border:1px solid var(--line);padding:6px 11px;cursor:pointer;transition:all .12s;}
   .chip:hover{border-color:var(--tx3);color:var(--tx);}
   .chip[aria-pressed="true"]{background:var(--accent);color:var(--accent-tx);border-color:var(--accent);}
 
-  .lensbody{padding-top:24px;}
-  .theme-group{margin-bottom:32px;}
-  .theme-h{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
-  .theme-h h2{font-size:13px;margin:0;}
-  .theme-h .rule{flex:1;height:1px;background:var(--line);}
+  /* Timeline: keine Trennstriche, Rhythmus ueber Weissraum */
+  .day{padding:34px 0 10px;}
+  .day > .daylabel{font-family:var(--mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--tx3);margin-bottom:26px;}
+  .entry{padding:0 0 34px;}
+  .entry .meta{font-family:var(--mono);font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--tx3);margin-bottom:9px;}
+  .entry h3{margin:0 0 10px;font-size:19px;font-weight:600;line-height:1.34;letter-spacing:-0.005em;}
+  .entry a.head:hover h3{text-decoration:underline;text-underline-offset:3px;}
+  .entry .srcs{font-family:var(--mono);font-size:11.5px;color:var(--tx3);display:flex;gap:14px;flex-wrap:wrap;}
+  .entry .srcs a:hover{color:var(--tx);text-decoration:underline;text-underline-offset:3px;}
+  .entry .head{cursor:pointer;display:block;}
+  .entry .head:hover h3{text-decoration:underline;text-underline-offset:3px;}
+  .entry .blurb{margin:0 0 12px;color:var(--tx2);font-size:15px;line-height:1.6;max-width:62ch;}
+  .entry .blurb[hidden]{display:none;}
+  /* Gelesen: zurueckgenommen, nicht versteckt. Der Punkt links markiert ungelesen. */
+  .entry .head h3{position:relative;}
+  .entry:not(.read) .head h3::before{content:"";position:absolute;left:-15px;top:0.62em;width:6px;height:6px;border-radius:50%;background:var(--tx);}
+  .entry.read .head h3{color:var(--tx3);font-weight:500;}
+  .entry.read .meta{opacity:.6;}
+  @media(max-width:600px){ .entry:not(.read) .head h3::before{display:none;} }
 
-  .story{padding:17px 0;border-top:1px solid var(--line);}
-  .story:first-of-type{border-top:none;}
-  .story h3{margin:0 0 6px;font-size:17px;font-weight:600;line-height:1.3;}
-  .story p{margin:0 0 10px;color:var(--tx2);font-size:14.5px;line-height:1.55;}
-  details.srcs{border:1px solid var(--line);background:var(--surface);}
-  details.srcs summary{list-style:none;cursor:pointer;font-family:var(--mono);font-size:12px;color:var(--tx2);padding:9px 12px;display:flex;align-items:center;gap:8px;}
-  details.srcs summary::-webkit-details-marker{display:none;}
-  details.srcs summary .chev{transition:transform .15s;color:var(--tx3);}
-  details.srcs[open] summary .chev{transform:rotate(90deg);}
-  details.srcs summary .badge{font-size:10px;letter-spacing:0.05em;text-transform:uppercase;background:var(--accent);color:var(--accent-tx);padding:2px 6px;}
-  .srclist a{display:flex;gap:10px;align-items:baseline;padding:9px 12px;border-top:1px solid var(--line);font-size:13.5px;line-height:1.4;}
-  .srclist a:hover{background:var(--bg);}
-  .srclist .out{font-family:var(--mono);font-size:11px;color:var(--tx3);white-space:nowrap;min-width:96px;}
-  .srclist .hl{color:var(--tx);}
-  .srclist a:hover .hl{text-decoration:underline;}
-  a.srcone{display:flex;gap:10px;align-items:baseline;padding:9px 12px;border:1px solid var(--line);background:var(--surface);font-size:13.5px;line-height:1.4;}
-  a.srcone:hover{background:var(--bg);}
-  a.srcone .out{font-family:var(--mono);font-size:11px;color:var(--tx3);white-space:nowrap;min-width:96px;}
-  a.srcone .hl{color:var(--tx);}
-  a.srcone:hover .hl{text-decoration:underline;}
-  .tagline{margin-top:9px;display:flex;gap:6px;flex-wrap:wrap;}
-  .tg{font-family:var(--mono);font-size:10.5px;color:var(--tx3);}
-  .tg::before{content:"#";color:var(--line2);}
+  .sentinel{height:1px;}
+  .status{font-family:var(--mono);font-size:11.5px;color:var(--tx3);padding:26px 0 40px;text-align:center;letter-spacing:0.05em;}
+  .empty{font-family:var(--mono);font-size:12.5px;color:var(--tx3);padding:22px 0;}
 
-  .voice{padding:15px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:150px 1fr;gap:18px;}
-  .voice:first-of-type{border-top:none;}
-  .voice .nm{font-weight:600;font-size:14.5px;}
-  .voice .hn{font-family:var(--mono);font-size:11px;color:var(--tx3);}
-  .voice .posts{display:flex;flex-direction:column;gap:10px;}
-  .post h4{margin:0 0 2px;font-size:14.5px;font-weight:500;line-height:1.35;}
-  .post .pm{font-family:var(--mono);font-size:11px;color:var(--tx3);}
-  .post:hover h4{text-decoration:underline;}
-
-  .firehose{margin-top:26px;padding:14px 16px;border:1px dashed var(--line2);background:var(--surface);}
-  .firehose .fh-h{font-family:var(--mono);font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:var(--tx3);margin-bottom:6px;}
-  .firehose .fh-b{font-size:13.5px;color:var(--tx2);}
-
-  .empty,.vnote{font-family:var(--mono);font-size:12.5px;color:var(--tx3);padding:22px 0;line-height:1.6;}
-  .foot{margin-top:38px;padding-top:15px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11px;color:var(--line2);}
-  @media(max-width:600px){ header{flex-direction:column;} .voice{grid-template-columns:1fr;gap:6px;} }
+  .foot{position:fixed;left:0;right:0;bottom:0;height:var(--footh);background:var(--bg);border-top:1px solid var(--line);
+        display:flex;align-items:center;justify-content:space-between;gap:14px;z-index:10;}
+  .foot .inner{max-width:760px;margin:0 auto;padding:0 22px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:14px;}
+  .foot span,.foot a{font-family:var(--mono);font-size:10.5px;color:var(--tx3);letter-spacing:0.03em;}
+  .foot a:hover{color:var(--tx);text-decoration:underline;text-underline-offset:3px;}
+  .foot .desc{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  @media(max-width:600px){
+    header{flex-direction:column;}
+    .entry h3{font-size:17.5px;}
+    .foot .desc{display:none;}
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <div class="brand">
-      <h1>PULSE<span class="x">AI × Design</span></h1>
-      <div class="ed" id="edLabel">loading …</div>
+      <h1>PULSE</h1>
     </div>
     <div class="htools">
       <div class="langsw" id="langsw">
         <button data-lang="en" aria-pressed="true">EN</button>
         <button data-lang="de" aria-pressed="false">DE</button>
       </div>
-      <select id="archive" aria-label="Edition"></select>
       <button class="tbtn" id="themeToggle" aria-label="Light/Dark">☀︎</button>
     </div>
   </header>
 
-  <div class="controls">
-    <div class="lens" id="lens">
-      <button data-lens="topics" aria-current="true"></button>
-      <button data-lens="voices"></button>
-    </div>
+  <div class="runbar">
+    <div class="now tnum" id="nowDate"></div>
     <div class="topics" id="topics"></div>
   </div>
 
-  <div class="lensbody">
-    <div id="view-topics"></div>
-    <div id="view-voices" hidden></div>
-  </div>
-
-  <p class="foot" id="foot"></p>
+  <div id="stream"></div>
+  <div class="sentinel" id="sentinel"></div>
+  <div class="status" id="status"></div>
 </div>
+
+<footer class="foot">
+  <div class="inner">
+    <span class="desc" id="footDesc"></span>
+    <a href="https://thiele.studio/legal/" target="_blank" rel="noopener" id="footLegal">Impressum</a>
+  </div>
+</footer>
 
 <script>
 const $=s=>document.querySelector(s);
 const esc=s=>(s==null?"":String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 const STR={
-  en:{ topics:"Topics", voices:"Voices", all:"All", edition:"Edition",
-       multi:n=>`${n} outlets reported this · view headlines`, badge:n=>`${n} sources`,
-       noTopic:"Nothing in this filter.", noVoice:"No voice in this filter.",
-       voiceNote:"Independent writers publish infrequently. Some days this axis is thin; over a week it fills up.",
-       foot:"PULSE · AI × Design, daily digest from curated sources.", loadFail:"Could not load editions." },
-  de:{ topics:"Themen", voices:"Stimmen", all:"Alle", edition:"Ausgabe",
-       multi:n=>`${n} Redaktionen berichten dasselbe · Headlines ansehen`, badge:n=>`${n} Quellen`,
-       noTopic:"Kein Thema in diesem Filter.", noVoice:"Keine Stimme in diesem Filter.",
-       voiceNote:"Denker-Feeds sind niederfrequent. An manchen Tagen ist die Achse dünn, über die Woche füllt sie sich.",
-       foot:"PULSE · AI × Design, täglich verdichtet aus kuratierten Quellen.", loadFail:"Konnte Ausgaben nicht laden." }
+  en:{ all:"All",
+       desc:"PULSE · What the design industry made, judged and argued about today.",
+       legal:"Imprint", loading:"loading …", end:"end of archive",
+       nothing:"Nothing in this filter.", loadFail:"Could not load editions." },
+  de:{ all:"Alle",
+       desc:"PULSE · Was die Designbranche heute gemacht, beurteilt und bestritten hat.",
+       legal:"Impressum", loading:"lädt …", end:"Ende des Archivs",
+       nothing:"Nichts in diesem Filter.", loadFail:"Konnte Ausgaben nicht laden." }
 };
 const THEMES=[
-  {id:"design-practice",en:"Design Practice",   de:"Design-Praxis"},
+  {id:"design-practice",  en:"Design Practice",    de:"Design-Praxis"},
   {id:"brand-advertising",en:"Brand & Advertising",de:"Brand & Advertising"},
-  {id:"craft-judgment",en:"Craft & Judgment",   de:"Handwerk & Urteil"},
-  {id:"industry-market",en:"Industry & Market", de:"Industrie & Markt"},
-  {id:"ai-models",     en:"AI Models (+Tools)", de:"AI-Modelle (+Tools)"}
+  {id:"craft-judgment",   en:"Craft & Judgment",   de:"Handwerk & Urteil"},
+  {id:"industry-market",  en:"Industry & Market",  de:"Industrie & Markt"},
+  {id:"ai-models",        en:"AI Models (+Tools)", de:"AI-Modelle (+Tools)"}
 ];
+const themeLabel=id=>{const x=THEMES.find(y=>y.id===id);return x?x[state.lang]:"";};
 
-let state={lang:"en",lens:"topics",topic:"all",edition:null,index:null};
+let state={lang:"en",topic:"all",index:null,queue:[],loading:false,done:false,seenThemes:new Set()};
 const t=()=>STR[state.lang];
 
-// theme
+// Gelesen-Zustand liegt im Browser, pro Geraet. Schluessel ist die erste
+// Quellen-URL, weil sie stabil ist. Deckel gegen unbegrenztes Wachsen.
+const READ_KEY="nr-read";
+let readSet=new Set();
+try{ readSet=new Set(JSON.parse(localStorage.getItem(READ_KEY)||"[]")); }catch(e){}
+function saveRead(){
+  try{
+    let a=[...readSet];
+    if(a.length>3000) a=a.slice(a.length-3000);
+    readSet=new Set(a);
+    localStorage.setItem(READ_KEY,JSON.stringify(a));
+  }catch(e){}
+}
+function markRead(el){
+  if(!el||el.classList.contains("read")) return;
+  el.classList.add("read");
+  const k=el.dataset.key; if(k){ readSet.add(k); saveRead(); }
+}
+
 (function(){ document.documentElement.setAttribute("data-theme", localStorage.getItem("nr-theme")||"light"); })();
 function syncToggle(){ $("#themeToggle").textContent = document.documentElement.getAttribute("data-theme")==="dark" ? "☾" : "☀︎"; }
 $("#themeToggle").onclick=()=>{ const c=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark"; document.documentElement.setAttribute("data-theme",c); localStorage.setItem("nr-theme",c); syncToggle(); };
 syncToggle();
 
+// Stimmen und Themen laufen in einem Strom. Stimmen-Beitraege haben keine
+// Einordnung, sie tragen die Person als Quelle.
+function entriesOf(ed){
+  const out=(ed.stories||[]).map(s=>({
+    theme:s.theme, title:s.title, blurb:s.blurb||"",
+    sources:(s.sources||[]).map(q=>({name:q.name,url:q.url}))
+  }));
+  for(const v of (ed.voices||[])){
+    for(const i of (v.items||[])){
+      // Altbestand: Stimmen vor dem 10.09.2026 haben keine Einordnung
+      out.push({theme:v.topic, title:i.title, blurb:"", sources:[{name:v.name,url:i.url}]});
+    }
+  }
+  return out;
+}
+
+function dayHTML(date,label,entries){
+  const rows=entries.map(e=>{
+    const href=e.sources[0]?e.sources[0].url:"";
+    const key=href;
+    const srcs=e.sources.map(q=>`<a href="${esc(q.url)}" target="_blank" rel="noopener">${esc(q.name)}</a>`).join("");
+    const isRead=readSet.has(key);
+    // Mit Einordnung klappt die Schlagzeile auf. Ohne Einordnung (Altbestand)
+    // fuehrt sie direkt zur Quelle, sonst waere der Klick ohne Wirkung.
+    const head = e.blurb
+      ? `<div class="head" role="button" tabindex="0" aria-expanded="false"><h3>${esc(e.title)}</h3></div>`
+      : `<a class="head" href="${esc(href)}" target="_blank" rel="noopener"><h3>${esc(e.title)}</h3></a>`;
+    return `<article class="entry${isRead?" read":""}" data-theme="${esc(e.theme||"")}" data-key="${esc(key)}">
+      <div class="meta">${esc(themeLabel(e.theme))}</div>
+      ${head}
+      ${e.blurb?`<p class="blurb" hidden>${esc(e.blurb)}</p>`:""}
+      <div class="srcs">${srcs}</div>
+    </article>`;
+  }).join("");
+  return `<section class="day" data-date="${esc(date)}" data-label="${esc(label)}">
+    <div class="daylabel tnum">${esc(label)}</div>${rows}</section>`;
+}
+
+async function loadNext(){
+  if(state.loading||state.done) return;
+  if(!state.queue.length){ state.done=true; $("#status").textContent=t().end; return; }
+  state.loading=true; $("#status").textContent=t().loading;
+  const meta=state.queue.shift();
+  try{
+    const ed=await (await fetch(`./editions/${state.lang}/${meta.date}.json`,{cache:"no-store"})).json();
+    const entries=entriesOf(ed);
+    entries.forEach(e=>{ if(e.theme) state.seenThemes.add(e.theme); });
+    const label=(meta.label&&meta.label[state.lang])||meta.date;
+    $("#stream").insertAdjacentHTML("beforeend", dayHTML(meta.date,label,entries));
+    renderTopics();
+    applyFilter();
+  }catch(e){ /* fehlende Ausgabe still ueberspringen, das Archiv hat Luecken */ }
+  state.loading=false;
+  $("#status").textContent = state.queue.length ? "" : t().end;
+  syncDate();
+  // Falls der Sentinel nach dem Anhaengen noch sichtbar ist, direkt weiterladen
+  requestAnimationFrame(maybeLoad);
+}
+
+// Datum oben laeuft mit und Nachladen: beides ueber Scroll, nicht ueber
+// IntersectionObserver. Der Observer feuerte im Test nicht zuverlaessig,
+// obwohl der Sentinel im Viewport stand (geprueft 10.09.2026).
+let ticking=false;
+function onScroll(){
+  if(ticking) return;
+  ticking=true;
+  requestAnimationFrame(()=>{
+    ticking=false;
+    syncDate();
+    maybeLoad();
+  });
+}
+function syncDate(){
+  const bar=$(".runbar").getBoundingClientRect().bottom;
+  let cur=null;
+  document.querySelectorAll(".day").forEach(d=>{ if(!d.hidden && d.getBoundingClientRect().top<=bar+8) cur=d; });
+  cur=cur||document.querySelector(".day:not([hidden])");
+  if(cur) $("#nowDate").textContent=cur.dataset.label;
+}
+function vh(){ return window.innerHeight || document.documentElement.clientHeight || 800; }
+function maybeLoad(){
+  const el=$("#sentinel"); if(!el) return;
+  if(el.getBoundingClientRect().top < vh() + 700) loadNext();
+}
+window.addEventListener("scroll",onScroll,{passive:true});
+window.addEventListener("resize",onScroll,{passive:true});
+
+// Zweiter, unabhaengiger Ausloeser. Einer der beiden reicht; sie doppeln sich
+// absichtlich, weil das Nachladen sonst an einer einzigen API haengt.
+try{
+  new IntersectionObserver(es=>{ if(es.some(e=>e.isIntersecting)) loadNext(); },{rootMargin:"700px"}).observe($("#sentinel"));
+}catch(e){}
+
+function toggleEntry(art){
+  const head=art.querySelector(".head");
+  const bl=art.querySelector(".blurb");
+  if(!bl||!head) return;
+  const open=bl.hidden;
+  bl.hidden=!open;
+  head.setAttribute("aria-expanded",String(open));
+  if(open) markRead(art);
+}
+$("#stream").addEventListener("click",ev=>{
+  const art=ev.target.closest(".entry"); if(!art) return;
+  if(ev.target.closest(".srcs a")){ markRead(art); return; }   // raus zum Artikel zaehlt als gelesen
+  if(ev.target.closest("a.head")){ markRead(art); return; }    // Altbestand ohne Einordnung
+  if(ev.target.closest(".head")){ ev.preventDefault(); toggleEntry(art); }
+});
+$("#stream").addEventListener("keydown",ev=>{
+  if(ev.key!=="Enter" && ev.key!==" ") return;
+  const head=ev.target.closest(".head[role=button]"); if(!head) return;
+  ev.preventDefault(); toggleEntry(head.closest(".entry"));
+});
+
+function renderTopics(){
+  const list=[{id:"all",label:t().all}].concat(THEMES.filter(x=>state.seenThemes.has(x.id)).map(x=>({id:x.id,label:x[state.lang]})));
+  const cur=state.topic;
+  $("#topics").innerHTML=list.map(x=>`<button class="chip" data-t="${x.id}" aria-pressed="${cur===x.id}">${esc(x.label)}</button>`).join("");
+  $("#topics").querySelectorAll(".chip").forEach(b=>b.onclick=()=>{state.topic=b.dataset.t;renderTopics();applyFilter();});
+}
+function applyFilter(){
+  document.querySelectorAll(".entry").forEach(el=>{
+    el.hidden = !(state.topic==="all" || el.dataset.theme===state.topic);
+  });
+  document.querySelectorAll(".day").forEach(d=>{
+    d.hidden = ![...d.querySelectorAll(".entry")].some(e=>!e.hidden);
+  });
+  syncDate(); maybeLoad();
+}
+
+function syncLangButtons(){
+  $("#langsw").querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.lang===state.lang));
+  document.documentElement.lang=state.lang;
+  $("#footDesc").textContent=t().desc;
+  $("#footLegal").textContent=t().legal;
+}
+function resetStream(){
+  $("#stream").innerHTML=""; $("#status").textContent="";
+  state.queue=state.index.editions.slice();
+  state.done=false; state.loading=false; state.seenThemes=new Set();
+  renderTopics();
+  loadNext();
+}
 async function boot(){
   try{
     state.index=await (await fetch("./editions/index.json",{cache:"no-store"})).json();
-    state.lang=localStorage.getItem("nr-lang")|| state.index.default_lang || "en";
+    state.lang=localStorage.getItem("nr-lang")||state.index.default_lang||"en";
     syncLangButtons();
-    renderArchive();
-    $("#archive").onchange=e=>loadEdition(e.target.value);
-    await loadEdition(state.index.editions[0].date);
-  }catch(e){ $("#edLabel").textContent=t().loadFail; }
+    resetStream();
+  }catch(e){ $("#nowDate").textContent=t().loadFail; }
 }
-function syncLangButtons(){ $("#langsw").querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.lang===state.lang)); document.documentElement.lang=state.lang; }
-function renderArchive(){
-  const cur=$("#archive").value;
-  $("#archive").innerHTML=state.index.editions.map(e=>`<option value="${e.date}">${esc((e.label&&e.label[state.lang])||e.date)}</option>`).join("");
-  if(cur) $("#archive").value=cur;
-}
-async function loadEdition(date){
-  try{
-    const ed=await (await fetch(`./editions/${state.lang}/${date}.json`,{cache:"no-store"})).json();
-    state.edition=ed; state.topic="all";
-    const meta=state.index.editions.find(e=>e.date===date);
-    const lbl=(meta&&meta.label&&meta.label[state.lang])||date;
-    $("#edLabel").textContent=`${t().edition} ${lbl}`;
-    $("#archive").value=date;
-    renderChrome(); renderTopics(); render();
-  }catch(e){ $("#edLabel").textContent=t().loadFail; }
-}
-function renderChrome(){
-  const [a,b]=$("#lens").querySelectorAll("button");
-  a.textContent=t().topics; b.textContent=t().voices;
-  $("#foot").textContent=t().foot;
-}
-function renderTopics(){
-  const present=new Set((state.edition.stories||[]).map(s=>s.theme));
-  const list=[{id:"all",label:t().all}].concat(THEMES.filter(x=>present.has(x.id)).map(x=>({id:x.id,label:x[state.lang]})));
-  $("#topics").innerHTML=list.map(x=>`<button class="chip" data-t="${x.id}" aria-pressed="${state.topic===x.id}">${esc(x.label)}</button>`).join("");
-  $("#topics").querySelectorAll(".chip").forEach(b=>b.onclick=()=>{state.topic=b.dataset.t;renderTopics();render();});
-}
-function render(){ state.lens==="topics"?renderTopicsView():renderVoicesView(); }
-function srcBlock(s){
-  const n=s.sources.length;
-  const row=x=>`<span class="out">${esc(x.name)}</span><span class="hl">${esc(x.headline||x.name)}</span>`;
-  if(n===1){
-    const x=s.sources[0];
-    return `<a class="srcone" href="${esc(x.url)}" target="_blank" rel="noopener">${row(x)}</a>`;
-  }
-  const rows=s.sources.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${row(x)}</a>`).join("");
-  return `<details class="srcs"><summary><span class="chev">▸</span><span class="badge">${esc(t().badge(n))}</span><span>${esc(t().multi(n))}</span></summary><div class="srclist">${rows}</div></details>`;
-}
-function renderTopicsView(){
-  const ed=state.edition;
-  const groups=THEMES.filter(g=>state.topic==="all"||state.topic===g.id);
-  let html="";
-  for(const g of groups){
-    const items=(ed.stories||[]).filter(s=>s.theme===g.id);
-    if(!items.length) continue;
-    html+=`<div class="theme-group"><div class="theme-h"><h2 class="label">${esc(g[state.lang])}</h2><span class="rule"></span></div>`;
-    html+=items.map(s=>`<article class="story"><h3>${esc(s.title)}</h3><p>${esc(s.blurb)}</p>${srcBlock(s)}<div class="tagline">${(s.tags||[]).map(x=>`<span class="tg">${esc(x)}</span>`).join("")}</div></article>`).join("");
-    html+=`</div>`;
-  }
-  if(state.topic==="all" && (ed.firehose||[]).length){
-    const f=ed.firehose[0];
-    html+=`<div class="firehose"><div class="fh-h">${esc(f.label)} · ${f.count}</div><div class="fh-b">${esc((f.examples||[]).join(" · "))}</div></div>`;
-  }
-  $("#view-topics").innerHTML=html||`<div class="empty">${esc(t().noTopic)}</div>`;
-}
-function renderVoicesView(){
-  const ed=state.edition;
-  const vs=(ed.voices||[]).filter(v=>state.topic==="all"||v.topic===state.topic);
-  const lbl=id=>{const x=THEMES.find(y=>y.id===id);return x?x[state.lang]:(id||"");};
-  $("#view-voices").innerHTML=(vs.length?vs.map(v=>`<div class="voice"><div><div class="nm">${esc(v.name)}</div><div class="hn">${esc(v.host||"")}</div><div class="tg" style="margin-top:4px">${esc(lbl(v.topic))}</div></div><div class="posts">${(v.items||[]).map(i=>`<a class="post" href="${esc(i.url)}" target="_blank" rel="noopener"><h4>${esc(i.title)}</h4><div class="pm tnum">${esc(i.date)}</div></a>`).join("")}</div></div>`).join(""):`<div class="empty">${esc(t().noVoice)}</div>`)
-    + (state.topic==="all"?`<div class="vnote">${esc(t().voiceNote)}</div>`:"");
-}
-$("#lens").querySelectorAll("button").forEach(b=>b.onclick=()=>{
-  state.lens=b.dataset.lens;
-  $("#lens").querySelectorAll("button").forEach(x=>x.setAttribute("aria-current",x.dataset.lens===state.lens));
-  $("#view-topics").hidden=state.lens!=="topics"; $("#view-voices").hidden=state.lens!=="voices";
-  render();
-});
-$("#langsw").querySelectorAll("button").forEach(b=>b.onclick=async()=>{
+$("#langsw").querySelectorAll("button").forEach(b=>b.onclick=()=>{
   if(state.lang===b.dataset.lang) return;
   state.lang=b.dataset.lang; localStorage.setItem("nr-lang",state.lang);
-  syncLangButtons(); renderArchive();
-  await loadEdition($("#archive").value||state.index.editions[0].date);
+  syncLangButtons(); state.topic="all"; resetStream();
 });
 boot();
 </script>
