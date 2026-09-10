@@ -51,15 +51,26 @@
              opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease;
              box-shadow:var(--hover-shadow);}
   .datetoast.show{opacity:1;transform:translateX(-50%) translateY(0);}
-  /* max-height traegt nur die Einklapp-Animation. Grosszuegig, damit auf
-     schmalen Fenstern umgebrochene Chips nicht abgeschnitten werden. */
-  .topics{display:flex;gap:7px;flex-wrap:wrap;overflow:hidden;max-height:240px;opacity:1;
-          transition:max-height .22s ease,opacity .16s ease;}
+  /* Themen als Schiene: graue Spur, weisse Kachel faehrt zum aktiven Reiter.
+     Auf schmalen Fenstern scrollt die Spur seitlich statt umzubrechen. */
+  .topics{position:relative;display:flex;flex-wrap:nowrap;gap:0;width:fit-content;max-width:100%;
+          background:var(--chip);border-radius:999px;padding:4px;
+          overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+          scrollbar-width:none;max-height:240px;opacity:1;
+          transition:max-height .22s ease,opacity .16s ease,padding .22s ease;}
+  .topics::-webkit-scrollbar{display:none;}
   .runbar.compact{gap:0;}
-  .runbar.compact .topics{max-height:0;opacity:0;}
-  .chip{font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:0.03em;text-transform:uppercase;color:var(--tx2);background:var(--chip);border:0;padding:7px 14px;cursor:pointer;transition:background .12s ease,color .12s ease;border-radius:999px;}
-  .chip:hover{background:var(--chip-hover);color:var(--tx);}
-  .chip[aria-pressed="true"]{background:var(--accent);color:var(--accent-tx);}
+  .runbar.compact .topics{max-height:0;opacity:0;padding-top:0;padding-bottom:0;}
+  .thumb{position:absolute;top:4px;bottom:4px;left:0;width:0;border-radius:999px;
+         background:var(--bg);box-shadow:var(--hover-shadow);z-index:0;
+         transition:transform .3s cubic-bezier(.4,0,.2,1),width .3s cubic-bezier(.4,0,.2,1);}
+  .thumb.noanim{transition:none;}
+  .chip{position:relative;z-index:1;white-space:nowrap;font-family:var(--sans);font-size:11px;
+        font-weight:500;letter-spacing:0.03em;text-transform:uppercase;color:var(--tx2);
+        background:none;border:0;padding:7px 14px;cursor:pointer;border-radius:999px;
+        transition:color .18s ease;}
+  .chip:hover{color:var(--tx);}
+  .chip[aria-pressed="true"]{color:var(--tx);}
 
   /* Timeline: keine Trennstriche, Rhythmus ueber Weissraum */
   /* Kein Datum im Strom, das traegt der Sticky-Balken. Der Tageswechsel
@@ -244,13 +255,19 @@ let ticking=false;
 let lastY=0;
 // Runterscrollen blendet die Themen-Navi aus, das Datum bleibt.
 // Hochscrollen holt sie zurueck. Schwelle gegen Zittern.
+// Die Navi klappt erst nach einer zusammenhaengenden Strecke in eine Richtung.
+// Eine reine Delta-Schwelle reicht nicht: Trackpad-Zittern um den Umschaltpunkt
+// liess sie auf- und zuklappen, das war die zweite Flacker-Quelle.
+let accum=0;
 function syncBar(y){
   const bar=$(".runbar"); if(!bar) return;
   const d=y-lastY;
-  if(Math.abs(d)<6) return;
-  if(d>0 && y>140) bar.classList.add("compact");
-  else if(d<0) bar.classList.remove("compact");
   lastY=y;
+  if(!d) return;
+  if((d>0)!==(accum>0)) accum=0;   // Richtungswechsel setzt die Strecke zurueck
+  accum+=d;
+  if(accum>90 && y>160){ bar.classList.add("compact"); accum=0; }
+  else if(accum<-60){ bar.classList.remove("compact"); accum=0; }
 }
 function onScroll(){
   if(ticking) return;
@@ -295,11 +312,21 @@ try{
   new IntersectionObserver(es=>{ if(es.some(e=>e.isIntersecting)) loadNext(); },{rootMargin:"700px"}).observe($("#sentinel"));
 }catch(e){}
 
+function closeEntry(art){
+  const d=art.querySelector(".detail"); if(!d||d.hidden) return;
+  d.hidden=true;
+  art.querySelector(".head")?.setAttribute("aria-expanded","false");
+}
 function toggleEntry(art){
   const head=art.querySelector(".head");
   const bl=art.querySelector(".detail");
   if(!bl||!head) return;
   const open=bl.hidden;
+  // Immer nur ein Eintrag offen. Beim Oeffnen alle anderen schliessen.
+  if(open) document.querySelectorAll(".entry .detail:not([hidden])").forEach(d=>{
+    const other=d.closest(".entry");
+    if(other!==art) closeEntry(other);
+  });
   bl.hidden=!open;
   head.setAttribute("aria-expanded",String(open));
   if(open) markRead(art);
@@ -316,12 +343,50 @@ $("#stream").addEventListener("keydown",ev=>{
   ev.preventDefault(); toggleEntry(head.closest(".entry"));
 });
 
-function renderTopics(){
-  const list=[{id:"all",label:t().all}].concat(THEMES.filter(x=>state.seenThemes.has(x.id)).map(x=>({id:x.id,label:x[state.lang]})));
-  const cur=state.topic;
-  $("#topics").innerHTML=list.map(x=>`<button class="chip" data-t="${x.id}" aria-pressed="${cur===x.id}">${esc(x.label)}</button>`).join("");
-  $("#topics").querySelectorAll(".chip").forEach(b=>b.onclick=()=>{state.topic=b.dataset.t;renderTopics();applyFilter();});
+function moveThumb(animate){
+  const box=$("#topics"), th=box.querySelector(".thumb");
+  const act=box.querySelector('.chip[aria-pressed="true"]');
+  if(!th||!act) return;
+  th.classList.toggle("noanim",!animate);
+  th.style.width=act.offsetWidth+"px";
+  th.style.transform="translateX("+act.offsetLeft+"px)";
+  if(!animate) requestAnimationFrame(()=>th.classList.remove("noanim"));
+  // aktiven Reiter in Sicht holen, wenn die Spur seitlich scrollt
+  if(box.scrollWidth>box.clientWidth){
+    const l=act.offsetLeft, r=l+act.offsetWidth;
+    if(l<box.scrollLeft) box.scrollTo({left:l-4,behavior:animate?"smooth":"auto"});
+    else if(r>box.scrollLeft+box.clientWidth) box.scrollTo({left:r-box.clientWidth+4,behavior:animate?"smooth":"auto"});
+  }
 }
+// Signatur der Reiter. Nur wenn die sich aendert, wird die Schiene neu gebaut.
+// Vorher lief bei jedem nachgeladenen Tag ein innerHTML-Neuaufbau, dabei wurde
+// die Kachel zerstoert und neu erzeugt: einen Frame auf Breite null, dann
+// Sprung an die Position. Das war das Flackern beim Scrollen.
+let topicsSig="";
+function renderTopics(animate){
+  const list=[{id:"all",label:t().all}].concat(THEMES.filter(x=>state.seenThemes.has(x.id)).map(x=>({id:x.id,label:x[state.lang]})));
+  const box=$("#topics");
+  const sig=state.lang+"|"+list.map(x=>x.id).join(",");
+
+  if(sig!==topicsSig){
+    topicsSig=sig;
+    const th=box.querySelector(".thumb")||Object.assign(document.createElement("div"),{className:"thumb"});
+    box.innerHTML=list.map(x=>`<button class="chip" data-t="${x.id}" aria-pressed="${state.topic===x.id}">${esc(x.label)}</button>`).join("");
+    box.insertBefore(th,box.firstChild);   // dieselbe Kachel weiterverwenden
+    box.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{
+      if(state.topic===b.dataset.t) return;
+      state.topic=b.dataset.t; renderTopics(true); applyFilter();
+    });
+    moveThumb(false);
+    requestAnimationFrame(()=>moveThumb(false));
+    return;
+  }
+
+  // Struktur unveraendert: nur den aktiven Reiter umsetzen und die Kachel fahren
+  box.querySelectorAll(".chip").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.t===state.topic)));
+  moveThumb(!!animate);
+}
+window.addEventListener("resize",()=>moveThumb(false),{passive:true});
 function applyFilter(){
   document.querySelectorAll(".entry").forEach(el=>{
     el.hidden = !(state.topic==="all" || el.dataset.theme===state.topic);
@@ -338,7 +403,7 @@ function syncLangButtons(){
   $("#footLegal").textContent=t().legal;
 }
 function resetStream(){
-  $(".runbar").classList.remove("compact"); lastY=0; shownDate=null;
+  $(".runbar").classList.remove("compact"); lastY=0; accum=0; shownDate=null; topicsSig="";
   clearTimeout(toastTimer); $("#nowDate").classList.remove("show");
   $("#stream").innerHTML=""; $("#status").textContent="";
   state.queue=state.index.editions.slice();
@@ -347,6 +412,10 @@ function resetStream(){
   loadNext();
 }
 async function boot(){
+  // Ausgangslage vom echten Scrollstand nehmen. Bei 0 erzeugt der Browser nach
+  // einer wiederhergestellten Scrollposition ein riesiges erstes Delta und die
+  // Navi klappt sofort zu.
+  lastY=window.scrollY||document.documentElement.scrollTop||0;
   try{
     state.index=await (await fetch("./editions/index.json",{cache:"no-store"})).json();
     state.lang=localStorage.getItem("nr-lang")||state.index.default_lang||"en";
