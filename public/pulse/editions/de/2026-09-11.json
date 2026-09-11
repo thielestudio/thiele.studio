@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "generated_for": "2026-09-11",
+    "window": "2026-09-08..2026-09-10",
+    "sources_scanned": 60,
+    "items_in_window": 222,
+    "lang": "de"
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "title": "Ein Studio senkt die Emissionen seiner Website um zwei Drittel und weiß, wo es aufhört",
+      "blurb": "MEK stellte fest, dass die eigene Website mehr CO2 verursachte als 76,5 Prozent der getesteten Seiten, und baute sie mit Energie als gestalterischer Vorgabe neu: verkleinerte AVIF-Bilder, kaum noch Bewegung oder Video, weniger Inhalt, dunkle Oberfläche. Pro Seitenaufruf sank der Wert von 1,21 auf 0,42 Gramm. Lehrreich ist die eine Entscheidung in die Gegenrichtung. Arial hätte den Font-Download gespart, das Team nahm trotzdem Google Fonts und den kleinen Mehrverbrauch, weil die Schrift die Marke trägt.",
+      "tags": [
+        "nachhaltiges web",
+        "webdesign"
+      ],
+      "sources": [
+        {
+          "name": "designweek.co.uk",
+          "url": "https://www.designweek.co.uk/no-fonts-on-a-dead-planet/",
+          "headline": "No fonts on a dead planet: a website case study"
+        }
+      ],
+      "theme_label": "Design-Praxis"
+    },
+    {
+      "theme": "design-practice",
+      "title": "Acht Formen eines Sprach-KI-Produkts und was jede davon festlegt",
+      "blurb": "Der Beitrag ordnet acht neue Muster für Sprach-KI, vom Avatar im Videocall bis zum strikten Wechsel der Sprechrollen, und verbindet jedes mit der Rolle, die Nutzer dem Agenten zuschreiben, und den Gestaltungsentscheidungen, die daraus folgen. Die Abwägungen sind konkret: Fotorealistische Avatare kippen ins Unheimliche, sobald Latenz oder Lippensynchronität haken, während vokalbasierte Mundformen in Rive günstiger sind und zu flachen 2D-Figuren passen.",
+      "tags": [
+        "voice ui",
+        "ai ux"
+      ],
+      "sources": [
+        {
+          "name": "uxdesign.cc",
+          "url": "https://uxdesign.cc/8-voice-aiux-patterns-81324c8feaa0?source=rss----138adf9c44c---4",
+          "headline": "8 voice AIUX patterns"
+        }
+      ],
+      "theme_label": "Design-Praxis"
+    },
+    {
+      "theme": "brand-advertising",
+      "title": "Mother Design macht aus Hellsehen menschliche Orientierung und verweigert den Wellness-Minimalismus",
+      "blurb": "Recherche außerhalb der Kategorie zeigte: Menschen holen sich Rat bei KI und Coaching, suchen dabei aber vor allem Perspektive. Keen rückt deshalb weg von der Zukunftsvorhersage hin zur Hilfe, wenn man feststeckt, und setzt die menschlichen Berater als Unterschied zu Algorithmen. Visuell geht das Studio gegen die reduzierte Optik der Kategorie, mit einer Illustrationswelt im Stil der Volkskunst von María Jesús Contreras, gebändigt durch Kreisformen und wechselnde Blickwinkel, durch die man zoomt statt scrollt.",
+      "tags": [
+        "positionierung",
+        "identity",
+        "illustration"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "creativeboom.com",
+          "url": "https://www.creativeboom.com/inspiration/mother-design-gives-psychic-platform-keen-a-folk-art-rebrand-that-takes-on-minimalist-wellness/",
+          "headline": "Mother Design gives psychic platform Keen a folk-art rebrand that takes on minimalist wellness"
+        },
+        {
+          "name": "roastbrief.us",
+          "url": "https://roastbrief.us/mother-design-creates-new-brand-identity-for-keen-reposition-psychic-and-spiritual-for-the-modern-wellbeing-era/",
+          "headline": "Mother Design Creates New Brand Identity for Keen Reposition Psychic and Spiritual for the Modern Wellbeing Era"
+        }
+      ],
+      "theme_label": "Brand & Advertising"
+    },
+    {
+      "theme": "brand-advertising",
+      "title": "Marken messen ihren Share of Voice genau und wählen die eigentliche Stimme aus dem Bauch",
+      "blurb": "Das Argument: Überproportionaler Share of Voice treibt Wachstum durch beständige Präsenz, doch eine typische Marke spielt in einer Kampagne Akustik-Folk und in der nächsten Orchester, also summiert sich die Musik in den bezahlten Medien nie. Vorschlag des Autors ist, Musik wie eine Farbpalette zu führen. Tempo, Tonart, Instrumentierung und emotionale Färbung werden als Parameter festgelegt und überstehen so die Übergabe zwischen Teams, Agenturen und Märkten.",
+      "tags": [
+        "sound branding",
+        "markenstrategie"
+      ],
+      "sources": [
+        {
+          "name": "brandingmag.com",
+          "url": "https://www.brandingmag.com/shai-hirschon/sound-decoded-share-of-voice-has-a-sound-problem/",
+          "headline": "Sound Decoded: Share of Voice Has a Sound Problem"
+        }
+      ],
+      "theme_label": "Brand & Advertising"
+    },
+    {
+      "theme": "brand-advertising",
+      "title": "Echte Fahrgäste im Studio, die S-Bahn aus der KI",
+      "blurb": "Für die RMV-Kampagne »Echtes Leben fängt mit S an« hat Scholz & Volkmer echte Fahrgäste aus dem Rhein-Main-Gebiet im Studio fotografiert und Personen, Interieur und Requisiten danach in einem mehrstufigen KI-Prozess zusammengeführt. Den Ausschlag gab ein praktischer Grund: Ein S-Bahn-Fahrzeug fällt für die Produktion deutlich kürzer aus. Gearbeitet wurde vor allem mit Figma, Weave und Magnific, der Prozess ist in einem Making-of offengelegt.",
+      "tags": [
+        "kampagne",
+        "ki-produktion",
+        "fotografie"
+      ],
+      "sources": [
+        {
+          "name": "page-online.de",
+          "url": "https://page-online.de/kreation/s-bahn-kampagne-wie-scholz-volkmer-ki-echtes-leben-kombiniert/",
+          "headline": "S-Bahn-Kampagne: Wie Scholz Volkmer KI echtes Leben kombiniert"
+        }
+      ],
+      "theme_label": "Brand & Advertising"
+    },
+    {
+      "theme": "brand-advertising",
+      "title": "Warum »d-you« als Name für die staatliche Wallet nicht trägt",
+      "blurb": "Der Kommentar misst den neuen Namen der deutschen EUDI-Wallet an einer Frage: Sagt er in Millisekunden, worum es geht und ob es mich betrifft? Kunstnamen wie Apple oder O2 kaufen sich ihre Bedeutung über Jahre ein, eine staatliche Identitätsinfrastruktur mit sensiblen Daten muss dagegen vom ersten Kontakt an verstanden werden. Dazu kommen eine offene Aussprache, ein erklärungsbedürftiger Bindestrich und kein Wort, das auf Ausweis oder Nachweis hindeutet.",
+      "tags": [
+        "naming",
+        "öffentliche marke"
+      ],
+      "sources": [
+        {
+          "name": "heise.de",
+          "url": "https://www.heise.de/meinung/Kommentar-d-you-d-was-11449000.html",
+          "headline": "Kommentar: Wenn Transparenz mit einem Rätsel beginnt"
+        }
+      ],
+      "theme_label": "Brand & Advertising"
+    },
+    {
+      "theme": "craft-judgment",
+      "title": "Wann ein Logo wirklich Daten trägt und wann es nur so aussieht",
+      "blurb": "Ein Designer hat Logobücher und Archive nach Zeichen durchsucht, die echte Information enthalten, und bietet zwei Prüffragen an: Existieren die Daten auch außerhalb des Logos, und ändert sich das Logo, wenn sich die Daten ändern? Nach diesem Maßstab ist das M der Metro von Mexiko-Stadt nur von Daten inspiriert, während das IAEA-Emblem zu einem konkreten Beryllium-Atom wurde. Diagrammartige Logos wie das von Open Knowledge haben ein eigenes Problem, sie funktionieren erst, wenn jemand sie erklärt.",
+      "tags": [
+        "logos",
+        "informationsdesign"
+      ],
+      "sources": [
+        {
+          "name": "uxdesign.cc",
+          "url": "https://uxdesign.cc/a-short-history-of-logos-made-of-data-bd6a89e732ce?source=rss----138adf9c44c---4",
+          "headline": "A short history of logos made of data"
+        }
+      ],
+      "theme_label": "Handwerk & Urteil"
+    },
+    {
+      "theme": "craft-judgment",
+      "title": "Eine Schrift für kleine Größen, deren Inktraps im Display zum Charakter werden",
+      "blurb": "Se Micro von Gallery Type teilt das Grundgerüst mit Se Macro, ist aber mit offenen Binnenformen und tiefen Inktraps auf Lesbarkeit in kleinen Größen ausgelegt. In Displaygrößen werden genau diese Merkmale vom Funktionalen zum Eigenwilligen. Fürs Tagesgeschäft interessant ist das Lizenzmodell: Es richtet sich allein nach der Unternehmensgröße, und Testfonts dürfen für Pitches und Entwürfe ohne Einschränkung genutzt werden, bezahlt wird erst zum Launch.",
+      "tags": [
+        "typografie",
+        "lizenzen"
+      ],
+      "sources": [
+        {
+          "name": "page-online.de",
+          "url": "https://page-online.de/typografie/fuer-gross-und-klein-se-macro-und-se-micro/",
+          "headline": "Für groß und klein: Se Macro und Se Micro"
+        }
+      ],
+      "theme_label": "Handwerk & Urteil"
+    },
+    {
+      "theme": "industry-market",
+      "title": "Universal lizenziert seinen Katalog für KI-Remixe, in der Woche, in der Suno lizenziert startete",
+      "blurb": "UMG und ElevenLabs bauen eine Plattform, auf der Nutzer aus lizenzierter UMG-Musik Remixe, Mashups und neue Fassungen erstellen, Künstler entscheiden selbst über die Teilnahme. Es ist ein weiterer Deal in einer Reihe: UMG entwickelt auch mit Udio eine Plattform und hat KI-Lizenzabkommen mit Spotify, Nvidia und Klay.",
+      "tags": [
+        "lizenzen",
+        "musik"
+      ],
+      "sources": [
+        {
+          "name": "theverge.com",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
+          "headline": "Universal Music is launching an AI music platform with ElevenLabs"
+        }
+      ],
+      "theme_label": "Industrie & Markt"
+    },
+    {
+      "theme": "industry-market",
+      "title": "Pocket FM produziert 99 Prozent neuer Hörgeschichten mit KI, die Ideen bleiben beim Menschen",
+      "blurb": "Die indische Audio-Plattform beziffert die Produktion mit KI als rund 80-mal günstiger: 100 Stunden Inhalt, früher ein Jahr Arbeit, entstehen heute an einem Tag, die Creator liefern etwa 2,5 Millionen Stunden im Jahr. Konzepte und Erzählung kommen weiter von Menschen. Die eigenen Modelle für kreatives Schreiben und Sprachausgabe trainiert das Unternehmen auf Jahren an Produktions- und Hördaten.",
+      "tags": [
+        "content-produktion",
+        "ki"
+      ],
+      "sources": [
+        {
+          "name": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
+          "headline": "India’s Pocket FM doubles revenue run rate to $500M as AI powers 93% of audio content"
+        }
+      ],
+      "theme_label": "Industrie & Markt"
+    },
+    {
+      "theme": "industry-market",
+      "title": "Beim Anthropic-Vergleich streiten Autoren und Verlage um dieselben Rechte",
+      "blurb": "Anthropic zahlt 3.000 Dollar pro illegal heruntergeladenem Buch, betroffen sind über 482.000 Titel. Bei der Auszahlung melden Verlage Ansprüche auf Rechte an, die längst an die Autoren zurückgefallen sind, laut Authors Guild auch deshalb, weil viele darüber keine genauen Aufzeichnungen führen. Offene Streitfälle soll ein gerichtlich bestellter Schlichter entscheiden.",
+      "tags": [
+        "urheberrecht",
+        "verträge"
+      ],
+      "sources": [
+        {
+          "name": "the-decoder.de",
+          "url": "https://the-decoder.de/anthropic-muss-15-milliarden-dollar-wegen-urheberrechtsverletzung-zahlen-doch-bei-der-auszahlung-herrscht-chaos/",
+          "headline": "Anthropic muss 1,5 Milliarden Dollar wegen Urheberrechtsverletzung zahlen, doch bei der Auszahlung herrscht Chaos"
+        }
+      ],
+      "theme_label": "Industrie & Markt"
+    },
+    {
+      "theme": "ai-models",
+      "title": "AUTOMATIC1111 als eine einzige Node-Fläche nachgebaut",
+      "blurb": "Hugging Face hat den Großteil der Stable-Diffusion-Oberfläche als Workflow1111 nachgebaut, einen Graphen aus elf Medien-Pipelines und 73 Nodes, von Text-zu-Bild über Hi-Res-Fix und Inpainting per Erkennungsmaske bis zu Freistellung und Bild-zu-Video. Der Space lässt sich duplizieren und umverdrahten, die Modellaufrufe laufen über das Kontingent des angemeldeten Nutzers.",
+      "tags": [
+        "bildgenerierung",
+        "node-workflow",
+        "open source"
+      ],
+      "sources": [
+        {
+          "name": "huggingface.co",
+          "url": "https://huggingface.co/blog/gradio-workflow-1111",
+          "headline": "Rebuilding AUTOMATIC1111 with Gradio Workflow"
+        }
+      ],
+      "theme_label": "AI-Modelle (+Tools)"
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 24,
+      "examples": [
+        "WHITE64 Rebrands to ‘Worst Kept Secret’",
+        "Currys and AMV BBDO tap into viral ‘dad energy’ trend with new ‘full dad mode’ campaign to help the nation save energy and reduce waste",
+        "Movistar Estudiantes HAVAS Creative Spain Turn Eight Decades of Resilience into an Indestructible Shield"
+      ]
+    }
+  ]
+}

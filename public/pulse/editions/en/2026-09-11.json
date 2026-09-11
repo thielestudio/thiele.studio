@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "generated_for": "2026-09-11",
+    "window": "2026-09-08..2026-09-10",
+    "sources_scanned": 60,
+    "items_in_window": 170,
+    "lang": "en"
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "title": "Cutting a studio site’s emissions by two thirds, and where the cutting stopped",
+      "blurb": "MEK found its own website emitted more carbon than 76.5% of pages tested, so it rebuilt it with energy as a design constraint: resized AVIF images, almost no motion or video, less content, a dark interface. Emissions per page view fell from 1.21 g to 0.42 g CO2. The instructive part is the decision that went the other way: Arial would have saved a font download, but the team chose Google Fonts and accepted the small increase because the typeface carried the brand.",
+      "tags": [
+        "sustainable web",
+        "web design"
+      ],
+      "sources": [
+        {
+          "name": "designweek.co.uk",
+          "url": "https://www.designweek.co.uk/no-fonts-on-a-dead-planet/",
+          "headline": "No fonts on a dead planet: a website case study"
+        }
+      ],
+      "theme_label": "Design Practice"
+    },
+    {
+      "theme": "design-practice",
+      "title": "Eight shapes a voice AI product can take, and what each commits you to",
+      "blurb": "The piece maps eight emerging voice AI patterns, from avatar video calls to strict turn-by-turn exchanges, and pairs each with the role users perceive the agent to have and the design decisions that follow. The trade-offs are concrete: photorealistic avatars tip into the uncanny valley when latency or lip-sync slips, while vowel-based mouth shapes in Rive are cheaper and suit flat 2D personas.",
+      "tags": [
+        "voice ui",
+        "ai ux"
+      ],
+      "sources": [
+        {
+          "name": "uxdesign.cc",
+          "url": "https://uxdesign.cc/8-voice-aiux-patterns-81324c8feaa0?source=rss----138adf9c44c---4",
+          "headline": "8 voice AIUX patterns"
+        }
+      ],
+      "theme_label": "Design Practice"
+    },
+    {
+      "theme": "brand-advertising",
+      "title": "Mother Design repositions a psychic marketplace as human guidance and refuses wellness minimalism",
+      "blurb": "Research outside the category showed people turning to AI and coaching for daily guidance while really looking for perspective, so Keen moves from predicting the future to helping people get unstuck, with human advisors as the difference from algorithms. Visually the studio goes against the category’s pared-back look: a folk-art illustration world by María Jesús Contreras, held together by circular forms and shifting viewpoints, which users navigate by zooming rather than scrolling.",
+      "tags": [
+        "positioning",
+        "identity",
+        "illustration"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "creativeboom.com",
+          "url": "https://www.creativeboom.com/inspiration/mother-design-gives-psychic-platform-keen-a-folk-art-rebrand-that-takes-on-minimalist-wellness/",
+          "headline": "Mother Design gives psychic platform Keen a folk-art rebrand that takes on minimalist wellness"
+        },
+        {
+          "name": "roastbrief.us",
+          "url": "https://roastbrief.us/mother-design-creates-new-brand-identity-for-keen-reposition-psychic-and-spiritual-for-the-modern-wellbeing-era/",
+          "headline": "Mother Design Creates New Brand Identity for Keen Reposition Psychic and Spiritual for the Modern Wellbeing Era"
+        }
+      ],
+      "theme_label": "Brand & Advertising"
+    },
+    {
+      "theme": "brand-advertising",
+      "title": "Whistles at 50: a year of small pilots before the big campaign",
+      "blurb": "Weirdo fly-posted London with unbranded calls for ‘open-minded women’, got more than 2,000 replies and shot 50 of them, aged 19 to 72, in a single day. Behind it sit a new positioning, ‘Designed for an Open Mind’, a signature colour called Lemonade and twelve months of pilots, such as a group of friends shooting the summer collection on holiday in Athens. Weirdo’s founder describes the shift as leaving rigid top-down campaigns for projects and commissions.",
+      "tags": [
+        "positioning",
+        "casting",
+        "fashion"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "creativeboom.com",
+          "url": "https://www.creativeboom.com/inspiration/whistles-marks-50-years-by-casting-50-customers-found-through-mysterious-fly-posters-across-london/",
+          "headline": "Whistles marks 50 years by casting 50 customers found through mysterious fly-posters across London"
+        },
+        {
+          "name": "roastbrief.us",
+          "url": "https://roastbrief.us/whistles-marks-50-years-with-bold-brand-relaunch-new-designed-for-an-open-mind-brand-platform-and-a-campaign-starring-50-open-minded-customers/",
+          "headline": "Whistles marks 50 years with bold brand relaunch, new ‘Designed for an Open Mind’ brand platform and a campaign starring 50 open-minded customers"
+        }
+      ],
+      "theme_label": "Brand & Advertising"
+    },
+    {
+      "theme": "brand-advertising",
+      "title": "Brands measure share of voice precisely and pick the actual voice on instinct",
+      "blurb": "Excess share of voice drives growth through consistent presence, the argument goes, yet a typical brand runs acoustic folk in one campaign and orchestral in the next, so the music inside the paid media never compounds. The proposed fix is to govern music like a colour palette, with defined parameters such as tempo, key, instrumentation and emotional valence that survive the handover between teams, agencies and markets.",
+      "tags": [
+        "sonic branding",
+        "brand strategy"
+      ],
+      "sources": [
+        {
+          "name": "brandingmag.com",
+          "url": "https://www.brandingmag.com/shai-hirschon/sound-decoded-share-of-voice-has-a-sound-problem/",
+          "headline": "Sound Decoded: Share of Voice Has a Sound Problem"
+        }
+      ],
+      "theme_label": "Brand & Advertising"
+    },
+    {
+      "theme": "craft-judgment",
+      "title": "When a logo actually carries data, and when it only looks like it",
+      "blurb": "A designer went through logo books and archives for marks that embed real information and offers two tests: does the data exist outside the logo, and does the logo change when the data changes? By that measure the Mexico City Metro M is only inspired by data, while the IAEA emblem became a specific beryllium atom and English heraldic cadency marks change when the father dies. Chart-like logos such as those for Coalar or Open Knowledge raise their own problem: they only work once someone explains them.",
+      "tags": [
+        "logos",
+        "information design"
+      ],
+      "sources": [
+        {
+          "name": "uxdesign.cc",
+          "url": "https://uxdesign.cc/a-short-history-of-logos-made-of-data-bd6a89e732ce?source=rss----138adf9c44c---4",
+          "headline": "A short history of logos made of data"
+        }
+      ],
+      "theme_label": "Craft & Judgment"
+    },
+    {
+      "theme": "industry-market",
+      "title": "Universal licenses its catalogue for AI remixes, in the week Suno went licensed",
+      "blurb": "UMG and ElevenLabs are building a platform where users make remixes, mashups and new takes from licensed UMG music, and artists choose whether to take part. It adds to a series of deals: UMG is also developing a platform with Udio and has AI licensing agreements with Spotify, Nvidia and Klay.",
+      "tags": [
+        "licensing",
+        "music"
+      ],
+      "sources": [
+        {
+          "name": "theverge.com",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
+          "headline": "Universal Music is launching an AI music platform with ElevenLabs"
+        }
+      ],
+      "theme_label": "Industry & Market"
+    },
+    {
+      "theme": "industry-market",
+      "title": "Pocket FM makes 99% of its new audio stories with AI and keeps humans on the ideas",
+      "blurb": "The Indian audio platform says AI has made production about 80 times cheaper: 100 hours of content that took a year now takes a day, and its creators produce about 2.5 million hours a year. Humans still supply the concepts and storytelling, and the company trains its own models for creative writing and text-to-speech on years of production and listener data.",
+      "tags": [
+        "content production",
+        "ai"
+      ],
+      "sources": [
+        {
+          "name": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
+          "headline": "India’s Pocket FM doubles revenue run rate to $500M as AI powers 93% of audio content"
+        }
+      ],
+      "theme_label": "Industry & Market"
+    },
+    {
+      "theme": "ai-models",
+      "title": "AUTOMATIC1111 rebuilt as a single node canvas",
+      "blurb": "Hugging Face has rebuilt most of the Stable Diffusion web UI as Workflow1111, a graph of eleven media pipelines and 73 nodes covering text-to-image, hi-res fix, inpainting from detection masks, background removal and image-to-video. The Space can be duplicated and rewired, and model calls run on the signed-in user’s own quota.",
+      "tags": [
+        "image generation",
+        "node workflow",
+        "open source"
+      ],
+      "sources": [
+        {
+          "name": "huggingface.co",
+          "url": "https://huggingface.co/blog/gradio-workflow-1111",
+          "headline": "Rebuilding AUTOMATIC1111 with Gradio Workflow"
+        }
+      ],
+      "theme_label": "AI Models (+Tools)"
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 23,
+      "examples": [
+        "WHITE64 Rebrands to ‘Worst Kept Secret’",
+        "Currys and AMV BBDO tap into viral ‘dad energy’ trend with new ‘full dad mode’ campaign to help the nation save energy and reduce waste",
+        "Movistar Estudiantes HAVAS Creative Spain Turn Eight Decades of Resilience into an Indestructible Shield"
+      ]
+    }
+  ]
+}
