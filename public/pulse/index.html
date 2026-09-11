@@ -16,6 +16,9 @@
     --tx:#17161a; --tx2:#54535a; --tx3:#8a8991; --accent:#17161a; --accent-tx:#ffffff;
     --chip:#f1f0ee; --chip-hover:#e7e6e3;
     --hover:#ffffff; --hover-shadow:0 1px 2px rgba(23,22,26,.05), 0 10px 28px rgba(23,22,26,.08);
+    --glass:rgba(255,255,255,.55); --glass-line:rgba(23,22,26,.08); --glass-hi:rgba(255,255,255,.75);
+    --glass-shadow:0 1px 2px rgba(23,22,26,.05), 0 10px 28px rgba(23,22,26,.10);
+    --ease:cubic-bezier(.2,.7,.2,1);
     --sans:-apple-system,"SF Pro Text","SF Pro Display",system-ui,"Inter","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     --footh:44px;
   }
@@ -23,6 +26,8 @@
     --bg:#0b0b0c; --surface:#141416; --line:#242427; --line2:#34343a;
     --tx:#fafafa; --tx2:#a6a6ad; --tx3:#77767e; --accent:#fafafa; --accent-tx:#0b0b0c;
     --hover:#17171b; --hover-shadow:none;
+    --glass:rgba(28,28,32,.5); --glass-line:rgba(255,255,255,.09); --glass-hi:rgba(255,255,255,.06);
+    --glass-shadow:0 10px 30px rgba(0,0,0,.45);
     --chip:#1c1c20; --chip-hover:#26262b;
   }
   *{box-sizing:border-box;} html,body{margin:0;}
@@ -45,25 +50,34 @@
   .logo svg{display:block;height:28px;width:auto;overflow:visible;}
   .logo circle{fill:var(--tx);}
   .htools{display:flex;gap:8px;align-items:center;}
-  .tbtn{font-family:var(--sans);font-size:12px;color:var(--tx2);background:var(--surface);border:1px solid var(--line2);padding:7px 11px;cursor:pointer;border-radius:999px;}
+  .tbtn{font-family:var(--sans);font-size:12px;color:var(--tx2);background:var(--surface);border:1px solid var(--line2);padding:7px 11px;cursor:pointer;border-radius:999px;transition:border-color .2s ease,color .2s ease;}
   .tbtn:hover{border-color:var(--tx3);color:var(--tx);}
   .langsw{display:flex;border:1px solid var(--line2);border-radius:999px;overflow:hidden;}
-  .langsw button{font-family:var(--sans);font-size:12px;letter-spacing:0.04em;background:none;border:none;color:var(--tx2);padding:7px 11px;cursor:pointer;}
+  .langsw button{font-family:var(--sans);font-size:12px;letter-spacing:0.04em;background:none;border:none;color:var(--tx2);padding:7px 11px;cursor:pointer;transition:background-color .22s ease,color .22s ease;}
   .langsw button[aria-pressed="true"]{background:var(--accent);color:var(--accent-tx);}
 
   /* Sticky Kopf: Datum laeuft beim Scrollen mit */
-  .runbar{position:sticky;top:0;background:var(--bg);z-index:5;padding:12px 0 13px;display:flex;flex-direction:column;gap:11px;}
+  .runbar{position:sticky;top:0;background:var(--bg);z-index:5;padding:12px 0 13px;display:flex;flex-direction:column;gap:11px;transition:gap .3s var(--ease);}
   /* Datum schwebt zentriert am unteren Rand und ist dauerhaft aus. Es blitzt
      nur auf, wenn beim Scrollen ein anderer Tag den Kopf erreicht. Unten, weil
      es oben die Themen-Navi ueberlagert haette. */
   .datetoast{position:fixed;bottom:calc(var(--footh) + 22px);left:50%;
-             transform:translateX(-50%) translateY(6px);
-             z-index:20;opacity:0;pointer-events:none;perspective:320px;
-             transition:opacity .2s ease,transform .2s ease;}
-  .datetoast.show{opacity:1;transform:translateX(-50%) translateY(0);}
-  .datetoast .bub{display:inline-block;background:var(--chip);color:var(--tx2);
+             transform:translateX(-50%) translateY(8px);
+             z-index:20;pointer-events:none;perspective:320px;
+             transition:transform .32s var(--ease);}
+  .datetoast.show{transform:translateX(-50%) translateY(0);}
+  /* Glas: halbtransparente Flaeche, darunter scrollender Inhalt weichgezeichnet.
+     Die Deckkraft sitzt auf der Pille, nicht auf dem Container. Ein Vorfahr mit
+     Deckkraft unter 1 wird zur Backdrop-Wurzel, dann bliebe der Weichzeichner beim
+     Einblenden leer und spraenge erst am Ende ein. */
+  .datetoast .bub{display:inline-block;color:var(--tx);
+                  background:var(--glass);border:1px solid var(--glass-line);
+                  -webkit-backdrop-filter:blur(14px) saturate(1.8);backdrop-filter:blur(14px) saturate(1.8);
+                  box-shadow:inset 0 1px 0 var(--glass-hi),var(--glass-shadow);
                   font-size:13.75px;letter-spacing:0.06em;text-transform:uppercase;
-                  padding:9px 19px;border-radius:999px;box-shadow:var(--hover-shadow);}
+                  padding:9px 19px;border-radius:999px;
+                  opacity:0;transition:opacity .28s ease;}
+  .datetoast.show .bub{opacity:1;}
   .datetoast .bub.pulse{animation:bubpulse .5s cubic-bezier(.34,1.56,.64,1);}
   /* Split-Flap: jede Stelle ist ein eigenes Blatt mit fester Laufweite, sonst
      zappelt die Pille waehrend des Durchrollens. */
@@ -86,8 +100,8 @@
   .topics{position:relative;display:flex;flex-wrap:nowrap;gap:0;width:fit-content;max-width:100%;
           background:var(--chip);border-radius:999px;padding:4px;
           overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
-          scrollbar-width:none;max-height:240px;opacity:1;
-          transition:max-height .22s ease,opacity .16s ease,padding .22s ease;}
+          scrollbar-width:none;max-height:48px;opacity:1;
+          transition:max-height .3s var(--ease),opacity .22s ease,padding .3s var(--ease);}
   .topics::-webkit-scrollbar{display:none;}
   .runbar.compact{gap:0;}
   .runbar.compact .topics{max-height:0;opacity:0;padding-top:0;padding-bottom:0;}
@@ -107,21 +121,50 @@
      zeigt sich ueber den groesseren Abstand. */
   .day{padding:22px 0 0;}
   .day + .day{padding-top:44px;}
-  .entry{padding:18px 20px;margin:0 -20px 16px;border-radius:24px;
-         transition:background .15s ease,box-shadow .18s ease;}
+  /* Innenabstand rundum gleich. Der Abstand zwischen Schlagzeile und Einordnung sitzt
+     im aufklappenden Teil, sonst bleibt er zugeklappt unten stehen und der Eintrag
+     wirkt unten luftiger als oben. */
+  .entry{padding:20px;margin:0 -20px 16px;border-radius:24px;
+         transition:background-color .24s ease,box-shadow .28s ease,
+                    opacity .55s ease var(--rd,0ms),transform .6s var(--ease) var(--rd,0ms);}
   .entry:hover{background:var(--hover);box-shadow:var(--hover-shadow);}
-  .entry .meta{font-family:var(--sans);font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--tx3);margin-bottom:9px;}
-  .entry h3{margin:0 0 10px;font-size:clamp(16.5px,4.6vw,19px);font-weight:600;line-height:1.34;letter-spacing:-0.005em;}
-  .entry a.head:hover h3{text-decoration:underline;text-underline-offset:3px;}
-  .entry .srcs{font-family:var(--sans);font-size:11.5px;color:var(--tx3);display:flex;gap:14px;flex-wrap:wrap;}
-  .entry .srcs a:hover{color:var(--tx);text-decoration:underline;text-underline-offset:3px;}
+  /* Einblenden beim Hereinscrollen, einmal pro Eintrag, leicht von unten */
+  .entry.pre{opacity:0;transform:translateY(14px);}
+  .entry .meta{font-family:var(--sans);font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--tx3);margin-bottom:9px;transition:opacity .35s ease;}
+  .entry h3{margin:0;font-size:clamp(16.5px,4.6vw,19px);font-weight:600;line-height:1.34;letter-spacing:-0.005em;
+            transition:color .35s ease,font-weight .35s ease;}
   .entry .head{cursor:pointer;display:block;}
-  .entry .head:hover h3{text-decoration:underline;text-underline-offset:3px;}
-  .entry .blurb{margin:0 0 14px;color:var(--tx2);font-size:clamp(14px,3.9vw,15px);line-height:1.6;}
-  .entry .detail[hidden]{display:none;}
+  /* Aufklappen ueber die Zeilenhoehe des Rasters: 0fr zu 1fr laesst sich animieren,
+     height:auto nicht. visibility schaltet erst nach dem Zuklappen, damit Links im
+     geschlossenen Zustand weder fokussierbar noch vorlesbar sind. */
+  .entry .detail{display:grid;grid-template-rows:0fr;opacity:0;visibility:hidden;
+                 transition:grid-template-rows .34s var(--ease),opacity .18s ease,visibility 0s linear .34s;}
+  .entry.open .detail{grid-template-rows:1fr;opacity:1;visibility:visible;
+                      transition:grid-template-rows .4s var(--ease),opacity .32s ease .08s,visibility 0s;}
+  .entry .detail-in{min-height:0;overflow:hidden;}
+  .entry .blurb{margin:12px 0 14px;color:var(--tx2);font-size:clamp(14px,3.9vw,15px);line-height:1.6;}
+  .entry > .srcs{margin-top:12px;}
+  /* Quelle als Pille mit Pfeil. Der Pfeil rueckt beim Hovern ein Stueck nach oben rechts. */
+  .entry .srcs{display:flex;gap:8px;flex-wrap:wrap;}
+  .entry .srcs a{display:inline-flex;align-items:center;gap:6px;font-family:var(--sans);font-size:12.5px;font-weight:500;
+                 color:var(--tx2);background:var(--chip);padding:6px 11px 6px 13px;border-radius:999px;
+                 transition:background-color .2s ease,color .2s ease;}
+  .entry .srcs a:hover{background:var(--chip-hover);color:var(--tx);}
+  .entry .srcs a svg{width:11px;height:11px;flex:none;transition:transform .25s var(--ease);}
+  .entry .srcs a:hover svg{transform:translate(1.5px,-1.5px);}
   /* Gelesen: zurueckgenommen, nicht versteckt. Unterschied laeuft ueber Farbe und Gewicht. */
   .entry.read .head h3{color:var(--tx3);font-weight:500;}
   .entry.read .meta{opacity:.6;}
+  /* Themenwechsel: der Strom blendet kurz neu ein, statt hart umzuspringen */
+  #stream.swap{animation:swapin .34s var(--ease);}
+  @keyframes swapin{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
+  /* Hell/Dunkel nur waehrend des Umschaltens weich. Dauerhaft gesetzt wuerde die Regel
+     jede andere Uebergangsregel ueberschreiben. */
+  html.theming, html.theming *{transition:background-color .4s ease,color .4s ease,border-color .4s ease,fill .4s ease,box-shadow .4s ease !important;}
+  @media (prefers-reduced-motion: reduce){
+    .entry,.entry .detail,.entry.open .detail,.entry h3,#stream.swap,.datetoast,.datetoast .bub,.runbar,.topics{transition:none !important;animation:none !important;}
+    .entry.pre{opacity:1;transform:none;}
+  }
 
   /* Cursor: aussen die Position, innen der Puls. Zwei Ebenen, weil sonst
      transform fuer Position und Skalierung kollidieren. Nur bei echter Maus. */
@@ -147,7 +190,7 @@
         display:flex;align-items:center;justify-content:space-between;gap:14px;z-index:10;}
   /* Impressum sitzt am Fensterrand, nicht in der Inhaltsspalte */
   .foot .inner{max-width:none;margin:0;padding:0 22px;width:100%;display:flex;align-items:center;justify-content:flex-end;}
-  .foot a{font-family:var(--sans);font-size:10.5px;color:var(--tx3);letter-spacing:0.03em;}
+  .foot a{font-family:var(--sans);font-size:10.5px;color:var(--tx3);letter-spacing:0.03em;transition:color .2s ease;}
   .foot a:hover{color:var(--tx);text-decoration:underline;text-underline-offset:3px;}
   /* Ganz am Ende, damit sie gegen spaetere cursor-Regeln gewinnt.
      Sonst zeigt der Browser ueber den Eintraegen weiter den nativen Zeiger. */
@@ -161,7 +204,8 @@
        Text auf der Kante der Flaeche. Text steht damit bei 30px, die Flaeche
        reicht bis 10px an den Rand. Gleiche Geometrie wie am Desktop. */
     .wrap{padding-left:30px;padding-right:30px;}
-    .entry{padding-top:14px;padding-bottom:14px;}
+    /* Einordnung mobil etwas groesser, am Desktop bleibt sie bei 15px */
+    .entry .blurb{font-size:16px;}
     .foot .inner{padding:0 30px;}
   }
 </style>
@@ -262,6 +306,8 @@
 <script>
 const $=s=>document.querySelector(s);
 const esc=s=>(s==null?"":String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const MOTION=!matchMedia("(prefers-reduced-motion: reduce)").matches;
+const ARROW='<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
 const STR={
   en:{ all:"All",
@@ -304,7 +350,13 @@ function markRead(el){
 
 (function(){ document.documentElement.setAttribute("data-theme", localStorage.getItem("nr-theme")||"light"); })();
 function syncToggle(){ $("#themeToggle").textContent = document.documentElement.getAttribute("data-theme")==="dark" ? "☾" : "☀︎"; }
-$("#themeToggle").onclick=()=>{ const c=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark"; document.documentElement.setAttribute("data-theme",c); localStorage.setItem("nr-theme",c); syncToggle(); };
+let themeTimer=0;
+$("#themeToggle").onclick=()=>{
+  const root=document.documentElement;
+  if(MOTION){ root.classList.add("theming"); clearTimeout(themeTimer); themeTimer=setTimeout(()=>root.classList.remove("theming"),450); }
+  const c=root.getAttribute("data-theme")==="dark"?"light":"dark";
+  root.setAttribute("data-theme",c); localStorage.setItem("nr-theme",c); syncToggle();
+};
 syncToggle();
 
 // Stimmen und Themen laufen in einem Strom. Stimmen-Beitraege haben keine
@@ -327,18 +379,18 @@ function dayHTML(date,label,entries){
   const rows=entries.map(e=>{
     const href=e.sources[0]?e.sources[0].url:"";
     const key=href;
-    const srcs=e.sources.map(q=>`<a href="${esc(q.url)}" target="_blank" rel="noopener">${esc(q.name)}</a>`).join("");
+    const srcs=e.sources.map(q=>`<a href="${esc(q.url)}" target="_blank" rel="noopener">${esc(q.name)}${ARROW}</a>`).join("");
     const isRead=readSet.has(key);
     // Mit Einordnung klappt die Schlagzeile auf. Ohne Einordnung (Altbestand)
     // fuehrt sie direkt zur Quelle, sonst waere der Klick ohne Wirkung.
     const head = e.blurb
       ? `<div class="head" role="button" tabindex="0" aria-expanded="false"><h3>${esc(e.title)}</h3></div>`
       : `<a class="head" href="${esc(href)}" target="_blank" rel="noopener"><h3>${esc(e.title)}</h3></a>`;
-    return `<article class="entry${isRead?" read":""}" data-theme="${esc(e.theme||"")}" data-key="${esc(key)}">
+    return `<article class="entry${isRead?" read":""}${MOTION?" pre":""}" data-theme="${esc(e.theme||"")}" data-key="${esc(key)}">
       <div class="meta">${esc(themeLabel(e.theme))}</div>
       ${head}
       ${e.blurb
-        ? `<div class="detail" hidden><p class="blurb">${esc(e.blurb)}</p><div class="srcs">${srcs}</div></div>`
+        ? `<div class="detail"><div class="detail-in"><p class="blurb">${esc(e.blurb)}</p><div class="srcs">${srcs}</div></div></div>`
         : `<div class="srcs">${srcs}</div>`}
     </article>`;
   }).join("");
@@ -395,6 +447,7 @@ function onScroll(){
     syncBar(window.scrollY||document.documentElement.scrollTop||0);
     syncDate();
     maybeLoad();
+    revealVisible();
   });
 }
 let shownDate=null, toastTimer=null;
@@ -481,6 +534,25 @@ function maybeLoad(){
   const el=$("#sentinel"); if(!el) return;
   if(el.getBoundingClientRect().top < vh() + 700) loadNext();
 }
+// Eintraege blenden ein, sobald sie ins Bild kommen. Ueber die Scroll-Schleife statt
+// ueber IntersectionObserver, aus demselben Grund wie beim Nachladen. Der erste
+// getBoundingClientRect erzwingt den Stil mit .pre, erst dadurch laeuft der Uebergang.
+function revealVisible(){
+  if(!MOTION) return;
+  const lim=vh()*0.94; let n=0;
+  document.querySelectorAll(".entry.pre").forEach(el=>{
+    if(el.hidden) return;
+    if(el.getBoundingClientRect().top<lim){
+      el.style.setProperty("--rd",Math.min(n,6)*45+"ms"); n++;
+      el.classList.remove("pre");
+    }
+  });
+}
+document.addEventListener("visibilitychange",()=>{ if(!document.hidden) revealVisible(); });
+function swapStream(){
+  if(!MOTION) return;
+  const s=$("#stream"); s.classList.remove("swap"); void s.offsetWidth; s.classList.add("swap");
+}
 window.addEventListener("scroll",onScroll,{passive:true});
 window.addEventListener("resize",onScroll,{passive:true});
 
@@ -491,22 +563,18 @@ try{
 }catch(e){}
 
 function closeEntry(art){
-  const d=art.querySelector(".detail"); if(!d||d.hidden) return;
-  d.hidden=true;
+  if(!art.classList.contains("open")) return;
+  art.classList.remove("open");
   art.querySelector(".head")?.setAttribute("aria-expanded","false");
   markRead(art);          // gelesen zaehlt beim Schliessen, nicht beim Oeffnen
 }
 function toggleEntry(art){
   const head=art.querySelector(".head");
-  const bl=art.querySelector(".detail");
-  if(!bl||!head) return;
-  const open=bl.hidden;
+  if(!art.querySelector(".detail")||!head) return;
+  const open=!art.classList.contains("open");
   // Immer nur ein Eintrag offen. Beim Oeffnen alle anderen schliessen.
-  if(open) document.querySelectorAll(".entry .detail:not([hidden])").forEach(d=>{
-    const other=d.closest(".entry");
-    if(other!==art) closeEntry(other);
-  });
-  bl.hidden=!open;
+  if(open) document.querySelectorAll(".entry.open").forEach(o=>{ if(o!==art) closeEntry(o); });
+  art.classList.toggle("open",open);
   head.setAttribute("aria-expanded",String(open));
   if(!open) markRead(art);   // zugeklappt heisst gelesen
 }
@@ -557,7 +625,7 @@ function renderTopics(animate){
     box.insertBefore(th,box.firstChild);   // dieselbe Kachel weiterverwenden
     box.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{
       if(state.topic===b.dataset.t) return;
-      state.topic=b.dataset.t; renderTopics(true); applyFilter();
+      state.topic=b.dataset.t; renderTopics(true); applyFilter(); swapStream();
     });
     moveThumb(false);
     requestAnimationFrame(()=>moveThumb(false));
@@ -576,7 +644,7 @@ function applyFilter(){
   document.querySelectorAll(".day").forEach(d=>{
     d.hidden = ![...d.querySelectorAll(".entry")].some(e=>!e.hidden);
   });
-  syncDate(); maybeLoad();
+  syncDate(); maybeLoad(); revealVisible();
 }
 
 function syncLangButtons(){
