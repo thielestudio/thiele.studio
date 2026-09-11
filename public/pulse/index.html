@@ -35,6 +35,15 @@
   header{padding:34px 0 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;}
   .brand h1{font-size:clamp(21px,5.6vw,25px);line-height:1.05;margin:0 0 4px;letter-spacing:0.02em;}
   .brand .ed{font-family:var(--sans);font-size:12px;color:var(--tx3);}
+  /* Logo: Punktraster mit Goo-Filter. Der Zeiger drueckt die Punkte auseinander wie ein
+     abstossender Magnet, danach gleiten sie an ihren Platz zurueck. Das Skript direkt
+     hinter dem Kopf setzt cx und cy als Attribute, das zwingt jeden Browser, den Filter
+     neu zu rechnen. */
+  .brand h1.logo{margin:0;line-height:0;font-size:0;letter-spacing:0;}
+  /* Feste 28px auch mobil: bei 23px Hoehe reissen die Goo-Bruecken schon im Ruhezustand
+     und das Logo zerfaellt in Einzelpunkte (gemessen bei 375px Breite, doppelte Pixeldichte). */
+  .logo svg{display:block;height:28px;width:auto;overflow:visible;}
+  .logo circle{fill:var(--tx);}
   .htools{display:flex;gap:8px;align-items:center;}
   .tbtn{font-family:var(--sans);font-size:12px;color:var(--tx2);background:var(--surface);border:1px solid var(--line2);padding:7px 11px;cursor:pointer;border-radius:999px;}
   .tbtn:hover{border-color:var(--tx3);color:var(--tx);}
@@ -162,7 +171,7 @@
 <div class="wrap">
   <header>
     <div class="brand">
-      <h1>PULSE</h1>
+      <h1 class="logo"><svg viewBox="0 0 314.286 50" role="img" aria-label="PULSE"><defs><filter id="pulse-goo" color-interpolation-filters="sRGB" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur in="SourceGraphic" stdDeviation="1.45" result="blur"/><feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 14 -5"/></filter></defs><g filter="url(#pulse-goo)"><circle cx="3.571" cy="3.571" r="2.857"/><circle cx="10.714" cy="3.571" r="2.857"/><circle cx="17.857" cy="3.571" r="2.857"/><circle cx="25" cy="3.571" r="2.857"/><circle cx="32.143" cy="3.571" r="2.857"/><circle cx="39.286" cy="3.571" r="2.857"/><circle cx="46.429" cy="3.571" r="2.857"/><circle cx="3.571" cy="10.714" r="2.857"/><circle cx="10.714" cy="10.714" r="2.857"/><circle cx="39.286" cy="10.714" r="2.857"/><circle cx="46.429" cy="10.714" r="2.857"/><circle cx="53.571" cy="10.714" r="2.857"/><circle cx="3.571" cy="17.857" r="2.857"/><circle cx="10.714" cy="17.857" r="2.857"/><circle cx="46.429" cy="17.857" r="2.857"/><circle cx="53.571" cy="17.857" r="2.857"/><circle cx="3.571" cy="25" r="2.857"/><circle cx="10.714" cy="25" r="2.857"/><circle cx="17.857" cy="25" r="2.857"/><circle cx="25" cy="25" r="2.857"/><circle cx="32.143" cy="25" r="2.857"/><circle cx="39.286" cy="25" r="2.857"/><circle cx="46.429" cy="25" r="2.857"/><circle cx="53.571" cy="25" r="2.857"/><circle cx="3.571" cy="32.143" r="2.857"/><circle cx="10.714" cy="32.143" r="2.857"/><circle cx="3.571" cy="39.286" r="2.857"/><circle cx="10.714" cy="39.286" r="2.857"/><circle cx="3.571" cy="46.429" r="2.857"/><circle cx="10.714" cy="46.429" r="2.857"/><circle cx="67.857" cy="3.571" r="2.857"/><circle cx="75" cy="3.571" r="2.857"/><circle cx="110.714" cy="3.571" r="2.857"/><circle cx="117.857" cy="3.571" r="2.857"/><circle cx="67.857" cy="10.714" r="2.857"/><circle cx="75" cy="10.714" r="2.857"/><circle cx="110.714" cy="10.714" r="2.857"/><circle cx="117.857" cy="10.714" r="2.857"/><circle cx="67.857" cy="17.857" r="2.857"/><circle cx="75" cy="17.857" r="2.857"/><circle cx="110.714" cy="17.857" r="2.857"/><circle cx="117.857" cy="17.857" r="2.857"/><circle cx="67.857" cy="25" r="2.857"/><circle cx="75" cy="25" r="2.857"/><circle cx="110.714" cy="25" r="2.857"/><circle cx="117.857" cy="25" r="2.857"/><circle cx="67.857" cy="32.143" r="2.857"/><circle cx="75" cy="32.143" r="2.857"/><circle cx="110.714" cy="32.143" r="2.857"/><circle cx="117.857" cy="32.143" r="2.857"/><circle cx="67.857" cy="39.286" r="2.857"/><circle cx="75" cy="39.286" r="2.857"/><circle cx="110.714" cy="39.286" r="2.857"/><circle cx="117.857" cy="39.286" r="2.857"/><circle cx="67.857" cy="46.429" r="2.857"/><circle cx="75" cy="46.429" r="2.857"/><circle cx="82.143" cy="46.429" r="2.857"/><circle cx="89.286" cy="46.429" r="2.857"/><circle cx="96.429" cy="46.429" r="2.857"/><circle cx="103.571" cy="46.429" r="2.857"/><circle cx="110.714" cy="46.429" r="2.857"/><circle cx="117.857" cy="46.429" r="2.857"/><circle cx="132.143" cy="3.571" r="2.857"/><circle cx="139.286" cy="3.571" r="2.857"/><circle cx="132.143" cy="10.714" r="2.857"/><circle cx="139.286" cy="10.714" r="2.857"/><circle cx="132.143" cy="17.857" r="2.857"/><circle cx="139.286" cy="17.857" r="2.857"/><circle cx="132.143" cy="25" r="2.857"/><circle cx="139.286" cy="25" r="2.857"/><circle cx="132.143" cy="32.143" r="2.857"/><circle cx="139.286" cy="32.143" r="2.857"/><circle cx="132.143" cy="39.286" r="2.857"/><circle cx="139.286" cy="39.286" r="2.857"/><circle cx="132.143" cy="46.429" r="2.857"/><circle cx="139.286" cy="46.429" r="2.857"/><circle cx="146.429" cy="46.429" r="2.857"/><circle cx="153.571" cy="46.429" r="2.857"/><circle cx="160.714" cy="46.429" r="2.857"/><circle cx="167.857" cy="46.429" r="2.857"/><circle cx="175" cy="46.429" r="2.857"/><circle cx="182.143" cy="46.429" r="2.857"/><circle cx="203.571" cy="3.571" r="2.857"/><circle cx="210.714" cy="3.571" r="2.857"/><circle cx="217.857" cy="3.571" r="2.857"/><circle cx="225" cy="3.571" r="2.857"/><circle cx="232.143" cy="3.571" r="2.857"/><circle cx="239.286" cy="3.571" r="2.857"/><circle cx="196.429" cy="10.714" r="2.857"/><circle cx="203.571" cy="10.714" r="2.857"/><circle cx="210.714" cy="10.714" r="2.857"/><circle cx="232.143" cy="10.714" r="2.857"/><circle cx="239.286" cy="10.714" r="2.857"/><circle cx="246.429" cy="10.714" r="2.857"/><circle cx="196.429" cy="17.857" r="2.857"/><circle cx="203.571" cy="17.857" r="2.857"/><circle cx="196.429" cy="25" r="2.857"/><circle cx="203.571" cy="25" r="2.857"/><circle cx="210.714" cy="25" r="2.857"/><circle cx="217.857" cy="25" r="2.857"/><circle cx="225" cy="25" r="2.857"/><circle cx="232.143" cy="25" r="2.857"/><circle cx="239.286" cy="25" r="2.857"/><circle cx="232.143" cy="32.143" r="2.857"/><circle cx="239.286" cy="32.143" r="2.857"/><circle cx="246.429" cy="32.143" r="2.857"/><circle cx="196.429" cy="39.286" r="2.857"/><circle cx="203.571" cy="39.286" r="2.857"/><circle cx="239.286" cy="39.286" r="2.857"/><circle cx="246.429" cy="39.286" r="2.857"/><circle cx="196.429" cy="46.429" r="2.857"/><circle cx="203.571" cy="46.429" r="2.857"/><circle cx="210.714" cy="46.429" r="2.857"/><circle cx="217.857" cy="46.429" r="2.857"/><circle cx="225" cy="46.429" r="2.857"/><circle cx="232.143" cy="46.429" r="2.857"/><circle cx="239.286" cy="46.429" r="2.857"/><circle cx="246.429" cy="46.429" r="2.857"/><circle cx="260.714" cy="3.571" r="2.857"/><circle cx="267.857" cy="3.571" r="2.857"/><circle cx="275" cy="3.571" r="2.857"/><circle cx="282.143" cy="3.571" r="2.857"/><circle cx="289.286" cy="3.571" r="2.857"/><circle cx="296.429" cy="3.571" r="2.857"/><circle cx="303.571" cy="3.571" r="2.857"/><circle cx="310.714" cy="3.571" r="2.857"/><circle cx="260.714" cy="10.714" r="2.857"/><circle cx="267.857" cy="10.714" r="2.857"/><circle cx="260.714" cy="17.857" r="2.857"/><circle cx="267.857" cy="17.857" r="2.857"/><circle cx="260.714" cy="25" r="2.857"/><circle cx="267.857" cy="25" r="2.857"/><circle cx="275" cy="25" r="2.857"/><circle cx="282.143" cy="25" r="2.857"/><circle cx="289.286" cy="25" r="2.857"/><circle cx="296.429" cy="25" r="2.857"/><circle cx="303.571" cy="25" r="2.857"/><circle cx="310.714" cy="25" r="2.857"/><circle cx="260.714" cy="32.143" r="2.857"/><circle cx="267.857" cy="32.143" r="2.857"/><circle cx="260.714" cy="39.286" r="2.857"/><circle cx="267.857" cy="39.286" r="2.857"/><circle cx="260.714" cy="46.429" r="2.857"/><circle cx="267.857" cy="46.429" r="2.857"/><circle cx="275" cy="46.429" r="2.857"/><circle cx="282.143" cy="46.429" r="2.857"/><circle cx="289.286" cy="46.429" r="2.857"/><circle cx="296.429" cy="46.429" r="2.857"/><circle cx="303.571" cy="46.429" r="2.857"/><circle cx="310.714" cy="46.429" r="2.857"/></g></svg></h1>
     </div>
     <div class="htools">
       <div class="langsw" id="langsw">
@@ -172,6 +181,66 @@
       <button class="tbtn" id="themeToggle" aria-label="Light/Dark">☀︎</button>
     </div>
   </header>
+  <script>
+  // Logo weicht dem Zeiger aus. Punkte im Wirkungskreis werden radial weggedrueckt, am
+  // staerksten direkt unter dem Zeiger, und gleiten zurueck, sobald er weiterzieht. Der
+  // Abstand wird zur Ruheposition gemessen, nicht zur aktuellen, sonst schaukelt sich die
+  // Bewegung auf. Ohne Bewegung schlaeft die Schleife, jede Zeigerbewegung weckt sie.
+  (function(){
+    const svg=document.querySelector(".logo svg"); if(!svg) return;
+    if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const VBW=314.286, VBH=50;
+    const RADIUS=42;  // Wirkungskreis in SVG-Einheiten, Punktabstand ist 7.14
+    const PUSH=13;    // groesste Verdraengung in SVG-Einheiten
+    const EASE=.2;    // Anteil des Restwegs je Bild bei 60 Bildern pro Sekunde
+    const dots=[...svg.querySelectorAll("circle")].map(c=>{
+      const hx=+c.getAttribute("cx"), hy=+c.getAttribute("cy");
+      return {c,hx,hy,x:hx,y:hy};
+    });
+    let px=null, py=null, raf=0, last=0, zuhause=true;
+    function frame(t){
+      const dt=last?Math.min((t-last)/16.667,3):1; last=t;
+      const k=1-Math.pow(1-EASE,dt);
+      let p=null;
+      if(px!==null){
+        const r=svg.getBoundingClientRect();
+        p={x:(px-r.left)*VBW/r.width, y:(py-r.top)*VBH/r.height};
+      }
+      let bewegt=false, alle=true;
+      for(const d of dots){
+        let tx=d.hx, ty=d.hy;
+        if(p){
+          const dx=d.hx-p.x, dy=d.hy-p.y, dist=Math.hypot(dx,dy);
+          if(dist<RADIUS){
+            const f=PUSH*Math.pow(1-dist/RADIUS,2);
+            tx+=dist>.001?dx/dist*f:0; ty+=dist>.001?dy/dist*f:-f;
+          }
+        }
+        let nx=d.x+(tx-d.x)*k, ny=d.y+(ty-d.y)*k;
+        if(Math.abs(tx-nx)<.02) nx=tx; else bewegt=true;
+        if(Math.abs(ty-ny)<.02) ny=ty; else bewegt=true;
+        if(nx!==d.x||ny!==d.y){ d.x=nx; d.y=ny; d.c.setAttribute("cx",nx.toFixed(2)); d.c.setAttribute("cy",ny.toFixed(2)); }
+        if(nx!==d.hx||ny!==d.hy) alle=false;
+      }
+      zuhause=alle;
+      if(bewegt) raf=requestAnimationFrame(frame); else { raf=0; last=0; }
+    }
+    const wecken=()=>{ if(!raf) raf=requestAnimationFrame(frame); };
+    const inReichweite=()=>{
+      const r=svg.getBoundingClientRect(), m=RADIUS*r.height/VBH;
+      return px>r.left-m && px<r.right+m && py>r.top-m && py<r.bottom+m;
+    };
+    addEventListener("pointermove",e=>{
+      px=e.clientX; py=e.clientY;
+      if(raf || !zuhause || inReichweite()) wecken();
+    },{passive:true});
+    addEventListener("scroll",()=>{ if(px!==null && (!zuhause || inReichweite())) wecken(); },{passive:true});
+    const loslassen=()=>{ px=py=null; if(!zuhause) wecken(); };
+    addEventListener("pointerout",e=>{ if(!e.relatedTarget) loslassen(); });
+    addEventListener("pointerup",e=>{ if(e.pointerType!=="mouse") loslassen(); });
+    addEventListener("pointercancel",loslassen);
+  })();
+  </script>
 
   <div class="runbar">
     <div class="topics" id="topics"></div>
