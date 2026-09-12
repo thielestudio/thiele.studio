@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "generated_for": "2026-09-12",
+    "window": "2026-09-10..2026-09-12",
+    "sources_scanned": 60,
+    "items_in_window": 165,
+    "lang": "de"
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Ein Studio senkt die Emissionen der eigenen Website um zwei Drittel und behandelt CO2 als Gestaltungsvorgabe",
+      "blurb": "MEK stellte fest, dass die eigene Seite mehr Kohlendioxid verursacht als 76,5 Prozent der geprüften Seiten, und baute sie neu: AVIF statt hochauflösender JPGs, fast alle Bewegung und Videos raus, dunkle statt weißer Oberfläche. Der Ausstoß fiel von 1,21 auf 0,42 Gramm je Seitenaufruf. Beim Schriftwechsel auf Arial blieb das Studio nicht, es nahm den kleinen Mehrverbrauch einer Google-Schrift in Kauf.",
+      "tags": ["nachhaltigkeit", "webdesign", "case study"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/no-fonts-on-a-dead-planet/",
+          "headline": "No fonts on a dead planet: a website case study"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Ein durchgerechnetes Beispiel führt einen UX-Vorschlag bis zur Rendite-Zahl",
+      "blurb": "Alex Williams zieht einen erfundenen B2B-SaaS-Onboarding-Relaunch durch alle Schritte: Geschäftswert definieren, Kosten aufstellen, Kausalität prüfen, Zahl ausrechnen. Der Wert des Stücks liegt darin, dass die Zahlen über alle Schritte hinweg zusammenhängen. Genau das zeigen Frameworks sonst nicht.",
+      "tags": ["ux", "roi", "stakeholder"],
+      "sources": [
+        {
+          "name": "Smashing Magazine",
+          "url": "https://smashingmagazine.com/2026/09/building-ux-roi-case-survives-boardroom/",
+          "headline": "Building A UX ROI Case That Survives The Boardroom"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Acht Muster für Sprach-Interfaces, jedes mit eigener Schwachstelle",
+      "blurb": "Sharang Sharma sortiert Voice-AI-Erlebnisse in benannte Muster, vom Avatar-Videocall über strikten Sprecherwechsel bis zum Telefonanruf, und nennt pro Muster die wahrgenommene Rolle des Agenten, die zentralen Entwurfsentscheidungen und die Grenzen. Der strikte Sprecherwechsel kommt bewusst ohne Gesicht und ohne Unterbrechen aus, deshalb taugt er nur für Tutoring und Interview-Training.",
+      "tags": ["voice ui", "ki", "muster"],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/8-voice-aiux-patterns-81324c8feaa0?source=rss----138adf9c44c---4",
+          "headline": "8 voice AIUX patterns"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Branding hat kein gemeinsames Vokabular, also hat eine Agentur ihres veröffentlicht",
+      "blurb": "LETTER A hat ein laufend gepflegtes Wörterbuch der Begriffe herausgegeben, die Branding-Agenturen anlegen, besprechen und abliefern. Begründung: Jedes Studio benutzt sie ein wenig anders, und auffallen tut das erst, wenn der Kunde etwas anderes vor sich sieht als erwartet. Brauchbar als gemeinsame Referenz vor der Abstimmung der Leistungsliste.",
+      "tags": ["branding", "prozess", "kundenarbeit"],
+      "sources": [
+        {
+          "name": "PRINT Magazine",
+          "url": "https://www.printmag.com/branding-identity-design/dont-know-the-difference-between-brand-guidelines-and-a-brand-book-theres-a-branding-dictionary-for-that/",
+          "headline": "Don’t Know the Difference Between Brand Guidelines and a Brand Book? There’s a Branding Dictionary For That"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Whistles castet die Jubiläumskampagne über Klebeplakate statt über eine Modelagentur",
+      "blurb": "Die Agentur Weirdo hängte in London markenlose Plakate mit der Frage, was Offenheit für einen bedeutet. Über 2.000 Antworten kamen zurück, 50 Frauen zwischen 19 und 72 wurden ausgewählt und an einem einzigen Tag fotografiert. Der Casting-Mechanismus ist zugleich die Recherche für die neue Markenplattform Designed for an Open Mind.",
+      "tags": ["kampagne", "casting", "mode"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/inspiration/whistles-marks-50-years-by-casting-50-customers-found-through-mysterious-fly-posters-across-london/",
+          "headline": "Whistles marks 50 years by casting 50 customers found through mysterious fly-posters across London"
+        },
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/whistles-marks-50-years-with-bold-brand-relaunch-new-designed-for-an-open-mind-brand-platform-and-a-campaign-starring-50-open-minded-customers/",
+          "headline": "Whistles marks 50 years with bold brand relaunch, new ‘Designed for an Open Mind’ brand platform and a campaign starring 50 open-minded customers"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Mother Design positioniert eine Wahrsage-Plattform um, indem es den Wellness-Look verweigert",
+      "blurb": "Recherche außerhalb der Kategorie zeigte: Leute holen sich tägliche Orientierung bei KI und Coaching-Apps, suchen aber eigentlich eine Perspektive. Also wurde Keen von Zukunftsvorhersage auf Weiterkommen umgestellt. Creative Director Jo Tulej benennt den Standard, den das Studio verlassen hat: viel Weißraum, gedämpfte Paletten, runde Schrift, sanfte Versprechen.",
+      "tags": ["rebrand", "positionierung", "illustration"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/inspiration/mother-design-gives-psychic-platform-keen-a-folk-art-rebrand-that-takes-on-minimalist-wellness/",
+          "headline": "Mother Design gives psychic platform Keen a folk-art rebrand that takes on minimalist wellness"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Der Werbedruck wird auf die Nachkommastelle gemessen, der Klang darin nach Gefühl gewählt",
+      "blurb": "Shai Hirschon argumentiert, das ESOV-Modell setze voraus, dass der Spot am Montag als dieselbe Marke erkennbar ist wie der am Mittwoch. Das visuelle Erscheinungsbild ist darauf gebaut, Musik nicht. In einem typischen Markenjahr stehen Akustik-Folk, elektronische Texturen und Bibliotheksmusik aus drei Produktionshäusern nebeneinander, damit verpufft genau die Aufsummierung, von der das Modell lebt.",
+      "tags": ["sonic branding", "esov", "markenassets"],
+      "sources": [
+        {
+          "name": "Brandingmag",
+          "url": "https://www.brandingmag.com/shai-hirschon/sound-decoded-share-of-voice-has-a-sound-problem/",
+          "headline": "Sound Decoded: Share of Voice Has a Sound Problem"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Böttcher schreibt sich künftig BOETTCHER und bündelt vier Geschäftsbereiche unter einem Dach",
+      "blurb": "Aus der handschriftlich anmutenden Wortmarke wird ein schräg gestelltes Versalien-Typologo mit eingekerbten, spitzkantigen Buchstabensegmenten. Die Schreibweise ohne Umlaut folgt der angestrebten internationalen Ausrichtung, die Rahmenplakette verliert ihre Schildform und wird zum abstrahierten B als Zweitzeichen. Achim Schaffrinna ordnet die Rechtsneigung als in der Fahrradbranche weitverbreitetes Prinzip ein und nennt Giant, Scott, Trek und Rose als Beispiele.",
+      "tags": ["rebrand", "logo", "dachmarke"],
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "url": "https://www.designtagebuch.de/boettcher-wird-boettcher-fahrradhersteller-mit-neuem-markenauftritt/",
+          "headline": "Böttcher wird BOETTCHER – Fahrradhersteller mit neuem Markenauftritt"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Carlsen klagt gegen OpenAI, weil ChatGPT das NEINhorn nahezu identisch ausgibt",
+      "blurb": "Laut Verlag reichten sehr einfache Prompts, um Geschichten und Illustrationen zu bekommen, die vom Original kaum zu unterscheiden sind. ChatGPT bot demnach sogar ganze Druckvorlagen an, samt Umschlaggestaltung, Impressum, falscher Bestellnummer und Verlagslogo. Eine Freigabe für KI-Training gab es nie.",
+      "tags": ["urheberrecht", "illustration", "openai"],
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/branche-karriere/inhalte-des-neinhorn-tauchten-bei-chatgpt-auf/",
+          "headline": "Inhalte des »NEINhorn« tauchten bei ChatGPT auf"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Universal lizenziert seinen Katalog an ElevenLabs, Künstler entscheiden selbst über die Teilnahme",
+      "blurb": "Ein mehrjähriger Lizenzvertrag erlaubt Nutzern Remixe und Mashups aus dem UMG-Katalog, jeder Künstler kann sich dagegen entscheiden. Die Plattform steht neben UMGs Udio-Projekt und Abkommen mit Spotify, Nvidia und Klay. Der lizenzierte Weg wird damit zur Standardantwort der Branche, nicht zum Experiment.",
+      "tags": ["lizenzierung", "musik", "rechte"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
+          "headline": "Universal Music is launching an AI music platform with ElevenLabs"
+        },
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/eleven-labs-universal-music-ki-1762855/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "ElevenLabs kriegt Lizenz: Warum du bald Songs von Universal Music mit KI remixen darfst"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "OpenAI öffnet die Infrastruktur hinter Codex als Agents-API",
+      "blurb": "Die öffentliche Beta erlaubt Cloud-Agenten, die stundenlang laufen, Code ausführen, Dateien verarbeiten und Aufgaben an Subagenten abgeben. Abgerechnet wird nur nach Tokens, keine Zusatzgebühr. Sandbox wahlweise bei OpenAI, Cloudflare, Vercel oder Oracle, MCP und eigene Funktionen werden unterstützt.",
+      "tags": ["agenten", "api", "openai"],
+      "sources": [
+        {
+          "name": "THE DECODER",
+          "url": "https://the-decoder.de/openais-neue-agents-api-gibt-entwicklern-die-infrastruktur-hinter-codex-und-chatgpt/",
+          "headline": "OpenAIs neue Agents-API gibt Entwicklern die Infrastruktur hinter Codex und ChatGPT"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Gemessen: Claude schmeichelt weniger und setzt ein Drittel weniger Gedankenstriche",
+      "blurb": "Arena.ai hat Zehntausende Benchmark-Antworten von Fable 5 und Fable 5.1 verglichen. Zustimmende Eröffnungen wie yes oder exactly gehen um 58 Prozent zurück, Ehrlichkeitsfloskeln um 45 Prozent je 1.000 Wörter, Gedankenstriche um 32 Prozent. Dafür steigen Semikolons um 63 Prozent und die Antworten werden im Median 30 Prozent länger.",
+      "tags": ["schreibstil", "benchmark", "anthropic"],
+      "sources": [
+        {
+          "name": "THE DECODER",
+          "url": "https://the-decoder.de/analyse-zeigt-claude-fable-5-1-schreibt-weniger-schmeichelhaft-und-verzichtet-auf-typische-ki-floskeln/",
+          "headline": "Analyse zeigt: Claude Fable 5.1 schreibt weniger schmeichelhaft und verzichtet auf typische KI-Floskeln"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 24,
+      "examples": [
+        "Caviar Paris Signs Nicolás Méndez for French Representation",
+        "Jack in the Box Brings The Simpsons Treehouse of Horror to the Drive-Thru with a Monstrous Menu for a Limited Time",
+        "Mediaplus Connect CEO Penny Took to retire after 40 years in the industry"
+      ]
+    }
+  ]
+}

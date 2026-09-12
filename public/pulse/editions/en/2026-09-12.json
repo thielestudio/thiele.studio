@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "generated_for": "2026-09-12",
+    "window": "2026-09-10..2026-09-12",
+    "sources_scanned": 60,
+    "items_in_window": 117,
+    "lang": "en"
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "A studio cut its own site's emissions by two thirds and treated carbon as a creative constraint",
+      "blurb": "MEK found its own website emitted more carbon than 76.5% of pages tested, then rebuilt it: AVIF instead of high-res JPG, almost all motion and video removed, dark mode instead of a white interface, and a hard look at the webfont. Emissions fell from 1.21 g to 0.42 g of CO2 per page view, and the studio kept a Google font rather than accept Arial, which is the honest part of the piece.",
+      "tags": ["sustainability", "web design", "case study"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/no-fonts-on-a-dead-planet/",
+          "headline": "No fonts on a dead planet: a website case study"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "One worked example that carries a UX case from goal to ROI number",
+      "blurb": "Alex Williams runs a single invented B2B SaaS onboarding redesign all the way through: defining business value, accounting for cost, testing causality, and arriving at a number. The point is that the figures connect across every step, which is what a framework usually fails to show.",
+      "tags": ["ux", "roi", "stakeholders"],
+      "sources": [
+        {
+          "name": "Smashing Magazine",
+          "url": "https://smashingmagazine.com/2026/09/building-ux-roi-case-survives-boardroom/",
+          "headline": "Building A UX ROI Case That Survives The Boardroom"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Eight patterns for voice AI interfaces, each with its own failure mode",
+      "blurb": "Sharang Sharma maps voice AI experiences into named patterns, from avatar video call to strict turn-by-turn to AI phone call, and for each one names the perceived agent role, the key design decisions and the limits. Turn-by-turn deliberately has no face and no barge-in, which is why it only fits tutoring and interview prep.",
+      "tags": ["voice ui", "ai", "patterns"],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/8-voice-aiux-patterns-81324c8feaa0?source=rss----138adf9c44c---4",
+          "headline": "8 voice AIUX patterns"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Branding has no shared vocabulary, so one agency published its own",
+      "blurb": "LETTER A has put out a running dictionary of the terms branding agencies create, discuss and deliver, on the argument that everyone uses them slightly differently and nobody notices until the client sees something they did not expect. Useful mostly as a shared reference to point a client at before the deliverables list is agreed.",
+      "tags": ["branding", "process", "client work"],
+      "sources": [
+        {
+          "name": "PRINT Magazine",
+          "url": "https://www.printmag.com/branding-identity-design/dont-know-the-difference-between-brand-guidelines-and-a-brand-book-theres-a-branding-dictionary-for-that/",
+          "headline": "Don’t Know the Difference Between Brand Guidelines and a Brand Book? There’s a Branding Dictionary For That"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Whistles cast its 50th anniversary campaign from fly-posters instead of a model agency",
+      "blurb": "Agency Weirdo covered London with unbranded posters asking what open-mindedness means, got more than 2,000 replies, and cut them to 50 women aged 19 to 72 shot in a single day. The casting mechanic doubles as the research behind the new brand platform, Designed for an Open Mind.",
+      "tags": ["campaign", "casting", "fashion"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/inspiration/whistles-marks-50-years-by-casting-50-customers-found-through-mysterious-fly-posters-across-london/",
+          "headline": "Whistles marks 50 years by casting 50 customers found through mysterious fly-posters across London"
+        },
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/whistles-marks-50-years-with-bold-brand-relaunch-new-designed-for-an-open-mind-brand-platform-and-a-campaign-starring-50-open-minded-customers/",
+          "headline": "Whistles marks 50 years with bold brand relaunch, new ‘Designed for an Open Mind’ brand platform and a campaign starring 50 open-minded customers"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Mother Design repositioned a psychic platform by refusing the wellness look",
+      "blurb": "Research outside the category showed people turn to AI and coaching for daily guidance but are really after perspective, so Keen was moved from predicting the future to helping people get unstuck. Creative director Jo Tulej names the default the studio walked away from: white space, muted palettes, rounded type, gentle promises.",
+      "tags": ["rebrand", "positioning", "illustration"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/inspiration/mother-design-gives-psychic-platform-keen-a-folk-art-rebrand-that-takes-on-minimalist-wellness/",
+          "headline": "Mother Design gives psychic platform Keen a folk-art rebrand that takes on minimalist wellness"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Share of voice is measured to the decimal, the sound inside it is picked by feel",
+      "blurb": "Shai Hirschon argues the ESOV framework assumes Monday's spot is recognisably the same brand as Wednesday's, which visual identity is built to honour and music is not. A typical brand's year contains acoustic folk, electronic textures and library cues from three production houses, so the compounding the model depends on leaks out through the speakers.",
+      "tags": ["sonic branding", "esov", "brand assets"],
+      "sources": [
+        {
+          "name": "Brandingmag",
+          "url": "https://www.brandingmag.com/shai-hirschon/sound-decoded-share-of-voice-has-a-sound-problem/",
+          "headline": "Sound Decoded: Share of Voice Has a Sound Problem"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "A second mathematician asks OpenAI to prove his work was not in the training data",
+      "blurb": "Andreas Thom says his own ChatGPT interactions may have fed one of the ten results OpenAI announced last month, in his own field of non-sofic groups. OpenAI quietly amended the writeup after criticism that it failed to credit recent work by Thom and Gábor Kun, which is the provenance problem every creative trade is now having in its own language.",
+      "tags": ["training data", "attribution", "openai"],
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
+          "headline": "Mathematicians want proof OpenAI didn’t use their work"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Universal licenses its catalogue to ElevenLabs for a remix platform artists can opt into",
+      "blurb": "A multiyear licensing deal lets users build remixes and mashups from UMG's catalogue, with participation left to each artist. It sits alongside UMG's Udio platform and deals with Spotify, Nvidia and Klay, so the licensed route is becoming the industry's default answer rather than an experiment.",
+      "tags": ["licensing", "music", "rights"],
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
+          "headline": "Universal Music is launching an AI music platform with ElevenLabs"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Slack will generate dashboards and microsites inside the channel where the data already is",
+      "blurb": "Slackforce Surfaces lets you describe a report, poll, dashboard or presentation to Slackbot, which pulls from conversations and connected apps like Drive or Salesforce, then pins the result to a channel for others to use and comment on. It is available to all workspaces with Slackbot enabled, free tier included.",
+      "tags": ["tools", "vibe coding", "slack"],
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
+          "headline": "Slack can now vibe-code interactive charts and reports inside chats"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Most of AUTOMATIC1111 rebuilt as a node graph you can duplicate and rewire",
+      "blurb": "Workflow1111 is eleven media pipelines across seventy-three nodes on a single Gradio canvas: text-to-image, hi-res fix, img2img, prompt-matrix grids, VLM interrogate, detection-to-inpaint masks, ControlNet-style annotators, background removal, PNG Info and image-to-video. Runs on your own Hugging Face quota, and the Space can be duplicated and rebuilt for your own pipeline.",
+      "tags": ["image generation", "open source", "workflow"],
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/gradio-workflow-1111",
+          "headline": "Rebuilding AUTOMATIC1111 with Gradio Workflow"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 24,
+      "examples": [
+        "Caviar Paris Signs Nicolás Méndez for French Representation",
+        "Jack in the Box Brings The Simpsons Treehouse of Horror to the Drive-Thru with a Monstrous Menu for a Limited Time",
+        "Mediaplus Connect CEO Penny Took to retire after 40 years in the industry"
+      ]
+    }
+  ]
+}
