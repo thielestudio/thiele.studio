@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "generated_for": "2026-09-13",
+    "window": "2026-09-11..2026-09-13",
+    "sources_scanned": 60,
+    "items_in_window": 110,
+    "lang": "de",
+    "note": "Samstagsfenster. Viel Volumen aus Consumer-Tech, Deals und Hardware-Tests, zehn Stücke halten dem Filter stand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Ein Indie-Studio rechnet alles auf 480p herunter, weil Lesbarkeit vor Auflösung geht",
+      "blurb": "Nolan Joseph von DDDistortion argumentiert, moderne Spiele packten so viel Bildinformation auf den Schirm, dass Spieler sie nicht mehr sortieren können. Deshalb brauche das Resident-Evil-4-Remake gelbe Farbmarkierungen, wo das Original ohne auskam. Nightmare Operator läuft in Unity mit eigenen Shadern, die den 480p-Look bei jeder Ausgabeauflösung erzwingen, dazu volumetrischer Nebel als bewusst moderner Effekt im Retro-Rahmen.",
+      "tags": ["game-design", "lesbarkeit", "shader"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/3d/video-game-design/nightmare-operator-is-like-resident-evil-4-and-shin-megami-tensei-had-a-ps1-baby-then-taught-it-fighting-game-mechanics",
+          "headline": "Nightmare Operator is like Resident Evil 4 and Shin Megami Tensei had a PS1 baby, then taught it fighting-game mechanics"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Eine Traditionsmarke modernisiert ausgerechnet das Element, das die Arbeit schon gemacht hat",
+      "blurb": "Timothy Taylor's zeichnet den Landlord auf Großbritanniens meistverkauftem Cask Ale als jüngeren, sportlicheren Mann mit vollem Haar neu. Daniel John geht es nicht um die Empörung, sondern um die Verwechslung dahinter: Die Brauerei las altmodisch als unmodern und gab damit die Eigenheit her, die sie aus der Masse flacher Serifenloser heraushielt.",
+      "tags": ["rebrand", "tradition", "packaging"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/branding/i-hate-to-say-it-but-the-backlash-to-this-beer-companys-rebrand-is-justified",
+          "headline": "I hate to say it, but the backlash to this beer company's rebrand is justified"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Nach vierzig Jahren erreicht ein Zeichen ohne Briefing und mit einer Woche Frist 99 Prozent Bekanntheit",
+      "blurb": "Ken Cato zeichnete das Känguru für Australian Made 1986 in weniger als einer Woche, ohne Briefing. Heute erkennen es 99 Prozent der Australier, der Netto-Vertrauenswert liegt bei plus 82. Übertragbar ist Catos eigene Lesart: das Naheliegende nie übergehen, sondern es sichtbar machen.",
+      "tags": ["logo", "langlebigkeit", "vertrauen"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/this-logo-just-turned-40-but-it-could-have-been-made-yesterday",
+          "headline": "This logo just turned 40, but it could have been made yesterday"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Ein erfundenes Café und eine Hafenexplosion von 1944 geben der Recherche eine Richtung",
+      "blurb": "Dishoom Leeds ist um das Café Flamingo gebaut, ein erfundenes Bombayer Lokal, dessen Besitzer im Schutt der SS-Fort-Stikine-Explosion Gold findet und damit umbaut. Ian Roome sagt, erst diese erdachte Vorgeschichte habe das Team zur Wohnarchitektur von Marine Drive und The Oval geführt statt zu bekannten Bauten. Von dort stammen die Details im Raum.",
+      "tags": ["interior", "narrativ", "recherche"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/how-macaulay-sinclair-brought-1950s-bombay-art-deco-to-dishoom-leeds/",
+          "headline": "How Macaulay Sinclair brought 1950s Bombay Art Deco to Dishoom Leeds"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Geokoordinaten statt Länderklischees tragen das Personal Branding eines Spitzenkochs",
+      "blurb": "Kiko Martins hat in über zwanzig Ländern gekocht, und genau das sollte der Auftritt erzählen, ohne die üblichen Herkunftszeichen. Die Peter Schmidt Group in Lissabon suchte stattdessen nach dem, was alle Orte verbindet, und landete bei Grad, Minuten, Sekunden. Das reduzierte Logo läuft gestickt auf Schürzen, geprägt auf Tellern und gedruckt auf Menüs. Ausgezeichnet mit einem D&AD Pencil und FAB Gold in Brand Identity.",
+      "tags": ["personal-branding", "identity", "gastronomie"],
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/koordinaten-eines-kuechenchefs-der-clevere-neue-look-von-kiko-martins/",
+          "headline": "Koordinaten eines Küchenchefs: der clevere neue Look von Kiko Martins"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Fünf KI-Projekte, die funktionieren, und die eine Linie, die alle an derselben Stelle ziehen",
+      "blurb": "Sam Illingworth schreibt sonst über KI, die danebengeht. Hier sammelt er ein EKG-Modell, das Herzschwäche erkennt, die FireSat-Satelliten, ein Jahrhundert Klimasignal aus Herbarbögen und zwei weitere Fälle. Was sie teilen, benennt er klar: Jedes beantwortet, wo zuerst hingeschaut wird, und gibt die Entscheidung zurück an einen Menschen. Jedes läuft außerdem auf Daten, die ohnehin schon erhoben wurden, und macht Arbeit, die vorher niemand gemacht hat.",
+      "tags": ["ki-bewertung", "mensch-im-loop"],
+      "sources": [
+        {
+          "name": "Sam Illingworth",
+          "url": "https://theslowai.substack.com/p/good-ai-examples-that-work",
+          "headline": "I Spend My Life Criticising AI. These Five Stopped Me."
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "25 Fields-Medaillisten nennen ihr Zuschreibungsproblem dasselbe, das kreative Berufe längst haben",
+      "blurb": "Der offene Brief argumentiert, dass hastig verkündete Beweise keine Zeit lassen, Methoden herauszuarbeiten und Vorarbeiten zu zitieren, und benennt die Folge ausdrücklich als die Frage nach Zuschreibung und Plagiat, wie sie in allen kreativen Berufen auftritt. Drumherum: der Vorwurf, OpenAI habe einen NYU-Professor gedrängt, einen Anthropic-Mitarbeiter nicht zu nennen, ein zurückgezogenes CalTech-Sponsoring und Forscher, die sich fragen, ob ihre eigene Codex-Nutzung ins nächste Modell geflossen ist.",
+      "tags": ["zuschreibung", "trainingsdaten", "offener-brief"],
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
+          "headline": "OpenAI s feud with mathematicians is only escalating"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Anthropic öffnet seine Modelle für externe Prüfer und bittet den Rest der Branche, mitzubremsen",
+      "blurb": "Dario Amodeis Dreistufenplan beginnt mit dem einzigen Teil, den Anthropic allein umsetzen kann: Externe Prüfstellen wie METR bekommen weitreichenden Zugang, um die Einhaltung der Sicherheitszusagen zu kontrollieren. Stufe zwei und drei hängen davon ab, dass Wettbewerber und Regierungen gemeinsame Standards und Tempogrenzen vereinbaren. Genau das hat bisher niemand unterschrieben.",
+      "tags": ["sicherheit", "evaluation", "politik"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
+          "headline": "Anthropic CEO says it’s time to pump the brakes on AI"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
+          "headline": "Anthropic CEO outlines plan to slow AI development"
+        },
+        {
+          "name": "THE DECODER",
+          "url": "https://the-decoder.de/anthropic-chef-dario-amodei-warnt-vor-ki-selbstverbesserung-und-fordert-ein-tempolimit-fuer-die-branche/",
+          "headline": "Anthropic-Chef Dario Amodei warnt vor KI-Selbstverbesserung und fordert ein Tempolimit für die Branche"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "OpenAI rät, die über Monate angesammelten Skills und Prompts beim Modellwechsel wegzuwerfen",
+      "blurb": "Eric Provencher schreibt, zu breit beschriebene Skills führten dazu, dass Codex das falsche auswählt, und pauschale Lesepflichten in AGENTS.md kosteten Kontext ohne Gegenwert. GPT-6 Astra brauche ein klares Ziel und eine klare Definition, wann die Arbeit erledigt ist, statt vieler Einzelschritte. Leistungsfähigere Modelle wollen weniger Anleitung, nicht mehr.",
+      "tags": ["prompting", "agents-md", "skills"],
+      "sources": [
+        {
+          "name": "THE DECODER",
+          "url": "https://the-decoder.de/alte-prompts-und-skills-werden-bei-gpt-6-astra-laut-openai-zum-problem/",
+          "headline": "Alte Prompts und Skills werden bei GPT-6-Astra laut OpenAI zum Problem"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Gemessen: Kontextdateien verbessern die Erfolgsquote von Coding-Agenten nicht, kosten aber 20 Prozent mehr",
+      "blurb": "Die ETH Zürich und Logicstar.ai testeten vier Agenten mit passenden Modellen an 138 echten Github-Problemen aus zwölf Nischenprojekten, jeweils ohne Kontextdatei, mit einer selbst erzeugten und mit der Originaldatei der Entwickler. Die Erfolgsraten stiegen im Allgemeinen nicht, die Inferenzkosten im Schnitt um über 20 Prozent.",
+      "tags": ["studie", "coding-agenten", "kontext"],
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/kontextdateien-agents-md-ki-coding-studie-eth-zuerich-ineffizient-1760349/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "Kontextdateien für KI-Coding: Studie entlarvt beliebte Praxis als ineffizient"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 13,
+      "examples": [
+        "RBC Insurance turns to comedy to break through Canadians’ avoidance of insurance",
+        "Caviar Paris Signs Nicolás Méndez for French Representation",
+        "Jack in the Box Brings The Simpsons Treehouse of Horror to the Drive-Thru"
+      ]
+    }
+  ]
+}

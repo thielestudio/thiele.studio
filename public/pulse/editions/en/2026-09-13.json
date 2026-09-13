@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "generated_for": "2026-09-13",
+    "window": "2026-09-11..2026-09-13",
+    "sources_scanned": 60,
+    "items_in_window": 65,
+    "lang": "en",
+    "note": "Saturday window. Much of the volume was consumer tech, deals and hardware reviews; seven pieces survived the filter."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "An indie studio downscales everything to 480p because readability beat fidelity",
+      "blurb": "Nolan Joseph of DDDistortion argues modern games put so much visual information on screen that players cannot parse it, which is why the Resident Evil 4 remake needs arbitrary yellow paint where the original did not. Nightmare Operator runs in Unity with custom shaders that force a consistent 480p look at any output resolution, plus volumetric fog, a deliberately modern effect inside a retro frame.",
+      "tags": ["game-design", "readability", "shaders"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/3d/video-game-design/nightmare-operator-is-like-resident-evil-4-and-shin-megami-tensei-had-a-ps1-baby-then-taught-it-fighting-game-mechanics",
+          "headline": "Nightmare Operator is like Resident Evil 4 and Shin Megami Tensei had a PS1 baby, then taught it fighting-game mechanics"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "A heritage brand modernised the one asset that was already doing the work",
+      "blurb": "Timothy Taylor's redrew the landlord on Britain's best-selling cask ale as a younger, fitter, full-haired man. Daniel John's point is not the outrage but the mix-up behind it: the brewery read old-fashioned as unfashionable, and traded away the peculiarity that kept it out of the flat sans-serif crowd.",
+      "tags": ["rebrand", "heritage", "packaging"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/branding/i-hate-to-say-it-but-the-backlash-to-this-beer-companys-rebrand-is-justified",
+          "headline": "I hate to say it, but the backlash to this beer company's rebrand is justified"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Forty years on, a mark drawn in under a week with no brief still polls at 99 percent recognition",
+      "blurb": "Ken Cato drew the Australian Made kangaroo in 1986 to a deadline of less than a week and without a brief. It now scores 99 percent recognition and a net trust of +82, and Cato's own reading of why is the transferable part: never ignore the obvious, just make the obvious visible.",
+      "tags": ["logo", "longevity", "trust"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/this-logo-just-turned-40-but-it-could-have-been-made-yesterday",
+          "headline": "This logo just turned 40, but it could have been made yesterday"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "A fictional cafe and a 1944 dock explosion gave the research somewhere to point",
+      "blurb": "Dishoom Leeds is built around Cafe Flamingo, an invented Bombay cafe whose owner finds gold in the rubble of the SS Fort Stikine blast and rebuilds with it. Director Ian Roome says the made-up backstory is what sent the team to the residential Art Deco of Marine Drive and The Oval rather than to landmark architecture, which is where the detail in the room comes from.",
+      "tags": ["interior", "narrative", "research"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/how-macaulay-sinclair-brought-1950s-bombay-art-deco-to-dishoom-leeds/",
+          "headline": "How Macaulay Sinclair brought 1950s Bombay Art Deco to Dishoom Leeds"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Five AI projects that work, and the one line all of them draw in the same place",
+      "blurb": "Sam Illingworth, who normally writes about AI failing, collects an ECG model that flags heart failure, the FireSat satellites, a century of climate signal read out of herbarium sheets and two more, then names what they share: each answers where to look first and hands the decision back to a person. Each also runs on data somebody was already collecting, and each does work nobody was doing.",
+      "tags": ["ai-evaluation", "human-in-the-loop"],
+      "sources": [
+        {
+          "name": "Sam Illingworth",
+          "url": "https://theslowai.substack.com/p/good-ai-examples-that-work",
+          "headline": "I Spend My Life Criticising AI. These Five Stopped Me."
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Twenty-five Fields medallists say their attribution problem is the one creative professions already have",
+      "blurb": "The open letter argues that rushed proof announcements leave no room to isolate methods or cite prior work, and says in as many words that this raises the attribution and plagiarism questions common to all creative professions. Around it: a claim that OpenAI pressured an NYU professor not to credit an Anthropic collaborator, a withdrawn CalTech sponsorship, and researchers wondering whether their own Codex use fed the next model.",
+      "tags": ["attribution", "training-data", "open-letter"],
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
+          "headline": "OpenAI s feud with mathematicians is only escalating"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Anthropic opens its models to outside evaluators and asks the rest of the industry to slow down with it",
+      "blurb": "Dario Amodei's three-step plan starts with the only part Anthropic can do alone: giving third-party evaluators such as METR wide access to check its safety commitments. Steps two and three depend on competitors and governments agreeing common standards and limits on the rate of unchecked progress, which is the part nobody has signed.",
+      "tags": ["safety", "evaluation", "policy"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
+          "headline": "Anthropic CEO says it’s time to pump the brakes on AI"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
+          "headline": "Anthropic CEO outlines plan to slow AI development"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 13,
+      "examples": [
+        "RBC Insurance turns to comedy to break through Canadians’ avoidance of insurance",
+        "Caviar Paris Signs Nicolás Méndez for French Representation",
+        "Jack in the Box Brings The Simpsons Treehouse of Horror to the Drive-Thru"
+      ]
+    }
+  ]
+}
