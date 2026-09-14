@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "generated_for": "2026-09-14",
+    "window": "2026-09-12..2026-09-14",
+    "sources_scanned": 60,
+    "items_in_window": 36,
+    "lang": "en",
+    "note": "Sunday window. The international feeds were dominated by deals, hardware reviews and a second day of the AI pacing debate that yesterday's edition already covered, so five pieces hold."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Apple's three rules for the folding iPhone start by banning pixel measurements from your layout",
+      "blurb": "The Product Briefing distils Apple's developer session into three instructions: build for size classes rather than screen dimensions, put controls in the new vertical sidebar and give content the rest, and rearrange on the inner display instead of stretching. The Duo section sits inside the weekly briefing alongside other stories.",
+      "tags": ["mobile", "layout", "apple"],
+      "sources": [
+        {
+          "name": "Department of Product",
+          "url": "https://departmentofproduct.substack.com/p/anthropic-ceo-warns-about-the-dangers",
+          "headline": "Anthropic CEO warns about the dangers of a “fanatically devoted collective” of AI agents"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "A pictogram for crane operators becomes the logo of a Helsinki cultural destination",
+      "blurb": "hasan & partners built the Train Factory identity not on the site's locomotive history but on the small utilitarian mark stencilled on carriage sides to show where a wagon can safely be lifted. That symbol becomes the brand's T, which gives the geometric sans a reason to exist rather than a trend to follow.",
+      "tags": ["identity", "logo", "typography"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/this-beautiful-logo-shows-theres-plenty-of-life-in-minimalist-design-yet",
+          "headline": "This beautiful logo shows there's plenty of life in minimalist design yet"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Desigual casts the person who is already having the argument in real life",
+      "blurb": "In Born to Disobey, Vivian Jenna Wilson takes on a robot modelled on the Tesla Optimus. She is the estranged daughter of Tesla's CEO and has publicly criticised AI's effect on creative jobs, and the production adds one more turn: the robot is played by a human actor who studied Optimus footage to imitate its movement.",
+      "tags": ["campaign", "casting", "fashion"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/ai/elon-musks-daughters-tesla-trolling-fashion-advert-is-as-cinematic-as-star-wars",
+          "headline": "Elon Musk's daughter's Tesla-trolling fashion advert is as cinematic as Star Wars"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Guinness stops placing the harp beside the words and sets it inside one",
+      "blurb": "AMV BBDO swaps the V in Lovely for the 160-year-old harp across a new global out-of-home run, reviving the Lovely Day for a Guinness platform that dates back to the 1930s. The item sits in Design Week's weekly digest, alongside Universal Favourite's appointment as lead design partner for LION's beverage portfolio.",
+      "tags": ["ooh", "brand mark", "typography"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-outline-guinness-new-balance-and-kfc-14-09-2026/",
+          "headline": "The Outline: Guinness, New Balance, and KFC 14/09/2026"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "What is wrong with the AI menu boards is not the rendering, it is the missing decision",
+      "blurb": "CNN traced the same generated food images to night markets in Hollywood, sandwich shops in Tokyo, restaurants in Kuala Lumpur and cafés in Berlin, and the same tells recur: too many crusts, a perfect seamed sphere of ice cream. The argument is that the defect is not image quality but that fewer people are left deciding what is worth making at all.",
+      "tags": ["ai imagery", "judgment", "slop"],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/why-people-hate-viral-ai-food-posters-db2b4329ae11",
+          "headline": "The real reason everyone hates the viral AI food slop images"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 2,
+      "examples": [
+        "From Buying Space to Applied Intelligence: The Future of Media Strategy",
+        "From Music Studios to Film Strategy: Building Stories with Access and Intention"
+      ]
+    }
+  ]
+}

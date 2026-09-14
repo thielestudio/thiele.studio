@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "generated_for": "2026-09-14",
+    "window": "2026-09-12..2026-09-14",
+    "sources_scanned": 60,
+    "items_in_window": 72,
+    "lang": "de",
+    "note": "Sonntagsfenster. Das internationale Material besteht fast nur aus Deal-Meldungen und Hardware-Tests, die deutschsprachigen Quellen tragen heute den groesseren Teil."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Apple sagt fuer das faltbare iPhone drei Regeln an, und die erste verbietet Pixelmasse im Layout",
+      "blurb": "Aus Apples Entwickler-Video destilliert das Product Briefing drei Vorgaben: nach Groessenklassen bauen statt nach Bildschirmmassen, Bedienelemente in die neue vertikale Seitenleiste und Inhalt in den Rest, und beim Aufklappen umbauen statt dehnen. Die Duo-Passage steht im woechentlichen Rundbrief neben anderen Meldungen.",
+      "tags": ["mobile", "layout", "apple"],
+      "sources": [
+        {
+          "name": "Department of Product",
+          "url": "https://departmentofproduct.substack.com/p/anthropic-ceo-warns-about-the-dangers",
+          "headline": "Anthropic CEO warns about the dangers of a “fanatically devoted collective” of AI agents"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Zwei Jahre Feldversuch: Die Gruppe ohne KI landete beide Male auf dem letzten Platz",
+      "blurb": "Ein Rechtswissenschaftler der Vrije Universiteit Amsterdam teilte seinen Kurs zufaellig in drei Gruppen, die dieselbe Vorschrift des EU-AI-Acts verbessern sollten. Ohne Werkzeug gingen den Gruppen nach zehn bis fuenfzehn Minuten die Ideen aus, mit Vorschlaegen aber ohne Anleitung uebernahm jede Untergruppe mindestens einen irrefuehrenden Begriff des Modells, und nur die geschulte Gruppe trat in einen echten Dialog mit der KI.",
+      "tags": ["ki-nutzung", "studie", "urteil"],
+      "sources": [
+        {
+          "name": "THE DECODER",
+          "url": "https://the-decoder.de/zweijaehrige-uni-studie-zeigt-ki-verbot-schadet-studierenden-mehr-als-es-nuetzt/",
+          "headline": "Zweijährige Uni-Studie zeigt: KI-Verbot schadet Studierenden mehr als es nützt"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Ein Piktogramm fuer Kranfuehrer wird zum Logo eines Kulturorts in Helsinki",
+      "blurb": "hasan & partners baut die Identity fuer die Train Factory nicht auf der Lokomotiv-Geschichte des Ortes auf, sondern auf einem Hinweiszeichen auf Waggonflanken, das anzeigt, wo ein Wagen sicher angehoben werden darf. Daraus wird das T der Marke, und die geometrische Groteske ist damit begruendet statt ausgewaehlt.",
+      "tags": ["identity", "logo", "typografie"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/this-beautiful-logo-shows-theres-plenty-of-life-in-minimalist-design-yet",
+          "headline": "This beautiful logo shows there's plenty of life in minimalist design yet"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Desigual besetzt die Rolle mit der Person, die den Streit im echten Leben fuehrt",
+      "blurb": "In Born to Disobey tritt Vivian Jenna Wilson gegen einen Roboter an, der dem Tesla Optimus nachempfunden ist. Sie ist die entfremdete Tochter des Tesla-Chefs und hat sich selbst gegen KI in kreativen Berufen geaeussert, und die Produktion dreht die Pointe noch einmal: Den Roboter spielt ein Mensch, der dessen Bewegungen aus Videos gelernt hat.",
+      "tags": ["kampagne", "casting", "fashion"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/ai/elon-musks-daughters-tesla-trolling-fashion-advert-is-as-cinematic-as-star-wars",
+          "headline": "Elon Musk's daughter's Tesla-trolling fashion advert is as cinematic as Star Wars"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Guinness setzt die Harfe nicht als Signet daneben, sondern als Buchstaben mitten ins Wort",
+      "blurb": "AMV BBDO tauscht in der neuen globalen Aussenwerbung das V in Lovely gegen die 160 Jahre alte Harfe und belebt damit die Plattform Lovely Day for a Guinness aus den Dreissigerjahren neu. Die Meldung steht im Wochenueberblick von Design Week, zusammen mit der Ernennung von Universal Favourite zum Leitstudio der LION-Getraenkemarken.",
+      "tags": ["ooh", "markenzeichen", "typografie"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-outline-guinness-new-balance-and-kfc-14-09-2026/",
+          "headline": "The Outline: Guinness, New Balance, and KFC 14/09/2026"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "In einer Kategorie voller Claims laesst Gebrueder die Verpackung schweigen",
+      "blurb": "Fuer den Pinù High Protein Drink verzichtet das Hamburger Studio auf die ueblichen Funktionsversprechen der Protein-Regale und zeigt nur fein illustriert die Zutat der jeweiligen Sorte, Pistazie oder Vanille. Designer Daniel Belliero nennt das Prinzip weniger Verpackung, mehr Produkt, und das System ist auf ein wachsendes Sortiment ausgelegt.",
+      "tags": ["packaging", "food", "minimalismus"],
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/anders-als-andere-gebrueder-designt-veganen-protein-drink-pinu/",
+          "headline": "Anders als andere: Gebrueder designt veganen Protein-Drink Pinù"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Der Fehler an den KI-Speisekarten liegt nicht im Bild, sondern in der fehlenden Entscheidung",
+      "blurb": "CNN hat dieselben generierten Speisebilder in Nachtmaerkten in Hollywood, Imbissen in Tokio, Lokalen in Kuala Lumpur und Cafés in Berlin gefunden, und die immer gleichen Fehler faellen jedem auf, ohne dass er sie benennen kann. Die These des Textes: Nicht die Bildqualitaet ist das Problem, sondern dass kaum noch jemand entscheidet, was ueberhaupt gemacht werden sollte.",
+      "tags": ["ki-bilder", "urteil", "slop"],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/why-people-hate-viral-ai-food-posters-db2b4329ae11",
+          "headline": "The real reason everyone hates the viral AI food slop images"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Bei Deezer war im Juni jeder zweite Upload maschinell erzeugt, und die Plattformen kennzeichnen Verschiedenes",
+      "blurb": "Deezer zaehlte 90.000 KI-Titel pro Tag und damit ueber die Haelfte aller Uploads, nimmt sie aus Empfehlungen und Tantiemen heraus. Apple Music und Tidal kennzeichnen inzwischen ebenfalls, Spotify markiert ab Mitte September dagegen KI-Personas, also Accounts statt einzelner Stuecke.",
+      "tags": ["musik", "kennzeichnung", "plattformen"],
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/ki-musik-labels-spotify-apple-music-deezer-kennzeichnung-streaming-1762011/",
+          "headline": "90.000 KI-Songs pro Tag: Warum Streaming-Dienste jetzt Labels einführen"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Elevenlabs legt beim Musikmodell nach und wirbt vor allem mit der Herkunft der Trainingsdaten",
+      "blurb": "Music v2.5 setzte sich in einem Blindtest mit 47.885 Vergleichspaaren meist gegen den Vorgaenger durch, am deutlichsten bei R&B, Soul, Hip-Hop, Rock und Orchestermusik. Fuer kommerzielle Arbeit zaehlt die zweite Haelfte der Meldung: Elevenlabs gibt an, mit lizenzierter Musik trainiert zu haben, Nutzer behalten die Rechte an ihren Stuecken, und Downloads von Stuecken nach fremden Songs werden gesperrt.",
+      "tags": ["musik", "lizenzen", "werkzeuge"],
+      "sources": [
+        {
+          "name": "THE DECODER",
+          "url": "https://the-decoder.de/elevenlabs-stellt-neues-ki-musikmodell-music-2-5-vor-das-natuerlicher-klingen-soll/",
+          "headline": "Elevenlabs stellt neues KI-Musikmodell Music 2.5 vor, das natürlicher klingen soll"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 2,
+      "examples": [
+        "From Buying Space to Applied Intelligence: The Future of Media Strategy",
+        "From Music Studios to Film Strategy: Building Stories with Access and Intention"
+      ]
+    }
+  ]
+}
