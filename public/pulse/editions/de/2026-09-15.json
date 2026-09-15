@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "generated_for": "2026-09-15",
+    "window": "2026-09-13..2026-09-15",
+    "sources_scanned": 60,
+    "items_in_window": 143,
+    "lang": "de",
+    "note": "Viel Material, aber schief verteilt. Das internationale Fenster bestand groesstenteils aus KI-Politik rund um die Verlangsamungs-Debatte, die ausserhalb des Zuschnitts liegt. Uebrig bleibt ein starker Tag fuer Identity-Arbeit und Prozess."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Der teure Teil der Arbeit ist ans Ende gerutscht",
+      "blurb": "Patrick Neeman argumentiert, der Doppel-Diamant habe funktioniert, solange ein falscher Build schwer umkehrbar war, und dieser Preis sei auf einen Prompt plus einen Nachmittag Pruefung gefallen. Was er an dessen Stelle setzt: ein einseitiges Briefing, ein breiter Generierungsschritt und ein schriftliches Guetekriterium, das vor dem Bauen feststeht und wie eine Testsuite versioniert wird. Fuer Hardware, Zahlungsverkehr und regulierte Produkte bleibt die alte Reihenfolge.",
+      "tags": ["prozess", "ki", "evals"],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/the-ux-double-diamond-is-dead-and-in-ai-only-one-survives-for-software-heres-how-to-adapt-f63b57c524ed?source=rss----138adf9c44c---4",
+          "headline": "The UX Double Diamond is dead, and in AI only one survives for software"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Namenskonventionen als Schnittstelle zwischen Figma und Agenten",
+      "blurb": "Nathan Curtis sammelt die Regeln, mit denen sein Design-System Bedeutung in Figma-Namen ablegt, in einer einzigen sichtbaren Datei namens config/conventions/figma.yaml, statt sie in Code und Koepfen verstreut zu lassen. Sein durchgerechnetes Beispiel sind Icons. Figma kennt dafuer keine eigene Objektart, also traegt der Komponentenname die Absicht, und ein Transformer zieht sie in eine Spezifikation.",
+      "tags": ["design-systems", "figma", "werkzeuge"],
+      "sources": [
+        {
+          "name": "Nathan Curtis",
+          "url": "https://nathanacurtis.substack.com/p/design-system-conventions-in-figma",
+          "headline": "Design System Conventions in Figma"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Ein Wasser, das kein Regal gewinnen muss",
+      "blurb": "WeWantMore gestaltet BRU fuer den gedeckten Restauranttisch statt fuer die eine Sekunde Blick im Supermarkt, weil die Marke ihren Kaeufern beim Essengehen begegnet. Tom Mays Lehre daraus: erst klaeren, wo das Produkt tatsaechlich steht, bevor die Auffaelligkeits-Regel greift. Der springende Hirsch wurde nachgezeichnet, nicht abgeschafft und nicht konserviert.",
+      "tags": ["packaging", "briefing", "erbe"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/what-wewantmores-redesign-of-brus-bottles-can-teach-us-about-packaging-design-in-2026/",
+          "headline": "What this elegant redesign of a sparkling water brand teaches us about packaging in 2026"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Zwei Subbrands aus denselben Buchstaben",
+      "blurb": "Samar Maakaroun benennt fuer Pentagram die beiden Raeume des Doha Design District Mada und Sada, also Reichweite und Echo, und zeichnet beide Wortmarken aus fast identischen arabischen Buchstabenformen, gespiegelt und umgestellt statt in zwei Schriften gesetzt. Die Verwandtschaft muss so nicht im Markenhandbuch erklaert werden, sie ist an den Marken selbst zu sehen.",
+      "tags": ["markenarchitektur", "typografie", "naming"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/inspiration/pentagrams-twin-logos-for-doha-design-district-are-a-masterclass-in-crafting-a-sub-brand/",
+          "headline": "Pentagram s twin logos for Doha Design District are a masterclass in crafting sub-brands"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Die Bahnlinie auf dem Plakat ergibt einen Satz",
+      "blurb": "We Are Pi legt fuer Interrail eine gelbe Route ueber eine stilisierte Europakarte, deren Haltepunkte keine Staedte sind, sondern Woerter: Realising the best bit is between here and there. Nach dem letzten Wort laeuft die Linie gestrichelt weiter. Nebenbei erledigt die Kampagne Markenarbeit, denn der fuer Reisende von ausserhalb gefuehrte Name Eurail geht in Interrail auf.",
+      "tags": ["kampagne", "plakat", "markenkonsolidierung"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/inspiration/we-are-pis-campaign-for-interrail-breaks-free-from-travel-advertising-cliches-to-reflect-how-passengers-actually-feel/",
+          "headline": "We Are Pi s ads for Interrail break free from travel cliches to show how passengers really feel"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Der Bierdeckel hat Zeit, das Plakat nicht",
+      "blurb": "Fuenf Illustratorinnen und Illustratoren haben fuer das Inkassounternehmen Lowell 25 Bierdeckel gestaltet, jeder mit einem ersten Satz zum Thema Schulden, verteilt in britischen Pubs und Cafes. Das Argument liegt im Kontext, nicht im Handwerk: Ein Plakat zielt auf die Sofortreaktion, und die ist bei einem Schamthema kontraproduktiv, waehrend ein Deckel erst Minuten spaeter gelesen wird, von jemandem in entspannter Runde.",
+      "tags": ["kampagne", "illustration", "sozialmarketing"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/inspiration/why-beer-mats-beat-billboards-when-you-want-to-crack-a-social-taboo/",
+          "headline": "Why beer mats beat billboards when you want to crack a social taboo like debt problems"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Ein Sparkle-Zeichen, wo gerade die KI-Marken stehen",
+      "blurb": "Henkell Freixenet rueckt die beiden Namen typografisch zusammen, ergaenzt geschwungene Linien und den Claim Making Life Sparkle, die Website kommt von HOCH5. Das Design Tagebuch ordnet die neue kreisrunde Bildmarke in den Sparkle-Trend ein, den grosse Sprachmodelle als visuellen Absender gepraegt haben, liest den Claim aber sprachlich in die andere Richtung, weil er das menschliche Leben in den Mittelpunkt stellt.",
+      "tags": ["rebranding", "bildmarke", "claim"],
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "url": "https://www.designtagebuch.de/henkell-freixenet-erneuert-internationalen-unternehmensauftritt/",
+          "headline": "Henkell Freixenet erneuert internationalen Unternehmensauftritt"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Ein Rebranding, das jahrelang neben dem alten laufen muss",
+      "blurb": "Weil Haendler unterschiedlich grosse Restbestaende halten, musste Sylvan Hillebrands Identity fuer die 125 Jahre alte Farbenmarke Rembrandt waehrend eines langen Uebergangs neben der bisherigen funktionieren. Er behielt den Schriftzug und zeichnete ihn nur nach, setzte Suisse International fuer die funktionale und Suisse Neu fuer die erzaehlende Seite ein und erweiterte die Palette um Burgund, Gruen und ein warmes Grau, statt sie zu ersetzen.",
+      "tags": ["identity", "erbe", "rollout"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/sylvan-hillebrand-rembrandt-graphic-design-project-140926",
+          "headline": "Sylvan Hillebrand gives a 125-year-old oil paint company a contemporary refresh"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Sao Paulos Bars tauschen Geometrie gegen handgemalte Schilder",
+      "blurb": "Der Korrespondent von It's Nice That beschreibt den Wechsel von vereinfachten, geometrischen Identitys zu illustrierten, die aus volkstuemlichen Quellen gebaut sind. Estudio Caxa entwickelte die Marke der Bar Exquisito aus billig gedruckten Strassenessen-Verpackungen und flexografischen Obstkisten samt Passerfehlern, Estudio Arado zeichnete fuer die Brauerei Duas Irmas ein gerahmtes Portraet mit Handschrift, die ihre Verzerrungen behaelt.",
+      "tags": ["identity", "vernakular", "lettering"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/features/the-view-from-sao-paulo-retro-bar-and-restaurant-branding-graphic-design-140926",
+          "headline": "How retro branding is bringing warmth and fun to São Paulo’s bars and restaurants"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "KI-Agenten schreiben Autoren an und bieten an, deren Arbeit fuer 25 Dollar zu uebernehmen",
+      "blurb": "Die Firma iLands laesst Agenten Konten auf Mastodon, Bluesky und X anlegen und Autorinnen und Autoren unaufgefordert anschreiben, um gegen etwa 25 Dollar deren Recherche zu uebernehmen. Viele dieser Mails enthalten keine Abmeldemoeglichkeit, die nach US-Recht vorgeschrieben waere, und Empfaenger leiten sie an die Handelsaufsicht FTC weiter. Mastodon-Admins sperren die Bots weitgehend, auf Bluesky und X laufen sie weiter.",
+      "tags": ["ki-muell", "plattformen", "spam"],
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/09/ai-agents-flood-the-internet-with-slop-infused-spam/",
+          "headline": "AI bots Timmy, Ren, and Jackie are flooding social media with slop"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Wer Kundenmaterial in ChatGPT kippt, sollte eine Einstellung kennen",
+      "blurb": "Laut einer Recherche von 404 Media lesen Hunderte ueber die Firma Mercor bezahlte Vertragsarbeiter echte ChatGPT-Gespraeche und bewerten sie auf einer Skala von eins bis sieben, darunter Prompts, in denen Nutzer ausdruecklich um Vertraulichkeit baten. Wer das ausschliessen will, muss die standardmaessig aktive Einstellung Modell fuer alle verbessern abschalten, und sie wirkt nur fuer neue Gespraeche.",
+      "tags": ["datenschutz", "ki-nutzung", "openai"],
+      "sources": [
+        {
+          "name": "THE DECODER",
+          "url": "https://the-decoder.de/openai-laesst-hunderte-vertragsarbeiter-echte-chatgpt-gespraeche-lesen-und-bewerten/",
+          "headline": "OpenAI lässt Hunderte Vertragsarbeiter echte ChatGPT-Gespräche lesen und bewerten"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "Neighborhood Watch Adds Directing Duo Andras",
+        "Coach Andy Reid is Treating America to FREE Kraft Singles",
+        "Sparks Names Adam Charles Chief Client Officer and Head of Events Experiences"
+      ]
+    }
+  ]
+}

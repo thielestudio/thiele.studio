@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "generated_for": "2026-09-15",
+    "window": "2026-09-13..2026-09-15",
+    "sources_scanned": 60,
+    "items_in_window": 94,
+    "lang": "en",
+    "note": "Volume was high but lopsided. Most of the international window was AI policy news around the slowdown debate, which sits outside the cut. What is left is a strong day for identity work and process."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "The expensive half of the process has moved to the end",
+      "blurb": "Patrick Neeman's case: the double diamond priced building as the near-irreversible step, and that price collapsed to a prompt and an afternoon of review. His replacement is a one-page brief, a wide generation step, and a written standard of good agreed before anything is made, versioned and argued over like a test suite. He keeps the front-loaded order for hardware, payments rails and anything a regulator has to approve.",
+      "tags": ["process", "ai", "evals"],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/the-ux-double-diamond-is-dead-and-in-ai-only-one-survives-for-software-heres-how-to-adapt-f63b57c524ed?source=rss----138adf9c44c---4",
+          "headline": "The UX Double Diamond is dead, and in AI only one survives for software"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Naming conventions as the interface between Figma and agents",
+      "blurb": "Nathan Curtis moves the rules that carry design system meaning through Figma names into one visible file, config/conventions/figma.yaml, instead of letting them leak by inference across code and people's heads. Icons are the worked example: Figma has no first-class icon object, so the component name carries the intent and a transformer pulls it into a spec.",
+      "tags": ["design-systems", "figma", "tooling"],
+      "sources": [
+        {
+          "name": "Nathan Curtis",
+          "url": "https://nathanacurtis.substack.com/p/design-system-conventions-in-figma",
+          "headline": "Design System Conventions in Figma"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "A water bottle that never has to win a shelf",
+      "blurb": "WeWantMore designed BRU for the restaurant table rather than the one-second supermarket glance, on the grounds that the brand's buyers meet it while eating out. Tom May's takeaway is to establish where the product actually stands before applying the stand-out rule, and to modernise inherited assets rather than keep or scrap them: the leaping stag was redrawn, not retired.",
+      "tags": ["packaging", "brief", "heritage"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/what-wewantmores-redesign-of-brus-bottles-can-teach-us-about-packaging-design-in-2026/",
+          "headline": "What this elegant redesign of a sparkling water brand teaches us about packaging in 2026"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Two sub-brands built from the same letterforms",
+      "blurb": "Pentagram's Samar Maakaroun named the two spaces of Doha Design District Mada and Sada, range and echo, and drew both wordmarks from near-identical Arabic letterforms, mirrored and rearranged rather than set in two typefaces. The relationship does not have to be explained in a brand guideline because it is visible in the marks themselves.",
+      "tags": ["brand-architecture", "typography", "naming"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/inspiration/pentagrams-twin-logos-for-doha-design-district-are-a-masterclass-in-crafting-a-sub-brand/",
+          "headline": "Pentagram s twin logos for Doha Design District are a masterclass in crafting sub-brands"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "The rail line on the poster spells out a sentence",
+      "blurb": "We Are Pi runs a single yellow route across a stylised map of Europe whose stops are words, not cities: \"Realising the best bit is between here and there.\" After the last word the line carries on dotted. The campaign also covers brand housekeeping, folding the Eurail name for non-European travellers into Interrail.",
+      "tags": ["campaign", "poster", "brand-consolidation"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/inspiration/we-are-pis-campaign-for-interrail-breaks-free-from-travel-advertising-cliches-to-reflect-how-passengers-actually-feel/",
+          "headline": "We Are Pi s ads for Interrail break free from travel cliches to show how passengers really feel"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "A beer mat has time, a billboard does not",
+      "blurb": "Five illustrators made 25 coasters for the credit management firm Lowell, each carrying one opening line about debt, distributed through UK pubs and cafes. The argument is about context, not craft: a billboard is built for the instant reaction, and with a taboo like debt that reaction is shame, while a coaster is only read minutes later, by someone already relaxed and in company.",
+      "tags": ["campaign", "illustration", "social-marketing"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/inspiration/why-beer-mats-beat-billboards-when-you-want-to-crack-a-social-taboo/",
+          "headline": "Why beer mats beat billboards when you want to crack a social taboo like debt problems"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "A rebrand that has to run alongside the old one for years",
+      "blurb": "Because retailers hold different amounts of existing stock, Sylvan Hillebrand's identity for the 125-year-old paint brand Rembrandt had to coexist with its predecessor through a long transition. He kept the logotype and only redrew and rekerned it, added Suisse International and Suisse Neu as a functional and a heritage voice, and widened the palette with burgundy, green and warm grey instead of replacing it.",
+      "tags": ["identity", "heritage", "rollout"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/sylvan-hillebrand-rembrandt-graphic-design-project-140926",
+          "headline": "Sylvan Hillebrand gives a 125-year-old oil paint company a contemporary refresh"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Sao Paulo's bars are trading geometry for hand-painted signs",
+      "blurb": "It's Nice That's correspondent tracks a shift from simplified, geometric identities to illustrated ones built on vernacular sources. Estudio Caxa drew Bar Exquisito from cheap street-food packaging and flexographic fruit boxes, misregistration included, while Estudio Arado gave the Duas Irmas brewery a framed portrait and hand lettering that keeps its distortions.",
+      "tags": ["identity", "vernacular", "lettering"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/features/the-view-from-sao-paulo-retro-bar-and-restaurant-branding-graphic-design-140926",
+          "headline": "How retro branding is bringing warmth and fun to São Paulo’s bars and restaurants"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "AI agents are emailing writers to offer to do their job for $25",
+      "blurb": "A company called iLands has its agents open accounts on Mastodon, Bluesky and X and cold-email writers offering to take over their research for around $25. Many of the mails carry no way to opt out of further messages, which US law requires, and recipients have been forwarding them to the FTC. Mastodon admins have largely blocked the bots; the accounts persist on Bluesky and X.",
+      "tags": ["ai-slop", "platforms", "spam"],
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/09/ai-agents-flood-the-internet-with-slop-infused-spam/",
+          "headline": "AI bots Timmy, Ren, and Jackie are flooding social media with slop"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "Neighborhood Watch Adds Directing Duo Andras",
+        "Coach Andy Reid is Treating America to FREE Kraft Singles",
+        "Sparks Names Adam Charles Chief Client Officer and Head of Events Experiences"
+      ]
+    }
+  ]
+}
