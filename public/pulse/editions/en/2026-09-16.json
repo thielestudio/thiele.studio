@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "generated_for": "2026-09-16",
+    "window": "2026-09-14..2026-09-16",
+    "sources_scanned": 60,
+    "items_in_window": 126,
+    "lang": "en",
+    "note": "A quieter international window. The strongest craft and identity pieces of the past two days were already carried yesterday, and much of what remained was AI policy and safety news that sits outside the cut."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "The same model, a different language, a different answer",
+      "blurb": "Slava Polonski's test is trivial to reproduce: ask a chatbot to rank ten pizzas, then ask again in Italian and watch the Hawaiian move. He names the two problems that follow for product work, cultural gravity, where the model settles on one set of assumptions, and cultural opacity, where the user cannot see which one it picked. Behind a Medium member wall, so judged from the opening section only.",
+      "tags": ["ai", "ux-research", "localisation"],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/ai-culture-ux-design-36c7d410cd1f?source=rss----138adf9c44c---4",
+          "headline": "The hidden culture layer in AI"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Nobody asked for help, and that was the failure",
+      "blurb": "Kai Wong's field research on a Social Security feature found senior citizens declining it confidently because Advance Designation sounded like the Power of Attorney they already had. Nothing in the usual signals showed it: no confusion, no drop-off, no support requests. Behind a Medium member wall, so judged from the opening section only.",
+      "tags": ["ux-research", "terminology", "usability"],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/the-users-were-confident-but-wrong-heres-how-to-design-for-that-4b1546dc5864?source=rss----138adf9c44c---4",
+          "headline": "The users were confident, but wrong. Here’s how to design for that."
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Five kinds of brand data, and the one agents keep failing on",
+      "blurb": "A working breakdown of what a brand actually consists of as data: assets, guidelines, artifacts, solutions, voice, each with its own life cycle and owners. The sharp bit is the last layer. Voice changes with every strategy shift, lives as tribal knowledge in a few heads, and is the piece agents cannot reliably follow.",
+      "tags": ["brand-systems", "design-ops", "ai"],
+      "sources": [
+        {
+          "name": "open session",
+          "url": "https://opensession.substack.com/p/brand-is-the-design-system",
+          "headline": "Brand is the Design System"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Evidence-based marketing says what works, not what to become",
+      "blurb": "Rande Vick's argument is that the discipline settled into a comfortable postmodern posture: Byron Sharp's rigour is very good at separating pattern from wishful thinking and has little to say about what a brand should grow into. His counter-example is Coca-Cola's 1971 Hilltop, simultaneously overreaching and true, and his practical test is total system cost, a dark-pattern cancellation flow books the revenue and bills the support team.",
+      "tags": ["brand-strategy", "positioning", "effectiveness"],
+      "sources": [
+        {
+          "name": "Brandingmag",
+          "url": "https://www.brandingmag.com/rande-vick/are-we-building-brands-for-a-world-that-no-longer-exists/",
+          "headline": "Are We Building Brands for a World That No Longer Exists?"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "The outrage was the media buy",
+      "blurb": "Novig's Sydney Sweeney spot drew Olympic athletes into the reply column, which Roastbrief reads as the plan: an unknown betting platform with no budget for conventional reach hired a proven lightning rod and wrote to the edge of offence. The useful part is the reviewing error it names, judging a campaign against the values you wish the brand held rather than the objective it was chasing, plus the bill that comes later when LLMs start deprioritising brands on negative sentiment.",
+      "tags": ["advertising", "campaign", "brand-safety"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/novig-and-sweeney-scandal-was-the-plan-all-along/",
+          "headline": "Novig and Sweeney. Scandal was the plan all along"
+        },
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/advertising/a-kick-in-the-face-to-every-woman-sydney-sweeney-torn-apart-for-racy-sports-ad",
+          "headline": "“A kick in the face to every woman”: Sydney Sweeney torn apart for racy sports ad"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Thisaway asked its clients first, then rebranded",
+      "blurb": "Before touching the visuals, the Bath agency went back to existing clients and asked why they had been hired. The answers were unglamorous, they listen, no egos, collaborative, and that became the positioning, Branding You Can Believe In, rather than the futuristic direction founder Graeme Cook says other agencies reach for.",
+      "tags": ["rebrand", "agency", "positioning"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/inspiration/creative-agency-thisaways-rebrand-isnt-just-a-lick-of-new-paint-its-a-promise-to-clients/",
+          "headline": "Creative agency Thisaway's rebrand isn't just a lick of new paint: it's a promise to clients"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "A redesign nobody noticed, on purpose",
+      "blurb": "It's Nice That talks to the people who shape Wikipedia's look and lands on a standard rarely aimed for: Vector 2022 is the site's most recent redesign and is barely visible as one. Wikimedia UX designer Justin Scherer frames the site as predating the attention economy, which is why function-first and text-heavy still reads as a deliberate position rather than neglect.",
+      "tags": ["ux", "design-history", "accessibility"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/features/wikipedia-graphic-design-spotlight-150926",
+          "headline": "The mascots, design and visual history of Wikipedia, the encyclopedia that puts functionality above aesthetics"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Being findable inside AI answers is now a 1.8 billion dollar category",
+      "blurb": "Profound, which sells software for making brands show up in AI search results, raised a 180 million dollar Series D at a 1.8 billion valuation seven months after its Series C, with Sequoia and Kleiner Perkins leading. It reports 3x revenue in six months and over 1,000 enterprise customers including Comcast, Estée Lauder and Walmart, which is the clearer signal than the valuation.",
+      "tags": ["geo", "aeo", "funding"],
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/",
+          "headline": "AEO startup Profound hits unicorn valuation, raises $180M Series D 7 months after last round"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "A tools vendor says the quiet part about animation jobs",
+      "blurb": "Autodesk CEO Andrew Anagnost calls the extinction debate largely political theatre while arguing the technology still needs guardrails, then points at the disruption already running in animation and VFX. Coming from the company shipping MotionMaker and Flow Studio into those pipelines, the admission that efficiency means fewer roles carries more weight than the usual forecast.",
+      "tags": ["animation", "vfx", "jobs"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/ai/ai-might-kill-humanity-in-10-years-but-autodesks-ceo-sees-a-more-immediate-threat-to-artists",
+          "headline": "AI might kill humanity in 10 years, but Autodesk’s CEO sees a more immediate threat to artists"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Canva bundles its acquisitions and keeps the free promise",
+      "blurb": "ProSuite pulls Affinity, Cavalry, Flourish and Leonardo into one connected set with around 100 new features, and Canva confirms the core of Affinity and Cavalry stays free. Chief product officer Cameron Adams frames the bet plainly, the best model does not win, the best experience does, which is the argument Adobe now has to answer.",
+      "tags": ["tools", "canva", "affinity"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/canva-launches-prosuite-bringing-affinity-cavalry-flourish-and-leonardo-together-with-more-than-new-100-features/",
+          "headline": "Canva launches ProSuite bringing Affinity, Cavalry, Flourish and Leonardo together with more than new 100 features"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Four months and five times the price, for an eight hour job",
+      "blurb": "Mozilla's State of Open Source AI report puts the gap between closed frontier models and the best open-weights models at 4.4 months, with Kimi K3 three points behind Fable 5 at 30 percent of the cost. Mozilla CTO Raffi Krikorian's framing is the usable one for studios, the choice is per workload rather than per organisation: tasks under eight hours can go to the cheap model, the premium buys expert work, heavy retrieval and long context.",
+      "tags": ["models", "cost", "open-weights"],
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
+          "headline": "Exclusive: Paying for frontier AI models buys 4-month head start at 5x the cost"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 24,
+      "examples": [
+        "After 17 Years at BSSP, Sinan Dagli Rises to Chief Creative Officer",
+        "Ring Pop® Announces Its First-Ever Wedding Collection, Designed in Collaboration with Celebrity Event Planner Mindy Weiss",
+        "OAAA Announces 2026 OOH Media Plan Awards Jury"
+      ]
+    }
+  ]
+}
