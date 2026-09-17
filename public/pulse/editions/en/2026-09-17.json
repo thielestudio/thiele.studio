@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "generated_for": "2026-09-17",
+    "window": "2026-09-15..2026-09-17",
+    "sources_scanned": 60,
+    "items_in_window": 120,
+    "lang": "en",
+    "note": "A window with overlap: several strong pieces (Canva ProSuite, Novig, Wikipedia) were already carried yesterday and are not repeated. Two UX Collective essays sat behind the Medium member wall and could not be read in full, so they were left out. Much of the rest was AI policy and safety news outside the cut."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Container queries are not media queries with a new name",
+      "blurb": "86% of developers know container queries, 41.4% use them, and the author argues many of those use them wrong because the syntax looks like media queries. The core point: the viewport was always a proxy, and components should respond to the space their container actually gives them.",
+      "tags": ["css", "responsive", "components"],
+      "sources": [
+        {
+          "name": "Smashing Magazine",
+          "url": "https://smashingmagazine.com/2026/09/stop-treating-css-container-queries-traditional-media-queries/",
+          "headline": "Stop Treating CSS Container Queries Like Traditional Media Queries"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Update the old site instead of launching a new one",
+      "blurb": "For the research platform Mater, Victor Hwang turned a planned archive section into the backbone of the existing site rather than building on a new URL. His case for digital adaptive reuse: the knowledge in years of small tweaks is lost when a site is thrown away.",
+      "tags": ["web", "sustainability", "redesign"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/victor-hwang-mater-graphic-design-160926",
+          "headline": "Victor Hwang on why we should be updating existing websites rather than making new ones"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "BFI London Film Festival letters made from projected light",
+      "blurb": "Pentagram's Marina Willer built the key art from cut-out letters projected in coloured light, filmed in camera and only then animated digitally. The new light blue came out of research showing no major film festival used it, and the Engleback logo from 1957 was flattened into a digital shortcut.",
+      "tags": ["identity", "pentagram", "motion"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/marina-willer-pentagram-bfi-london-film-festival-graphic-design-160926",
+          "headline": "Marina Willer crafts letters with light and projection for BFI London Film Festival’s new identity and campaign"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "A logo captured from sign language, wobbles kept",
+      "blurb": "Templo motion-tracked hand movements from British Sign Language to build the lettering for DeafCity Hub and deliberately did not smooth the result. Hot pink and orange were chosen to stand apart from other deaf-led brands; the article also raises the production question of an identity that cannot simply be typed.",
+      "tags": ["identity", "accessibility", "motion-capture"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/asking-what-typeface-deafcity-hub-used-for-its-logo-is-the-wrong-question/",
+          "headline": "Asking which typeface DeafCity Hub used for its logo is entirely the wrong question"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "An online shop that holds back on purpose",
+      "blurb": "AREA 17's site for Santa Maria Novella reveals history and product origins in layers instead of following conversion-first e-commerce patterns, with palette and icons drawn from 19th-century catalogues. Underneath sits Shopify with about 300 products across four regional stores.",
+      "tags": ["e-commerce", "heritage", "digital-identity"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/area-17-crafts-digital-flagship-for-the-worlds-oldest-apothecary/",
+          "headline": "AREA 17 crafts digital flagship for the world’s oldest apothecary"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "A signature style still depends on who sits for it",
+      "blurb": "Elizabeth Goodspeed defends Szilveszter Makó against the complaint of repetition, since clients hire him for exactly that look. Her sharper point is the subject: with Olivia Rodrigo the symbols say something about the sitter, with Sandra Bullock they only illustrate the film being promoted.",
+      "tags": ["photography", "criticism", "style"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/elizabeth-goodspeed-on-what-makes-a-mako-photography-creative-industry-160926",
+          "headline": "Elizabeth Goodspeed on Szilveszter Makó and the commercial appeal of the auteur"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Reviewing a car that is simply well done",
+      "blurb": "David Coveney wanted to call the Skoda Epiq dull and couldn't. His review looks for design quality in details: a soft-touch dash material that doesn't imitate leather, and a vent control that seems to float. A useful exercise in judging sober work fairly.",
+      "tags": ["product-design", "automotive", "review"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/design-review-the-new-skoda-epiq-and-the-quiet-art-of-getting-it-right/",
+          "headline": "Design review: The new Skoda Epiq and the quiet art of getting it right"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Two and a half hours of AI film, taken apart",
+      "blurb": "The Verge watched Fountain 0's fully generated Odyssey film to the end and lists what breaks: a cyclops changing height between shots, oars bending, mismatched mouths. The reviewer's diagnosis is that clips only last seconds, so the film feels disjointed and dull.",
+      "tags": ["ai-video", "film", "review"],
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/entertainment/996499/ai-odyssey-movie-review",
+          "headline": "The 2.5-hour AI-generated Odyssey movie is 2.5 hours too long"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Why a retired logo keeps coming back",
+      "blurb": "The Washington Commanders sold merchandise with the dropped Redskins mark and cite trademark law: marks must stay in commercial use or risk being treated as abandoned. Critics note the law does not require a high-profile drop, and some legal experts want the rule changed.",
+      "tags": ["trademark", "rebrand", "law"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/the-latest-washington-commanders-logo-controversy-has-sparked-calls-for-a-change-in-the-law",
+          "headline": "The latest Washington Commanders logo controversy has sparked calls for a change in the law"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Airbnb goes after three letters",
+      "blurb": "Airbnb's lawyers objected when a Dorset guesthouse called Bnb-side tried to register its wordmark, arguing the letters \"bnb\" are too close. The logos look nothing alike; the dispute is about the name alone.",
+      "tags": ["trademark", "naming"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/airbnb-orders-independent-guesthouse-to-change-its-logo",
+          "headline": "Airbnb orders independent guesthouse to change its logo"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Claude adds Docs and Slides and folds Design into every chat",
+      "blurb": "Anthropic merges chat and Cowork into one interface that routes tasks itself, so Claude Design and Artifacts are available from any conversation. New Docs and Slides (beta) export to PDF or PowerPoint and share via one link; rollout starts with Pro and Max.",
+      "tags": ["claude", "presentations", "tools"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
+          "headline": "Claude comes for Gemini with its own take on Docs and Slides"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/",
+          "headline": "Anthropic merges Claude chat and Cowork in one interface"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "Mercy Corps Rebrands as Prosper Global;Taps M+C Saatchi North America for Never Settle for Survival Campaign",
+        "After 17 Years at BSSP, Sinan Dagli Rises to Chief Creative Officer",
+        "Capri Sun Tests Its Biggest Pouch Yet – and Fans Could Help Make it Permanent"
+      ]
+    }
+  ]
+}

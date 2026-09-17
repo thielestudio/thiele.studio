@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "generated_for": "2026-09-17",
+    "window": "2026-09-15..2026-09-17",
+    "sources_scanned": 60,
+    "items_in_window": 161,
+    "lang": "de",
+    "note": "Fenster mit Überschneidung. Mehrere starke Stücke (Canva ProSuite, Novig, Maerz, Wikipedia) standen schon gestern in der Ausgabe und werden nicht wiederholt. Zwei Essays von UX Collective lagen hinter der Medium-Mitgliedschranke und ließen sich nicht vollständig lesen, sie fehlen deshalb. Der Rest war zu großen Teilen AI-Politik und Sicherheitsdebatte."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Container Queries sind keine Media Queries mit neuem Namen",
+      "blurb": "86 Prozent der Entwickler kennen Container Queries, 41,4 Prozent nutzen sie. Viele davon falsch, meint der Autor, weil die Syntax wie bei Media Queries aussieht. Sein Kernpunkt: Der Viewport war immer nur ein Stellvertreter, Komponenten sollen auf den Platz reagieren, den ihr Container ihnen tatsächlich gibt.",
+      "tags": ["css", "responsive", "komponenten"],
+      "sources": [
+        {
+          "name": "Smashing Magazine",
+          "url": "https://smashingmagazine.com/2026/09/stop-treating-css-container-queries-traditional-media-queries/",
+          "headline": "Stop Treating CSS Container Queries Like Traditional Media Queries"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Die alte Website umbauen statt eine neue starten",
+      "blurb": "Für die Rechercheplattform Mater machte Victor Hwang ein geplantes Archiv zum Rückgrat der bestehenden Seite, statt unter neuer Adresse neu zu bauen. Sein Argument aus der Architektur: In Jahren kleiner Anpassungen steckt Wissen, das beim Wegwerfen einer Website verloren geht.",
+      "tags": ["web", "nachhaltigkeit", "redesign"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/victor-hwang-mater-graphic-design-160926",
+          "headline": "Victor Hwang on why we should be updating existing websites rather than making new ones"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Buchstaben aus projiziertem Licht für das BFI London Film Festival",
+      "blurb": "Marina Willer von Pentagram baute das Key Art aus ausgeschnittenen Buchstaben, die in farbigem Licht projiziert und in der Kamera gefilmt wurden. Erst danach kam digitale Bewegung dazu. Das neue Hellblau stammt aus einer Recherche, nach der kein großes Filmfestival diese Farbe nutzt.",
+      "tags": ["identity", "pentagram", "motion"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/marina-willer-pentagram-bfi-london-film-festival-graphic-design-160926",
+          "headline": "Marina Willer crafts letters with light and projection for BFI London Film Festival’s new identity and campaign"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Ein Logo aus Gebärdensprache, mit allen Wacklern",
+      "blurb": "Templo hat für DeafCity Hub Handbewegungen aus der britischen Gebärdensprache per Motion Capture aufgenommen und daraus die Buchstaben gebaut, bewusst ohne sie zu glätten. Pink und Orange sollen sich von anderen Marken der Gehörlosen-Community abheben. Offen bleibt im Text, wie eine Identity funktioniert, die sich nicht einfach tippen lässt.",
+      "tags": ["identity", "barrierefreiheit", "motion-capture"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/asking-what-typeface-deafcity-hub-used-for-its-logo-is-the-wrong-question/",
+          "headline": "Asking which typeface DeafCity Hub used for its logo is entirely the wrong question"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Ein Onlineshop, der absichtlich nicht alles zeigt",
+      "blurb": "AREA 17 erzählt für Santa Maria Novella Geschichte und Herkunft der Produkte in Schichten, statt den üblichen Mustern für schnelle Kaufabschlüsse zu folgen. Farben und Icons stammen aus Katalogen des 19. Jahrhunderts. Darunter läuft Shopify mit rund 300 Produkten in vier regionalen Shops.",
+      "tags": ["e-commerce", "heritage", "digitale-identity"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/area-17-crafts-digital-flagship-for-the-worlds-oldest-apothecary/",
+          "headline": "AREA 17 crafts digital flagship for the world’s oldest apothecary"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "HUK24 löst sich optisch von der Mutter",
+      "blurb": "Der Wechsel von Gelb zu Neon-Orange, eine eigene Hausschrift auf Basis der Figtree und mehrere hundert Illustrationen machen die Submarke sichtbar eigenständiger als bisher. Statt Produkten zeigen die Bilder Alltagsmomente, in denen Versicherung relevant wird. Umgesetzt mit wirDesign aus Braunschweig.",
+      "tags": ["rebrand", "markenarchitektur", "designsystem"],
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "url": "https://www.designtagebuch.de/huk24-praesentiert-neuen-markenauftritt/",
+          "headline": "HUK24 präsentiert neuen Markenauftritt"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Auch ein Signature-Stil hängt davon ab, wer vor der Kamera sitzt",
+      "blurb": "Elizabeth Goodspeed verteidigt Szilveszter Makó gegen den Vorwurf der Wiederholung, schließlich wird er genau für diesen Look gebucht. Schärfer ist ihr Punkt zum Motiv. Bei Olivia Rodrigo erzählen die Symbole etwas über die Person, bei Sandra Bullock nur über den Film, der beworben wird.",
+      "tags": ["fotografie", "kritik", "stil"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/elizabeth-goodspeed-on-what-makes-a-mako-photography-creative-industry-160926",
+          "headline": "Elizabeth Goodspeed on Szilveszter Makó and the commercial appeal of the auteur"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Kritik an einem Auto, das einfach gut gemacht ist",
+      "blurb": "David Coveney wollte den Skoda Epiq langweilig nennen und konnte es nicht. Er sucht die Qualität in Details: ein Material am Armaturenbrett, das kein Leder imitiert, und ein Lüftungsregler, der zu schweben scheint. Eine brauchbare Übung darin, nüchterne Arbeit fair zu beurteilen.",
+      "tags": ["produktdesign", "automobil", "review"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/design-review-the-new-skoda-epiq-and-the-quiet-art-of-getting-it-right/",
+          "headline": "Design review: The new Skoda Epiq and the quiet art of getting it right"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Zweieinhalb Stunden AI-Film, zerlegt",
+      "blurb": "The Verge hat den komplett generierten Odyssee-Film von Fountain 0 bis zum Ende gesehen und listet, was bricht: ein Zyklop, der von Einstellung zu Einstellung die Größe wechselt, sich biegende Ruder, Münder ohne Ton. Die Diagnose der Rezension: Clips dauern nur Sekunden, der Film zerfällt und langweilt.",
+      "tags": ["ai-video", "film", "review"],
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/entertainment/996499/ai-odyssey-movie-review",
+          "headline": "The 2.5-hour AI-generated Odyssey movie is 2.5 hours too long"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Warum ein abgelegtes Logo immer wiederkommt",
+      "blurb": "Die Washington Commanders verkaufen Merchandise mit der aufgegebenen Redskins-Marke und berufen sich aufs Markenrecht: Wer eine Marke nicht mehr nutzt, riskiert, dass sie als aufgegeben gilt. Kritiker halten dagegen, dass das Gesetz keinen lauten Verkaufsstart verlangt. Einige Juristen fordern eine Änderung der Regel.",
+      "tags": ["markenrecht", "rebrand"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/the-latest-washington-commanders-logo-controversy-has-sparked-calls-for-a-change-in-the-law",
+          "headline": "The latest Washington Commanders logo controversy has sparked calls for a change in the law"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Airbnb beansprucht drei Buchstaben",
+      "blurb": "Als die Pension Bnb-side in Dorset ihre Wortmarke eintragen wollte, widersprachen Airbnbs Anwälte, weil „bnb“ zu ähnlich sei. Die Logos sehen sich nicht ähnlich. Es geht allein um den Namen.",
+      "tags": ["markenrecht", "naming"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/airbnb-orders-independent-guesthouse-to-change-its-logo",
+          "headline": "Airbnb orders independent guesthouse to change its logo"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Claude bekommt Docs und Slides, Design läuft jetzt in jedem Chat",
+      "blurb": "Anthropic legt Chat und Cowork zu einer Oberfläche zusammen, die Aufgaben selbst zuordnet. Claude Design und Artifacts sind damit aus jedem Gespräch erreichbar. Neu sind Docs und Slides als Beta, mit Export nach PDF oder PowerPoint und Freigabe per Link, zuerst für Pro und Max.",
+      "tags": ["claude", "praesentationen", "werkzeuge"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/anthropic-verschmilzt-claude-chat-cowork-und-mehr-in-einem-einzigen-claude-chat/",
+          "headline": "Anthropic verschmilzt Claude Chat, Cowork und mehr in einem einzigen Claude-Produkt"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
+          "headline": "Claude comes for Gemini with its own take on Docs and Slides"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/",
+          "headline": "Anthropic merges Claude chat and Cowork in one interface"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "Mercy Corps Rebrands as Prosper Global;Taps M+C Saatchi North America for Never Settle for Survival Campaign",
+        "After 17 Years at BSSP, Sinan Dagli Rises to Chief Creative Officer",
+        "Capri Sun Tests Its Biggest Pouch Yet – and Fans Could Help Make it Permanent"
+      ]
+    }
+  ]
+}
