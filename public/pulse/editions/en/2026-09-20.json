@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "generated_for": "2026-09-20",
+    "window": "2026-09-18..2026-09-20",
+    "sources_scanned": 60,
+    "items_in_window": 108,
+    "lang": "en",
+    "note": "A weekend window. The international feeds ran heavy on AI policy, safety and security news with no bearing on creative work, so that whole block was cut. The AI Models theme is empty today: nothing in the international sources was about a tool or model a practitioner would actually pick up."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "The gap is not what the models can do, it is what you bring to them",
+      "blurb": "Mollick had GPT-6 Astra build a 3D trailer for his book in Blender on its own initiative, and Fable 5.1 reconstruct Umberto Eco's library from videos and catalogues, marking every one of roughly 5,000 books as certain, guess or unknown. His point is that none of it started by itself: he picked the projects and knew enough to spot where the model went wrong, and that deep knowledge, taste and agency are what separate people who get weeks of work out of current models from people who get a chat.",
+      "tags": ["ai", "judgment", "workflow"],
+      "sources": [
+        {
+          "name": "One Useful Thing",
+          "url": "https://www.oneusefulthing.org/p/the-overhang",
+          "headline": "The Overhang"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "An AI disclosure label modelled on a nutrition panel",
+      "blurb": "Hiroshi Sato attaches an 'AI Assistance Facts' label to his essays, laid out like the nutrition facts panel on food packaging, marking which part came from a human and which from a model. Observation and first draft are his, translation is where the model does the heaviest lifting, and a human read at the end decides whether the voice still holds before the label goes on.",
+      "tags": ["ai", "transparency", "writing"],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/ai-nutrition-facts-cbfa8f9874e8?source=rss----138adf9c44c---4",
+          "headline": "AI nutrition facts"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "A house sold as a collection piece, not a property",
+      "blurb": "Greenspace refused the standard residential-marketing frame for One Palace Green, a Philip Webb building from 1870, and positioned it as a collectible item of architectural significance instead. The system comes out of art provenance: three bespoke collector's marks in the logo for the Howard family, the address and the Webb and Morris lineage, plus a customised cut of Ergon chosen for its Arts and Crafts calligraphic feel.",
+      "tags": ["identity", "positioning", "typography"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/greenspace-crafts-brand-identity-for-philip-webb-designed-one-palace-green/",
+          "headline": "Greenspace crafts brand identity for Philip Webb-designed One Palace Green"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Galway packs a ship's hull and a language pin into one lowercase g",
+      "blurb": "The new city mark reads as an abstract maroon 'g' whose tail is the hull of the galleon from the coat of arms, while the bowl draws on seanchló, the historic Irish script, and on the fáinne lapel pin that marks an Irish speaker. The council also assigns the parts a second reading, bowl as the people and detached hull as the council serving them, and it replaces a 1984 mark that locals had campaigned to keep.",
+      "tags": ["identity", "place-branding", "logo"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/this-citys-clever-minimalist-new-logo-design-has-a-hidden-meaning",
+          "headline": "This city's new logo is inspired by Irish script and has a clever hidden meaning"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Jersey numbers reread as breast cancer statistics",
+      "blurb": "For CIBC and the Canadian Cancer Society, Courage replaced the numbers on Toronto Tempo jerseys with breast cancer figures, teasing them obscured first and then revealing them courtside, in warm-ups, OOH and social. The mechanic is worth stealing: take a convention the audience already reads fluently and change what it means, rather than adding a new asset beside it.",
+      "tags": ["campaign", "sports", "cause"],
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/how-cibc-is-turning-basketballs-most-recognizable-numbers-into-breast-cancer-statistics/",
+          "headline": "How CIBC is turning basketball’s most recognizable numbers into breast cancer statistics"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Bolt turns its scooter telemetry into an accessibility map",
+      "blurb": "Wheels4Wheels reuses the accelerometers, gyroscopes and GPS already fitted to Bolt scooters for fleet maintenance and converts the readings into a five-point surface-quality rating for wheelchair users. The Tallinn pilot covered 550 km and 40.5 million accelerometer readings for 66,088 ratings, lifting available surface data in the city by 26 percent, and the whole pipeline ships open source under MIT.",
+      "tags": ["accessibility", "data", "brand-initiative"],
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/wheels4wheels-bolt-and-serviceplan-turn-everyday-scooter-rides-into-open-accessibility-data/",
+          "headline": "Wheels4Wheels: Bolt and Serviceplan turn everyday scooter rides into open accessibility data"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "The famous creativity study has a second half that flatters nobody",
+      "blurb": "Reinartz and Saffert split creativity into five dimensions across 437 German TV campaigns. Elaboration, the unglamorous work of not leaving an idea alone until it is finished, indexed at 1.32 against average, while originality, the dimension the awards system is built on, came in at 1.06. Cat How's argument is that the industry sells the leap and eats the finishing, which is exactly the half a model cannot hand you before lunch.",
+      "tags": ["effectiveness", "craft", "awards"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/originality-is-overrated-elaboration-is-the-thing/",
+          "headline": "Originality is overrated. Elaboration is the thing."
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "When you stop reading letterforms as words",
+      "blurb": "The key art for the co-op horror game In Us went viral because the stylised title reads unmistakably as a different word once you see it, and it is still live on Steam. Tom May's diagnosis is the useful part: designers spend hours at high resolution balancing letters as shapes, and stop seeing them as language.",
+      "tags": ["typography", "review", "games"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/fonts-typography/is-this-the-worst-typography-cockup-of-2026",
+          "headline": "Is this the worst typography cockup of 2026?"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "A sign-off chain that checked the date and missed the name",
+      "blurb": "Oxford United pulled its Campus Collection within hours because 'United 93' set in shirt-number style landed on the hijacked 2001 flight. The club had already moved the launch off 11 September out of sensitivity, so the risk was discussed and the specific combination of club name and founding year still passed every review.",
+      "tags": ["review-process", "sports", "risk"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/accidental-9-11-references-caused-this-english-football-club-to-scrap-its-new-clothing-designs",
+          "headline": "An accidental 9/11 reference led this English football club to scrap its new clothing designs"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "New Balance says a stylised K is unmistakably an N",
+      "blurb": "New Balance has filed against Decathlon in a Massachusetts federal court over the side emblem on the Kiprun running shoe, seeking a block on the mark, destruction of existing stock and damages after an attempt to settle directly went nowhere. The 'N' has been in use since the 1970s, and both brands sell into the same running market, which is what raises the stakes.",
+      "tags": ["trademark", "legal", "logo"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/new-balance-sues-rival-athletics-brand-over-shoe-logo",
+          "headline": "New Balance sues rival athletics brand over shoe logo"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, screened and not taken",
+      "count": 23,
+      "examples": [
+        "Hook Ranks No. 6 on Fast Company’s 100 Best Workplaces for Innovators List",
+        "Lyft named official rideshare partner of Sphere Las Vegas",
+        "Mink Collective Announces the Addition of Luiza Campos to Its Roster"
+      ]
+    }
+  ]
+}

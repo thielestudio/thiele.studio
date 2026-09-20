@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "generated_for": "2026-09-20",
+    "window": "2026-09-18..2026-09-20",
+    "sources_scanned": 60,
+    "items_in_window": 153,
+    "lang": "de",
+    "note": "Wochenendfenster. Der internationale Teil war stark von AI-Politik, Sicherheit und Regulierung geprägt, das alles ohne Bezug zu gestalterischer Arbeit und deshalb raus. Ein t3n-Stück zu Typografie und Entscheidungssystemen kam vom Chief Experience Officer von Monotype und lief als Sponsored Post, es ist als Werbung nicht aufgenommen."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Die Lücke liegt nicht im Modell, sondern in dem, was du mitbringst",
+      "blurb": "Ethan Mollick ließ GPT-6 Astra unaufgefordert in Blender einen animierten Trailer für sein Buch bauen und Fable 5.1 die Bibliothek von Umberto Eco aus Videos und Katalogen rekonstruieren, jedes der rund 5.000 erkannten Bücher markiert als sicher, geraten oder unbekannt. Sein Punkt: Keines dieser Projekte wäre von allein entstanden. Er hat sie ausgewählt und wusste genug, um zu sehen, wo das Modell danebenlag.",
+      "tags": ["ki", "urteil", "arbeitsweise"],
+      "sources": [
+        {
+          "name": "One Useful Thing",
+          "url": "https://www.oneusefulthing.org/p/the-overhang",
+          "headline": "The Overhang"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Ein Ablauf, der vor dem Prompt liegt",
+      "blurb": "Sandra Franck beschreibt drei Fragen, um an der naheliegenden Symbolik vorbeizukommen: Was wäre das typische Motiv, wie geht es ohne dieses Motiv, und welcher konkrete Fakt im Post lässt sich am besten zeigen. Für den Prompt selbst schlägt sie das Schema Mosaik vor, also Motiv, Optik, Szene, Atmosphäre, Inszenierung und Kontext, weil das Modell alles ergänzt, wozu nichts dasteht, und dabei zwangsläufig generisch wird.",
+      "tags": ["ki-bilder", "social-media", "prompting"],
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/ki-bilder-social-media-anleitung-slop-vermeiden-1760151/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "So erstellst du KI-Bilder für Social Media, die nicht nach Slop aussehen"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Der Schutzengel wird vom Beschützer zum Ermöglicher",
+      "blurb": "27KM hat das seit rund 30 Jahren eingeführte gelbe Flügel-Emblem der Provinzial nicht modernisiert, sondern seine Rolle in Frage gestellt, sagt Creative Director Oscar Engelhardt. Statt von Unsicherheit erzählt die Kampagne davon, sich ins Leben zu stürzen, und das Emblem taucht nur noch beiläufig auf, als Schlüsselanhänger oder Muster.",
+      "tags": ["markenkampagne", "symbol", "versicherung"],
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/provinzial-erfindet-den-schutzengel-neu-und-das-ist-besonders-schoen-erzaehlt/",
+          "headline": "Provinzial erfindet den Schutzengel neu und das ist besonders schön erzählt!"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Eine rote Linie, die überschritten werden soll",
+      "blurb": "Jung von Matt startet den hvv-Etat mit einer Aktion zum Tag der Zivilcourage und schreibt den bekannten Hinweis um: aus »Zugang nur mit gültiger Fahrkarte« wird »Zugang zum hvv nur mit Haltung und Hilfsbereitschaft«. Die Linie liegt dort, wo der Sperrbereich beginnt. Permanent bleibt sie nicht, verlängert wird sie über Key Visuals und dokumentarische Einblicke in den hvv-Kanälen.",
+      "tags": ["kampagne", "oeffentlicher-raum", "hamburg"],
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/so-startet-man-in-zeiten-wie-diesen-hvv-kampagne-von-jung-von-matt/",
+          "headline": "So startet man in Zeiten wie diesen: hvv-Kampagne von Jung von Matt!"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Ein Haus als Sammlungsstück positioniert, nicht als Immobilie",
+      "blurb": "Greenspace hat für One Palace Green, ein Gebäude von Philip Webb aus dem Jahr 1870, das übliche Immobilien-Vokabular verweigert und das Objekt stattdessen als architektonisches Sammlungsstück gerahmt. Das visuelle System kommt aus der Provenienzforschung: drei eigens gezeichnete Sammlermarken für die Familie Howard, die Adresse und die Urheber Webb und Morris, dazu ein angepasster Schnitt der Ergon mit kalligrafischem Zug.",
+      "tags": ["identity", "positionierung", "typografie"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/greenspace-crafts-brand-identity-for-philip-webb-designed-one-palace-green/",
+          "headline": "Greenspace crafts brand identity for Philip Webb-designed One Palace Green"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Bolt macht aus Rollerdaten eine Karte für Rollstuhlfahrer",
+      "blurb": "Wheels4Wheels nutzt die Beschleunigungssensoren, Gyroskope und GPS-Empfänger, die für Wartung und Sicherheit ohnehin in den Rollern stecken, und übersetzt die Messwerte in eine fünfstufige Bewertung der Oberflächenqualität. Der Testlauf in Tallinn kam auf 550 Kilometer und 40,5 Millionen Messwerte, daraus 66.088 Bewertungen und 26 Prozent mehr verfügbare Oberflächendaten. Die Pipeline ist Open Source unter MIT-Lizenz.",
+      "tags": ["barrierefreiheit", "daten", "markeninitiative"],
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/wheels4wheels-bolt-and-serviceplan-turn-everyday-scooter-rides-into-open-accessibility-data/",
+          "headline": "Wheels4Wheels: Bolt and Serviceplan turn everyday scooter rides into open accessibility data"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Die meistzitierte Kreativstudie hat eine zweite Hälfte",
+      "blurb": "Reinartz und Saffert haben Kreativität über 437 deutsche TV-Kampagnen in fünf Dimensionen zerlegt. Ausarbeitung, also die unglamouröse Arbeit, eine Idee nicht liegen zu lassen, bis sie fertig ist, kam auf einen Index von 1,32. Originalität, die Dimension, auf der das ganze Award-System aufsetzt, erreichte 1,06. Cat How schließt daraus, dass die Branche den Sprung verkauft und das Fertigmachen selbst bezahlt.",
+      "tags": ["wirksamkeit", "handwerk", "awards"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/originality-is-overrated-elaboration-is-the-thing/",
+          "headline": "Originality is overrated. Elaboration is the thing."
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Die Freigabe prüfte das Datum und übersah den Namen",
+      "blurb": "Oxford United hat seine Campus Collection nach wenigen Stunden zurückgezogen, weil »United 93« im Stil einer Rückennummer auf den entführten Flug von 2001 verweist. Der Launch war vorher schon vom 11. September weggeschoben worden, weil das Datum als heikel galt. Die Kombination aus Vereinsname und Gründungsjahr 1893 fiel trotzdem in keiner Freigaberunde auf.",
+      "tags": ["freigabe", "sport", "risiko"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/accidental-9-11-references-caused-this-english-football-club-to-scrap-its-new-clothing-designs",
+          "headline": "An accidental 9/11 reference led this English football club to scrap its new clothing designs"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "New Balance sieht im stilisierten K von Decathlon ein N",
+      "blurb": "New Balance klagt vor einem Bundesgericht in Massachusetts gegen Decathlon wegen des Seitenemblems am Laufschuh Kiprun und verlangt ein Verbot, die Vernichtung vorhandener Ware und Schadenersatz. Ein direkter Klärungsversuch Anfang des Jahres blieb ohne Ergebnis. Das N ist seit den Siebzigern in Gebrauch, beide Marken verkaufen in denselben Laufmarkt.",
+      "tags": ["markenrecht", "prozess", "logo"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/new-balance-sues-rival-athletics-brand-over-shoe-logo",
+          "headline": "New Balance sues rival athletics brand over shoe logo"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "80 Prozent der Token-Ausgaben lassen sich keinem Ergebnis zuordnen",
+      "blurb": "Eine globale Accenture-Studie, die PAGE referiert, nennt zwei Zahlen: Die Hälfte der befragten Unternehmen zählt den reinen Token-Verbrauch zu ihren größten KI-Kosten, und rund 80 Prozent dieser Ausgaben lassen sich keinem konkreten Geschäftsergebnis zuschreiben. Ein Hauptgrund ist, dass Hochleistungsmodelle Kleinkram erledigen. Als Gegenmittel nennt der Text Modell-Routing nach Komplexität und Value Cases, die vor dem Einsatz definiert werden.",
+      "tags": ["kosten", "agenturen", "ki-betrieb"],
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/branche-karriere/tokenomics-ki-ausgaben-senken/",
+          "headline": "Tokenomics: KI-Ausgaben senken"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Runway will Video streamen, während man es beschreibt",
+      "blurb": "Statt Prompt und Warten soll die Generierung sofort loslaufen und sich beim Zusehen steuern lassen, auf Basis des Weltmodells GWM-1. Das technische Problem dahinter benennt Runway selbst: Ein Videomodell baut jedes Bild auf dem vorherigen auf und kann einen Fehler nicht nachträglich korrigieren, deshalb trainiert man es auf den eigenen fehlerhaften Ausgaben. Gezeigt ist bislang Forschung, kein Produkt.",
+      "tags": ["video", "echtzeit", "weltmodelle"],
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/runway-zeigt-echtzeit-videogenerierung-vom-prompt-direkt-zum-laufenden-video/",
+          "headline": "Runway zeigt Echtzeit-Videogenerierung: Vom Prompt direkt zum laufenden Video"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Projects in Claude Code verteilt Aufträge selbst",
+      "blurb": "Aus der Dateiablage ist ein Koordinator geworden: Claude zerlegt ein Ziel in Arbeitspakete, gibt sie an parallele Threads mit eigenem Branch und eigener Repo-Kopie, prüft die Ergebnisse und setzt sie zusammen. Beta zuerst für ausgewählte Pro- und Max-Abos, nur in Anthropics Cloud. Wichtig für die Kalkulation: Hinter jedem Thread steckt eine vollwertige Session, das Kontingent geht entsprechend schneller weg.",
+      "tags": ["agenten", "werkzeuge", "produktions-loop"],
+      "sources": [
+        {
+          "name": "heise online",
+          "url": "https://www.heise.de/news/Claude-Code-Anthropic-macht-aus-Projects-einen-Auftragsverteiler-11458195.html",
+          "headline": "Claude Code: Anthropic macht aus Projects einen Auftragsverteiler"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, gesichtet und nicht genommen",
+      "count": 24,
+      "examples": [
+        "Hook Ranks No. 6 on Fast Company’s 100 Best Workplaces for Innovators List",
+        "Lyft named official rideshare partner of Sphere Las Vegas",
+        "Mink Collective Announces the Addition of Luiza Campos to Its Roster"
+      ]
+    }
+  ]
+}
