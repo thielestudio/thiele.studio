@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "generated_for": "2026-09-21",
+    "window": "2026-09-19..2026-09-21",
+    "sources_scanned": 60,
+    "items_in_window": 83,
+    "lang": "de",
+    "note": "Das Zweitagesfenster ueberlappt mit der Ausgabe von gestern, mehrere starke Stuecke standen dort schon und sind deshalb hier raus. Der internationale Teil war erneut von AI-Politik, Sicherheit und Regulierung bestimmt, ohne Bezug zu gestalterischer Arbeit. Das PAGE-Stueck zu 30 Tagen Spatial UX liegt hinter einer harten Paywall und ist nicht aufgenommen. Industrie und Markt bleibt heute leer."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Was das Artefakt selbst beweisen kann, muss kein Modell beurteilen",
+      "blurb": "TJ Pitre beschreibt Designsysteme als Sammlung bereits getroffener Entscheidungen und leitet daraus eine Reihenfolge fuer die Pruefung von Agenten-Output ab: erst auslesen, was im Artefakt steht, also echte Komponente statt Neuerfindung, unterstuetzte Variante, Werte an die richtigen Token gebunden, Instanz nicht abgeloest. Erst danach ein Modell urteilen lassen, und zwar nur dort, wo das System eine Entscheidung dokumentiert hat, etwa beim Bestaetigungsmuster fuer destruktive Aktionen. Ob der Hero mehr Luft braucht, ist keine Eval-Frage.",
+      "tags": ["designsysteme", "agenten", "pruefung"],
+      "sources": [
+        {
+          "name": "TJ Pitre",
+          "url": "https://southleft.substack.com/p/design-systems-are-a-collection-of",
+          "headline": "Design Systems Are a Collection of Decisions"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Tiefe wird eingestellt, Breite wird befoerdert",
+      "blurb": "Marina Krutchinsky legt zwei gegenlaeufige Ratschlaege nebeneinander: Nielsen Norman sieht anpassungsfaehige Generalisten vorn, die Einstellungsforschung sieht Tiefe in einem Problemfeld gewinnen, nur etwa jeder fuenfte Bewerber brachte die gesuchte Spezialisierung mit. Aus eigener Praxis loest sie den Widerspruch auf: Beim Einstellen hat sie auf Tiefe gescreent, beim Befoerdern auf Breite. Ihre Prueffrage lautet deshalb nicht, was man werden will, sondern an welcher Tuer man gerade steht.",
+      "tags": ["karriere", "spezialisierung", "einstellung"],
+      "sources": [
+        {
+          "name": "Marina Krutchinsky",
+          "url": "https://uxmentor.substack.com/p/the-two-loudest-pieces-of-career",
+          "headline": "The two loudest pieces of career advice in design cancel each other out"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Komposition im Daumennagel entscheiden, nicht im Detail",
+      "blurb": "Art Director Caroline Vos legt viele kleine Thumbnails auf eine Leinwand, statt sich in eine Fassung hineinzuarbeiten, und klaert grosse Formen und Bildaufbau dort, bevor sie eine Auswahl auf Originalgroesse zieht. Dazu ein physisches Farbrad, dessen Schema sie festlegt und dann nicht verlaesst. Hugo Richard beschreibt den umgekehrten Weg zur Stimmung, ueber flache Farben und Saettigung statt ueber Rendering.",
+      "tags": ["komposition", "arbeitsweise", "illustration"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/creative-inspiration/7-artists-reveal-the-revelations-that-took-their-practice-to-the-next-level",
+          "headline": "7 artists reveal the revelations that took their practice to the next level"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Aus dem orangefarbenen Quadrat werden drei Buchstaben",
+      "blurb": "Strichpunkt Identity fuehrt bei der Schweizer BKW mehr als 110 Marken und Logoanwendungen unter ein Dach und ersetzt dabei das bisherige orangefarbene Quadrat durch die ausgeschriebenen Buchstaben BKW. Traeger des Auftritts ist die BKW Favorit auf Basis der ABC Favorit von Dinamo. Fuer den Rollout entstanden ein Markenportal, ein digitales Designsystem und die Layout-Assets fuer den Brand Creator, mit dem Mitarbeitende selbst markenkonform gestalten.",
+      "tags": ["rebranding", "markenarchitektur", "typografie"],
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/wir-machen-vorwaerts-strichpunkt-identity-begleitet-die-bkw-in-die-zukunft/",
+          "headline": "Wir machen vorwärts: Strichpunkt Identity begleitet die BKW in die Zukunft"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Identity vom einen Studio, Launch vom anderen",
+      "blurb": "Das unabhaengige Studio Ourselves uebernimmt die Launchkampagne des London Museum zum Umzug nach Smithfield Market. Die Identity selbst stammt von Uncommon Creative Studio, mit dem Tauben-Bildsystem und der Positionierung Grit and Glitter. Die Meldung steht im Wochenueberblick von Design Week, zusammen mit dem Guinness-Tukan zum London Design Festival.",
+      "tags": ["museum", "identity", "kampagne"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-outline-tartan-reimagined-guinness-toucan-and-a-new-inhaler-21-09-2026/",
+          "headline": "The Outline: Tartan reimagined, Guinness’ toucan, and a new inhaler – 21/09/2026"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Der Begriff Slop taugt nur, solange man es sieht",
+      "blurb": "Tom May schaute einen 55 Minuten langen Doctor-Who-Fanfilm an und hielt ihn fuer die Arbeit ambitionierter Fans mit kleinem Budget. Erst die Kommentare verrieten, dass alles generiert war, bis zum Darsteller. Sein Punkt: Slop, 2025 von Merriam-Webster zum Wort des Jahres gekuert, beschreibt sichtbare Billigkeit, und genau dieses Erkennungsmerkmal verschwindet gerade. Getragen habe den Film ohnehin die von Hand geschriebene Geschichte.",
+      "tags": ["ki-video", "urteil", "begriffe"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/ai/ai-slop-was-a-great-phrase-but-now-ai-is-getting-better-at-video-we-need-a-new-one",
+          "headline": "\"AI slop\" was a great phrase, but now AI is getting better at video, we need a new one"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Ein Bildmodell, das Freisteller nativ kann und lokal laeuft",
+      "blurb": "Qwen-Image-2.1 erzeugt und bearbeitet transparente Bilder nativ als RGBA, verarbeitet bis zu zehn Referenzbilder gleichzeitig und laesst sich fuer lokale Aenderungen per Einkreisen, Maske oder gemalter Markierung steuern. Der Generierungsteil umfasst 7 Milliarden Parameter und laeuft auf einer 3090. Unabhaengige Benchmarks fehlen noch, und die Research-Lizenz schliesst kommerzielle Nutzung aus, dafuer braucht es eine separate Lizenz.",
+      "tags": ["bildmodelle", "open-weights", "produktions-loop"],
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/alibabas-qwen-image-2-1-vereint-bildgenerierung-und-bearbeitung-in-einem-einzigen-open-weight-modell-das-lokal-laeuft/",
+          "headline": "Alibabas Qwen-Image-2.1 vereint Bildgenerierung und -bearbeitung in einem einzigen Open-Weight-Modell, das lokal läuft"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Blender liest Gaussian Splats jetzt selbst",
+      "blurb": "Die kommende Version 5.3 importiert 3D-Gaussian-Splats aus PLY- und SPZ-Dateien und rendert sie mit den eigenen Engines. Export gibt es noch nicht. Aktuell ist die Version im Alpha-Stadium, die Freigabe wird fuer November erwartet.",
+      "tags": ["3d", "werkzeuge", "gaussian-splats"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/3d/blender-5-3-finally-gets-game-changing-native-gaussian-splat-support",
+          "headline": "Blender 5.3 finally gets game-changing native Gaussian splat support"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Unity schreibt die Skills fuer die Agenten selbst",
+      "blurb": "Unity hat offizielle Plugins fuer Claude Code und OpenAI Codex veroeffentlicht, in der Codex-Fassung zum Start 31 Skills fuer Oberflaechen, 2D, Render-Pipeline, Audio, Physik, Multiplayer und Lokalisierung, gepflegt von den jeweils zustaendigen Unity-Teams. Die Begruendung ist uebertragbar: Allgemeine Agenten stuetzen sich auf Forenbeitraege und Tutorials zu alten Versionen, deren Code zwar kompiliert, aber oft nicht tut, was er soll. Voraussetzung ist Unity 6.",
+      "tags": ["agenten", "werkzeuge", "spieleentwicklung"],
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/offizielle-unity-plugins-sollen-coding-agenten-zu-besseren-spieleentwicklern-machen/",
+          "headline": "Offizielle Unity-Plugins sollen Coding-Agenten zu besseren Spieleentwicklern machen"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": []
+}

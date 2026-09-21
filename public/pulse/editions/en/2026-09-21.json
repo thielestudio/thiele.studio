@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "generated_for": "2026-09-21",
+    "window": "2026-09-19..2026-09-21",
+    "sources_scanned": 60,
+    "items_in_window": 46,
+    "lang": "en",
+    "note": "A thin day. The two-day window overlaps with yesterday's edition and most of the design-relevant international pieces ran there already. The rest of the international feeds was AI politics, safety and security with no bearing on creative work. Industry & Market is empty today."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "What the artifact can prove needs no model to judge",
+      "blurb": "TJ Pitre treats a design system as a collection of decisions already made, and draws an order of checks for agent output from that: first read what the artifact itself proves, meaning a real library component rather than an invented one, a supported variant, values bound to the right tokens, the instance still attached. Only then bring in an LLM judge, and only where the system has documented a decision, such as the confirmation pattern for destructive actions. Whether the hero needs more breathing room is not an eval question.",
+      "tags": ["design-systems", "agents", "evals"],
+      "sources": [
+        {
+          "name": "TJ Pitre",
+          "url": "https://southleft.substack.com/p/design-systems-are-a-collection-of",
+          "headline": "Design Systems Are a Collection of Decisions"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Depth gets you hired, breadth gets you promoted",
+      "blurb": "Marina Krutchinsky puts two contradictory pieces of advice side by side: Nielsen Norman sees adaptable generalists thriving, while hiring research finds depth in one problem space wins, with roughly one in five applicants showing the specialization the role wanted. She resolves it from her own practice, having screened for depth when hiring and rewarded breadth when promoting. The test she offers is not what career you want, but which door you are standing at.",
+      "tags": ["careers", "specialisation", "hiring"],
+      "sources": [
+        {
+          "name": "Marina Krutchinsky",
+          "url": "https://uxmentor.substack.com/p/the-two-loudest-pieces-of-career",
+          "headline": "The two loudest pieces of career advice in design cancel each other out"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Settle the composition at thumbnail size",
+      "blurb": "Art director Caroline Vos lays many small thumbnails onto a single canvas instead of working one version deeper, resolving big shapes and composition there before scaling a chosen one up. Alongside it she uses a physical colour wheel to fix a scheme and then stick to it rather than winging it. Character designer Hugo Richard describes the opposite route to mood, through flat colour, saturation and temperature rather than rendering.",
+      "tags": ["composition", "process", "illustration"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/creative-inspiration/7-artists-reveal-the-revelations-that-took-their-practice-to-the-next-level",
+          "headline": "7 artists reveal the revelations that took their practice to the next level"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "One studio builds the identity, another launches it",
+      "blurb": "Independent studio Ourselves has been appointed to deliver the launch campaign for London Museum as it opens at Smithfield Market. The identity itself came from Uncommon Creative Studio, with its pigeon-based visual system and the 'Grit and Glitter' positioning. The item sits in Design Week's weekly digest, alongside the Guinness toucan redesign for London Design Festival.",
+      "tags": ["museum", "identity", "campaign"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-outline-tartan-reimagined-guinness-toucan-and-a-new-inhaler-21-09-2026/",
+          "headline": "The Outline: Tartan reimagined, Guinness’ toucan, and a new inhaler – 21/09/2026"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "\"Slop\" only works as long as you can see it",
+      "blurb": "Tom May watched a 55-minute Doctor Who fan film and took it for the work of ambitious fans on a small budget. Only the comments revealed the whole thing was generated, down to the actor playing the Doctor. His point: slop, named 2025 word of the year by Merriam-Webster, describes visible cheapness, and that tell is disappearing. What carried the film was the human-written story and dialogue.",
+      "tags": ["ai-video", "judgment", "language"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/ai/ai-slop-was-a-great-phrase-but-now-ai-is-getting-better-at-video-we-need-a-new-one",
+          "headline": "\"AI slop\" was a great phrase, but now AI is getting better at video, we need a new one"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Blender reads Gaussian splats natively",
+      "blurb": "The coming 5.3 release imports 3D Gaussian splats from PLY and SPZ files and renders them with Blender's own engines. There is no export yet. The version is in alpha, with the full release expected in November.",
+      "tags": ["3d", "tools", "gaussian-splats"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/3d/blender-5-3-finally-gets-game-changing-native-gaussian-splat-support",
+          "headline": "Blender 5.3 finally gets game-changing native Gaussian splat support"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": []
+}
