@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "generated_for": "2026-09-22",
+    "window": "2026-09-20..2026-09-22",
+    "sources_scanned": 60,
+    "items_in_window": 148,
+    "lang": "de",
+    "note": "Das Zweitagefenster überlappt mit der gestrigen Ausgabe. Mehrere starke Stücke standen dort schon und fehlen hier deshalb, darunter der BKW-Relaunch von Strichpunkt und Qwen-Image-2.1. Die Sitemap von State of Brand lieferte 11 Seiten, aber keinen Beitrag im Fenster."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Erst grob auf Papier, dann mit dem Zeichenstift ausblocken",
+      "blurb": "Catherine Unger beschreibt Schritt für Schritt, wie ein Hintergrund für das Point-and-Click-Spiel The Mermaid Mask entsteht. Zuerst viele grobe Thumbnails auf Papier, weil Lockerheit am Anfang mehr bringt als Sauberkeit, danach der Raum mit dem Zeichenstift in kantige Grundformen ausgeblockt, was gleichzeitig die Farbbalance festlegt. Ihr Lesbarkeitstest ist herauszoomen oder die Augen zusammenkneifen. Einen Kniff nennt sie offen: Formebene duplizieren, Kontur drauf, Fläche auf null, leicht versetzen, dann wirkt das Bild näher an einer Handzeichnung."
+      ,
+      "tags": ["illustration", "prozess", "game-art"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/entertainment/gaming/see-how-this-point-and-click-game-environment-was-made-for-the-mermaid-mask",
+          "headline": "See how this point-and-click game environment was made for The Mermaid Mask"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Ein Genre-Workshop als Gerüst für einen Dokumentarfilm",
+      "blurb": "John Wilsons erster Langfilm beginnt damit, dass er einen Hallmark-Movie-Workshop besucht, um das Filmemachen zu lernen, und wendet das Gelernte dann auf eine echte Dokumentation über Beton an. Das Gespräch bei It's Nice That bleibt bei der Arbeitsweise: Erzählung aus zufällig gesammeltem Material gewoben, dazu ein Archiv an Einstellungen, das er im Kopf trägt und nicht in einer Datenbank.",
+      "tags": ["film", "prozess", "dokumentarfilm"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/features/john-wilson-history-of-concrete-film-spotlight-210926",
+          "headline": "“It’s weirdly helpful to get lost along the way” – how to make a film with John Wilson"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Die Aufgabe war nicht, aufzufallen",
+      "blurb": "Odds Studio hat für die französische Hautpflegemarke Alaena die erste eigene Identity im Beauty-Bereich gemacht, und Mitgründerin Amélie Warnault benennt die Falle, die sie vermieden haben: In einer übervollen Kategorie zu behaupten, man mache etwas völlig Einzigartiges, wäre anmaßend gewesen. Stattdessen haben sie sich an der Gründungsgeschichte festgehalten, einer Dermatologin, deren Ansatz die körpereigenen Funktionen der Haut stützt statt sie zu korrigieren, und die Bildsprache weg von klinischen Codes gebaut.",
+      "tags": ["identity", "packaging", "beauty"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/odds-studio-alaena-branding-graphic-design-project-210926",
+          "headline": "Skincare has never looked so good: Odds’ identity for Alaena strikes a soft balance between science and nature"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Novo Nordisk kürzt sich zu Novo, und der Stier dreht sich",
+      "blurb": "Der dänische Pharmakonzern stellt eine überarbeitete Corporate Identity unter dem Leitmotiv „Lasting Health Starts Now“ vor. Im operativen Alltag soll künftig die Kurzform Novo prägen, während Novo Nordisk A/S juristisch bestehen bleibt. Achim Schaffrinna beschreibt die Eingriffe genau: Die Apis-Stier-Marke steht jetzt vor der Wortmarke statt darüber, sie weist nach rechts statt nach links, der Name sitzt in einer geometrischen Linear-Antiqua, und das Blau ist ein sattes Ultramarin.",
+      "tags": ["corporate-design", "logo", "pharma"],
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "url": "https://www.designtagebuch.de/novo-nordisk-evolution-der-corporate-identity/",
+          "headline": "Novo Nordisk: Evolution der Corporate Identity"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Fünfzehn Jahre Ruhe, dann eine Fase",
+      "blurb": "Nintendo hat auf seiner Website eine neue Super-Mario-Wortmarke ausgerollt, die erste Änderung seit 2011. Farben und Buchstabenformen bleiben, geändert hat sich die Anmutung: Die flache schwarze Kontur weicht einer grauen Fase, die das Logo ins Dreidimensionale zieht. Was Fans daraus über kommende Ankündigungen lesen, ist Spekulation und keine Aussage von Nintendo.",
+      "tags": ["logo", "wortmarke", "gaming"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/3d/video-game-design/nintendo-just-gave-the-super-mario-bros-logo-a-power-up-and-fans-think-they-know-what-it-means",
+          "headline": "There's a new Super Mario logo, and fans think they know what it means"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Autodesk lässt den Anschlussfehler drin und sagt warum",
+      "blurb": "Im eigenen KI-Demofilm, den Autodesk auf der AU26 zeigte, setzt sich eine Figur an einen Tisch und sitzt zwei Einstellungen später woanders. Maurice Patel hat den Fehler selbst angesprochen: Wegprompten ging nicht, und ein Neustart hätte mehr gekostet, als ein Demo wert ist. Nützlich ist seine Einteilung in Tasks, Shots und Worlds. Ein kleines Modell wie MotionMaker erledigt eine Aufgabe verlässlich, persistente Welten mit Physikverständnis liegen weit weg.",
+      "tags": ["generative-video", "produktion", "anschluss"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/3d/autodesks-own-ai-film-has-a-continuity-error-nobody-could-prompt-away",
+          "headline": "Autodesk's own AI film has a continuity error nobody could prompt away"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Ein Publikums-Meme wurde zur Art Direction des Albums",
+      "blurb": "Der Kulturkolumnist von It's Nice That führt die Bildwelt von Zara Larssons viertem Album Midnight Sun auf ein TikTok-Meme des Nutzers @heiratet zurück, bei dem das Publikum einander in einer Delfinformation über die Köpfe hebt. Interessant ist das als Frage nach der Quelle: Das Motiv kam vom Publikum, die Kampagne hat es übernommen.",
+      "tags": ["art-direction", "musik", "netzkultur"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/zara-larsson-gary-grimes-culture-column-210926",
+          "headline": "Gary Grimes examines the niche memes and noughties tech-optimism behind Zara Larsson’s visual world"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Unendlich viele Varianten, keine Überzeugung",
+      "blurb": "Der Report Brand Perspectives 2026 von MikeTeevee befragt Inhouse-Verantwortliche bei Wayfair, DoorDash, Intuit, O2, Verizon, Canva und Rivian. Sein Befund: Gleichförmige Arbeit, verschwindende Juniorstellen und wackelnde gestalterische Überzeugung gab es schon vor KI, die Werkzeuge haben das nur beschleunigt. James Hurst, ECD bei HelloFresh, beschreibt Teams in Entscheidungslähmung, seit Varianten nichts mehr kosten. Mike Pearson von Wayfair stellt die härtere Frage, was das Ergebnis noch auseinanderhält, wenn alle mit denselben Werkzeugen und denselben Eingaben arbeiten.",
+      "tags": ["report", "inhouse", "juniors"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/state-of-play/decision-paralysis-lost-conviction-and-no-juniors-what-brand-creative-leaders-say-ai-is-exposing/",
+          "headline": "Decision paralysis, lost conviction and no juniors: what brand creative leaders say AI is exposing"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Einstiegsstellen verlangen jetzt zehn Jahre Urteilsvermögen",
+      "blurb": "Ruben Dominguez baut auf einer PwC-Auswertung von über einer Milliarde Stellenanzeigen vom Juni auf. In den Berufen, die KI am stärksten trifft, verlangen Einstiegsstellen siebenmal häufiger Fähigkeiten, für die man früher ein Jahrzehnt brauchte, etwa strategisches Urteilsvermögen und den Umgang mit Stakeholdern. Daneben stellt er die übrigen Einstellungsdaten des Jahres, wonach rund sieben von zehn offenen Softwarestellen Senior-Rollen sind, und benennt den Widerspruch: Abgesägt wird die Sprosse, auf der dieses Urteilsvermögen bisher entstand.",
+      "tags": ["hiring", "juniors", "arbeitsmarkt"],
+      "sources": [
+        {
+          "name": "Ruben Dominguez",
+          "url": "https://www.the-ai-corner.com/p/hiring-for-judgment-ai-seniorization",
+          "headline": "Everyone Is Hiring for Judgment. Nobody Is Making It Anymore."
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Affinity 3.3 bekommt ein Skripting-Studio und zerlegt Ebenen",
+      "blurb": "Das kostenlose Affinity von Canva bringt ein Blend-Werkzeug, eine überarbeitete RAW-Verarbeitung, ein Skripting-Studio und Decompose Layers, das ein flaches Foto in einzeln bearbeitbare Elemente zerlegt. Tom May liest das Update als Zeichen, dass Canva die Adobe-Alternative ernsthaft weiterbaut statt sie zu parken.",
+      "tags": ["tools", "affinity", "canva"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/design-software/affinity-3-3-shows-that-canva-is-serious-about-taking-on-adobe",
+          "headline": "Affinity 3.3 shows that Canva is serious about taking on Adobe"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Offene Gewichte und Open Source sind zwei verschiedene Dinge",
+      "blurb": "Nathan Lambert veröffentlicht die Notizen, die er für eine Anhörung im US-Kongress vorbereitet hat. Die Unterscheidung, auf der er besteht, betrifft jeden, der ein Modell als Grundlage wählt. Open Weight heißt, die Gewichte sind unter einer Lizenz ladbar, und dort führen chinesische Labore seit etwa April 2025 mit Qwen und DeepSeek. Echtes Open Source, also Gewichte plus Trainingscode plus Trainingsdaten, kommt überwiegend aus amerikanischen Non-Profits, etwa Olmo vom Allen Institute, Marin von OpenAthena und Pythia von EleutherAI.",
+      "tags": ["open-weights", "politik", "modelle"],
+      "sources": [
+        {
+          "name": "Interconnects",
+          "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+          "headline": "The current balance of power in open models"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "ByteDance automatisiert die Kurzdrama-Produktion komplett",
+      "blurb": "Dramagic deckt laut ByteDance den ganzen Ablauf ab, von der Skriptanalyse über Figuren und Storyboards bis zur Videovorschau, mit eingebauten Konsistenzprüfungen und mehreren Nutzern gleichzeitig. Die Zahlen daneben sind das eigentlich Auffällige: In China erschienen im ersten Quartal 2026 rund 128.000 Kurzdramen, dreimal so viele wie im ganzen Vorjahr, davon 95 Prozent KI-generiert. Eine Minute KI-Video kostet laut Tsinghua-Professor Shen Yang 90 bis 120 Dollar, ein Zehntel früherer Produktionskosten.",
+      "tags": ["video", "produktion", "bytedance"],
+      "sources": [
+        {
+          "name": "THE DECODER",
+          "url": "https://the-decoder.de/dramagic-von-bytedance-automatisiert-kurzfilm-produktion-von-skript-bis-videovorschau/",
+          "headline": "Dramagic von Bytedance automatisiert Kurzfilm-Produktion von Skript bis Videovorschau"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, Kampagnen- und Personalmeldungen, nichts übernommen",
+      "count": 25,
+      "examples": [
+        "VML UK Turns the Nation’s Small Business Owners into Heroic Statues for HSBC UK",
+        "Halfords launches new brand platform ‘For All Wheelkind’",
+        "The One Club Hosts Gala Induction Ceremony For 2026 Creative Hall of Fame"
+      ]
+    }
+  ]
+}

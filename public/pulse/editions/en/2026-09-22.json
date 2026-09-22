@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "generated_for": "2026-09-22",
+    "window": "2026-09-20..2026-09-22",
+    "sources_scanned": 60,
+    "items_in_window": 99,
+    "lang": "en",
+    "note": "The two-day window overlaps with yesterday's edition, so several of the strongest international pieces ran there already and are left out here. The State of Brand sitemap returned 11 pages but nothing dated inside the window."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Rough on paper first, then block out with the pen tool",
+      "blurb": "Catherine Unger walks through a point-and-click background for The Mermaid Mask and keeps the order of operations explicit: many rough thumbnails on paper, because looseness beats polish at the start, then the room blocked out with the pen tool into strong angular shapes that also fix the colour balance. Her readability test is to zoom out or squint. One cheat she names outright: duplicate a shape layer, add a stroke, set fill to zero, nudge it, and the whole piece reads closer to hand drawn.",
+      "tags": ["illustration", "process", "game-art"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/entertainment/gaming/see-how-this-point-and-click-game-environment-was-made-for-the-mermaid-mask",
+          "headline": "See how this point-and-click game environment was made for The Mermaid Mask"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "A genre workshop as scaffolding for a documentary",
+      "blurb": "John Wilson's first feature opens with him attending a Hallmark Movie workshop to learn how films get made, then applies what he is taught to a real documentary about concrete. It's Nice That's interview stays on the working method: narrative woven out of footage gathered serendipitously, and a shot library he carries in his head rather than in a database.",
+      "tags": ["film", "process", "documentary"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/features/john-wilson-history-of-concrete-film-spotlight-210926",
+          "headline": "“It’s weirdly helpful to get lost along the way” – how to make a film with John Wilson"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "The brief was not to stand out",
+      "blurb": "Odds Studio's identity for French skincare brand Alaena is their first work in beauty, and co-founder Amélie Warnault names the trap they refused: claiming to make something unlike anything else would have been pretentious in a saturated category. Instead they anchored on the founder's own story, a dermatologist whose philosophy is to support the skin's biological functions rather than correct or conceal, and built the visual language away from clinical tropes.",
+      "tags": ["identity", "packaging", "beauty"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/odds-studio-alaena-branding-graphic-design-project-210926",
+          "headline": "Skincare has never looked so good: Odds’ identity for Alaena strikes a soft balance between science and nature"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Fifteen years of patience, then a bevel",
+      "blurb": "Nintendo has quietly rolled out a new Super Mario wordmark on its website, the first change since 2011. Colours and letterforms are untouched; what changed is the presentation, with the flat black outline replaced by a grey bevel that pushes the mark into 3D. Creative Bloq reports fan speculation about what it signals, which is speculation, not a statement from Nintendo.",
+      "tags": ["logo", "wordmark", "gaming"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/3d/video-game-design/nintendo-just-gave-the-super-mario-bros-logo-a-power-up-and-fans-think-they-know-what-it-means",
+          "headline": "There's a new Super Mario logo, and fans think they know what it means"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Autodesk left the continuity error in, and says why",
+      "blurb": "In Autodesk's own AI demo film shown at AU26, a character sits down at a table and is somewhere else two shots later. VP Maurice Patel raised it himself: the team tried to prompt the error away, could not, and starting over cost more than a demo was worth. His framing is the useful part, splitting generative video into tasks, shots and worlds, with a small model like MotionMaker reliable at one task and persistent, physics-aware worlds still far off.",
+      "tags": ["generative-video", "production", "continuity"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/3d/autodesks-own-ai-film-has-a-continuity-error-nobody-could-prompt-away",
+          "headline": "Autodesk's own AI film has a continuity error nobody could prompt away"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "A crowd meme became the album's art direction",
+      "blurb": "It's Nice That's culture columnist traces Zara Larsson's visual world for her fourth album Midnight Sun back to a TikTok meme started by user @heiratet, the crowd hoisting people overhead in a dolphin formation. The case is worth reading as sourcing rather than gossip: the audience produced the visual motif first, and the campaign adopted it.",
+      "tags": ["art-direction", "music", "internet-culture"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/zara-larsson-gary-grimes-culture-column-210926",
+          "headline": "Gary Grimes examines the niche memes and noughties tech-optimism behind Zara Larsson’s visual world"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Infinite variants, no conviction",
+      "blurb": "MikeTeevee's Brand Perspectives 2026 report interviews in-house leaders at Wayfair, DoorDash, Intuit, O2, Verizon, Canva and Rivian, and its conclusion is that samey work, vanishing junior roles and wobbling creative confidence all predate AI. HelloFresh ECD James Hurst describes teams in decision paralysis now that variations cost nothing, and Wayfair's Mike Pearson asks the harder question: when everyone works from the same tools and the same inputs, what stops the output converging?",
+      "tags": ["report", "in-house", "juniors"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/state-of-play/decision-paralysis-lost-conviction-and-no-juniors-what-brand-creative-leaders-say-ai-is-exposing/",
+          "headline": "Decision paralysis, lost conviction and no juniors: what brand creative leaders say AI is exposing"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Entry-level roles now ask for a decade of judgment",
+      "blurb": "Ruben Dominguez builds on PwC's June analysis of more than a billion job postings, which found that in the occupations most exposed to AI, entry-level roles are seven times more likely to demand skills that used to take ten years to acquire, such as strategic judgment and stakeholder management. He sets that beside the rest of the year's hiring data, where roughly seven in ten open software roles are senior, and names the obvious problem: the rung that produced that judgment is the one being sawn off.",
+      "tags": ["hiring", "juniors", "labour-market"],
+      "sources": [
+        {
+          "name": "Ruben Dominguez",
+          "url": "https://www.the-ai-corner.com/p/hiring-for-judgment-ai-seniorization",
+          "headline": "Everyone Is Hiring for Judgment. Nobody Is Making It Anymore."
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Affinity 3.3 adds a scripting studio and layer decomposition",
+      "blurb": "Canva's free Affinity release brings a blend tool, a reworked RAW pipeline, a scripting studio, and Decompose Layers, which splits a flat photo into separately editable elements. Tom May's read is that the update marks Canva taking the Adobe alternative seriously rather than parking it.",
+      "tags": ["tools", "affinity", "canva"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/design-software/affinity-3-3-shows-that-canva-is-serious-about-taking-on-adobe",
+          "headline": "Affinity 3.3 shows that Canva is serious about taking on Adobe"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Open weights and open source are not the same argument",
+      "blurb": "Nathan Lambert publishes the remarks he prepared for a Congressional briefing, and the distinction he insists on matters to anyone picking a model to build on. Open-weight means the weights are downloadable under a licence, which is where Chinese labs have led since roughly April 2025 with Qwen and DeepSeek. Fully open source, weights plus training code plus training data, is mostly American and mostly non-profit, via AI2's Olmo, OpenAthena's Marin and EleutherAI's Pythia.",
+      "tags": ["open-weights", "policy", "models"],
+      "sources": [
+        {
+          "name": "Interconnects",
+          "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+          "headline": "The current balance of power in open models"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief campaign and appointment releases, none taken",
+      "count": 25,
+      "examples": [
+        "VML UK Turns the Nation’s Small Business Owners into Heroic Statues for HSBC UK",
+        "Halfords launches new brand platform ‘For All Wheelkind’",
+        "The One Club Hosts Gala Induction Ceremony For 2026 Creative Hall of Fame"
+      ]
+    }
+  ]
+}
