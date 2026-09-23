@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "generated_for": "2026-09-23",
+    "window": "2026-09-21..2026-09-23",
+    "sources_scanned": 62,
+    "items_in_window": 193,
+    "note": "Das Zweitagefenster überlappt mit der gestrigen Ausgabe, mehrere starke Stücke standen dort schon. Die Sitemap von State of Brand lieferte 11 Seiten, keine davon im Fenster erschienen. Das PAGE-Stück zum Schutz vor KI-Crawlern und der t3n-Fall zum umbenannten Rewe-Chatbot liegen hinter harten Paywalls und sind nicht aufgenommen.",
+    "lang": "de"
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Nicht Langsamkeit kostet Vertrauen, sondern unerklärte Schwankung",
+      "blurb": "Nutzer messen ein AI-Werkzeug an der schnellsten Antwort, die sie selbst erlebt haben. Nach zwei Sekunden wirkt ein normaler Lauf von sechs Sekunden kaputt. Der Autor baut Tools auf AI-Chatprodukten und fordert, dass die Oberfläche diesen Anker neu setzt, statt Tempo zu versprechen.",
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/the-variance-problem-in-ai-products-62a58272564c?source=rss----138adf9c44c---4",
+          "headline": "The variance problem in AI products"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Eine Identity, die aus echter Gebärdensprache animiert wird",
+      "blurb": "Templo hat die Identity des DeafCity Hub aus per Motion Capture erfassten Gesten der britischen Gebärdensprache und Creative Coding gebaut. Jede Bewegung der Marke stammt damit von einer echten Hand, nicht aus Keyframes. Pink und Orange sind bewusst gewählt, um sich von anderen Identitys aus der Gehörlosen-Community abzuheben.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/templo-deafcity-hub-identity-graphic-design-project-220926",
+          "headline": "Templo’s visual identity for DeafCity Hub is a fusion of creative coding, British sign language and gestural motion capture"
+        },
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/hubdeaf-city-umwerfend-authentische-identity-die-aus-handgesten-besteht/",
+          "headline": "HubDeaf City: Umwerfend authentische Identity, die aus Handgesten besteht"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Ein Kongress-Auftritt, der nicht auf Nummer sicher geht",
+      "blurb": "Everyday Practice gestaltet die World Design Congress 2027 in Seoul mit kollidierenden Farben, verstreuten Formen und einem Logo, das wie eine kippende Wippe animiert ist. Creative Bloq argumentiert, Design-Events seien bei einer Schrift und einer Farbe angekommen, und hier sehe man, was so ein Briefing hergibt.",
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/branding/this-out-there-branding-is-the-bravest-design-ive-seen-all-year",
+          "headline": "This out-there branding is the bravest design I've seen all year"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Converse zieht eine Anzeige zurück, weil das Logo wie eine Kapuze wirkte",
+      "blurb": "Ein auf einen weißen Rock projiziertes Stern-Logo und ein enger Bildausschnitt mit baumelnden Schuhen wurden als KKK- und Lynch-Bildsprache gelesen. Converse hat sich entschuldigt und das Motiv entfernt. Offen bleibt, wie es durch die Freigabe kam.",
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/advertising/converse-forced-to-remove-ad-over-racist-allegations",
+          "headline": "Converse forced to remove ad over racist allegations"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Sound braucht in der Marke dieselben Strukturen wie das Visuelle",
+      "blurb": "Philipp Schweidler von Toniq sieht das Problem darin, dass Unternehmen Klang als Produktionsfrage behandeln, ohne Guidelines, Budget und Zuständigkeit. Sein Vorschlag: Prinzipien statt Regeln, kuratierte Assets und konsequente Anwendung. Der Begleittext zeigt es am Beispiel Schweiz Tourismus.",
+      "sources": [
+        {
+          "name": "Werbewoche",
+          "url": "https://www.markt-kom.com/de/kreativity/branding/sound-ist-ein-werkzeug/",
+          "headline": "«Sound ist ein Werkzeug»"
+        },
+        {
+          "name": "Werbewoche",
+          "url": "https://www.markt-kom.com/de/kreativity/branding/uebers-ohr-ins-herz/",
+          "headline": "Über s Ohr ins Herz"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Skoda Peaq: Zurückhaltung, die gewollt aussehen muss",
+      "blurb": "Design Week argumentiert, dass bei 52.000 Pfund und ohne großen Grill jede Fläche mehr leisten muss. Gelobt werden die aufeinander ausgerichteten Licht- und Stoßfängerlinien und ein cW-Wert von 0,249. Die Kritik vermerkt auch die bündigen Türgriffe, die sich einzogen und den Tester kurz aussperrten.",
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/design-review-skoda-goes-big-on-the-peaq/",
+          "headline": "Design Review: Skoda goes big on the Peaq"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Design Council beziffert britisches Design auf 136,7 Mrd. Pfund",
+      "blurb": "Creative Booms Monatsrückblick nennt den Wert des Design Council, 40 Prozent mehr als 2019, dazu neue Strategie-Spitzen bei Pearlfisher und FutureBrand. Beim Thema AI setzen Studios in zwei Richtungen: auf Spezialisten oder auf mehr Seniorität.",
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/booms-shakes/booms-shakes-september/",
+          "headline": "Booms Shakes: September s biggest hires, bold bets on AI, and design overtakes retail"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "The Chase kauft Squad und regelt so die Nachfolge",
+      "blurb": "Die Beratung aus Manchester übernimmt Squad per Aktientausch und The Chase Films vollständig. Mitgründer Ben Casey rückt in den Co-Vorsitz. Zum Kundenstamm aus B2B und öffentlicher Hand kommt damit ein Consumer-Portfolio.",
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-chases-co-founder-ben-casey-steps-back-as-squads-founders-take-the-reins/",
+          "headline": "The Chase s co-founder Ben Casey steps back as Squad s founders take the reins"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Anthropic und OpenAI konkurrieren über den Preis",
+      "blurb": "Opus 5.5 kostet 4 und 20 Dollar pro Million Token, 20 Prozent weniger als Opus 5, laut Anthropic sinken die realen Kosten um rund 40 Prozent. GPT-6 Sol und Luna halbieren die Preise gegenüber den Vorgängern. Ars Technica liest beides als Antwort auf günstigere Open-Weight-Modelle und Modell-Router.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/claude-opus-5-5-ist-schneller-billiger-und-soll-natuerlicher-klingen-als-sein-vorgaenger/",
+          "headline": "Claude Opus 5.5 ist schneller, billiger und soll natürlicher klingen als sein Vorgänger"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/openai-bringt-gpt-6-sol-und-luna-und-senkt-api-preise-um-50-prozent/",
+          "headline": "OpenAI bringt GPT-6 Sol und Luna und senkt API-Preise um 50 Prozent"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money/",
+          "headline": "New Anthropic, OpenAI models make same promise: A little more for a lot less money"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
+          "headline": "Anthropic releases Opus 5.5 with lower prices and Fable-level performance"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
+          "headline": "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
+          "headline": "Anthropic launches Claude Opus 5.5 with stricter safeguards for cybersecurity"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Ein Modell, das Fragen zum Design-System mit Zahlen beantwortet",
+      "blurb": "Jev von TypeSafe liefert kalibrierte Wahrscheinlichkeiten für Auswahl- und Ja-Nein-Fragen und schreibt keinen einzigen Satz. TJ Pitre hat es gegen eine Bibliothek mit 135 Komponenten laufen lassen. Bei 36 von 40 salopp formulierten Beschreibungen lag der erste Treffer richtig.",
+      "sources": [
+        {
+          "name": "TJ Pitre (Southleft)",
+          "url": "https://southleft.substack.com/p/the-ai-that-refuses-to-write-a-sentence",
+          "headline": "The AI That Refuses to Write a Sentence"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, Kampagnen- und Personalmeldungen, nichts übernommen",
+      "count": 25,
+      "examples": [
+        "Money Is Your Material: Mercury Launches New Campaign Exploring the Future of Intelligent Banking",
+        "Publicis Go puts Lloyds Pet Insurance on the London Fashion Week catwalk with dog couture collection",
+        "Merman US Signs Anton Corbijn"
+      ]
+    }
+  ]
+}
