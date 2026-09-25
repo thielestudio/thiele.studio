@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "generated_for": "2026-09-25",
+    "window": "2026-09-23..2026-09-25",
+    "sources_scanned": 62,
+    "items_in_window": 141,
+    "note": "The two-day window overlaps with the last edition (23 September). General AI news (Meta Muse, Gemini Live Avatar, orbital data centres, the OpenAI agent breach in Australia) dominated the international feeds without a link to creative work. The State of Brand sitemap returned no pages inside the window. No Craft & Judgment piece from international sources passed the filter.",
+    "lang": "en"
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "A prototyping kit generated from specs, not prompted component by component",
+      "blurb": "Nathan Curtis describes a script that turns Figma component specs into React and web-component code (typed contract, styles, stories) in seconds, replacing weeks design technologists spent building a prototyping kit one component at a time with agents. What he values most is the side effect: an emitter cannot ask what you meant, so every undocumented convention in the specs surfaced and had to be written down.",
+      "sources": [
+        {
+          "name": "Nathan Curtis",
+          "url": "https://nathanacurtis.substack.com/p/generating-code-from-specs",
+          "headline": "Generating Code from Specs"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "The source of truth bounces between Figma and code",
+      "blurb": "Responding to Tony Ward, TJ Pitre argues that once AI makes switching between Figma and code cheap, a fixed source of truth stops being useful: work moves back and forth until it holds up in the product. He adds that in teams with ten engineers per designer, code becomes the source by default, whether anyone chose it or not.",
+      "sources": [
+        {
+          "name": "TJ Pitre",
+          "url": "https://southleft.substack.com/p/the-source-of-truth-is-a-ping-pong",
+          "headline": "The Source of Truth Is a Ping-Pong Ball"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Build the outcome, not another tool",
+      "blurb": "In his AI newsroom Exposit, Luke Wroblewski saw on-demand personalised reports quickly become the dominant way people used the site, ahead of classic news-site navigation. His test question for AI product work: are you building another tool, or delivering the outcome the tool was supposed to produce?",
+      "sources": [
+        {
+          "name": "Luke Wroblewski",
+          "url": "https://www.lukew.com/ff/entry.asp?2163",
+          "headline": "Skip the Tools, Make the Outcomes"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "The Ordinary puts 49 empty beauty buzzwords into a periodic table",
+      "blurb": "Uncommon's D&AD Black Pencil work collects terms like 'elixir' and 'flawless', checked with scientists to have no scientific or regulated basis, in a deliberately plain monochrome table. Nils Leonard says the team dropped scientific graphic language for fear people wouldn't get it; the brand reports an 11.8x rise in website traffic.",
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/insight/beauty-brands-were-writing-ai-slop-before-ai-heres-how-uncommon-won-a-dad-black-pencil-for-calling-it-out/",
+          "headline": "Beauty brands were writing AI slop before AI: here's how Uncommon won a D&AD Black Pencil for calling it out"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "A new name when the old one works against the offer",
+      "blurb": "Vancouver's YWCA Hotel had become a boutique hotel, yet the name kept people assuming it was a shelter or a women's residence. Rethink replaced the name instead of explaining it: Hotel Willo, after the native willow, with a symbol simple enough to work on key cards and door tags.",
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/work/from-ywca-to-hotel-willo-how-rethink-solved-a-branding-problem/",
+          "headline": "From YWCA to Hotel Willo: how Rethink solved one of branding's trickiest problems"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "An AI brand that rules out AI imagery to stand apart",
+      "blurb": "Kiss Branding showed AutogenAI a single page of competitor logos to make the category's sameness visible, then drew on white papers and academic publishing and banned AI-generated imagery from the brand. The system splits into a rich editorial mode for executives and a stripped-back black-and-white mode for technical buyers.",
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/kiss-branding-crafts-mature-new-identity-for-enterprise-ai-platform-autogenai/",
+          "headline": "Kiss Branding crafts mature new identity for enterprise AI platform AutogenAI"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "McLaren takes its new wordmark from the family garage sign",
+      "blurb": "The evolved identity now covers both road cars and racing, with a wordmark based on the hand-painted sign above the McLaren family service station in Auckland. Speedmark, Papaya orange and the Speedy Kiwi stay, the colour palette gets wider.",
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/mclaren-evolves-its-identity-with-a-wordmark-inspired-by-bruce-mclarens-family-garage/",
+          "headline": "McLaren evolves its identity with a wordmark inspired by Bruce McLaren's family garage"
+        },
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/mclaren-marks-the-next-chapter-with-the-reveal-of-an-evolved-identity/",
+          "headline": "McLaren Marks the Next Chapter with the Reveal of an Evolved Identity"
+        }
+      ],
+      "cluster": true
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Worcester, not London, tops a ranking of UK creative cities",
+      "blurb": "Affinity's Creative Cities Index ranks 50 UK locations per 10,000 residents on creative space, job opportunities and affordability. In a Design Week Q&A, Deanna German concedes the per-capita data doesn't capture the full picture of working there, but expects regional cities to hold on to more talent.",
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-death-of-the-london-creative-monopoly-qa-with-deanna-german/",
+          "headline": "The death of the London creative monopoly? Q A with Deanna German"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Canva adds over 1,000 Monotype styles, mostly for underserved scripts",
+      "blurb": "The expansion targets Arabic, Bengali, Hindi, Khmer, Lao, Thai and Vietnamese, languages that historically had few professional-quality fonts; Hindi alone gains 99 families. It takes Canva's font offering past 3,000.",
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/canva-adds-1000-new-monotype-fonts-for-global-creatives",
+          "headline": "Canva adds 1000+ new Monotype fonts for global creatives"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, campaign and people announcements, one taken as second source for McLaren",
+      "count": 24,
+      "examples": [
+        "Premium Lives in the Details: Lufthansa and Serviceplan Launch New International Premium Campaign",
+        "Reebok appoints NewGen as TikTok Influencer Agency of Record across Europe",
+        "Good Foods Group Launches Guacxiety, a New Campaign About the Stress of Buying Avocados"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "generated_for": "2026-09-25",
+    "window": "2026-09-23..2026-09-25",
+    "sources_scanned": 62,
+    "items_in_window": 191,
+    "note": "Das Zweitagefenster überlappt mit der letzten Ausgabe vom 23. September. Allgemeine AI-Meldungen (Meta Muse, Gemini Live Avatar, Rechenzentren im All, der Einbruch eines OpenAI-Agenten in Australien) füllten die Feeds ohne Bezug zu kreativer Arbeit. Die Sitemap von State of Brand lieferte keine Seite im Fenster. Das t3n-Interview zu Differenzierung im KI-Marketing liegt hinter einer harten Paywall und ist nicht aufgenommen.",
+    "lang": "de"
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Ein Prototyping-Kit, das aus Specs entsteht statt aus Prompts",
+      "blurb": "Nathan Curtis beschreibt ein Skript, das aus Komponenten-Specs in Figma in Sekunden React- und Web-Component-Code erzeugt, mit typisiertem Vertrag, Styles und Stories. Vorher bauten Design-Technologen solche Kits wochenlang Komponente für Komponente mit Agenten. Den größten Gewinn sieht er woanders: Ein Generator kann nicht nachfragen, also kam jede undokumentierte Konvention in den Specs ans Licht.",
+      "sources": [
+        {
+          "name": "Nathan Curtis",
+          "url": "https://nathanacurtis.substack.com/p/generating-code-from-specs",
+          "headline": "Generating Code from Specs"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Die Quelle der Wahrheit pendelt zwischen Figma und Code",
+      "blurb": "TJ Pitre argumentiert, dass eine feste Quelle der Wahrheit nichts mehr bringt, sobald AI den Wechsel zwischen Figma und Code billig macht. Die Arbeit geht hin und her, bis sie im Produkt hält. Und in Teams mit zehn Entwicklern pro Designerin wird Code ohnehin zur Quelle, ob das jemand so entschieden hat oder nicht.",
+      "sources": [
+        {
+          "name": "TJ Pitre",
+          "url": "https://southleft.substack.com/p/the-source-of-truth-is-a-ping-pong",
+          "headline": "The Source of Truth Is a Ping-Pong Ball"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Das Ergebnis bauen, nicht noch ein Werkzeug",
+      "blurb": "In seinem AI-Newsroom Exposit sah Luke Wroblewski, wie personalisierte Berichte auf Anfrage schnell zum wichtigsten Zugang wurden, vor der klassischen Navigation einer Nachrichtenseite. Seine Prüffrage für AI-Produkte: Baust du noch ein Werkzeug, oder lieferst du das Ergebnis, für das es gedacht war?",
+      "sources": [
+        {
+          "name": "Luke Wroblewski",
+          "url": "https://www.lukew.com/ff/entry.asp?2163",
+          "headline": "Skip the Tools, Make the Outcomes"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "The Ordinary stellt 49 leere Beauty-Floskeln als Periodensystem aus",
+      "blurb": "Uncommon sammelt für die mit einem D&AD Black Pencil ausgezeichnete Kampagne Begriffe wie »Elixier« und »makellos«, von Fachleuten geprüft auf fehlende wissenschaftliche oder regulierte Grundlage. Die Tabelle ist bewusst schlicht in Schwarzweiß gesetzt. Wissenschaftliche Bildsprache flog raus, weil das Team fürchtete, sonst verstehe niemand die Idee. Die Marke meldet 11,8-mal so viel Website-Traffic.",
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/insight/beauty-brands-were-writing-ai-slop-before-ai-heres-how-uncommon-won-a-dad-black-pencil-for-calling-it-out/",
+          "headline": "Beauty brands were writing AI slop before AI: here's how Uncommon won a D&AD Black Pencil for calling it out"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Ein neuer Name, wenn der alte gegen das Angebot arbeitet",
+      "blurb": "Das YWCA Hotel in Vancouver war längst ein Boutique-Hotel, doch der Name ließ viele an ein Frauenwohnheim oder eine Notunterkunft denken. Rethink hat den Namen ersetzt statt ihn zu erklären: Hotel Willo, nach der heimischen Weide, mit einem Zeichen, das auch auf Schlüsselkarten und Türhängern funktioniert.",
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/work/from-ywca-to-hotel-willo-how-rethink-solved-a-branding-problem/",
+          "headline": "From YWCA to Hotel Willo: how Rethink solved one of branding's trickiest problems"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Eine AI-Marke, die sich ohne AI-Bilder abhebt",
+      "blurb": "Kiss Branding legte AutogenAI eine Seite voller Wettbewerber-Logos vor, um die Gleichförmigkeit der Kategorie sichtbar zu machen. Die neue Identity orientiert sich an Whitepapers und wissenschaftlichem Publizieren und verzichtet ganz auf AI-generierte Bilder. Für Entscheider gibt es einen farbigen, redaktionellen Modus, für technische Käufer einen reduzierten in Schwarzweiß.",
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/kiss-branding-crafts-mature-new-identity-for-enterprise-ai-platform-autogenai/",
+          "headline": "Kiss Branding crafts mature new identity for enterprise AI platform AutogenAI"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "McLaren holt die neue Wortmarke vom Schild der Familienwerkstatt",
+      "blurb": "Die weiterentwickelte Identity gilt jetzt für Straßenautos und Rennsport gleichermaßen. Die Wortmarke geht auf das handgemalte Schild über der Tankstelle der Familie McLaren in Auckland zurück. Speedmark, Papaya-Orange und Speedy Kiwi bleiben, die Farbpalette wird breiter.",
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/mclaren-evolves-its-identity-with-a-wordmark-inspired-by-bruce-mclarens-family-garage/",
+          "headline": "McLaren evolves its identity with a wordmark inspired by Bruce McLaren's family garage"
+        },
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/mclaren-marks-the-next-chapter-with-the-reveal-of-an-evolved-identity/",
+          "headline": "McLaren Marks the Next Chapter with the Reveal of an Evolved Identity"
+        }
+      ],
+      "cluster": true
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Eine Hausschrift hat zwei Leben",
+      "blurb": "Patrick Marc Sommer fragte 20 Fachleute, was Unternehmen bei Typografie unterschätzen. 15 sprechen über Markenwirkung, nur neun über Umsetzung, Lizenzen und Zuständigkeiten, obwohl sich erst in PowerPoint, Geschäftsbericht und E-Mail zeigt, ob eine Schrift trägt. Mit Prüfliste für die Auswahl: Sprachen, Tabellenziffern, Währungszeichen, OpenType-Funktionen, Ersatzschrift für Office.",
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/typografie/was-unternehmen-beim-thema-typo-unterschaetzen/",
+          "headline": "Was Unternehmen beim Thema Typo unterschätzen"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Was der hässliche KI-Flyer über die Schwelle zum Design verrät",
+      "blurb": "Nils Hartmann von Parasol Island liest den Erfolg selbstgebauter KI-Flyer bei Friseuren und Imbissen als Befund über die eigene Branche. Erstgespräch, Briefing, Angebot und Korrekturrunden wirken auf kleine Betriebe wie ein Türsteher. Die Alternative zum KI-Flyer sei selten eine Agentur, sondern oft gar keine Kommunikation.",
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/branche-karriere/was-die-kreativbranche-von-haesslichen-ki-flyern-lernen-kann/",
+          "headline": "Was die Kreativbranche von (hässlichen) KI-Flyern lernen kann"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Worcester statt London führt ein Ranking britischer Kreativstädte an",
+      "blurb": "Der Creative Cities Index von Affinity bewertet 50 britische Orte je 10.000 Einwohner nach Kreativräumen, Jobangebot und Lebenskosten. Deanna German räumt im Gespräch mit Design Week ein, dass die Pro-Kopf-Daten nicht das ganze Bild zeigen. Sie erwartet trotzdem, dass Regionalstädte mehr Talente halten.",
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-death-of-the-london-creative-monopoly-qa-with-deanna-german/",
+          "headline": "The death of the London creative monopoly? Q A with Deanna German"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Canva bekommt über 1.000 Monotype-Schnitte, vor allem für unterversorgte Schriftsysteme",
+      "blurb": "Der Zuwachs betrifft Arabisch, Bengalisch, Hindi, Khmer, Laotisch, Thai und Vietnamesisch, Sprachen mit bislang wenigen professionellen Schriften. Allein für Hindi kommen 99 Familien dazu. Damit bietet Canva mehr als 3.000 Schnitte.",
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/canva-adds-1000-new-monotype-fonts-for-global-creatives",
+          "headline": "Canva adds 1000+ new Monotype fonts for global creatives"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Claude-Texte tragen ab 30. September ein unsichtbares Wasserzeichen",
+      "blurb": "Anthropic dehnt das statistische Muster in der Wortwahl auf Fable 5, Sonnet 5 und Opus 4.8 aus und beruft sich auf den EU AI Act. Neuere Modelle tragen es bereits. Abschalten lässt es sich nicht, eine Erkennungs-API steht Behörden, Medien und Faktenprüfern offen.",
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/anthropic-fuehrt-unsichtbares-text-wasserzeichen-fuer-weitere-claude-modelle-ein/",
+          "headline": "Anthropic führt unsichtbares Text-Wasserzeichen für weitere Claude-Modelle ein"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, Kampagnen- und Personalmeldungen, eine als zweite Quelle für McLaren genommen",
+      "count": 24,
+      "examples": [
+        "Premium Lives in the Details: Lufthansa and Serviceplan Launch New International Premium Campaign",
+        "Reebok appoints NewGen as TikTok Influencer Agency of Record across Europe",
+        "Good Foods Group Launches Guacxiety, a New Campaign About the Stress of Buying Avocados"
+      ]
+    }
+  ]
+}
