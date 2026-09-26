@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "generated_for": "2026-09-26",
+    "window": "2026-09-24..2026-09-26",
+    "sources_scanned": 62,
+    "items_in_window": 177,
+    "note": "Das Zweitagefenster überlappt mit der Ausgabe vom 25. September, zehn starke Stücke standen dort schon (u. a. Nathan Curtis, Uncommon, McLaren, Kiss Branding). Allgemeine AI-Meldungen (Meta Muse, Anthropic-Akamai, Pentagon-Urteil) ohne Bezug zu kreativer Arbeit dominierten die Feeds. Die Koto-Rakbank-Geschichte bei PAGE liegt hinter PAGE+ und ist nicht aufgenommen. printmag.com und werbewoche.ch fielen aus, die Sitemap von State of Brand lieferte keine Seite im Fenster.",
+    "lang": "de"
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Wie sauber das Design-System ist, entscheidet, wie viel UI per Sprache entsteht",
+      "blurb": "TJ Pitre hat Voice Canvas in StoryUI ein kleines Entscheidungsmodell vorgeschaltet. Es erledigt Text- und Prop-Änderungen direkt aus dem Komponenten-Manifest und gibt Unklares oder Neues an ein LLM weiter. Was nie dokumentiert wurde, kann es nicht wählen, dann rät das langsamere Modell.",
+      "tags": [
+        "Design-Systeme",
+        "AI"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TJ Pitre",
+          "url": "https://southleft.substack.com/p/life-after-the-design-system",
+          "headline": "Life After the Design System"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "OKLCH-Helligkeit taugt nicht als Kontrastmaß für Paletten-Stufen",
+      "blurb": "Kevin Muldoon zeigt zwei Farben mit gleicher OKLCH-Helligkeit: weiße Schrift besteht auf der einen AA (5,4:1), auf der anderen nicht (4,3:1). Sein Vorschlag: OKLCH zum Erzeugen von Verläufen behalten, die Stufennummern aber an CIE L* binden, das die von WCAG gemessene Leuchtdichte abbildet. Auf Grautönen fällt der Fehler nicht auf.",
+      "tags": [
+        "Farbe",
+        "Barrierefreiheit"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Kevin Muldoon",
+          "url": "https://thedesignsystemsjournal.substack.com/p/stop-using-oklch-lightness-for-your",
+          "headline": "OKLCH is a Brush, not a Ruler"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Liverpool Philharmonic bekommt einen Baukasten statt eines Logos",
+      "blurb": "Smiling Wolf leitet die Identity aus der Deckenstuckatur des Art-déco-Saals von 1939 ab und baut daraus modulare Elemente (Arc, Glow, Wave, Beam), die auf dem Handy wie auf dem Plakat funktionieren sollen. Davor lag eine eigene Strategiephase der Agentur Fly a Kite mit Belegschaft, Gremien und Publikum.",
+      "tags": [
+        "Identity",
+        "Kultur"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/how-smiling-wolf-tuned-into-the-future-of-the-liverpool-philharmonic/",
+          "headline": "How Smiling Wolf tuned into the future of the Liverpool Philharmonic"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "veg1 wird für den Wechsel vom Direktvertrieb ins Regal umgebaut",
+      "blurb": "SoreThumbStudio ersetzt Aluminiumdosen durch kompostierbare Beutel. Das senkt Versandgewicht und gibt mehr Präsenz im Regal. Der neue Claim »Created by vegans, made for everyone« öffnet die Marke über vegane Käufer hinaus.",
+      "tags": [
+        "Packaging",
+        "Positionierung"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/sorethumbstudio-rebrands-veg1-to-prepare-flagship-vegan-multivitamin-for-retail/",
+          "headline": "SoreThumbStudio rebrands veg1 to prepare flagship vegan multivitamin for retail"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "IKEA macht aus der Zweitnutzung der Frakta-Tasche die Jubiläumskampagne",
+      "blurb": "Laut einer Umfrage nutzen 69 Prozent der italienischen Kundschaft die blaue Tasche um. Ogilvy Italia hat daraus zehn Motive mit dem Straßenfotografen Salvatore Matarazzo gemacht, vom Planschbecken bis zur Plattenkiste.",
+      "tags": [
+        "Kampagne"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/30-jahre-frakta-und-ikea-feiert-das-mit-einer-launigen-kampagne/",
+          "headline": "30 Jahre Frakta – und IKEA feiert das mit einer launigen Kampagne"
+        },
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/advertising/ikea-transforms-its-iconic-blue-bag-in-quirky-campaign",
+          "headline": "IKEA transforms its iconic blue bag in quirky campaign"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Aura als Markenwert: vier Fragen, um sie freizulegen",
+      "blurb": "Lukas Cottrell von der Peter Schmidt Group beschreibt, wie man die Ausstrahlung einer Marke untersucht: erst die Essenz freilegen, dann nach Mythos, sinnlicher Präsenz, Geheimnis und Ritualen fragen. Aura müsse laufend an neue Kontexte angepasst werden.",
+      "tags": [
+        "Markenstrategie"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/branche-karriere/die-staerksten-marken-erkennt-man-bevor-man-ihr-logo-sieht/",
+          "headline": "»Die stärksten Marken erkennt man, bevor man ihr Logo sieht.«"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Apple belegt mit einem Making-of, dass sein Stop-Motion-Spot kein AI ist",
+      "blurb": "Das Behind-the-Scenes-Video zeigt modellierte Figuren und Sets, Bild für Bild in Dragonframe animiert. Creative Bloqs Punkt: Wer für Handarbeit zahlt, braucht den Nachweis inzwischen gleich mit.",
+      "tags": [
+        "Handwerk",
+        "Werbung"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/advertising/no-that-apple-games-advert-isnt-ai-and-the-stunning-bts-video-proves-it",
+          "headline": "No, that Apple Games advert isn't AI, and the brilliant BTS video proves it"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Affordanz begreift man an der Wählscheibe",
+      "blurb": "Christophe Stoll lehrt Affordanz und Feedback mit Wählscheibe und Tastentelefon statt mit Definitionen. Die Anordnung der Tasten kam aus den Erwartungen der Nutzer, nicht aus dem Objekt: Bell Labs fand bei Tempo und Fehlern kaum Unterschiede zwischen den Layouts.",
+      "tags": [
+        "Interaktionsdesign",
+        "Lehre"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Christophe Stoll",
+          "url": "https://christophestoll.substack.com/p/why-do-some-things-stick",
+          "headline": "Why Do Some Things Stick?"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Corsario holt die optischen Größen über eine variable Achse zurück",
+      "blurb": "Felix Bradens Schrift kombiniert eine Fetten- mit einer Größenachse: In Display-Größen verstärken sich die Haarlinien zu den Serifen hin, in Text- und Caption-Größen sind sie durchgehend kräftiger. Grundlage sind Gerard Ungers Lesbarkeitsprinzipien mit flachen Bögen und offenen Punzen.",
+      "tags": [
+        "Typografie"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Designtagebuch",
+          "url": "https://www.designtagebuch.de/corsario-eine-variable-schriftfamilie-fuer-lange-lesetexte-und-praegnante-headlines/",
+          "headline": "Corsario: Eine variable Schriftfamilie für lange Lesetexte und prägnante Headlines"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Sony und UMG werfen Suno »Model Laundering« vor",
+      "blurb": "Die neue Klage argumentiert, dass das Training von Suno v6 auf Nutzer-Outputs früherer, mutmaßlich rechtsverletzender Modelle die Verletzung nicht tilgt. Suno bestätigt, dass Nutzer-Kreationen in die Trainingsdaten eingeflossen sind.",
+      "tags": [
+        "Urheberrecht",
+        "AI-Musik"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1000758/suno-sony-umg-lawsuit-ai-music",
+          "headline": "Sony and UMG are suing Suno again"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Mediaagenturen erwarten, dass Werbung in AI-Umgebungen SEA ablöst",
+      "blurb": "Im BVDW-Trendmonitor 2026 rechnen 94 Prozent der Agenturen damit, dass Werbung in KI-Umgebungen in fünf Jahren dominiert. Die Bedeutung von SEA soll von 77 auf 39 Prozent fallen, Banner und Display werden zur Nische.",
+      "tags": [
+        "Werbemarkt",
+        "Agenturen"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/branche-karriere/trendmonitor-2026-das-sind-die-future-signals/",
+          "headline": "Trendmonitor 2026: Das sind die Future Signals"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: gesichtet, keine Story",
+      "count": 25,
+      "examples": [
+        "The Chase acquires fellow Manchester agency, Squad",
+        "Premium Lives in the Details: Lufthansa and Serviceplan Launch New International Premium Campaign",
+        "Reebok appoints NewGen as TikTok Influencer Agency of Record across Europe"
+      ]
+    }
+  ]
+}

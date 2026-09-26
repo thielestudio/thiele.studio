@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "generated_for": "2026-09-26",
+    "window": "2026-09-24..2026-09-26",
+    "sources_scanned": 62,
+    "items_in_window": 124,
+    "note": "The two-day window overlaps with the 25 September edition, where ten strong pieces already ran. General AI news (Meta Muse, Anthropic-Akamai, the Pentagon ruling) filled the feeds without a link to creative work. printmag.com failed; the State of Brand sitemap returned no pages in the window.",
+    "lang": "en"
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Design system hygiene decides how much UI can be built by voice",
+      "blurb": "TJ Pitre added a small decision model to StoryUI's Voice Canvas that handles prop and copy edits directly from the component manifest and hands anything vague or new to an LLM. Undocumented variants or props can't be picked, so the request falls back to the slower model that has to guess.",
+      "tags": [
+        "design systems",
+        "AI"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TJ Pitre",
+          "url": "https://southleft.substack.com/p/life-after-the-design-system",
+          "headline": "Life After the Design System"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "OKLCH lightness can't carry contrast in palette weights",
+      "blurb": "Kevin Muldoon shows two colours at the same OKLCH lightness where white text passes AA on one (5.4:1) and fails on the other (4.3:1). His case: keep OKLCH for generating ramps, but anchor weight numbers to CIE L*, which tracks the luminance WCAG actually measures. Greys hide the error, which is why it survives.",
+      "tags": [
+        "color",
+        "accessibility"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Kevin Muldoon",
+          "url": "https://thedesignsystemsjournal.substack.com/p/stop-using-oklch-lightness-for-your",
+          "headline": "OKLCH is a Brush, not a Ruler"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Liverpool Philharmonic gets a toolkit instead of a logo",
+      "blurb": "Smiling Wolf drew the identity from the 1939 Art Deco hall's ceiling plasterwork and built modular elements (Arc, Glow, Wave, Beam) meant to work on a phone as well as a poster. The visual work sits on a separate discovery phase by Fly a Kite with staff, trustees and audiences.",
+      "tags": [
+        "identity",
+        "culture"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/how-smiling-wolf-tuned-into-the-future-of-the-liverpool-philharmonic/",
+          "headline": "How Smiling Wolf tuned into the future of the Liverpool Philharmonic"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "veg1 rebrand built for the move from D2C to retail shelf",
+      "blurb": "SoreThumbStudio swapped aluminium tins for home-compostable pouches, which also cut shipping weight and gave more shelf presence. The tagline 'Created by vegans, made for everyone' widens the audience beyond vegans.",
+      "tags": [
+        "packaging",
+        "positioning"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/sorethumbstudio-rebrands-veg1-to-prepare-flagship-vegan-multivitamin-for-retail/",
+          "headline": "SoreThumbStudio rebrands veg1 to prepare flagship vegan multivitamin for retail"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "IKEA turns the Frakta bag's afterlife into its 30th-birthday campaign",
+      "blurb": "Ogilvy Italy shot ten everyday scenes with street photographer Salvatore Matarazzo, showing the bag as cat bed, paddling pool and more. The campaign sells nothing new, only the uses customers already invented.",
+      "tags": [
+        "campaign"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/advertising/ikea-transforms-its-iconic-blue-bag-in-quirky-campaign",
+          "headline": "IKEA transforms its iconic blue bag in quirky campaign"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Apple uses a making-of to prove its stop-motion ad isn't AI",
+      "blurb": "Apple released a behind-the-scenes video showing sculpted props and sets animated frame by frame in Dragonframe. Creative Bloq's point: when a brand pays for handmade work, the BTS film becomes part of the proof.",
+      "tags": [
+        "craft",
+        "advertising"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/advertising/no-that-apple-games-advert-isnt-ai-and-the-stunning-bts-video-proves-it",
+          "headline": "No, that Apple Games advert isn't AI, and the brilliant BTS video proves it"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Affordance is grasped at the rotary dial",
+      "blurb": "Christophe Stoll teaches affordance and feedback with a rotary phone and a keypad instead of definitions. The keypad layout came from what people expected, not from the object, since Bell Labs found layout differences in speed and errors too small to matter.",
+      "tags": [
+        "interaction design",
+        "education"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Christophe Stoll",
+          "url": "https://christophestoll.substack.com/p/why-do-some-things-stick",
+          "headline": "Why Do Some Things Stick?"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Sony and UMG accuse Suno of 'model laundering'",
+      "blurb": "The labels' new suit argues that training Suno v6 on user outputs of earlier, allegedly infringing models does not clean the infringement. Suno confirmed v6 training data includes user creations. The case tests whether retraining on generated output resets copyright exposure.",
+      "tags": [
+        "copyright",
+        "AI music"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1000758/suno-sony-umg-lawsuit-ai-music",
+          "headline": "Sony and UMG are suing Suno again"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: reviewed, not taken",
+      "count": 25,
+      "examples": [
+        "The Chase acquires fellow Manchester agency, Squad",
+        "Premium Lives in the Details: Lufthansa and Serviceplan Launch New International Premium Campaign",
+        "Reebok appoints NewGen as TikTok Influencer Agency of Record across Europe"
+      ]
+    }
+  ]
+}
