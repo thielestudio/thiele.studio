@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "generated_for": "2026-09-27",
+    "window": "2026-09-25..2026-09-27",
+    "sources_scanned": 62,
+    "items_in_window": 89,
+    "lang": "en",
+    "note": "Thin window. The two-day window overlaps heavily with the 26 September edition, which already carried the strongest pieces (TJ Pitre, Kevin Muldoon, veg1, IKEA Frakta, Apple Games, Suno). General AI news (Meta Muse, OpenAI training pause, agent security incidents) dominated the feeds without a link to creative work. No international design-practice piece passed today. A UX Collective essay was blocked twice and could not be judged. werbewoche.ch failed; the State of Brand sitemap returned no page in the window."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Inca Kola strips Peru from its logo, and customers call it globalised",
+      "blurb": "The rebrand reduces the mark to its core, dropping the white type outline, the map of Peru and the \"since 1935\" line. It reads better, but with Coca-Cola as co-owner and blue-and-yellow rivals claiming to be more Peruvian, many customers read the missing map as a loss of origin.",
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/branding/inca-kola-rebrands-as-the-worlds-other-cola-war-heats-up",
+          "headline": "Inca Kola rebrands as the world's other cola war heats up"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "NASA bans AI imagery because its brand runs on trust",
+      "blurb": "Creative director David Rager explains the rule: people must be able to believe what NASA shows them, so communication has to start from something that exists. A point for heritage brands too: much of his job is teaching long-tenured staff that consistency has value.",
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/we-have-the-kind-of-stuff-ai-wishes-it-could-make-why-trust-is-more-important-than-ever-for-the-nasa-brand",
+          "headline": "\"We have the kind of stuff AI wishes it could make\": Why trust is more important than ever for the NASA brand"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Bentley builds its brand into the showroom architecture",
+      "blurb": "FutureBrand replaced the sales floor with lounges, a materials atelier for specifying leathers and veneers, and a dedicated handover room. The B curve and grille diamond run through form, materials and lighting rather than sitting on the walls, and the concept is a kit meant to work in spaces of any size.",
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/bentley-and-futurebrand-rethink-the-car-showroom-as-a-place-youd-actually-want-to-linger/",
+          "headline": "Bentley and FutureBrand rethink the car showroom as a place you d actually want to linger"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "The Chase buys Squad and takes its film arm fully in-house",
+      "blurb": "The Manchester consultancy adds Squad, a strategy shop focused on board-level brand leadership, and fully acquires the Chase Films, previously a joint venture. The stated aim is advising clients on how creativity grows brands rather than just executing briefs.",
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/the-chase-acquires-fellow-manchester-agency-squad/",
+          "headline": "The Chase acquires fellow Manchester agency, Squad"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Adobe Max's programme is aimed at the enterprise buyer, not the designer",
+      "blurb": "Tom May read all 208 sessions. The AI track keeps reassuring about craft, while Firefly Graph is pitched on governance and indemnification and agencies boast of a million assets; his reading is that the direction is scale and \"content\", bought by marketing directors and procurement.",
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/design-software/adobe-max-2026s-lineup-tells-us-a-lot-about-the-companys-ai-priorities-right-now",
+          "headline": "Adobe Max 2026's lineup tells us a lot about the company's AI priorities right now"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, reviewed and not included",
+      "count": 11,
+      "examples": [
+        "Sweet Filmes shortlisted at CICLOPE 2026 for “The Girl in the Mirror”",
+        "Studio Akkira launches Rafiel, a free AI app for those living with grief, and the short film “Chinelo de Prego” in honor of the founder’s brother",
+        "The punch no one sees coming: Behind The Gloves and Brothers and Sisters launch campaign to define boxing’s 7th punch"
+      ]
+    }
+  ]
+}

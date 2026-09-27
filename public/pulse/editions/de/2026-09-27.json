@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "generated_for": "2026-09-27",
+    "window": "2026-09-25..2026-09-27",
+    "sources_scanned": 62,
+    "items_in_window": 135,
+    "lang": "de",
+    "note": "Dünnes Fenster. Das Zweitagefenster überlappt stark mit der Ausgabe vom 26. September, dort standen die stärksten Stücke schon (TJ Pitre, Kevin Muldoon, veg1, IKEA Frakta, Apple, Suno, Trendmonitor). Allgemeine AI-Meldungen (Meta Muse, OpenAIs Trainingspause, Sicherheitsvorfälle mit Agenten) dominierten die Feeds ohne Bezug zu kreativer Arbeit. Der Rewe-Chatbot-Fall bei t3n liegt hinter t3n PRO und ist nicht aufgenommen. Ein Essay bei UX Collective war zweimal gesperrt und ließ sich nicht beurteilen. werbewoche.ch fiel aus, die Sitemap von State of Brand lieferte keine Seite im Fenster."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Giorgia Lupi macht die 200 meistgeliehenen Bücher einer Bibliothek zur Wandarbeit",
+      "blurb": "Das Pentagram-Team hat zuerst den Bibliotheksbetrieb beobachtet und Texturen und Details im Gebäude gescannt. Daraus wurden 200 Kacheln. Ihre Form zeigt, ob ein Titel physisch oder digital vorliegt, Muster und Farben verweisen auf Themenbereich und Heimatbibliothek.",
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/von-der-schoenheit-des-wissens-pentagram-gestaltet-data-installation/",
+          "headline": "Von der Schönheit des Wissens: Pentagram gestaltet Data-Installation"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Inca Kola streicht Peru aus dem Logo, die Kundschaft spricht von Globalisierung",
+      "blurb": "Das Redesign reduziert die Marke auf ihren Kern: keine weiße Kontur mehr, kein Landesumriss, kein »since 1935«. Lesbarer ist das. Weil Coca-Cola mitbesitzt und Konkurrenten in denselben Farben sich als peruanischer ausgeben, lesen viele den fehlenden Umriss als Verlust der Herkunft.",
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/branding/inca-kola-rebrands-as-the-worlds-other-cola-war-heats-up",
+          "headline": "Inca Kola rebrands as the world's other cola war heats up"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "NASA verbietet AI-Bilder, weil die Marke auf Glaubwürdigkeit baut",
+      "blurb": "Creative Director David Rager begründet die Regel: Wer ein NASA-Bild sieht, muss ihm glauben können, also beginnt Kommunikation bei etwas, das es gibt. Dazu ein Befund für Traditionsmarken. Ein Großteil seiner Arbeit besteht darin, langjährigen Mitarbeitenden den Wert von Konsistenz zu erklären.",
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/we-have-the-kind-of-stuff-ai-wishes-it-could-make-why-trust-is-more-important-than-ever-for-the-nasa-brand",
+          "headline": "\"We have the kind of stuff AI wishes it could make\": Why trust is more important than ever for the NASA brand"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Bentley baut die Marke in die Architektur des Showrooms ein",
+      "blurb": "FutureBrand ersetzt die Verkaufsfläche durch Lounges, ein Material-Atelier für Leder und Furniere und einen eigenen Raum für die Übergabe. Die Kurve des B und die Raute des Kühlergrills stecken in Form, Material und Licht statt an der Wand. Das Konzept ist als Baukasten für Standorte jeder Größe angelegt.",
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/bentley-and-futurebrand-rethink-the-car-showroom-as-a-place-youd-actually-want-to-linger/",
+          "headline": "Bentley and FutureBrand rethink the car showroom as a place you d actually want to linger"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Wecatch leitet die Identity eines Wohnquartiers aus der alten Druckerei ab",
+      "blurb": "Für ZOHO in Zofingen stammen die Farben aus dem Vierfarbdruck, aus Druckmarken und Proofbögen wurden zwölf Icons. Ein sauberes Beispiel dafür, wie die Geschichte eines Ortes ein ganzes System trägt, bis zur Website, die wie das Quartier wachsen soll.",
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/mit-blick-in-die-zukunft-wecatch-branded-zoho/",
+          "headline": "Mit Blick in die Zukunft: Wecatch branded ZOHO"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "The Chase kauft Squad und holt die Filmproduktion ganz ins Haus",
+      "blurb": "Die Beratung aus Manchester übernimmt Squad, spezialisiert auf Markenführung auf Vorstandsebene, und kauft The Chase Films komplett, bisher ein Joint Venture. Erklärtes Ziel ist, Kunden zu beraten, wie Kreativität Marken wachsen lässt, statt nur Briefings abzuarbeiten.",
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/the-chase-acquires-fellow-manchester-agency-squad/",
+          "headline": "The Chase acquires fellow Manchester agency, Squad"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Adobe Max zielt laut Programm auf den Einkauf, nicht auf Gestalter",
+      "blurb": "Tom May hat alle 208 Sessions gelesen. Die AI-Sessions beteuern ständig, das Handwerk nicht zu ersetzen, während Firefly Graph mit Governance und Haftungsfreistellung beworben wird und Agenturen mit einer Million Assets werben. Sein Schluss: Die Richtung heißt Skalierung und Content, gekauft von Marketingleitung und Einkauf.",
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/design-software/adobe-max-2026s-lineup-tells-us-a-lot-about-the-companys-ai-priorities-right-now",
+          "headline": "Adobe Max 2026's lineup tells us a lot about the company's AI priorities right now"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, gesichtet und nicht aufgenommen",
+      "count": 11,
+      "examples": [
+        "Sweet Filmes shortlisted at CICLOPE 2026 for “The Girl in the Mirror”",
+        "Studio Akkira launches Rafiel, a free AI app for those living with grief, and the short film “Chinelo de Prego” in honor of the founder’s brother",
+        "The punch no one sees coming: Behind The Gloves and Brothers and Sisters launch campaign to define boxing’s 7th punch"
+      ]
+    }
+  ]
+}
