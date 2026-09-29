@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "generated_for": "2026-09-29",
+    "window": "2026-09-27..2026-09-29",
+    "sources_scanned": 62,
+    "items_in_window": 108,
+    "lang": "en",
+    "note": "Overlap with the 27 September edition. General AI news (OpenAI's training halt, rogue agents, Florida's case against OpenAI, AMD buying World Labs) dominated the feeds without a link to creative work. The Stripe prototyping piece at Department of Product is paid-only and not included. printmag.com failed, the State of Brand sitemap returned no pages in the window."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Motion identities should start from how a brand behaves, not from easing curves",
+      "blurb": "Andrew Vucko argues that motion decisions begin with rituals people already associate with a brand, such as Coca-Cola's opening, pouring and fizzing, and with what a movement does: reveal, transport, reward. Disney's castle intro has changed technology repeatedly since 1985 while keeping the same narrative arc, which is why it stays recognisable.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-strongest-motion-identities-encode-behaviour-not-aesthetics/",
+          "headline": "The strongest motion identities encode behaviour, not aesthetics"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Nathan Curtis proposes roles as composites that carry behaviour and accessibility into code",
+      "blurb": "A generated toggle can be pixel-perfect and still do nothing on click, tab or screen reader, because Figma doesn't express behaviour. Curtis suggests annotating layers with roles like togglebutton, bundled the way a text style bundles type values, so generators and agents know what to wire. Useful for anyone feeding design systems to code generators.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Nathan Curtis",
+          "url": "https://nathanacurtis.substack.com/p/component-and-part-roles-as-composites",
+          "headline": "Component and Part Roles as Composites of Behavior and Accessibility"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Quest gives every story its own typeface and treats the browser like a game HUD",
+      "blurb": "The web fiction magazine pairs each piece with commissioned art and one of 11 typefaces chosen as part of editing, with no template. The frame stays quiet so the stories can be loud, and artists get light direction, often talking to authors directly.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/ross-gendels-zane-miller-quest-magazine-graphic-design-publication-project-280926",
+          "headline": "Quest is a highly designed sci-fi and fantasy magazine built for web fiction"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "McLaren's former head of brand: borrowing luxury's visual codes doesn't borrow its conditions",
+      "blurb": "Having worked on the new identity before leaving, the author argues McLaren's value was built by acts and deeds and by an enthusiast community, not by restrained type and a Chanel-like palette. His distinction is worth keeping: preserving a brand's historical artefacts is not the same as understanding the ambition that created them.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/insight/acts-and-deeds-the-mclaren-rebrand/",
+          "headline": "I helped shape McLaren s brand. Here s what worries me about the refresh"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Bulb and Octopus shared pink and a cheerful voice. Only one survived",
+      "blurb": "Dora Czerna uses the two energy suppliers to show that tone of voice gets credit for success it didn't earn: they parted over decisions no customer saw, such as how far ahead to buy energy. A useful corrective for anyone selling brand voice as the difference. Medium member story.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/what-makes-a-brand-last-baf152419576",
+          "headline": "What makes a brand last?"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "open session sets AI autonomy for copy by stakes, from 90 percent down to almost none",
+      "blurb": "The studio's copy guidelines work as a pyramid: operational text like invites and notes is mostly model-drafted and reviewed, social and newsletter copy is co-written at 30 to 60 percent, manifestos and essays stay human-authored. The quality bar is blunt: if copy reads like AI wrote it, it fails.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "open session",
+          "url": "https://opensession.substack.com/p/brand-copy-guidelines",
+          "headline": "Brand Copy Guidelines"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Automation removed the tasks juniors learned on. Patrick Neeman lists seven ways to put practice back",
+      "blurb": "Transcript tagging, redlines and competitive audits were never valuable as output but taught judgment where mistakes were cheap. Neeman proposes inventorying what each removed task taught, making verification of AI output the deliverable and giving juniors evaluation work and a budget line for training.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/how-we-save-entry-level-ux-work-that-teaches-craft-in-the-time-of-ai-our-field-depends-on-this-e1684a0d67eb",
+          "headline": "How we save entry-level UX work that teaches craft in the time of AI. Our field depends on this."
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "CorelDRAW's Text-to-Vector returns editable curves and nodes, not a flat image",
+      "blurb": "The more useful mode works from reference art: in the demo, an illustration of around 600 objects became new icons in the same style, fully editable in the Objects panel. Details don't reliably survive, so expect manual fixes.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/graphic-design-software/coreldraw-adds-text-to-vector-ai-in-the-september-update-is-it-a-good-move",
+          "headline": "CorelDRAW adds Text-to-Vector AI in the September update – is it a good move?"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Anthropic releases Sonnet 5.5, 30 percent faster than its predecessor",
+      "blurb": "Anthropic positions it for everyday work including office documents and says it beats Opus 5.5 on agentic coding at lower token burn. A new Haiku is announced for the coming weeks.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/",
+          "headline": "Anthropic releases Sonnet 5.5, which it calls a significantly cheaper, faster work partner"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, reviewed and not included",
+      "count": 25,
+      "examples": [
+        "The Contagious Brands Report 2026 reveals the most creative, disruptive and innovative brands of the year",
+        "KFC ‘boybands’ its new tenders to make them even tenderer via Special",
+        "The Stop Is Just The Start"
+      ]
+    }
+  ]
+}

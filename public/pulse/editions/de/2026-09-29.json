@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "generated_for": "2026-09-29",
+    "window": "2026-09-27..2026-09-29",
+    "sources_scanned": 62,
+    "items_in_window": 152,
+    "lang": "de",
+    "note": "Das Fenster überlappt mit der Ausgabe vom 27. September. Allgemeine AI-Meldungen (OpenAIs Trainingsstopp, ausbrechende Agenten, Floridas Klage gegen OpenAI, AMD kauft World Labs) dominierten ohne Bezug zu kreativer Arbeit. Der Stripe-Prototyping-Beitrag bei Department of Product ist nur für Zahlende und fehlt deshalb. printmag.com, designtagebuch.de und werbewoche.ch fielen aus, die Sitemap von State of Brand lieferte keine Seite im Fenster."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Eine Motion Identity beginnt beim Verhalten der Marke, nicht bei der Easing-Kurve",
+      "blurb": "Andrew Vucko setzt bei Ritualen an, die Menschen mit einer Marke schon verbinden, etwa Öffnen, Eingießen und Sprudeln bei Coca-Cola, und bei der Funktion einer Bewegung: enthüllen, transportieren, belohnen. Das Disney-Schloss hat seit 1985 mehrfach die Technik gewechselt. Die Erzählstruktur blieb gleich, deshalb bleibt es erkennbar.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-strongest-motion-identities-encode-behaviour-not-aesthetics/",
+          "headline": "The strongest motion identities encode behaviour, not aesthetics"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Nathan Curtis schlägt Rollen vor, die Verhalten und Barrierefreiheit gebündelt in den Code tragen",
+      "blurb": "Ein generierter Toggle kann pixelgenau sein und trotzdem weder auf Klick, Tab noch Screenreader reagieren, weil Figma kein Verhalten ausdrückt. Curtis annotiert Ebenen mit Rollen wie togglebutton, gebündelt wie ein Textstil Schriftwerte bündelt. Generatoren und Agenten wissen dann, was sie verdrahten müssen.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Nathan Curtis",
+          "url": "https://nathanacurtis.substack.com/p/component-and-part-roles-as-composites",
+          "headline": "Component and Part Roles as Composites of Behavior and Accessibility"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "McLarens früherer Markenchef: Wer die Codes des Luxus übernimmt, übernimmt nicht dessen Voraussetzungen",
+      "blurb": "Der Autor war an der neuen Identity beteiligt, bevor er ging. Er hält dagegen, dass McLarens Wert aus Rennerfolgen und einer Fangemeinde entstand, nicht aus zurückhaltender Typografie im Stil von Chanel. Die Unterscheidung taugt über den Fall hinaus: historische Artefakte einer Marke bewahren ist etwas anderes, als den Ehrgeiz zu verstehen, der sie hervorgebracht hat.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/insight/acts-and-deeds-the-mclaren-rebrand/",
+          "headline": "I helped shape McLaren s brand. Here s what worries me about the refresh"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Der DFB-Pokal macht Kontrast zum Gestaltungsprinzip",
+      "blurb": "Holger Merk, Leiter der Markenabteilung, beschreibt die Frage hinter dem Rebrand: Wie fasst eine auf Konsistenz gebaute Marke einen Wettbewerb, der von Unberechenbarkeit lebt? Vor jeder Änderung wurden die unverhandelbaren Elemente festgelegt, Pokal, Rituale, Pokalgrün. Erweitert wurde nur der Ausdrucksspielraum um sie herum.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Slanted",
+          "url": "https://www.slanted.de/the-dfb-pokal-reimagined/",
+          "headline": "The DFB-Pokal Reimagined"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Bulb und Octopus teilten Pink und Tonfall. Überlebt hat nur einer",
+      "blurb": "Dora Czerna zeigt an den beiden Energieversorgern, dass der Tonfall Erfolg zugeschrieben bekommt, den er nicht verdient hat. Getrennt haben sich die Wege bei Entscheidungen, die kein Kunde sah, etwa wie weit im Voraus Energie eingekauft wird. Nützlich für alle, die Brand Voice als Unterschied verkaufen. Medium-Mitgliederbeitrag.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/what-makes-a-brand-last-baf152419576",
+          "headline": "What makes a brand last?"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Joony's bricht mit der Öko-Ästhetik im Getränkeregal",
+      "blurb": "Studio Avanti hat für das Hamburger Natural Soda Naming, Positionierung und Packaging gemacht. Statt Yoga-Look und Gesundheitsversprechen: Retro-Schriften, gedeckte Pastelltöne, die die reduzierte Süße zeigen, und Frucht-Illustrationen für die Orientierung im Regal, wo die Kaufentscheidung in unter einer Sekunde fällt.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/ohne-zucker-in-pastell-studio-avanti-branded-joonys-mit-style-humor/",
+          "headline": "Ohne Zucker in Pastell: Studio Avanti branded Joony s mit Style Humor"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "open session staffelt den AI-Anteil an Texten nach Tragweite",
+      "blurb": "Die Copy-Richtlinien des Studios sind eine Pyramide. Operative Texte wie Einladungen und Notizen entwirft das Modell, ein Mensch prüft. Social und Newsletter entstehen zu 30 bis 60 Prozent mit AI, Manifeste und Essays bleiben menschlich. Der Maßstab ist knapp: Liest sich ein Text nach AI, ist er gescheitert.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "open session",
+          "url": "https://opensession.substack.com/p/brand-copy-guidelines",
+          "headline": "Brand Copy Guidelines"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Automatisierung nimmt Junioren die Aufgaben, an denen sie gelernt haben. Patrick Neeman nennt sieben Gegenmittel",
+      "blurb": "Transkripte taggen, Redlines, Wettbewerbsanalysen: als Ergebnis wenig wert, als Übung zentral, weil Fehler dort billig waren. Neeman schlägt vor, zu jeder weggefallenen Aufgabe festzuhalten, was sie lehrte, die Prüfung von AI-Ergebnissen zum eigentlichen Arbeitsergebnis zu machen und Weiterbildung als Budgetposten einzuplanen.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/how-we-save-entry-level-ux-work-that-teaches-craft-in-the-time-of-ai-our-field-depends-on-this-e1684a0d67eb",
+          "headline": "How we save entry-level UX work that teaches craft in the time of AI. Our field depends on this."
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Chinesisches Gericht schützt ein KI-Kurzdrama und rechnet Token-Kosten in den Schaden ein",
+      "blurb": "Weil Mitarbeitende von Skript über Prompts bis Schnitt eigene Entscheidungen trafen, galt das Werk als schutzfähig, die KI als Werkzeug. Das Gericht in Wuhan empfiehlt Kreativen, Skripte, Prompt-Entwürfe und Projektdateien als Beleg aufzubewahren.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/chinesisches-gericht-rechnet-token-verbrauch-und-ki-lizenzen-in-schadensersatz-ein/",
+          "headline": "Chinesisches Gericht rechnet Token-Verbrauch und KI-Lizenzen in Schadensersatz ein"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Seit 27. September gelten strengere Regeln für Umweltaussagen auf Verpackungen",
+      "blurb": "Die EmpCo-Richtlinie ist über das UWG umgesetzt. Pauschale Begriffe wie »nachhaltig« brauchen einen Nachweis, »klimaneutral« durch Kompensation ist unzulässig, und firmeneigene Siegel ohne Zertifizierungssystem oder staatliche Stelle sind grundsätzlich verboten. Betrifft direkt Packaging und Kampagnen.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/neue-eu-regeln-gegen-greenwashing-was-sich-beim-einkaufen-jetzt-aendert-1765493/",
+          "headline": "Neue EU-Regeln gegen Greenwashing: Was sich beim Einkaufen jetzt ändert"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "CorelDRAW erzeugt mit Text-to-Vector bearbeitbare Kurven statt Flachbilder",
+      "blurb": "Stärker als der Textprompt ist der Modus mit Referenz: In der Demo wurden aus einer Illustration mit rund 600 Objekten neue Icons im selben Stil, bis auf Knotenebene editierbar. Details überleben nicht zuverlässig, Nacharbeit von Hand bleibt.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/graphic-design-software/coreldraw-adds-text-to-vector-ai-in-the-september-update-is-it-a-good-move",
+          "headline": "CorelDRAW adds Text-to-Vector AI in the September update – is it a good move?"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Anthropic bringt Claude Sonnet 5.5, schneller und günstiger",
+      "blurb": "Laut Anthropic 30 Prozent schneller als der Vorgänger, mit geringerem Token-Verbrauch und beim agentischen Coding vor Opus 5.5. Gedacht für Alltagsarbeit bis hin zu Office-Dokumenten.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/anthropic-stellt-claude-sonnet-5-5-vor-schneller-und-guenstiger-als-der-vorgaenger/",
+          "headline": "Anthropic stellt Claude Sonnet 5.5 vor: Schneller und günstiger als der Vorgänger"
+        },
+        {
+          "name": "heise online",
+          "url": "https://www.heise.de/news/Claude-Sonnet-5-5-Schnelleres-und-guenstigeres-Mittelklassemodell-11468799.html",
+          "headline": "Claude Sonnet 5.5: Schnelleres und günstigeres Mittelklassemodell"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/",
+          "headline": "Anthropic releases Sonnet 5.5, which it calls a significantly cheaper, faster work partner"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, gesichtet und nicht aufgenommen",
+      "count": 25,
+      "examples": [
+        "The Contagious Brands Report 2026 reveals the most creative, disruptive and innovative brands of the year",
+        "KFC ‘boybands’ its new tenders to make them even tenderer via Special",
+        "The Stop Is Just The Start"
+      ]
+    }
+  ]
+}
