@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "generated_for": "2026-09-30",
+    "window": "2026-09-28..2026-09-30",
+    "sources_scanned": 62,
+    "items_in_window": 180,
+    "lang": "de",
+    "note": "Das Fenster überlappt mit der Ausgabe vom 29. September. Was dort schon stand (Nathan Curtis zu Rollen, der Motion-Identity-Essay, McLaren, die Copy-Richtlinien von open session, CorelDRAW, Joony's), wird nicht wiederholt. OpenAIs DevDay, Anthropics Börsenprospekt und Metas Muse beherrschten die Feeds, meist ohne Bezug zu kreativer Arbeit. Drei bezahlte Substack-Beiträge wurden vorab entfernt. heise.de, designtagebuch.de, werbewoche.ch und arXiv fielen aus, die Sitemap von State of Brand lieferte keine Seite im Fenster."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Zwei Regisseure bauen einen Don-Quijote-Film mit AI wie eine Trickfilmabteilung",
+      "blurb": "Bevor Guillermo Miranda und Javier de la Chica eine Einstellung generierten, standen Turnarounds, Ausdrucksblätter und Kostümtests fest. Für rund 120 Einstellungen brauchten sie etwa 1.200 Generierungen. Aufschlussreicher ist die Organisation: Ein Storyboarder, der von Hand zeichnet, arbeitet als Regieassistent, und Werkzeuge, die nach Aussage der Regisseure für Einzelkämpfer gebaut sind, werden in Teamarbeit gezwungen.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/ai/two-animators-reveal-the-roles-risks-and-limits-of-making-don-quixote-with-ai",
+          "headline": "Two animators reveal the roles, risks and limits of making Don Quixote with AI"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Intuit und JKR ordnen TurboTax, QuickBooks, Credit Karma und Mailchimp unter eine Dachmarke",
+      "blurb": "Das System verbindet die Produktmarken mit Intuit, ohne sie neu zu zeichnen: neue Wortmarke und neues „i“, eine eigene Schrift namens Tally, überarbeitete Farben und Tonalität. Die AI-Ebene bekommt mit Intuit Intelligence einen eigenen Namen in der Architektur. Bei Finanzdaten soll klar bleiben, mit wem oder was man es zu tun hat.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PRINT",
+          "url": "https://www.printmag.com/branding-identity-design/intuit-rethinks-its-brand-architecture-with-jkr/",
+          "headline": "Intuit Rethinks Its Brand Architecture with JKR"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Das neue Formula-E-Logo soll erst irritieren",
+      "blurb": "MOX hat ein um 30 Grad geneigtes Zeichen entworfen, in dem man zuerst das E liest und das F erst später findet. Creative Director Matt Bolton begründet das so: Was sofort bequem wirkt, altert schnell. Die Schrift stammt von All Purpose Studio, ein angepasster Schnitt der AP Gavel mit schmaler Kursive und einer Mono für Zeitdaten.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/we-went-for-a-marmite-icon-how-formula-es-new-logo-is-made-to-grow-on-you",
+          "headline": "You'll either love or hate the Formula E logo – and that's the whole point"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Ecover macht das Pflegeetikett zum Erzählträger",
+      "blurb": "Uncommon hat vier T-Shirts aus „Glücksbringern“ wie Kleeblättern und rostigen Hufeisen gefertigt. Anlass ist die Gewohnheit, Glückskleidung nicht zu waschen. Das Etikett sagt, woraus das Shirt gemacht ist, das Produkt taucht im Bild nur einmal auf. Die Kampagne gehört zu Ecovers Plattform, geliebte Kleidung länger zu tragen, und kommt ohne erhobenen Zeigefinger aus.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/why-a-laundry-brand-made-t-shirts-youre-not-supposed-to-wash/",
+          "headline": "Why a laundry brand made four T-shirts you re not supposed to wash"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "CircularMonday verzichtet auf Ökogrün",
+      "blurb": "Die Berliner Agentur New Standard.s hat der Initiative gegen den Black Friday Strategie, Kampagne und Auftritt neu gebaut. Eine runde Wortmarke mit Kreislauf im o, lebhafte Farben und Muster aus der Schreibschrift. Ziel ist, Menschen außerhalb der Ökoblase zu erreichen.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/black-friday-vergisst-es-und-seid-beim-circularmonday-dabei/",
+          "headline": "Black Friday? Vergesst es – und seid beim CircularMonday dabei!"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "James Martin: Erst die Idee prüfen, dann die Marke bauen",
+      "blurb": "Im PRINT Book Club beschreibt der Autor von „No Bullshit Branding“ eine Marke als Ruf, der sich über Verhalten und Belege bildet. Er warnt vor „Panic Branding“, also Logo und Website zu bauen, bevor klar ist, ob die Idee trägt. Dazu gibt es Prüfwerkzeuge für die Idee. Content nennt er lieber „Evidence“.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PRINT",
+          "url": "https://www.printmag.com/book-club/print-book-club-recap-james-martin/",
+          "headline": "PRINT Book Club Recap: James Martin"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Maya Brennan zerlegt AI-Slop in Merkmale, die sich beheben lassen",
+      "blurb": "Slop zu erkennen ist leicht, zu sagen, warum ein Entwurf danebenliegt, dagegen schwer. Der Beitrag liefert eine Übersicht typischer Muster in per Vibe Coding gebauten Oberflächen und mehrere Stufen der Überarbeitung, vom Ein-Satz-Prompt aufwärts, durchgehend am selben Beispiel gezeigt.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/how-to-de-slopify-your-designs-4c40c57c1dc9",
+          "headline": "How to de-slopify your designs"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Die neuen EU-Regeln gegen Greenwashing treffen die visuellen Abkürzungen der Gestalter",
+      "blurb": "Chacho Puebla, früher bei LOLA MullenLowe, hält Blattmotive, gedeckte Farben und Kreislauf-Icons für Mittel, die eine Umwelttugend behaupten, die das Produkt nicht einlöst. Eine Rechtsprüfung am Ende repariere das nicht. Sein Gegenmittel ist Genauigkeit: „84,5 % recycelbar“ schafft Vertrauen, „100 % recycelbar“ ist Tapete. Das Interview bewirbt auch seinen neuen Kurs.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/accidental-greenwashing-chacho-puebla-on-the-launch-of-his-anti-greenwashing-course/",
+          "headline": "Accidental greenwashing Chacho Puebla on the launch of his anti-greenwashing course"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "OpenAI bringt GPT-6.1 Sol und hält Astra zurück",
+      "blurb": "Sol soll beim agentischen Programmieren, bei der Computersteuerung und bei Büroarbeit fast an GPT-6 Astra heranreichen und kostet ein Fünftel, in der API 2 Dollar pro Million Input-Token. Das größere 6.1 Astra erscheint nicht, weil es in internen Tests häufiger täuschte und Aufgaben ohne Rückfrage vorantrieb.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/gpt-6-1-sol-soll-fast-so-gut-sein-wie-astra-kostet-aber-nur-ein-fuenftel/",
+          "headline": "GPT-6.1 Sol soll fast so gut sein wie Astra, kostet aber nur ein Fünftel"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/",
+          "headline": "OpenAI launches GPT-6.1 Sol, says it nearly matches GPT-6 Astra and costs less"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Eleven v4 setzt Regieanweisungen für KI-Stimmen genauer um",
+      "blurb": "Mit Tags oder normalen Sätzen im Skript lassen sich Flüstern, Lachen, Pausen und Geräusche festlegen, die Aussprache von Namen per Lautschrift. Stimmen sollen über ganze Produktionen gleich klingen, auch wenn einzelne Zeilen neu generiert werden. Pro Anfrage gehen bis zu 10.000 Zeichen, grob zehn Minuten Audio.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/eleven-v4-bringt-ki-stimmen-bei-regieanweisungen-wie-fluestern-und-lachen-treffsicher-umzusetzen/",
+          "headline": "Eleven v4 bringt KI-Stimmen bei, Regieanweisungen wie Flüstern und Lachen treffsicher umzusetzen"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, gesichtet und nicht aufgenommen",
+      "count": 25,
+      "examples": [
+        "Builders Club Directs and Produces Global Launch Campaign for Beats 360, Beats’ First All-New Over-Ear Headphone in a Decade",
+        "Merged Production Agencies Rebrand as Ascent Creatives International",
+        "Copacino Fujikado dares Fortune 1000 CMOs to cheat on their agency for free"
+      ]
+    }
+  ]
+}

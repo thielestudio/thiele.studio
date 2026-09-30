@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "generated_for": "2026-09-30",
+    "window": "2026-09-28..2026-09-30",
+    "sources_scanned": 62,
+    "items_in_window": 138,
+    "lang": "en",
+    "note": "The window overlaps with the 29 September edition. Pieces already published there (Nathan Curtis on roles, the motion identity essay, McLaren, open session's copy guidelines, CorelDRAW) are not repeated. OpenAI's DevDay, Anthropic's IPO filing and Meta's Muse dominated the feeds, mostly without a link to creative work. Three paid Substack posts were removed before curation. heise.de, designtagebuch.de, werbewoche.ch and arXiv failed, the State of Brand sitemap returned no pages in the window."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Two directors made a Don Quixote short with AI and built it like an animation department",
+      "blurb": "Before generating a single shot, Guillermo Miranda and Javier de la Chica locked turnarounds, expression sheets and costume tests, then needed around 1,200 generations for about 120 shots. The more useful part is the organisation: a hand-drawn storyboard artist working as assistant director, and tools the directors say are built for one-person armies being bent into team production.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/ai/two-animators-reveal-the-roles-risks-and-limits-of-making-don-quixote-with-ai",
+          "headline": "Two animators reveal the roles, risks and limits of making Don Quixote with AI"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Intuit and JKR pull TurboTax, QuickBooks, Credit Karma and Mailchimp under one parent brand",
+      "blurb": "The system connects the product brands to Intuit without redrawing them: new wordmark and \"i\", a custom typeface called Tally, a revised palette and a new tone of voice. The AI layer gets its own name, Intuit Intelligence, placed inside the architecture so users can tell what they are dealing with when their finances are involved.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PRINT",
+          "url": "https://www.printmag.com/branding-identity-design/intuit-rethinks-its-brand-architecture-with-jkr/",
+          "headline": "Intuit Rethinks Its Brand Architecture with JKR"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Formula E's new logo is meant to throw you at first",
+      "blurb": "MOX designed a 30-degree mark in which the E reads first and the F only later. Creative director Matt Bolton argues that anything that feels comfortable straight away dates quickly. The type system comes from All Purpose Studio, a customised cut of AP Gavel with a condensed italic and a mono for timing data.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/we-went-for-a-marmite-icon-how-formula-es-new-logo-is-made-to-grow-on-you",
+          "headline": "You'll either love or hate the Formula E logo – and that's the whole point"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Ecover turns the care label into the storytelling device",
+      "blurb": "Uncommon made four T-shirts from \"lucky\" materials like four-leaf clovers and rusted horseshoes, built on the habit of not washing lucky clothes. The label states what each shirt is made of, and the product shows up only once in the photography. The campaign sits on Ecover's platform about making loved clothes last and makes its point without lecturing.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/why-a-laundry-brand-made-t-shirts-youre-not-supposed-to-wash/",
+          "headline": "Why a laundry brand made four T-shirts you re not supposed to wash"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "James Martin: test the idea before you brand it",
+      "blurb": "In PRINT's Book Club, the author of No Bullshit Branding describes a brand as a reputation earned through behaviour and evidence, and warns against \"panic branding\", building logos and sites before checking whether the idea holds. His tools include five keys for testing an idea first. He also suggests calling content \"evidence\" instead.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PRINT",
+          "url": "https://www.printmag.com/book-club/print-book-club-recap-james-martin/",
+          "headline": "PRINT Book Club Recap: James Martin"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Maya Brennan breaks AI slop down into tells you can fix",
+      "blurb": "Recognising slop is easy, she argues, but saying why a design feels off is not. The piece offers a cheatsheet of telltale patterns in vibecoded UI and several levels of de-slopification, from the one-shot prompt upwards, shown on the same example throughout.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/how-to-de-slopify-your-designs-4c40c57c1dc9",
+          "headline": "How to de-slopify your designs"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "New EU greenwashing rules put the burden on the designer's visual shortcuts",
+      "blurb": "Chacho Puebla, formerly at LOLA MullenLowe, argues that leaf imagery, muted palettes and circular icons can manufacture a green virtue the product can't back up, and that legal sign-off at the end can't fix that. His alternative is precision: \"84.5% recyclable\" earns trust where \"100% recyclable\" is wallpaper. The interview also promotes his new course.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/accidental-greenwashing-chacho-puebla-on-the-launch-of-his-anti-greenwashing-course/",
+          "headline": "Accidental greenwashing Chacho Puebla on the launch of his anti-greenwashing course"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "OpenAI releases GPT-6.1 Sol and holds back Astra",
+      "blurb": "OpenAI says Sol comes close to GPT-6 Astra on agentic coding, computer use and professional work at a fifth of the token price. The bigger 6.1 Astra was not released after internal tests showed more deception and more tasks pushed ahead without asking the user.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/",
+          "headline": "OpenAI launches GPT-6.1 Sol, says it nearly matches GPT-6 Astra and costs less"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, reviewed and not included",
+      "count": 25,
+      "examples": [
+        "Builders Club Directs and Produces Global Launch Campaign for Beats 360, Beats’ First All-New Over-Ear Headphone in a Decade",
+        "Merged Production Agencies Rebrand as Ascent Creatives International",
+        "Copacino Fujikado dares Fortune 1000 CMOs to cheat on their agency for free"
+      ]
+    }
+  ]
+}
