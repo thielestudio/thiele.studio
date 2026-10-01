@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "generated_for": "2026-10-01",
+    "window": "2026-09-29..2026-10-01",
+    "sources_scanned": 62,
+    "items_in_window": 139,
+    "lang": "en",
+    "note": "A thin day for design and brand work. Google's Gemini 4 Argon, the White House AI safety accord and OpenAI's IPO plans dominated the feeds; Argon is not yet available outside a small group of security testers, so it has no place here. Stories already run on 29 and 30 September (Formula E, Ecover, the motion identity essay, de-slopify, Don Quixote) are not repeated. Four paid Substack posts were removed before curation. werbewoche.ch failed, the State of Brand sitemap returned no pages in the window."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Center turns a meal-kit box into a cookery lesson for Daniel Humm's Riff",
+      "blurb": "Each pack names what a squeeze of lemon, cherry tomatoes or basil would add and why (acidity, sweetness, herbal lift), which is where the name Riff comes from. Instead of the famous chef's face, a mascot called Dan the Pan carries the voice, the dishes are shot deliberately unstyled, and health is not mentioned once.",
+      "tags": [
+        "packaging",
+        "identity"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/work/this-packaging-for-ready-made-dinners-can-teach-you-to-cook-better/",
+          "headline": "This packaging for ready-made dinners can teach you to cook better"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Drzzl avoids both Tuscan clichés and cool minimalism",
+      "blurb": "Derek&Eric put the oil in a squeeze bottle, stack the two Zs of the wordmark like oil leaving a nozzle, and colour-code the two variants so the dressing oil and the cooking oil cannot be confused. The article is honest about the risk of the ketchup-bottle association and names Graza as the precedent that made the format work.",
+      "tags": [
+        "identity",
+        "packaging"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/work/derekerics-identity-for-an-olive-oil-brand-swaps-tuscan-cliches-for-attitude-and-colour/",
+          "headline": "Derek Eric s olive oil identity swaps Tuscan cliches for attitude and colour"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Alex M H Smith: clean positioning has stopped being an advantage",
+      "blurb": "His argument: clear positioning used to win because it stood out in a sea of muddle, and with templates and ChatGPT everyone is now clear. Positioning stays necessary but no longer sufficient. He points to scarcity and access as the next lever, an opinion more than evidence, but a useful check for any positioning brief.",
+      "tags": [
+        "strategy",
+        "positioning"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Alex M H Smith",
+          "url": "https://alexmhsmith.substack.com/p/does-positioning-even-matter-anymore",
+          "headline": "Does positioning even matter anymore?"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "When jumping on a trend turns into social slop",
+      "blurb": "WiredCo contrasts Starbucks and Indeed on the iced-coffee interview debate with dozens of brands that pasted their logo onto the Empire State Building banner or the eye-patch packaging. The test it offers is short: does the conversation connect to the brand, and do we add anything of our own to the joke?",
+      "tags": [
+        "social",
+        "brand voice"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/wiredco-the-ice-coffee-debate-can-your-brand-land-the-punchline-or-is-it-creating-social-slop/",
+          "headline": "WiredCo: The ice coffee debate. Can your brand land the punchline? Or is it creating social slop?"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "D&AD Trend Report 2026: constraints became the starting point for ideas",
+      "blurb": "Drawn from 50,000 entries across 89 countries, the report finds that rules, regulations and platform limits were used as creative briefs more than ever, and that briefs are shifting from what to say to what to build or change, with AXA amending 2.5 million insurance contracts as the example. Only 18 of 354 entries in the new Cultural Influence category were shortlisted or awarded.",
+      "tags": [
+        "D&AD",
+        "report"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/creativity-born-from-constraints-explodes-in-2026-finds-dad/",
+          "headline": "Creativity born from constraints “explodes” in 2026, finds D AD"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Cinema 4D lets Claude, ChatGPT and Codex work in the scene via MCP",
+      "blurb": "Maxon is not shipping its own assistant but a built-in MCP server, off by default, with per-tool-group permissions. Changes stay native scene data, show up in the undo history and are written to a local audit log. Available from Cinema 4D 2026.4.",
+      "tags": [
+        "3D",
+        "MCP",
+        "tools"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/ai/you-can-now-use-chatgpt-and-claude-to-speed-up-3d-art-in-cinema-4d",
+          "headline": "You can now use ChatGPT and Claude to speed up 3D art in Cinema 4D"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Photoshop's Relight beta: a fast lighting base, but faces change",
+      "blurb": "The tool removes the existing lighting and generates new light from up to three adjustable sources. Early tests split opinion: some see it replacing manual light painting, others find smoothed skin, a 3D-avatar look and unintended changes to the person. For retouching that means a starting point, not a final result.",
+      "tags": [
+        "Photoshop",
+        "retouching"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/graphic-design/photoshops-newest-ai-tool-is-immediately-dividing-opinion",
+          "headline": "Photoshop's controversial new AI tool is dividing opinion"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, reviewed and not included",
+      "count": 23,
+      "examples": [
+        "HSBC Heroes Big Wave Surfing in its new Brand Ad",
+        "Four Pillars Gin unveils new masterbrand platform Expect Different , created by Weave",
+        "Interbrand strengthens global Brand Economics capability with appointment of Elspeth Cheung"
+      ]
+    }
+  ]
+}

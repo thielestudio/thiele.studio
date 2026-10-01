@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "generated_for": "2026-10-01",
+    "window": "2026-09-29..2026-10-01",
+    "sources_scanned": 62,
+    "items_in_window": 190,
+    "lang": "de",
+    "note": "Ein dünner Tag für Design- und Markenarbeit. Googles Gemini 4 Argon, das KI-Abkommen im Weißen Haus und OpenAIs Börsenpläne beherrschten die Feeds. Argon ist vorerst nur für eine kleine Gruppe von Sicherheitstestern zugänglich und fehlt deshalb hier. Was am 29. und 30. September schon stand (Formula E, Ecover, CircularMonday, der Motion-Identity-Essay, de-slopify, Don Quijote), wird nicht wiederholt. Vier bezahlte Substack-Beiträge wurden vorab entfernt. werbewoche.ch fiel aus, die Sitemap von State of Brand lieferte keine Seite im Fenster."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Richard Jung: Konzeption beginnt künftig vor dem Briefing",
+      "blurb": "Im White Paper »Mittel zum Zweck« ordnet der Professor Kommunikationsdesign nach vier Wirkweisen statt nach Medien: Identität, Interaktion, Narration, Wissen. Eine Befragung von 239 ADC-Mitgliedern stützt die Verschiebung hin zu Konzeption und Entscheidungen unter Unsicherheit. Gestalterische Exzellenz bleibt, aber ihr Maßstab ist die Wirkung.",
+      "tags": [
+        "Ausbildung",
+        "Berufsbild"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/branche-karriere/was-muessen-designerinnen-kuenftig-besser-koennen-als-ki/",
+          "headline": "Was müssen Designer:innen künftig besser können als KI?"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Center macht die Kochbox für Daniel Humms Riff zur Kochstunde",
+      "blurb": "Jede Packung zeigt, was eine Zitrone, Kirschtomaten oder Basilikum dem Gericht hinzufügen und warum, daher der Name Riff. Statt des berühmten Kochs trägt ein Maskottchen namens Dan the Pan die Tonalität. Die Gerichte sind bewusst ungestylt fotografiert, über Gesundheit steht kein Wort.",
+      "tags": [
+        "Packaging",
+        "Identity"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/work/this-packaging-for-ready-made-dinners-can-teach-you-to-cook-better/",
+          "headline": "This packaging for ready-made dinners can teach you to cook better"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Drzzl meidet Toskana-Klischee und kühlen Minimalismus zugleich",
+      "blurb": "Derek&Eric füllen das Öl in eine Quetschflasche, stapeln die beiden Z der Wortmarke wie Öl aus der Tülle und trennen die zwei Sorten per Farbe, damit Dressing- und Bratöl nicht verwechselt werden. Der Artikel benennt das Risiko der Ketchup-Assoziation offen. Graza gilt als Vorbild, das den Weg schon bewiesen hat.",
+      "tags": [
+        "Identity",
+        "Packaging"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/work/derekerics-identity-for-an-olive-oil-brand-swaps-tuscan-cliches-for-attitude-and-colour/",
+          "headline": "Derek Eric s olive oil identity swaps Tuscan cliches for attitude and colour"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Alex M H Smith: Saubere Positionierung ist kein Vorsprung mehr",
+      "blurb": "Seine These: Klare Positionierung gewann früher, weil sie aus dem Durcheinander herausstach. Heute sind dank Vorlagen und ChatGPT alle klar. Notwendig bleibt sie, hinreichend ist sie nicht mehr. Als nächsten Hebel nennt er Knappheit und Zugang, eher Meinung als Beleg, aber eine brauchbare Gegenprobe für jedes Positionierungs-Briefing.",
+      "tags": [
+        "Strategie",
+        "Positionierung"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Alex M H Smith",
+          "url": "https://alexmhsmith.substack.com/p/does-positioning-even-matter-anymore",
+          "headline": "Does positioning even matter anymore?"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Wann Trend-Mitlaufen zu Social Slop wird",
+      "blurb": "WiredCo stellt Starbucks und Indeed in der Eiskaffee-Debatte gegen Dutzende Marken, die ihr Logo auf das Banner am Empire State Building oder die Augenpad-Verpackung geklebt haben. Die Prüffrage ist kurz: Hat das Gespräch etwas mit der Marke zu tun, und machen wir den Witz besser?",
+      "tags": [
+        "Social",
+        "Tonalität"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/wiredco-the-ice-coffee-debate-can-your-brand-land-the-punchline-or-is-it-creating-social-slop/",
+          "headline": "WiredCo: The ice coffee debate. Can your brand land the punchline? Or is it creating social slop?"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "D&AD Trend Report 2026: Einschränkungen werden zum Ausgangspunkt",
+      "blurb": "Aus 50.000 Einreichungen aus 89 Ländern liest der Report, dass Regeln, Vorschriften und Plattformgrenzen so oft wie nie als Briefing dienten. Das Briefing verschiebt sich von »Was sagen wir?« zu »Was bauen oder ändern wir?«, etwa bei AXA, die 2,5 Millionen Versicherungsverträge anpasste. In der neuen Kategorie Cultural Influence kamen nur 18 von 354 Arbeiten auf Shortlist oder Preis.",
+      "tags": [
+        "D&AD",
+        "Report"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/creativity-born-from-constraints-explodes-in-2026-finds-dad/",
+          "headline": "Creativity born from constraints “explodes” in 2026, finds D AD"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Cinema 4D lässt Claude, ChatGPT und Codex per MCP in der Szene arbeiten",
+      "blurb": "Maxon baut keinen eigenen Assistenten, sondern einen MCP-Server ein, standardmäßig aus und mit Rechten je Werkzeuggruppe. Änderungen bleiben native Szenendaten, stehen in der Undo-Historie und landen in einem lokalen Protokoll. Ab Cinema 4D 2026.4.",
+      "tags": [
+        "3D",
+        "MCP",
+        "Werkzeuge"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/ai/you-can-now-use-chatgpt-and-claude-to-speed-up-3d-art-in-cinema-4d",
+          "headline": "You can now use ChatGPT and Claude to speed up 3D art in Cinema 4D"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Photoshop Relight: schnelle Lichtbasis, aber Gesichter verändern sich",
+      "blurb": "Das Beta-Werkzeug entfernt das vorhandene Licht und erzeugt neues aus bis zu drei regelbaren Quellen. Erste Tests spalten: Manche sehen das Ende des manuellen Light Paintings, andere bemängeln geglättete Haut, einen Avatar-Look und ungewollte Änderungen an der Person. Für die Retusche heißt das: Ausgangspunkt, kein Ergebnis.",
+      "tags": [
+        "Photoshop",
+        "Retusche"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/graphic-design/photoshops-newest-ai-tool-is-immediately-dividing-opinion",
+          "headline": "Photoshop's controversial new AI tool is dividing opinion"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Gemini ersetzt Gems durch Skills",
+      "blurb": "Google übernimmt das offene Skills-Format von Anthropic: gespeicherte Anweisungen, per »/« aufrufbar, auch mit PDFs oder Bildern als Referenz. Google nennt ausdrücklich die Kombination mehrerer Skills, etwa für Schreibstil und Markenrichtlinien. Gems enden im November für private Konten und werden automatisch umgewandelt.",
+      "tags": [
+        "Gemini",
+        "Skills",
+        "Werkzeuge"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/google-ersetzt-gems-durch-skills-und-folgt-damit-openai-und-anthropic-beim-neuen-prompt-format/",
+          "headline": "Google ersetzt Gems durch Skills und folgt damit OpenAI und Anthropic beim neuen Prompt-Format"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, gesichtet und nicht aufgenommen",
+      "count": 23,
+      "examples": [
+        "HSBC Heroes Big Wave Surfing in its new Brand Ad",
+        "Four Pillars Gin unveils new masterbrand platform Expect Different , created by Weave",
+        "Interbrand strengthens global Brand Economics capability with appointment of Elspeth Cheung"
+      ]
+    }
+  ]
+}
