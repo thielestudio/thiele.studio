@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "generated_for": "2026-10-02",
+    "window": "2026-09-30..2026-10-02",
+    "sources_scanned": 62,
+    "items_in_window": 127,
+    "lang": "en",
+    "note": "A modest day. Google's Gemini 4 Argon dominated the tech feeds again and stays out, as yesterday, because it is not generally available. Stories already run this week are not repeated: the Formula E identity (new coverage from It's Nice That), CircularMonday, Drzzl, Riff, Photoshop Relight, Cinema 4D and the Alex M H Smith positioning post. Four paid Substack posts were removed before curation. designweek.co.uk failed, the State of Brand sitemap returned no pages in the window."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "AI interfaces run on two clocks, and only one belongs to the model",
+      "blurb": "The author applies Doherty's 400 ms threshold to the acknowledgment rather than the answer: echo the prompt, change the button, place a skeleton, target 100 ms. The answer may take seconds as long as the wait shows real state and stays cancellable. Streaming, the piece argues, does nothing for the half second before the first token.",
+      "tags": [
+        "AI UX",
+        "Performance"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/stop-blaming-the-model-for-slow-ai-heres-how-to-design-for-it-doherty-s-threshold-as-a-guideline-5fa6d52e23fc",
+          "headline": "Stop blaming the model for slow AI. Using Doherty’s threshold as a guideline."
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Luke Wroblewski: agents actually read the design system",
+      "blurb": "When marketing, engineering and product all ship pages through their own agents, an AGENTS.md plus tokens in the global stylesheet keep the site consistent. In his projects the code, not Figma, became the source of truth, and a live design system page stays current because it is built from the same code.",
+      "tags": [
+        "Design systems",
+        "Agents"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Luke Wroblewski",
+          "url": "https://www.lukew.com/ff/2164/design-systems-for-ai-agents",
+          "headline": "Design Systems for AI Agents"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Vauxhall's griffin loses its flag for the first time since 1915",
+      "blurb": "The 13th version flattens the griffin and drops the V flag. The stated reason is practical: the emblem is now illuminated on the front of the cars and needs to read clearly. It appears on new models from 2027.",
+      "tags": [
+        "Logo",
+        "Automotive"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/vauxhall-reveals-bold-and-pure-new-logo-design",
+          "headline": "Vauxhall reveals \"bold and pure\" new logo design"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "PENNY pays TikTok users for funny comments, even ones not about PENNY",
+      "blurb": "Agency Saint Elmo's built Comment Coupons on the discounter's \"Real Joy\" platform: an AI score of humour and fit to the original post sets vouchers of €10, €25 or €50. By the brand's own count, more than 4,000 comments were rewarded with €45,000, and billboards in eight German cities showed winning comments.",
+      "tags": [
+        "Social",
+        "Campaign"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/bolder-than-tiktok-penny-recognizes-commenters-as-co-creators-and-rewards-entertaining-comments/",
+          "headline": "Bolder than TikTok: PENNY Recognizes Commenters as Co-Creators and Rewards Entertaining Comments"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "A US earnings test puts design degrees under pressure",
+      "blurb": "From 1 July 2027, US programmes whose graduates fail to out-earn high-school leavers in two of three years can lose access to federal Direct Loans. The essay asks how art and design schools justify themselves when the measure is income, and argues for taking the question seriously rather than rejecting the premise.",
+      "tags": [
+        "Education",
+        "Policy"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/federal-pressure-may-force-design-education-to-rethink-its-identity-22d4ec56b1c2",
+          "headline": "Federal pressure may force design education to rethink its identity"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Shopify Canvas builds the store from a chat and renders the real code",
+      "blurb": "Merchants describe changes to the Sidekick agent and see the live store, including interactions and breakpoints, not a static preview. To make it work Shopify simplified its theme architecture. Third-party themes, app blocks and translations are missing at launch, and it is desktop-only.",
+      "tags": [
+        "Site builder",
+        "Agents"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/",
+          "headline": "Shopify debuts Canvas, a way to build online stores by chatting with AI"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Graphite counts the phrases that give away each AI model",
+      "blurb": "The study compared 10,000 pre-ChatGPT articles with model rewrites and found 13,000 phrases at least twice as common in AI text. Opus 5.5 says \"this matters\" 116 times more often than humans; OpenAI's Astra leans on \"not simply X\" framings. Useful as a checklist for anyone editing AI-assisted copy.",
+      "tags": [
+        "Writing",
+        "LLM"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/01/opus-5-5-loves-to-tell-you-this-matters-and-other-ai-writing-tells/",
+          "headline": "Opus 5.5 loves to tell you this matters (and other AI writing tells)"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, reviewed and not included",
+      "count": 24,
+      "examples": [
+        "People’s Pension casts Joe Wilkinson as its ‘Fairy Godmother’ in first ever TV campaign",
+        "Tidy Cats Cracks Down on Litter Crime with Launch of Special Litter Unit Led by Kumail Nanjiani",
+        "Alan and Kylian Mbappé launch Health Can t Wait to make prevention an everyday habit"
+      ]
+    }
+  ]
+}

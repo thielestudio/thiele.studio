@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "generated_for": "2026-10-02",
+    "window": "2026-09-30..2026-10-02",
+    "sources_scanned": 62,
+    "items_in_window": 181,
+    "lang": "de",
+    "note": "Ein mäßiger Tag. Googles Gemini 4 Argon beherrschte wieder die Tech-Feeds und bleibt wie gestern draußen, weil es nicht allgemein verfügbar ist. Was diese Woche schon stand, wird nicht wiederholt: die Formel-E-Identity (neu bei It's Nice That und Designtagebuch), CircularMonday, Drzzl, Riff, Photoshop Relight, Cinema 4D, Gemini Skills, Richard Jungs White Paper und der Positionierungs-Text von Alex M H Smith. Vier bezahlte Substack-Beiträge wurden vorab entfernt. designweek.co.uk fiel aus, die Sitemap von State of Brand lieferte keine Seite im Fenster."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "AI-Oberflächen laufen auf zwei Uhren, nur eine gehört dem Modell",
+      "blurb": "Der Autor legt Dohertys 400-Millisekunden-Schwelle auf die Quittung statt auf die Antwort: Prompt spiegeln, Button umschalten, Platzhalter setzen, Ziel 100 Millisekunden. Die Antwort darf Sekunden brauchen, solange die Wartezeit echten Zustand zeigt und abbrechbar bleibt. Streaming hilft nach seiner Lesart nicht gegen die halbe Sekunde vor dem ersten Token.",
+      "tags": [
+        "AI UX",
+        "Performance"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/stop-blaming-the-model-for-slow-ai-heres-how-to-design-for-it-doherty-s-threshold-as-a-guideline-5fa6d52e23fc",
+          "headline": "Stop blaming the model for slow AI. Using Doherty’s threshold as a guideline."
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Luke Wroblewski: Agenten lesen das Design System wirklich",
+      "blurb": "Wenn Marketing, Entwicklung und Produkt Seiten über eigene Agenten bauen, halten eine AGENTS.md und Tokens im globalen Stylesheet die Website zusammen. In seinen Projekten wurde der Code zur maßgeblichen Quelle, nicht Figma. Die Design-System-Seite bleibt aktuell, weil sie aus demselben Code entsteht.",
+      "tags": [
+        "Design Systems",
+        "Agenten"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Luke Wroblewski",
+          "url": "https://www.lukew.com/ff/2164/design-systems-for-ai-agents",
+          "headline": "Design Systems for AI Agents"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Vauxhalls Greif verliert erstmals seit 1915 die Fahne",
+      "blurb": "Die 13. Fassung zeichnet den Greif flacher und kantiger und streicht die Fahne mit dem V. Die Begründung ist praktisch: Das Emblem leuchtet jetzt an der Front und muss klar lesbar sein. Ab 2027 kommt es auf neue Modelle.",
+      "tags": [
+        "Logo",
+        "Automobil"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/vauxhall-reveals-bold-and-pure-new-logo-design",
+          "headline": "Vauxhall reveals \"bold and pure\" new logo design"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "PENNY belohnt lustige TikTok-Kommentare, auch solche ohne PENNY-Bezug",
+      "blurb": "Saint Elmo's hat die Comment Coupons auf der Markenplattform »Echte Freude« gebaut. Ein eigenes KI-Scoring bewertet Witz und Bezug zum Ausgangspost und vergibt Gutscheine über 10, 25 oder 50 Euro. Nach Angaben der Marke wurden über 4.000 Kommentare mit 45.000 Euro belohnt, Plakate in acht Städten zeigten die Gewinner.",
+      "tags": [
+        "Social",
+        "Kampagne"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/bolder-than-tiktok-penny-recognizes-commenters-as-co-creators-and-rewards-entertaining-comments/",
+          "headline": "Bolder than TikTok: PENNY Recognizes Commenters as Co-Creators and Rewards Entertaining Comments"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Wien wirbt mit einer Figma-Vorlage statt mit Stadtbildern",
+      "blurb": "Jung von Matt DONAU und Wien Tourismus stellen ein kostenloses »Vienna Template« auf Figma. Jedes Element zitiert ein Original der Wiener Moderne aus der MAK-Sammlung, von Peches Stoffmustern bis Otto Wagners Grün. Zielgruppe sind Gestalter in den USA, Großbritannien, Deutschland, Frankreich und Spanien.",
+      "tags": [
+        "Tourismus",
+        "Figma"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/das-gab-es-noch-nicht-jung-von-matt-launcht-auf-figma-tourismuskampagne/",
+          "headline": "Das gab es noch nicht: Jung von Matt launcht auf Figma Tourismuskampagne"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Ein US-Einkommenstest setzt Designstudiengänge unter Druck",
+      "blurb": "Ab 1. Juli 2027 können US-Studiengänge den Zugang zu staatlichen Direct Loans verlieren, wenn ihre Absolventen in zwei von drei Jahren nicht mehr verdienen als Menschen mit Schulabschluss. Der Essay fragt, wie Kunst- und Designschulen sich rechtfertigen, wenn Einkommen der Maßstab ist. Er rät, die Frage ernst zu nehmen statt die Prämisse abzulehnen.",
+      "tags": [
+        "Ausbildung",
+        "Regulierung"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/federal-pressure-may-force-design-education-to-rethink-its-identity-22d4ec56b1c2",
+          "headline": "Federal pressure may force design education to rethink its identity"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Ideogram 4.5 soll beim Bearbeiten nur das ändern, was man verlangt",
+      "blurb": "Hintergrund und Körperform bleiben laut Ideogram auch über mehrere Bearbeitungen stabil, eine Schwäche, die der Anbieter GPT-Image 2.5 und Nano Banana zuschreibt. Vier Qualitätsstufen von 0,8 bis 22 Cent pro Bild in 2K, verfügbar über Plattform und API, Open Weights sind angekündigt.",
+      "tags": [
+        "Bildmodell",
+        "Bildbearbeitung"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/ideogram-4-5-verspricht-stabile-ki-bildbearbeitung-ohne-ungewollte-veraenderungen/",
+          "headline": "Ideogram 4.5 verspricht stabile KI-Bildbearbeitung ohne ungewollte Veränderungen"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Shopify Canvas baut den Shop im Chat und zeigt echten Code",
+      "blurb": "Händler beschreiben Änderungen dem Agenten Sidekick und sehen den laufenden Shop mit Interaktionen und Breakpoints, keine statische Vorschau. Dafür hat Shopify die Theme-Architektur vereinfacht. Fremd-Themes, App-Blöcke und Übersetzungen fehlen zum Start, und es läuft nur auf dem Desktop.",
+      "tags": [
+        "Website-Baukasten",
+        "Agenten"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/",
+          "headline": "Shopify debuts Canvas, a way to build online stores by chatting with AI"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Graphite zählt die Formulierungen, an denen man jedes Modell erkennt",
+      "blurb": "Die Studie verglich 10.000 Artikel aus der Zeit vor ChatGPT mit Modell-Umschreibungen und fand 13.000 Wendungen, die in KI-Text mindestens doppelt so häufig sind. Opus 5.5 schreibt »this matters« 116-mal öfter als Menschen, OpenAIs Astra greift zu »not simply X«. Brauchbar als Prüfliste für alle, die KI-gestützte Texte redigieren.",
+      "tags": [
+        "Text",
+        "LLM"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/01/opus-5-5-loves-to-tell-you-this-matters-and-other-ai-writing-tells/",
+          "headline": "Opus 5.5 loves to tell you this matters (and other AI writing tells)"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, gesichtet und nicht aufgenommen",
+      "count": 24,
+      "examples": [
+        "People’s Pension casts Joe Wilkinson as its ‘Fairy Godmother’ in first ever TV campaign",
+        "Tidy Cats Cracks Down on Litter Crime with Launch of Special Litter Unit Led by Kumail Nanjiani",
+        "Alan and Kylian Mbappé launch Health Can t Wait to make prevention an everyday habit"
+      ]
+    }
+  ]
+}
