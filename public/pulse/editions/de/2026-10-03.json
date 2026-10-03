@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "generated_for": "2026-10-03",
+    "window": "2026-10-01..2026-10-03",
+    "sources_scanned": 62,
+    "items_in_window": 168,
+    "lang": "de",
+    "note": "Ein dünner Tag. Das Zwei-Tage-Fenster überschneidet sich mit gestern, und das Stärkste daraus stand schon am 2. Oktober in der Ausgabe: Dohertys Schwelle, Luke Wroblewski zu Design Systems, Vauxhall, PENNY, die Wiener Figma-Vorlage, Ideogram 4.5, Shopify Canvas, die Graphite-Studie zu AI-Schreibmustern (heute erneut bei t3n). Die Formel-E-Identity lief schon am 30. September. Nichts davon wird wiederholt. Der Rest waren Gadget-Tests, Rabatte, Rechenzentrumspolitik und Agentur-Pressemitteilungen. werbewoche.ch fiel aus, die Sitemap von State of Brand lieferte keine Seite im Fenster, zwei bezahlte Substack-Beiträge wurden vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "In/Tension Modeling: jede Lösung gegen die prüfen, denen sie schaden könnte",
+      "blurb": "Teil zwei einer UX-Research-Methode. Widersprüchliche Stimmen aus der Forschung nebeneinanderlegen, die Spannung als Chance umformulieren, dagegen Ideen sammeln und mit einem Range-of-Tolerance-Werkzeug prüfen, wo jede betroffene Gruppe landet. Maßstab ist Erika Halls Frage, was Gestalter berechtigt, im Namen anderer einzugreifen.",
+      "tags": ["UX-Research", "Methode"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/in-tension-modeling-what-gives-us-the-right-01740248eb45?source=rss----138adf9c44c---4",
+          "headline": "In/tension modeling: what gives us the right?"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Gute UX entscheidet sich oft schon in Architektur und Fehlerbehandlung",
+      "blurb": "Dominique Winter nimmt einen hängenden Checkout als Beispiel. Teams arbeiten dann am sichtbaren Teil, an Texten, Hinweisen und Tooltips, obwohl das Interface oft nur zeigt, was vorher in Datenmodell, Statuslogik, Fehlerbehandlung und Priorisierung entschieden wurde.",
+      "tags": ["UX", "Produktentwicklung"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "heise online",
+          "url": "https://www.heise.de/hintergrund/Softwarearchitektur-Technische-Entscheidungen-sind-auch-UX-Entscheidungen-11457309.html",
+          "headline": "Softwarearchitektur: Technische Entscheidungen sind auch UX-Entscheidungen"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "identi verlässt das Grün und Gelb der Kategorie",
+      "blurb": "Perfect Storm hat identibase zu identi verkürzt und jede Entscheidung durch einen Filter geschickt: Die Marke ist für das ganze Leben mit Haustier da, das Chaos eingeschlossen. Daraus folgten eine kräftigere Palette als die üblichen Naturtöne, weniger geschönte Fotos mit Besitzern auf Augenhöhe ihrer Tiere und ein warmer Ton, der nicht so tut, als sei er ein Hund.",
+      "tags": ["Rebrand", "Naming"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/perfect-storm-helps-switch-pet-protection-firm-from-identibase-to-identi/",
+          "headline": "Perfect Storm helps switch pet protection firm from identibase to identi"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Newcastle United poliert das Wappen nach zwei Jahren Fanbefragung",
+      "blurb": "Die Befragung Tausender Anhänger ergab eine klare Vorgabe: Evolution statt Neuanfang. Burg, Schild, Seepferd und Löwe bleiben, Strichstärken und Proportionen sind vereinheitlicht, und erstmals gibt es eine echte Negativfassung. Achim Schaffrinna hält das Hauptsignet für gelungen, vermisst bei den Sekundärlogos aber eine eigene typografische Identität.",
+      "tags": ["Logo", "Sport"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "url": "https://www.designtagebuch.de/newcastle-united-aktualisiert-vereinslogo/",
+          "headline": "Newcastle United aktualisiert Vereinslogo"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Jon Cook verlässt WPP, Eric Campbell übernimmt VML",
+      "blurb": "Cook hat VML 2024 aus VMLY&R und Wunderman Thompson gebildet und führt seit Februar zusätzlich WPP Creative mit Ogilvy, Grey, AKQA, Landor und Design Bridge & Partners. Er bleibt bis März 2027. Sein langjähriger Partner Eric Campbell folgt ihm als CEO von VML.",
+      "tags": ["Holdings", "Agenturen"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/jon-cook-to-leave-wpp-and-transition-vml-ceo-role-to-long-time-partner-eric-campbell/",
+          "headline": "Jon Cook to leave WPP and transition VML CEO role to long-time partner Eric Campbell"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "BRXND: Wenn Agenten einkaufen, sichert die Marke ab",
+      "blurb": "Mike Mallazzo hält Werbung für so groß wie nie, während das alte Modell um The Trade Desk und die Holdings wackelt. Sein Schluss für Marketer: Produktdaten für Agenten lesbar machen reicht nicht. Sicherer ist eine Marke, die Menschen ihrem Agenten beim Namen nennen.",
+      "tags": ["Werbung", "Agentic Commerce"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "BRXND Dispatch",
+          "url": "https://newsletter.brxnd.ai/p/the-golden-age-of-marketing-brxnd",
+          "headline": "The Golden Age of Marketing // BRXND Dispatch vol. 142"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Flux 3 Image bearbeitet in mehreren Schritten, ohne den Rest anzufassen",
+      "blurb": "Black Forest Labs bringt die Bildversion seines Videomodells Flux 3: Komposition über Auswahlrahmen, bis zu zehn Referenzbilder, Ausgabe bis 4K. Kommerzielle Gewichte lassen sich lizenzieren, offene sollen in den kommenden Wochen folgen.",
+      "tags": ["Bildgenerierung", "Black Forest Labs"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/black-forest-labs-stellt-flux-3-image-vor-bildgenerierung-mit-mehrstufiger-bearbeitung-in-bis-zu-4k/",
+          "headline": "Black Forest Labs stellt Flux 3 Image vor: Bildgenerierung mit mehrstufiger Bearbeitung in bis zu 4K"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, gesichtet und nicht aufgenommen",
+      "count": 24,
+      "examples": [
+        "Only the Real One makes history: Hellmann s reinforces its credentials of superiority in its biggest campaign of the year",
+        "Crufts appoints Tommy to create new campaign platform for 2027",
+        "Cresta Awards reveals its 2026 Of The Year winners after tight battles at the top"
+      ]
+    }
+  ]
+}

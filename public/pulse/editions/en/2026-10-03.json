@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "generated_for": "2026-10-03",
+    "window": "2026-10-01..2026-10-03",
+    "sources_scanned": 62,
+    "items_in_window": 112,
+    "lang": "en",
+    "note": "A thin day. The two-day window overlaps with yesterday, and most of its strongest pieces already ran on 2 October (Doherty's threshold, Luke Wroblewski on design systems, Vauxhall, PENNY, Shopify Canvas, the Graphite study on AI writing tells) or earlier this week (the Formula E identity). They are not repeated. The rest was gadget reviews, deals, data-centre politics and agency press releases. werbewoche.ch failed, the State of Brand sitemap had no page in the window, two paid Substack posts were removed before curation."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "In/Tension Modeling: check each solution against the people it might harm",
+      "blurb": "Part two of a UX research method: put conflicting voices from research side by side, reframe the tension as an opportunity, brainstorm against it, then use a Range of Tolerance tool to see where each affected group lands. The yardstick is Erika Hall's question of what gives designers the right to intervene on others' behalf.",
+      "tags": ["UX research", "Method"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/in-tension-modeling-what-gives-us-the-right-01740248eb45?source=rss----138adf9c44c---4",
+          "headline": "In/tension modeling: what gives us the right?"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "identi leaves the category's greens and yellows behind",
+      "blurb": "Perfect Storm shortened identibase to identi and set one filter for every decision: the brand serves all of pet life, chaos included. That meant a bolder palette than the category's natural greens and yellows, less idealised photography with owners at eye level with their pets, and a warm voice that does not pretend to be a dog.",
+      "tags": ["Rebrand", "Naming"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/perfect-storm-helps-switch-pet-protection-firm-from-identibase-to-identi/",
+          "headline": "Perfect Storm helps switch pet protection firm from identibase to identi"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Jon Cook leaves WPP, Eric Campbell takes over VML",
+      "blurb": "Cook formed VML from VMLY&R and Wunderman Thompson in 2024 and since February has also run WPP Creative, the unit holding Ogilvy, Grey, AKQA, Landor and Design Bridge & Partners. He stays until March 2027; his long-time partner Eric Campbell succeeds him as VML CEO.",
+      "tags": ["Holding companies", "Agencies"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/jon-cook-to-leave-wpp-and-transition-vml-ceo-role-to-long-time-partner-eric-campbell/",
+          "headline": "Jon Cook to leave WPP and transition VML CEO role to long-time partner Eric Campbell"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "BRXND: once agents do the buying, brand is the hedge",
+      "blurb": "Mike Mallazzo argues that advertising is a bigger share of the economy than ever while the old model, The Trade Desk and the holding companies among it, wobbles. His conclusion for marketers: making product feeds legible to agents is not enough, the safer bet is a brand people tell their agent to buy by name.",
+      "tags": ["Advertising", "Agentic commerce"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "BRXND Dispatch",
+          "url": "https://newsletter.brxnd.ai/p/the-golden-age-of-marketing-brxnd",
+          "headline": "The Golden Age of Marketing // BRXND Dispatch vol. 142"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief, reviewed and not included",
+      "count": 24,
+      "examples": [
+        "Only the Real One makes history: Hellmann s reinforces its credentials of superiority in its biggest campaign of the year",
+        "Crufts appoints Tommy to create new campaign platform for 2027",
+        "Cresta Awards reveals its 2026 Of The Year winners after tight battles at the top"
+      ]
+    }
+  ]
+}
