@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "generated_for": "2026-10-04",
+    "window": "2026-10-02..2026-10-04",
+    "sources_scanned": 62,
+    "items_in_window": 81,
+    "lang": "en",
+    "note": "A thin day. The two-day window overlaps with yesterday, and identi, Jon Cook's exit from WPP and the BRXND dispatch already ran on 3 October. They are not repeated. The rest was gadget reviews, deals, data-centre politics and agency press releases."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Working with six agents at once turns your desk into a feed you produce yourself",
+      "blurb": "A designer with twenty years in interfaces describes how parallel agents stopped saving time and started multiplying work, with returns arriving in an order he no longer controls. He ties it to Sophie Leroy's research on attention residue and a Berkeley field study on people filling freed-up time. Worth reading for anyone running several AI threads in a working day.",
+      "tags": ["Agents", "Attention", "Workflow"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/the-feed-i-produce-myself-11e4192f394c?source=rss----138adf9c44c---4",
+          "headline": "The feed I produce myself"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "thatgamecompany proved the brushstroke look before writing a line of story",
+      "blurb": "For Sky's Van Gogh season, the team built and tested the stroke tool first, because the visual identity decided whether the project was viable at all. The interview is full of small translation calls, such as hiding a second tree's branch in the clouds of Almond Blossoms and moving the self-portrait into the story instead of making it walkable.",
+      "tags": ["Game Art", "Process"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/3d/video-game-design/how-thatgamecompany-turned-van-gogh-paintings-into-playable-spaces",
+          "headline": "How thatgamecompany turned Van Gogh paintings into playable spaces"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Thirst moves Harbour Brewing from a place to a feeling",
+      "blurb": "The strategy line \"Sun-Soaked Playground\" shifts the Cornish brewery from being defined by location to the moment after the surf, carried by saturated colour, wave graphics and a reworked H marque. Harbour reports sales up 45 percent year on year since the relaunch. Design Week also frames it as a case for sector specialisation.",
+      "tags": ["Rebrand", "Packaging", "Beverage"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/thirst-brings-sun-soaked-optimism-to-harbour-brewing-co/",
+          "headline": "Thirst brings sun-soaked optimism to Harbour Brewing Co."
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "FightTheStroke makes the failed brief the campaign",
+      "blurb": "DUDE Milano shows a creative team trying to define cerebral palsy in 30 seconds while every casting adds a caveat, until the whiteboard needs \"a smaller font\". The second phase collects self-tapes into a casting archive meant for agencies and production companies, so the campaign leaves a working tool for inclusive casting behind.",
+      "tags": ["Campaign", "Casting", "Inclusion"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/fightthestrokes-new-film-cant-define-cerebral-palsy-so-its-opening-a-global-casting-call-instead/",
+          "headline": "FightTheStroke s New Film Can t Define Cerebral Palsy, so it s Opening a Global Casting Call Instead"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Warner Bros and Paramount merge under the least-known name they own",
+      "blurb": "Skydance is a neutral parent that spares both studio brands, with HBO, DC and CNN staying separate in a Disney-style house of brands. The criticism is about the side effect: the name comes from David Ellison's own company, reads as a vanity move and hands audiences a visible culprit for the consolidation.",
+      "tags": ["Naming", "Brand Architecture"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/entertainment/warner-bros-and-paramounts-skydance-rebrand-isnt-going-down-well",
+          "headline": "Warner Bros and Paramount's Skydance rebrand isn't going down well"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "The mountain logos that last name a real mountain",
+      "blurb": "Tom May runs through Patagonia, The North Face, Utah Mammoth and Vermont and finds the strong ones all point to a specific peak. Toblerone is the counter-example: Swiss rules forced it to drop the Matterhorn, and the generic replacement is fine but interchangeable. A usable test for any symbol borrowed from nature.",
+      "tags": ["Logo Design", "Symbolism"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/everyones-making-mountain-inspired-logos-in-2026-heres-what-that-tells-us",
+          "headline": "Everyone's making mountain-inspired logos in 2026 - here's what that tells us"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: agency press releases, people moves and award lists",
+      "count": 18,
+      "examples": [
+        "Only the Real One makes history: Hellmann s reinforces its credentials of superiority in its biggest campaign of the year",
+        "LIA 2026 Entertainment Content, Cultural Catalyst; Sports; Production Post, Music Video and Non-Traditional Winners Announced",
+        "People’s Pension casts Joe Wilkinson as its ‘Fairy Godmother’ in first ever TV campaign"
+      ]
+    }
+  ]
+}
