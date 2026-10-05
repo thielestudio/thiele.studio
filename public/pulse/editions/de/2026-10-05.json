@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "generated_for": "2026-10-05",
+    "window": "2026-10-03..2026-10-05",
+    "sources_scanned": 62,
+    "items_in_window": 72,
+    "lang": "de",
+    "note": "Ein dünner Montag. Das Zwei-Tage-Fenster überschneidet sich mit den Wochenend-Ausgaben: identi, Harbour Brewing, Skydance, die Berg-Logos, thatgamecompany und der Essay über Agenten als Feed liefen schon am 3. und 4. Oktober und werden nicht wiederholt. Der Rest waren Rabatte, Sammelfiguren, KI-Politik, Wissenschaftsmeldungen bei t3n und ein Webinar-Hinweis. Die Flamid-Identity von Hochburg Design steht bei PAGE hinter der Bezahlschranke und fehlt deshalb. Keine Feed-Ausfälle, die Sitemap von State of Brand lieferte keine Seite im Fenster, drei bezahlte Substack-Beiträge wurden vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "AI nimmt die Wiederholungen weg, an denen Designer früher gewachsen sind",
+      "blurb": "Krutchinsky liest fünf Signale, von einer HPE-Stellenanzeige, die das Ende des Pixelschiebers ausruft, bis zu Ausschreibungen, die Fehlerzustände und Rückfallwege zur Einstellungsbedingung machen. Ihr Punkt: Unternehmen heben die Messlatte für Urteilsvermögen und streichen zugleich die Routinearbeit, an der man es gelernt hat. Zu jedem Signal gibt es eine konkrete Übung. Etwa im eigenen Case markieren, welche Sätze nur belegen, dass man etwas Schwieriges selbst produziert hat.",
+      "tags": ["Karriere", "Urteil", "AI-UX"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Marina Krutchinsky",
+          "url": "https://uxmentor.substack.com/p/before-monday-hpe-lenovo-usertesting",
+          "headline": "Before Monday: HPE, Lenovo, UserTesting point to an uncomfortable shift in how design expertise gets built and valued"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "DRZZL tauscht dunkles Glas gegen Quetschflasche und Neonschrift",
+      "blurb": "Derek&Eric haben das Olivenöl einer Influencerin gegen eine Kategorie aus gedeckten Grüntönen und Mittelmeer-Nostalgie gesetzt: gestapelte Custom-Lettering von Studio Drama, Orange und Gelb auf Dunkelgrün, eine Plastikflasche zum Drücken. Design Week sieht darin eine breitere Verschiebung im Food-Branding, weg von Herkunft, hin zu Nutzen und Kontrast für den Handybildschirm. Kurze Meldung, die Bilder tragen das meiste.",
+      "tags": ["Packaging", "Typografie", "Food"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/derekeric-bring-bright-colours-and-funky-typography-to-the-launch-fo-drzzl/",
+          "headline": "Derek Eric bring bright colours and funky typography to the launch fo DRZZL"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Canva bekommt über tausend Monotype-Schnitte für nicht-lateinische Schriften",
+      "blurb": "Die Erweiterung zielt auf Schriftsysteme, für die es in Kreativwerkzeugen bisher wenig professionelle Auswahl gab: Arabisch, Bengali, Hindi, Khmer, Lao, Thai, Vietnamesisch. Allein für Hindi kommen 99 Familien hinzu. Relevant für alle, deren Markenauftritt in mehreren Sprachen ausgespielt wird und bisher auf Ersatzschriften fiel.",
+      "tags": ["Typografie", "Canva", "Mehrsprachigkeit"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/typografie/mehr-monotype-fonts-in-canva/",
+          "headline": "Mehr Monotype Fonts in Canva"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": []
+}

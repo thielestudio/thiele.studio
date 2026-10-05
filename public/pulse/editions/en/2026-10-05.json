@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "generated_for": "2026-10-05",
+    "window": "2026-10-03..2026-10-05",
+    "sources_scanned": 62,
+    "items_in_window": 36,
+    "lang": "en",
+    "note": "A thin Monday. The two-day window overlaps with the weekend editions: identi, Harbour Brewing, Skydance, the mountain logos, thatgamecompany and the agents-as-feed essay already ran on 3 and 4 October and are not repeated. The rest was deals, collectibles, AI politics and data-centre news. One UX Collective essay was member-only and could not be read beyond the opening. No feed failures, the State of Brand sitemap returned no page in the window, three paid Substack posts were removed upfront."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "AI is removing the repetitions that used to make designers senior",
+      "blurb": "Krutchinsky reads five signals, from an HPE job ad declaring the end of the pixel-pushing specialist to postings that make failure states and fallback paths a hiring requirement. Her point: companies raise the bar for judgment while cutting the routine work people learned it from. Each signal comes with a concrete exercise, such as marking which sentences in a case study only prove you produced something hard.",
+      "tags": ["Careers", "Judgment", "AI UX"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Marina Krutchinsky",
+          "url": "https://uxmentor.substack.com/p/before-monday-hpe-lenovo-usertesting",
+          "headline": "Before Monday: HPE, Lenovo, UserTesting point to an uncomfortable shift in how design expertise gets built and valued"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "DRZZL drops dark glass for a squeeze bottle and neon type",
+      "blurb": "Derek&Eric branded an influencer's olive oil against a category of muted greens and Mediterranean nostalgia: stacked custom lettering by Studio Drama, orange and yellow on dark green, a plastic squeeze bottle. Design Week reads it as part of a wider shift in food branding toward utility and high-contrast visuals built for phone screens. A short news piece, the images carry most of it.",
+      "tags": ["Packaging", "Typography", "Food"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/derekeric-bring-bright-colours-and-funky-typography-to-the-launch-fo-drzzl/",
+          "headline": "Derek Eric bring bright colours and funky typography to the launch fo DRZZL"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": []
+}
