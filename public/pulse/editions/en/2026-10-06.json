@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "generated_for": "2026-10-06",
+    "window": "2026-10-04..2026-10-06",
+    "sources_scanned": 62,
+    "items_in_window": 99,
+    "lang": "en",
+    "note": "A mid-sized day. Krutchinsky's career essay, DRZZL, Monotype in Canva and Harbour Brewing already ran on 4 and 5 October and are not repeated. Left out: deals, gadget reviews, AI politics, a Medium member-only essay on Wes Anderson aesthetics, and most of Roastbrief's agency press releases. The arXiv feed failed, the State of Brand sitemap returned no pages in the window, five paid Substack posts were removed before curation."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Once agents multiply, chat stops being enough to steer them",
+      "blurb": "Wroblewski argues that inboxes and dashboards only answer what agents are doing right now. In his tool Intent, agents draw flowcharts before spending tokens, put before/after screenshots side by side, and keep the design system open as a note both humans and agents read. Useful as a pattern list for anyone designing agent interfaces.",
+      "tags": [
+        "AI-UX",
+        "Agents",
+        "Interface patterns"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Luke Wroblewski",
+          "url": "https://www.lukew.com/ff/2165/many-agents-many-views",
+          "headline": "Many Agents, Many Views"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Kit Studio built EXF's brand guidelines as a website, not a PDF",
+      "blurb": "The interview is mostly about process: brand and digital run as one team from kick-off, and guidelines get tested in interactive prototypes while direction is still cheap to change. The free-roaming portfolio has an opt-out grid view and becomes a plain vertical scroll on mobile. That is the concrete answer to when expressive UX is allowed to break conventions.",
+      "tags": [
+        "Process",
+        "Web",
+        "Rebrand"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/how-kit-studio-switched-exell-to-exf-studio-with-ascii-ingenuity/",
+          "headline": "How Kit Studio switched Exell to EXF.STUDIO with ASCII ingenuity"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Pentagram gives a payments company a world to live in",
+      "blurb": "Luke Powell and Jody Hudson-Powell built Xsolla's identity as an 'archive' of gaming artefacts, with the line 'All the things', a mascot animated like a behavioural UI and a labelling system that doubles as the platform's navigation. Their stated aim: read as future technology without an aesthetic that dates. A case for narrative systems in B2B branding.",
+      "tags": [
+        "Identity",
+        "Gaming",
+        "Mascot"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/luke-powell-judy-hudson-powell-xsolla-pentagram-graphic-design-project-051026",
+          "headline": "Xsolla (the biggest gaming company you’ve never heard of) gets a retro-futuristic identity from Pentagram partners"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Young brands are borrowing heritage they never had",
+      "blurb": "The piece argues that heritage can be built from recognisable codes rather than history, and cites VML's IONNA, an EV charging brand styled on the old American service station. Its warning is useful: a grainy filter is not enough, you have to name the feeling underneath, be it optimism, rebellion or escapism, and reinterpret it.",
+      "tags": [
+        "Brand strategy",
+        "Nostalgia",
+        "Heritage"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/branding/brands-are-performing-nostalgia-to-hook-you-heres-why",
+          "headline": "Brands are performing nostalgia to hook you: here's why"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Brisbane 2032 reveals its emblem early, by accident",
+      "blurb": "The organisers published an explainer on YouTube before the planned launch. The emblem combines the Olympic flame, a cockatoo's crest and the outline of Queensland. Short news piece, the images carry it.",
+      "tags": [
+        "Identity",
+        "Olympics",
+        "Logo"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/design/logos-icons/the-brisbane-2032-olympics-logo-is-hiding-a-triple-design-in-plain-sight",
+          "headline": "The Brisbane 2032 Olympics logo is hiding a triple design in plain sight"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Taste is a muscle, and we stopped training it",
+      "blurb": "Michaelis, a design lead, argues that 'familiar' as a design principle plus competitor benchmarking has de-risked products into sameness, and AI speeds that up. Her exercises are concrete: engage weekly with something you would never pick, explain what you dislike until you can say why, trace references back to their source, and keep making things rather than only curating.",
+      "tags": [
+        "Taste",
+        "Judgement",
+        "Essay"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/the-taste-paradox-why-the-skill-everyone-says-matters-is-the-one-weve-stopped-building-32d1523f1f95?source=rss----138adf9c44c---4",
+          "headline": "The taste paradox: why the skill everyone says matters is the one we’ve stopped building"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Agency strategists are more optimistic, and more afraid of AI",
+      "blurb": "WARC's survey of 489 strategists: 66% see reasons for optimism, influence with clients rose from 41 to 50%, yet 56% fear AI will replace them, 15 points more than last year. In-person qualitative research dropped, only 23% do it monthly versus 35% a year ago. The full report is for WARC subscribers, this is the press summary.",
+      "tags": [
+        "Strategy",
+        "Report",
+        "Agencies"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/cautious-optimism-returns-to-agency-side-strategy-as-influence-with-clients-grows/",
+          "headline": "Cautious optimism returns to agency-side strategy as influence with clients grows"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Social ads that stand out often fail to build the brand",
+      "blurb": "Zappi analysed 3,300 social video ads in the US and UK. Ads using three or more distinctive brand assets were 30% more likely to be top performers, creator-style ads 30% less likely, and pack shots, despite appearing in half the ads, gave the weakest brand connection. A vendor press release, but the numbers are specific enough to bring to a client.",
+      "tags": [
+        "Effectiveness",
+        "Social",
+        "Distinctive assets"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/social-video-ads-are-standing-out-but-losing-the-brand-new-research-from-zappi-finds/",
+          "headline": "Social Video Ads Are Standing Out, But Losing the Brand, New Research From Zappi Finds"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "ChatGPT will show display ads next to generated images",
+      "blurb": "OpenAI is testing visual ads in the US later this month, placed separately beside images users generate, and labelled as sponsored. It is adding measurement partners and brand-suitability pilots with DoubleVerify and IAS. For advertisers this opens a new placement, for image-generation users on free tiers a noisier workspace.",
+      "tags": [
+        "Advertising",
+        "OpenAI",
+        "Platforms"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/",
+          "headline": "OpenAI launches visual ads that appear alongside image generation results"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1004655/openai-chatgpt-visual-ads",
+          "headline": "OpenAI is sticking more ads in ChatGPT"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "ChatGPT text in the EU will carry an invisible watermark",
+      "blurb": "To comply with the AI Act, OpenAI is embedding a statistical signal in word choice for ChatGPT and Codex users in the EU. Replacing 10% of words with synonyms drops detection from about 92 to 66%, and OpenAI says a missing watermark does not prove human authorship. Anyone writing copy with ChatGPT for EU clients should know it is there.",
+      "tags": [
+        "Regulation",
+        "Watermarking",
+        "Copy"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/",
+          "headline": "OpenAI will start watermarking ChatGPT s text in the EU"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act",
+          "headline": "OpenAI is adding text watermarking in ChatGPT and Codex"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: agency news and press releases",
+      "count": 23,
+      "examples": [
+        "Screwfix Turns Rewards into ‘Motifications’ in Latest Campaign From M+C Saatchi Group UK",
+        "SURI unveils first TV campaign under brand platform ‘Designed for Life’ from JOAN London",
+        "R/GA Appoints Hope Nardini, Executive Creative Director"
+      ]
+    }
+  ]
+}
