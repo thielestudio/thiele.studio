@@ -1,0 +1,256 @@
+{
+  "meta": {
+    "generated_for": "2026-10-08",
+    "window": "2026-10-06..2026-10-08",
+    "sources_scanned": 62,
+    "items_in_window": 185,
+    "lang": "de",
+    "note": "Ein dünner Tag. Smashings Leitfaden zum Benennen, Kit Studio mit EXF, die Orchid-Identity, Jaguars Type 01 und das Wasserzeichen für ChatGPT-Texte liefen schon am 6. und 7. Oktober und werden nicht wiederholt. Draußen blieben eine große Welle von Prime-Day-Rabatten bei Creative Bloq und t3n, Microsofts Surface-Event, allgemeine Modell- und Agenten-Meldungen (Mathe-Beweise von OpenAI, Haiku 5.5, EmbeddingGemma 2, Muse auf dem iPad), Portraits ohne übertragbaren Kern, zwei dünne PAGE-Fälle (Schweizerische Post, de Balie) und alle Agentur-Pressemitteilungen bei Roastbrief. Der Feed von userresearchstrategist.com fiel aus, die Sitemap von State of Brand lieferte keine Seite im Fenster, vier bezahlte Substack-Beiträge wurden vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Je höher der Einsatz, desto weniger darf die KI entscheiden",
+      "blurb": "Gale Robins trennt Erzeugen, Analysieren und Festlegen und will der KI entlang dieser Linie immer weniger Befugnis geben. Lehrreich ist ihr Einstiegsfall. Ein Werkzeug bündelt Kundenkommentare und nennt das größte Thema »Preisreibung«, und bis jemand eine Empfehlung absegnet, ist die Rahmung des Problems längst entschieden.",
+      "tags": [
+        "KI",
+        "Steuerung",
+        "Research"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/bounded-delegation-how-much-authority-should-ai-have-823a58fb4192?source=rss----138adf9c44c---4",
+          "headline": "Bounded delegation: How much authority should AI have?"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Bei Kiss Branding schrieben die Gründer die Strategie und hielten sich dann raus",
+      "blurb": "Die beiden Gründer des Studios aus Leeds übergaben ihrem Team eine schriftliche Strategie und ließen die Finger vom Entwurf. Heraus kam ein Amor als Maskottchen, entwickelt über mehr als 100 Varianten, dazu eine handgezeichnete Wortmarke. Und eine Gründerin, die beim Warten auf die Präsentation erlebte, wie es Kunden dabei geht.",
+      "tags": [
+        "Studio",
+        "Rebrand",
+        "Prozess"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/insight/kiss-branding-in-what-happens-when-founders-stay-out-of-their-own-rebrand/",
+          "headline": "Kiss Branding on what happens when studio founders stay out of their own rebrand"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Mother Design holt sich die Vorbilder für M&S aus der Informationsgestaltung",
+      "blurb": "Untermarken, Sortimentsnamen und konkurrierende Hierarchien sind von tausenden Verpackungen für Wohnen und Wäsche verschwunden. Übrig bleiben eine Hausschrift in drei Schnitten, Versalien für Produktnamen, ein mit Monotype gebauter Ziffernsatz und ein Größensystem, das größere Körbchen in die Hauptlinie holt statt in eine eigene Untermarke. Ergebnisse gibt es laut Studio noch keine.",
+      "tags": [
+        "Verpackung",
+        "Handel",
+        "Typografie"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/mother-design-exercises-restraint-with-new-ms-pack-system/",
+          "headline": "Mother Design exercises restraint with new M&S pack system"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Riff lässt den Sternekoch von der Packung",
+      "blurb": "CENTER gibt bei den Nudel-Kits von Daniel Humm für 6,99 Dollar eine ganze Packungsseite frischem Gemüse, jeweils mit einer Notiz, was die Zutat beiträgt. Gesundheitsversprechen fehlen, Humms Gesicht auch. Tipps gibt stattdessen eine gezeichnete Pfanne. Die Pointe der Rezension: Diese Schachtel ist für den Herd gestaltet, nicht für drei Sekunden im Regal.",
+      "tags": [
+        "Verpackung",
+        "Lebensmittel",
+        "Identity"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PRINT Magazine",
+          "url": "https://www.printmag.com/branding-identity-design/riff-and-the-beauty-of-an-unfinished-box/",
+          "headline": "Riff and the Beauty of an Unfinished Box"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Depop fragt, ob die Marke überhaupt mitreden darf",
+      "blurb": "Steve Dool führt Marke und Kreation bei Depop durch zwei Übernahmen und beschreibt Zurückhaltung als Strategie. Trends ohne eigenen Anspruch auslassen, erst mit kleinen Erfolgen Vertrauen sammeln, dann größer werden. Die Trennung von kreativen und datengetriebenen Entscheidungen hält er für falsch, denn Schriftwahl und Dashboard sind beides Deutung.",
+      "tags": [
+        "Markenstrategie",
+        "Inhouse",
+        "Positionierung"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/features/in-house-depop-steve-dool-creative-industry-071026",
+          "headline": "Depop’s Steve Dool on how to build a brand with a strong sense of self"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Škoda macht den Hatschek zum Markenkern",
+      "blurb": "Wo Maerz und Boettcher ihre Umlaute strichen, um internationaler zu wirken, setzt Škoda auf die tschechische Aussprache und spielt sie in Kampagnen wie »Šhhhkoda« aus. Design Tagebuch verfolgt die Linie zurück bis zur Strategie 2030 und zum Rebranding 2022, das den Hatschek in die Wortmarke holte. Ein gutes Beispiel, wie sprachliche Eigenheit eine Marke unterscheidet.",
+      "tags": [
+        "Markenname",
+        "Automobil",
+        "Differenzierung"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "url": "https://www.designtagebuch.de/shhhhhkoda-schkoooda-schkodda-markenname-skoda-wird-zur-kreativen-plattform/",
+          "headline": "Šhhhhhkoda, Schkoooda, Schkodda – Markenname Škoda wird zur kreativen Plattform"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Tüpokompanii belebt eine Schrift wieder und behält die Fehler",
+      "blurb": "Vee begann als Studienarbeit von Laura Pappa, eine Wiederbelebung der Venus von Bauer aus dem Jahr 1907, gezeichnet nach Screenshots einer Digitalfassung. Die Foundry hat sie nicht zurück aufs Original korrigiert, sondern Pappas eigene Entscheidungen weitergetrieben. Ein brauchbarer Fall für die Frage, wann ein Revival aufhören sollte, der Vorlage nachzulaufen.",
+      "tags": [
+        "Typografie",
+        "Revival"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/tüpokompanii-laura-pappa-vee-type-graphic-design-project-071026",
+          "headline": "Perfection, begone! Laura Pappa and Tüpokompanii’s new typeface is all about letting yourself be bad at something"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Ein von KI gebauter Nachbau der Creative Cloud ist da, und noch holprig",
+      "blurb": "ArtCraft hat sieben Open-Source-Apps veröffentlicht, die Photoshop, Illustrator, Premiere und vier weitere nachahmen, mit Claude Opus 5.5 in Rust neu geschrieben. Erste Tests finden sie wackelig, Ars sieht rechtliches Risiko beim Erscheinungsbild. Design Week liest daraus, dass das Vermieten eigener Software schwerer wird, wenn KI sie nachbauen kann.",
+      "tags": [
+        "Adobe",
+        "Open Source",
+        "Werkzeuge"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/",
+          "headline": "“Software is over”: Bold AI developer takes aim at Adobe with open source clones"
+        },
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/first-ai-came-and-scooped-up-your-art-now-its-scooped-up-adobe/",
+          "headline": "First AI came and scooped up your art. Now it's scooped up Adobe."
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Geldgeber setzen weiter auf KI, die Werbemittel erzeugt",
+      "blurb": "Melius hat 25 Millionen Dollar eingesammelt, nachdem das Team sein erstes Produkt verworfen hatte, ein Werkzeug zur Steuerung von Werbebudgets. Jetzt erzeugt es Kampagnenmaterial. Der Artikel nennt die Konkurrenz: Higgsfield, im August mit 5,4 Milliarden Dollar bewertet und mit über 700 Millionen Dollar Jahresumsatz, dazu Krea und Flora.",
+      "tags": [
+        "Finanzierung",
+        "Werbung",
+        "Generative KI"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+          "headline": "Ex-Ramp engineers raise $20M for platform Melius after scrapping their first product"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "ChatGPT antwortet jetzt mit Oberfläche statt nur mit Text",
+      "blurb": "Mit GPT-6 mischt ChatGPT Text mit Diagrammen, Formularen, Buttons und kleinen erzeugten Werkzeugen. Laut OpenAI hat das Modell gelernt, wann ein Bild mehr taugt als Prosa. Für Interface-Gestalter wandert damit ein Teil der Layout-Entscheidung ins Modell.",
+      "tags": [
+        "Generative UI",
+        "OpenAI"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/intelligent-ui-openai-bringt-gpt-6-mit-neuer-interaktiver-oberflaeche-in-chatgpt/",
+          "headline": "\"Intelligent UI\": OpenAI bringt GPT-6 mit neuer interaktiver Oberfläche in ChatGPT"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
+          "headline": "ChatGPT’s Intelligent UI update fills its responses with pictures, charts, and buttons"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+          "headline": "ChatGPT is getting a lot more visual, with the launch of a new interface"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Eine Website prüft Bilder auf Wasserzeichen von Google, OpenAI und anderen",
+      "blurb": "Googles SynthID-Detektor ist jetzt öffentlich und erkennt auch die Wasserzeichen von Partnern wie OpenAI und Nvidia, Apple soll folgen. Er sagt nur ja oder nein, erlaubt etwa zehn Prüfungen am Tag und übersieht alles, was mit offenen Modellen oder anderen Wasserzeichen entstand.",
+      "tags": [
+        "Herkunft",
+        "Bilder",
+        "Wasserzeichen"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/",
+          "headline": "Google rolls out improved SynthID AI content detector, now available globally"
+        },
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/google-synthid-detector-ki-1767141/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "Google rollt SynthID Detector für alle aus: Was die KI-Erkennung kann – und was nicht"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media/",
+          "headline": "Google's new SynthID website can identify AI-generated media"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: Agenturmeldungen und Pressemitteilungen",
+      "count": 25,
+      "examples": [
+        "Production Veteran Jenny Lumpkin Launches Modern Standard",
+        "CupNoodles Signs A 300-Year-Old Vampire Influencer To His First Brand Deal",
+        "Bray Co. Turns ISP Junk Mail into Paper Airplanes for Fidium Fiber Internet"
+      ]
+    }
+  ]
+}

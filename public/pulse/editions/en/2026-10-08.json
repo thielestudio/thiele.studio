@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "generated_for": "2026-10-08",
+    "window": "2026-10-06..2026-10-08",
+    "sources_scanned": 62,
+    "items_in_window": 136,
+    "lang": "en",
+    "note": "A thin day. Smashing's naming guide, Kit Studio's EXF, the Orchid identity, Jaguar's Type 01 and the ChatGPT text watermark already ran on 6 and 7 October and are not repeated. Left out: a large wave of Prime Day deals at Creative Bloq, Microsoft's Surface event, general model and agent news (GPT-6 math proofs, Haiku 5.5, EmbeddingGemma 2, Muse on iPad), personal portraits without a transferable core, and all agency press releases at Roastbrief. The userresearchstrategist.com feed failed, the State of Brand sitemap returned no page in the window, four paid Substack posts were removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "How much should AI decide? Less as the stakes rise",
+      "blurb": "Gale Robins separates generation, analysis and commitment, and argues AI's authority should narrow along that line. Her opening case is the useful part: a tool clusters customer comments, names the biggest theme \"pricing friction\", and by the time anyone approves a recommendation, the framing of the problem has already been decided.",
+      "tags": ["AI", "Governance", "Research"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/bounded-delegation-how-much-authority-should-ai-have-823a58fb4192?source=rss----138adf9c44c---4",
+          "headline": "Bounded delegation: How much authority should AI have?"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Kiss Branding's founders wrote the strategy, then stayed out of the rebrand",
+      "blurb": "The Leeds studio's two founders handed a written strategy to their team and kept their hands off the design. The result is a cupid mascot built over more than 100 iterations and a hand-drawn wordmark, and a founder who says the wait for the reveal taught her what clients go through.",
+      "tags": ["Studio", "Rebrand", "Process"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/insight/kiss-branding-in-what-happens-when-founders-stay-out-of-their-own-rebrand/",
+          "headline": "Kiss Branding on what happens when studio founders stay out of their own rebrand"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Mother Design took its M&S packaging cues from information design, not rival retailers",
+      "blurb": "Sub-brands, range names and competing hierarchies are gone from thousands of Home and Lingerie packs. What remains is one typeface in three weights, caps for titles, sentence case for benefits, a new numeral set built with Monotype, and a size system that folds larger cup sizes into the main range instead of a separate sub-brand. Results are not in yet, the studio says.",
+      "tags": ["Packaging", "Retail", "Typography"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/mother-design-exercises-restraint-with-new-ms-pack-system/",
+          "headline": "Mother Design exercises restraint with new M&S pack system"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Riff keeps its star chef off the box",
+      "blurb": "CENTER's packaging for Daniel Humm's $6.99 pasta kits gives a whole side to fresh produce with a note on what each ingredient adds, and leaves out both health claims and Humm's face. A cartoon pan carries the tips instead. The review's point: this box is designed for the stove, not the three seconds on the shelf.",
+      "tags": ["Packaging", "Food", "Identity"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PRINT Magazine",
+          "url": "https://www.printmag.com/branding-identity-design/riff-and-the-beauty-of-an-unfinished-box/",
+          "headline": "Riff and the Beauty of an Unfinished Box"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Depop asks whether it has any right to join a conversation",
+      "blurb": "Steve Dool, Depop's brand and creative lead through two acquisitions, describes restraint as strategy: skip trends the brand has no claim to, and earn trust with small wins before bigger swings. He also rejects the split between creative and data decisions, since choosing a font and reading a dashboard are both interpretations.",
+      "tags": ["Brand strategy", "In-house", "Positioning"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/features/in-house-depop-steve-dool-creative-industry-071026",
+          "headline": "Depop’s Steve Dool on how to build a brand with a strong sense of self"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Tüpokompanii revived a typeface by keeping the mistakes",
+      "blurb": "Vee started as Laura Pappa's student revival of Bauer's 1907 Venus, drawn from screenshots of a digital version. Instead of correcting it back to the original, the foundry pushed her own decisions further, which makes it a useful case for when a revival should stop chasing fidelity.",
+      "tags": ["Typography", "Revival"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/tüpokompanii-laura-pappa-vee-type-graphic-design-project-071026",
+          "headline": "Perfection, begone! Laura Pappa and Tüpokompanii’s new typeface is all about letting yourself be bad at something"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "An AI-built clone of Creative Cloud is out, and it is still rough",
+      "blurb": "ArtCraft has released seven open-source apps that mimic Photoshop, Illustrator, Premiere and four others, written with Claude Opus 5.5 as clean-room rebuilds in Rust. Testers call it wonky, and Ars points to possible legal trouble over the look and feel. Design Week reads it as a sign that renting out software you own gets harder when AI can rebuild it.",
+      "tags": ["Adobe", "Open source", "Tools"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/",
+          "headline": "“Software is over”: Bold AI developer takes aim at Adobe with open source clones"
+        },
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/first-ai-came-and-scooped-up-your-art-now-its-scooped-up-adobe/",
+          "headline": "First AI came and scooped up your art. Now it's scooped up Adobe."
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Investors keep funding AI ad generators",
+      "blurb": "Melius raised $25 million after scrapping its first product, an ad-spend optimizer, to generate campaign assets instead. The article names the competition: Higgsfield, valued at $5.4 billion in August with over $700 million in annualized revenue, plus Krea and Flora.",
+      "tags": ["Funding", "Advertising", "Generative AI"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+          "headline": "Ex-Ramp engineers raise $20M for platform Melius after scrapping their first product"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "ChatGPT now answers with interface, not just text",
+      "blurb": "With GPT-6, ChatGPT can mix text with diagrams, forms, buttons and small generated tools, and OpenAI says it trained the model when to choose visuals over prose. For interface designers this moves part of the layout decision into the model. Rollout starts with paid tiers.",
+      "tags": ["Generative UI", "OpenAI"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
+          "headline": "ChatGPT’s Intelligent UI update fills its responses with pictures, charts, and buttons"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+          "headline": "ChatGPT is getting a lot more visual, with the launch of a new interface"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "One site now checks images for watermarks from Google, OpenAI and others",
+      "blurb": "Google's SynthID detector is public at its own website and recognizes partner watermarks too, including OpenAI and Nvidia, with Apple to follow. It answers only yes or no, allows about ten checks a day, and misses anything made with open-weight models or other watermark systems.",
+      "tags": ["Provenance", "Images", "Watermark"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/",
+          "headline": "Google rolls out improved SynthID AI content detector, now available globally"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media/",
+          "headline": "Google's new SynthID website can identify AI-generated media"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: agency news and press releases",
+      "count": 25,
+      "examples": [
+        "Production Veteran Jenny Lumpkin Launches Modern Standard",
+        "CupNoodles Signs A 300-Year-Old Vampire Influencer To His First Brand Deal",
+        "Bray Co. Turns ISP Junk Mail into Paper Airplanes for Fidium Fiber Internet"
+      ]
+    }
+  ]
+}
