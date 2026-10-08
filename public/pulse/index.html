@@ -62,8 +62,17 @@
   .island.open{border-radius:22px;}
   .is-head{display:flex;align-items:center;gap:9px;width:100%;background:none;border:0;color:var(--tx);
            font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;
-           line-height:1;padding:11px 16px 11px 12px;cursor:pointer;white-space:nowrap;text-align:left;}
+           line-height:1;padding:11px 16px 11px 12px;cursor:pointer;white-space:nowrap;text-align:left;
+           transition:opacity .2s ease .1s,visibility 0s;}
   .is-head:focus-visible{outline:2px solid var(--tx);outline-offset:-4px;border-radius:999px;}
+  /* Offen verschwindet der Kopf mit Punkt und PULSE, das Menue steht fuer sich.
+     Die Hoehe faellt ueber die Rasterzeile auf null (0fr), der innere Rahmen
+     beschneidet den Knopf samt Innenabstand. Daniel, 08.10.2026. */
+  .is-headwrap{display:grid;grid-template-rows:1fr;transition:grid-template-rows .32s var(--ease);}
+  .is-headin{min-height:0;overflow:hidden;}
+  .island.open .is-headwrap{grid-template-rows:0fr;}
+  .island.open .is-head{opacity:0;pointer-events:none;visibility:hidden;transition:opacity .12s ease,visibility 0s linear .32s;}
+  .island.open .is-list{padding-top:6px;}
   /* Der Punkt ist das Logo. Doppelschlag wie ein Herz, Periode ueber --hbd. */
   .is-dot{width:8px;height:8px;border-radius:50%;background:var(--tx);flex:none;transform-origin:center;
           animation:hb var(--hbd) ease-in-out infinite;}
@@ -166,7 +175,7 @@
      jede andere Uebergangsregel ueberschreiben. */
   html.theming, html.theming *{transition:background-color .4s ease,color .4s ease,border-color .4s ease,fill .4s ease,box-shadow .4s ease !important;}
   @media (prefers-reduced-motion: reduce){
-    .entry,.entry .detail,.entry.open .detail,.entry h3,#stream.swap,.island,.is-menu,.island.open .is-menu,.is-item i{transition:none !important;animation:none !important;}
+    .entry,.entry .detail,.entry.open .detail,.entry h3,#stream.swap,.island,.is-menu,.island.open .is-menu,.is-item i,.is-headwrap,.is-head{transition:none !important;animation:none !important;}
     .entry.pre{opacity:1;transform:none;}
     .is-dot,.is-dot.beat{animation:none;opacity:.85;transform:none;}
     .is-lbl .ch.roll{animation:none;}
@@ -220,10 +229,12 @@
 <div id="cursor" aria-hidden="true"><b><i></i></b></div>
 
 <nav class="island brand" id="island" aria-label="PULSE">
-  <button class="is-head" id="isHead" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="isMenu">
-    <span class="is-dot" id="isDot" aria-hidden="true"></span>
-    <span class="is-lbl tnum"><span class="val" id="isVal">PULSE</span></span>
-  </button>
+  <div class="is-headwrap"><div class="is-headin">
+    <button class="is-head" id="isHead" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="isMenu">
+      <span class="is-dot" id="isDot" aria-hidden="true"></span>
+      <span class="is-lbl tnum"><span class="val" id="isVal">PULSE</span></span>
+    </button>
+  </div></div>
   <div class="is-menu" id="isMenu">
     <div class="is-in">
       <div class="is-list" id="isList" role="menu"></div>
@@ -442,11 +453,17 @@ function setLabel(){
   if(showingDate) return;               // das Datum traegt gerade, danach kommt das Thema von selbst
   morph(()=>{ island.classList.toggle("brand",state.topic==="all"); island.classList.remove("date"); isVal.textContent=topicLabelText(); });
 }
-function setOpen(o){
+let HEAD_H=35;   // Hoehe des Kopfs im Ruhezustand, einmal beim Start gemessen
+function setOpen(o,opts){
   if(isOpen===o) return;
   isOpen=o;
   morph(()=>island.classList.toggle("open",o));
   isHead.setAttribute("aria-expanded",String(o));
+  // Offen ist der Kopf unsichtbar: raus aus der Tab-Reihenfolge. Wurde per Klick
+  // oder Tastatur geoeffnet, wandert der Fokus auf die aktive Rubrik. Bei Hover
+  // bleibt der Fokus, wo er war.
+  isHead.tabIndex = o ? -1 : 0;
+  if(o && opts && opts.focus) requestAnimationFrame(()=>{ (isList.querySelector('.is-item[aria-checked="true"]')||isList.querySelector(".is-item"))?.focus({preventScroll:true}); });
 }
 function renderMenu(){
   const list=[{id:"all",label:t().all}].concat(THEMES.filter(x=>state.seenThemes.has(x.id)).map(x=>({id:x.id,label:x[state.lang]})));
@@ -456,12 +473,13 @@ function renderMenu(){
   isList.querySelectorAll(".is-item").forEach(b=>b.onclick=()=>{
     if(state.topic!==b.dataset.t){ state.topic=b.dataset.t; renderMenu(); setLabel(); applyFilter(); swapStream(); }
     setOpen(false); if(FINE) suppressHover=true;   // nicht sofort wieder aufgehen, solange der Zeiger drueber steht
+    isHead.focus({preventScroll:true});             // der Fokus kehrt zum Kopf zurueck, das Menue ist weg
   });
 }
 // Hover am Desktop, Tipp auf Touch. Klick auf den Kopf schaltet immer, auch per Tastatur.
 island.addEventListener("mouseenter",()=>{ if(!FINE||suppressHover) return; clearTimeout(hoverT); setOpen(true); });
 island.addEventListener("mouseleave",()=>{ if(!FINE) return; suppressHover=false; clearTimeout(hoverT); hoverT=setTimeout(()=>setOpen(false),200); });
-isHead.addEventListener("click",()=>{ setOpen(!isOpen); if(!isOpen && FINE) suppressHover=true; });
+isHead.addEventListener("click",()=>{ setOpen(!isOpen,{focus:true}); if(!isOpen && FINE) suppressHover=true; });
 document.addEventListener("pointerdown",e=>{ if(isOpen && !island.contains(e.target)) setOpen(false); },{passive:true});
 island.addEventListener("focusout",e=>{ if(isOpen && !island.contains(e.relatedTarget)) setOpen(false); });
 island.addEventListener("keydown",e=>{
@@ -553,10 +571,11 @@ function flashDate(label){
 }
 let shownDate=null;
 function syncDate(){
-  // Bezugslinie ist die Unterkante des Kopfs, nicht des Islands. Das Menue
-  // verschiebt die Islandkante beim Oeffnen um rund 280px, dann wechselt der
-  // "aktuelle" Tag scheinbar und das Datum blitzt grundlos auf (geprueft 08.10.2026).
-  const bar=isHead.getBoundingClientRect().bottom;
+  // Bezugslinie ist die Oberkante des Islands plus die Ruhehoehe des Kopfs. Weder
+  // die Islandkante (springt beim Oeffnen um rund 280px) noch der Kopf selbst
+  // (klappt offen auf null) taugen als Mass, sonst wechselt der "aktuelle" Tag
+  // scheinbar und das Datum blitzt grundlos auf (geprueft 08.10.2026).
+  const bar=island.getBoundingClientRect().top+HEAD_H;
   let cur=null;
   document.querySelectorAll(".day").forEach(d=>{ if(!d.hidden && d.getBoundingClientRect().top<=bar+8) cur=d; });
   cur=cur||document.querySelector(".day:not([hidden])");
@@ -685,6 +704,7 @@ function resetStream(){
 }
 async function boot(){
   lastY=window.scrollY||document.documentElement.scrollTop||0;
+  HEAD_H=isHead.offsetHeight||HEAD_H;
   try{
     state.index=await (await fetch("./editions/index.json",{cache:"no-store"})).json();
     state.lang=localStorage.getItem("nr-lang")||state.index.default_lang||"en";
