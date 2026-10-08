@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
 <meta name="googlebot" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
@@ -16,124 +16,127 @@
     --tx:#17161a; --tx2:#54535a; --tx3:#8a8991; --accent:#17161a; --accent-tx:#ffffff;
     --chip:#f1f0ee; --chip-hover:#e7e6e3;
     --hover:#ffffff; --hover-shadow:0 1px 2px rgba(23,22,26,.05), 0 10px 28px rgba(23,22,26,.08);
-    --glass:rgba(255,255,255,.55); --glass-line:rgba(23,22,26,.08); --glass-hi:rgba(255,255,255,.75);
-    --glass-shadow:0 1px 2px rgba(23,22,26,.05), 0 10px 28px rgba(23,22,26,.10);
+    --glass:rgba(255,255,255,.62); --glass-line:rgba(23,22,26,.09); --glass-hi:rgba(255,255,255,.8);
+    --glass-shadow:0 1px 2px rgba(23,22,26,.05), 0 12px 32px rgba(23,22,26,.12);
     --ease:cubic-bezier(.2,.7,.2,1);
     --sans:-apple-system,"SF Pro Text","SF Pro Display",system-ui,"Inter","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     --footh:44px;
+    --hbd:1.9s;   /* Herzschlag-Periode des Punkts, der Scroll beschleunigt sie */
   }
   :root[data-theme="dark"]{
     --bg:#0b0b0c; --surface:#141416; --line:#242427; --line2:#34343a;
     --tx:#fafafa; --tx2:#a6a6ad; --tx3:#77767e; --accent:#fafafa; --accent-tx:#0b0b0c;
     --hover:#17171b; --hover-shadow:none;
-    --glass:rgba(28,28,32,.5); --glass-line:rgba(255,255,255,.09); --glass-hi:rgba(255,255,255,.06);
-    --glass-shadow:0 10px 30px rgba(0,0,0,.45);
+    --glass:rgba(28,28,32,.58); --glass-line:rgba(255,255,255,.1); --glass-hi:rgba(255,255,255,.07);
+    --glass-shadow:0 12px 34px rgba(0,0,0,.5);
     --chip:#1c1c20; --chip-hover:#26262b;
   }
   *{box-sizing:border-box;} html,body{margin:0;}
   body{background:var(--bg);color:var(--tx);font-family:var(--sans);font-size:clamp(14px,3.9vw,15px);line-height:1.55;-webkit-font-smoothing:antialiased;}
   a{color:inherit;text-decoration:none;}
-  .wrap{max-width:880px;margin:0 auto;padding:0 22px calc(var(--footh) + 70px);}
-  .label{font-family:var(--sans);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--tx3);}
+  ::selection{background:var(--tx);color:var(--bg);}
+  /* Oben Platz fuer das schwebende Island, unten fuer den festen Fuss */
+  .wrap{max-width:880px;margin:0 auto;padding:calc(72px + env(safe-area-inset-top,0px)) 22px calc(var(--footh) + 70px);}
   .tnum{font-variant-numeric:tabular-nums;}
 
-  header{padding:34px 0 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;}
-  .brand h1{font-size:clamp(21px,5.6vw,25px);line-height:1.05;margin:0 0 4px;letter-spacing:0.02em;}
-  .brand .ed{font-family:var(--sans);font-size:12px;color:var(--tx3);}
-  /* Logo: Punktraster mit Goo-Filter. Der Zeiger drueckt die Punkte auseinander wie ein
-     abstossender Magnet, danach gleiten sie an ihren Platz zurueck. Das Skript direkt
-     hinter dem Kopf setzt cx und cy als Attribute, das zwingt jeden Browser, den Filter
-     neu zu rechnen. */
-  .brand h1.logo{margin:0;line-height:0;font-size:0;letter-spacing:0;}
-  /* Feste 28px auch mobil: bei 23px Hoehe reissen die Goo-Bruecken schon im Ruhezustand
-     und das Logo zerfaellt in Einzelpunkte (gemessen bei 375px Breite, doppelte Pixeldichte). */
-  .logo svg{display:block;height:28px;width:auto;overflow:visible;}
-  .logo circle{fill:var(--tx);}
-  .htools{display:flex;gap:8px;align-items:center;}
-  .tbtn{font-family:var(--sans);font-size:12px;color:var(--tx2);background:var(--surface);border:1px solid var(--line2);padding:7px 11px;cursor:pointer;border-radius:999px;transition:border-color .2s ease,color .2s ease;}
-  .tbtn:hover{border-color:var(--tx3);color:var(--tx);}
-  .langsw{display:flex;border:1px solid var(--line2);border-radius:999px;overflow:hidden;}
-  .langsw button{font-family:var(--sans);font-size:12px;letter-spacing:0.04em;background:none;border:none;color:var(--tx2);padding:7px 11px;cursor:pointer;transition:background-color .22s ease,color .22s ease;}
-  .langsw button[aria-pressed="true"]{background:var(--accent);color:var(--accent-tx);}
-
-  /* Sticky Kopf: Datum laeuft beim Scrollen mit */
-  .runbar{position:sticky;top:0;background:var(--bg);z-index:5;padding:12px 0 13px;display:flex;flex-direction:column;gap:11px;transition:gap .3s var(--ease);}
-  /* Datum schwebt zentriert am unteren Rand und ist dauerhaft aus. Es blitzt
-     nur auf, wenn beim Scrollen ein anderer Tag den Kopf erreicht. Unten, weil
-     es oben die Themen-Navi ueberlagert haette. */
-  .datetoast{position:fixed;bottom:calc(var(--footh) + 22px);left:50%;
-             transform:translateX(-50%) translateY(8px);
-             z-index:20;pointer-events:none;perspective:320px;
-             transition:transform .32s var(--ease);}
-  .datetoast.show{transform:translateX(-50%) translateY(0);}
-  /* Glas: halbtransparente Flaeche, darunter scrollender Inhalt weichgezeichnet.
-     Die Deckkraft sitzt auf der Pille, nicht auf dem Container. Ein Vorfahr mit
-     Deckkraft unter 1 wird zur Backdrop-Wurzel, dann bliebe der Weichzeichner beim
-     Einblenden leer und spraenge erst am Ende ein. */
-  .datetoast .bub{display:inline-block;color:var(--tx);
-                  background:var(--glass);border:1px solid var(--glass-line);
-                  -webkit-backdrop-filter:blur(14px) saturate(1.8);backdrop-filter:blur(14px) saturate(1.8);
-                  box-shadow:inset 0 1px 0 var(--glass-hi),var(--glass-shadow);
-                  font-size:13.75px;letter-spacing:0.06em;text-transform:uppercase;
-                  padding:9px 19px;border-radius:999px;
-                  opacity:0;transition:opacity .28s ease;}
-  .datetoast.show .bub{opacity:1;}
-  .datetoast .bub.pulse{animation:bubpulse .5s cubic-bezier(.34,1.56,.64,1);}
-  /* Split-Flap: jede Stelle ist ein eigenes Blatt mit fester Laufweite, sonst
-     zappelt die Pille waehrend des Durchrollens. */
-  .datetoast .val{display:inline-flex;}
-  /* Blattbreite gemessen, nicht geschaetzt: breitestes vorkommendes Zeichen ist
-     das M mit 0.90em bei Gewicht 500. 0.88em laesst Luft und die Blaetter kleben
-     nicht. Die Laufweite entsteht ueber die feste Breite, nicht ueber
-     letter-spacing, sonst sitzt das Zeichen ausserhalb der Blattmitte. */
-  .datetoast .ch{display:inline-block;width:.88em;text-align:center;font-weight:500;
-                 letter-spacing:0;transform-origin:50% 60%;backface-visibility:hidden;}
-  .datetoast .ch.sp{width:.42em;}
-  .datetoast .ch.roll{animation:chroll .085s linear;}
-  @keyframes bubpulse{0%{transform:scale(1);}38%{transform:scale(1.07);}100%{transform:scale(1);}}
+  /* ---------------------------------------------------------------------
+     Island. Eine schwebende Glas-Pille oben mittig, die Logo, Themen-Schiene
+     und Datums-Toast ersetzt. Ruhe: Punkt plus aktive Rubrik. Hover oder Tipp
+     klappt eine senkrechte Rubrikenliste auf, darunter Sprache und Hell/Dunkel.
+     Beim Tageswechsel schlaegt der Punkt hart und die Pille weitet sich zum
+     Datum, danach zieht sie sich auf die Rubrik zurueck.
+     Die Breite wird vom Skript als Pixelwert gefuehrt, weil sich auto nicht
+     animieren laesst (siehe morph()). Die Breite wird bewusst animiert statt
+     ueber transform: ein einzelnes fixiertes Element ausserhalb des Flusses,
+     contain:layout haelt den Umbau im Island, und scaleX wuerde Text und
+     Radien verzerren. overflow:hidden beschneidet die Form waehrend des Umbaus,
+     deshalb sitzt der Fokusring innen.
+     --------------------------------------------------------------------- */
+  .island{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:30;
+          max-width:calc(100vw - 32px);contain:layout;
+          background:var(--glass);border:1px solid var(--glass-line);
+          -webkit-backdrop-filter:blur(18px) saturate(1.8);backdrop-filter:blur(18px) saturate(1.8);
+          box-shadow:inset 0 1px 0 var(--glass-hi),var(--glass-shadow);
+          border-radius:999px;overflow:hidden;
+          transition:width .4s var(--ease),border-radius .4s var(--ease);}
+  .island.open{border-radius:22px;}
+  .is-head{display:flex;align-items:center;gap:9px;width:100%;background:none;border:0;color:var(--tx);
+           font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;
+           line-height:1;padding:11px 16px 11px 12px;cursor:pointer;white-space:nowrap;text-align:left;}
+  .is-head:focus-visible{outline:2px solid var(--tx);outline-offset:-4px;border-radius:999px;}
+  /* Der Punkt ist das Logo. Doppelschlag wie ein Herz, Periode ueber --hbd. */
+  .is-dot{width:8px;height:8px;border-radius:50%;background:var(--tx);flex:none;transform-origin:center;
+          animation:hb var(--hbd) ease-in-out infinite;}
+  /* Harter Schlag beim Tageswechsel: schnell gross, dann weich zurueck. Kein
+     Ueberschwingen im Easing, die Spitze sitzt im Keyframe selbst. */
+  .is-dot.beat{animation:beat .64s cubic-bezier(.16,1,.3,1);}
+  @keyframes hb{0%,100%{transform:scale(.68);opacity:.5} 15%{transform:scale(1);opacity:1} 29%{transform:scale(.8);opacity:.78} 43%{transform:scale(1);opacity:1} 62%{transform:scale(.68);opacity:.5}}
+  @keyframes beat{0%{transform:scale(.8);opacity:.8} 26%{transform:scale(1.85);opacity:1} 100%{transform:scale(.68);opacity:.5}}
+  .is-lbl{display:inline-flex;align-items:center;min-height:11px;}
+  /* Ruhelabel PULSE etwas breiter gesetzt: der Name wohnt jetzt hier, nicht mehr im Logo. */
+  .island.brand .is-lbl{letter-spacing:0.16em;font-weight:600;}
+  /* Datum als Split-Flap: jede Stelle ein eigenes Blatt mit fester Laufweite,
+     sonst zappelt die Pille waehrend des Durchrollens. Blattbreite gemessen am M. */
+  .is-lbl .ch{display:inline-block;width:.84em;text-align:center;letter-spacing:0;transform-origin:50% 60%;backface-visibility:hidden;}
+  .is-lbl .ch.sp{width:.42em;}
+  .is-lbl .ch.roll{animation:chroll .085s linear;}
   @keyframes chroll{from{transform:rotateX(-62deg);opacity:.4;} to{transform:rotateX(0);opacity:1;}}
-  @media (prefers-reduced-motion: reduce){
-    .datetoast .bub.pulse,.datetoast .ch.roll{animation:none;}
-  }
-  /* Themen als Schiene: graue Spur, weisse Kachel faehrt zum aktiven Reiter.
-     Auf schmalen Fenstern scrollt die Spur seitlich statt umzubrechen. */
-  .topics{position:relative;display:flex;flex-wrap:nowrap;gap:0;width:fit-content;max-width:100%;
-          background:var(--chip);border-radius:999px;padding:4px;
-          overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
-          scrollbar-width:none;max-height:48px;opacity:1;
-          transition:max-height .3s var(--ease),opacity .22s ease,padding .3s var(--ease);}
-  .topics::-webkit-scrollbar{display:none;}
-  .runbar.compact{gap:0;}
-  .runbar.compact .topics{max-height:0;opacity:0;padding-top:0;padding-bottom:0;}
-  .thumb{position:absolute;top:4px;bottom:4px;left:0;width:0;border-radius:999px;
-         background:var(--bg);box-shadow:var(--hover-shadow);z-index:0;
-         transition:transform .3s cubic-bezier(.4,0,.2,1),width .3s cubic-bezier(.4,0,.2,1);}
-  .thumb.noanim{transition:none;}
-  .chip{position:relative;z-index:1;white-space:nowrap;font-family:var(--sans);font-size:11px;
-        font-weight:500;letter-spacing:0.03em;text-transform:uppercase;color:var(--tx2);
-        background:none;border:0;padding:7px 14px;cursor:pointer;border-radius:999px;
-        transition:color .18s ease;}
-  .chip:hover{color:var(--tx);}
-  .chip[aria-pressed="true"]{color:var(--tx);}
 
-  /* Timeline: keine Trennstriche, Rhythmus ueber Weissraum */
-  /* Kein Datum im Strom, das traegt der Sticky-Balken. Der Tageswechsel
-     zeigt sich ueber den groesseren Abstand. */
-  .day{padding:22px 0 0;}
+  /* Menue: Hoehe ueber die Rasterzeile animiert (0fr zu 1fr), Breite ueber das Island.
+     Zugeklappt hat das Menue keine Breite, damit die Pille nur so breit ist wie der Kopf. */
+  .is-menu{display:grid;grid-template-rows:0fr;width:0;opacity:0;visibility:hidden;
+           transition:grid-template-rows .4s var(--ease),opacity .18s ease,visibility 0s linear .4s;}
+  .island.open .is-menu{grid-template-rows:1fr;width:min(300px,calc(100vw - 32px));opacity:1;visibility:visible;
+           transition:grid-template-rows .44s var(--ease),opacity .3s ease .08s,visibility 0s;}
+  .is-in{min-height:0;overflow:hidden;}
+  .is-list{display:flex;flex-direction:column;padding:0 6px 6px;}
+  .is-item{display:flex;align-items:center;gap:11px;background:none;border:0;color:var(--tx2);
+           font-family:var(--sans);font-size:13.5px;font-weight:500;letter-spacing:0;text-align:left;
+           padding:10px 12px;border-radius:13px;cursor:pointer;white-space:nowrap;
+           transition:background-color .16s ease,color .16s ease;}
+  .is-item:hover{background:var(--chip);color:var(--tx);}
+  .is-item:focus-visible{outline:2px solid var(--tx);outline-offset:-2px;}
+  .is-item[aria-checked="true"]{color:var(--tx);font-weight:600;}
+  .is-item i{width:6px;height:6px;border-radius:50%;background:currentColor;opacity:0;flex:none;transition:opacity .16s ease,transform .25s var(--ease);transform:scale(.6);}
+  .is-item[aria-checked="true"] i{opacity:1;transform:scale(1);}
+  .is-tools{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 6px;padding:9px 6px 8px;border-top:1px solid var(--glass-line);}
+  .langsw{display:flex;border:1px solid var(--line2);border-radius:999px;overflow:hidden;}
+  .langsw button{font-family:var(--sans);font-size:11.5px;letter-spacing:0.05em;background:none;border:none;color:var(--tx2);padding:6px 11px;cursor:pointer;transition:background-color .22s ease,color .22s ease;}
+  .langsw button[aria-pressed="true"]{background:var(--accent);color:var(--accent-tx);}
+  .langsw button:focus-visible{outline:2px solid var(--tx);outline-offset:-3px;}
+  .is-theme{display:inline-flex;align-items:center;justify-content:center;width:32px;height:30px;border-radius:999px;
+            background:none;border:1px solid var(--line2);color:var(--tx2);cursor:pointer;transition:border-color .2s ease,color .2s ease;}
+  .is-theme:hover{border-color:var(--tx3);color:var(--tx);}
+  .is-theme:focus-visible{outline:2px solid var(--tx);outline-offset:-3px;}
+  .is-theme svg{width:15px;height:15px;}
+
+  /* Timeline: keine Trennstriche, Rhythmus ueber Weissraum. Kein Datum im Strom,
+     das traegt das Island beim Tageswechsel. Der Wechsel zeigt sich ueber den
+     groesseren Abstand. */
+  .day{padding:0;}
   .day + .day{padding-top:44px;}
   /* Innenabstand rundum gleich. Der Abstand zwischen Schlagzeile und Einordnung sitzt
      im aufklappenden Teil, sonst bleibt er zugeklappt unten stehen und der Eintrag
      wirkt unten luftiger als oben. */
-  .entry{padding:20px;margin:0 -20px 16px;border-radius:24px;
+  .entry{padding:20px;margin:0 -20px 16px;border-radius:24px;cursor:pointer;
          transition:background-color .24s ease,box-shadow .28s ease,
                     opacity .55s ease var(--rd,0ms),transform .6s var(--ease) var(--rd,0ms);}
   .entry:hover{background:var(--hover);box-shadow:var(--hover-shadow);}
   /* Einblenden beim Hereinscrollen, einmal pro Eintrag, leicht von unten */
   .entry.pre{opacity:0;transform:translateY(14px);}
-  .entry .meta{font-family:var(--sans);font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--tx3);margin-bottom:9px;transition:opacity .35s ease;}
-  .entry h3{margin:0;font-size:clamp(16.5px,4.6vw,19px);font-weight:600;line-height:1.34;letter-spacing:-0.005em;
+  /* Overline: Rubrik, dann die Leitquelle. Bei Personen ein Glyph vor dem Autor,
+     Portale ohne. Ab zwei Quellen eine Zaehlpille. Kontrast ueber 7:1, weil die
+     Zeile jetzt Information traegt und nicht nur ein Etikett ist. */
+  .entry .meta{display:flex;align-items:center;flex-wrap:wrap;gap:5px 7px;font-family:var(--sans);font-size:10.5px;font-weight:500;
+               letter-spacing:0.08em;text-transform:uppercase;color:var(--tx2);margin-bottom:9px;transition:opacity .35s ease;}
+  .entry .meta .sep{color:var(--line2);font-weight:400;}
+  .entry .meta .src{display:inline-flex;align-items:center;gap:5px;min-width:0;}
+  .entry .meta .src svg{width:10px;height:10px;flex:none;}
+  .entry .meta .more{font-size:9.5px;letter-spacing:0.02em;line-height:1.5;padding:1px 6px;border-radius:999px;background:var(--chip);color:var(--tx2);}
+  .entry h3{margin:0;font-size:clamp(16.5px,4.6vw,19px);font-weight:600;line-height:1.34;letter-spacing:-0.005em;text-wrap:balance;
             transition:color .35s ease,font-weight .35s ease;}
   .entry .head{cursor:pointer;display:block;}
+  .entry .head:focus-visible{outline:2px solid var(--tx);outline-offset:4px;border-radius:6px;}
   /* Aufklappen ueber die Zeilenhoehe des Rasters: 0fr zu 1fr laesst sich animieren,
      height:auto nicht. visibility schaltet erst nach dem Zuklappen, damit Links im
      geschlossenen Zustand weder fokussierbar noch vorlesbar sind. */
@@ -142,7 +145,7 @@
   .entry.open .detail{grid-template-rows:1fr;opacity:1;visibility:visible;
                       transition:grid-template-rows .4s var(--ease),opacity .32s ease .08s,visibility 0s;}
   .entry .detail-in{min-height:0;overflow:hidden;}
-  .entry .blurb{margin:12px 0 14px;color:var(--tx2);font-size:clamp(14px,3.9vw,15px);line-height:1.6;}
+  .entry .blurb{margin:12px 0 14px;color:var(--tx2);font-size:clamp(14px,3.9vw,15px);line-height:1.6;max-width:72ch;}
   .entry > .srcs{margin-top:12px;}
   /* Quelle als Pille mit Pfeil. Der Pfeil rueckt beim Hovern ein Stueck nach oben rechts. */
   .entry .srcs{display:flex;gap:8px;flex-wrap:wrap;}
@@ -150,6 +153,7 @@
                  color:var(--tx2);background:var(--chip);padding:6px 11px 6px 13px;border-radius:999px;
                  transition:background-color .2s ease,color .2s ease;}
   .entry .srcs a:hover{background:var(--chip-hover);color:var(--tx);}
+  .entry .srcs a:focus-visible{outline:2px solid var(--tx);outline-offset:2px;}
   .entry .srcs a svg{width:11px;height:11px;flex:none;transition:transform .25s var(--ease);}
   .entry .srcs a:hover svg{transform:translate(1.5px,-1.5px);}
   /* Gelesen: zurueckgenommen, nicht versteckt. Unterschied laeuft ueber Farbe und Gewicht. */
@@ -162,25 +166,28 @@
      jede andere Uebergangsregel ueberschreiben. */
   html.theming, html.theming *{transition:background-color .4s ease,color .4s ease,border-color .4s ease,fill .4s ease,box-shadow .4s ease !important;}
   @media (prefers-reduced-motion: reduce){
-    .entry,.entry .detail,.entry.open .detail,.entry h3,#stream.swap,.datetoast,.datetoast .bub,.runbar,.topics{transition:none !important;animation:none !important;}
+    .entry,.entry .detail,.entry.open .detail,.entry h3,#stream.swap,.island,.is-menu,.island.open .is-menu,.is-item i{transition:none !important;animation:none !important;}
     .entry.pre{opacity:1;transform:none;}
+    .is-dot,.is-dot.beat{animation:none;opacity:.85;transform:none;}
+    .is-lbl .ch.roll{animation:none;}
   }
 
   /* Cursor: aussen die Position, innen der Puls. Zwei Ebenen, weil sonst
      transform fuer Position und Skalierung kollidieren. Nur bei echter Maus. */
   #cursor{position:fixed;left:0;top:0;z-index:9999;pointer-events:none;
           transform:translate3d(-100px,-100px,0);will-change:transform;}
+  /* Drei Ebenen: aussen die Position, in der Mitte die Groesse (transform statt
+     Breite und Hoehe, damit nichts neu gesetzt wird), innen der Puls. Die mittlere
+     Ebene hat keine eigene Groesse, ihr Ursprung ist damit der Zeigerpunkt. */
+  #cursor b{display:block;transform:scale(1);transition:transform .18s ease;}
+  #cursor.hot b{transform:scale(1.67);}
   #cursor i{display:block;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;
             border-radius:50%;background:var(--tx);
-            animation:pulsedot 1.6s ease-in-out infinite;
-            transition:width .18s ease,height .18s ease,margin .18s ease;}
-  #cursor.hot i{width:15px;height:15px;margin:-7.5px 0 0 -7.5px;animation-duration:.65s;}
+            animation:pulsedot 1.6s ease-in-out infinite;}
+  #cursor.hot i{animation-duration:.65s;}
   @keyframes pulsedot{0%,100%{transform:scale(.7);opacity:.5;} 50%{transform:scale(1);opacity:1;}}
   @media (hover:none),(pointer:coarse){ #cursor{display:none;} }
   @media (prefers-reduced-motion: reduce){ #cursor i{animation:none;opacity:.85;} }
-
-  /* Der ganze Eintrag ist die Klickflaeche, nicht nur die Schlagzeile */
-  .entry{cursor:pointer;}
 
   .sentinel{height:1px;}
   .status{font-family:var(--sans);font-size:11.5px;color:var(--tx3);padding:26px 0 40px;text-align:center;letter-spacing:0.05em;}
@@ -195,10 +202,9 @@
   /* Ganz am Ende, damit sie gegen spaetere cursor-Regeln gewinnt.
      Sonst zeigt der Browser ueber den Eintraegen weiter den nativen Zeiger. */
   @media (hover:hover) and (pointer:fine){
-    *,body,a,button,.head,.entry,.chip{cursor:none !important;}
+    *,body,a,button,.head,.entry,.is-item{cursor:none !important;}
   }
   @media(max-width:600px){
-    header{flex-direction:column;}
     /* Mindestens 30px Weissraum bis zum Displayrand. Der Eintrag behaelt seinen
        Innenabstand von 20px und den negativen Aussenabstand, sonst sitzt der
        Text auf der Kante der Flaeche. Text steht damit bei 30px, die Flaeche
@@ -211,91 +217,32 @@
 </style>
 </head>
 <body>
-<div id="cursor" aria-hidden="true"><i></i></div>
-<div class="wrap">
-  <header>
-    <div class="brand">
-      <h1 class="logo"><svg viewBox="0 0 314.286 50" role="img" aria-label="PULSE"><defs><filter id="pulse-goo" color-interpolation-filters="sRGB" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur in="SourceGraphic" stdDeviation="1.45" result="blur"/><feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 14 -5"/></filter></defs><g filter="url(#pulse-goo)"><circle cx="3.571" cy="3.571" r="2.857"/><circle cx="10.714" cy="3.571" r="2.857"/><circle cx="17.857" cy="3.571" r="2.857"/><circle cx="25" cy="3.571" r="2.857"/><circle cx="32.143" cy="3.571" r="2.857"/><circle cx="39.286" cy="3.571" r="2.857"/><circle cx="46.429" cy="3.571" r="2.857"/><circle cx="3.571" cy="10.714" r="2.857"/><circle cx="10.714" cy="10.714" r="2.857"/><circle cx="39.286" cy="10.714" r="2.857"/><circle cx="46.429" cy="10.714" r="2.857"/><circle cx="53.571" cy="10.714" r="2.857"/><circle cx="3.571" cy="17.857" r="2.857"/><circle cx="10.714" cy="17.857" r="2.857"/><circle cx="46.429" cy="17.857" r="2.857"/><circle cx="53.571" cy="17.857" r="2.857"/><circle cx="3.571" cy="25" r="2.857"/><circle cx="10.714" cy="25" r="2.857"/><circle cx="17.857" cy="25" r="2.857"/><circle cx="25" cy="25" r="2.857"/><circle cx="32.143" cy="25" r="2.857"/><circle cx="39.286" cy="25" r="2.857"/><circle cx="46.429" cy="25" r="2.857"/><circle cx="53.571" cy="25" r="2.857"/><circle cx="3.571" cy="32.143" r="2.857"/><circle cx="10.714" cy="32.143" r="2.857"/><circle cx="3.571" cy="39.286" r="2.857"/><circle cx="10.714" cy="39.286" r="2.857"/><circle cx="3.571" cy="46.429" r="2.857"/><circle cx="10.714" cy="46.429" r="2.857"/><circle cx="67.857" cy="3.571" r="2.857"/><circle cx="75" cy="3.571" r="2.857"/><circle cx="110.714" cy="3.571" r="2.857"/><circle cx="117.857" cy="3.571" r="2.857"/><circle cx="67.857" cy="10.714" r="2.857"/><circle cx="75" cy="10.714" r="2.857"/><circle cx="110.714" cy="10.714" r="2.857"/><circle cx="117.857" cy="10.714" r="2.857"/><circle cx="67.857" cy="17.857" r="2.857"/><circle cx="75" cy="17.857" r="2.857"/><circle cx="110.714" cy="17.857" r="2.857"/><circle cx="117.857" cy="17.857" r="2.857"/><circle cx="67.857" cy="25" r="2.857"/><circle cx="75" cy="25" r="2.857"/><circle cx="110.714" cy="25" r="2.857"/><circle cx="117.857" cy="25" r="2.857"/><circle cx="67.857" cy="32.143" r="2.857"/><circle cx="75" cy="32.143" r="2.857"/><circle cx="110.714" cy="32.143" r="2.857"/><circle cx="117.857" cy="32.143" r="2.857"/><circle cx="67.857" cy="39.286" r="2.857"/><circle cx="75" cy="39.286" r="2.857"/><circle cx="110.714" cy="39.286" r="2.857"/><circle cx="117.857" cy="39.286" r="2.857"/><circle cx="67.857" cy="46.429" r="2.857"/><circle cx="75" cy="46.429" r="2.857"/><circle cx="82.143" cy="46.429" r="2.857"/><circle cx="89.286" cy="46.429" r="2.857"/><circle cx="96.429" cy="46.429" r="2.857"/><circle cx="103.571" cy="46.429" r="2.857"/><circle cx="110.714" cy="46.429" r="2.857"/><circle cx="117.857" cy="46.429" r="2.857"/><circle cx="132.143" cy="3.571" r="2.857"/><circle cx="139.286" cy="3.571" r="2.857"/><circle cx="132.143" cy="10.714" r="2.857"/><circle cx="139.286" cy="10.714" r="2.857"/><circle cx="132.143" cy="17.857" r="2.857"/><circle cx="139.286" cy="17.857" r="2.857"/><circle cx="132.143" cy="25" r="2.857"/><circle cx="139.286" cy="25" r="2.857"/><circle cx="132.143" cy="32.143" r="2.857"/><circle cx="139.286" cy="32.143" r="2.857"/><circle cx="132.143" cy="39.286" r="2.857"/><circle cx="139.286" cy="39.286" r="2.857"/><circle cx="132.143" cy="46.429" r="2.857"/><circle cx="139.286" cy="46.429" r="2.857"/><circle cx="146.429" cy="46.429" r="2.857"/><circle cx="153.571" cy="46.429" r="2.857"/><circle cx="160.714" cy="46.429" r="2.857"/><circle cx="167.857" cy="46.429" r="2.857"/><circle cx="175" cy="46.429" r="2.857"/><circle cx="182.143" cy="46.429" r="2.857"/><circle cx="203.571" cy="3.571" r="2.857"/><circle cx="210.714" cy="3.571" r="2.857"/><circle cx="217.857" cy="3.571" r="2.857"/><circle cx="225" cy="3.571" r="2.857"/><circle cx="232.143" cy="3.571" r="2.857"/><circle cx="239.286" cy="3.571" r="2.857"/><circle cx="196.429" cy="10.714" r="2.857"/><circle cx="203.571" cy="10.714" r="2.857"/><circle cx="210.714" cy="10.714" r="2.857"/><circle cx="232.143" cy="10.714" r="2.857"/><circle cx="239.286" cy="10.714" r="2.857"/><circle cx="246.429" cy="10.714" r="2.857"/><circle cx="196.429" cy="17.857" r="2.857"/><circle cx="203.571" cy="17.857" r="2.857"/><circle cx="196.429" cy="25" r="2.857"/><circle cx="203.571" cy="25" r="2.857"/><circle cx="210.714" cy="25" r="2.857"/><circle cx="217.857" cy="25" r="2.857"/><circle cx="225" cy="25" r="2.857"/><circle cx="232.143" cy="25" r="2.857"/><circle cx="239.286" cy="25" r="2.857"/><circle cx="232.143" cy="32.143" r="2.857"/><circle cx="239.286" cy="32.143" r="2.857"/><circle cx="246.429" cy="32.143" r="2.857"/><circle cx="196.429" cy="39.286" r="2.857"/><circle cx="203.571" cy="39.286" r="2.857"/><circle cx="239.286" cy="39.286" r="2.857"/><circle cx="246.429" cy="39.286" r="2.857"/><circle cx="196.429" cy="46.429" r="2.857"/><circle cx="203.571" cy="46.429" r="2.857"/><circle cx="210.714" cy="46.429" r="2.857"/><circle cx="217.857" cy="46.429" r="2.857"/><circle cx="225" cy="46.429" r="2.857"/><circle cx="232.143" cy="46.429" r="2.857"/><circle cx="239.286" cy="46.429" r="2.857"/><circle cx="246.429" cy="46.429" r="2.857"/><circle cx="260.714" cy="3.571" r="2.857"/><circle cx="267.857" cy="3.571" r="2.857"/><circle cx="275" cy="3.571" r="2.857"/><circle cx="282.143" cy="3.571" r="2.857"/><circle cx="289.286" cy="3.571" r="2.857"/><circle cx="296.429" cy="3.571" r="2.857"/><circle cx="303.571" cy="3.571" r="2.857"/><circle cx="310.714" cy="3.571" r="2.857"/><circle cx="260.714" cy="10.714" r="2.857"/><circle cx="267.857" cy="10.714" r="2.857"/><circle cx="260.714" cy="17.857" r="2.857"/><circle cx="267.857" cy="17.857" r="2.857"/><circle cx="260.714" cy="25" r="2.857"/><circle cx="267.857" cy="25" r="2.857"/><circle cx="275" cy="25" r="2.857"/><circle cx="282.143" cy="25" r="2.857"/><circle cx="289.286" cy="25" r="2.857"/><circle cx="296.429" cy="25" r="2.857"/><circle cx="303.571" cy="25" r="2.857"/><circle cx="310.714" cy="25" r="2.857"/><circle cx="260.714" cy="32.143" r="2.857"/><circle cx="267.857" cy="32.143" r="2.857"/><circle cx="260.714" cy="39.286" r="2.857"/><circle cx="267.857" cy="39.286" r="2.857"/><circle cx="260.714" cy="46.429" r="2.857"/><circle cx="267.857" cy="46.429" r="2.857"/><circle cx="275" cy="46.429" r="2.857"/><circle cx="282.143" cy="46.429" r="2.857"/><circle cx="289.286" cy="46.429" r="2.857"/><circle cx="296.429" cy="46.429" r="2.857"/><circle cx="303.571" cy="46.429" r="2.857"/><circle cx="310.714" cy="46.429" r="2.857"/></g></svg></h1>
-    </div>
-    <div class="htools">
-      <div class="langsw" id="langsw">
-        <button data-lang="en" aria-pressed="true">EN</button>
-        <button data-lang="de" aria-pressed="false">DE</button>
+<div id="cursor" aria-hidden="true"><b><i></i></b></div>
+
+<nav class="island brand" id="island" aria-label="PULSE">
+  <button class="is-head" id="isHead" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="isMenu">
+    <span class="is-dot" id="isDot" aria-hidden="true"></span>
+    <span class="is-lbl tnum"><span class="val" id="isVal">PULSE</span></span>
+  </button>
+  <div class="is-menu" id="isMenu">
+    <div class="is-in">
+      <div class="is-list" id="isList" role="menu"></div>
+      <div class="is-tools">
+        <div class="langsw" id="langsw" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="de" aria-pressed="false">DE</button>
+        </div>
+        <button class="is-theme" id="themeToggle" type="button" aria-label="Dark mode"></button>
       </div>
-      <button class="tbtn" id="themeToggle" aria-label="Light/Dark">☀︎</button>
     </div>
-  </header>
-  <script>
-  // Logo weicht dem Zeiger aus. Punkte im Wirkungskreis werden radial weggedrueckt, am
-  // staerksten direkt unter dem Zeiger, und gleiten zurueck, sobald er weiterzieht. Der
-  // Abstand wird zur Ruheposition gemessen, nicht zur aktuellen, sonst schaukelt sich die
-  // Bewegung auf. Ohne Bewegung schlaeft die Schleife, jede Zeigerbewegung weckt sie.
-  (function(){
-    const svg=document.querySelector(".logo svg"); if(!svg) return;
-    if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const VBW=314.286, VBH=50;
-    const RADIUS=42;  // Wirkungskreis in SVG-Einheiten, Punktabstand ist 7.14
-    const PUSH=13;    // groesste Verdraengung in SVG-Einheiten
-    const EASE=.2;    // Anteil des Restwegs je Bild bei 60 Bildern pro Sekunde
-    const dots=[...svg.querySelectorAll("circle")].map(c=>{
-      const hx=+c.getAttribute("cx"), hy=+c.getAttribute("cy");
-      return {c,hx,hy,x:hx,y:hy};
-    });
-    let px=null, py=null, raf=0, last=0, zuhause=true;
-    function frame(t){
-      const dt=last?Math.min((t-last)/16.667,3):1; last=t;
-      const k=1-Math.pow(1-EASE,dt);
-      let p=null;
-      if(px!==null){
-        const r=svg.getBoundingClientRect();
-        p={x:(px-r.left)*VBW/r.width, y:(py-r.top)*VBH/r.height};
-      }
-      let bewegt=false, alle=true;
-      for(const d of dots){
-        let tx=d.hx, ty=d.hy;
-        if(p){
-          const dx=d.hx-p.x, dy=d.hy-p.y, dist=Math.hypot(dx,dy);
-          if(dist<RADIUS){
-            const f=PUSH*Math.pow(1-dist/RADIUS,2);
-            tx+=dist>.001?dx/dist*f:0; ty+=dist>.001?dy/dist*f:-f;
-          }
-        }
-        let nx=d.x+(tx-d.x)*k, ny=d.y+(ty-d.y)*k;
-        if(Math.abs(tx-nx)<.02) nx=tx; else bewegt=true;
-        if(Math.abs(ty-ny)<.02) ny=ty; else bewegt=true;
-        if(nx!==d.x||ny!==d.y){ d.x=nx; d.y=ny; d.c.setAttribute("cx",nx.toFixed(2)); d.c.setAttribute("cy",ny.toFixed(2)); }
-        if(nx!==d.hx||ny!==d.hy) alle=false;
-      }
-      zuhause=alle;
-      if(bewegt) raf=requestAnimationFrame(frame); else { raf=0; last=0; }
-    }
-    const wecken=()=>{ if(!raf) raf=requestAnimationFrame(frame); };
-    const inReichweite=()=>{
-      const r=svg.getBoundingClientRect(), m=RADIUS*r.height/VBH;
-      return px>r.left-m && px<r.right+m && py>r.top-m && py<r.bottom+m;
-    };
-    addEventListener("pointermove",e=>{
-      px=e.clientX; py=e.clientY;
-      if(raf || !zuhause || inReichweite()) wecken();
-    },{passive:true});
-    addEventListener("scroll",()=>{ if(px!==null && (!zuhause || inReichweite())) wecken(); },{passive:true});
-    const loslassen=()=>{ px=py=null; if(!zuhause) wecken(); };
-    addEventListener("pointerout",e=>{ if(!e.relatedTarget) loslassen(); });
-    addEventListener("pointerup",e=>{ if(e.pointerType!=="mouse") loslassen(); });
-    addEventListener("pointercancel",loslassen);
-  })();
-  </script>
-
-  <div class="runbar">
-    <div class="topics" id="topics"></div>
   </div>
+</nav>
 
+<div class="wrap">
   <div id="stream"></div>
   <div class="sentinel" id="sentinel"></div>
   <div class="status" id="status"></div>
 </div>
-
-<div class="datetoast tnum" id="nowDate" aria-live="polite"><span class="bub"><span class="val"></span></span></div>
 
 <footer class="foot">
   <div class="inner">
@@ -307,15 +254,22 @@
 const $=s=>document.querySelector(s);
 const esc=s=>(s==null?"":String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const MOTION=!matchMedia("(prefers-reduced-motion: reduce)").matches;
+const FINE=matchMedia("(hover:hover) and (pointer:fine)").matches;
+// Icons in einem Strich: 1.5, runde Enden. Pfeil, Personen-Glyph, Sonne, Mond.
 const ARROW='<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const PERSON='<svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="3.9" r="2.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M1.9 10.9c.5-2.3 2.2-3.4 4.1-3.4s3.6 1.1 4.1 3.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>';
+const SUN='<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="2.7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.6v1.7M8 12.7v1.7M1.6 8h1.7M12.7 8h1.7M3.5 3.5l1.2 1.2M11.3 11.3l1.2 1.2M3.5 12.5l1.2-1.2M11.3 4.7l1.2-1.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>';
+const MOON='<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.3 10.2A5.7 5.7 0 0 1 5.8 2.7a5.7 5.7 0 1 0 7.5 7.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>';
 
 const STR={
-  en:{ all:"All",
+  en:{ all:"All", pulse:"PULSE",
        legal:"Imprint", loading:"loading …", end:"end of archive",
-       nothing:"Nothing in this filter.", loadFail:"Could not load editions." },
-  de:{ all:"Alle",
+       nothing:"Nothing in this filter.", loadFail:"Could not load editions.",
+       toDark:"Dark mode", toLight:"Light mode", topics:"Topics", lang:"Language" },
+  de:{ all:"Alle", pulse:"PULSE",
        legal:"Impressum", loading:"lädt …", end:"Ende des Archivs",
-       nothing:"Nichts in diesem Filter.", loadFail:"Konnte Ausgaben nicht laden." }
+       nothing:"Nichts in diesem Filter.", loadFail:"Konnte Ausgaben nicht laden.",
+       toDark:"Dunkel", toLight:"Hell", topics:"Rubriken", lang:"Sprache" }
 };
 const THEMES=[
   {id:"design-practice",  en:"Design Practice",    de:"Design-Praxis"},
@@ -348,8 +302,37 @@ function markRead(el){
   const k=el.dataset.key; if(k){ readSet.add(k); saveRead(); }
 }
 
+// ---------------------------------------------------------------------------
+// Quellenart. Ausgaben seit dem 08.10.2026 tragen `kind` je Quelle. Fuer den
+// Altbestand raet das Frontend per Domain: Substack, Medium und die gefolgten
+// Personen-Blogs sind Personen, alles andere ist ein Portal. Die Liste spiegelt
+// config/sources.json fuer die Hosts, die sich nicht an der Domain erkennen lassen.
+// ---------------------------------------------------------------------------
+const PERSON_HOSTS=["lukew.com","bradfrost.com","wattenberger.com","interconnected.org","mattstromawn.com",
+  "thesephist.com","karrisaarinen.com","subtraction.com","newsletter.polaine.com","arxiv.org",
+  "userresearchstrategist.com","the-ai-corner.com","productcompass.pm","creatoreconomy.so",
+  "interconnects.ai","ai-supremacy.com","oneusefulthing.org","growthmates.news","newsletter.brxnd.ai","uxdesign.cc"];
+function hostOf(u){ try{ return new URL(u).host.replace(/^www\./,""); }catch(e){ return ""; } }
+function guessKind(url){
+  const h=hostOf(url);
+  if(/(^|\.)substack\.com$/.test(h)||/(^|\.)medium\.com$/.test(h)) return "person";
+  if(PERSON_HOSTS.some(p=>h===p||h.endsWith("."+p))) return "person";
+  return "portal";
+}
+// Wer steht in der Overline: bei Personen der Autor, bei Portalen das Portal.
+function whoOf(q){
+  const kind=q.kind||guessKind(q.url);
+  return { kind, label: kind==="person" ? (q.author||q.name) : q.name };
+}
+
+// ---------------------------------------------------------------------------
+// Hell/Dunkel
+// ---------------------------------------------------------------------------
 (function(){ document.documentElement.setAttribute("data-theme", localStorage.getItem("nr-theme")||"light"); })();
-function syncToggle(){ $("#themeToggle").textContent = document.documentElement.getAttribute("data-theme")==="dark" ? "☾" : "☀︎"; }
+function syncToggle(){
+  const dark=document.documentElement.getAttribute("data-theme")==="dark";
+  const b=$("#themeToggle"); b.innerHTML=dark?SUN:MOON; b.setAttribute("aria-label", dark?t().toLight:t().toDark);
+}
 let themeTimer=0;
 $("#themeToggle").onclick=()=>{
   const root=document.documentElement;
@@ -357,29 +340,43 @@ $("#themeToggle").onclick=()=>{
   const c=root.getAttribute("data-theme")==="dark"?"light":"dark";
   root.setAttribute("data-theme",c); localStorage.setItem("nr-theme",c); syncToggle();
 };
-syncToggle();
 
+// ---------------------------------------------------------------------------
+// Strom
+// ---------------------------------------------------------------------------
 // Stimmen und Themen laufen in einem Strom. Stimmen-Beitraege haben keine
 // Einordnung, sie tragen die Person als Quelle.
 function entriesOf(ed){
   const out=(ed.stories||[]).map(s=>({
     theme:s.theme, title:s.title, blurb:s.blurb||"",
-    sources:(s.sources||[]).map(q=>({name:q.name,url:q.url}))
+    sources:(s.sources||[]).map(q=>({name:q.name,url:q.url,kind:q.kind,author:q.author,channel:q.channel}))
   }));
   for(const v of (ed.voices||[])){
     for(const i of (v.items||[])){
       // Altbestand: Stimmen vor dem 10.09.2026 haben keine Einordnung
-      out.push({theme:v.topic, title:i.title, blurb:"", sources:[{name:v.name,url:i.url}]});
+      out.push({theme:v.topic, title:i.title, blurb:"", sources:[{name:v.name,url:i.url,kind:"person",author:v.name}]});
     }
   }
   return out;
+}
+
+function metaHTML(e){
+  const lead=e.sources[0];
+  const who=lead?whoOf(lead):null;
+  const n=e.sources.length;
+  return `<div class="meta">
+    <span class="rub">${esc(themeLabel(e.theme))}</span>
+    ${who?`<span class="sep" aria-hidden="true">•</span><span class="src">${who.kind==="person"?PERSON:""}${esc(who.label)}</span>`:""}
+    ${n>1?`<span class="more tnum" title="${n}">+${n-1}</span>`:""}
+  </div>`;
 }
 
 function dayHTML(date,label,entries){
   const rows=entries.map(e=>{
     const href=e.sources[0]?e.sources[0].url:"";
     const key=href;
-    const srcs=e.sources.map(q=>`<a href="${esc(q.url)}" target="_blank" rel="noopener">${esc(q.name)}${ARROW}</a>`).join("");
+    // Pille: der Kanal, wenn es einen gibt (UX Collective), sonst der Quellenname
+    const srcs=e.sources.map(q=>`<a href="${esc(q.url)}" target="_blank" rel="noopener">${esc(q.channel||q.name)}${ARROW}</a>`).join("");
     const isRead=readSet.has(key);
     // Mit Einordnung klappt die Schlagzeile auf. Ohne Einordnung (Altbestand)
     // fuehrt sie direkt zur Quelle, sonst waere der Klick ohne Wirkung.
@@ -387,7 +384,7 @@ function dayHTML(date,label,entries){
       ? `<div class="head" role="button" tabindex="0" aria-expanded="false"><h3>${esc(e.title)}</h3></div>`
       : `<a class="head" href="${esc(href)}" target="_blank" rel="noopener"><h3>${esc(e.title)}</h3></a>`;
     return `<article class="entry${isRead?" read":""}${MOTION?" pre":""}" data-theme="${esc(e.theme||"")}" data-key="${esc(key)}">
-      <div class="meta">${esc(themeLabel(e.theme))}</div>
+      ${metaHTML(e)}
       ${head}
       ${e.blurb
         ? `<div class="detail"><div class="detail-in"><p class="blurb">${esc(e.blurb)}</p><div class="srcs">${srcs}</div></div></div>`
@@ -408,7 +405,7 @@ async function loadNext(){
     entries.forEach(e=>{ if(e.theme) state.seenThemes.add(e.theme); });
     const label=(meta.label&&meta.label[state.lang])||meta.date;
     $("#stream").insertAdjacentHTML("beforeend", dayHTML(meta.date,label,entries));
-    renderTopics();
+    renderMenu();
     applyFilter();
   }catch(e){ /* fehlende Ausgabe still ueberspringen, das Archiv hat Luecken */ }
   state.loading=false;
@@ -418,42 +415,86 @@ async function loadNext(){
   requestAnimationFrame(maybeLoad);
 }
 
-// Datum oben laeuft mit und Nachladen: beides ueber Scroll, nicht ueber
-// IntersectionObserver. Der Observer feuerte im Test nicht zuverlaessig,
-// obwohl der Sentinel im Viewport stand (geprueft 10.09.2026).
-let ticking=false;
-let lastY=0;
-// Runterscrollen blendet die Themen-Navi aus, das Datum bleibt.
-// Hochscrollen holt sie zurueck. Schwelle gegen Zittern.
-// Die Navi klappt erst nach einer zusammenhaengenden Strecke in eine Richtung.
-// Eine reine Delta-Schwelle reicht nicht: Trackpad-Zittern um den Umschaltpunkt
-// liess sie auf- und zuklappen, das war die zweite Flacker-Quelle.
-let accum=0;
-function syncBar(y){
-  const bar=$(".runbar"); if(!bar) return;
-  const d=y-lastY;
-  lastY=y;
-  if(!d) return;
-  if((d>0)!==(accum>0)) accum=0;   // Richtungswechsel setzt die Strecke zurueck
-  accum+=d;
-  if(accum>90 && y>160){ bar.classList.add("compact"); accum=0; }
-  else if(accum<-60){ bar.classList.remove("compact"); accum=0; }
+// ---------------------------------------------------------------------------
+// Island
+// ---------------------------------------------------------------------------
+const island=$("#island"), isHead=$("#isHead"), isList=$("#isList"), isVal=$("#isVal"), isDot=$("#isDot");
+let isOpen=false, hoverT=0, suppressHover=false, widthT=0, menuSig="";
+let showingDate=false, dateT=0;
+
+// Breite laesst sich von auto nicht animieren. Also: alte Breite messen und
+// festhalten, Inhalt aendern, neue Breite messen, dann von alt nach neu fahren.
+// Nach dem Lauf wird die Breite wieder freigegeben, damit Labelwechsel ohne
+// Animation sauber nachziehen.
+function morph(apply){
+  if(!MOTION){ apply(); island.style.width=""; return; }
+  clearTimeout(widthT);
+  const w0=island.getBoundingClientRect().width;
+  island.style.transition="none"; island.style.width=w0+"px"; void island.offsetWidth;
+  apply();
+  island.style.width="auto"; const w1=island.getBoundingClientRect().width;
+  island.style.width=w0+"px"; void island.offsetWidth;
+  island.style.transition=""; island.style.width=w1+"px";
+  widthT=setTimeout(()=>{ island.style.width=""; },480);
 }
-function onScroll(){
-  if(ticking) return;
-  ticking=true;
-  requestAnimationFrame(()=>{
-    ticking=false;
-    syncBar(window.scrollY||document.documentElement.scrollTop||0);
-    syncDate();
-    maybeLoad();
-    revealVisible();
+function topicLabelText(){ return state.topic==="all" ? t().pulse : themeLabel(state.topic); }
+function setLabel(){
+  if(showingDate) return;               // das Datum traegt gerade, danach kommt das Thema von selbst
+  morph(()=>{ island.classList.toggle("brand",state.topic==="all"); island.classList.remove("date"); isVal.textContent=topicLabelText(); });
+}
+function setOpen(o){
+  if(isOpen===o) return;
+  isOpen=o;
+  morph(()=>island.classList.toggle("open",o));
+  isHead.setAttribute("aria-expanded",String(o));
+}
+function renderMenu(){
+  const list=[{id:"all",label:t().all}].concat(THEMES.filter(x=>state.seenThemes.has(x.id)).map(x=>({id:x.id,label:x[state.lang]})));
+  const sig=state.lang+"|"+list.map(x=>x.id).join(",")+"|"+state.topic;
+  if(sig===menuSig) return; menuSig=sig;
+  isList.innerHTML=list.map(x=>`<button class="is-item" type="button" role="menuitemradio" aria-checked="${state.topic===x.id}" data-t="${x.id}"><i aria-hidden="true"></i>${esc(x.label)}</button>`).join("");
+  isList.querySelectorAll(".is-item").forEach(b=>b.onclick=()=>{
+    if(state.topic!==b.dataset.t){ state.topic=b.dataset.t; renderMenu(); setLabel(); applyFilter(); swapStream(); }
+    setOpen(false); if(FINE) suppressHover=true;   // nicht sofort wieder aufgehen, solange der Zeiger drueber steht
   });
 }
-let shownDate=null, toastTimer=null;
-const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-// Split-Flap. Jede Stelle rollt durch ein paar Zwischenzeichen und rastet ein,
-// versetzt gestartet von links nach rechts. Ueber setTimeout, nicht ueber
+// Hover am Desktop, Tipp auf Touch. Klick auf den Kopf schaltet immer, auch per Tastatur.
+island.addEventListener("mouseenter",()=>{ if(!FINE||suppressHover) return; clearTimeout(hoverT); setOpen(true); });
+island.addEventListener("mouseleave",()=>{ if(!FINE) return; suppressHover=false; clearTimeout(hoverT); hoverT=setTimeout(()=>setOpen(false),200); });
+isHead.addEventListener("click",()=>{ setOpen(!isOpen); if(!isOpen && FINE) suppressHover=true; });
+document.addEventListener("pointerdown",e=>{ if(isOpen && !island.contains(e.target)) setOpen(false); },{passive:true});
+island.addEventListener("focusout",e=>{ if(isOpen && !island.contains(e.relatedTarget)) setOpen(false); });
+island.addEventListener("keydown",e=>{
+  if(e.key==="Escape"){ setOpen(false); isHead.focus(); return; }
+  if(e.key!=="ArrowDown" && e.key!=="ArrowUp") return;
+  const items=[...isList.querySelectorAll(".is-item")]; if(!items.length) return;
+  if(!isOpen){ setOpen(true); }
+  const i=items.indexOf(document.activeElement);
+  const n=e.key==="ArrowDown" ? (i+1)%items.length : (i<=0?items.length-1:i-1);
+  e.preventDefault(); items[n].focus();
+});
+
+// Herzschlag folgt dem Scrollen: schnelles Scrollen verkuerzt die Periode,
+// in Ruhe laeuft sie wieder auf 1,9s hoch. Nicht ueber rAF, ein Zeitgeber reicht.
+let hbT=0, hbLast=0;
+function pulseFromScroll(dy,now){
+  if(!MOTION) return;
+  const dt=Math.max(now-hbLast,16); hbLast=now;
+  const v=Math.abs(dy)/dt;                          // Pixel je Millisekunde
+  const target=Math.max(.75, 1.9 - v*1.3);
+  const cur=parseFloat(island.style.getPropertyValue("--hbd"))||1.9;
+  if(target<cur-.04) island.style.setProperty("--hbd", target.toFixed(2)+"s");
+  clearTimeout(hbT); hbT=setTimeout(relaxPulse,240);
+}
+function relaxPulse(){
+  const cur=parseFloat(island.style.getPropertyValue("--hbd"))||1.9;
+  if(cur>=1.9){ island.style.removeProperty("--hbd"); return; }
+  island.style.setProperty("--hbd", Math.min(1.9,cur+.22).toFixed(2)+"s");
+  hbT=setTimeout(relaxPulse,240);
+}
+
+// Split-Flap fuer das Datum. Jede Stelle rollt durch ein paar Zwischenzeichen
+// und rastet ein, versetzt von links nach rechts. Ueber setTimeout, nicht ueber
 // requestAnimationFrame, damit es auch in inaktiven Tabs sauber durchlaeuft.
 const POOL_ZIFFER="0123456789";
 const POOL_BUCHSTABE="ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜ";
@@ -466,19 +507,17 @@ function poolFor(c){
 function renderChars(v,text){
   v.innerHTML=[...text].map(c=>`<span class="ch${c===" "?" sp":""}">${esc(c)}</span>`).join("");
 }
-function setDateText(label){ const v=$("#nowDate .val"); if(v) renderChars(v,label); }
 function flipDateText(label){
-  const v=$("#nowDate .val"); if(!v) return;
   flipTimers.forEach(clearTimeout); flipTimers=[];
-  const alt=[...v.querySelectorAll(".ch")].map(s=>s.textContent);
-  renderChars(v,label);
-  const felder=[...v.querySelectorAll(".ch")];
+  const alt=[...isVal.querySelectorAll(".ch")].map(s=>s.textContent);
+  renderChars(isVal,label);
+  const felder=[...isVal.querySelectorAll(".ch")];
   let ende=0;
   felder.forEach((span,i)=>{
     const ziel=label[i], pool=poolFor(ziel);
     if(!pool) return;
     const schritte=3+Math.floor(Math.random()*4);
-    const start=i*30, dauer=start+schritte*55;
+    const start=i*28, dauer=start+schritte*55;
     if(dauer>ende) ende=dauer;
     let n=0;
     span.textContent = alt[i]!==undefined ? alt[i] : ziel;
@@ -494,49 +533,67 @@ function flipDateText(label){
     flipTimers.push(setTimeout(()=>{ span.textContent=ziel; },dauer+40));
   });
   // Letzte Sicherung fuer den ganzen String, ein einzelner langer Zeitgeber
-  flipTimers.push(setTimeout(()=>{
-    if(v.textContent!==label) renderChars(v,label);
-  },ende+220));
+  flipTimers.push(setTimeout(()=>{ if(isVal.textContent!==label) renderChars(isVal,label); },ende+220));
 }
+// Tageswechsel: der Punkt schlaegt einmal hart, die Pille weitet sich zum Datum
+// und zieht sich nach kurzer Standzeit auf die Rubrik zurueck. Bei offenem Menue
+// bleibt der Wechsel stumm, dort stoert er nur.
 function flashDate(label){
-  const el=$("#nowDate"); if(!el) return;
-  const bub=el.querySelector(".bub"), val=el.querySelector(".val");
-  el.classList.add("show");
-
-  // Pille kurz pulsen: Klasse abraeumen, Reflow erzwingen, neu setzen,
-  // sonst startet die Animation beim zweiten Wechsel nicht neu.
-  if(bub && !reduced){ bub.classList.remove("pulse"); void bub.offsetWidth; bub.classList.add("pulse"); }
-
+  if(isOpen) return;
+  showingDate=true; clearTimeout(dateT);
+  if(MOTION){ isDot.classList.remove("beat"); void isDot.offsetWidth; isDot.classList.add("beat"); }
   // Im Hintergrundtab wird jeder Zeitgeber auf rund eine Sekunde gedrosselt.
-  // Das Durchrollen wuerde dort zehn Sekunden brauchen, waehrend der Toast nach
-  // 2,4s verschwindet. Dann lieber hart setzen, es schaut ohnehin niemand hin.
+  // Dann lieber hart setzen, es schaut ohnehin niemand hin.
   const sichtbar = document.visibilityState === "visible";
-  if(!val || reduced || !sichtbar) setDateText(label); else flipDateText(label);
-
-  // Standzeit deckt das Durchrollen ab: letzte Stelle startet nach rund
-  // 30ms mal Zeichenzahl, dazu bis zu sechs Rollschritte a 55ms.
-  clearTimeout(toastTimer);
-  toastTimer=setTimeout(()=>el.classList.remove("show"),2400);
+  morph(()=>{
+    island.classList.add("date"); island.classList.remove("brand");
+    if(!MOTION || !sichtbar) renderChars(isVal,label); else flipDateText(label);
+  });
+  dateT=setTimeout(()=>{ showingDate=false; isDot.classList.remove("beat"); setLabel(); },2300);
 }
+let shownDate=null;
 function syncDate(){
-  const bar=$(".runbar").getBoundingClientRect().bottom;
+  // Bezugslinie ist die Unterkante des Kopfs, nicht des Islands. Das Menue
+  // verschiebt die Islandkante beim Oeffnen um rund 280px, dann wechselt der
+  // "aktuelle" Tag scheinbar und das Datum blitzt grundlos auf (geprueft 08.10.2026).
+  const bar=isHead.getBoundingClientRect().bottom;
   let cur=null;
   document.querySelectorAll(".day").forEach(d=>{ if(!d.hidden && d.getBoundingClientRect().top<=bar+8) cur=d; });
   cur=cur||document.querySelector(".day:not([hidden])");
   if(!cur) return;
   const label=cur.dataset.label;
-  // Beim ersten Lauf nur merken, nicht zeigen. Der Toast gehoert dem Wechsel.
-  if(shownDate===null){ shownDate=label; setDateText(label); return; }
+  // Beim ersten Lauf nur merken, nicht zeigen. Der Wechsel gehoert dem Scrollen.
+  if(shownDate===null){ shownDate=label; return; }
   if(label!==shownDate){ shownDate=label; flashDate(label); }
+}
+
+// ---------------------------------------------------------------------------
+// Scrollen: Datum, Nachladen, Einblenden, Herzschlag. Ueber die Scroll-Schleife,
+// nicht ueber IntersectionObserver. Der Observer feuerte im Test nicht
+// zuverlaessig, obwohl der Sentinel im Viewport stand (geprueft 10.09.2026).
+// ---------------------------------------------------------------------------
+let ticking=false, lastY=0;
+function onScroll(){
+  if(ticking) return;
+  ticking=true;
+  requestAnimationFrame(now=>{
+    ticking=false;
+    const y=window.scrollY||document.documentElement.scrollTop||0;
+    const dy=y-lastY; lastY=y;
+    if(dy) pulseFromScroll(dy,now);
+    if(isOpen && Math.abs(dy)>30) setOpen(false);   // Scrollen schliesst das Menue
+    syncDate();
+    maybeLoad();
+    revealVisible();
+  });
 }
 function vh(){ return window.innerHeight || document.documentElement.clientHeight || 800; }
 function maybeLoad(){
   const el=$("#sentinel"); if(!el) return;
   if(el.getBoundingClientRect().top < vh() + 700) loadNext();
 }
-// Eintraege blenden ein, sobald sie ins Bild kommen. Ueber die Scroll-Schleife statt
-// ueber IntersectionObserver, aus demselben Grund wie beim Nachladen. Der erste
-// getBoundingClientRect erzwingt den Stil mit .pre, erst dadurch laeuft der Uebergang.
+// Eintraege blenden ein, sobald sie ins Bild kommen. Der erste getBoundingClientRect
+// erzwingt den Stil mit .pre, erst dadurch laeuft der Uebergang.
 function revealVisible(){
   if(!MOTION) return;
   const lim=vh()*0.94; let n=0;
@@ -562,6 +619,9 @@ try{
   new IntersectionObserver(es=>{ if(es.some(e=>e.isIntersecting)) loadNext(); },{rootMargin:"700px"}).observe($("#sentinel"));
 }catch(e){}
 
+// ---------------------------------------------------------------------------
+// Eintraege auf- und zuklappen
+// ---------------------------------------------------------------------------
 function closeEntry(art){
   if(!art.classList.contains("open")) return;
   art.classList.remove("open");
@@ -593,50 +653,6 @@ $("#stream").addEventListener("keydown",ev=>{
   ev.preventDefault(); toggleEntry(head.closest(".entry"));
 });
 
-function moveThumb(animate){
-  const box=$("#topics"), th=box.querySelector(".thumb");
-  const act=box.querySelector('.chip[aria-pressed="true"]');
-  if(!th||!act) return;
-  th.classList.toggle("noanim",!animate);
-  th.style.width=act.offsetWidth+"px";
-  th.style.transform="translateX("+act.offsetLeft+"px)";
-  if(!animate) requestAnimationFrame(()=>th.classList.remove("noanim"));
-  // aktiven Reiter in Sicht holen, wenn die Spur seitlich scrollt
-  if(box.scrollWidth>box.clientWidth){
-    const l=act.offsetLeft, r=l+act.offsetWidth;
-    if(l<box.scrollLeft) box.scrollTo({left:l-4,behavior:animate?"smooth":"auto"});
-    else if(r>box.scrollLeft+box.clientWidth) box.scrollTo({left:r-box.clientWidth+4,behavior:animate?"smooth":"auto"});
-  }
-}
-// Signatur der Reiter. Nur wenn die sich aendert, wird die Schiene neu gebaut.
-// Vorher lief bei jedem nachgeladenen Tag ein innerHTML-Neuaufbau, dabei wurde
-// die Kachel zerstoert und neu erzeugt: einen Frame auf Breite null, dann
-// Sprung an die Position. Das war das Flackern beim Scrollen.
-let topicsSig="";
-function renderTopics(animate){
-  const list=[{id:"all",label:t().all}].concat(THEMES.filter(x=>state.seenThemes.has(x.id)).map(x=>({id:x.id,label:x[state.lang]})));
-  const box=$("#topics");
-  const sig=state.lang+"|"+list.map(x=>x.id).join(",");
-
-  if(sig!==topicsSig){
-    topicsSig=sig;
-    const th=box.querySelector(".thumb")||Object.assign(document.createElement("div"),{className:"thumb"});
-    box.innerHTML=list.map(x=>`<button class="chip" data-t="${x.id}" aria-pressed="${state.topic===x.id}">${esc(x.label)}</button>`).join("");
-    box.insertBefore(th,box.firstChild);   // dieselbe Kachel weiterverwenden
-    box.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{
-      if(state.topic===b.dataset.t) return;
-      state.topic=b.dataset.t; renderTopics(true); applyFilter(); swapStream();
-    });
-    moveThumb(false);
-    requestAnimationFrame(()=>moveThumb(false));
-    return;
-  }
-
-  // Struktur unveraendert: nur den aktiven Reiter umsetzen und die Kachel fahren
-  box.querySelectorAll(".chip").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.t===state.topic)));
-  moveThumb(!!animate);
-}
-window.addEventListener("resize",()=>moveThumb(false),{passive:true});
 function applyFilter(){
   document.querySelectorAll(".entry").forEach(el=>{
     el.hidden = !(state.topic==="all" || el.dataset.theme===state.topic);
@@ -647,37 +663,41 @@ function applyFilter(){
   syncDate(); maybeLoad(); revealVisible();
 }
 
-function syncLangButtons(){
+// ---------------------------------------------------------------------------
+// Sprache und Start
+// ---------------------------------------------------------------------------
+function syncLang(){
   $("#langsw").querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.lang===state.lang));
+  $("#langsw").setAttribute("aria-label",t().lang);
+  isList.setAttribute("aria-label",t().topics);
   document.documentElement.lang=state.lang;
   $("#footLegal").textContent=t().legal;
+  syncToggle();
 }
 function resetStream(){
-  $(".runbar").classList.remove("compact"); lastY=0; accum=0; shownDate=null; topicsSig="";
-  clearTimeout(toastTimer); $("#nowDate").classList.remove("show");
+  lastY=window.scrollY||0; shownDate=null; menuSig="";
+  clearTimeout(dateT); showingDate=false; island.classList.remove("date");
   $("#stream").innerHTML=""; $("#status").textContent="";
   state.queue=state.index.editions.slice();
   state.done=false; state.loading=false; state.seenThemes=new Set();
-  renderTopics();
+  renderMenu(); setLabel();
   loadNext();
 }
 async function boot(){
-  // Ausgangslage vom echten Scrollstand nehmen. Bei 0 erzeugt der Browser nach
-  // einer wiederhergestellten Scrollposition ein riesiges erstes Delta und die
-  // Navi klappt sofort zu.
   lastY=window.scrollY||document.documentElement.scrollTop||0;
   try{
     state.index=await (await fetch("./editions/index.json",{cache:"no-store"})).json();
     state.lang=localStorage.getItem("nr-lang")||state.index.default_lang||"en";
-    syncLangButtons();
+    syncLang();
     resetStream();
-  }catch(e){ setDateText(t().loadFail); }
+  }catch(e){ isVal.textContent=t().loadFail; island.classList.remove("brand"); }
 }
 $("#langsw").querySelectorAll("button").forEach(b=>b.onclick=()=>{
   if(state.lang===b.dataset.lang) return;
   state.lang=b.dataset.lang; localStorage.setItem("nr-lang",state.lang);
-  syncLangButtons(); state.topic="all"; resetStream();
+  syncLang(); state.topic="all"; setOpen(false); if(FINE) suppressHover=true; resetStream();
 });
+syncToggle();
 boot();
 
 // ---------------------------------------------------------------------------
@@ -686,12 +706,12 @@ boot();
 // ---------------------------------------------------------------------------
 (function(){
   const c=document.getElementById("cursor"); if(!c) return;
-  if(!window.matchMedia("(hover:hover) and (pointer:fine)").matches) return;
+  if(!FINE) return;
   // Direkt schreiben statt ueber requestAnimationFrame. Ein Cursor darf keinen
   // Frame nachlaufen, und rAF feuert in versteckten Tabs gar nicht.
   addEventListener("mousemove",e=>{
     c.style.transform="translate3d("+e.clientX+"px,"+e.clientY+"px,0)";
-    c.classList.toggle("hot", !!e.target.closest(".entry, a, button, .chip"));
+    c.classList.toggle("hot", !!e.target.closest(".entry, a, button"));
   },{passive:true});
   addEventListener("mouseleave",()=>{ c.style.opacity="0"; });
   addEventListener("mouseenter",()=>{ c.style.opacity="1"; });
