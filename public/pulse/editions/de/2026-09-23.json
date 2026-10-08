@@ -5,22 +5,10 @@
     "sources_scanned": 62,
     "items_in_window": 193,
     "note": "Das Zweitagefenster überlappt mit der gestrigen Ausgabe, mehrere starke Stücke standen dort schon. Die Sitemap von State of Brand lieferte 11 Seiten, keine davon im Fenster erschienen. Das PAGE-Stück zum Schutz vor KI-Crawlern und der t3n-Fall zum umbenannten Rewe-Chatbot liegen hinter harten Paywalls und sind nicht aufgenommen.",
-    "lang": "de"
+    "lang": "de",
+    "rebuilt": "2026-10-08: nur Stories mit deutschsprachiger Leitquelle behalten, englischsprachige entfernt (Entscheidung Daniel)"
   },
   "stories": [
-    {
-      "theme": "design-practice",
-      "theme_label": "Design-Praxis",
-      "title": "Nicht Langsamkeit kostet Vertrauen, sondern unerklärte Schwankung",
-      "blurb": "Nutzer messen ein AI-Werkzeug an der schnellsten Antwort, die sie selbst erlebt haben. Nach zwei Sekunden wirkt ein normaler Lauf von sechs Sekunden kaputt. Der Autor baut Tools auf AI-Chatprodukten und fordert, dass die Oberfläche diesen Anker neu setzt, statt Tempo zu versprechen.",
-      "sources": [
-        {
-          "name": "UX Collective",
-          "url": "https://uxdesign.cc/the-variance-problem-in-ai-products-62a58272564c?source=rss----138adf9c44c---4",
-          "headline": "The variance problem in AI products"
-        }
-      ]
-    },
     {
       "theme": "brand-advertising",
       "theme_label": "Brand & Advertising",
@@ -29,40 +17,14 @@
       "cluster": true,
       "sources": [
         {
-          "name": "It's Nice That",
-          "url": "https://www.itsnicethat.com/articles/templo-deafcity-hub-identity-graphic-design-project-220926",
-          "headline": "Templo’s visual identity for DeafCity Hub is a fusion of creative coding, British sign language and gestural motion capture"
-        },
-        {
           "name": "PAGE",
           "url": "https://page-online.de/kreation/hubdeaf-city-umwerfend-authentische-identity-die-aus-handgesten-besteht/",
           "headline": "HubDeaf City: Umwerfend authentische Identity, die aus Handgesten besteht"
-        }
-      ]
-    },
-    {
-      "theme": "brand-advertising",
-      "theme_label": "Brand & Advertising",
-      "title": "Ein Kongress-Auftritt, der nicht auf Nummer sicher geht",
-      "blurb": "Everyday Practice gestaltet die World Design Congress 2027 in Seoul mit kollidierenden Farben, verstreuten Formen und einem Logo, das wie eine kippende Wippe animiert ist. Creative Bloq argumentiert, Design-Events seien bei einer Schrift und einer Farbe angekommen, und hier sehe man, was so ein Briefing hergibt.",
-      "sources": [
+        },
         {
-          "name": "Creative Bloq",
-          "url": "https://www.creativebloq.com/design/branding/this-out-there-branding-is-the-bravest-design-ive-seen-all-year",
-          "headline": "This out-there branding is the bravest design I've seen all year"
-        }
-      ]
-    },
-    {
-      "theme": "brand-advertising",
-      "theme_label": "Brand & Advertising",
-      "title": "Converse zieht eine Anzeige zurück, weil das Logo wie eine Kapuze wirkte",
-      "blurb": "Ein auf einen weißen Rock projiziertes Stern-Logo und ein enger Bildausschnitt mit baumelnden Schuhen wurden als KKK- und Lynch-Bildsprache gelesen. Converse hat sich entschuldigt und das Motiv entfernt. Offen bleibt, wie es durch die Freigabe kam.",
-      "sources": [
-        {
-          "name": "Creative Bloq",
-          "url": "https://www.creativebloq.com/design/advertising/converse-forced-to-remove-ad-over-racist-allegations",
-          "headline": "Converse forced to remove ad over racist allegations"
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/templo-deafcity-hub-identity-graphic-design-project-220926",
+          "headline": "Templo’s visual identity for DeafCity Hub is a fusion of creative coding, British sign language and gestural motion capture"
         }
       ]
     },
@@ -81,45 +43,6 @@
           "name": "Werbewoche",
           "url": "https://www.markt-kom.com/de/kreativity/branding/uebers-ohr-ins-herz/",
           "headline": "Über s Ohr ins Herz"
-        }
-      ]
-    },
-    {
-      "theme": "craft-judgment",
-      "theme_label": "Handwerk & Urteil",
-      "title": "Skoda Peaq: Zurückhaltung, die gewollt aussehen muss",
-      "blurb": "Design Week argumentiert, dass bei 52.000 Pfund und ohne großen Grill jede Fläche mehr leisten muss. Gelobt werden die aufeinander ausgerichteten Licht- und Stoßfängerlinien und ein cW-Wert von 0,249. Die Kritik vermerkt auch die bündigen Türgriffe, die sich einzogen und den Tester kurz aussperrten.",
-      "sources": [
-        {
-          "name": "Design Week",
-          "url": "https://www.designweek.co.uk/design-review-skoda-goes-big-on-the-peaq/",
-          "headline": "Design Review: Skoda goes big on the Peaq"
-        }
-      ]
-    },
-    {
-      "theme": "industry-market",
-      "theme_label": "Industrie & Markt",
-      "title": "Design Council beziffert britisches Design auf 136,7 Mrd. Pfund",
-      "blurb": "Creative Booms Monatsrückblick nennt den Wert des Design Council, 40 Prozent mehr als 2019, dazu neue Strategie-Spitzen bei Pearlfisher und FutureBrand. Beim Thema AI setzen Studios in zwei Richtungen: auf Spezialisten oder auf mehr Seniorität.",
-      "sources": [
-        {
-          "name": "Creative Boom",
-          "url": "https://www.creativeboom.com/booms-shakes/booms-shakes-september/",
-          "headline": "Booms Shakes: September s biggest hires, bold bets on AI, and design overtakes retail"
-        }
-      ]
-    },
-    {
-      "theme": "industry-market",
-      "theme_label": "Industrie & Markt",
-      "title": "The Chase kauft Squad und regelt so die Nachfolge",
-      "blurb": "Die Beratung aus Manchester übernimmt Squad per Aktientausch und The Chase Films vollständig. Mitgründer Ben Casey rückt in den Co-Vorsitz. Zum Kundenstamm aus B2B und öffentlicher Hand kommt damit ein Consumer-Portfolio.",
-      "sources": [
-        {
-          "name": "Design Week",
-          "url": "https://www.designweek.co.uk/the-chases-co-founder-ben-casey-steps-back-as-squads-founders-take-the-reins/",
-          "headline": "The Chase s co-founder Ben Casey steps back as Squad s founders take the reins"
         }
       ]
     },
@@ -159,19 +82,6 @@
           "name": "The Verge",
           "url": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
           "headline": "Anthropic launches Claude Opus 5.5 with stricter safeguards for cybersecurity"
-        }
-      ]
-    },
-    {
-      "theme": "ai-models",
-      "theme_label": "AI-Modelle (+Tools)",
-      "title": "Ein Modell, das Fragen zum Design-System mit Zahlen beantwortet",
-      "blurb": "Jev von TypeSafe liefert kalibrierte Wahrscheinlichkeiten für Auswahl- und Ja-Nein-Fragen und schreibt keinen einzigen Satz. TJ Pitre hat es gegen eine Bibliothek mit 135 Komponenten laufen lassen. Bei 36 von 40 salopp formulierten Beschreibungen lag der erste Treffer richtig.",
-      "sources": [
-        {
-          "name": "TJ Pitre (Southleft)",
-          "url": "https://southleft.substack.com/p/the-ai-that-refuses-to-write-a-sentence",
-          "headline": "The AI That Refuses to Write a Sentence"
         }
       ]
     }

@@ -5,85 +5,10 @@
     "sources_scanned": 62,
     "items_in_window": 148,
     "lang": "de",
-    "note": "Ein mittlerer Tag. Krutchinskys Karriere-Essay, DRZZL, Monotype in Canva und Harbour Brewing liefen schon am 4. und 5. Oktober und werden nicht wiederholt. Draußen blieben Rabatte, Gadget-Tests, KI-Politik, Wissenschaftsmeldungen bei t3n, ein nur für Medium-Mitglieder lesbarer Essay über Wes-Anderson-Ästhetik und der Großteil der Agentur-Pressemitteilungen bei Roastbrief. Die Flamid-Identity bei PAGE steht weiter hinter der Bezahlschranke. Der arXiv-Feed fiel aus, die Sitemap von State of Brand lieferte keine Seite im Fenster, fünf bezahlte Substack-Beiträge wurden vorab entfernt."
+    "note": "Ein mittlerer Tag. Krutchinskys Karriere-Essay, DRZZL, Monotype in Canva und Harbour Brewing liefen schon am 4. und 5. Oktober und werden nicht wiederholt. Draußen blieben Rabatte, Gadget-Tests, KI-Politik, Wissenschaftsmeldungen bei t3n, ein nur für Medium-Mitglieder lesbarer Essay über Wes-Anderson-Ästhetik und der Großteil der Agentur-Pressemitteilungen bei Roastbrief. Die Flamid-Identity bei PAGE steht weiter hinter der Bezahlschranke. Der arXiv-Feed fiel aus, die Sitemap von State of Brand lieferte keine Seite im Fenster, fünf bezahlte Substack-Beiträge wurden vorab entfernt.",
+    "rebuilt": "2026-10-08: nur Stories mit deutschsprachiger Leitquelle behalten, englischsprachige entfernt (Entscheidung Daniel)"
   },
   "stories": [
-    {
-      "theme": "design-practice",
-      "theme_label": "Design-Praxis",
-      "title": "Wenn Agenten sich vervielfachen, reicht der Chat zum Steuern nicht mehr",
-      "blurb": "Wroblewski hält Inbox und Dashboard für zu wenig, beide beantworten nur, was Agenten gerade tun. In seinem Werkzeug Intent zeichnen Agenten Ablaufdiagramme, bevor sie Tokens verbrauchen, legen Vorher-nachher-Screenshots nebeneinander und halten das Designsystem als Notiz offen, die Mensch und Agent gleichermaßen lesen. Brauchbar als Musterliste für alle, die Agenten-Oberflächen entwerfen.",
-      "tags": [
-        "AI-UX",
-        "Agenten",
-        "Interface-Muster"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Luke Wroblewski",
-          "url": "https://www.lukew.com/ff/2165/many-agents-many-views",
-          "headline": "Many Agents, Many Views"
-        }
-      ]
-    },
-    {
-      "theme": "design-practice",
-      "theme_label": "Design-Praxis",
-      "title": "Kit Studio baut die Markenrichtlinien von EXF als Website statt als PDF",
-      "blurb": "Im Interview geht es vor allem um den Ablauf. Marke und Digital arbeiten ab dem ersten Tag als ein Team, die Richtlinien werden in klickbaren Prototypen geprüft, solange Änderungen noch billig sind. Das frei scrollbare Portfolio hat eine Rasteransicht als Ausweg und wird auf dem Handy zur schlichten Vertikale. Eine konkrete Antwort auf die Frage, wann expressive UX Konventionen brechen darf.",
-      "tags": [
-        "Prozess",
-        "Web",
-        "Rebrand"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Design Week",
-          "url": "https://www.designweek.co.uk/how-kit-studio-switched-exell-to-exf-studio-with-ascii-ingenuity/",
-          "headline": "How Kit Studio switched Exell to EXF.STUDIO with ASCII ingenuity"
-        }
-      ]
-    },
-    {
-      "theme": "brand-advertising",
-      "theme_label": "Brand & Advertising",
-      "title": "Pentagram gibt einem Zahlungsdienstleister eine eigene Welt",
-      "blurb": "Luke Powell und Jody Hudson-Powell haben die Identity von Xsolla als Archiv von Spiel-Artefakten angelegt: Claim „All the things“, ein Maskottchen, das sich wie eine Bedienoberfläche verhält, und ein Beschriftungssystem, das zugleich die Navigation der Plattform ordnet. Ziel laut Powell: nach Zukunftstechnik aussehen, ohne in eine Ästhetik zu kippen, die altert. Ein Beispiel für erzählende Systeme im B2B-Branding.",
-      "tags": [
-        "Identity",
-        "Gaming",
-        "Maskottchen"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "It's Nice That",
-          "url": "https://www.itsnicethat.com/articles/luke-powell-judy-hudson-powell-xsolla-pentagram-graphic-design-project-051026",
-          "headline": "Xsolla (the biggest gaming company you’ve never heard of) gets a retro-futuristic identity from Pentagram partners"
-        }
-      ]
-    },
-    {
-      "theme": "brand-advertising",
-      "theme_label": "Brand & Advertising",
-      "title": "Junge Marken leihen sich eine Herkunft, die sie nie hatten",
-      "blurb": "Der Text argumentiert, dass sich Heritage aus wiedererkennbaren Codes bauen lässt statt aus Geschichte, und nennt VMLs Ladesäulenmarke IONNA, gestaltet nach der alten amerikanischen Tankstelle. Die Warnung dazu ist der brauchbare Teil. Ein Körnungsfilter reicht nicht, man muss das Gefühl dahinter benennen, Optimismus, Rebellion oder Flucht, und es neu übersetzen.",
-      "tags": [
-        "Markenstrategie",
-        "Nostalgie",
-        "Heritage"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Creative Bloq",
-          "url": "https://www.creativebloq.com/design/branding/brands-are-performing-nostalgia-to-hook-you-heres-why",
-          "headline": "Brands are performing nostalgia to hook you: here's why"
-        }
-      ]
-    },
     {
       "theme": "brand-advertising",
       "theme_label": "Brand & Advertising",
@@ -119,63 +44,6 @@
           "name": "Werbewoche",
           "url": "https://www.markt-kom.com/de/kreativity/kampagnen/ricola-bringt-wer-hats-erfunden-zurueck/",
           "headline": "Ricola bringt «Wer hat’s erfunden?» zurück"
-        }
-      ]
-    },
-    {
-      "theme": "craft-judgment",
-      "theme_label": "Handwerk & Urteil",
-      "title": "Geschmack ist ein Muskel, und wir trainieren ihn nicht mehr",
-      "blurb": "Michaelis, selbst Designleiterin, sieht im Gestaltungsprinzip „vertraut“ und im ständigen Wettbewerber-Benchmarking den Grund, warum Produkte sich angleichen. AI beschleunige das nur. Ihre Übungen sind konkret: wöchentlich etwas ansehen, das man nie gewählt hätte, Abneigung so lange untersuchen, bis man sie begründen kann, Referenzen bis zur Quelle zurückverfolgen und weiter selbst machen statt nur auszuwählen.",
-      "tags": [
-        "Geschmack",
-        "Urteil",
-        "Essay"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "UX Collective",
-          "url": "https://uxdesign.cc/the-taste-paradox-why-the-skill-everyone-says-matters-is-the-one-weve-stopped-building-32d1523f1f95?source=rss----138adf9c44c---4",
-          "headline": "The taste paradox: why the skill everyone says matters is the one we’ve stopped building"
-        }
-      ]
-    },
-    {
-      "theme": "industry-market",
-      "theme_label": "Industrie & Markt",
-      "title": "Agentur-Strategen sind zuversichtlicher und fürchten AI mehr denn je",
-      "blurb": "WARC hat 489 Strateginnen und Strategen befragt. 66 Prozent sehen Grund zur Zuversicht, der Einfluss beim Kunden stieg von 41 auf 50 Prozent. Zugleich fürchten 56 Prozent, dass AI ihre Rolle ersetzt, 15 Punkte mehr als im Vorjahr. Qualitative Forschung vor Ort macht nur noch knapp ein Viertel monatlich. Der volle Report ist WARC-Abonnenten vorbehalten, hier liegt die Pressefassung.",
-      "tags": [
-        "Strategie",
-        "Report",
-        "Agenturen"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Roastbrief",
-          "url": "https://roastbrief.us/cautious-optimism-returns-to-agency-side-strategy-as-influence-with-clients-grows/",
-          "headline": "Cautious optimism returns to agency-side strategy as influence with clients grows"
-        }
-      ]
-    },
-    {
-      "theme": "industry-market",
-      "theme_label": "Industrie & Markt",
-      "title": "Social-Ads fallen auf und verlieren dabei die Marke",
-      "blurb": "Zappi hat 3.300 Social-Video-Ads in den USA und Großbritannien ausgewertet. Mit drei oder mehr markeneigenen Erkennungszeichen, etwa Farben, Slogans oder wiederkehrende Figuren, lag die Chance auf einen Spitzenplatz 30 Prozent höher, im Creator-Look 30 Prozent niedriger. Packshots stehen in jeder zweiten Anzeige und tun am wenigsten für die Zuordnung zur Marke. Eine Pressemitteilung des Anbieters, aber die Zahlen sind konkret genug für das nächste Kundengespräch.",
-      "tags": [
-        "Werbewirkung",
-        "Social",
-        "Markenzeichen"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Roastbrief",
-          "url": "https://roastbrief.us/social-video-ads-are-standing-out-but-losing-the-brand-new-research-from-zappi-finds/",
-          "headline": "Social Video Ads Are Standing Out, But Losing the Brand, New Research From Zappi Finds"
         }
       ]
     },

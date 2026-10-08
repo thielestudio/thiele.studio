@@ -5,105 +5,20 @@
     "sources_scanned": 62,
     "items_in_window": 124,
     "lang": "de",
-    "note": "Ein dünner Tag. Das Zwei-Tage-Fenster überschneidet sich mit den Vortagen. identi, Jon Cooks Abschied von WPP, der BRXND-Dispatch, die Wiener Figma-Vorlage und Dominique Winter zu UX in der Architektur liefen schon am 2. und 3. Oktober und werden nicht wiederholt. Der Rest waren Gadget-Tests, Rabatte, Rechenzentrumspolitik, Wissenschaftsmeldungen bei t3n und Agentur-Pressemitteilungen. designtagebuch.de fiel aus, die Sitemap von State of Brand lieferte keine Seite im Fenster, ein bezahlter Substack-Beitrag wurde vorab entfernt."
+    "note": "Ein dünner Tag. Das Zwei-Tage-Fenster überschneidet sich mit den Vortagen. identi, Jon Cooks Abschied von WPP, der BRXND-Dispatch, die Wiener Figma-Vorlage und Dominique Winter zu UX in der Architektur liefen schon am 2. und 3. Oktober und werden nicht wiederholt. Der Rest waren Gadget-Tests, Rabatte, Rechenzentrumspolitik, Wissenschaftsmeldungen bei t3n und Agentur-Pressemitteilungen. designtagebuch.de fiel aus, die Sitemap von State of Brand lieferte keine Seite im Fenster, ein bezahlter Substack-Beitrag wurde vorab entfernt.",
+    "rebuilt": "2026-10-08: nur Stories mit deutschsprachiger Leitquelle behalten, englischsprachige entfernt (Entscheidung Daniel)"
   },
   "stories": [
-    {
-      "theme": "design-practice",
-      "theme_label": "Design-Praxis",
-      "title": "Sechs Agenten parallel, und der Schreibtisch wird zum selbst produzierten Feed",
-      "blurb": "Ein Interface-Designer mit zwanzig Jahren Erfahrung beschreibt, wie parallele Agenten keine Zeit mehr sparen, sondern Arbeit vermehren. Die Ergebnisse kommen in einer Reihenfolge zurück, die er nicht steuert. Er stützt das auf Sophie Leroys Forschung zu Aufmerksamkeitsresten und eine Berkeley-Feldstudie. Lesenswert für alle, die mehrere AI-Stränge am Tag offen haben.",
-      "tags": ["Agenten", "Aufmerksamkeit", "Arbeitsweise"],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "UX Collective",
-          "url": "https://uxdesign.cc/the-feed-i-produce-myself-11e4192f394c?source=rss----138adf9c44c---4",
-          "headline": "The feed I produce myself"
-        }
-      ]
-    },
-    {
-      "theme": "design-practice",
-      "theme_label": "Design-Praxis",
-      "title": "thatgamecompany testete den Pinselstrich, bevor es eine Geschichte gab",
-      "blurb": "Für die Van-Gogh-Saison von Sky entstand zuerst das Werkzeug für die Pinselstriche. Vom Look hing ab, ob das Projekt überhaupt trägt. Das Interview steckt voller kleiner Übersetzungsentscheidungen: ein fremder Ast im Mandelblüten-Bild verschwindet in den Wolken, das Selbstporträt wandert in die Erzählung, statt begehbar zu werden.",
-      "tags": ["Game Art", "Prozess"],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Creative Bloq",
-          "url": "https://www.creativebloq.com/3d/video-game-design/how-thatgamecompany-turned-van-gogh-paintings-into-playable-spaces",
-          "headline": "How thatgamecompany turned Van Gogh paintings into playable spaces"
-        }
-      ]
-    },
-    {
-      "theme": "brand-advertising",
-      "theme_label": "Brand & Advertising",
-      "title": "Thirst macht aus Harbour Brewing ein Gefühl statt eines Ortes",
-      "blurb": "Die Strategiezeile „Sun-Soaked Playground“ löst die Brauerei aus Cornwall von ihrer Herkunft und setzt auf den Moment nach dem Surfen, mit satten Farben, Wellengrafik und einem überarbeiteten H. Seit dem Relaunch meldet Harbour 45 Prozent mehr Umsatz als im Vorjahr. Design Week liest das auch als Argument für Studios mit enger Branchenspezialisierung.",
-      "tags": ["Rebrand", "Packaging", "Getränke"],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Design Week",
-          "url": "https://www.designweek.co.uk/thirst-brings-sun-soaked-optimism-to-harbour-brewing-co/",
-          "headline": "Thirst brings sun-soaked optimism to Harbour Brewing Co."
-        }
-      ]
-    },
-    {
-      "theme": "brand-advertising",
-      "theme_label": "Brand & Advertising",
-      "title": "FightTheStroke macht das gescheiterte Briefing zur Kampagne",
-      "blurb": "DUDE Milano zeigt ein Kreativteam, das Zerebralparese in 30 Sekunden erklären soll. Jedes Casting fügt eine Einschränkung hinzu, am Ende braucht das Whiteboard „eine kleinere Schrift“. In Phase zwei entsteht aus eingesandten Self-Tapes ein Casting-Archiv für Agenturen und Produktionen. Die Kampagne hinterlässt also ein Werkzeug.",
-      "tags": ["Kampagne", "Casting", "Inklusion"],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Roastbrief",
-          "url": "https://roastbrief.us/fightthestrokes-new-film-cant-define-cerebral-palsy-so-its-opening-a-global-casting-call-instead/",
-          "headline": "FightTheStroke s New Film Can t Define Cerebral Palsy, so it s Opening a Global Casting Call Instead"
-        }
-      ]
-    },
-    {
-      "theme": "brand-advertising",
-      "theme_label": "Brand & Advertising",
-      "title": "Warner Bros und Paramount fusionieren unter ihrem unbekanntesten Namen",
-      "blurb": "Skydance ist als neutrales Dach gedacht, das keine der Studiomarken beschädigt. HBO, DC und CNN bleiben eigenständig, ähnlich wie bei Disney. Die Kritik zielt auf die Nebenwirkung: Der Name stammt aus David Ellisons eigener Firma, wirkt wie Eitelkeit und liefert dem Publikum einen sichtbaren Schuldigen für die Konzentration.",
-      "tags": ["Naming", "Markenarchitektur"],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Creative Bloq",
-          "url": "https://www.creativebloq.com/entertainment/warner-bros-and-paramounts-skydance-rebrand-isnt-going-down-well",
-          "headline": "Warner Bros and Paramount's Skydance rebrand isn't going down well"
-        }
-      ]
-    },
-    {
-      "theme": "craft-judgment",
-      "theme_label": "Handwerk & Urteil",
-      "title": "Berg-Logos halten, wenn sie einen echten Berg meinen",
-      "blurb": "Tom May geht Patagonia, The North Face, Utah Mammoth und Vermont durch. Die starken zeigen alle auf einen bestimmten Gipfel. Gegenbeispiel ist Toblerone: Schweizer Regeln zwangen die Marke, das Matterhorn aufzugeben, der neue Berg ist ordentlich und austauschbar. Ein brauchbarer Test für jedes Symbol, das aus der Natur geliehen ist.",
-      "tags": ["Logodesign", "Symbolik"],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Creative Bloq",
-          "url": "https://www.creativebloq.com/design/logos-icons/everyones-making-mountain-inspired-logos-in-2026-heres-what-that-tells-us",
-          "headline": "Everyone's making mountain-inspired logos in 2026 - here's what that tells us"
-        }
-      ]
-    },
     {
       "theme": "ai-models",
       "theme_label": "AI-Modelle (+Tools)",
       "title": "Agenten bauen aus einem Foto eine Blender-Szene, treffen sie aber nur halb",
       "blurb": "LEGO-Anything lässt Coding-Agenten iterativ Blender-Code schreiben, bis die Szene dem Foto ähnelt. Das Ergebnis ist editierbar statt eines starren Meshes. Im zugehörigen Benchmark liefern alle Modelle fast immer eine lauffähige Szene, das beste erreicht aber nur 53,4 Prozent bei Innen- und 39,6 Prozent bei Außenräumen. Mehr Rechenaufwand beim Nachdenken hilft deutlich.",
-      "tags": ["3D", "Blender", "Agenten"],
+      "tags": [
+        "3D",
+        "Blender",
+        "Agenten"
+      ],
       "cluster": false,
       "sources": [
         {

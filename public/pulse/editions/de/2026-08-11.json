@@ -2,27 +2,10 @@
   "meta": {
     "generated_for": "2026-08-11",
     "window": "2026-08-09..2026-08-11",
-    "lang": "de"
+    "lang": "de",
+    "rebuilt": "2026-10-08: nur Stories mit deutschsprachiger Leitquelle behalten, englischsprachige entfernt (Entscheidung Daniel)"
   },
   "stories": [
-    {
-      "theme": "design-practice",
-      "theme_label": "Design-Praxis",
-      "title": "Der Mythos der barrierefreien Schrift",
-      "blurb": "Seit Barrierefreiheit im Zeitgeist angekommen ist, steht sie auf immer mehr Vortragstiteln. Design Week nimmt auseinander, was der Begriff bei Schrift tatsächlich verspricht und was nicht.",
-      "tags": [
-        "typography",
-        "ux"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Design Week",
-          "headline": "The myth of the accessible typeface",
-          "url": "https://www.designweek.co.uk/the-myth-of-the-accessible-typeface/"
-        }
-      ]
-    },
     {
       "theme": "design-practice",
       "theme_label": "Design-Praxis",
@@ -42,95 +25,6 @@
       ]
     },
     {
-      "theme": "brand-advertising",
-      "theme_label": "Brand & Advertising",
-      "title": "Hemingway Design entwickelt Girlguidings Uniformen mit den Trägerinnen",
-      "blurb": "Uniformen für tausende Mädchen und Freiwillige neu gestalten, als Ko-Kreation statt als Rollout von oben. Eine Uniform ist ein Identitätssystem, das Menschen tragen müssen, das erhöht den Einsatz.",
-      "tags": [
-        "brand"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Design Week",
-          "headline": "How Hemingway Design co-created Girlguiding’s new uniforms",
-          "url": "https://www.designweek.co.uk/how-hemingway-design-co-created-girlguidings-new-uniforms/"
-        }
-      ]
-    },
-    {
-      "theme": "brand-advertising",
-      "theme_label": "Brand & Advertising",
-      "title": "Pentagram denkt einen Konzertsaal von John Cage her",
-      "blurb": "Marina Willers Team hat die Identität von De Bijloke überarbeitet, einem der angesehensten Musikhäuser Europas, inspiriert vom Komponisten. Markenarbeit aus einer künstlerischen Idee statt aus einem Positionierungsraster.",
-      "tags": [
-        "brand",
-        "typography"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Creative Boom",
-          "headline": "Pentagram’s Marina Willer celebrates music as an art form in new work for De Bijloke",
-          "url": "https://www.creativeboom.com/news/pentagrams-marina-willer-celebrates-music-as-an-art-form-in-new-work-for-de-bijloke/"
-        }
-      ]
-    },
-    {
-      "theme": "craft-judgment",
-      "theme_label": "Handwerk & Urteil",
-      "title": "Urteilskraft konservieren",
-      "blurb": "Das Leitstück handelt von Software, deren ganze Aufgabe es ist, das Denken einer bestimmten Person zu verpacken. Daneben das Argument gegen Chat als Oberfläche und der Design.md-Standard.",
-      "tags": [
-        "taste",
-        "ux"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "UX Collective",
-          "headline": "Bottle your judgment, Chat is the wrong UI, Design.md",
-          "url": "https://uxdesign.cc/bottle-your-judgment-chat-is-the-wrong-ui-design-md-2484e8d870af"
-        }
-      ]
-    },
-    {
-      "theme": "craft-judgment",
-      "theme_label": "Handwerk & Urteil",
-      "title": "Der Webstuhl, der sich meldete",
-      "blurb": "90 Jahre Webstuhl-Technik steckten darin, Maschinen das Erkennen eigener Fehler beizubringen. Ein nützliches Gegengewicht zur Annahme, selbstkorrigierende Maschinen seien ein neues Problem.",
-      "tags": [
-        "taste",
-        "research"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "UX Collective",
-          "headline": "The loom that raised its hand",
-          "url": "https://uxdesign.cc/the-loom-that-raised-its-hand-4e8981b3ef88"
-        }
-      ]
-    },
-    {
-      "theme": "industry-market",
-      "theme_label": "Industrie & Markt",
-      "title": "Der Sicherheitstest wird zum Sicherheitsrisiko",
-      "blurb": "Agenten brechen aus Testumgebungen aus und erreichen echte Systeme. Wenn der Sandkasten leckt, verschiebt sich die Frage vom Modell zur Prüfinfrastruktur selbst.",
-      "tags": [
-        "agents",
-        "industry"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "TechCrunch",
-          "headline": "The AI safety test is becoming a safety risk",
-          "url": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/"
-        }
-      ]
-    },
-    {
       "theme": "industry-market",
       "theme_label": "Industrie & Markt",
       "title": "Amazons Erdgaskraftwerk für das KI-Rechenzentrum",
@@ -144,52 +38,6 @@
           "name": "t3n",
           "headline": "33 Millionen Tonnen CO2 pro Jahr: Warum Amazon jetzt ein riesiges Erdgaskraftwerk bauen will",
           "url": "https://t3n.de/news/33-millionen-tonnen-co2-pro-jahr-warum-amazon-jetzt-ein-riesiges-erdgaskraftwerk-bauen-will-1757328/"
-        }
-      ]
-    },
-    {
-      "theme": "industry-market",
-      "theme_label": "Industrie & Markt",
-      "title": "Agenten führen, ohne den Faden zu verlieren",
-      "blurb": "Kostensteuerung, Governance, Tests und Sicherheitsinfrastruktur, mit Fällen von OpenAI, AWS, Uber, Block und Atlassian. Die betriebliche Antwort auf die Agenten-Vorfälle dieser Woche.",
-      "tags": [
-        "agents",
-        "dev"
-      ],
-      "cluster": false,
-      "sources": [
-        {
-          "name": "Department of Product",
-          "headline": "How to Manage AI Agents Effectively",
-          "url": "https://departmentofproduct.substack.com/p/how-to-manage-ai-agents-effectively"
-        }
-      ]
-    },
-    {
-      "theme": "ai-models",
-      "theme_label": "AI-Modelle (+Tools)",
-      "title": "Zuckerbergs Manifest über 6.500 Wörter kommt schlecht an",
-      "blurb": "Metas Chef hat einen langen Essay über persönliche Superintelligenz veröffentlicht. Drei Redaktionen lesen ihn gleich: dünn genau dort, wo es zählt, und ein Lehrstück dafür, warum viele dem Versprechen misstrauen.",
-      "tags": [
-        "model",
-        "industry"
-      ],
-      "cluster": true,
-      "sources": [
-        {
-          "name": "The Verge",
-          "headline": "Four takeaways from Mark Zuckerberg’s massive AI manifesto",
-          "url": "https://www.theverge.com/tech/977395/meta-mark-zuckerberg-superintelligent-ai-ramble"
-        },
-        {
-          "name": "The Verge",
-          "headline": "Mark Zuckerberg doesn’t understand how to live",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/977623/mark-zuckerberg-ai-manifesto-dim-vision"
-        },
-        {
-          "name": "TechCrunch",
-          "headline": "Mark Zuckerberg’s AI manifesto is exactly why people don’t like AI",
-          "url": "https://techcrunch.com/2026/08/10/mark-zuckerbergs-ai-manifesto-is-exactly-why-people-dont-like-ai/"
         }
       ]
     },
