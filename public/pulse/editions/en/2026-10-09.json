@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "generated_for": "2026-10-09",
+    "window": "2026-10-07..2026-10-09",
+    "sources_scanned": 62,
+    "items_in_window": 136,
+    "lang": "en",
+    "note": "A thin day. Riff, M&S, Depop, Mucho, Kiss Branding, Tüpokompanii, the Creative Cloud clone, ChatGPT's Intelligent UI and SynthID already ran on 7 and 8 October and are not repeated. Left out: the rest of the Prime Day deals at Creative Bloq, general model and agent news (Gemini agent, Anthropic's usage policy, OpenAI's math proofs, Haiku 5.5), the USA Today lawsuit against OpenAI, NB Studio's closing interview with Alan Dye (a portrait without a transferable core), a State of Brand piece on ROAS attribution (performance marketing, not brand), and all agency press releases at Roastbrief. The userresearchstrategist.com feed failed, three paid Substack posts were removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Synthetic users can turn assumptions into fake findings",
+      "blurb": "Two UX Collective pieces land on the same warning. Kyle Soucy argues that imperfect research beats none only while you still observe real people, because synthetic participants built from a team's proto personas return its own assumptions with more confidence. Arin Bhowmick cites a 2025 study in which an AI persona agreed with almost every design proposal, and limits synthetic users to early exploration.",
+      "tags": [
+        "Research",
+        "Synthetic users",
+        "AI"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/synthetic-users-are-making-me-rethink-imperfect-research-abbadb8ec082?source=rss----138adf9c44c---4",
+          "headline": "Synthetic users are making me rethink “imperfect research”",
+          "kind": "person",
+          "author": "Kyle Soucy",
+          "channel": "UX Collective"
+        },
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/are-synthetic-users-really-the-future-of-ux-research-fd76fcb479ec?source=rss----138adf9c44c---4",
+          "headline": "Are synthetic users (really) the future of UX research?",
+          "kind": "person",
+          "author": "Arin Bhowmick",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "The chat box did not remove complexity, it hid where it went",
+      "blurb": "Patrick Neeman applies Tesler's law of conserved complexity to AI interfaces: some of the work moved into the model, some onto the user who now writes the spec and judges the result, and some onto teams as evaluation work nobody staffed. His point for designers is that moving difficulty is the job, concealing it is the failure.",
+      "tags": [
+        "UX",
+        "Tesler's law",
+        "AI"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/teslers-law-complexity-survived-the-chat-field-it-just-moved-to-a-different-place-in-the-journey-8a63f099f490?source=rss----138adf9c44c---4",
+          "headline": "Tesler’s Law: complexity moved to a different part of the journey",
+          "kind": "person",
+          "author": "Patrick Neeman",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Inclusive design is more than taking things away",
+      "blurb": "UX consultant Georgia Syropolou ran memory café sessions for people with dementia using Google Maps and GeoGuessr instead of memory boxes. Navigating familiar streets lowered the pressure to remember and raised interaction, which she reads as a case against the purely subtractive model of inclusive design.",
+      "tags": [
+        "Inclusive design",
+        "Accessibility",
+        "Research"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/see-im-not-always-lost-digital-maps-as-reminiscence-tools/",
+          "headline": "\"See! I’m not always lost.\": Digital maps as reminiscence tools",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Meta's shopping agent is told to put known brands first",
+      "blurb": "A Muse instruction file obtained by Profound tells the agent three times to rank well-known merchants at the top, to drop listings priced outside the normal range and to check only three stores on the open web. State of Brand spells out what that means for challengers, whose playbook of being found and priced lower now starts behind. Profound sells agent tracking software, which the piece says openly.",
+      "tags": [
+        "Agentic commerce",
+        "Challenger brands",
+        "Positioning"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "State of Brand",
+          "url": "https://state-of-brand.outlever.work/news/meta-muse-ai-shopping-agent-ranking-rules",
+          "headline": "Meta Told Its Shopping Agent to Rank Well-Known Merchants First. Challenger Brands Start Behind.",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "MacFadden & Thorpe build an identity that is meant to stay unfinished",
+      "blurb": "For Art + Water, Dave Eggers's free artist studios on San Francisco's Pier 29, the studio and Anisha Sachar built everything around flow: a bendy custom wordmark, type running along winding paths and motion with no single prescribed behaviour. The system is designed to be reshaped by the artists who use it.",
+      "tags": [
+        "Identity",
+        "Motion",
+        "Culture"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/work/macfadden-thorpe-gives-dave-eggerss-free-alternative-to-art-school-a-bendy-salty-identity/",
+          "headline": "MacFadden & Thorpe gives Dave Eggers's free alternative to art school a bendy, salty identity",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Fanta wants to own Halloween with an AI-made universe",
+      "blurb": "Made by AI studio GRAiL, Fanta's Haunted Universe is planned as an annual platform, with the brand aiming to claim Halloween the way Coke claims Christmas. Creative Bloq collects the cinema-audience backlash and asks why a brand built on universal appeal is willing to alienate part of its customers.",
+      "tags": [
+        "Advertising",
+        "AI",
+        "Coca-Cola"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/ai/fantas-ai-slop-halloween-advert-is-a-real-horror-show",
+          "headline": "Fanta's AI slop Halloween advert is a real horror show",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Product storefronts inside AI agents look like ads in waiting",
+      "blurb": "Mike Mallazzo reads Instinct's new push notifications, which open a storefront of recommended products, as groundwork for advertising inside the agent. He expects every consumer AI product at scale to be ad-supported and sees the storefront format as a canvas for demand creation rather than capture.",
+      "tags": [
+        "Agentic commerce",
+        "Advertising",
+        "AI"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "BRXND Dispatch",
+          "url": "https://newsletter.brxnd.ai/p/agents-ads-and-demand-creation-brxnd",
+          "headline": "Agents, Ads and Demand Creation // BRXND Dispatch vol. 143",
+          "kind": "person",
+          "author": "Mike Mallazzo",
+          "channel": "BRXND Dispatch"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: agency news and press releases",
+      "count": 25,
+      "examples": [
+        "WPP appoints Tyler Turnbull as CEO of WPP Creative",
+        "Chemistry Acquires Colossus, Establishing a Boston Office and Expanding Creative and Design Capabilities",
+        "Rick and Morty Entranced by Mutant Mustaches for Movember’s Fall Campaign"
+      ]
+    }
+  ]
+}

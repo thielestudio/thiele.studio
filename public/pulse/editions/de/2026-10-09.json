@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "generated_for": "2026-10-09",
+    "window": "2026-10-07..2026-10-09",
+    "sources_scanned": 62,
+    "items_in_window": 186,
+    "lang": "de",
+    "note": "Ein sehr dünner Tag für deutschsprachige Quellen. Škoda, GPRA, Steven Cichons Auftritt und JPEG XL liefen schon am 8. Oktober. Draußen blieben die Granshan-Kooperation (Ausschreibung), die Tiny Awards, die Ausstellung der German Design Graduates, ein PAGE-Online-Short, ein Agenturportrait von Elastique und fast alle t3n- und heise-Meldungen ohne Bezug zu gestalterischer Arbeit. Der Feed von userresearchstrategist.com fiel aus, drei bezahlte Substack-Beiträge wurden vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Claude macht jetzt Erklärvideos, und Design ist für alle offen",
+      "blurb": "Anthropic stellt Claude Motion vor, das aus Text, Diagrammen und Bildern animierte Erklärvideos baut, editierbar als Code und exportierbar als MP4, vorerst für Team- und Enterprise-Pläne. Gleichzeitig verlassen Docs, Slides und Design die Beta und stehen auch kostenlosen Accounts offen.",
+      "tags": [
+        "Claude",
+        "Motion",
+        "Werkzeuge"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/claude-kann-jetzt-live-dashboards-aus-datenbanken-bauen-und-animierte-erklaevideos-erstellen/",
+          "headline": "Claude kann jetzt Live-Dashboards aus Datenbanken bauen und animierte Erklävideos erstellen",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: Agenturmeldungen und Pressemitteilungen",
+      "count": 25,
+      "examples": [
+        "WPP appoints Tyler Turnbull as CEO of WPP Creative",
+        "Chemistry Acquires Colossus, Establishing a Boston Office and Expanding Creative and Design Capabilities",
+        "Rick and Morty Entranced by Mutant Mustaches for Movember’s Fall Campaign"
+      ]
+    }
+  ]
+}
