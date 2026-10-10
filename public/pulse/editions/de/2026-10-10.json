@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "generated_for": "2026-10-10",
+    "window": "2026-10-08..2026-10-10",
+    "sources_scanned": 62,
+    "items_in_window": 163,
+    "lang": "de",
+    "note": "Ein dünner Tag für deutschsprachige Quellen. GPRA, JPEG XL in Chrome und Claude Motion liefen schon am 8. und 9. Oktober und werden nicht wiederholt. Draußen blieben die Granshan-Kooperation (Ausschreibung), die Tiny Awards, die Ausstellung der German Design Graduates, zwei PAGE-Veranstaltungshinweise, ein Agenturportrait von Elastique, die Rektorin-Vorstellung bei Slanted und fast alle t3n- und heise-Meldungen ohne Bezug zu gestalterischer Arbeit. Der Feed von userresearchstrategist.com fiel aus, drei bezahlte Substack-Beiträge wurden vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Aus keleya wird Glimmer, und das Rosa fliegt raus",
+      "blurb": "Die Berliner Schwangerschafts-App benennt sich mit Yummy Colours um und verabschiedet sich von Pastell, lieblichen Illustrationen und Stockfotos glücklicher Schwangerer. Stattdessen ein kräftiges Dunkelgrün und eine abstrakte organische Bildmarke. Ein Beispiel dafür, wie man sich in einer wachsenden Kategorie über das Weglassen ihrer Codes absetzt.",
+      "tags": ["Rebranding", "Naming", "FemTech"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/selbstbewusstsein-statt-pastell-rebranding-einer-femtech-marke/",
+          "headline": "Mit Expertise statt Pastell: Rebranding einer FemTech-Marke",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Der Zoo Zürich verzichtet auf das Tierlogo",
+      "blurb": "MetaDesign Switzerland setzt die neue Wortmarke in fetter Futura, dazu Alverata für Headlines und gedeckte Erdtöne. Achim Schaffrinna ordnet das gegen die üblichen Zoo-Identitäten mit stilisierten Tieren ein: Hier soll die Positionierung als Naturschutzorganisation tragen, nicht der Freizeitpark. In den Kommentaren wird bezweifelt, ob die Anwendungen das Konzept halten.",
+      "tags": ["Corporate Design", "Positionierung"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "url": "https://www.designtagebuch.de/zoo-zuerich-neues-visuelles-erscheinungsbild-soll-wandel-sichtbar-machen/",
+          "headline": "Zoo Zürich: neues visuelles Erscheinungsbild soll Wandel sichtbar machen",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Verlage fordern Auskunft darüber, womit KI trainiert wird",
+      "blurb": "Zum Auftakt der Frankfurter Buchmesse richtet sich ein Appell an EU-Kommission, EU-Parlament und Bundesregierung: mehr Datentransparenz und wirksame Rechtsmittel. Für Illustratorinnen und Autoren ist das Problem konkret, wie der Fall des NEINhorns zeigt. Klagen gegen internationale Anbieter scheitern bisher vor allem an Beweisschwierigkeiten.",
+      "tags": ["Urheberrecht", "KI-Training", "Regulierung"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/branche-karriere/frankfurter-appell-verlage-fordern-transparenz/",
+          "headline": "Frankfurter Appell: Verlage fordern Transparenz",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Artcraft will die Creative Cloud kostenlos nachbauen",
+      "blurb": "Ein vierköpfiges Team stellt eine Open-Source-Suite vor, die Photoshop, Lightroom und Co. mit KI-Hilfe nachbilden soll, ohne Cloud-Zwang und Abo. Die Software ist noch früh, erste Tester berichten von Fehlern. Für den Arbeitsalltag also noch kein Ersatz.",
+      "tags": ["Adobe", "Open Source", "Werkzeuge"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/von-adobe-genervt-dieser-entwickler-hat-mit-ki-eine-open-source-alternative-gebaut-1767514/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "Von Adobe genervt: Dieser Entwickler hat mit KI eine Open-Source-Alternative gebaut",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Bootstrap 6 erscheint als erste Alpha",
+      "blurb": "Fünf Jahre nach Version 5 baut das Team das CSS-Framework auf moderne Webstandards um und verspricht neue Anpassungsmöglichkeiten. Bestehende Seiten lassen sich laut heise nicht einfach umstellen. Das betrifft viele: Bootstrap läuft auf knapp 14 Prozent aller Websites.",
+      "tags": ["CSS", "Web", "Werkzeuge"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "heise online",
+          "url": "https://www.heise.de/news/Bootstrap-6-Erste-Alpha-Version-des-CSS-Frameworks-erschienen-11482120.html",
+          "headline": "Fünf Jahre Pause: Bootstrap bekommt großes Upgrade auf Version 6",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: Agenturmeldungen und Pressemitteilungen",
+      "count": 25,
+      "examples": [
+        "WPP appoints Tyler Turnbull as CEO of WPP Creative",
+        "Lurpak celebrates 125 years of the good the bold and the wobbly in latest anniversary campaign",
+        "London Business School enrols VCCP as its global integrated agency of record"
+      ]
+    }
+  ]
+}

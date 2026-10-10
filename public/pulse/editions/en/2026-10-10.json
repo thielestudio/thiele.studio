@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "generated_for": "2026-10-10",
+    "window": "2026-10-08..2026-10-10",
+    "sources_scanned": 62,
+    "items_in_window": 116,
+    "lang": "en",
+    "note": "A thin day. Synthetic users, the Tesler's Law piece, Meta's Muse ranking rules, Fanta's AI Halloween ad, MacFadden & Thorpe, Mother Design for M&S, Riff and Mucho already ran on 8 and 9 October and are not repeated. Left out: Creative Bloq deals and reviews, general model, agent and safety news (Anthropic's false homicide tip, OpenAI's fired safety researchers, Jev, data center NDAs), the Adidas v White Fox suit (article text not retrievable), a members-only UX Collective essay, a State of Brand piece on sales and marketing pipelines, and the remaining agency press releases at Roastbrief. The userresearchstrategist.com feed failed, three paid Substack posts were removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Kuda's rebrand trades fintech features for Lagos street life",
+      "blurb": "Barkas repositioned the Nigerian digital bank from challenger to established brand around the line \"More Life\", with geometric letterforms drawn from Nigerian art and architecture, a custom Naira sign and documentary photography shot by local photographers. Kuda's marketing lead credits the rebrand with more account openings and reactivated dormant customers, though the piece gives no figures.",
+      "tags": ["Identity", "Fintech", "Positioning"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/barkas-shares-distinctive-new-identity-for-nigerian-digital-bank-kuda/",
+          "headline": "Barkas shares distinctive new identity for Nigerian digital bank Kuda",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Marc Jacobs Beauty layers Google's video models into a real New York shoot",
+      "blurb": "SuperHeroes shot the campaign live with a director, crew and creator, then had the AI duo EtherealMoon add surreal city transformations with Veo for scenes and Omni for stills. A useful reference for how a hybrid production splits the work between camera and model, even if the write-up reads close to a press release.",
+      "tags": ["Campaign", "Generative video", "Production"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/marc-jacobs-beauty-google-and-superheroes-blend-live-action-and-google-flow-in-how-to-new-york/",
+          "headline": "Marc Jacobs Beauty, Google and SuperHeroes blend live action and Google Flow in How to New York",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Nestlé held back its food ads until sunset during Ramadan",
+      "blurb": "During fasting hours the campaign in Mauritius showed glasses before the pour and covered desserts under \"Ready. But not yet served.\", and revealed the finished dishes at Iftar. The transferable move: a cultural tension turned into the structure of the media plan, not just the copy.",
+      "tags": ["Campaign", "Cultural insight"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/nestle-looks-back-at-the-campaign-that-waited-its-innovative-ramadan-strategy/",
+          "headline": "Nestlé Looks Back at The Campaign That Waited, Its Innovative Ramadan Strategy",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Nikon strips its microscopy video winner over AI post-processing",
+      "blurb": "The winner of Small World in Motion admitted to AI-assisted post-processing after researchers flagged cell features that appeared and vanished and what looked like AI watermarks in the source files. Nikon handed first place to the runner-up and says it is revisiting its rules, a live case of where enhancement ends and generation begins in documentary imagery.",
+      "tags": ["Competitions", "Generative AI", "Image integrity"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai",
+          "headline": "Nikon microscopic video competition winner disqualified for using generative AI",
+          "kind": "portal"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/science/2026/10/winning-nikon-small-world-in-motion-video-disqualified-for-ai-use/",
+          "headline": "AI disqualification yields new Nikon Small World in Motion winner",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Why every product ends up looking the same",
+      "blurb": "Luke Wroblewski lines up old and new TVs, phones and cars and sorts the usual explanations: purpose becomes clear, mature markets compete on price, physics and standards constrain form. His point for software: apps are converging on chat within a few years, where hardware took decades.",
+      "tags": ["Product design", "Homogenization"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Luke Wroblewski",
+          "url": "https://www.lukew.com/ff/2166/the-convergence-of-design",
+          "headline": "The Convergence of Design",
+          "kind": "person",
+          "author": "Luke Wroblewski"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: agency news and press releases",
+      "count": 22,
+      "examples": [
+        "WPP appoints Tyler Turnbull as CEO of WPP Creative",
+        "Lurpak celebrates 125 years of the good the bold and the wobbly in latest anniversary campaign",
+        "London Business School enrols VCCP as its global integrated agency of record"
+      ]
+    }
+  ]
+}
