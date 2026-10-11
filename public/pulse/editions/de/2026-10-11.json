@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "generated_for": "2026-10-11",
+    "window": "2026-10-09..2026-10-11",
+    "sources_scanned": 62,
+    "items_in_window": 126,
+    "lang": "de",
+    "note": "Dünnes Wochenendfenster mit deutschsprachiger Leitquelle. Glimmer, Zoo Zürich, der Frankfurter Appell, Bootstrap 6 und der Auftritt von Steven Cichon liefen bereits am 8. und 10. Oktober. Nicht genommen: Veranstaltungshinweise bei PAGE und Slanted (Midjourney-Masterclass, Make It Make Sense, Unicode-Workshop), allgemeine Modell- und Sicherheitsmeldungen bei The Decoder, t3n und heise (Anthropics Internet-Abschaltung, OpenAI-Agenten, Claude-Workflows, Strands Box), Wissenschafts- und Hardware-Meldungen bei t3n. Feeds itsnicethat.com und userresearchstrategist.com ausgefallen, drei bezahlte Substack-Beiträge vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Mother verkauft durchschnittliche Männer als Actionfiguren",
+      "blurb": "Zum World Mental Health Day bringt die Agentur Mother mit der kanadischen Organisation HeadsUpGuys drei handbemalte Figuren heraus, entworfen vom deutschen Character-Designer Hauke Scheer: ein Mann mit Durchschnittsbau, einer mit schlanker Statur, einer mit Geheimratsecken. Der Preis von 600 Dollar entspricht einem Monat Therapie für einen jungen Menschen und geht komplett an die Organisation. Die Mechanik ist das Übertragbare: das Medium der Botschaft ist das Produkt, das sie kritisiert.",
+      "tags": ["Kampagne", "Charity", "Körperbild"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/diese-actionfiguren-sind-ganz-anders-als-ihr-denkt/",
+          "headline": "Diese Actionfiguren sind ganz anders als ihr denkt!",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Synchronsprecher ziehen gegen Netflix' KI-Klausel vor das Kartellamt",
+      "blurb": "Netflix knüpft Aufträge für Eigenproduktionen an die Einwilligung, dass Stimmen für KI-Training genutzt werden dürfen. Der Verband Deutscher Sprecher:innen hat Beschwerde beim Bundeskartellamt eingereicht, dazu Datenschutzbeschwerden in Berlin, unter anderem von Matti Klemm. Drei Fragen stehen im Raum: Ist eine Einwilligung freiwillig, wenn sonst der Auftrag wegfällt? Nutzt Netflix seine Marktmacht aus? Und wie weit reicht das Recht an der eigenen Stimme? Netflix hat sich bislang nicht geäußert.",
+      "tags": ["KI-Training", "Recht", "Sprecher", "Netflix"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/branche-karriere/netflix-ki-training-sprecherinnen-reichen-beschwerde-ein/",
+          "headline": "Netflix‘ KI-Training: Sprecher:innen reichen Beschwerde ein",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Jede Modellversion hat eigene Lieblingswörter",
+      "blurb": "Graphite Growth ließ Spitzenmodelle 10.000 Artikel aus der Zeit vor ChatGPT anhand von Zusammenfassungen neu schreiben und fand rund 13.000 Phrasen, die in KI-Texten mindestens doppelt so oft vorkommen wie bei Menschen. Claude Opus 5.5 verwendet etwa „zuverlässig“ 23-mal häufiger. Laut Studie nähern sich die Claude-Modelle der menschlichen Wortverteilung an, die GPT-Modelle entfernen sich davon. Für alle, die KI-Text redigieren, ein Hinweis darauf, wonach man sucht.",
+      "tags": ["KI-Texte", "Studie", "Textqualität"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/ki-texte-erkennen-phrasen-chatgpt-claude-1766310/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "KI-Texte erkennen: Diese Phrasen verraten ChatGPT Claude",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: Agenturmeldungen und Pressemitteilungen",
+      "count": 20,
+      "examples": [
+        "Lurpak celebrates 125 years of the good the bold and the wobbly in latest anniversary campaign",
+        "FutureDeluxe crafts cinematic launch film for Meta's Breakthrough VR Glasses",
+        "London Business School enrols VCCP as its global integrated agency of record"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "generated_for": "2026-10-11",
+    "window": "2026-10-09..2026-10-11",
+    "sources_scanned": 62,
+    "items_in_window": 82,
+    "lang": "en",
+    "note": "A thin weekend window. Kuda, Marc Jacobs Beauty, Nestlé's Ramadan campaign, the Nikon disqualification and Luke Wroblewski's convergence piece already ran on 10 October and are not repeated. Left out: Creative Bloq deals, reviews and social round-ups (New Balance's Steve Jobs pose, the Other Mommy billboard), a members-only UX Collective essay, Design Week's satirical take on the Department of War emblem, general model and safety news (Anthropic's internet cutoff, Nadella's emergency brake, OpenAI's math drop), State of Brand's ROAS piece, and the remaining agency press releases at Roastbrief. The itsnicethat.com and userresearchstrategist.com feeds failed, three paid Substack posts were removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Faster design teams, same slow decisions",
+      "blurb": "Marina Krutchinsky reads five news items of the week together: HubSpot cutting management layers, Figma's agent following written design-system rules, Userlytics drafting research plans, half of employees admitting they exaggerate AI use, and McKinsey finding individual productivity gains that never reach operating profit. Her practical exercise for design-system owners is worth the read on its own: write down for one rule when it applies, when it does not, what it protects against and who may grant an exception.",
+      "tags": ["design leadership", "design systems", "AI agents", "productivity"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Marina Krutchinsky",
+          "url": "https://uxmentor.substack.com/p/before-monday-hubspot-cut-managers",
+          "headline": "Before Monday: HubSpot cut managers, Figma hired agents, but the productivity numbers don't add up.",
+          "kind": "person",
+          "author": "Marina Krutchinsky"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Wild Turkey makes the bird bigger instead of changing everything",
+      "blurb": "The Creative Method reworked 39 ready-to-drink packs for the Australian market by enlarging the existing turkey illustration, tightening hierarchy across formats and adding more gold. Creative director Tony Ibbotson frames the question for heritage brands: what do you already own that nobody else can, and does it need amplifying rather than replacing?",
+      "tags": ["packaging", "distinctive assets", "heritage brand"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/wild-turkey-puts-iconic-turkey-front-and-centre-in-australian-rtd-refresh/",
+          "headline": "Wild Turkey puts iconic turkey front and centre in Australian RTD refresh",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "A smart-glasses brand sells privacy with a horror series that never shows the product",
+      "blurb": "Even Realities, whose glasses have no camera, launched a ten-episode vertical microdrama on TikTok directed by Ishana Night Shyamalan: a family on holiday becomes other people's footage. VIRTUE Worldwide built the campaign around the bystander rather than the wearer, with a Times Square takeover and a wrapped bus circling Meta's campus during Connect. A clear case of positioning against the category leader by dramatising what you leave out.",
+      "tags": ["positioning", "branded content", "vertical video", "privacy"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/even-realities-premieres-exposed-a-new-microdrama-directed-by-ishana-night-shyamalan/",
+          "headline": "Even Realities Premieres “Exposed,” A New Microdrama Directed By Ishana Night Shyamalan",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "A 1973 logo directory already contains half of today's tech marks",
+      "blurb": "Pages from Yasaburo Kuwayama's Trademarks & Symbols Vol. 2 are circulating with lookalikes of AMD, Google Drive, Chase and Renault. Creative Bloq's sober reading: geometric symmetry offers only so many options, the book itself lists symbols used by several companies at once, and nobody needs to assume copying. Useful ammunition for the next originality debate in a logo review.",
+      "tags": ["logo design", "originality", "design history"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/did-a-book-from-1973-predict-the-logo-designs-of-some-of-todays-biggest-companies",
+          "headline": "Did a book from 1973 predict the logo designs of some of today's biggest companies?",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Marketers say they are trading brand quality for AI citations",
+      "blurb": "In a Typeface survey of 500 US and UK marketing leaders, 62 percent say brands sacrifice content quality to get cited by AI and 61 percent say the same about authenticity, while 68 percent produce content for machines that no human will see and 49 percent plan to cut SEO spend. Vendor research with an obvious product pitch at the end, but the numbers describe a convergence problem brand teams will recognise.",
+      "tags": ["AI visibility", "brand strategy", "research"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/the-ai-visibility-gap-brands-are-trading-away-the-authenticity-that-made-them-worth-finding-new-typeface-research-finds/",
+          "headline": "The AI Visibility Gap: Brands Are Trading Away the Authenticity That Made Them Worth Finding, New Typeface Research Finds",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Adidas takes a four-stripe rival to court in Australia",
+      "blurb": "Adidas claims White Fox's four-stripe garments are deceptively similar to its three stripes, trademarked in Australia since 1957, and points to genuine Adidas items appearing in White Fox advertising. White Fox answers that Cotton On and Sportscraft sell similar decorative stripes. Short piece, but a live example of how far a stripe count protects a brand asset.",
+      "tags": ["trademark", "brand assets", "legal"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/adidas-sues-white-fox-in-battle-of-the-stripes",
+          "headline": "Adidas sues White Fox in battle of the stripes",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "AI coding agents produce 30 percent more code and no more software",
+      "blurb": "Harvard researchers Fiona Chen and James Stratton analysed 300 million work events across more than 700 firms: after coding agents arrive, lines of code rise 30 percent, review time balloons 49 percent, and the share of pull requests sent back nearly doubles, while resolved features in Jira do not move. The gain is absorbed by human review. Anyone planning agent-assisted production should budget for the checking, not just the making.",
+      "tags": ["coding agents", "research", "review bottleneck"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+          "headline": "AI coding agents generate more code, but not more software",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: agency news and press releases",
+      "count": 20,
+      "examples": [
+        "Lurpak celebrates 125 years of the good the bold and the wobbly in latest anniversary campaign",
+        "FutureDeluxe crafts cinematic launch film for Meta's Breakthrough VR Glasses",
+        "London Business School enrols VCCP as its global integrated agency of record"
+      ]
+    }
+  ]
+}
