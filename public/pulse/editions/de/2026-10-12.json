@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "generated_for": "2026-10-12",
+    "window": "2026-10-10..2026-10-12",
+    "sources_scanned": 62,
+    "items_in_window": 75,
+    "lang": "de",
+    "note": "Dünnes Wochenendfenster, vier Stücke mit deutschsprachiger Leitquelle. Mothers Actionfiguren und die Netflix-Beschwerde der Sprecher liefen schon am 11. Oktober. Nicht genommen: der Auftritt für Steven Cichon von Studio Franz, zwei PAGE-Webinare, Nadellas KI-Notbremse und die Anthropic-Richtlinien als allgemeine Modellnachrichten, The Decoders Analyse zu Agentenschwärmen (Rest hinter Abo), die a16z-Konsumausgaben, das Jevons-Stück und die Arxiv-Limits, dazu die t3n-Strecke aus Astronomie, Behörden-IT und Windows-Tipps. Feeds printmag.com und userresearchstrategist.com ausgefallen, zwei bezahlte Substack-Beiträge vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Zwei Videos im Monat, und fertige Skripte landen trotzdem im Papierkorb",
+      "blurb": "Rosa Schneider, Social Media Director bei In a Nutshell, erklärt im t3n-Podcast, wie der Kurzgesagt-Zweitkanal Nightshift in einem Jahr auf fast eine Million Abonnenten kam: Starthilfe durch einen Clip auf dem Hauptkanal, danach nur noch Stücke, hinter denen das Team ganz steht. Jede Szene wird von Hand illustriert und animiert, deshalb erscheinen nur rund zwei Videos im Monat. Gemessen wird an drei Kennzahlen: Aufrufe, Stimmung in den Kommentaren und durchschnittliche Wiedergabedauer. Das geliebte Video zu Heinrich VIII. zeigt die Konsequenz: Wenn die Community nicht mitzieht, wird nicht nachgeschoben.",
+      "tags": ["YouTube", "Animation", "Kennzahlen", "Content"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/qualitaet-vs-masse-learnings-youtube-start-nightshift-kurzgesagt-inanutshell-1767033/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "Qualität statt Masse: Was du vom Youtube-Start von Nightshift lernen kannst",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Die Kiezhelden schaffen die Helden ab und setzen ein Herz in die Knochen",
+      "blurb": "Aus der Sozialinitiative des FC St. Pauli wird HEARTCORE ST. PAULI, weil die Projekte über den Kiez hinausgewachsen sind und der Begriff Helden nicht mehr passte. Karl Anders, das Studio hinter der Vereinsschrift FC Sans Pauli, setzt das Herz anstelle des Totenkopfs in den Scheitel der gekreuzten Knochen, hält den Auftritt in Schwarzweiß mit Regenbogen und Herzmustern und nutzt den Tape-Schnitt der Hausschrift weiter. Ein Rebranding, das aus einer Namensfrage entsteht und die Bildmarke des Vereins fortschreibt statt sie zu ersetzen.",
+      "tags": ["Rebranding", "Naming", "Charity", "FC St. Pauli"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/genauso-muss-es-sein-karl-anders-branded-heartcore-st-pauli/",
+          "headline": "Genauso muss es sein! Karl Anders branded HEARTCORE ST. PAULI!",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Wet Ones macht aus einer Kundenumfrage eine Kampagne mit Fingern als Hinterteilen",
+      "blurb": "BBH USA reagiert auf eine Umfrage, nach der manche Kunden die Handtücher auch nach dem Toilettengang benutzen. Der argentinische Fotograf Ale Burset inszeniert Finger als Pobacken, der Claim lautet »Just for hands. No ifs, ands or butts«. Die New Yorker Verkehrsbetriebe lehnten die Motive für die U-Bahn ab, jetzt hängen sie an 60 Bushaltestellen, über 100 Wifi-Säulen und am Times Square. Der Kern ist übertragbar: ein Befund aus der Zielgruppe wird zum Bild, und die optische Täuschung ist fotografiert, nicht generiert.",
+      "tags": ["Kampagne", "Fotografie", "Out-of-Home"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/sind-das-etwa-nein-sind-es-nicht/",
+          "headline": "Sind das etwa ? Nein, sind es nicht!",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Odyssey-3 baut begehbare Welten aus Textprompts, kostenlos zum Ausprobieren",
+      "blurb": "Odyssey öffnet sein Weltmodell als Forschungsvorschau: Aus einer Textbeschreibung entsteht in Echtzeit eine Umgebung, die man in Ego- oder Third-Person-Perspektive durchläuft und in der Ereignisse auf Eingaben reagieren. Das Basismodell hat 14 Milliarden Parameter und liefert 832 mal 480 Pixel, die Pro-Variante 1280 mal 720. The Decoder ordnet den beanspruchten Rekord im Physik-Benchmark ein: Der Spitzenwert stammt aus einem Durchlauf mit Auswahl aus acht Videos, die Regeln verlangen vier Durchläufe. Ohne Auswahl liegt das Modell bei 63,4 Punkten.",
+      "tags": ["Weltmodell", "Echtzeit", "3D", "Benchmarks"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/odyssey-3-neues-ki-weltmodell-erzeugt-interaktive-welten-und-ist-jetzt-kostenlos-testbar/",
+          "headline": "Odyssey-3: Neues KI-Weltmodell erzeugt interaktive Welten und ist jetzt kostenlos testbar",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: Agenturmeldungen und Pressemitteilungen",
+      "count": 1,
+      "examples": [
+        "The AI Visibility Gap: Brands Are Trading Away the Authenticity That Made Them Worth Finding, New Typeface Research Finds"
+      ]
+    }
+  ]
+}

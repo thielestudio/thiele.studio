@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "generated_for": "2026-10-12",
+    "window": "2026-10-10..2026-10-12",
+    "sources_scanned": 62,
+    "items_in_window": 36,
+    "lang": "en",
+    "note": "A thin weekend window, five pieces. The 1973 logo directory, the Typeface research on AI visibility and Marina Krutchinsky's weekly already ran on 11 October and are not repeated. Left out: the Anthropic internet cutoff and Satya Nadella's emergency brake as general model news, Gary Marcus's recall call for the same reason, the DistroKid takedowns, Creative Bloq's deals, reviews, the Disney and Carrie opinion pieces, a Pearlfisher Q&A and the Filmustage CEO's piece on boring AI, State of Brand's loud-working essay, the Department of Product briefing and a Design Week satire on the Department of War emblem. The printmag.com and userresearchstrategist.com feeds failed, two paid Substack posts were removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Coke Zero now looks like Coke, and the people who serve it have noticed",
+      "blurb": "Three months into Coca-Cola's consistency-driven refresh, Zero Sugar keeps only a black ribbon to tell it apart from the standard can. A flight attendant's TikTok about handing out the wrong Coke all week drew comments from diabetics and allergy sufferers who relied on the old black lettering. Joe Foley weighs the stated goal, one recognisable brand experience, against the one customers actually want: picking the right can without hesitating.",
+      "tags": ["packaging", "rebrand", "distinctive assets", "usability"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/the-coca-cola-rebrand-is-still-causing-confusion-three-months-on",
+          "headline": "The Coca-Cola rebrand is still causing confusion three months on",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Apple stitches its event invite by hand and films the stitching",
+      "blurb": "The invite for Apple's Welcome Home event revives the 1977 rainbow logo as embroidery by the Sydney sisters Maricor/Maricar, following the stop-motion films for the Mac mini and Apple Games. Joe Foley reads it as a deliberate position against AI slop after the crushed-instruments iPad ad, with the behind-the-scenes video now doing the work of the advert: if you pay for human craft, you make sure people can see it.",
+      "tags": ["Apple", "craft", "behind the scenes", "brand positioning"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/an-embroidered-logo-shows-apples-understands-something-that-other-tech-brands-dont",
+          "headline": "Its embroidered logo invite shows Apple understands something other tech brands don't",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Bentley's electric car gets a drum kit instead of a fake V8",
+      "blurb": "Sonic branding founder Max De Lucia of DLMDD wanted to hate the synthetic soundtrack of Bentley's first EV and ended up admiring it: drums and live orchestra built to evoke the feeling of an eight-cylinder engine rather than imitate it. His warnings travel beyond cars. Replica engine noise belongs on kids' go-karts, sonic logos in the cabin are already overused, and EV sound regulations hand the premium segment a design brief most brands have not noticed.",
+      "tags": ["sonic branding", "automotive", "multisensory"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/features/electric-cars-are-killing-the-cinematic-experience-of-driving-but-sonic-design-is-here-to-help",
+          "headline": "Electric cars are killing the joy of driving, but sonic design is here to save it",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "LinkedIn tests a feed that shows company pages only to their own followers",
+      "blurb": "The Network tab, announced by product chief Hari Srinivasan and still a small test, shows posts only from connections and follows. State of Brand sets it against Metricool's study of 673,658 posts: pages and personal profiles get similar impressions, but profiles earn more engagement, and only about 7 percent of company pages grew their following over the period. Whether or not the tab ships, it shows how much of a page's reach has been borrowed from the algorithm rather than owned.",
+      "tags": ["LinkedIn", "social media", "owned audience"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "State of Brand",
+          "url": "https://state-of-brand.outlever.work/news/linkedin-network-tab-company-pages-followers",
+          "headline": "LinkedIn Is Testing a Feed Built Only From Who You Follow. Company Pages Would Reach Their Followers, at Most. | State of Brand",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Landor creates a global strategy post with an agentic roadmap attached",
+      "blurb": "Design Week's weekly roundup leads with Landor promoting James Withey to Global EVP Strategy, a new role that also covers an agentic strategy roadmap for WPP's brand collective, building equity with the AI systems that increasingly shape choices. Also in the list: Elmwood's new US creative director Elisa Maezono, Run for the Hills' 265-cover Juno restaurant in Olympia, Lomography's lens that keeps an 1817 design's flaws on purpose, and Polaroid's Mod camera with its creative modes on the dial instead of in menus.",
+      "tags": ["appointments", "agencies", "roundup"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-outline-an-italian-restaurant-a-paul-mccartney-lyric-and-a-new-polaroid-12-10-2026/",
+          "headline": "The Outline: An Italian restaurant, a Paul McCartney lyric, and a new Polaroid 12/10/2026",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: agency news and press releases",
+      "count": 1,
+      "examples": [
+        "The AI Visibility Gap: Brands Are Trading Away the Authenticity That Made Them Worth Finding, New Typeface Research Finds"
+      ]
+    }
+  ]
+}
