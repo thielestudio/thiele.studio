@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "generated_for": "2026-10-13",
+    "window": "2026-10-11..2026-10-13",
+    "sources_scanned": 62,
+    "items_in_window": 83,
+    "lang": "en",
+    "note": "Eight pieces. Coke Zero, Apple's embroidered invite and the LinkedIn Network tab already ran on 12 October and are not repeated. Left out: two member-only UX Collective essays (the design hourglass and newsroom traffic charts) that could not be read in full, Mother Design's Nicer Tuesdays talk (video, no text), Sour Patch Kids' billboard, State of Brand on Microsoft moving comms under its legal chief and on AI search citations, the Bench Media marketer survey, portraits of Raoul Gottschling, Al Diaz and Chloé Templeman, Creative Bloq's reviews and opinion pieces, the TechCrunch and MIT Technology Review general tech run, and Microsoft's Maia chip. The arXiv and userresearchstrategist.com feeds failed, four paid Substack posts were removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Agents read your accessibility tree, not your layout",
+      "blurb": "Patrick Neeman walks through how Claude, ChatGPT's Atlas, Gemini and Microsoft's Playwright MCP take in a page, and most of them lean on the same semantic structure screen readers use. He cites a CHI 2026 study in which an agent's task success fell from about 78 to 42 percent when limited to keyboard navigation. The practical point: on transactional, multi-step flows, if a keyboard user cannot finish the task, an agent usually cannot either.",
+      "tags": ["Accessibility", "Agents", "UX", "Semantic HTML"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/secret-agent-bot-accessibility-matters-for-the-agents-even-if-you-cant-see-them-2f53a5670ec9?source=rss----138adf9c44c---4",
+          "headline": "Secret agent bot: accessibility matters for the agents even if you can’t see them",
+          "kind": "person",
+          "author": "Patrick Neeman",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "When agents act for us, recovery cost matters more than speed",
+      "blurb": "Saeideh Bakhshi argues that agent design should be judged by how easily users can catch and repair mistakes, not just by completion rate. Her example: an agent at 95 percent with failures fixed in seconds may cost users less than one at 97 percent whose failures take hours to find. A useful frame for deciding where previews and confirmation steps earn their friction.",
+      "tags": ["Agents", "Interaction Design", "Evaluation", "Friction"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Saeideh Bakhshi",
+          "url": "https://saeidehbakhshi.substack.com/p/easy-to-undo-may-matter-more-than",
+          "headline": "Easy to Undo May Matter More Than Easy to Do",
+          "kind": "person",
+          "author": "Saeideh Bakhshi"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "How Buck turned Notion's AI face into a character with states",
+      "blurb": "Buck's CCO Kevin Walker explains the wave of AI mascots through anthropomorphism research and shows the studio's own method: take Roman Muradov's few-line face and define how it behaves while thinking, writing, searching, greeting and failing. He also names the risk, that a face can make a system seem more understandable and trustworthy than it is.",
+      "tags": ["Mascots", "Animation", "AI Interfaces", "Character Design"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/pov-ai-needs-mascots-and-only-humans-can-make-them-animation-121026",
+          "headline": "POV: AI needs mascots and only humans can make them",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Lala gives its reused cream tubs a label field",
+      "blurb": "Mexicans have refilled Lala cream pots with beans, salsa and leftovers for decades, and the meme was always that nobody knows what is inside. Zurda México and Conciergency added a writable space and culturally rooted graphics to the pack while keeping it recognisably Lala. The campaign turned into a permanent platform that is now spreading to other products and licensed editions.",
+      "tags": ["Packaging", "Consumer Insight", "Mexico", "Reuse"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/this-ingenious-packaging-design-went-viral-simply-by-recognising-how-people-were-already-using-it",
+          "headline": "This viral packaging plays on a meme the brand ignored for decades",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Arsenal's third typeface took four years and answers a brand pillar",
+      "blurb": "Arsenal split its brand strategy into team, community and culture, and David Rudnick built one typeface per pillar: Northbank for matchday intensity, Chapman for reading, and now Rocastle, a hand-drawn three-weight blackletter for when the club shows up in fashion, art and music. The interview shows how a type system can map tone of voice rather than just setting text.",
+      "tags": ["Typography", "Type System", "Sport", "Identity"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/features/david-rudnick-johnnie-campbell-arsenal-rocastle-typeface-graphic-design-spotlight-121026",
+          "headline": "David Rudnick on the “borderline impossible” process of designing a bespoke blackletter typeface for Arsenal",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Epic moves its Disney shooter to AI-generated code and art",
+      "blurb": "According to Bloomberg, Epic has told developers there will be no more hand-written code on the Marvel and Star Wars project and that art assets will come from full AI workflows, with humans guiding the output. The game, planned for March 2027, is now delayed indefinitely. A large studio committing its art pipeline, not just its code, is the signal worth watching.",
+      "tags": ["Games", "AI Production", "Epic", "Art Pipeline"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/",
+          "headline": "Epic Games reportedly pivoting to AI first game development model",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "ChatGPT is signing New Yorker cartoons with real artists' names",
+      "blurb": "A viral cartoon carried the signature of New Yorker cartoonist Brendan Loper, but ChatGPT had drawn it on request. Nieman Lab, cited here, found more than 15 New Yorker cartoonists whose signatures turn up on ChatGPT images. For freelancers the damage is reputational: work they never made circulates under their name.",
+      "tags": ["Attribution", "Illustration", "Copyright", "Reputation"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/now-ai-isnt-just-faking-art-its-faking-artists-signatures-as-well",
+          "headline": "Now AI isn't just faking art, it's faking artists' signatures as well",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Meta ships Muse Wonder, its first frontier model",
+      "blurb": "Muse Wonder and Muse Wonder Full benchmark close to Fable 5.1 and GPT-6 Astra by Meta's own model card, with a focus on long-term memory for its Muse agent. The API version costs $4 per million input and $20 per million output tokens, about Opus 5.5 level; Wonder Full is limited to Muse Code subscribers.",
+      "tags": ["Meta", "Model Release", "Pricing", "Agents"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+          "headline": "Meta releases its first frontier model, Muse Wonder",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+          "headline": "Meta has some Wonder Full new AI models",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: agency news and press releases",
+      "count": 21,
+      "examples": [
+        "Preston Spire is now Meerkat",
+        "The Y Australia launches most significant unified national brand platform ‘It Starts Here’",
+        "Senior marketers are more confident than ever, but 38% sign off AI strategy without human review"
+      ]
+    }
+  ]
+}

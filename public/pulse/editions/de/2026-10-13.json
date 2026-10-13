@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "generated_for": "2026-10-13",
+    "window": "2026-10-11..2026-10-13",
+    "sources_scanned": 62,
+    "items_in_window": 121,
+    "lang": "de",
+    "note": "Sehr dünn, zwei Stücke mit deutschsprachiger Leitquelle. HEARTCORE ST. PAULI und die Wet-Ones-Kampagne liefen schon am 12. Oktober. Nicht genommen: der t3n-Test der KI-Klone von Photoshop und Word (t3n Pro, harte Paywall), The Decoders Agentenschwarm-Analyse (wie am Vortag), das PAGE-Webinar, das Typodarium 2027 als Produktankündigung, die übrigen Forschungs- und Chipmeldungen von The Decoder und heise sowie die t3n-Strecke aus Krypto, Autos, Astronomie und Verbraucherrecht. Feeds arxiv.org und userresearchstrategist.com ausgefallen, vier bezahlte Substack-Beiträge vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "GMX rundet die Wortmarke ab und färbt sich neu blau",
+      "blurb": "GMX stellt die Versal-Wortmarke auf eine stark gerundete Schrift mit gleichbleibender Strichstärke um, dazu kommen ein neuer Blauton und Farbverläufe. Die Markenstrategie kam von Future Marketing (Serviceplan) und ILV aus Berlin. In den Kommentaren bei Design Tagebuch fällt das Urteil knapp aus: verwechselbar, das G sitze zu hoch, die Strichstärken seien nicht ausgeglichen.",
+      "tags": ["Rebranding", "Wortmarke", "Typografie", "DACH"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "url": "https://www.designtagebuch.de/gmx-ueberarbeitet-markenauftritt/",
+          "headline": "GMX überarbeitet Markenauftritt",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Meta schafft mit Muse Wonder den Anschluss an die Spitze",
+      "blurb": "Muse Wonder Full kommt im Artificial Analysis Index auf 56 Punkte und liegt in sechs von zehn Benchmarks unter den ersten drei. Die größten Sprünge zeigt es beim agentischen Arbeiten. Beide Varianten verarbeiten Text, Bild, Video und Audio. Über die API kosten sie aber fast dreimal so viel wie der Vorgänger Muse Spark.",
+      "tags": ["Meta", "Modell-Release", "Preise", "Agenten"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/metas-neues-frontier-modell-muse-wonder-schafft-den-sprung-in-die-ki-spitzengruppe/",
+          "headline": "Metas neues Frontier-Modell Muse Wonder schafft den Sprung in die KI-Spitzengruppe",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+          "headline": "Meta has some Wonder Full new AI models",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: Agenturmeldungen und Pressemitteilungen",
+      "count": 21,
+      "examples": [
+        "Preston Spire is now Meerkat",
+        "The Y Australia launches most significant unified national brand platform ‘It Starts Here’",
+        "Senior marketers are more confident than ever, but 38% sign off AI strategy without human review"
+      ]
+    }
+  ]
+}
