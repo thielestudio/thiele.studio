@@ -1,0 +1,122 @@
+{
+ "meta": {
+  "generated_for": "2026-10-14",
+  "window": "2026-10-12..2026-10-14",
+  "sources_scanned": 62,
+  "items_in_window": 201,
+  "lang": "de",
+  "note": "Vier Stücke mit deutschsprachiger Leitquelle. GMX, HEARTCORE ST. PAULI, die Wet-Ones-Kampagne und Muse Wonder liefen schon am 12. und 13. Oktober. Nicht genommen: die HAICA-X-PAGE-Abstimmungsbeiträge, das Agenturporträt EIGA, der Frontify-Glückwunsch zu 40 Jahren PAGE, PAGEs LinkedIn-Ratgeber und das Agenten-Webinar, der Neuauftritt des bgs Chur (nur Aufzählung der Kontaktpunkte), der FCZ-Sponsoring-Kommentar, Typodarium 2027 und Foundry Kingdom bei Slanted als Produktankündigungen, Personalien bei Werbewoche, die Character.ai-Insolvenz und die t3n-Strecke aus Apple-Hardware, Astronomie, Banken und SEO. Feed userresearchstrategist.com ausgefallen, vier bezahlte Substack-Beiträge vorab entfernt."
+ },
+ "stories": [
+  {
+   "theme": "brand-advertising",
+   "theme_label": "Brand & Advertising",
+   "title": "Swiss Wine teilt jedes Plakat in eine Hälfte für Kenner und eine für alle anderen",
+   "blurb": "Fachsprache und Herkunftscodes wirken auf Gelegenheitstrinker schnell kompliziert, also haben Family und Swiss Wine Promotion die Gattung neu positioniert. Jede Fläche bekommt zwei Hälften mit eigener Ansprache, eigenem Logo und eigenem Link auf je eine Landingpage.",
+   "tags": [
+    "Positionierung",
+    "Kampagne",
+    "Schweiz"
+   ],
+   "cluster": false,
+   "sources": [
+    {
+     "name": "Werbewoche",
+     "url": "https://www.markt-kom.com/de/kreativity/kampagnen/family-fuer-swiss-wine-fuer-kenner-und-alle-anderen/",
+     "headline": "Family für Swiss Wine: Für Kenner. Und alle anderen.",
+     "kind": "portal"
+    }
+   ]
+  },
+  {
+   "theme": "brand-advertising",
+   "theme_label": "Brand & Advertising",
+   "title": "Blick zeigt jede Geschichte aus zwei Perspektiven",
+   "blurb": "Velofahrer und Autofahrerin, Fan und Schiedsrichter: Die zweite Runde der Blick-Kampagne stellt zwei gegensätzliche Sichtweisen direkt nebeneinander. Im Interview erklärt Maximilian Börke die Änderung gegenüber dem Auftakt 2025: Damals zeigten die Motive viele Protagonisten, jetzt wird auf zwei zugespitzt, damit die Botschaft schneller ankommt.",
+   "tags": [
+    "Kampagne",
+    "Medienmarke",
+    "Bildwelt"
+   ],
+   "cluster": false,
+   "sources": [
+    {
+     "name": "Werbewoche",
+     "url": "https://www.markt-kom.com/de/medien/konsistenz-als-markenstaerke-blick-verbindet-kampagne-und-bildwelt/",
+     "headline": "Konsistenz als Markenstärke: Blick verbindet Kampagne und Bildwelt",
+     "kind": "portal"
+    }
+   ]
+  },
+  {
+   "theme": "ai-models",
+   "theme_label": "AI-Modelle (+Tools)",
+   "title": "Gemini 4 Argon ist da, für Bezahlkunden",
+   "blurb": "Google gibt sein neues Spitzenmodell weltweit über API, Gemini-App und Antigravity frei. Zum Einführungspreis kostet es 2 Dollar je Million Input-Token und 10 Dollar je Million Output-Token. Kostenlose Nutzer bleiben bei den Flash-Modellen. Google zeigt unter anderem 3D-Modelle, Spiele und Animationen, die das Modell in reinem Code für den Browser erzeugt.",
+   "tags": [
+    "Gemini",
+    "Frontier-Modell",
+    "Preise"
+   ],
+   "cluster": true,
+   "sources": [
+    {
+     "name": "The Decoder",
+     "url": "https://the-decoder.de/google-veroeffentlicht-gemini-4-argon-neues-spitzenmodell-ab-sofort-weltweit-verfuegbar/",
+     "headline": "Google veröffentlicht Gemini 4 Argon: Neues Spitzenmodell ab sofort weltweit verfügbar",
+     "kind": "portal"
+    },
+    {
+     "name": "t3n",
+     "url": "https://t3n.de/news/google-gemini-4-argon-rollout-preise-1768086/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+     "headline": "Überraschung: Google veröffentlicht Gemini 4 Argon",
+     "kind": "portal"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
+     "headline": "Google finally releases Gemini 4 Argon",
+     "kind": "portal"
+    }
+   ]
+  },
+  {
+   "theme": "ai-models",
+   "theme_label": "AI-Modelle (+Tools)",
+   "title": "Eigene Android-Apps per Prompt, ohne Play-Store-Veröffentlichung",
+   "blurb": "Mit Google AI Studio gebaute Apps lassen sich jetzt privat auf dem eigenen Gerät installieren ohne Store-Eintrag. Teilen mit Familie und Freunden soll folgen. heise ordnet das als Fortsetzung von Stitch ein, Googles KI-Editor für Oberflächen.",
+   "tags": [
+    "Vibe Coding",
+    "Android",
+    "Prototyping"
+   ],
+   "cluster": true,
+   "sources": [
+    {
+     "name": "heise online",
+     "url": "https://www.heise.de/news/Google-erleichtert-das-kostenlose-Erstellen-eigener-Android-Apps-per-KI-11487130.html",
+     "headline": "Google erleichtert das kostenlose Erstellen eigener Android-Apps per KI",
+     "kind": "portal"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/",
+     "headline": "Google Play now lets anyone build private, vibe-coded apps that run on Android",
+     "kind": "portal"
+    }
+   ]
+  }
+ ],
+ "voices": [],
+ "firehose": [
+  {
+   "label": "Roastbrief: Agenturmeldungen und Pressemitteilungen",
+   "count": 25,
+   "examples": [
+    "The customer journey no longer starts with the customer ACAM report warns",
+    "Hollywood Bowl appoints JOAN London to drive awareness and consideration of social bowling",
+    "Merkley+Partners Names Matt MacDonald Chief Creative Officer"
+   ]
+  }
+ ]
+}
