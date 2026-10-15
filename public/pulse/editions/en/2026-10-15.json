@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "generated_for": "2026-10-15",
+    "window": "2026-10-13..2026-10-15",
+    "sources_scanned": 62,
+    "items_in_window": 124,
+    "lang": "en",
+    "note": "Six pieces. Kuda's rebrand, the Michelangelo font, the Adobe clones and Google's Play Store move already ran on 14 October and are not repeated, nor is Epic's AI pivot from 13 October. Left out: Creative Bloq deals, reviews and game pieces, the member-only UX Collective essays on taste, the synth and the AI app (only openings readable), Design Week's Pentagram and Milkshake pieces (page not readable), artist portraits, Roastbrief hires and campaign releases, and the TechCrunch, Ars Technica and MIT Technology Review general tech run. The userresearchstrategist.com feed failed, six paid Substack posts were removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "The CFO does not want another case for design, he wants a comparison with engineering",
+      "blurb": "Arin Bhowmick recalls a business-unit CFO who cut off the usual pitch: he needed to know whether another million in design would outperform the same million in engineering. The piece is about answering that question in the terms finance uses. Only the opening was readable, so this note stays short.",
+      "tags": [
+        "Design value",
+        "Stakeholders"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/what-i-told-the-cfo-when-he-asked-why-design-matters-ceadb07c929e?source=rss----138adf9c44c---4",
+          "headline": "What I told the CFO when he asked why design matters",
+          "kind": "person",
+          "author": "Arin Bhowmick",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Pictoplasma gets a face from two dots and a custom typeface",
+      "blurb": "After two decades of neutral branding, andstudio gave the Berlin character-design festival the positioning line \"Never faceless\" and built the identity from type alone: an adapted Melun with a glyph for a pair of eyes. The rule carries into print, tents and a flash-tattoo booth: two dots on any object make a character. Tickets sold out six weeks before the 2026 festival, earlier than usual.",
+      "tags": [
+        "Identity",
+        "Typography",
+        "Festival"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/work/how-two-simple-dots-gave-pictoplasma-a-face-after-20-years-of-neutral-design/",
+          "headline": "How two simple dots gave Pictoplasma a fresh personality for 2026",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Pregnant Then Screwed turns the retail starburst into a pension argument",
+      "blurb": "The campaign puts giant \"33% off\" stickers over women's faces to show that the average UK woman retires with a pension pot a third smaller than a man's. Instead of a chart, it borrows a visual language everyone reads at once, and extends it to till receipts that itemise a working life down to \"-Motherhood Tax\".",
+      "tags": [
+        "Campaign",
+        "Visual metaphor",
+        "Charity"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/pregnant-then-screwed-makes-clever-use-of-simple-design-to-highlight-a-vital-gender-issue/",
+          "headline": "Pregnant Then Screwed subverts the conventions of retail design to highlight a vital gender issue",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "YouTube Music starts labelling AI-made songs, and leaves them monetisable",
+      "blurb": "Creators declare a track as Fully, Partly or No Gen AI, and the label appears on the player page. Unlike Deezer or Tidal, which label AI music and strip it from recommendations or royalties, YouTube treats it as disclosure: AI involvement alone does not rule a track out of monetisation.",
+      "tags": [
+        "Platforms",
+        "AI music",
+        "Labelling"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
+          "headline": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label",
+          "headline": "YouTube sticks new labels on AI-generated songs",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "MMGY and R&R Partners merge into one of the largest independent agencies",
+      "blurb": "The two agencies say they will have more than 800 people between them, with R&R keeping its brand and leader. Based on the press release only, so no detail on clients or structure beyond that.",
+      "tags": [
+        "Agency market",
+        "Merger"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/mmgy-and-rr-partners-join-forces-to-create-global-independent-agency-powerhouse/",
+          "headline": "MMGY and R R Partners Join Forces to Create Global Independent Agency Powerhouse",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Figma Specs gives agents a written design language to follow",
+      "blurb": "Figma's new Markdown editor lets teams define their design language, link canvas elements, code and libraries, so that Figma's own and third-party agents stick closer to a brand's rules. It is a response to non-deterministic output. Code layers move to public beta, and MCP support grows by more than 20 tools.",
+      "tags": [
+        "Figma",
+        "Agents",
+        "Design systems"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/",
+          "headline": "Figma announces new features to define how agents work on its platform",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: agency news and press releases",
+      "count": 24,
+      "examples": [
+        "Banana Republic Debuts ‘The Agency’ Micro-Mockumentary, featuring Jack Innanen, from COPE and Grand Nature",
+        "Kewpie Hits the Road to Celebrate Its Century-Old Icon’s Return to America",
+        "Tendril Studio Builds a Visual World Around Alo Yoga’s First Handbag Collection"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "generated_for": "2026-10-15",
+    "window": "2026-10-13..2026-10-15",
+    "sources_scanned": 62,
+    "items_in_window": 172,
+    "lang": "de",
+    "note": "Zwei Stücke mit deutschsprachiger Leitquelle. Gemini 4 Argon lief schon am 14. Oktober. Nicht genommen: der t3n-Beitrag „Typographic Intelligence“ (vom Monotype-Manager verfasst, endet mit Webinar-Werbung), Foundry Kingdom bei Slanted als Schriftankündigung, die Frontify-Kolumne, LinkedIn-Seminar, Vibe-Coding-Seminar, Ausstellungs- und Konferenz-Hinweise, das Agenturporträt EIGA, die t3n-Strecke aus Hardware, Astronomie, Sicherheit und KI-Regulierung sowie die heise-Entwicklerthemen. Feed userresearchstrategist.com ausgefallen, sechs bezahlte Substack-Beiträge vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Zürich Tourismus wird mit einem „Enjoy“ zur Destination Brand",
+      "blurb": "Das Studio Marcus Kraft setzt ein blaues „Enjoy“ vor die bestehende Bezeichnung „Zürich, Switzerland“ und fügt es ins Farbsystem aus den Zürcher Tramlinien ein. Mit dem Wort wechselt der Absender vom Tourismusverband zur Marke für Besucher und Bevölkerung, ohne dass ein volles Rebranding nötig war. Das Wortlogo formt sich zu einem lächelnden Mund.",
+      "tags": [
+        "Destination Brand",
+        "Corporate Design",
+        "Schweiz"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/enjoy-zuerich-tourismus-identity-wird-destination-brand-und-laechelt/",
+          "headline": "Enjoy Zürich: Tourismus-Identity wird Destination Brand – und lächelt!",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Universität Würzburg: Neues Zeichen, und eine Traditionsaussage mit Lücke",
+      "blurb": "Nach über 20 Jahren ersetzt ein Zeichen aus dem Rektoratssiegel von 1410 das Klammerlogo, entwickelt von INTO aus München. Das Design Tagebuch kritisiert die technische Anmutung und das Motto „Seit 1402“: Die heutige Universität wurde 1582 gegründet, ein durchgehender Bestand seit 1402 sei nicht belegt.",
+      "tags": [
+        "Corporate Design",
+        "Heritage",
+        "Hochschule"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "url": "https://www.designtagebuch.de/universitaet-wuerzburg-fuehrt-neues-corporate-design-ein/",
+          "headline": "Heritage-Branding mit Lücken – Universität Würzburg führt neues Corporate Design ein",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: Agenturmeldungen und Pressemitteilungen",
+      "count": 24,
+      "examples": [
+        "Banana Republic Debuts ‘The Agency’ Micro-Mockumentary, featuring Jack Innanen, from COPE and Grand Nature",
+        "Kewpie Hits the Road to Celebrate Its Century-Old Icon’s Return to America",
+        "Tendril Studio Builds a Visual World Around Alo Yoga’s First Handbag Collection"
+      ]
+    }
+  ]
+}
