@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "generated_for": "2026-10-16",
+    "window": "2026-10-14..2026-10-16",
+    "sources_scanned": 62,
+    "items_in_window": 182,
+    "lang": "de",
+    "note": "Dünner Tag, vier Stücke mit deutschsprachiger Leitquelle. Zürich Tourismus und die Universität Würzburg liefen bereits am 15. Oktober. Nicht genommen: PAGE-Seminarankündigungen, der Sponsored Post der AGD, die HAICA-Publikumspreis-Beiträge, der Spendenaufruf des Design Tagebuchs, t3n-Gadget- und Wissenschaftsmeldungen sowie die Artcraft-Analyse von t3n (Abo-Sperre)."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Zeichen & Wunder gibt Vector eine Marke für die Zeit nach Automotive",
+      "blurb": "Das Redesign folgt einer Strategie, die den Stuttgarter Softwarehersteller in MedTech, Aerospace und Bahn führen soll. Logo und Pfeil wurden zu einer Einheit zusammengezogen, das Rot heller. Interessant für die eigene Praxis: Die Agentur liefert die Gestaltungsregeln gleich als AI-ready Brand Rules mit, als Grundlage für eine KI-gestützte Anwendung der Marke.",
+      "tags": [
+        "Rebrand",
+        "Logo",
+        "AI-Markenregeln"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/vector-stelt-seine-weichen-neu-mit-einem-redesign-von-zeichen-wunder/",
+          "headline": "Vector stelt seine Weichen neu – mit einem Redesign von Zeichen Wunder",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "32 Jahre an einer Schrift: Göran Söderström schließt Exemplar ab",
+      "blurb": "Was 1994 als laute Neptuna im Geist von Ray Gun und Emigre begann, wurde über zwei Überarbeitungen ruhiger. Söderström strich die Übertreibungen, die tragfähigen Ideen blieben. Am Ende stehen zehn Schnitte mit 1018 Glyphen für Latein, Kyrillisch, Griechisch und Arabisch, ein seltener Einblick, wie lange Reifung bei einer Schrift aussieht.",
+      "tags": [
+        "Typografie",
+        "Schriftgestaltung"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/typografie/exemplar-die-ewige-schrift/",
+          "headline": "Exemplar: Die ewige Schrift",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Welche Versicherungen Designer:innen wirklich brauchen",
+      "blurb": "PAGE räumt mit drei Annahmen auf, etwa dass die private Haftpflicht reicht: Sie schließt berufliche Tätigkeit aus. Pflicht sind demnach KSK und eine Berufshaftpflicht mit Vermögensschadenhaftpflicht, denn bei Gestaltung entstehen fast immer reine Geldschäden, vom Zahlendreher im EAN-Code bis zur unlizenzierten Schrift. Die Police wehrt unberechtigte Forderungen zudem auf eigene Kosten ab.",
+      "tags": [
+        "Selbstständigkeit",
+        "Haftung",
+        "Recht"
+      ],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/weiterbildung/wenn-mal-was-schiefgeht-versicherungen-fuer-designerinnen/",
+          "headline": "Wenn mal was schiefgeht – Versicherungen für Designer:innen",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "FLUX 3 Image Klein: 4K-Bilder und Editing auf einer 8-GB-Grafikkarte",
+      "blurb": "Das neue offene Bildmodell von Black Forest Labs hat 5,6 Milliarden Parameter, erzeugt nativ in 4K und arbeitet mit bis zu zehn Referenzbildern. Auf einer RTX 4070 entsteht ein Bild in unter neun Sekunden. Kostenlos kommerziell nutzbar ist es für Firmen unter fünf Millionen Dollar Jahresumsatz.",
+      "tags": [
+        "Bildmodelle",
+        "Open Weights"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/black-forest-labs-veroeffentlicht-flux-3-image-klein-als-open-weights-modell-fuer-bilderzeugung-editing-und-4k-generierung/",
+          "headline": "Black Forest Labs veröffentlicht FLUX 3 Image Klein als Open-Weights-Modell für Bilderzeugung, Editing und 4K-Generierung",
+          "kind": "portal"
+        },
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/flux-3",
+          "headline": "Welcome FLUX.3 Image Klein in Diffusers",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: Agenturmeldungen und Pressemitteilungen",
+      "count": 25,
+      "examples": [
+        "Ogilvy Canada Names Fernando Hernandez Chief Creative Officer",
+        "Income Insurance unveils brand platform ‘For Every Story’",
+        "Only one in four UK adults recall a live brand experience – but 96% of those who do report taking action"
+      ]
+    }
+  ]
+}
