@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "generated_for": "2026-10-17",
+    "window": "2026-10-15..2026-10-17",
+    "sources_scanned": 62,
+    "items_in_window": 124,
+    "lang": "en",
+    "note": "Nine pieces. Figma Specs, Karri Saarinen's 'Someone behind the software', Cinema 4D 2027 and FLUX.3 Image Klein sit in this window but already ran on 15 or 16 October. Left out: Creative Bloq deals, game and film-trailer pieces and social-media reaction stories (Apple Music icon, Tate McRae cover), On's Ondesign platform (sponsored), the Foam Magazine talk (video only), a member-only UX Collective essay, the design/leader interview with Emma Follett, the Roastbrief run of hires and campaign releases, Muse Spark Open and the general TechCrunch, Ars Technica and MIT Technology Review tech news. The arxiv and userresearchstrategist.com feeds failed, three paid Substack posts were removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Designing agents: scale initiative to what can be undone, not to confidence",
+      "blurb": "Patrick Neeman argues that a confirm click mainly moves liability onto whoever clicked, citing Skitka's finding that people using a wrong aid were 65% accurate against 97% without one. His alternative is a reach test: what can the agent touch, can a person put it back, and drafting stays proactive while sending, paying or deleting needs a mandate set in advance.",
+      "tags": ["Agents", "UX", "Automation bias"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/designing-for-ai-human-in-the-loop-means-making-sure-the-human-is-not-out-of-the-loop-e38826309c91?source=rss----138adf9c44c---4",
+          "headline": "Human in the loop means making sure the human is not out of the loop",
+          "kind": "person",
+          "author": "Patrick Neeman"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "When the assistant gets the invoice wrong, content design has to own the semantics",
+      "blurb": "Kate Agena walks through an enterprise assistant that reports an invoice as approved while it is blocked for payment, and shows the cause can sit in retrieval, data or interpretation, each owned by a different team. Her case: content designers should help shape taxonomies, ontologies and knowledge graphs, because a wrong equivalence in the model surfaces as a UX problem.",
+      "tags": ["Content design", "Enterprise AI", "Information architecture"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/the-ai-experience-doesnt-care-about-your-org-chart-5ed595c7b373?source=rss----138adf9c44c---4",
+          "headline": "The AI experience doesn’t care about your org chart",
+          "kind": "person",
+          "author": "Kate Agena, PhD"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Figma launches its agent with a dance film instead of a feature tour",
+      "blurb": "For the Figma Agent leaving beta, IVERSON skipped the walkthrough and staged the design process itself, from blank page to flow, as choreography by Tony Testa. The film was shot almost entirely in camera with live performance, moving sets and practical effects, a deliberate contrast to AI launch ads that explain the product.",
+      "tags": ["Campaign", "Launch film", "Figma"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/figma-finally-answers-the-question-of-what-design-feels-like-using-dance",
+          "headline": "Figma finally answers the question of what design feels like – using dance",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Dutch rail and 113 build a suicide prevention campaign on the 135 lives behind each case",
+      "blurb": "Yune took the figure that a single suicide affects about 135 people, from relatives to train drivers, as the creative insight, aiming for a mental barrier without guilt. The campaign is layered: a cinematic main film, a social series of paired conversations, staff explainers, and a platform with concrete steps for people at risk and bystanders.",
+      "tags": ["Campaign", "Public health", "Strategy"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/railway-sector-steps-out-together-for-the-first-time-in-suicide-prevention-campaign-with-113/",
+          "headline": "Railway sector steps out together for the first time in suicide prevention campaign with 113",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "YARD NYC turns 'Send Nudes' into a breast self-check reminder",
+      "blurb": "Starting from a survey finding that 62.6% of women were not confident they would notice a change, the agency asks women to photograph themselves every six months as a reference. Wild postings with a QR code lead to a site that reveals the recipient is yourself and lists visible warning signs.",
+      "tags": ["Campaign", "OOH", "Health"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/provocative-breast-cancer-awareness-campaign-wants-women-to-send-nudesto-themselves/",
+          "headline": "Provocative Breast Cancer Awareness Campaign Wants Women to Send Nudes…To Themselves",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Pentawards 2026: a wine label grown from the winemaking waste",
+      "blurb": "Studio Sonda won the Diamond for Piquentum Brut Nature, a label made from fermentation sediment and the winemaker's waste paper that grows cave mould as proof of age. The Platinums share a pattern the jury named: structure and graphics doing one job, as in the Heinz fry carton whose dip pocket takes the keystone shape and replaces the plastic pot.",
+      "tags": ["Packaging", "Awards", "Sustainability"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/pentawards-2026-living-wine-labels-keystone-dippers-and-20-years-of-structural-packaging/",
+          "headline": "Pentawards 2026: Living Wine Labels, Keystone Dippers, and 20 Years of Structural Packaging",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Meta's new business terms allow crawling and AI training on linked websites",
+      "blurb": "From 30 October, any business account agrees that Meta may crawl domains associated with it, create test credentials and use the content to 'train' its products, with no opt-out other than leaving. Meta says robots.txt still applies and the aim is product data; legal experts quoted by Nieman Lab say the terms could be used to argue otherwise. Relevant for any studio running a Meta business page.",
+      "tags": ["AI training", "Terms of service", "Rights"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
+          "headline": "Meta may use sweeping new commercial TOS to avoid millions in AI licensing fees",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
+          "headline": "Meta’s new terms may allow it to train AI on news sites for free",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "A $20,000 guide price for the MrBeast logo sketch reopens the logo pricing question",
+      "blurb": "Heritage Auctions values a ten-minute pencil sketch by an unnamed designer at $20,000. Creative Bloq uses it to restate that time is a weak basis for pricing a mark, with Carolyn Davidson's $35 Swoosh fee as the counterexample, and that the value sits in the rights and the brand, not the drawing.",
+      "tags": ["Logo", "Pricing", "Authorship"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/the-usd20-000-mrbeast-logo-auction-isnt-as-ridiculous-as-it-seems",
+          "headline": "The $20,000 MrBeast logo auction isn't as ridiculous as it seems",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Nvidia's local Hermes agent in Blender: simple edits yes, multi-step jobs no",
+      "blurb": "A Blender beginner tested the agent on an RTX Spark laptop. Warmer lighting, a before-and-after export and a quick mouse model worked via scripts; moving a model into another scene was still unfinished after about an hour and a half, with the agent narrating itself in circles. Useful as a starting point, not yet as the promised teammate.",
+      "tags": ["Agents", "Blender", "Local AI"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/features/i-asked-nvidia-sparks-ai-agent-to-run-blender-for-me-heres-what-happened",
+          "headline": "I used Nvidia RTX Spark's AI agent to run Blender – here's what happened",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: agency news and press releases",
+      "count": 23,
+      "examples": [
+        "M+C Saatchi Sport Entertainment Promotes Conall McAteer to UK Executive Creative Director",
+        "ROVE Launches New Brand Identity and Website, Signs Ashley McKim Consulting",
+        "Pepsi® and Off Season Give Great Taste a One-of-a-Kind Tailgate Fit with Mini NFL Puffer Can Jackets"
+      ]
+    }
+  ]
+}

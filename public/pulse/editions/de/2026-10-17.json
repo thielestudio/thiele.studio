@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "generated_for": "2026-10-17",
+    "window": "2026-10-15..2026-10-17",
+    "sources_scanned": 62,
+    "items_in_window": 173,
+    "lang": "de",
+    "note": "Sehr dünner Tag, ein Stück mit deutschsprachiger Leitquelle. Vector, Exemplar, die Versicherungen für Designer:innen und FLUX 3 Image Klein liefen bereits am 16. Oktober. Nicht genommen: zwei PAGE-Masterclass-Ankündigungen, der Glückwunsch-Beitrag der AGD, die HAICA-Publikumspreis-Beiträge, die Ausstellung »Make It Make Sense«, der Spendenaufruf des Design Tagebuchs, Sonata und die Buchmesse bei slanted (englischer Text), Muse Spark Open und weitere allgemeine KI-Meldungen bei The Decoder und heise sowie t3n-Gadget- und Wissenschaftsmeldungen."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "ActiFresh: Studio Thom Pfister holt eine Zutatenmarke aus der Hygiene-Ecke",
+      "blurb": "Die antimikrobielle Ausrüstung von Sanitized für Sportbekleidung soll nicht mehr nach Funktion aussehen, sondern frisch und modisch. Getragen wird das von einem kleinen dreieckigen Zeichen, das aus der Rundung des h kommt und als Muster, Bildüberlagerung oder einzelnes Element durch den Auftritt wandert. Dazu ein Manual für den Einsatz auf internationalen Märkten.",
+      "tags": ["Rebrand", "Ingredient Brand", "Logo"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/so-kann-ein-brand-gegen-geruchsbildende-bakterien-aussehen/",
+          "headline": "So kann ein Brand gegen geruchsbildende Bakterien aussehen!",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief: Agenturmeldungen und Pressemitteilungen",
+      "count": 25,
+      "examples": [
+        "M+C Saatchi Sport Entertainment Promotes Conall McAteer to UK Executive Creative Director",
+        "ROVE Launches New Brand Identity and Website, Signs Ashley McKim Consulting",
+        "OAAA Announces Winners of the 84th Annual OBIE Awards"
+      ]
+    }
+  ]
+}
