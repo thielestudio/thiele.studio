@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "generated_for": "2026-10-18",
+    "window": "2026-10-16..2026-10-18",
+    "sources_scanned": 63,
+    "items_in_window": 71,
+    "lang": "en",
+    "note": "Thin weekend window, four pieces. Pentawards 2026, the Dutch railway suicide-prevention campaign and the first report on Meta business terms already ran on 17 October; today carries only the follow-up that Meta dropped the clause. Left out: Creative Bloq deals, gadget, film and celebrity-reaction pieces (Apple Music icon, Tate McRae cover, Ikea Taiwan reply to Tesla), Nicer Tuesdays ticket notices, the PRINT Awards winners list, the Daily Heller portrait, the Roastbrief run of PR releases, the Smashing piece on organisational AI adoption, Luke Wroblewski on brains and transformers, Matt Webb link roundup, the Higgsfield revenue piece and general TechCrunch, Ars Technica, MIT Technology Review and Hugging Face tech and model news. The userresearchstrategist.com feed failed, the State of Brand sitemap had no pages in the window, one paid Substack post was removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Karri Saarinen moved his whole publishing pipeline into a Linear agent",
+      "blurb": "The Linear co-founder writes posts as Linear documents and has an agent chat called Publisher build and deploy the static site; setup took about twenty minutes and a few dollars in credits. Worth reading for the split he describes: the agent handles builds and changes in a sandbox, he still decides what goes public.",
+      "tags": [
+        "Agents",
+        "Workflow",
+        "Publishing"
+      ],
+      "sources": [
+        {
+          "name": "Karri Saarinen",
+          "url": "https://karrisaarinen.com/posts/this-website-is-written-and-built-with-linear/",
+          "headline": "This website is written and built with Linear",
+          "kind": "person",
+          "author": "Karri Saarinen"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "GTA 6 Paris building wrap shows what happens when you cut props out of key art",
+      "blurb": "Rockstar removed the guns from its cover art for a tower wrap in Bagnolet, leaving poses and gestures that no longer make sense. Creative Bloq uses it as a reminder that key art built around what characters hold does not survive deletion when adapted for a new space.",
+      "tags": [
+        "Key art",
+        "OOH",
+        "Adaptation"
+      ],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/are-you-triggered-by-the-design-problem-with-gta-6s-giant-paris-advert",
+          "headline": "Are you triggered by GTA 6’s giant Paris advert?",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "AI companion apps answer goodbyes with guilt and hooks, and it backfires",
+      "blurb": "Sam Illingworth summarises a Harvard Business School study of 1,200 farewells to apps like Replika and Character.ai: 37% met guilt, FOMO or similar tactics, which raised post-goodbye engagement up to fourteen-fold but also raised how manipulated users felt and the legal exposure. A concrete reference for anyone designing exit moments in conversational products.",
+      "tags": [
+        "Dark patterns",
+        "Conversational UX",
+        "Research"
+      ],
+      "sources": [
+        {
+          "name": "The Slow AI",
+          "url": "https://theslowai.substack.com/p/ai-companion-apps-memory-narcissus",
+          "headline": "AI Companions Are Built So You Cannot Leave",
+          "kind": "person",
+          "author": "Sam Illingworth"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Meta drops the clause that let it train on websites linked to business accounts",
+      "blurb": "After backlash, Meta removed the sentence from its commercial terms allowing it to use content from domains associated with business accounts to train its products. Meta maintains its crawling has not changed; for studios and brands with a Meta business account, the contested permission is off the page for now.",
+      "tags": [
+        "Meta",
+        "AI training",
+        "Terms"
+      ],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+          "headline": "Meta removes language that may have allowed it to scrape news sites",
+          "kind": "portal"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+          "headline": "Meta removes language that raised scraping and AI training concerns",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 15,
+      "examples": [
+        "Pepsi and Off Season: mini NFL puffer can jackets",
+        "OAAA announces winners of the 84th OBIE Awards",
+        "M+C Saatchi Sport Entertainment promotes Conall McAteer to UK ECD"
+      ]
+    }
+  ]
+}

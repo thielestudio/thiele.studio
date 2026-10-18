@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "generated_for": "2026-10-18",
+    "window": "2026-10-16..2026-10-18",
+    "sources_scanned": 63,
+    "items_in_window": 114,
+    "lang": "de",
+    "note": "Sehr dünnes Wochenende, ein Stück mit deutschsprachiger Leitquelle. Zürich Tourismus, Vector und die Versicherungen für Designer:innen liefen bereits am 15. und 16. Oktober. Nicht genommen: die PAGE-Masterclass- und Seminar-Ankündigungen, der gesponserte Glückwunsch der AGD, die HAICA-Publikumspreis-Beiträge, die Buchmesse bei slanted (englischer Text), der Three.js-Beitrag bei t3n (Bezahlschranke), der KI-Film mit Oscar-Ambitionen, der Nano-Banana-Kurs, allgemeine KI-Meldungen bei The Decoder und heise sowie t3n-Gadget-, Verbraucher- und Wissenschaftsmeldungen."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Ärzte ohne Grenzen legt Magazinen eine Parfümprobe bei, die nach Desinfektionsmittel riecht",
+      "blurb": "Mediaplus kopiert für die Hilfsorganisation das Format der Parfümanzeige bis zum Flakon und schaltet es in Cosmopolitan, Brigitte oder Gala, also genau dort, wo sonst Duftproben liegen. Geöffnet riecht die Probe nach Desinfektionsmittel statt nach Duft. Dazu kommen Postkarten über Flaconi und digitale Plakate vor Parfümerien.",
+      "tags": [
+        "Kampagne",
+        "Print",
+        "Charity"
+      ],
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/so-riecht-das-parfuem-von-aerzte-ohne-grenzen/",
+          "headline": "So riecht das Parfüm von Ärzte ohne Grenzen",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 15,
+      "examples": [
+        "Pepsi and Off Season: mini NFL puffer can jackets",
+        "OAAA announces winners of the 84th OBIE Awards",
+        "M+C Saatchi Sport Entertainment promotes Conall McAteer to UK ECD"
+      ]
+    }
+  ]
+}
