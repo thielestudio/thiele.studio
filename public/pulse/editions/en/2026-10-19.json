@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "generated_for": "2026-10-19",
+    "window": "2026-10-17..2026-10-19",
+    "sources_scanned": 63,
+    "items_in_window": 31,
+    "lang": "en",
+    "note": "Very thin weekend window, two pieces. Pentawards 2026 and both Meta business-terms reports already ran on 17 and 18 October. Left out: two member-only UX Collective essays (brand foundation with Claude, streak design), the Department of Product briefing (its lead, Figma Code Layers, ran on 15 October), Karri Saarinen's essay on ambition, Luke Wroblewski on brains and transformers, Matt Webb link roundup, Creative Bloq deals, gadget and celebrity-reaction pieces (Lily Allen FYC poster, Olivia Rodrigo AI allegations, Angry Birds poster), the Speedo marathon release at Roastbrief and general TechCrunch, The Verge, Ars Technica and Interconnects AI-industry news. The userresearchstrategist.com feed failed, three paid Substack posts were removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Design in code, not in pictures of it: the prototype becomes the source, the file a mirror",
+      "blurb": "Jon Sabutis reviews code prototypes and regenerates the design file from them after each pass, because a file shows one state at one width while the product is every other state. Worth reading for the closing list of what designers should learn instead of syntax: layout flow, empty and failed states, data shape, what a screen reader announces, and testing at 320 pixels with the longest real name.",
+      "tags": [
+        "Prototyping",
+        "Code",
+        "AI"
+      ],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/design-in-the-material-you-ship-7adf198388ee?source=rss----138adf9c44c---4",
+          "headline": "Design in the material you ship",
+          "kind": "person",
+          "author": "Jon Sabutis",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "A US lawsuit over an AI-generated meme character tests how many prompts make a work protectable",
+      "blurb": "Do Big Studios is suing in a California federal court after receiving a cease and desist over Tung Tung Tung Sahur, a character its teenage creator generated with seven prompts in about fifteen minutes. The piece spells out the client stakes either way: if prompts are not enough, AI-assisted logos and characters may be free to copy; if they are, clients may ask why they pay for handmade work.",
+      "tags": [
+        "Copyright",
+        "Generative AI",
+        "Law"
+      ],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/this-weird-legal-case-could-change-how-we-think-of-copyright-forever",
+          "headline": "This weird legal case could change how we think of copyright forever",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 1,
+      "examples": [
+        "Speedo Takes Over Toronto Marathon Weekend to Highlight Swimming as the Ultimate Endurance Complement"
+      ]
+    }
+  ]
+}

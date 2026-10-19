@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "generated_for": "2026-10-19",
+    "window": "2026-10-17..2026-10-19",
+    "sources_scanned": 63,
+    "items_in_window": 66,
+    "lang": "de",
+    "note": "Sehr dünnes Wochenende, ein Stück mit deutschsprachiger Leitquelle. Zürich Tourismus und Ärzte ohne Grenzen liefen bereits am 15. und 18. Oktober. Nicht genommen: die PAGE-Seminarankündigung, der HAICA-Publikumspreis-Beitrag, das LinkedIn-Interview bei t3n, Anthropics Junior-Einstellungen, das Aachener Urteil zur KI-Haftung von Google, Taste-Bench und weitere allgemeine KI-Meldungen bei The Decoder und heise sowie t3n-Gadget-, Verbraucher- und Wissenschaftsmeldungen."
+  },
+  "stories": [
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Bild- und Video-KI auf der Arbeitsfläche statt im Chat: Flora, Krea, Magnific Spaces und Figma Weave",
+      "blurb": "Der Text erklärt, warum knotenbasierte Werkzeuge das Konsistenzproblem lösen: Referenzbilder liegen einmal auf der Fläche, eine Änderung am ersten Baustein läuft durch alle Schritte bis zum Video. Brauchbar ist der Praxisfall von Adrian Rohnfelder mit seiner Einschränkung, dass ein Entwurf in unter einer Stunde steht, ein Kundenprojekt aber Tage braucht, dazu der Hinweis auf schnell schwindende Credits bei Video.",
+      "tags": [
+        "Bild-KI",
+        "Video-KI",
+        "Werkzeuge"
+      ],
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/ki-bilder-videos-konsistente-workflows-1731511/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "KI-Bilder und Videos: Die neue Methode für konsistente Ergebnisse",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 1,
+      "examples": [
+        "Speedo Takes Over Toronto Marathon Weekend to Highlight Swimming as the Ultimate Endurance Complement"
+      ]
+    }
+  ]
+}
