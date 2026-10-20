@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "generated_for": "2026-10-20",
+    "window": "2026-10-18..2026-10-20",
+    "sources_scanned": 63,
+    "items_in_window": 138,
+    "lang": "de",
+    "note": "Drei Stücke mit deutschsprachiger Leitquelle. Nicht genommen: die ADC-Einreichungskampagne von DixonBaxi (Call for Entries), der PAGE-Online-Short zum KI-Einstieg und die HAICA-Abstimmung (Ankündigungen), das Slanted-Buch SEJONG NEØ-X, der Großteil von t3n (Robotik, Mobilfunk, Krypto, Fritzbox) sowie Branchen- und Rechtsnachrichten von The Decoder und heise ohne Bezug zu kreativer Arbeit."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "MetaDesign: Markenpersönlichkeit muss maschinenlesbar werden, bevor KI sie ausspielt",
+      "blurb": "Lisa Krick, Head of Strategy bei MetaDesign, beschreibt im Interview eine Renaissance der Marke als Konstante gegen die KI-Reizflut. Ihr praktischer Punkt: Persönlichkeit und Haltung müssen erst existieren und dann eindeutig für Maschinen aufbereitet werden, mit klaren Regeln, was eine Marke im Dialog darf und woran man das misst.",
+      "tags": ["Markenführung", "KI", "Strategie"],
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/branche-karriere/marken-muessen-immer-die-kontrolle-behalten/",
+          "headline": "»Marken müssen immer die Kontrolle behalten«",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Sigma BF: Reduktion heißt Komplexität ordnen, nicht Funktionen streichen",
+      "blurb": "Die Kamera wird aus einem Aluminiumblock gefräst, statt Einstellrädern gibt es drei Tasten und ein Steuerkreuz für fünf Parameter, selbst der Kartenschacht fehlt. PAGE zieht daraus eine Lehre, die auch für UX gilt, und stellt die Bilder des Fotografen Jean Noir daneben.",
+      "tags": ["Produktdesign", "Reduktion", "Interface"],
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/mehr-platz-fuer-neue-perspektiven-die-sigma-bf/",
+          "headline": "Mehr Platz für neue Perspektiven: die Sigma BF",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Kling 4.0 erlaubt 30-Sekunden-Clips mit zehn Keyframes und Storyboards als Referenz",
+      "blurb": "Bis zu 15 Referenzen pro Generierung, darunter Storyboards, Wireframes und Depth-Map-Videos, dazu gezielte Nachbearbeitung einzelner Elemente und Zugriff über MCP und CLI. Im Vergleich mit Wan 3.0 und Seedance 2.5 hält Kling laut The Decoder mit, liegt aber bei Bildlogik und Physik nicht vorn. HDR-Ausgabe und Verlängerung auf zwei Minuten sind noch nicht freigeschaltet.",
+      "tags": ["Video", "Generative KI", "Werkzeuge"],
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/ki-videogenerator-kling-ai-4-0-will-mit-mehr-kontrolle-die-luecke-zur-professionellen-videoproduktion-schliessen/",
+          "headline": "KI-Videogenerator Kling AI 4.0 will mit mehr Kontrolle die Lücke zur professionellen Videoproduktion schließen",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 21,
+      "examples": [
+        "Audi and Twenty Turn Advertising Billboards into Directions That Could Save Lives",
+        "Which? launches bold new brand positioning to become ‘The answer you can trust’ in an era of misinformation",
+        "Crossmedia Names Avi Ben-Zvi Managing Director, Head of Social"
+      ]
+    }
+  ]
+}

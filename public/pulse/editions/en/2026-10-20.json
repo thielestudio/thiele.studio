@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "generated_for": "2026-10-20",
+    "window": "2026-10-18..2026-10-20",
+    "sources_scanned": 63,
+    "items_in_window": 100,
+    "lang": "en",
+    "note": "Mid-sized window, seven pieces, no Design Practice or AI Models entries. Already covered in earlier editions and left out: Pentagram's Design Doha Biennial identity (14 Oct), Figma Code Layers via Department of Product (15 Oct), Jon Sabutis on designing in code and the brainrot copyright case (both 19 Oct). Also left out: Krea 3 at Creative Boom and the Adobe 99U piece at It's Nice That (both sponsored), a member-only UX Collective essay on brand foundations with Claude, essays by Karri Saarinen and Andrew Boardman without a transferable core, Fulham FC and Otherwander identities (brand quota), Which? positioning release, Creative Bloq reviews and celebrity posters, and general TechCrunch, The Verge, Ars Technica and MIT Technology Review AI-industry news. The userresearchstrategist.com feed failed, five paid Substack posts were removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Collins builds Remote's identity on one rule: every cube converges on the same vanishing point",
+      "blurb": "The payroll platform's new system uses a stackable cube as a nod to infrastructure, drawn flat, in one-point perspective or isometric, plus a custom blocky wordmark and a palette taken from banknotes. The useful detail is the constraint: however many cubes appear, all perspective edges meet at one point, which keeps a flexible system reading as one.",
+      "tags": ["Identity", "Visual system", "Rebrand"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/work/collins-centres-a-new-identity-for-a-payroll-platform-on-banknote-colours-and-building-blocks/",
+          "headline": "Collins centres Remote s new identity on banknote colours and building blocks",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Kiwibank's mascot escaped, and the takedown campaign made it worse",
+      "blurb": "After its AI-animated sheep Buck went viral for the wrong reasons, the bank filed copyright claims and turned a passing meme into a censorship story. The piece argues that audiences now treat popular mascots as remixable cultural property, and contrasts Kiwibank with McDonald's, which let the Grimace Shake trend run without intervening.",
+      "tags": ["Mascots", "Brand control", "Social"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/the-kiwibank-sheep-controversy-suggests-brands-should-give-up-trying-to-control-ai-mascots",
+          "headline": "The Kiwibank sheep went viral for all the wrong reasons, and there's something every brand can learn from it",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Audi Denmark turns billboards into road directions to the nearest blood donation centre",
+      "blurb": "Twenty's \"Powered by Detour\" swaps the ad message for navigation language, such as \"Turn right in 250 metres and save up to three lives\", with each site pointing to a real centre nearby in seven Danish cities. A clean example of a brand using its own territory, mobility, to shorten the gap between intent and action.",
+      "tags": ["OOH", "Campaign", "Cause"],
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/audi-and-twenty-turn-advertising-billboards-into-directions-that-could-save-lives/",
+          "headline": "Audi and Twenty Turn Advertising Billboards into Directions That Could Save Lives",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "If everyone researches on synthetic customers, real ones become the differentiator",
+      "blurb": "State of Brand collects how Kenvue, Goodway, WPP and others now test against simulated buyers, and notes that even vendors say the models drift toward the most common answer. Its argument: when competitors ask similar models similar questions, positioning converges, and named customers speaking on the record become the material no model can produce.",
+      "tags": ["Positioning", "Research", "Synthetic users"],
+      "sources": [
+        {
+          "name": "State of Brand",
+          "url": "https://www.thestateofbrand.com/news/synthetic-customers-market-research-brand-storytelling",
+          "headline": "Synthetic Customers Are Taking Over Market Research. It's the Best News Brand Storytellers Have Had in Years. | State of Brand",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Singapore's A4 paper signs show where an official wayfinding system stopped keeping up",
+      "blurb": "Station managers fill the MRT with self-made printouts next to the professional signage, and the author reads them as evidence that the network outgrew its system rather than as an aesthetic problem. Includes the history of the official redesigns since 2001, useful for anyone judging when a signage system needs rethinking instead of patching.",
+      "tags": ["Wayfinding", "Signage", "Public design"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/the-view-from-singapore-rmt-paper-signs-graphic-design-191026",
+          "headline": "Design disasters or creative solutions? The self-made paper signs replacing wayfinding in Singapore’s railway stations",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Indie game developers stop showing early work because AI clones arrive before launch",
+      "blurb": "Alliance Arts pulled its Steam Next Fest demo into closed sessions, and Freya Holmér saw vibe-coded copies of a shared prototype within days. The same bind applies to any creative studio that markets through work in progress: showing builds the audience, and now also hands over the idea.",
+      "tags": ["Games", "Cloning", "IP"],
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/gaming/2026/10/ai-game-clones-are-making-indie-developers-afraid-to-show-their-work/",
+          "headline": "AI game clones are making indie developers afraid to show their work",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Almost half of marketing teams replaced tasks with AI this year, few measure the payoff",
+      "blurb": "Basis surveyed 184 marketers: 47.8% replaced human tasks with AI, up from 27.9%, but only 6.5% measure the investment against benchmarks. Agents now draft campaign briefs in 56.4% of teams and create content in 45.7%, which State of Brand reads as the junior job description disappearing first.",
+      "tags": ["Survey", "Agencies", "Junior roles"],
+      "sources": [
+        {
+          "name": "State of Brand",
+          "url": "https://www.thestateofbrand.com/news/marketing-ai-replacing-tasks-roi-measurement",
+          "headline": "Half of Marketing Teams Are Replacing People With AI. Almost Nobody Can Prove It's Working | State of Brand",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 20,
+      "examples": [
+        "Which? launches bold new brand positioning to become ‘The answer you can trust’ in an era of misinformation",
+        "Greene King shines a light on its brewing heritage as its beer slides into the hands of pub goers across centuries in new campaign from Neverland",
+        "Crossmedia Names Avi Ben-Zvi Managing Director, Head of Social"
+      ]
+    }
+  ]
+}
