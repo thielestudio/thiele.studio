@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "generated_for": "2026-10-21",
+    "window": "2026-10-19..2026-10-21",
+    "sources_scanned": 63,
+    "items_in_window": 202,
+    "lang": "de",
+    "note": "Zwei Stücke mit deutschsprachiger Leitquelle. Das MetaDesign-Interview, die Sigma BF und Kling 4.0 liefen am 20. Oktober. Nicht genommen: die ADC-Einreichungskampagne von DixonBaxi (Call for Entries mit Fristen), das PAGE-Webinar zu KI-Recht und der Online-Short zum KI-Einstieg (Ankündigungen), die HAICA-Abstimmungen, Dysarium und SEJONG NEØ-X bei Slanted, bei The Decoder die Sprachmodelle von ElevenLabs und Mistral sowie Modell- und Behördenmeldungen ohne Bezug zu kreativer Arbeit, bei t3n und heise der gesamte Rest (Raumfahrt, Router, Phishing, Linux). Der Feed userresearchstrategist.com ist ausgefallen, fünf bezahlte Substack-Beiträge wurden vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "HUK24: wirDesign macht die Lücke im Logo zum Markencode",
+      "blurb": "Der »Tag«, abgeleitet aus der Form zwischen K und Pfeil, markiert Inhalte, strukturiert Webansichten, wird mit Farbe unterlegt zum Muster und trägt Illustrationen durch die Versicherungsleistungen. Dazu ein modulares Illustrationssystem mit Hunderten Motiven, das vom Icon bis zum Header skaliert, und die Hausschrift HUK24 Sans auf Basis der quelloffenen Figtree. Lesenswert als Beispiel dafür, wie ein Digitalversprechen aus vorhandener Logo-Form statt aus neuen Zeichen gebaut wird.",
+      "tags": ["Rebranding", "Designsystem", "Illustration"],
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/smart-lebendig-vor-allem-digital-first-wirdesign-redesignt-huk24/",
+          "headline": "Smart, lebensnah digital: wirDesign redesignt HUK24",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Weil am Rhein: drei Kreise statt Stadtsilhouette, und ein Baukasten gegen Sonderlösungen",
+      "blurb": "Das Signet von Boros liest sich als Weinbeeren aus dem Wappen, als Tropfen oder als Deutschland, Frankreich und Schweiz, angeordnet wie die drei Staaten im Dreiländereck, gesetzt neben einer dreizeiligen Wortmarke in GT Standard, Hausschrift Mona Sans. Das Konzept umfasst eine Logo-Systematik für Verwaltungsbereiche und Stadtwerke sowie einen Website-Baukasten, der eigene Entwicklungen überflüssig machen soll. Achim Schaffrinna hat Vergabe und Pitch beratend begleitet und saß in der Jury, das steht im Text.",
+      "tags": ["Stadtmarke", "Corporate Design", "Signet"],
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "url": "https://www.designtagebuch.de/abstraktion-statt-silhouette-weil-am-rhein-praesentiert-sich-mit-neuem-corporate-design/",
+          "headline": "Abstraktion statt Silhouette – Weil am Rhein präsentiert sich mit neuem Corporate Design",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "Spotify Launches Its Largest Global Campaign to Date to Turn Downtime into Podcasts on Spotify",
+        "Dentsu Creative Appoints Michael Aimette as U.S. Chief Creative Officer",
+        "Idaho Is Already the Best Anti-Drug Ad"
+      ]
+    }
+  ]
+}

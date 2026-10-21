@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "generated_for": "2026-10-21",
+    "window": "2026-10-19..2026-10-21",
+    "sources_scanned": 63,
+    "items_in_window": 155,
+    "lang": "en",
+    "note": "Full window, eleven pieces across all five themes. Already covered on 20 October and left out again: Collins for Remote, the Kiwibank sheep, Singapore's paper signs, synthetic customers, the Basis AI survey and the indie game clones; Fulham FC and Pentagram's Doha identity ran earlier. Also left out: three member-only UX Collective essays (Kai Wong on bad-day research, Hiroshi Sato on feedback design, plus the weekly roundup), Studio Herrström's Milkshake identity and the VisitOSLO sequel (brand quota), Diplomático's relaunch release, the third Meta commercial-terms update (two earlier rounds already ran), the Adobe 99U piece and Krea 3 (sponsored), Lightroom's one-tap Open Eyes, PRINT Awards winners, the Erotic Review essay on platform blocking, Darshita Patankar's viral showreel, Creative Bloq deals, reviews and poster reactions, Roastbrief appointments and account wins, and general TechCrunch, The Verge, Ars Technica, Hugging Face and MIT Technology Review AI-industry news. The userresearchstrategist.com feed failed, five paid Substack posts were removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Agents log six hours per human hour, so reading time needs a budget like page load",
+      "blurb": "Patrick Neeman works through Anthropic's own study of how agents changed its work: sessions idle 80 percent of the time waiting for a person, and reading all output would take more than half the week even for non-coders. His seven steps are old UX material applied to a new sender: set a reading budget per workflow, make agents justify a severity level so routine requests stay in a digest, show what changed next to what existed in review, and write decisions where agents can read them.",
+      "tags": ["Agents", "Attention", "Review"],
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/anthropic-october-2026-study-human-attention-is-the-new-old-bottleneck-d7bc4642668a?source=rss----138adf9c44c---4",
+          "headline": "Human attention is the new old bottleneck. We have to design for it even more.",
+          "kind": "person",
+          "author": "Patrick Neeman",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "CSS random() lands in Safari and Chrome, and Smashing asks where a design system can afford imperfection",
+      "blurb": "Brecht De Ruyte builds demos with the new native function, from slightly tilted type to splayed cards and a punk fanzine, with no JavaScript or Sass loops generating hundreds of static rules. The syntax is a min, max and optional step in matching units. His argument for design-system people: pixel-perfect grids, and the sameness of unguided LLM layouts, make interfaces sterile, and a few degrees of controlled chaos read as handmade.",
+      "tags": ["CSS", "Design systems", "Craft"],
+      "sources": [
+        {
+          "name": "Smashing Magazine",
+          "url": "https://smashingmagazine.com/2026/10/embracing-playful-imperfection-css-random-function/",
+          "headline": "Embracing Playful Imperfection With The CSS `random()` Function",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "The Body Shop promotes the Pod from supporting device to the organising principle of its packaging",
+      "blurb": "Together Design London rebuilt the Body Butter and Bath & Body range around a graphic asset from the brand's own history, set on the heritage green of Anita Roddick's first Brighton store, with Sally Caulwell's ingredient illustrations inside it giving each product its own personality. The case is about scale: one silhouette that stays recognisable across a large portfolio of formats and names, with individuality handled inside the shape rather than by changing it.",
+      "tags": ["Packaging", "Brand equity", "Heritage"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/the-body-shop-returns-the-pod-to-its-packaging/",
+          "headline": "The Body Shop returns the Pod to its packaging",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Twinnin's rebrand turns face-mapping coordinates and hologram tints into a Verified Human mark",
+      "blurb": "UnitedUs reduced the consent registry for faces to four words, \"Your face. Your control.\", and two badges, Licence and Defend, with the logo built from facial-recognition points and finished in the security-label holography of DVDs and game cartridges. Every person in the imagery is a verified user. A clear example of a brand borrowing visual codes of protection to explain a product people have not needed before.",
+      "tags": ["Identity", "AI likeness", "Trust mark"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/can-a-trust-mark-keep-your-face-out-of-ai-unitedus-thinks-so-with-its-rebrand-for-twinnin/",
+          "headline": "Can a trust mark keep your face out of AI? UnitedUs thinks so with its rebrand for Twinnin",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Bud Rodecker: a rebrand measured on launch day is the wrong test, measure whether it is still in use a decade later",
+      "blurb": "The Span partner takes HBO Max and Jaguar as cases of brands treating equity as disposable, and sets against them institutions he designs for, where an identity has to absorb new stories for decades without losing recognition. The useful part is the closing list: build on principles not trends, design systems not artefacts, leave room for evolution, prioritise clarity over novelty, invest in typography and proportion over gimmicks, and balance consistency with relevance.",
+      "tags": ["Brand strategy", "Longevity", "Identity systems"],
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/does-brand-design-have-a-longevity-problem/",
+          "headline": "Does brand design have a longevity problem?",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Idaho's anti-drug campaign shows no drugs: sixteen uncut moments, one line of copy, local shooters",
+      "blurb": "Drake Cooper's spots are single-shot fifteen-second clips of everyday life, pizza night, a summit with friends, a baby laughing, with \"This is an anti-drug ad\" appearing midway and fading again. No spokesperson, no logo sign-off. The production model is as transferable as the idea: one brief and one rule to fourteen filmmakers across the state, clips licensed from nine, six weeks from brief to air.",
+      "tags": ["Campaign", "Public health", "Production"],
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/idaho-is-already-the-best-anti-drug-ad/",
+          "headline": "Idaho Is Already the Best Anti-Drug Ad",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Laurenz Brunner's Dictionary of the Illegible argues that illegible is not the same as unreadable",
+      "blurb": "The Source Type book collects metal band logos, grawlixes, emoji codes and messages built to slip past online censors, and reads them as typography that communicates by exclusion and texture. In the interview Brunner refuses the good-versus-bad typography distinction: what looks dysfunctional in one context carries meaning in another, and writing has stayed tied to semantic logic long after art embraced abstraction.",
+      "tags": ["Typography", "Publication", "Judgment"],
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/features/sourcetype-laurenz-brunner-dictionary-of-the-illegible-graphic-design-publication-spotlight-191026",
+          "headline": "Source Type's Dictionary of the Illegible explores what happens when typography stops making sense",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Boltgun 2's retro pixels are 3D models shot from eight angles and flattened into sprite sheets",
+      "blurb": "Lead artist Mark Chambers explains that the sprites carry normal, ambient occlusion and emission data and are projected onto billboarded planes, so the surface stays crisp and uniformly spaced while modern lighting runs underneath. The craft lesson is the limit they chose to keep: silhouettes that read instantly at speed, with the Warhammer detail squeezed into them rather than rendered.",
+      "tags": ["Pixel art", "Game art", "Process"],
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/3d/video-game-design/warhammer-40-000-boltgun-2s-lead-artist-reveals-how-they-made-pixel-art-feel-authentically-retro",
+          "headline": "Warhammer 40,000: Boltgun 2's lead artist reveals how they made pixel art feel authentically retro",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "October's agency moves: strategy heads everywhere, no 'AI specialist' in any release, and measurement written into briefs",
+      "blurb": "Creative Boom's monthly roundup reads four new strategy leads at Landor, Small World, Dalziel & Pow and FutureBrand as agencies doubling down on what AI cannot do, while ustwo puts a former creative director in charge of tech and Brandtech hires Chris Garbutt to show AI-first and craft can coexist. Second pattern: proof, with Interbrand appointing a brand economist and Reebok's agency win announced with an engagement rate. Third: consolidation in Manchester, York and the US.",
+      "tags": ["Agencies", "Hiring", "Consolidation"],
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/booms-shakes/booms-shakes-october/",
+          "headline": "Booms Shakes: October s strategy power moves, Manchester mergers, and why craft is the word of the month",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Figma adds 20 MCP partners while Dylan Field calls the protocol imperfect and tilted toward frontier labs",
+      "blurb": "At Config India Figma announced partners including Linear, Notion, ClickUp, Mistral and Meta Muse, days after a public exchange in which Field asked why Anthropic does not expose its own artifacts via MCP. His stated reason for not opening Figma data fully: the more exposed through MCP, the higher the chance of abuse. For teams building agent workflows on design files, the limit is policy, not technology.",
+      "tags": ["Figma", "MCP", "Agents"],
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/20/figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-protocol/",
+          "headline": "Figma co-founder Dylan Field thinks MCP is not a perfect protocol",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Claude Desktop's Code tab replaces VS Code for non-engineers, and Cowork is not the same thing",
+      "blurb": "Paweł Huryn's guide for product people maps what used to need an IDE onto the new desktop app: folders with project instructions and skills, a permission mode, model and effort choice, app previews. His test is the comparison with Cowork, which runs in a limited virtual machine, cannot preview apps or hold project-specific skills and does not read AGENTS.md. Worth it for designers who prototype with Claude Code and want to skip the terminal.",
+      "tags": ["Claude Code", "Tools", "Prototyping"],
+      "sources": [
+        {
+          "name": "The Product Compass",
+          "url": "https://www.productcompass.pm/p/claude-desktop-code-tab",
+          "headline": "Claude Desktop v2.0: You Don't Need VS Code Anymore!",
+          "kind": "person",
+          "author": "Paweł Huryn",
+          "channel": "The Product Compass"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 24,
+      "examples": [
+        "Spotify Launches Its Largest Global Campaign to Date to Turn Downtime into Podcasts on Spotify",
+        "Dentsu Creative Appoints Michael Aimette as U.S. Chief Creative Officer",
+        "Paramount transforms abandoned cars into media for the launch of Street Fighter."
+      ]
+    }
+  ]
+}
