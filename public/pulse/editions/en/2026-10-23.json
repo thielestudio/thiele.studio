@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "generated_for": "2026-10-23",
+    "window": "2026-10-21..2026-10-23",
+    "sources_scanned": 63,
+    "items_in_window": 132,
+    "lang": "en",
+    "note": "Nine pieces. Already covered on 21 and 22 October and left out again: Day Job's To Be Formed, The Body Shop's Pod, Ars Technica on the Apple Music making-of, Dora Czerna on AI confessions and the ADHD checklist piece. Also left out: Sunlife's simplified logo (social reaction, little judgment), Thirst's canteen bottle for Archie Rose (solid packaging news, lowest transfer of the brand candidates), Somesuch book trailers, SEA's anniversary book and the Davy Denduyver rebrand (studio and client stories without a transferable core), Laika's Travis Knight on generative AI (position piece), State of Brand's budget survey roundup and Kappie Kopp interview, Meta's business terms, Claude Duet and the rest of the TechCrunch, The Verge, Ars Technica, Hugging Face and MIT Technology Review AI-industry news, Creative Bloq deals and reviews, Roastbrief releases and appointments. Two UX Collective pieces (buy vs build as a UX decision, Dan Maccarone on solo founders) could not be read and were not run on summary alone. Feeds printmag.com and userresearchstrategist.com failed, five paid Substack posts were removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Paul Melcher: surge the derivatives, author the masters, and enforce the line in the tool",
+      "blurb": "Melcher starts from brand-side marketers complaining that agencies now ship \"good enough\" work with the wrong logo, and traces it to a choice studios make without announcing it: build around a surge of generated assets, or around authorship. The surge model breaks because approval cost stays human while production cost falls to zero. The authored model breaks because the line between creative and production work is redrawn by vendor roadmaps. His working posture is one master per shoot and layout, derivation automated downstream, and a per-operation rule on whether a generative step may originate content or only adapt it.",
+      "tags": ["generative AI", "studio operations", "brand governance"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/surge-or-authorship-which-studio-are-you-building/",
+          "headline": "Surge or authorship: which studio are you building?",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Penguin's design director is in the room early for coffee trucks, a dating night and supper clubs",
+      "blurb": "Derek Man describes how the publisher reaches lapsed readers (44% of 16 to 24 year olds, per the Reading Agency) by turning up where they are: a Grind coffee van on campuses with an audiobook playlist, a singles event with Thursday Dating, supper clubs next. The design remit starts at positioning the event and extends to the keepsake people take home, which is why he sits with the marketing director and head of brand from the start.",
+      "tags": ["brand experience", "publishing", "events"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/derek-man-drives-the-design-thinking-behind-penguins-events/",
+          "headline": "Derek Man drives the design thinking behind Penguin s events",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Apple Music's identity was shot in a bath of mineral oil, and the app icon shows none of it",
+      "blurb": "Creative Boom has the process: Fred Again and NEST Acoustics wrote a short composition, each note was played through a transducer in oil and filmed, and months of tuning were needed because high or dense notes made the surface unreadable. The footage became the note mark, the composition the sonic logo, the wordmark a bold lowercase cut of SF Pro reconstructed by Plau. Creative Bloq points at the gap: the iOS 27.2 icon is black and white and the app only swapped its red accents for blue and yellow, so the part people touch daily carries almost nothing of the brand.",
+      "tags": ["rebrand", "identity", "sonic branding"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/apple-musics-new-logo-was-shaped-by-fred-again-and-a-bath-of-mineral-oil/",
+          "headline": "Apple Music s new logo was shaped by Fred Again and a bath of mineral oil",
+          "kind": "portal"
+        },
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/apple-musics-splashy-new-logo-is-gorgeous-so-why-isnt-the-app-icon",
+          "headline": "Apple Music's splashy new logo is gorgeous – so why isn't the new app icon?",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "DixonBaxi turns EA FC's triangle into a free-form shape built to move with culture",
+      "blurb": "Heinrich Paravicini's brand check on EAFC27: the triangle Uncommon introduced after the FIFA split, a nod to the player cursor, becomes a shape that takes on context-specific interpretations, with a graphic treatment closer to TikTok and Twitch than to TV sports conventions. Creative director Karun Agimal frames it as a system designed to move from campaign to culture rather than a fixed identity.",
+      "tags": ["rebrand", "gaming", "sports"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/the-ambitious-ea-sports-rebrand-looks-great-from-every-angle",
+          "headline": "The ambitious EA Sports rebrand looks great from every angle",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "East Surrey Council's identity came from six in-house designers, shown anonymously to elected members",
+      "blurb": "Six designers across the merging councils submitted as many concepts as they wanted, informed by a resident survey, and the team cut them to ten before presenting them without names to councillors, who were steered to set aside personal preference. The chosen mark by Kelly Pink layers leaf shapes for contours and countryside with a hidden lowercase e, set in Lexend. Rollout follows planned renewal cycles rather than replacing assets early, and West Surrey's separately designed brand follows on 10 November.",
+      "tags": ["identity", "public sector", "in-house"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/east-surrey-council-reveals-in-house-brand-identity-ahead-of-2027-launch/",
+          "headline": "East Surrey Council reveals in-house brand identity ahead of 2027 launch",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Tom Critchlow: whether your brand has an MCP is a boardroom question about ceding the interface",
+      "blurb": "Critchlow argues the real AI search question is not citation counts but whether a brand helps customers complete tasks inside the model, or becomes an invisible tool call. He lists the split playing out now: Walmart opening an agent gateway while Amazon blocks agents, Notion all in while Figma stays cautious, Booking.com with an MCP and Airbnb without. His position is that every brand should build one, even unreleased, to learn how the interface works, and that its design shapes how agents treat the brand.",
+      "tags": ["brand strategy", "AI search", "MCP"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "BRXND Dispatch",
+          "url": "https://newsletter.brxnd.ai/p/should-your-brand-have-an-mcp-brxnd",
+          "headline": "Should Your Brand Have an MCP? // BRXND Dispatch vol. 147",
+          "kind": "person",
+          "author": "Tom Critchlow",
+          "channel": "BRXND Dispatch"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "GTA VI trendjacking: Shrek's parody works, Burger King and Axe get called parasites",
+      "blurb": "Creative Bloq sorts the pre-release wave of Vice City pastiches by legitimacy: other game franchises can play, cars and bikes fit, phone networks and deodorant do not. Much of it leans on AI-generated neon gradients, and the comments under the posts (\"who invited him?\", \"bro, you're not in GTA 6\") show audiences reading opportunism faster than brands expect. The point to keep is that a borrowed aesthetic is exhausted within weeks when everyone uses it.",
+      "tags": ["advertising", "trendjacking", "gaming"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/from-burger-king-to-shrek-gta-vi-trend-jacking-is-out-of-control",
+          "headline": "From Burger King to Shrek, GTA VI trendjacking is going too far",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "State of Brand's 2027 playbook: a brand voice is now copyable from fifty LinkedIn posts, so budget moves to people",
+      "blurb": "The piece lays out why the old sequence (product, then content volume, then voice) stopped working and where it would put B2B money instead: small events under 200 people with the conversations recorded and published, named customers as sources instead of PDF case studies, and company-run coverage of a trade beat the shrinking press no longer covers. The figures it leans on: 51% of software buyers now start research in a chatbot (G2) and 85% of brand mentions in AI answers come from third-party pages (AirOps).",
+      "tags": ["B2B marketing", "brand voice", "AI search"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "State of Brand",
+          "url": "https://www.thestateofbrand.com/news/b2b-marketing-playbook-2027-ai-search",
+          "headline": "The 2027 B2B Marketing Playbook: How to Get Cited by AI, Seen by Buyers and Shared by Your People | State of Brand",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Canva Craft plans the layout before it renders, trained on templates rather than photos",
+      "blurb": "Canva's first own image model works in two stages: a plan with spatial relationships, scale, hierarchy and text, then a render at up to 2K in more than 30 aspect ratios, which the company says is why text stays legible and edits stay local. It was trained on human-made templates from the library, so outputs can be converted into layered designs, and it sits fourth on Design Arena behind three OpenAI models. Available to all users in Dream Lab now, via the API and Canva's MCP later.",
+      "tags": ["image generation", "Canva", "tools"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+          "headline": "Canva’s first AI image model plans designs before generating them",
+          "kind": "portal"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+          "headline": "Canva releases its first image generation model",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "Fold7design Partners With Bodycare To Relaunch The Brand As A Social First Retail Experience",
+        "The Agency Evolves The Kefir Pioneer For Its Next Stage Of Growth, Creating A More Distinctive Brand Built For The Future",
+        "Big Engine And Wise Put “Alpha Auntie” In Charge",
+        "RPA Names Kevin Mayer President and Chief Operating Officer"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "generated_for": "2026-10-23",
+    "window": "2026-10-21..2026-10-23",
+    "sources_scanned": 63,
+    "items_in_window": 201,
+    "lang": "de",
+    "note": "Sieben Stücke mit deutschsprachiger Leitquelle. Nicht genommen: die Ochsner-Sport-Winterkampagne von thjnk und die Ari-Launchkampagne von Wirz (Kampagnenmeldungen hinter den vier Brand-Stücken zurückgestellt), der Schweizer Werbemarkt im September (Monatszahlen ohne Mitnahme für Gestalter), die Top-10-Kreativleader aus dem Cannes-Talent-Report, das PAGE-Webinar zur Markenkonsistenz, die Midjourney-Masterclass und das Agenturwachstum-Stück (Ankündigungen), die HAICA-Abstimmungen, der PAGE-Turner-Beitrag, Slanted #48 und die ADC Digital Conference, bei t3n die Harness-Erklärung (harte Paywall) und der gesamte Rest, bei The Decoder Claude Duet und die Modell- und Behördenmeldungen ohne Bezug zu kreativer Arbeit, bei heise alles. Die Feeds printmag.com und userresearchstrategist.com sind ausgefallen, fünf bezahlte Substack-Beiträge wurden vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Apple Music: Identity aus der Ölwanne, Wortmarke in fetter SF Pro",
+      "blurb": "PAGE beschreibt den Aufbau: Fred Again.. und NEST Acoustics komponieren einen Sound, ein Transducer versetzt eine Flüssigkeit in Schwingung, eine gewölbte Glasscheibe über der Schüssel bringt Lichtbrechungen dazu, daraus entsteht das Notensymbol und die liquide Version des Logos. Die Komposition wird zugleich Soundlogo, die Wortmarke nutzt SF Pro in bold. Creative Boom ergänzt, dass die Abstimmung von Ton und Bild Monate dauerte, weil zu viele oder zu hohe Noten das Bild unlesbar machten. Creative Bloq hält dagegen, dass das App-Icon in iOS 27.2 schwarzweiß bleibt und davon nichts zeigt.",
+      "tags": ["Rebranding", "Identity", "Sonic Branding"],
+      "cluster": true,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/neue-identity-fuer-apple-music-und-das-in-schoenster-handarbeit/",
+          "headline": "Neue Identity für Apple Music – und das in schönster Handarbeit",
+          "kind": "portal"
+        },
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/apple-musics-new-logo-was-shaped-by-fred-again-and-a-bath-of-mineral-oil/",
+          "headline": "Apple Music s new logo was shaped by Fred Again and a bath of mineral oil",
+          "kind": "portal"
+        },
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/apple-musics-splashy-new-logo-is-gorgeous-so-why-isnt-the-app-icon",
+          "headline": "Apple Music's splashy new logo is gorgeous – so why isn't the new app icon?",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Design Doha Biennial: Pentagram verlängert die Striche, bis Arabisch und Lateinisch ein Geflecht bilden",
+      "blurb": "Samar Maakarouns Team setzt die Identity ganz auf Typografie. Die Striche beider Schriftsysteme werden ausholend verlängert und verbinden die Bestandteile der Identität, beide stehen gleichberechtigt nebeneinander. Das Geflecht legt sich über Bildwelt und Design oder steht flächig für sich. Ruhepol ist die Farbwelt: das eingeführte Design-Doha-Blau trifft auf Beige und Braun aus der Landschaft, ein Orange bringt Energie. Das System zieht sich in abgewandelter Stärke durch Ausstellungen, Plakate und Merchandise.",
+      "tags": ["Identity", "Typografie", "Design Festival"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/vielfaeltige-verbindungen-pentagrams-identity-fuer-die-design-doha-biennial/",
+          "headline": "Vielfältige Verbindungen: Pentagrams Identity für die Design Doha Biennial",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Avenir Suisse: Scholtysik macht den Doppelpunkt im Logo zum Dialogelement",
+      "blurb": "Der Doppelpunkt markiert Fragen und setzt Denkanstöße, so soll die Haltung der Denkfabrik sichtbar werden. Dazu Rot, Weiß, Schwarz, die angepasste Markenschrift Liber, Regeln für Datenvisualisierung und prägnante Leseeinstiege. Die Bildwelt entfaltet ihren Witz erst mit der Headline, und wo ein Bild keinen gedanklichen Mehrwert bietet, entfällt es. Die Website von Sergeant ist seit dem 19. Oktober live, der Rest folgt schrittweise.",
+      "tags": ["Corporate Design", "Think-Tank", "Schweiz"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Werbewoche",
+          "url": "https://www.markt-kom.com/de/kreativity/branding/markenauftritt-avenir-suisse-der-doppelpunkt-wird-zum-dialog/",
+          "headline": "Markenauftritt Avenir Suisse: Der Doppelpunkt wird zum Dialog",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Sonic Branding, wenn das Interface verschwindet: Vodafone, NZZ und das Dreiton-Piepen von eBilet",
+      "blurb": "PAGE sortiert, woraus eine Audio-Identität besteht, wenn Smart Speaker, Sprachsuche und Voicebots das visuelle Interface verdrängen. Drei Fälle unterschiedlicher Größe: Vodafones modulare Sonic DNA von amp mit einem KI-Werkzeug für lokale Anpassung, die NZZ Sound Identity von TONIQ für Podcasts und vertonte Artikel, und eBilet, das den Scanner-Ton am Einlass in ein Dreiton-Signal aus dem Markennamen verwandelt hat. KI-Avatare für Voicebots wirken laut Text in der Praxis noch hölzern.",
+      "tags": ["Sonic Branding", "Audio-Identität", "Voice"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/branche-karriere/sonic-brandings-heute-neue-touchpoints-ki-ethik/",
+          "headline": "Sonic Brandings heute: Neue Touchpoints KI-Ethik",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "KTF Prima: ein Stil für alle, von Thin bis Ultra, ohne Spuren alter Satztechnik",
+      "blurb": "Yevgen Anfalov hat seine vor zehn Jahren an der ECAL begonnene Schrift von Grund auf neu entworfen. Vorbild war die Forma von Nebiolo, deren Übergang vom Bleisatz zum Fotosatz Fragen zu Urheberschaft und Langlebigkeit aufwarf. Prima verzichtet auf sich verjüngende Striche und abgerundete Ecken, arbeitet mit Breitenwechsel und hoher x-Höhe, Kyrillisch entstand parallel als Erweiterung des Lateinischen. Sieben Schnitte, 90 Euro einzeln, rund 300 Euro komplett bei der Kyiv Type Foundry.",
+      "tags": ["Typografie", "Schriftdesign", "Kyiv Type Foundry"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/typografie/ktf-prima-vom-bleisatz-bis-heute/",
+          "headline": "KTF Prima: Vom Bleisatz bis heute",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Sarah Pally über den Störer »Jetzt entdecken!«: Entdeckergeist als Sofaprodukt",
+      "blurb": "Die Kolumne stellt die Entdecker von Magellan bis Amundsen neben die Werbesprache, die heute Vorsorgeprodukte und Hörstärke zum Entdecken anbietet. Der Befund: Nachdem Risiko und Überraschung aus dem Alltag herausgekomfortet sind, werden sie als Produkt wohldosiert zurückverkauft, erkennbar am Störer. Kurz, und ein brauchbarer Prüfstein für jede Handlungsaufforderung, die ein Wort benutzt, das sie nicht einlöst.",
+      "tags": ["Copy", "Werbesprache", "Kolumne"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Werbewoche",
+          "url": "https://www.markt-kom.com/de/big-picture/blueten-perlen-jetzt-entdecken/",
+          "headline": "Blüten Perlen: Jetzt entdecken!",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Sparkassenverband geht gegen zwei S-Signets vor, Design Tagebuch ordnet beide Fälle ein",
+      "blurb": "Der DSGV hat gegen das im Juli eingeführte Sauren-Signet (Kreis plus Quadrat, tiefes Blau) eine einstweilige Verfügung beim Landgericht Hamburg erwirkt und ein Widerspruchsverfahren beim DPMA eingeleitet. Sauren hat die Nutzung ausgesetzt, aber keine Unterlassungserklärung abgegeben und will durch die Instanzen gehen. Scalable Capital (mintgrün) ist ebenfalls aufgefordert, sein S nicht mehr zu nutzen, vor dem Hintergrund des Sparkassen-Brokers S-Neo. Achim Schaffrinna erklärt den erweiterten Schutzbereich bekannter Marken, erinnert an den Farbmarkenstreit mit Santander 2016 und bewertet die Zeichen anschließend nach Designkriterien.",
+      "tags": ["Markenrecht", "Logo", "Finanzbranche"],
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "url": "https://www.designtagebuch.de/markenstreit-im-finanzsektor-sparkassenverband-geht-gegen-logos-von-sauren-und-scalable-capital-vor/",
+          "headline": "Markenstreit im Finanzsektor: Sparkassenverband geht gegen Logos von Sauren und Scalable Capital vor",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "Fold7design Partners With Bodycare To Relaunch The Brand As A Social First Retail Experience",
+        "The Agency Evolves The Kefir Pioneer For Its Next Stage Of Growth, Creating A More Distinctive Brand Built For The Future",
+        "Big Engine And Wise Put “Alpha Auntie” In Charge"
+      ]
+    }
+  ]
+}
