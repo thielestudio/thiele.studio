@@ -1,0 +1,103 @@
+{
+ "meta": {
+  "generated_for": "2026-10-24",
+  "window": "2026-10-22..2026-10-24",
+  "sources_scanned": 63,
+  "items_in_window": 114,
+  "lang": "en",
+  "note": "Thin day, four pieces. Most of what passed the filter already ran on 21 to 23 October (Apple Music in three versions, EA FC, Tom Critchlow on MCPs, GTA VI trendjacking, Canva Craft, Penguin, East Surrey) and was not repeated, including Design Week's new Apple Music conversation with Curtis Free, whose text could not be read. Left out: UX Collective on atomic design and on buy versus build (blocked at retrieval, not run on summary alone), Laika's Wildwood video, Dispatch and Hexed game and film items, Arsh Raziuddin and Mona Chalabi talk write-ups (event recaps without a transferable core), the Photoshop and humour how-tos (basic technique), SJP's brand platform and other Roastbrief releases, Creative Bloq deals and gadget items, and general tech news from TechCrunch, The Verge, Ars Technica, Hugging Face and MIT Technology Review. Feeds export.arxiv.org and userresearchstrategist.com failed. Two paid Substack posts were removed beforehand."
+ },
+ "stories": [
+  {
+   "theme": "design-practice",
+   "theme_label": "Design Practice",
+   "title": "Accordion icons: the caret is the safest choice, and a plain link should just be underlined",
+   "blurb": "Vitaly Friedman sums up research on expand and collapse icons. Custom icons often fail to signal that an accordion will open, people tap icon and label about equally, and split menus where icon and label trigger different actions do harm. His rule of thumb: if it is a link, underline it and add no arrow or caret; where something expands, the caret is the most reliable icon.",
+   "tags": [
+    "UX patterns",
+    "navigation",
+    "icons"
+   ],
+   "cluster": false,
+   "sources": [
+    {
+     "name": "Smashing Magazine",
+     "url": "https://smashingmagazine.com/2026/10/accordion-icons-which-work-best/",
+     "headline": "Accordion Icons: Which Work Best?",
+     "kind": "portal"
+    }
+   ]
+  },
+  {
+   "theme": "brand-advertising",
+   "theme_label": "Brand & Advertising",
+   "title": "Yard NYC tells women to \"send nudes\", to themselves, as a monthly record for spotting breast changes",
+   "blurb": "For Breast Cancer Awareness Month the agency borrows a loaded online phrase and turns it into self-monitoring: regular photos let women notice changes over time. The campaign cites rising breast cancer rates among women under 50 and the fact that 85% of those diagnosed have no family history. For CEO Ruth Bernstein it is personal, she had early breast cancer herself.",
+   "tags": [
+    "campaign",
+    "health",
+    "provocation"
+   ],
+   "cluster": false,
+   "sources": [
+    {
+     "name": "Creative Boom",
+     "url": "https://www.creativeboom.com/work/why-is-this-new-york-agency-asking-women-to-send-nudes/",
+     "headline": "Why is a creative agency in New York asking women to send nudes?",
+     "kind": "portal"
+    }
+   ]
+  },
+  {
+   "theme": "craft-judgment",
+   "theme_label": "Craft & Judgment",
+   "title": "Accused of AI, Olivia Rodrigo's team showed the hand-made process instead of denying it",
+   "blurb": "After viewers declared a short animated sequence in the \"Expectations\" remix video to be generative AI, the official fan account posted a behind-the-scenes clip: character sketches, 2D and 3D animation, files played on a Windows Vista PC and filmed with a high-res camera to get the lo-fi look. Creative Bloq's argument is that showing the work ends the rumour where a formal denial would have fed it. Rolling Stone credits designer Jack Harrison with the analogue treatment.",
+   "tags": [
+    "AI allegations",
+    "process",
+    "authorship"
+   ],
+   "cluster": false,
+   "sources": [
+    {
+     "name": "Creative Bloq",
+     "url": "https://www.creativebloq.com/news/olivia-rodrigo-just-showed-creatives-how-to-deal-with-false-design-allegations-in-style",
+     "headline": "Olivia Rodrigo just showed creatives how to deal with false design allegations in style",
+     "kind": "portal"
+    }
+   ]
+  },
+  {
+   "theme": "industry-market",
+   "theme_label": "Industry & Market",
+   "title": "Getty Images files for bankruptcy and goes private through a Koch deal",
+   "blurb": "Design Week reports that Getty has formally filed, and frames the company as staying in business thanks to the Koch deal; it points to Reuters and the Wall Street Journal for the legal detail. Only the intro of the piece could be read, so what this means for licensing and contributors is not covered here.",
+   "tags": [
+    "stock imagery",
+    "licensing"
+   ],
+   "cluster": false,
+   "sources": [
+    {
+     "name": "Design Week",
+     "url": "https://www.designweek.co.uk/getty-images-is-bankrupt-but-still-in-business-thanks-to-massive-koch-deal/",
+     "headline": "Getty Images is bankrupt but, still in business thanks to massive Koch deal",
+     "kind": "portal"
+    }
+   ]
+  }
+ ],
+ "voices": [],
+ "firehose": [
+  {
+   "label": "Roastbrief",
+   "count": 25,
+   "examples": [
+    "Livity Unveils New ‘I Am Greater’ Campaign Co-created With Over 100 Young People",
+    "Morrisons Fresh Produce Gets A Monstrous Makeover For Halloween In New OOH Campaign By Leo UK",
+    "Big Engine And Wise Put “Alpha Auntie” In Charge"
+   ]
+  }
+ ]
+}

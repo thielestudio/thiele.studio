@@ -1,0 +1,70 @@
+{
+ "meta": {
+  "generated_for": "2026-10-24",
+  "window": "2026-10-22..2026-10-24",
+  "sources_scanned": 63,
+  "items_in_window": 180,
+  "lang": "de",
+  "note": "Dünner Tag, zwei Stücke mit deutschsprachiger Leitquelle. Apple Music, Pentagram für die Design Doha Biennial, Avenir Suisse, Sonic Branding, KTF Prima und der Markenstreit der Sparkassen liefen schon am 23. Oktober. Nicht genommen: das PAGE-Seminar zu KI-Charakteren (Veranstaltungshinweis), der Beitrag zum Agenturwachstum (Unternehmensführung), die Wirz-Kampagne für die App Ari, die Slanted-Meldungen zu Suitcase Type Foundry und Heft 48, Schweizer Werbemarkt und Personalien der Werbewoche sowie die allgemeinen t3n- und heise-Meldungen ohne Bezug zu kreativer Arbeit. Feeds export.arxiv.org und userresearchstrategist.com sind ausgefallen. Zwei bezahlte Substack-Beiträge wurden vorab entfernt."
+ },
+ "stories": [
+  {
+   "theme": "brand-advertising",
+   "theme_label": "Brand & Advertising",
+   "title": "Ochsner Sport: thjnk Zürich lässt Skirennfahrer in einer weißen Leere gegen ihre eigenen Linien antreten",
+   "blurb": "Der Winterfilm schickt Loïc Meillard, Corinne Suter und Dania Allenbach in eine White-Void-Landschaft, in der sich per Morphing mehrere Versionen jeder Person abspalten, kreuzen und erst an der Ziellinie wieder eins werden. Gedreht wurde mit vier Kameras gleichzeitig. Die Idee ist die Ideallinie, die in jedem Rennen neu gefunden werden muss. Start ist der 24. Oktober mit dem ersten Weltcuprennen, die Kampagne läuft die Saison über auf SRG-Kanälen, online, am POS und in Social Media.",
+   "tags": [
+    "Kampagne",
+    "Film",
+    "Sport"
+   ],
+   "cluster": false,
+   "sources": [
+    {
+     "name": "Werbewoche",
+     "url": "https://www.markt-kom.com/de/kreativity/kampagnen/ochsner-sport-winterkampagne-jagd-nach-der-ideallinie/",
+     "headline": "Ochsner Sport Winterkampagne: Jagd nach der Ideallinie",
+     "kind": "portal"
+    }
+   ]
+  },
+  {
+   "theme": "ai-models",
+   "theme_label": "AI-Modelle (+Tools)",
+   "title": "Canva Craft plant erst Bildaufbau und Text und lernt von Vorlagen statt von Fotos",
+   "blurb": "Canvas erstes eigenes Bildmodell soll mit Modellen von Google, OpenAI, ByteDance und Meta mithalten. Trainiert wurde es laut Canva vor allem mit Millionen Designvorlagen, es legt zuerst Bildaufbau, Größenverhältnisse und Text fest und rendert danach bis 2K in mehr als 30 Seitenverhältnissen. Die Ergebnisse lassen sich mit Magic Layers in bearbeitbare Ebenen zerlegen. Platz vier bei DesignArena ist Canvas eigene Angabe.",
+   "tags": [
+    "Bildmodell",
+    "Canva",
+    "Layout"
+   ],
+   "cluster": true,
+   "sources": [
+    {
+     "name": "The Decoder",
+     "url": "https://the-decoder.de/canva-bringt-mit-craft-sein-erstes-eigenes-bildmodell/",
+     "headline": "Canva bringt mit Craft sein erstes eigenes Bildmodell",
+     "kind": "portal"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+     "headline": "Canva’s first AI image model plans designs before generating them",
+     "kind": "portal"
+    }
+   ]
+  }
+ ],
+ "voices": [],
+ "firehose": [
+  {
+   "label": "Roastbrief",
+   "count": 25,
+   "examples": [
+    "Livity Unveils New ‘I Am Greater’ Campaign Co-created With Over 100 Young People",
+    "Morrisons Fresh Produce Gets A Monstrous Makeover For Halloween In New OOH Campaign By Leo UK",
+    "Big Engine And Wise Put “Alpha Auntie” In Charge"
+   ]
+  }
+ ]
+}
