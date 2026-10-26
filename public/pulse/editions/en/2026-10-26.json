@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "generated_for": "2026-10-26",
+    "window": "2026-10-23..2026-10-26",
+    "sources_scanned": 63,
+    "items_in_window": 94,
+    "lang": "en",
+    "note": "Nine pieces. Already covered on 22 to 24 October and left out again: Apple Music (including Design Week's Curtis Free conversation, still unreadable), EA FC, Penguin, accordion icons, Olivia Rodrigo, Getty Images, Thirst's bottle for Archie Rose. Four UX Collective pieces (the sparkle button, where to draw the line for professional users, the context advantage of human UX, atomic design from the screen) and Design Week's Outline were blocked at retrieval and not run on summary alone. Also left out: the Atlanta Falcons logo and the Farmville library logo (social reaction, little judgment in the English coverage), Ben & Jerry's on brand activism and Radim Malinic on creative risk (position pieces), Arsh Raziuddin's talk recap, Sagmeister's data shoes, Matt Strom-Awn on code review (engineering practice), Matt Webb on server security, Grok's AI film, Block's Dessa, OpenAI's offline training and the rest of the TechCrunch, The Verge, Ars Technica, Hugging Face and MIT Technology Review AI-industry news, Creative Bloq deals, games and gadgets, Roastbrief releases and appointments. Feeds export.arxiv.org and userresearchstrategist.com failed. Three paid Substack posts were removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Bráulio Amado sets himself limits, then turns each accident into the brief for the next poster",
+      "blurb": "Tape, marker and two hours, or a napkin photographed on the street: the constraint is the method, and a mistake on one Good Room poster becomes the deliberate starting point of the next. He applies the same dissecting logic to briefs that arrive without a visual idea.",
+      "sources": [
+        { "name": "It's Nice That", "url": "https://www.itsnicethat.com/features/braulio-amado-graphic-design-spotlight-261026", "headline": "Mistakes, chaos and meditation: inside the mind of Bráulio Amado", "kind": "portal" }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Saeideh Bakhshi: AI makes researchers better at work others no longer need them for",
+      "blurb": "When PMs can run their own AI-assisted studies, more skill does not buy researchers more influence, because the problem is when organisations involve them, not what they know. Researchers who already frame problems gain; those executing requested studies become easier to bypass.",
+      "sources": [
+        { "name": "Saeideh Bakhshi", "url": "https://saeidehbakhshi.substack.com/p/you-can-become-a-better-researcher", "headline": "You Can Become a Better Researcher and Still Become Less Necessary", "kind": "person", "author": "Saeideh Bakhshi" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Hono splits Nadal's match point into 60 frames, one hand-punched label per cider bottle",
+      "blurb": "One Risograph base label, finished and numbered by hand, with the ball punched out so the cider itself becomes the ball. Lined up, the bottles play as a flip book, and the riso's registration drift makes even the animated version flicker.",
+      "sources": [
+        { "name": "It's Nice That", "url": "https://www.itsnicethat.com/articles/studio-hono-temper-branding-project-261026", "headline": "Hono’s label branding for Temper cider animates the last rally of the 2008 Wimbledon final", "kind": "portal" }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Uncommon and Resn turn inbox spam into zombies, and every kill deletes a real email",
+      "blurb": "The Unread connects to Gmail and makes clearing the inbox a horror game, with a no-login mode for the hesitant. Nils Leonard's case: play can motivate behaviour where automation strips the emotion out.",
+      "sources": [
+        { "name": "Roastbrief", "url": "https://roastbrief.us/new-browser-game-turns-spam-emails-into-slayable-zombies/", "headline": "New Browser Game Turns Spam Emails Into Slayable Zombies", "kind": "portal" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Just Eat's AI menu images show a jacket for jacket potato, and restaurants take the blame",
+      "blurb": "Literal text-to-image turned typos and dish names into tiger cubs and cigarette lighters; Just Eat apologised and pulled them. Creative Bloq's sharper point: even a perfect AI dish photo promises food that never existed, and refunds were refused.",
+      "sources": [
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/news/just-eats-ai-apocalypse-raises-a-pretty-obvious-question", "headline": "Just Eat's AI apocalypse raises a glaring question", "kind": "portal" }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Blue Planet III leaves the plankton and the buoys in the frame as proof it is real",
+      "blurb": "Shots once cut for murky water or a boat in view now stay, because flawless polish has become a tell for AI. Imperfection is used deliberately as an authenticity signal.",
+      "sources": [
+        { "name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai", "headline": "Blue Planet III is keeping the rough edges in the age of AI", "kind": "portal" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Pennsylvania now requires AI labels on ads, in the same format as the ad",
+      "blurb": "Any ad significantly modified or generated by AI needs a disclosure, wherever it was made, so national campaigns airing in the state are affected. The loopholes are wide: \"significantly\", \"evidently fictional\" and a parody carve-out are left undefined.",
+      "sources": [
+        { "name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act", "headline": "Pennsylvania will require labels on AI-generated ads", "kind": "portal" }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "AI companies keep commissioning human designers, because branding has to make people believe",
+      "blurb": "Ideogram, Elva, Clusia and Meta's Muse all went to studios or lettering artists. Tom May reads it as a credibility move, and argues refusing such jobs changes little, after Jessica Hische was attacked for a $12,500 fee.",
+      "sources": [
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/news/why-do-ai-platforms-want-humans-to-design-their-branding", "headline": "Why do AI platforms want humans to design their branding?", "kind": "portal" }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Karri Saarinen writes his site in Linear, and an agent chat called Publisher deploys it",
+      "blurb": "Codex built the static generator; Linear's agent then ran it in a cloud sandbox with credentials stored as secrets, in about twenty minutes and a few dollars. Articles are Linear documents, publishing is a sentence, and it works from a phone.",
+      "sources": [
+        { "name": "Karri Saarinen", "url": "https://karrisaarinen.com/posts/this-website-is-written-and-built-with-linear/", "headline": "This website is written and built with Linear", "kind": "person", "author": "Karri Saarinen" }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    { "label": "Roastbrief", "count": 13, "examples": ["St. James’s Place invites people to ‘See your wealth differently’ in new brand platform from isobel", "Danish Bank Brings Højlund and Eight Sports Stars Together in Major Campaign", "iFIT Inc. Names Taylor as PR Agency of Record"] }
+  ]
+}

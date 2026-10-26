@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "generated_for": "2026-10-26",
+    "window": "2026-10-23..2026-10-26",
+    "sources_scanned": 63,
+    "items_in_window": 143,
+    "lang": "de",
+    "note": "Dünner Tag, ein Stück mit deutschsprachiger Leitquelle. Apple Music und Suitcase Type Foundry liefen schon oder wurden schon verworfen. Nicht genommen: Sagmeisters Datenschuhe mit ekn footwear (Produktmeldung ohne übertragbaren Kern), der Jubiläumskalender von Julie Joliat, das LinkedIn-Seminar und das Webinar zur Markenkonsistenz (Ankündigungen), die HAICA-Abstimmungen, der PAGE-Turner-Beitrag, die Werkschau Mannheim, bei The Decoder die Studie zu KI und Patentanwälten sowie die Modell- und Unternehmensmeldungen, bei heise und t3n alles ohne Bezug zu kreativer Arbeit. Feeds export.arxiv.org und userresearchstrategist.com sind ausgefallen. Drei bezahlte Substack-Beiträge wurden vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Atlanta Falcons: altes Falken-Logo zurück, die Nazi-Lesart überlässt der Klub dem Netz",
+      "blurb": "Rot-Schwarz-Weiß, abstrakter Raubvogel, Streifen in Flaggen-Anmutung: einzeln unproblematisch, zusammen für viele eindeutig. Design Tagebuch hält das Schweigen der Führung für den eigentlichen Fehler, denn wer die Bedeutung seines Zeichens nicht selbst setzt, gibt Markenführung aus der Hand.",
+      "cluster": true,
+      "sources": [
+        { "name": "Design Tagebuch", "url": "https://www.designtagebuch.de/atlanta-falcons-wo-die-grenze-zwischen-sportmarketing-und-kriegsrhetorik-verschwimmt/", "headline": "Atlanta Falcons – wo die Grenze zwischen Sportmarketing und Kriegsrhetorik verschwimmt", "kind": "portal" },
+        { "name": "Creative Bloq", "url": "https://www.creativebloq.com/news/the-atlanta-falcons-nazi-logo-controversy-strikes-again", "headline": "The Atlanta Falcons 'Nazi' logo controversy strikes again", "kind": "portal" }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    { "label": "Roastbrief", "count": 14, "examples": ["New Browser Game Turns Spam Emails Into Slayable Zombies", "St. James’s Place invites people to ‘See your wealth differently’ in new brand platform from isobel", "Danish Bank Brings Højlund and Eight Sports Stars Together in Major Campaign"] }
+  ]
+}
