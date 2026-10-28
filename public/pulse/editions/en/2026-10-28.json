@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "generated_for": "2026-10-28",
+    "window": "2026-10-26..2026-10-28",
+    "sources_scanned": 64,
+    "items_in_window": 129,
+    "lang": "en",
+    "note": "Twelve pieces. Bráulio Amado ran on 26 October and was left out. Not taken: Conran's Cheval rebrand and DutchScot's Bar Rêve (solid but thinner than the picks), the Firefox comeback campaign and Burger King's marathon stunt (press releases), Fast Company's three design principles (general), Luke Wroblewski on temporary technology limits (short argument without a method), the BRXND dispatch on agent org design (company management), Hiroshi Sato's sushi tap (member story, too little readable), Etsy's AI-photo ban and Design Week's piece on retail and place (not readable at retrieval), State of Brand on PR and AI search, the typeface roundup, portraits and book features at It's Nice That, Creative Boom and Print, the Anthropic IPO wave, OpenAI's science claims and the rest of the TechCrunch, The Verge, Ars Technica, Hugging Face and MIT Technology Review AI-industry news, Creative Bloq deals, gadgets and Apple-event coverage, all Roastbrief releases and appointments. Feed userresearchstrategist.com failed. Seven paid Substack posts were removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Christine Vallaure flips the handoff: the design system starts in code, Figma becomes the mirror",
+      "blurb": "Figma-to-code with AI fails quietly because the model fills every gap the file cannot express (focus order, error states, empty lists) with plausible inventions. Her step-by-step route via Storybook and an MCP connection builds tokens first, then two test components, and asks every time for a GAPS.md listing what could not make the trip, which she calls more useful than the components themselves.",
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/building-an-ai-ready-design-system-library-code-figma-with-mcp-ec5d9e8c90d2?source=rss----138adf9c44c---4",
+          "headline": "Building an AI-ready design system library: Code → Figma with MCP.",
+          "kind": "person",
+          "author": "Christine Vallaure",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "NN/g survey: AI speeds up UX tasks, but the saved time rarely stays with the designer",
+      "blurb": "Across 521 UX practitioners, AI scored 4.2 of 5 for shorter tasks yet only 3.57 for how people feel about it, and 69% of open comments were negative, led by the burden of checking unreliable output. Kai Wong reads that as time absorbed by higher expectations or by cleaning up colleagues' AI work. Member story, only the opening was readable.",
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/the-time-ai-saves-designers-usually-disappears-heres-how-to-keep-it-61eb38e1ed69?source=rss----138adf9c44c---4",
+          "headline": "The time AI saves designers usually disappears. Here’s how to keep it.",
+          "kind": "person",
+          "author": "Kai Wong",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Film graphic designer Bilun Bilman on designing props for a split second on screen",
+      "blurb": "From Iñárritu's Digger to The Creator, the method is the same for period and invented worlds: mine the script, then ask what the characters would actually use. Practical detail for anyone outside the art department: the same graphic is often produced at several sizes for wide shots and close-ups, and colour and finish are tested against camera, grading and set lighting.",
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/qa-bilun-bilman-on-graphic-design-for-digger-the-creator-and-the-realities-of-the-art-department/",
+          "headline": "Q A: Lead graphic designer Bilun Bilman on Digger, The Creator, and the realities of the art department",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Uncommon drops the navy blue for White & Case and sells complexity as opportunity",
+      "blurb": "The brief was to leave the legal sector's sea of sameness: an electric Catalyst Blue, a Trajan-derived wordmark with forward-leaning diagonal cuts that carry into custom headline serifs, and an in-house tool that streaks photography into lines of data. A useful reference for professional-services clients who assume trust has to look conservative.",
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/work/this-rebrand-ditches-every-law-firm-cliche-as-white-case-loses-the-navy-blue/",
+          "headline": "Uncommon s rebrand of global powerhouse White Case ditches every law firm cliché",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "DutchScot swaps the o in Fjord for a degree sign and builds a sauna brand on hot and cold",
+      "blurb": "Instead of soft neutrals and closed-eyed faces, the floating sauna on San Francisco Bay gets a black-and-white system drawn from the area's shipyard past and a bespoke typeface with Playtype. The degree sign then works as monogram, poster device and a scrolling temperature gauge on the website. One idea, carried through every touchpoint.",
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/work/this-floating-saunas-brand-uses-a-simple-typographic-trick-to-stunning-effect/",
+          "headline": "This floating sauna s brand uses a simple typographic trick to stunning effect",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Limber Brands builds Lambeth Can Move around neighbourhoods, not the borough",
+      "blurb": "Strategy found that residents identify with Brixton or Clapham rather than Lambeth, so the L-shaped mark takes local names in two reading directions. The figure illustrations are traced from the maps of the six pilot areas, which ties the graphics to place without a single landmark.",
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/limber-brands-designs-hyperlocal-identity-for-lambeth-can-move/",
+          "headline": "Limber Brands designs hyperlocal identity for Lambeth Can Move",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Lego and Daft Punk start their partnership with a fan's model and no product rush",
+      "blurb": "The first set is based on a father-and-son lockdown build that won Lego Ideas, the teaser was a red 2x4 brick shot from below to read as a speaker, and the visual language splits evenly between neon wireframes and bricks. Price and release date are still open, which Creative Boom reads as a deliberate refusal to flood the market.",
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/insight/lego-and-daft-punks-team-up-highlights-exactly-how-brands-should-interact-with-fans/",
+          "headline": "Lego and Daft Punk s team-up highlights exactly how brands should interact with fans",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Football rebrands lose character through many sensible decisions",
+      "blurb": "Will Knight uses Newcastle, Everton and Atlético to describe the wind-tunnel effect: legibility, reproducibility and digital fit each make sense, yet the sum ends up less distinctive than the start. Counterexamples are Ajax's return to its awkward historic crest and American sports marks that keep their oddities. Worth reading for any heritage brief.",
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/pov-football-is-branding-the-life-out-of-itself-graphic-design-271026",
+          "headline": "Corporate branding logic is taking the soul out of football clubs",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Stocksy's visual report swaps keyword nouns for five prepositions to judge why an image connects",
+      "blurb": "The artist-owned agency, which carries no AI imagery, argues that connection is structural: by, for, with, between and against describe the relationships between maker, subject and viewer. Each comes with an example and plain questions that can go straight into a photo brief, such as who made this and can we stand behind how.",
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/insight/stocksys-2027-visual-insights-report-explores-why-some-images-connect-with-audiences-and-others-dont/",
+          "headline": "Stocksy s 2027 Visual Insights Report explores why some images connect with audiences so well",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Design Week restarts its awards regionally, with a 50% rule for London agencies",
+      "blurb": "The first edition covers the North West: outside agencies may enter only if most of the work was done in the region, every local contributor must be named, and all 14 judges come from outside. Entry is a 200 to 300 word rationale plus existing portfolio links, with a two-week window, a direct answer to award costs that pull designers off billable work.",
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/why-weve-binned-the-corporate-circus-and-restarted-the-design-week-awards-from-scratch/",
+          "headline": "Why we ve binned the corporate circus and restarted the Design Week Awards from scratch",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Apple brings an AI assistant to Keynote and opens iWork to outside agents via MCP",
+      "blurb": "The assistant, built on Apple and OpenAI models, designs, animates and refines slides from document context. Keynote, Pages and Numbers now speak the Model Context Protocol on macOS 27, Pixelmator Pro gets a Generate Fill that matches light and perspective, and Final Cut Pro adds MotionVFX templates and a stock library.",
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
+          "headline": "Apple is adding an AI chatbot to Pages, Keynote, and Numbers",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Genie 4 generates interactive worlds with sound and lets you redirect the scene by prompt",
+      "blurb": "Google DeepMind's research preview holds a consistent scene for up to two minutes, twice Genie 3, adds matching audio and dialogue, and accepts mid-simulation edits to weather, camera or characters, with Gemini planning the steps. Access is limited to testers for now, later Google AI Ultra.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+          "headline": "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
+          "kind": "portal"
+        },
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+          "headline": "Genie 4: A new generation of world simulation",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1019076/google-genie-4-ai-model",
+          "headline": "Google’s next Genie AI model generates more realistic experiences",
+          "kind": "portal"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
+          "headline": "DeepMind unveils Genie 4 world model promising more realistic physics and humans",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "Come Back to Firefox: Mozilla launches its most ambitious campaign yet to bring people back to the independent alternative to big tech browsers",
+        "Burger king keeps eyes on the fries",
+        "Original Thinking Takes Centre Stage in D AD’s New Blood Awards Briefs"
+      ]
+    }
+  ]
+}

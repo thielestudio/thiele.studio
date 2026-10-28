@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "generated_for": "2026-10-28",
+    "window": "2026-10-26..2026-10-28",
+    "sources_scanned": 64,
+    "items_in_window": 178,
+    "lang": "de",
+    "note": "Vier Stücke mit deutschsprachiger Leitquelle. Nicht genommen: das Agenturporträt Studio Pandan (Porträt ohne übertragbaren Kern), die neuen CD-Manuals im dt (Sammlungsmeldung), KesselsKramers Beichtbuch bei Slanted (Buchhinweis), das KI-Webinar, der Design Policy Day und die HAICA-Abstimmungen (Ankündigungen), bei The Decoder Anthropics Werbeverzicht, die Qwen-Tests, die OpenAI-Modellwahl und die übrigen Modell- und Börsenmeldungen, bei t3n und heise alles ohne Bezug zu kreativer Arbeit, darunter Apple-Hardware, Sicherheitslücken und Instagrams längere Videos, OMR-Speaker. Feed userresearchstrategist.com ist ausgefallen. Sieben bezahlte Substack-Beiträge wurden vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Der Type Directors Club holt sich sein Erscheinungsbild aus einem indonesischen Etiketten-Archiv",
+      "blurb": "Gestaltet hat es Grafis Nusantara, eine Plattform, die Etiketten, Aufkleber und Ladenschilder des indonesischen Alltagsdesigns sammelt. Pink, Grün und Gelb, Spruchbänder und Sternchen unter »Be Bold, Be Seen (All Characters Welcome)«. Ein Wettbewerb für Schrift sucht seine Bildsprache also bewusst außerhalb des Ateliers.",
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/das-diesjaehrige-tdc-design-ist-eine-ueberraschung/",
+          "headline": "Das diesjährige TDC Design ist eine Überraschung!",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "GWA-Whitepaper: Alle nutzen generative KI, 80 Prozent der Unternehmen wollen mehr inhouse machen",
+      "blurb": "Die Befragung verknüpft Agentur- und Kundensicht. Nur 8,2 Prozent der Unternehmen sehen die Rolle der Agenturen schrumpfen, der erwartete Mehrwert verschiebt sich zu Leitideen und Markenführung (44,7 Prozent), Insights und Beratung. Strategisch verankert ist KI bei Unternehmen erst zu 10,6 Prozent. Für die eigene Positionierung lohnt der Blick in die Zahlen.",
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/branche-karriere/was-ist-der-neue-wert-von-agenturen/",
+          "headline": "Was ist der neue Wert von Agenturen?",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "KI in der Schriftgestaltung: Für chinesische Schriften produktionsreif, für lateinische noch Jahre entfernt",
+      "blurb": "Gabor Farkasch fasst die Font Tech & AI Conference zusammen. TrionesType generiert Superfamilien mit Zehntausenden Zeichen, weil sich CJK-Glyphen aus wiederkehrenden Komponenten im Quadrat aufbauen. Im Lateinischen ist der Stil selbst das Skelett, Vektorisierung, Spacing und Kerning bleiben ungelöst. Simon Cozens schätzt drei bis vier Jahre bis zu professionell nutzbaren KI-Schriften.",
+      "sources": [
+        {
+          "name": "Designtagebuch",
+          "url": "https://www.designtagebuch.de/follow-up-ki-und-schriftgestaltung-eindruecke-von-der-font-tech-ai-conference/",
+          "headline": "Follow-up: KI und Schriftgestaltung: Eindrücke von der Font Tech AI Conference",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Genie 4 simuliert Welten mit Ton und lässt sich per Text umlenken",
+      "blurb": "Google Deepminds Weltmodell berechnet die Umgebung Bild für Bild, erzeugt erstmals passende Geräusche und Dialoge, und Gemini plant im Hintergrund, was als Nächstes passiert. Es bleibt ein Forschungsmodell mit Grenzen bei langen Sitzungen und komplexer Physik. Zugriff vorerst nur für ausgewählte Tester.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/google-deepmind-zeigt-mit-genie-4-die-naechste-stufe-der-ki-simulation/",
+          "headline": "Google Deepmind zeigt mit Genie 4 die nächste Stufe der KI-Simulation",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1019076/google-genie-4-ai-model",
+          "headline": "Google’s next Genie AI model generates more realistic experiences",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "Come Back to Firefox: Mozilla launches its most ambitious campaign yet to bring people back to the independent alternative to big tech browsers",
+        "Burger king keeps eyes on the fries",
+        "Original Thinking Takes Centre Stage in D AD’s New Blood Awards Briefs"
+      ]
+    }
+  ]
+}
