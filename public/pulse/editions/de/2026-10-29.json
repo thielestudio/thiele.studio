@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "generated_for": "2026-10-29",
+    "window": "2026-10-27..2026-10-29",
+    "sources_scanned": 64,
+    "items_in_window": 181,
+    "lang": "de",
+    "note": "Fünf Stücke mit deutschsprachiger Leitquelle. Die Schriftgestaltungs-Konferenz im Design Tagebuch und Genie 4 bei t3n liefen schon am 28. Oktober. Nicht genommen: das Agenturporträt Studio Pandan (Porträt ohne übertragbaren Kern), KesselsKramers Beichtbuch und die Conference on Expanded Design bei Slanted (Buch- und Veranstaltungshinweis), das KI-Webinar und die HAICA-Abstimmung bei PAGE (Ankündigungen), bei The Decoder Nemotron, Android-Agenten, OpenAI DevDay, Claude for Legal, Qwen-Tests und Personalmeldungen, bei t3n und heise alles ohne Bezug zu kreativer Arbeit, darunter Apple-Hardware, Sicherheitslücken, Raumfahrt und Entwicklerwerkzeuge. Feed userresearchstrategist.com ist ausgefallen. Sieben bezahlte Substack-Beiträge wurden vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Strichpunkt gibt den fusionierten DIE SÜD Versicherungen einen Puls als Leitmotiv",
+      "blurb": "Aus SDK und Stuttgarter wurde eine Dachmarke, der Name folgte aus der vorher erarbeiteten Positionierung, daraus Claim und Leitidee „Spürbar mehr“. Der blaue Puls trägt das ganze Erscheinungsbild, vom Wortlogo zwischen DIE und SÜD bis zu Säulen und Taktmustern. Ein sauberes Beispiel dafür, wie eine Leitidee bis ins Zeichen durchgezogen wird.",
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/dieser-puls-praegt-sich-ein-strichpunkt-fuer-die-sued-versicherungen/",
+          "headline": "Dieser Puls prägt sich ein: Strichpunkt für DIE SÜD Versicherungen",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "University of Nevada, Reno: verschränktes UN als Umriss des Bundesstaats, dazu ein Wolf-Trio",
+      "blurb": "Achtzehn Monate mit Marktforschung und Logotests. Die Buchstaben U und N greifen diagonal ineinander, bilden die Silhouette Nevadas, ein Stern markiert Reno, die Typografie leitet sich aus dem historischen Siegel ab. Das Design Tagebuch zeigt die Herleitung, an der sich das Zeichen messen lässt.",
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "url": "https://www.designtagebuch.de/university-of-nevada-reno-praesentiert-sich-mit-neuem-corporate-design/",
+          "headline": "University of Nevada, Reno präsentiert sich mit neuem Corporate Design",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Photoshop per KI nachgebaut: Golo Roden hält dagegen, dass Kopieren billig ist und Entscheiden nicht",
+      "blurb": "Der Nachbau PhotoCraft funktioniert, weil das Original jede Frage schon beantwortet, und schätzt sich selbst auf etwa 45 Prozent Alltagstauglichkeit. Rodens Punkt: In dreißig Jahren Photoshop stecken Entscheidungen über Abläufe und Werkzeuge, die ein Klon übernimmt, ohne eine davon zu treffen. Er zeigt das am Druckvorstufen-Wissen um Farbe und Schrift.",
+      "sources": [
+        {
+          "name": "heise online",
+          "url": "https://www.heise.de/blog/Kommentar-Photoshop-per-KI-nachgebaut-Kopieren-ist-billig-Entscheiden-nicht-11495511.html",
+          "headline": "Kommentar: Photoshop per KI nachgebaut – Kopieren ist billig, Entscheiden nicht",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Elvis-Erben verklagen Anthropic, der Vorwurf geht über unerlaubtes Training hinaus",
+      "blurb": "Die Rechteinhaber von 274 Songs fordern rund 41 Millionen Dollar und werfen Anthropic vor, Schutzmaßnahmen umgangen und Urheberangaben entfernt zu haben. The Decoder stellt den Fall neben Reservoir und Universal und neben Suno, das sich mit Labels auf lizenzierte Trainingsdaten geeinigt hat.",
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/elvis-erben-vs-anthropic-ki-firma-soll-schutzmassnahmen-umgangen-und-songs-illegal-genutzt-haben/",
+          "headline": "Elvis-Erben vs. Anthropic: KI-Firma soll Schutzmaßnahmen umgangen und Songs illegal genutzt haben",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Gemini 4 Carbon: zwei Wochen nach Argon, stärker bei langen Agenten-Aufgaben und Webentwicklung",
+      "blurb": "Google Deepmind zielt auf mehrtägige Agenten-Workflows und Cyberabwehr. Für gestalterische Arbeit zählt am ehesten die WebDev Arena: plus 89 Elo-Punkte, derzeit Platz vier. Im Artificial Analysis Index v5 steht Carbon mit 59 Punkten vorn.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/gemini-4-carbon-googles-neues-spitzenmodell-zielt-auf-lange-agenten-workflows-und-cyberabwehr/",
+          "headline": "Gemini 4 Carbon: Googles neues Spitzenmodell zielt auf lange Agenten-Workflows und Cyberabwehr",
+          "kind": "portal"
+        },
+        {
+          "name": "heise online",
+          "url": "https://www.heise.de/news/Gemini-Argon-war-gestern-jetzt-kommt-Carbon-11503849.html",
+          "headline": "Neues LLM: Gemini 4 Carbon ist Exploit-Experte",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "Tiffany & Co. mit Amanda Seyfried in der Weihnachtskampagne",
+        "JUBEL nimmt Fruchtbier-Nachahmer aufs Korn",
+        "Interbrand Best Global Brands 2026"
+      ]
+    }
+  ]
+}

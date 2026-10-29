@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "generated_for": "2026-10-29",
+    "window": "2026-10-27..2026-10-29",
+    "sources_scanned": 64,
+    "items_in_window": 133,
+    "lang": "en",
+    "note": "Nine pieces, no Craft & Judgment today. Several strong stories from this window already ran on 28 October (White & Case, the football rebrand essay, the Design Week Awards restart, Genie 4) and were not repeated. Not taken: Coca-Cola's Local Royalty portraits, A2 Type's Louisiana system and DutchScot's Bar Rêve (thinner than the picks), Notion's logo-lineup billboard (opinion without method), two member-only UX Collective pieces on AI deep research and the AI reckoning in UX (not readable), State of Brand on Google search revenue, PR in AI answers and Stripe Press hiring, Alex M H Smith on what to build in 2027 (business, not brand), Ruben Dominguez on datapreneurs, Roastbrief releases and appointments, the Anthropic IPO wave, Microsoft and Alphabet earnings, Chrome autofill, Nvidia transcription, Meta's business terms, Creative Bloq deals, reviews and Apple-event coverage. Feed userresearchstrategist.com failed. Seven paid Substack posts were removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Patrick Neeman: smaller teams bring back the design leader who still makes the work",
+      "blurb": "He traces design headcount inflation to cheap money (Capital One went from about 90 designers in 2014 to 500 or 600) and argues the metric has flipped to output per person. The piece is a case for the player-coach: a leader who keeps hands in the work without hoarding the best projects.",
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/smaller-teams-want-design-leaders-who-make-again-heres-how-b8939221bd7b?source=rss----138adf9c44c---4",
+          "headline": "Smaller teams want design leaders who make, again. Here’s how.",
+          "kind": "person",
+          "author": "Patrick Neeman",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Synthetic users chase the wrong goal, says Saeideh Bakhshi: simulate the system, not the person",
+      "blurb": "Using the Wright brothers' wind tunnel, crash-test dummies built as scaled-down men and Prussian war games, she argues that a simple model of how people react to an algorithm and to each other teaches more than a detailed fake persona. The warning for research teams: a richer biography does not help if the traits that drive the decision are missing.",
+      "sources": [
+        {
+          "name": "Research Toolbox",
+          "url": "https://saeidehbakhshi.substack.com/p/synthetic-users-are-closer-to-wind",
+          "headline": "The Wrong Ambition for Synthetic Users",
+          "kind": "person",
+          "author": "Saeideh Bakhshi",
+          "channel": "Research Toolbox"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Apple Music's new identity is made by sound moving oil, and the team worked backwards from the image",
+      "blurb": "TBWA\\Media Arts Lab and Optical Arts spent eight to ten weeks of R&D on oils and a custom rig that turns notes into sine waves. Pleasant chords produced ugly visuals, so they started from the visual they wanted and searched for the notes that made it. It's Nice That reads the behind-the-scenes film as part of the brand's proof that the work actually happened.",
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/features/apple-music-rebrand-graphic-design-spotlight-281026",
+          "headline": "Exactly how Apple Music used sound to build its new brand identity",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Span's identity for the Illinois Department of Human Rights borrows from civil rights placards",
+      "blurb": "The brief was a public body seen as rigid, whose purpose had become invisible. Span's answer is clarity in how the department speaks and organises information, built on a punctuation mark, with the stated line that the agency should stay neutral in its work but not about its purpose.",
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/work/spans-identity-for-illinois-department-of-human-rights-turns-a-common-piece-of-punctuation-into-a-rallying-cry/",
+          "headline": "Span s identity for Illinois Department of Human Rights turns a common piece of punctuation into a rallying cry",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Mother Design started Purple Garden's rebrand with a séance and automatic drawing",
+      "blurb": "The charcoal session's forms became the base of the identity, then the team alternated between design software and AI tools to keep it unpredictable. Concrete moves worth noting: six warmer purples to escape the category's cool blue-purple, and a repositioning from one-off readings to an ongoing practice.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/work/how-mother-design-turned-a-seance-into-a-new-identity-for-purple-garden/",
+          "headline": "How Mother Design turned a séance into a new identity for Purple Garden",
+          "kind": "portal"
+        },
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/mother-design-turns-intuition-into-identity-for-purple-garden/",
+          "headline": "Mother Design Turns Intuition Into Identity For Purple Garden",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Amstel builds its refresh on the lettering of Amsterdam's bridge signs",
+      "blurb": "A bespoke wordmark typeface drawn from historic canal-bridge signage, a sharper golden circle and a crest that puts the Amstel bridge forward, all aimed at premium positioning around the 1870 founding. A compact example of heritage carried by one local detail rather than by an old-looking style.",
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/amstel-updates-global-visual-identity-to-highlight-amsterdam-heritage/",
+          "headline": "Amstel updates global visual identity to highlight Amsterdam heritage",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Etsy now requires one unedited real photo per listing and bans AI-generated patterns and instructions",
+      "blurb": "AI art stays allowed if it is labelled, bot-made listings are out. Creative Bloq puts the rule next to Spotify removing 50 million AI tracks and Snap keeping generated content out of recommendations, and reads it as a marketplace for handmade work having to state the obvious.",
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/etsys-crackdown-on-ai-slop-is-welcome-but-it-shows-how-far-things-have-slipped",
+          "headline": "Etsy's crackdown on AI slop is welcome, but it shows how far things have slipped",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Interbrand's Best Global Brands 2026: total value up 8.1%, but brand strength alone no longer carries growth",
+      "blurb": "The ranking adds up to $3.87 trillion. Interbrand's reading is that several established brands lost ground while those benefiting from AI investment and product demand gained most. Source is the press release, so treat the framing as Interbrand's own.",
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/brands-that-turn-strength-into-action-pull-ahead-in-interbrands-best-global-brands-2026/",
+          "headline": "Brands That Turn Strength Into Action Pull Ahead In interbrand s Best Global Brands 2026",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Gemini 4 Carbon arrives two weeks after Argon, with gains in agentic work and web development",
+      "blurb": "Google DeepMind positions it for long multi-step tasks and cyber defence. For design-adjacent work the relevant number is WebDev Arena, where it rose 89 Elo to fourth place. Ars Technica notes it is essentially a slightly better Argon that most people cannot use yet.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+          "headline": "Gemini 4 Carbon: Our next frontier model",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+          "headline": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+          "kind": "portal"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/",
+          "headline": "Google announces Gemini 4 Carbon, its latest frontier AI model that you can t use",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 23,
+      "examples": [
+        "Tiffany & Co. taps Amanda Seyfried for holiday campaign",
+        "JUBEL swipes at copycat fruit lagers in debut campaign",
+        "RNIB appoints VCCP Blue as lead creative agency"
+      ]
+    }
+  ]
+}
