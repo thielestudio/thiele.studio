@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "generated_for": "2026-10-30",
+    "window": "2026-10-28..2026-10-30",
+    "sources_scanned": 64,
+    "items_in_window": 132,
+    "lang": "en",
+    "note": "Seven pieces, a thin day. No Design Practice, Craft & Judgment or AI Models today. Apple Music, Span, Mother Design's Purple Garden, Amstel, Bilun Bilman, Patrick Neeman and Gemini 4 Carbon already ran on 28 or 29 October and were not repeated. Not taken: two UX Collective pieces on autonomy by design and agents (blocked on fetch, not assessable), Design Week on sonic branding trends, the student fête challenge and Asda's Asquith range (blocked on fetch), Air's creative agent (sponsored), Prada's hand-drawn holiday film (stance without method), Dawn for Bureau Clara Wichmann (press release without substance), The New Company talk recap (event teaser), Mistral Large 4 and other model, earnings and Anthropic IPO news without a creative angle, Creative Bloq deals, reviews and gaming, Roastbrief appointments and releases. Feed userresearchstrategist.com failed. Six paid Substack posts were removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Optimizely puts most of a year's content budget into a 36-episode microdrama where the product barely appears",
+      "blurb": "Content lead Julianne DeVincenzo argues AI made B2B content easier to produce and harder to remember, so Murder in Marketing, made with Caspian Studios, competes with memes rather than ads: by her count the product is named about five times across all episodes. A concrete test of fewer, more memorable pieces over content volume.",
+      "sources": [
+        {
+          "name": "State of Brand",
+          "url": "https://www.thestateofbrand.com/news/ai-content-memorability-b2b-microdrama-julianne-devincenzo-optimizely",
+          "headline": "AI Made B2B Content Cheap. A Murdered CEO Is Trying To Make It Memorable. | State of Brand",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Studio Lotta Nieminen builds Aplomb's perfume identity on the idea of a letter written to someone",
+      "blurb": "Each fragrance gets an illustrated stamp set in a debossed frame, and the wax seal moved to the bottle caps because sealing the box felt too obvious for luxury. Nieminen names the risk herself: letter-writing references skew crafty unless restraint holds them in check.",
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/studio-lotta-nieminen-aplomb-branding-project-291026",
+          "headline": "From wax seals to postal stamps, Aplomb perfume’s packaging has the intimacy of a handwritten letter",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Atipus reads the wine name Vinya Llarga, 'long vineyard', literally and wraps the bottle in one long blurred landscape",
+      "blurb": "The colour streaks look like a view from a fast train and come into focus as foliage on the back label, while the type stays small and condensed. A case for taking the obvious idea straight from the name and keeping everything else quiet.",
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/work/why-studio-atipus-designed-a-wine-label-to-look-like-its-been-shot-from-a-speeding-train/",
+          "headline": "Why Studio Atipus designed a wine label to look like it s been shot from a speeding train",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "McDonald's Sweden and NORD haunt the brand's former restaurant sites with geofenced app offers",
+      "blurb": "Walk past a spot where a McDonald's used to be and an offer appears in the app, sent by the restaurant that once stood there. The Halloween mechanic turns the brand's own closures into shared memory, with video, radio, cinema and digital out-of-home dropping clues.",
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/mcdonalds-sweden-haunts-its-formerrestaurant-locations-in-new-campaign/",
+          "headline": "McDonald’s Sweden haunts its formerrestaurant locations in new campaign",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "AA/WARC: UK ad spend heads for a record £14.0bn in Q4, with retail media and social leading the year",
+      "blurb": "Full-year 2026 is forecast at £51.3bn, up 9.9%, driven by retail media (23.0%), social (20.7%) and addressable TV (14.7%), while total TV grows 0.9%. Growth is expected to slow to 6.5% in 2027.",
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/uk-advertising-forecast-to-reach-record-14-0bn-in-festive-quarter/",
+          "headline": "Uk Advertising Forecast To Reach Record £14.0bn In festive Quarter",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Cannes Lions 2027 takes award-winning work out of the Palais and into the city",
+      "blurb": "Shortlisted and winning work will be shown on the Croisette, the beaches and partner venues, and the delegate pass starts turning into a city-wide passport that formally labels fringe events as Flagship or Recommended Experiences. The festival is also adding a Global Creative Assembly and wider access measures.",
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/cannes-lions-2027the-worlds-city-of-creativity/",
+          "headline": "Cannes Lions 2027:The World’s City of Creativity",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Maxon teases another AI feature for Cinema 4D, and users push back before knowing what it does",
+      "blurb": "Reactions on X run from 'slop generator' to requests for AI where it would save real labour, such as UV unwrapping. The tease follows Maxon's March partnership with Tencent Cloud to bring the HY 3D generative engine into Cinema 4D.",
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/maxon-teases-another-ai-tool-and-artists-arent-happy-despite-not-knowing-what-it-does-yet",
+          "headline": "Maxon teases another AI tool, and artists aren't happy, despite not knowing what it does yet",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 22,
+      "examples": [
+        "Landor adds senior hires in corporate branding, healthcare and AI",
+        "Zulu Alpha Kilo's AI satire \"The Chat\"",
+        "Columbia's \"Don't Panic Room\" bunker giveaway"
+      ]
+    }
+  ]
+}

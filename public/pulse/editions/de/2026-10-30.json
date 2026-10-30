@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "generated_for": "2026-10-30",
+    "window": "2026-10-28..2026-10-30",
+    "sources_scanned": 64,
+    "items_in_window": 192,
+    "lang": "de",
+    "note": "Fünf Stücke mit deutschsprachiger Leitquelle. Strichpunkt für DIE SÜD, die University of Nevada, der Photoshop-Kommentar bei heise und Gemini 4 Carbon liefen schon am 29. Oktober. Nicht genommen: der Non-Profit-Artikel bei t3n (Plus-Artikel hinter Bezahlschranke), Agenturwachstum bei PAGE (Unternehmensführung, nicht Marke), der Brillen-Spot von Maison Margiela und Gentle Monster (zu dünn), bei Werbewoche das Werbeformat Welcome Ad Split (Herstellerzahlen), MACH Strategy, Nestlé, Nespresso, Kurzfilmtage und Ankündigungen, bei Slanted zwei Veranstaltungsberichte, bei The Decoder Mistral Large 4, Nvidia und OpenAI-Tarife, bei t3n und heise alles ohne Bezug zu kreativer Arbeit, darunter Apple-Hardware, Whatsapp und Entwicklerwerkzeuge. Feed userresearchstrategist.com ist ausgefallen. Sechs bezahlte Substack-Beiträge wurden vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Suva und MetaDesign entwickeln den Auftritt weiter, statt ihn neu zu machen",
+      "blurb": "Eine Analyse mit internen und externen Fachleuten ergab, dass die Wiedererkennbarkeit des Auftritts von 2018 trägt. Orange und Blau bleiben, dazu kommen kräftigere Farben, ein Illustrationsstil und vier Erlebnisprinzipien als gemeinsamer Rahmen für alle Kanäle.",
+      "sources": [
+        {
+          "name": "Werbewoche",
+          "url": "https://www.markt-kom.com/de/kreativity/branding/suva-und-metadesign-markenauftritt-als-evolution/",
+          "headline": "Suva und MetaDesign: Markenauftritt als Evolution",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Thom Pfister schneidet das H von SwissHoldings an und gewinnt daraus Schweizer Kreuz und Layoutraster",
+      "blurb": "Aus dem Anschnitt entstehen drei Rechteckformen, die als modulares System Platzierungen und Proportionen im ganzen Auftritt festlegen. Gläserne Objekte wie Sprechblasen, Waagschalen und Justitia bebildern die Verbandsthemen.",
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/angeschnitten-dazu-glas-spannende-neue-identity-fuer-die-swissholdings/",
+          "headline": "Angeschnitten dazu Glas: Spannende neue Identity für die SwissHoldings",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Swiss Post Sans musste die alte Hausschrift ersetzen, ohne dass ein Layout neu gesetzt wird",
+      "blurb": "Diese Vorgabe, der Hard Switch, band die aufrechten Schnitte, Swiss Typefaces prüfte sie in frühen Betatests unter realen Bedingungen. Freiheit blieb den Kursiven, die kalligrafische Züge bekommen, statt nur geneigt zu sein. Ein System für Bildschirm und Druck statt zwei Versionen.",
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/typografie/swiss-post-sans-robustes-sprachtalent-fuer-die-schweizer-post/",
+          "headline": "Swiss Post Sans: Robustes Sprachtalent für die Schweizer Post",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Schweiz Tourismus und Wirz verkaufen den Herbst als Verschwörung, die das Land dementiert",
+      "blurb": "Erst kursiert ein anonymes Video ohne Absender, dann dementieren Direktor Martin Nydegger und rund 85 Partner mit eigenen Videos. Zum Schluss werden die angeblichen Herbstgeheimnisse als konkrete Reisetipps aufgelöst.",
+      "sources": [
+        {
+          "name": "Werbewoche",
+          "url": "https://www.markt-kom.com/de/kreativity/kampagnen/schweiz-tourismus-und-wirz-decken-herbstverschwoerung-auf/",
+          "headline": "Schweiz Tourismus und Wirz decken Herbstverschwörung auf",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Anthropic-Experiment: Fachleute folgen der zufälligen Neigung ihres KI-Agenten und halten das Urteil für ihr eigenes",
+      "blurb": "Bei vier Ermessensentscheidungen übernahmen 50 Fachleute in 86 Prozent der Fälle die per Münzwurf zugewiesene Tendenz des Agenten, Erfahrung und Expertise schützten nicht. Die Autoren schlagen vor, dass Agenten beide Seiten stark machen oder zuerst nach der eigenen Einschätzung fragen.",
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/fachleute-uebernehmen-zufaellige-meinungen-ihres-ki-agenten-und-halten-sie-oft-fuer-ihre-eigenen/",
+          "headline": "Fachleute übernehmen zufällige Meinungen ihres KI-Agenten und halten sie oft für ihre eigenen",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "Landor besetzt Führungsposten in Corporate Branding, Healthcare und KI",
+        "Zulu Alpha Kilos KI-Satire „The Chat“",
+        "McDonald’s Schweden lässt frühere Filialen spuken"
+      ]
+    }
+  ]
+}
