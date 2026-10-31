@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "generated_for": "2026-10-31",
+    "window": "2026-10-29..2026-10-31",
+    "sources_scanned": 64,
+    "items_in_window": 183,
+    "lang": "de",
+    "note": "Drei Stücke mit deutschsprachiger Leitquelle. Dünner Tag: die Stücke vom 30. Oktober (Suva, SwissHoldings, Swiss Post Sans, Herbstkampagne von Schweiz Tourismus, Anthropic-Experiment) stehen schon in der Ausgabe von gestern und sind nicht noch einmal aufgenommen. Nicht genommen: Mondaine Doppio (Produktlaunch), Maison Margiela und Gentle Monster (Vortag verworfen), Nestlé, Nespresso, Viva Con Agua, Verbands- und Veranstaltungsmeldungen, die Reddit-Traffic-Meldung bei The Decoder (Vortag), heise und The Decoder zu Entwicklerwerkzeugen und Sicherheit, t3n zu Gadgets, Raumfahrt und Finanzen. Feed userresearchstrategist.com ausgefallen. Eine bezahlte Substack-Quelle vorab entfernt (ai-supremacy.com)."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "KaDeWe führt Berlin, Hamburg und München unter einer Dachmarke zusammen",
+      "blurb": "Die drei Häuser behalten ihre Namen und ihre lokale Verankerung. Verbunden werden sie über eine gemeinsame Typosignatur, und die Logos von Alsterhaus und Oberpollinger sind neu gestaltet.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "designtagebuch",
+          "url": "https://www.designtagebuch.de/houses-of-kadewe-drei-haeuser-eine-gemeinsame-typosignatur/",
+          "headline": "Houses of KaDeWe: Drei Häuser, eine gemeinsame Typosignatur",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Googles KI-Suche bringt weniger ein, also soll mehr Werbung her",
+      "blurb": "Googles Chief Business Officer räumte ein, dass der KI-Modus im Vergleich zur klassischen Suche weniger einbringt. Google will das über mehr Werbung in KI-Antworten auffangen. Werbetreibende brauchen dafür vielleicht noch etwas Zeit.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/ki-suche-google-werbung-1770914/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "KI-Suche drückt auf Werbeeinnahmen und Google will mit mehr Werbung gegensteuern",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "ArtCraft als Adobe-Ersatz im Praxistest",
+      "blurb": "Die c't hat den mit KI-Coding-Agenten nachgebauten Adobe-Klon ArtCraft an einem Video-Projekt geprüft. Der Artikel klärt, ob er Photoshop, Premiere und After Effects im Alltag ersetzen kann.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "heise",
+          "url": "https://www.heise.de/news/Kann-ArtCraft-Adobe-ersetzen-Wir-haben-ein-3003-Video-damit-geschnitten-11506536.html",
+          "headline": "Kann ArtCraft Adobe ersetzen? Wir haben ein 3003-Video damit geschnitten",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "Grayson Music Scales Up Leadership",
+        "Halloween Gets Unholy: Tuborg and Forward Bring Hyenah's Masked Afro House Takeover to Mumbai and Bengaluru",
+        "Kerfu2le to push craft with Raphael Tamkalis joining as Design Director."
+      ]
+    }
+  ]
+}
