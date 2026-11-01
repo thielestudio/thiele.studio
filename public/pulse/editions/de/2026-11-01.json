@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "generated_for": "2026-11-01",
+    "window": "2026-10-30..2026-11-01",
+    "sources_scanned": 64,
+    "items_in_window": 141,
+    "lang": "de",
+    "note": "Drei Stücke mit deutschsprachiger Leitquelle. KaDeWe und ArtCraft liefen schon gestern und sind nicht wiederholt. Nicht genommen: L Artista (PAGE+, hinter der Bezahlschranke), Claude Motion bei t3n (Bezahlschranke), Viva Con Agua (Buchvorstellung), Mondaine Doppio (Produktlaunch), heise und The Decoder zu Entwicklerwerkzeugen, Sicherheit und Finanzierung, t3n zu Raumfahrt, Gadgets und Alltagstechnik. Feed userresearchstrategist.com ausgefallen. Eine bezahlte Substack-Quelle vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "KI-Video mit Kontrolle: erst das Bild, dann die Animation",
+      "blurb": "Der Autor arbeitet fast nur noch mit einem Image-to-Video-Ablauf, weil Text-to-Video dieselbe Szene nicht wiederholen kann und Figuren, Kleidung und Produkte von Lauf zu Lauf variieren. Sein Ablauf beginnt mit Idee und Bildgenerierung samt Korrektur von Details wie Händen, danach folgt das Hochskalieren. Gelesen ist nur der erste Teil des Artikels.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/ki-videos-schluss-mit-dem-zufallsprinzip-1715645/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "Schluss mit dem Zufallsprinzip: Mit diesem 6-Schritte-Workflow übernimmst du die volle Kontrolle über deine KI-Videos",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Strichpunkt macht aus zwei Versicherern eine Marke und lässt sie pulsieren",
+      "blurb": "Aus der Süddeutschen Krankenversicherung und der Stuttgarter Lebensversicherung wird DIE SÜD Versicherungen. Der Name nimmt beide Herkünfte auf, der Puls als wandelbares Element trägt die Leitidee „Spürbar mehr“. Bis Mitte 2027 werden die Auftritte angeglichen, der Launch ist ab Sommer 2027 geplant.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/dieser-puls-praegt-sich-ein-strichpunkt-fuer-die-sued-versicherungen/",
+          "headline": "Dieser Puls prägt sich ein: Strichpunkt für DIE SÜD Versicherungen",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Morrisons und Leo UK verkaufen zu Halloween Gemüse mit Monstergesicht",
+      "blurb": "Möhren werden zu „Scary Fingers“, die Avocado reißt die „Monster Eyes“ auf. Die Kampagne bleibt bei den Markenfarben Gelb und Grün und wirbt ohne Kürbis und ohne Sonderangebote für das normale Sortiment. Damit setzt sie sich bewusst vom Süßkram-Überfluss der Saison ab.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/gruseliges-gemuese-happy-halloween-mit-morrisons/",
+          "headline": "Gruseliges Gemüse: Happy Halloween mit Morrisons!",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 24,
+      "examples": [
+        "Grayson Music Scales Up Leadership",
+        "Shake Shack and Tombras Tell New Yorkers: \"If You Bring It, We'll Truffle It\"",
+        "AI Answers as the First Brand Experience: Reputation Can t Be Optimized, It Has to Be Earned"
+      ]
+    }
+  ]
+}

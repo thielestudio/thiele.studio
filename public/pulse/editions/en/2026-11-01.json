@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "generated_for": "2026-11-01",
+    "window": "2026-10-30..2026-11-01",
+    "sources_scanned": 64,
+    "items_in_window": 95,
+    "lang": "en",
+    "note": "Thin weekend, three new stories. CVS/Pearlfisher, Trustpilot, the AI opt-out standard and Optimizely already ran on 30 and 31 October and are not repeated. Not taken: Creative Bloq how-tos, laptop deals and Halloween crafts, Nothing and Club Nothing (brand opinion, no transferable core), the Print piece on curiosity at DesignThinkers (reflection), Design Week student challenge (announcement), Roastbrief agency hires and regional Halloween campaigns, TechCrunch and Ars Technica on AI financing, data centers and security incidents. Trustpilot, uxdesign.cc and one Roastbrief piece returned 403 and could not be read. Feed userresearchstrategist.com failed. One paid Substack item removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Mother Design drew with a psychic's guide before designing the Purple Garden identity",
+      "blurb": "For the psychic services platform, the team ran a chakra reading and an automatic drawing and writing workshop with a Purple Garden practitioner, then built the identity from the resulting marks and textures. The workshop stood in for a brand audit: the designers wanted to experience the service themselves before making anything for its audience.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/features/how-a-seance-shaped-this-beautiful-psychic-app-rebrand",
+          "headline": "How a séance shaped this beautiful psychic platform rebrand",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Elmwood brought Dolmio's puppet family back by writing rules for each character",
+      "blurb": "Elmwood's Kyle Whybrow says each puppet got principles, behaviours and visual codes, and the family was built into Dolmio's red dot system so it sits inside the graphic language rather than on top of it. The aim was to change enough to avoid a tribute act and not so much that it breaks the bond with the characters.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/features/nostalgia-is-a-double-edged-sword-how-dolmio-revived-its-beloved-puppet-family-for-a-new-generation",
+          "headline": "\"Nostalgia is a double-edged sword\": how Dolmio revived its beloved puppet family for a new generation",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Rockstar art-directed every GTA 6 passer-by instead of generating the crowd",
+      "blurb": "According to an Edge cover feature, a dedicated LA team of writers, directors and producers shaped the game's pedestrians, around 600,000 animations in total. Each NPC carries personality traits that govern how it reacts to the player. The author reads it as a deliberate bet on raising the ceiling, where procedural crowds only raise the floor.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/rockstar-art-directed-600-000-animations-so-that-gta-6s-passers-by-feel-like-real-people",
+          "headline": "Rockstar art-directed 600,000 animations, so that GTA 6's passers-by feel like real people",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 24,
+      "examples": [
+        "Grayson Music Scales Up Leadership",
+        "Shake Shack and Tombras Tell New Yorkers: \"If You Bring It, We'll Truffle It\"",
+        "AI Answers as the First Brand Experience: Reputation Can t Be Optimized, It Has to Be Earned"
+      ]
+    }
+  ]
+}
