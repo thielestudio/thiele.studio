@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "generated_for": "2026-11-02",
+    "window": "2026-10-31..2026-11-02",
+    "sources_scanned": 64,
+    "items_in_window": 70,
+    "lang": "de",
+    "note": "Dünnes Wochenende, zwei Stücke mit deutschsprachiger Leitquelle. DIE SÜD und Morrisons liefen gestern. Nicht genommen: t3n zu konsistenten KI-Bildern (lief am 19.10.), t3n zur Elvis-Klage gegen Anthropic (lief am 29.10. über The Decoder), Viva Con Agua (Buchvorstellung), HAICA-Publikumspreis (Abstimmungsaufruf), The Decoder zu Wasserzeichen, Sicherheit, Medizin und Modellforschung, t3n zu Apple, Robotik, Krypto, Sicherheitslücken und Alltagstechnik, heise Developer-Häppchen. Feed userresearchstrategist.com ausgefallen. Drei bezahlte Substack-Beiträge vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Bildbearbeitung per Agent: Spezialwerkzeuge schlagen den Allzweck-Editor",
+      "blurb": "In einem Test mit 600 Bearbeitungen lieferte der Allzweck-Editor Flux-2-Klein-9B in 42,7 Prozent der Fälle nichts Brauchbares, gut zwei Drittel davon lösten Spezialwerkzeuge fürs Schärfen, Drehen oder Zoomen. Parallel aus dem Original erzeugte Varianten zogen die Profis dem schrittweisen Nachbessern vor. Adobes EditAgent baut darauf auf und braucht dafür zehnmal mehr Rechenzeit.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/adobe-forscher-machen-ki-bildbearbeitung-mit-spezialwerkzeugen-statt-stumpfen-wiederholungen-zuverlaessiger/",
+          "headline": "Adobe testet, wie gut KI-Agenten Werkzeuge wie Photoshop-Profis nutzen können",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "ChatGPT rechnet ab Dezember Chat und Codex über ein Token-Kontingent ab",
+      "blurb": "Plus-, Pro- und Business-Tarife teilen sich dann ein Budget, komplexere Modelle verbrauchen mehr davon, einfache Instant-Chats zählen nicht. Restbudget und Reset-Zeiten sollen in den Einstellungen sichtbar werden. The Decoder erwartet, dass günstige Tarife bei intensiver Nutzung schlechter wegkommen als heute.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/chatgpt-legt-chat-und-work-zusammen-und-nutzer-muessen-mehr-mit-ihren-token-haushalten/",
+          "headline": "ChatGPT legt Chat und Work zusammen und Nutzer müssen mehr mit ihren Token haushalten",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": []
+}

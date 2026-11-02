@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "generated_for": "2026-11-02",
+    "window": "2026-10-31..2026-11-02",
+    "sources_scanned": 64,
+    "items_in_window": 35,
+    "lang": "en",
+    "note": "Thin weekend window, seven stories, nothing for Industry & Market or AI Models. The Purple Garden séance, Dolmio and GTA 6 pieces ran yesterday and are not repeated. Two uxdesign.cc pieces are member-only and were judged from the opening. Not taken: Creative Bloq deals, Procreate and Cricut how-tos, folding phones, the smart-glasses billboard prediction and the Christopher Glass interviews (no transferable core), Smashing wallpapers, Samia Halaby and the Amiga (history), Context is the new interface (concept essay), Fast Company on older creatives and AI (opinion), Department of Product digest, TechCrunch on OpenAI funding, data centers and the 'AI compute campuses' PR idea, The Verge AI Tamagotchi. Feed userresearchstrategist.com failed. Three paid Substack items removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Designing AI cost controls starts with the unit people think they spend",
+      "blurb": "Bakusevych sorts the options from tokens and dollars to credits, tasks, outcomes and usage allowances, and frames the choice by who carries the uncertainty: metered units push it to the user, tasks and outcomes to the vendor. His working rule: show a price or range before expensive discrete jobs, keep everyday exploration under an allowance, and always state reset times and what gets consumed first.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/how-to-design-transparent-ai-cost-controls-a44fd52b9104?source=rss----138adf9c44c---4",
+          "headline": "How to design transparent AI cost controls",
+          "kind": "person",
+          "author": "Taras Bakusevych",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "A design system's reasons now sit in a text file written for machines",
+      "blurb": "Kakehi describes a markdown file with tokens on top and written rationale below that settled a review dispute, because both sides had already agreed to be bound by it. His claim is narrower than the hype: the component library was only the compiled form of decisions whose reasons lived elsewhere. Member-only story, only the opening was readable.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/your-design-system-was-never-the-components-9605130c3038?source=rss----138adf9c44c---4",
+          "headline": "Your design system was never about components",
+          "kind": "person",
+          "author": "Takuma Kakehi",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Unpowered SSDs and memory cards can start losing files within a year",
+      "blurb": "On a visit to Lexar, the writer was told that flash memory in consumer cards and SSDs left in a drawer without power can begin losing data within a year. The piece sets that against century-old photographs that are still viewable, while most digital work from twenty years ago can no longer be opened.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/will-your-digital-work-still-exist-in-2046-heres-why-the-answer-might-be-no",
+          "headline": "Will your digital work still exist in 2046? Here’s why the answer might be no",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "St. James's Place built a canyon of real paper instead of rendering one",
+      "blurb": "Isobel's 'Answers' film, directed by ManvsMachine, puts Keeley Hawes in a maze of printed pages that was built and shot in a studio without CGI. The paper and hourglass motifs carry into the wider St. James's Place brand, and the review credits the practical build for making a financial services ad feel tactile.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/work/isobels-financial-services-ad-shows-what-a-difference-it-makes-when-you-dont-use-cgi/",
+          "headline": "This celebrity ad shows what a difference it makes when you don t use CGI",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "The first Christmas ads of 2026 lean on Scrooge, reunions and staff",
+      "blurb": "Creative Boom's rolling round-up so far: Debenhams continues its in-house 'The Village' series, BBH Dublin's Tesco Ireland spot honours store colleagues, and Tesco UK swaps last year's vignettes for a three-minute road-trip story by BBH London. Two brands have already borrowed Dickens; an expert verdict follows later in the season.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/christmas-adverts-of-2026/",
+          "headline": "Christmas adverts 2026: Scrooges, Muppets and a BFG with the sniffles – the best festive ads so far",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Wendy's turns its mascot into a pixel-art RPG headed for Steam",
+      "blurb": "WendyQuest, built by indie studio 81monkeys, is a playable turn-based game that also mocks rivals, with enemies such as Frydusa and the Golden Archers. Gamers mostly ask why it looks so good, and the piece sets it beside Pepsi, reminded on social media that it already made Pepsiman in 1999.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/from-pepsi-man-to-wendyquest-why-are-brands-making-video-games-again",
+          "headline": "From Pepsi Man to WendyQuest, why are brands making video games again?",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "AI colour palettes can pass colour by colour and still fail as a chart",
+      "blurb": "Rhyne asked Gemini for a five-step diverging scheme that passes colour deficiency checks: the individual elements passed, the advanced visualisations did not. Her point from earlier tests is that chatbots approximate answers and cannot simulate colour blindness themselves. Member-only story, only the opening was readable.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/when-colors-pass-but-palettes-fail-55b7210f8e4d?source=rss----138adf9c44c---4",
+          "headline": "When colors pass but palettes fail",
+          "kind": "person",
+          "author": "Theresa-Marie Rhyne",
+          "channel": "UX Collective"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": []
+}
