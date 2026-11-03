@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "generated_for": "2026-11-03",
+    "window": "2026-11-01..2026-11-03",
+    "sources_scanned": 64,
+    "items_in_window": 129,
+    "lang": "de",
+    "note": "Drei Stücke mit deutschsprachiger Leitquelle. Nicht genommen: Conviva bei Design Tagebuch (Schriftvorstellung mit Rabattcode und Verlosung, wenig zur Gestaltung selbst), PAGE-Termin zu LinkedIn und HAICA-Publikumspreis, The Decoder zu Adobes EditAgent (lief gestern), zu Grok, Goldman Sachs, Minecraft-Agenten, Aramco, OpenAI-Lobby und Workslop-Podcast, t3n zu Anthropic-Börsengang, Spotify-KI-Remixen, Checkout-Studie, Vibe-Coding-Sicherheit und Alltagstechnik, heise zu Herdr und C++26. Feeds export.arxiv.org und userresearchstrategist.com ausgefallen. Vier bezahlte Substack-Beiträge vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "LA28 leitet Farben und 13 Muster aus der Strelitzie ab",
+      "blurb": "Zum neuen Slogan »Stars Align« zeigt PAGE weitere Teile der Identity. Orange, Gelb, Rot und Blau der Papageienblume tragen 13 Muster, vier eigens gezeichnete Schriften zitieren handbemalte Ladenschilder aus den Stripmalls der Stadt. Im Logo wird das A durch wechselnde Zeichen ersetzt, laut PAGE das erste flexible Logo der Olympiageschichte.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/flowers-first-nations-so-werden-die-olympischen-spiele-in-la28-aussehen/",
+          "headline": "Flowers First Nations: So werden die Olympischen Spiele in LA28 aussehen!",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Ein Eintrag in der robots.txt soll ab 2027 das KI-Training bei allen Anbietern sperren",
+      "blurb": "Google will ein anbieterübergreifendes Token der IETF-Arbeitsgruppe AIPREF auswerten, Einzelregeln für Google-Extended bleiben möglich. Der Haken für alle, die gefunden werden wollen: Nur wer Google-Extended ausdrücklich erlaubt, kann über Grounding in Antworten der Gemini-Apps auftauchen.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "heise online",
+          "url": "https://www.heise.de/news/KI-Training-Ein-Eintrag-in-der-robots-txt-soll-bald-fuer-alle-Bots-reichen-11508208.html",
+          "headline": "robots.txt auf Diät: Ein einziger Befehl soll alle KI-Trainer stoppen",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Claude Code baut keine bestehenden Games mehr nach",
+      "blurb": "Anthropic hat den Systemprompt ergänzt. Eigene Spiele, Genre-Spiele und Spiele aus eigenen Entwürfen bleiben erlaubt, der Nachbau eines konkreten Titels nicht, auch unter neuem Namen. Laut t3n bremst die Regel offenbar auch legitime Arbeit wie das Analysieren von Spielmechaniken.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/anthropic-claude-games-1771064/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "Anthropic verbietet Claude Nachbau von Games – doch die Regeln treffen auch legitime Projekte",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+          "headline": "Anthropic clamps down on Claude’s AI video game clones",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 23,
+      "examples": [
+        "New flamingo family leads Very's Christmas creative",
+        "You Know Yourself, When you've Seen An Elf",
+        "Merrell Passes One Of The World's Most Extreme Product Tests As Karl Bushby Completes The Goliath Expedition"
+      ]
+    }
+  ]
+}

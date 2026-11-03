@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "generated_for": "2026-11-03",
+    "window": "2026-11-01..2026-11-03",
+    "sources_scanned": 64,
+    "items_in_window": 92,
+    "lang": "en",
+    "note": "Twelve stories from a two-day window. Already run on 1 or 2 November and not repeated: AI cost controls, design-system rationale files, the CGI-free St. James's Place ad, the Christmas ads round-up (which also covers Thatchers), WendyQuest, data-storage decay and AI palettes. Not taken: Creative Bloq deals, gadgets, Procreate and Cricut how-tos, the illuminated Apple logo (reaction piece), Zelda and the horse illusion; It's Nice That portraits of Alex Rorison and Charlie Smith and the career-advice column (no transferable core); Design Week's interior-architecture interview; Karri Saarinen on organisations overloaded by AI output (company leadership, not design); Jess Holbrook's cybernetics image experiment (link post); TechCrunch on funding, data centres, Grok limits and the Brave lawsuit; MIT Technology Review on agentic analytics; Department of Product digest. All 23 Roastbrief items were press releases or campaign announcements without enough to judge; Very's hybrid CGI and AI flamingo spot came closest. Feeds export.arxiv.org and userresearchstrategist.com failed. Four paid Substack items removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "A 260-variant button shows where a Figma design kit stops making decisions",
+      "blurb": "Puhakka looks back on merging a company's design kits into one library of about 40 components and 1,786 variants. Of the button's 260 variants, 15 needed real thinking and the rest were arithmetic, which is why he now builds crude, lean components and argues that a governed LLM skill could carry an evolving system better than components or documentation alone.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/state-of-a-system-5c8473db1e9?source=rss----138adf9c44c---4",
+          "headline": "State of a system",
+          "kind": "person",
+          "author": "Pekka Oskari Puhakka",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "A share dialog that asks 'read it first?' is an ethical design decision",
+      "blurb": "Buckley draws on Aristotle to argue that wording, available actions and hierarchy shape the habits an interface invites. His worked example puts a 'Read article' button above 'Share now' when the piece hasn't been opened, and he names the counter-risk: designers deciding for others how they ought to behave.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/virtue-ethics-in-everyday-interface-design-5f2aca841781?source=rss----138adf9c44c---4",
+          "headline": "Virtue ethics in everyday interface design",
+          "kind": "person",
+          "author": "Michael Buckley",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Arrowhead tests Helldivers 2 weapons in-engine straight from a Blender blockout",
+      "blurb": "Concept artist Christian Forsgren goes from brief and team brainstorm to a rough Blender model, then pushes it into the Stingray engine to judge scale and handling in real time instead of weeks later. Procedural materials add wear and grime without UV work, and artists are allowed to build their own workflows to cut hand-offs.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/how-helldivers-2-uses-blender-to-build-its-gritty-sci-fi-hardware",
+          "headline": "How Helldivers 2 uses Blender to build its gritty sci-fi hardware",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Swiss Post's new typeface was briefed to go unnoticed",
+      "blurb": "Swiss Typefaces spent over three years on Swiss Post Sans. The uprights had to replace the old font by a plain file swap without reflowing any layout, work in all four national languages and default to tabular figures for prices and timetables; the italics, free of legacy constraints, became the expressive part.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/work/swiss-typefaces-crafts-a-warmer-friendlier-custom-font-for-swiss-post/",
+          "headline": "Swiss Typefaces crafts a warmer, friendlier custom font for Swiss Post",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "How&How becomes How+How and builds its logo as a volume dial",
+      "blurb": "The London and LA studio turns its own 'turn up your truth' line on itself: an all-caps name, an H+H mark that stretches like a mixing-desk fader to fit any layout, a green-yellow called Gello and shorter copy. The rebuilt site includes pages written specifically for large language models to crawl.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/london-and-la-studio-howhow-launches-a-new-name-visual-identity-and-website/",
+          "headline": "How How launches a new name, strategy, visual identity and website",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Odd Works gets a wooden-toy brand to play with a ready-made typeface",
+      "blurb": "For Berlin toy maker Toyto the studio looked to Swiss Style, Braun and postwar industrial design rather than children's-brand visuals. The play comes from illustrations and Kometa's Labil Grotesk, whose stylistic sets make letters lean and tilt like a block tower about to fall, next to a wordmark built from the toys' own shapes.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/odd-works-toyto-graphic-design-project-021126",
+          "headline": "Children’s toys don’t need to be an eyesore with Odd Works’ tasteful identity for Toyto",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Twelve years on, Airbnb's mocked Bélo reads as a case for holding your nerve",
+      "blurb": "Creative Bloq opens a Rebrand Revisited series with DesignStudio's 2014 symbol, ridiculed at launch and kept through the 2025 app redesign. The argument: early backlash measures the shock of the unfamiliar more than design quality, and a mark that works from app icon to billboard can outlast the jokes.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/the-new-airbnb-logo-was-widely-mocked-in-2014-heres-how-the-brand-had-the-last-laugh",
+          "headline": "The new Airbnb logo was mocked in 2014. Here's how the brand had the last laugh",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "INTL's poster jury sees texture, 90s collage type and deliberate amateurism",
+      "blurb": "From 2,670 entries from 78 countries, co-founder James Gilchrist names three currents: the poster as a layered textural surface, collaged typography in mixed fonts and angles over flat brutalist layouts, and work made to look 'unprofessional' on purpose. His yardstick: a poster is easy to design and almost impossible to design well.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/features/intl-poster-competition-graphic-design-spotlight-021126",
+          "headline": "“Designing a good poster is a dark art” – highlights from this year’s INTL poster competition",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Squarespace cuts 19% of staff as prompt-built sites reshape website building",
+      "blurb": "About 300 jobs go in a restructuring. TechCrunch sets it against vibe-coding builders such as Lovable and Wix's Base44 purchase; Squarespace itself is preparing an AI-native platform called Forma.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/",
+          "headline": "Web host Squarespace lays off 19% of its employees",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Reddit's login wall narrows a favourite AI-visibility route for brands",
+      "blurb": "Reddit will test logged-in-only access outside the US this quarter after Google's AI answers cut its search referrals. Agencies have pushed B2B brands into Reddit threads because it is the most-cited domain in AI answers, and anyone can post there today, unlike earning trade coverage.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "State of Brand",
+          "url": "https://www.thestateofbrand.com/news/reddit-login-ai-visibility-search-traffic",
+          "headline": "Reddit Was the AI Visibility Playbook. Now It Wants a Login. | State of Brand",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Affinity on iPad keeps sketch, vector, photo and layout in one free file",
+      "blurb": "Canva's touch version holds all four modes in the same .af file, so nothing is exported between apps. It adds a pressure- and tilt-aware Sketch Studio, Sketch to Shapes for turning drawn forms into vectors and print-ready layout; it is free for individuals, AI features need Canva Premium.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/tools/behold-affinity-for-ipad-the-app-that-wants-to-retire-your-four-other-apps/",
+          "headline": "Affinity finally comes to iPad, and illustrators get a free all-in-one app",
+          "kind": "portal"
+        },
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/affinity-for-ipad-just-made-the-free-adobe-alternative-even-more-complete",
+          "headline": "iPad users finally have the free Adobe alternative they've been asking for",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Claude Code now declines to recreate specific existing games",
+      "blurb": "Anthropic added two sentences to Claude Code's prompt on Opus 5.5: original games, genre games and games from the user's own designs are fine, clones of a specific title are not, citing its IP usage policy. Ars Technica expects it to barely dent the wave of AI-assisted ports and copies.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+          "headline": "Anthropic clamps down on Claude’s AI video game clones",
+          "kind": "portal"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
+          "headline": "Claude’s new rules against game cloning won’t stop the AI copying boom",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 23,
+      "examples": [
+        "New flamingo family leads Very's Christmas creative",
+        "You Know Yourself, When you've Seen An Elf",
+        "Merrell Passes One Of The World's Most Extreme Product Tests As Karl Bushby Completes The Goliath Expedition"
+      ]
+    }
+  ]
+}
