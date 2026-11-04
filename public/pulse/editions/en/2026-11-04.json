@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "generated_for": "2026-11-04",
+    "window": "2026-11-02..2026-11-04",
+    "sources_scanned": 64,
+    "items_in_window": 134,
+    "lang": "en",
+    "note": "Ten stories from a two-day window. Already run on 2 or 3 November and not repeated: State of a system, virtue ethics, Helldivers 2, Swiss Post, How+How, Odd Works, Airbnb, INTL, Squarespace, Reddit, Affinity for iPad and the Claude game-cloning rule. UX Collective and Design Week blocked full-text retrieval, so the UX Collective piece was judged from its opening, and Koto's Nubank refresh and Studio Cronica's Equator Company identity were left out for lack of readable detail. Not taken: Creative Bloq deals, 3D printers and tablets, the AI brush-lettering font piece (reaction, no method), Zelda and the horse illusion; It's Nice That on Beam and Hot Cottage (studio portraits); Andrew Boardman's newsletter and Karri Saarinen's essay (no transferable core); remaining UX Collective essays; TechCrunch funding, Apple, Netflix and Google-in-schools news; MIT Technology Review on agents; The Verge on the AI bubble. Feed userresearchstrategist.com failed. Three paid Substack items removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Design systems get agents 90% there; the last mile is visual markup",
+      "blurb": "LukeW describes a loop where coding agents first build from the design system, then get corrected by annotated screenshots, videos and on-screen markup until every variant lines up. He keeps folding that feedback back into the system as a human job, because current models over-document instead of simplifying.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Luke Wroblewski",
+          "url": "https://www.lukew.com/ff/2170/design-feedback-for-ai-agents",
+          "headline": "Design Feedback for AI Agents",
+          "kind": "person",
+          "author": "Luke Wroblewski"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Computer-use agents fail exactly where humans struggle with an interface",
+      "blurb": "Stephen Patterson argues that agents which cannot guess, improvise or ask a colleague make unusually honest usability testers. Judged from the opening only, the full piece was not retrievable.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/agents-struggle-with-the-same-bad-ux-we-do-98415f2b8981?source=rss----138adf9c44c---4",
+          "headline": "Agents struggle with the same bad UX we do",
+          "kind": "person",
+          "author": "Stephen Patterson",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Turning an evaluation rubric into an LLM grader means writing decision rules",
+      "blurb": "Saeideh Bakhshi walks through one worked case: separate criteria for accuracy and completeness, a defined unit of evaluation, a cannot_judge outcome for thin evidence, and test cases that show where grader versions went wrong. Useful for anyone who has to judge AI output in research or product work.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Saeideh Bakhshi",
+          "url": "https://saeidehbakhshi.substack.com/p/how-to-build-an-llm-grader-from-a",
+          "headline": "How to Build an LLM Grader From a Rubric",
+          "kind": "person",
+          "author": "Saeideh Bakhshi"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Koto scores ten EV brands and finds sales and brand strength far apart",
+      "blurb": "96% of EV drivers would buy electric again, but only about half stay with their brand. In Koto's assessment Rivian ranks ninth for sales and first for brand, Volkswagen the reverse. The report frames three choices: car or computer, heritage or reinvention, and coherence across a journey that now runs through reviewers and AI agents.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/insight/is-it-a-problem-that-all-electric-car-brands-all-look-the-same/",
+          "headline": "Koto: We need to talk about how all electric car brands look the same",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Carling borrows the football club badge to rebuild its identity",
+      "blurb": "BrandOpus gives the lager a crest with the Burton brewery, bridge and barley, plus murals and outdoor assets that adapt to each club's colours. The pint glass keeps its interlocking shape for carrying rounds and gains embossed Burton detailing.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/carling-and-brandopus-create-a-new-badge-of-belonging-for-one-of-britains-most-famous-lagers/",
+          "headline": "Carling And Brandopus Create A New Badge Of Belonging For One Of Britain’s Most Famous Lagers",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "John Lewis's 20th Christmas ad argues against giving cash",
+      "blurb": "In Saatchi & Saatchi's three-minute film a grandmother swaps envelopes of money for a self-built gift, nudged by her childhood toy dog. The ad sits inside a year-round gifting platform with a vodcast and a gift studio in the Oxford Street store.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/dont-give-up-on-giving-john-lewis-and-saatchi-saatchi-unveil-2026-christmas-campaign-starring-dame-kristin-scott-thomas/",
+          "headline": "‘Don’t give up on giving’: John Lewis and Saatchi Saatchi unveil 2026 Christmas campaign starring Dame Kristin Scott Thomas",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Jonathan Blow's test for a rich art style: notice when your brain works too hard",
+      "blurb": "For Order of the Sinking Star the grid had to stay readable against detailed backgrounds, so Blow reviews each level for elements that look too foreground. Art lead Ethan Scheu says artists had to unlearn the instinct to make what excites them, and found clarity and good visual design almost always go together.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/features/how-jonathan-blows-team-made-a-thousand-puzzle-game-thats-gorgeous-and-readable",
+          "headline": "How Jonathan Blow’s team made a thousand-puzzle game that’s gorgeous and still readable",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Nexus Mods makes AI disclosure mandatory instead of banning it",
+      "blurb": "Authors must declare AI use, and AI-assisted mods need a public note on how and where it was used. The site argues a ban would only hide AI use, and it adds filters to hide AI content and limits on bulk uploads. Enforcement starts on 2 January.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
+          "headline": "The biggest modding site in PC gaming is taking a stance on AI",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "IBM trains a small model to build decks in its own design language",
+      "blurb": "Palette splits the job into a designer role that writes a brief and a coder role that writes each slide, then renders every slide and repairs overlaps and overflow. The hardest failure was invented facts, which reference decks fixed and a prompt rule did not.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+          "headline": "Palette: teaching a small model to build decks in your design language",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 23,
+      "examples": [
+        "IG Launches New Brand Platform “Superpowered By IG” With Neverland",
+        "Asda s Christmas Campaign Swaps Sentiment for BOOM Energy, Humour and Value",
+        "Display stages giant seat-in protest to show support for laid-off workers and small software teams of tomorrow"
+      ]
+    }
+  ]
+}

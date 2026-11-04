@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "generated_for": "2026-11-04",
+    "window": "2026-11-02..2026-11-04",
+    "sources_scanned": 64,
+    "items_in_window": 183,
+    "lang": "de",
+    "note": "Vier Stücke mit deutschsprachiger Leitquelle. LA28, robots.txt und Claude Code liefen gestern. Nicht genommen: PAGE-Termine (Creative-Leaders-Aufruf, KI-Masterclass, LinkedIn-Seminar) und HAICA-Publikumspreis, Slanted zu Mira Display (Kurzvorstellung) und Open House, The Decoder zu veralteten LLM-Befunden, Agenten am Teleskop, Message Threads, Nvidia, Huawei, OpenAI-Personalien und Goldman Sachs, t3n zu Anthropic-Börsengang, Sicherheit, Raumfahrt und Alltagstechnik, heise Developer-Meldungen. Feed userresearchstrategist.com ausgefallen. Drei bezahlte Substack-Beiträge vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Koto baut die autofreie Oxford Street um das Wort »For«",
+      "blurb": "Die Identity für den Kilometer Fußgängerzone nimmt das »For« aus dem Straßennamen und macht daraus Zeilen wie »For Originals« oder »For Commuters«. Die eigens gezeichnete London Sans und eine Raute am Wortlogo zitieren die historischen Straßenschilder, Texttafeln erzählen die Geschichte der Straße.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/londons-oxford-street-jetzt-autofrei-und-das-mit-einer-identity-von-koto/",
+          "headline": "Londons Oxford Street jetzt autofrei – und das mit einer Identity von Koto",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Syrian Airlines ersetzt siebzig Jahre Blau durch Grün und Gold",
+      "blurb": "Der Phönix im Signet wurde bewusst nur leicht überarbeitet, dazu kommen eine neue Lackierung, Rautenornamentik und ein grafisches System. Eine Agentur nennt die Airline nicht. Design Tagebuch ordnet das Rebranding in die touristische Neupositionierung Syriens ein.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "url": "https://www.designtagebuch.de/syrian-airlines-praesentiert-sich-mit-neuer-visueller-identitaet/",
+          "headline": "Syrian Airlines präsentiert sich mit neuer visueller Identität",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "EuGH-Generalanwalt: KI-Antworten können Verlagsrechte verletzen",
+      "blurb": "Im ersten EuGH-Verfahren zu generativer KI sieht Maciej Szpunar ein Problem, wenn Chatbots Presseartikel in Echtzeit abrufen und deren Ausdrucksform so wiederverwenden, dass niemand mehr das Original liest. Geschützt sei die Formulierung, nicht die Fakten. Für Training mit den Artikeln sah er keine Beweise.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/ki-chatbots-eugh-urheberrechte-1771465/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "News-Artikel: KI-Chatbots können laut EuGH Urheberrechte von Verlagen verletzen",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "GPT-6-Astra entwirft ein Gerät vom Gehäuse bis zur Firmware",
+      "blurb": "Laut OpenAI übernahm das Modell Gehäuse, Leiterplatte, Firmware und Oberfläche in unter einer Woche. Vor der Fertigung brauchte es mehrere Korrekturrunden, weil Toleranzen und Montagedetails nicht saßen.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/openais-gpt-6-astra-designt-in-unter-einer-woche-ein-ki-gadget-vom-gehaeuse-bis-zur-firmware/",
+          "headline": "OpenAIs GPT-6-Astra designt in unter einer Woche ein KI-Gadget vom Gehäuse bis zur Firmware",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": []
+}
