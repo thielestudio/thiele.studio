@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "generated_for": "2026-11-05",
+    "window": "2026-11-03..2026-11-05",
+    "sources_scanned": 64,
+    "items_in_window": 180,
+    "lang": "de",
+    "note": "Drei Stücke mit deutschsprachiger Leitquelle. Oxford Street, Syrian Airlines und GPT-6-Astra liefen gestern. Nicht genommen: PAGE-Termine (Creative-Leaders-Aufruf, KI-Masterclass) und HAICA-Publikumspreis, Slanted zu Mira Display und Open House sowie der gesponserte Sekondo-Beitrag, t3n zu KI-Skills, Smart Reports, Vibe-Coding-Sicherheit, KI-Schulden, Binance und Alltagstechnik, The Decoder zu Wasserzeichen, FlashProve, Benchmarks, OpenAI-Übernahmen und Midterms, heise Developer-Meldungen. Feed userresearchstrategist.com ausgefallen. Fünf bezahlte Substack-Beiträge vorab entfernt."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Die ersten Weihnachtsspots setzen auf Stars und Bewährtes",
+      "blurb": "PAGE sichtet Walmart mit den Muppets als Geister aus der »Weihnachtsgeschichte«, Tesco mit der Komikerin Roisin Conaty (BBH London), John Lewis mit Kristin Scott Thomas und Burberry unter der Regie von Harmony Korine. Das Urteil der Redaktion: Überraschungen bleiben bisher aus.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/weihnachten-ist-da/",
+          "headline": "Weihnachten ist da!",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "ChatGPT erzeugt jetzt GIFs, mit Bearbeitung einzelner Frames",
+      "blurb": "Mit dem Bildmodell Images 2.6 entstehen animierte GIFs aus Prompt oder Foto, Tempo und Einzelbilder lassen sich nachträglich ändern. Laut OpenAI erzeugen Nutzer inzwischen über vier Milliarden Bilder pro Woche, eine Milliarde mehr als im September.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/chatgpt-kann-jetzt-animierte-gifs-erstellen-openai-rollt-neue-bildfunktion-aus/",
+          "headline": "ChatGPT kann jetzt animierte GIFs erstellen - OpenAI rollt neue Bildfunktion aus",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
+          "headline": "ChatGPT will now make you animated GIFs",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Artcraft will Adobes Programme als freie Software nachbauen",
+      "blurb": "Ein vierköpfiges Team baut mit Claude und Rust eine Open-Source-Suite mit Photocraft statt Photoshop und Lightcraft statt Lightroom, lauffähig auch unter Linux. Fertig ist sie nicht: Tester melden Lücken, bis 99 Prozent der Funktionen sollen noch Monate vergehen, und ob Adobe den Nachbau duldet, ist offen.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/adobe-photoshop-alternative-artcraft-ki-1767514/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "Artcraft: Dieser Entwickler baut eine KI-Alternative zu Adobe Photoshop",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 24,
+      "examples": [
+        "Brand Strategy Has Lost Its Way – And Industry Heavyweights Mick Mahoney And Kevin Chesters Have A Plan To Fix It",
+        "IMPACT BBDO Named Mea Agency Of The Year At LIA 2026, While Annahar Wins MEA Brand Of The Year",
+        "Birthday Expands into Europe with a Home in Berlin"
+      ]
+    }
+  ]
+}

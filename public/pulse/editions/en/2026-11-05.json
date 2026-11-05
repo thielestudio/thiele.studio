@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "generated_for": "2026-11-05",
+    "window": "2026-11-03..2026-11-05",
+    "sources_scanned": 64,
+    "items_in_window": 132,
+    "lang": "en",
+    "note": "Nine stories from a two-day window that overlaps heavily with yesterday's. Already run on 3 or 4 November and not repeated: LukeW on agent feedback, agents and bad UX, Koto's EV report, Jonathan Blow, IBM's Palette and Affinity for iPad. Koto's Nubank refresh and Studio Cronica's Equator Company identity, held back yesterday for lack of readable detail, are in today via Design Week's feed text. Not taken: Levi's stop-motion Christmas ad (strong craft case, but the brand slot was full and Curtis Free makes the same proof-of-work point with a usable test), British Airways 'Puddles' (gallery with little behind it), the Destrategise book announcement (press release, the method is not described), Creative Bloq deals, 3D printers, tablets, Zelda and the AI-font piece; It's Nice That on Figur (studio portrait); Creative Boom portraits; the 3 November UX Collective essays (judged yesterday); Smashing on modern CSS; TechCrunch, The Verge, Ars Technica and MIT Technology Review on midterms, data centres, funding, Google in schools and Uber agents. No State of Brand article fell inside the window. Feed userresearchstrategist.com failed. Five paid Substack items removed beforehand."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "A component can match the system and still misread the moment",
+      "blurb": "The same confetti fires when someone launches a business they worked on for months and when an admin updates the forty-seventh record of the morning. As AI assembles interfaces from shared patterns, the piece argues that consistency is an incomplete definition of quality, and uses Don Norman and the split between surface and deep delight to decide which moments deserve expression.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/ai-can-generate-the-interface-what-makes-it-worth-caring-about-a5f3a3e81986?source=rss----138adf9c44c---4",
+          "headline": "AI can generate the interface. What makes it worth caring about?",
+          "kind": "person",
+          "author": "Dolphia",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "With AI, design systems bottleneck at review, not production",
+      "blurb": "Design leads from ITV and Siemens and a freelance systems specialist agree the components are the easy part; governance, adoption and trust are what break. Siemens' chief design officer says his biggest problem is slowing teams down, because AI-boosted product teams now outpace the central system team.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/what-ai-has-changed-in-design-systems-and-what-is-still-up-to-us-d4e8e8f4ceb2?source=rss----138adf9c44c---4",
+          "headline": "What AI has changed in Design Systems, and what is still up to us",
+          "kind": "person",
+          "author": "Anna Lefour",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Koto keeps Nubank's logo and rebuilds everything around it",
+      "blurb": "For the US launch, Koto left the wordmark alone and rebuilt colour, type, photography and illustration, adding two proprietary typefaces, a first global photo library and illustrations animated in Rive straight into the app. It also wrote the voice for the conversational UI and AI banker; the stated rule was to resist adding rules as the brand scales.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/nubank-unveils-global-brand-refresh-by-koto-ahead-of-us-launch/",
+          "headline": "Nubank unveils global brand refresh by Koto ahead of US launch",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Studio Cronica brands a four-firm merger without a big reveal",
+      "blurb": "For The Equator Company, the studio showed unfinished strategy and design work for six weeks and built the positioning, sustainability as infrastructure, with the client group. The name came from the client's own exercise and was changed from 'Collective' to 'Company' because the brand architecture required one entity, not four.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/how-studio-cronica-branded-a-100-person-sustainability-merger/",
+          "headline": "How Studio Cronica branded a 100-person sustainability merger",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Polar's typed-out bakery identity grew with the shop instead of being redone",
+      "blurb": "The P.A.C. brand is a limited typographic toolkit built on Gronland and Rublena rather than a drawn logo. Because two Polar founders are partners in the bakery, the system was adjusted application by application as it moved to a bigger space, without a redesign.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/polar-pac-graphic-design-project-041126",
+          "headline": "Polar’s logo for bakery P.A.C. is just typed out, and all the better for it",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Alex M H Smith: products no longer differentiate, attention does",
+      "blurb": "Smith withdraws his old maxim that a great product beats messaging, arguing that AI and oversupply have flattened product gaps in most categories. His model puts brand-built desire or convenience-driven relief before the product, which then only has to live up to the promise; exceptions are non-replicable assets and limited access.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Alex M H Smith",
+          "url": "https://alexmhsmith.substack.com/p/the-age-of-product-comes-to-an-end",
+          "headline": "The age of product comes to an end",
+          "kind": "person",
+          "author": "Alex M H Smith"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Conran's test for showing process: did it change the outcome?",
+      "blurb": "Curtis Free argues that polish no longer signals effort, so distinctiveness has to come from an organising idea and from assets that are hard to copy, such as bespoke type. Process is worth showing only when it produced the work, as with Apple Music's oil-bath identity; grain overlays and studio footage are imitation effort.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/when-polish-is-cheap-judgment-becomes-the-value/",
+          "headline": "When Polish Is Cheap, Judgment Becomes the Value",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Canva cuts or relocates more than 1,200 jobs as growth slows",
+      "blurb": "Close to a quarter of the workforce is affected in the biggest restructuring in Canva's 12 years, after growth slowed for the first time in a decade. Creative Bloq asks how long the free Affinity suite can stay a loss leader, noting Remove.bg has already moved into the paid tier.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/canvas-mass-layoffs-are-a-warning-sign-for-creative-tech",
+          "headline": "Canva's mass layoffs are a warning sign for creative tech",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "ChatGPT's Images 2.6 makes GIFs with frame-by-frame editing",
+      "blurb": "GIFs can now be generated from a prompt or photo, with speed and individual frames editable, rolling out to all ChatGPT and Codex users. OpenAI says users now make over 4 billion images a week, up from 3 billion in September, and adds Flare and Sunburst image models to the API.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
+          "headline": "ChatGPT will now make you animated GIFs",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 24,
+      "examples": [
+        "Brand Strategy Has Lost Its Way – And Industry Heavyweights Mick Mahoney And Kevin Chesters Have A Plan To Fix It",
+        "IMPACT BBDO Named Mea Agency Of The Year At LIA 2026, While Annahar Wins MEA Brand Of The Year",
+        "Birthday Expands into Europe with a Home in Berlin"
+      ]
+    }
+  ]
+}
