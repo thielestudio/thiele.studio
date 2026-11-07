@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "generated_for": "2026-11-07",
+    "window": "2026-11-05..2026-11-07",
+    "sources_scanned": 64,
+    "items_in_window": 118,
+    "lang": "en",
+    "note": "Six stories from a two-day window. Not taken: Creative Bloq deals, tablets and gadget reviews; Roastbrief press releases without a transferable core; the e.l.f. stop-motion feature (craft case, but mostly brand quotes); Print on the Vignelli documentary re-release; TechCrunch, The Verge and Ars Technica on valuations, midterms, data centres and Alexa. Design Week (Carling identity by BrandOpus, UK design IP reforms) and UX Collective's 'Native is a floor' sit behind bot protection and could not be read, so they are left out rather than judged from the headline. Feed userresearchstrategist.com failed; the State of Brand sitemap hit its cap with 15 pages not fetched."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Chat interfaces are web content, and fail like any other",
+      "blurb": "Eric Bailey, who has worked on accessibility for several full-screen LLM chat products, argues that these interfaces are not a new category. They are text input plus reading and acting on output, so WCAG applies unchanged, and the exclusion that follows from skipping it is a design decision. Useful as a starting checklist if you are building or auditing a chat pattern.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Smashing Magazine",
+          "url": "https://smashingmagazine.com/2026/11/making-immersive-llm-chat-experiences-more-accessible/",
+          "headline": "Making Immersive LLM Chat Experiences More Accessible",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Judge a typeface by its worst case, not its specimen",
+      "blurb": "Tomáš Brousil of Suitcase Type Foundry gives four tests: does the family work as a system of defined roles across headline, body, caption and navigation; are figures, small caps, language support and OpenType features there; is custom type actually needed; and has licensing been checked. His case is that a polished mockup shows a typeface under ideal conditions only, and that a good retail family often beats a custom commission.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/insight/tomas-brousil-on-what-separates-a-true-type-system-from-a-merely-large-font-family/",
+          "headline": "Tomáš Brousil on how to choose typefaces that work in the real world",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Dior's Christmas film is criticised less for AI than for hiding it",
+      "blurb": "Sylvain Chomet's 'Night in Color' looks hand-illustrated, but viewers spotted warped lettering and anatomy glitches pointing to AI. According to Creative Bloq, the anger is about the credits and a behind-the-scenes look showing only sketches, which imply human animation. Set against Prada's and Levi's handcrafted spots this season, it is a live case of disclosure becoming a brand risk.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/diors-christmas-ad-is-the-opposite-to-pradas-classy-animation",
+          "headline": "Dior's Christmas ad is the opposite to Prada's classy animation",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Meta shelves terms that would have let it crawl linked content for AI",
+      "blurb": "Facebook page owners would have had to allow crawling of any linked external site, including test credentials for paywalls. Injunctions in Brazil and Norway, a UK competition investigation and letters from US senators preceded the withdrawal. Ars notes it is 'for now', and the existing terms stay in force, so rights holders with a Facebook presence should keep watching.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
+          "headline": "“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Gemini Omni 1.2 Flash: 15-second clips and edits by follow-up",
+      "blurb": "Google cuts the price by 30 percent to $0.07 per second at 720p and allows native clips up to 15 seconds. Practical for production: draft at 360p, fix single details by conversational edit instead of regenerating, upscale only the final to 1080p or 4K. Better adherence to reference images, including packaging type and brand colours, is claimed by Google and not yet independently tested.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+          "headline": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Akai and Moog open their gear to vibe-coded mods",
+      "blurb": "inMusic is releasing code and an SDK for devices like the MPC Sample Key and will let developers hack 22 products at NAMM. CEO Jack O'Donnell says the strategy is to embrace modders because walling them off is a losing battle, while Elektron bans links to modified firmware. A hardware maker's answer to AI-built tooling, and a pattern other product owners may meet.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1028720/vibe-coding-open-source-inmusic-akai",
+          "headline": "How Akai and Moog are embracing vibe-coded mods",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "RetailMeNot Kicks Off Its 20th Holiday Season With Annual Cash Back Day Event, Live Now Across 3,500+ Retailers and This Year, Your Shopping Could Send You Home for the Holidays",
+        "Tessie s Cocktails Chords to Give El Niño a Nudge at Pray 4 Pow(der) Party Ahead of Ski Season",
+        "Lyft Taps New York Tastemakers with “The Art of Arrival,” Celebrating the Power Behind a Premium Entrance"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "generated_for": "2026-11-07",
+    "window": "2026-11-05..2026-11-07",
+    "sources_scanned": 64,
+    "items_in_window": 173,
+    "lang": "de",
+    "note": "Vier Stücke mit deutschsprachiger Leitquelle. Nicht genommen: page-online-Kampagnen und Ankündigungen, Werbewoche-Meldungen, t3n zu Rechenzentren, Hardware und Raumfahrt, The Decoder zu Benchmarks, Börsengang und Cyber-Modellen."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Uni Salzburg wechselt nach sechs Jahren erneut das Corporate Design",
+      "blurb": "Siegel von 1970 statt Löwe und grüner Brücke, dazu eine zweizeilige Wortmarke in Versalien. Das Designtagebuch ordnet den Wechsel als Folge des Rektoratswechsels ein und fragt, wie eine Institution mit 22 Rektoren in 63 Jahren Beständigkeit vermitteln soll. Lesenswert als Argument gegen Redesign im Takt der Amtszeiten.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Designtagebuch",
+          "url": "https://www.designtagebuch.de/universitaet-salzburg-aktualisiert-schon-wieder-ihr-corporate-design/",
+          "headline": "Universität Salzburg aktualisiert (schon wieder) ihr Corporate Design",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Gemini Omni 1.2 Flash: längere Clips, Korrektur per Folgeanweisung",
+      "blurb": "Google macht das Videomodell allgemein verfügbar. Clips bis 15 Sekunden, einzelne Details lassen sich per Folgeanweisung ändern, ohne neu zu erzeugen, und hochskaliert wird erst das fertige Ergebnis. Die versprochene Treue bei Gesichtern, Verpackungsschrift und Markenfarben stammt von Google selbst.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/google-veroeffentlicht-gemini-omni-1-2-flash-mit-laengeren-clips-und-guenstigeren-preisen/",
+          "headline": "Google veröffentlicht Gemini Omni 1.2 Flash mit längeren Clips und günstigeren Preisen",
+          "kind": "portal"
+        },
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+          "headline": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Artcraft: Open-Source-Suite als Ersatz für Adobe, noch im Frühstadium",
+      "blurb": "Brandon Thomas und ein vierköpfiges Team bauen mit Claude und Rust kostenlose Gegenstücke zu Photoshop und Lightroom für Windows, macOS und Linux. Erste Tester nennen Defizite, Thomas selbst rechnet mit Monaten bis zur Funktionsabdeckung. Offen bleibt laut t3n, wie Adobe auf den Nachbau reagiert.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/artcraft-photoshop-alternative-ki-open-source-1767514/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "Photoshop-Killer aus der KI? Was das Open-Source-Projekt Artcraft kann",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Pangram Image markiert KI-Anteile im Bild per Heatmap",
+      "blurb": "Der Detektor zeigt jetzt, welche Fläche eines Fotos KI-Anteile enthält, und prüft Videos Bild für Bild. Die genannten 99,96 Prozent Genauigkeit sind Herstellerangaben auf eigenem Testsatz. Relevant, weil die Kennzeichnungspflichten der EU-KI-Verordnung schrittweise greifen.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "heise online",
+          "url": "https://www.heise.de/news/Pangram-Image-ist-da-KI-Bilder-und-Videos-aufspueren-11513019.html",
+          "headline": "Pangram Image ist da: KI-Bilder und -Videos aufspüren",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "RetailMeNot Kicks Off Its 20th Holiday Season With Annual Cash Back Day Event, Live Now Across 3,500+ Retailers and This Year, Your Shopping Could Send You Home for the Holidays",
+        "Tessie s Cocktails Chords to Give El Niño a Nudge at Pray 4 Pow(der) Party Ahead of Ski Season",
+        "Lyft Taps New York Tastemakers with “The Art of Arrival,” Celebrating the Power Behind a Premium Entrance"
+      ]
+    }
+  ]
+}
