@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "generated_for": "2026-11-08",
+    "window": "2026-11-06..2026-11-08",
+    "sources_scanned": 64,
+    "items_in_window": 88,
+    "lang": "en",
+    "note": "Eight stories from a two-day window that overlaps with yesterday's. Meta's paused AI-training terms ran yesterday and are not repeated. UX Collective's 'Native is a floor', unreadable yesterday, is in today. Not taken: Creative Bloq deals, iPads, gadget reviews and the e.l.f. stop-motion feature (same verdict as yesterday); Design Week's Paul Mabin interview (agency finance, not brand); Fast Company on inclusive design (familiar examples only); Print on the Vignelli documentary; most Roastbrief press releases, including Liverpool FC, NYRR and Crisis; TechCrunch, The Verge and Ars Technica on valuations, midterms, data centres, Muse and Alexa. No AI model story held up today. Feed userresearchstrategist.com failed; the State of Brand sitemap hit its cap with 4 pages not fetched."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "AI can draw native UI, but it draws last year's",
+      "blurb": "Mathieu Poli prompted several models for app screens: they imitate iOS only when the device is named, and the iOS 26 floating tab bar appears only with an explicit instruction, and rarely. His argument for system components is behaviour a mockup cannot show, such as back gestures, sheets and alerts that follow accessibility text sizes, plus the fact that native controls update when the OS does while hand-drawn ones stay frozen.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/native-is-a-floor-not-a-ceiling-09bc4f27ddce?source=rss----138adf9c44c---4",
+          "headline": "Native is a floor, not a ceiling",
+          "kind": "person",
+          "author": "Mathieu Poli",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "A 1989 search model as a brief for AI search interfaces",
+      "blurb": "Patrick Neeman applies Marcia Bates' berrypicking model, in which the question changes as the searcher learns, to chat-based search. The design consequences he draws: show what has shifted since the first prompt, let people revise early assumptions without starting over, and make search tactics and empty results visible instead of always returning one confident answer.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/berrypicking-still-beats-the-single-answer-for-search-even-in-the-world-of-ai-6d7174099500?source=rss----138adf9c44c---4",
+          "headline": "Berrypicking still beats the single answer for search, even in the world of AI",
+          "kind": "person",
+          "author": "Patrick Neeman",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Publicis turns the pregnancy test window into the message",
+      "blurb": "For Fertility Action, Publicis London replaces the result in a pregnancy test window with lines contributed by people going through fertility treatment, run as animated DOOH. The final execution uses the same device to point at England's IVF postcode lottery, and 30 boxes of negative tests went to Parliament.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/publicis-london-puts-englands-ivf-postcode-lottery-to-the-test-for-fertility-action/",
+          "headline": "Publicis London puts England’s ‘IVF postcode lottery’ to the test for Fertility Action",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "A pharmacy sells the argument against overbuying supplements",
+      "blurb": "Apotek Hjärtat, Sweden's largest pharmacy chain, made 'Vitamin P(ee)' gummies from vitamin C recovered from customers' urine, with a researcher at Uppsala University. A pharmacy arguing against unnecessary purchases in its own category, with the product itself as the proof.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/swedish-pharmacy-turns-human-pee-into-vitamins-demonstrating-the-consequences-of-supplement-overuse/",
+          "headline": "Swedish Pharmacy Turns Human Pee Into Vitamins – Demonstrating The Consequences Of Supplement Overuse",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Craft as literacy times dexterity, taste as a moving line",
+      "blurb": "Nil Thyrion, who reviews portfolios and hires designers, separates knowing about design from being good at it and describes how he trains taste: benchmarking his own work against the best and using Loewy's MAYA principle. His point for teams using AI: he would rather see the right idea on paper than a polished prototype of the wrong problem.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/otherwise-youre-just-a-machine-a9d3b21179b5?source=rss----138adf9c44c---4",
+          "headline": "Otherwise you’re just a machine",
+          "kind": "person",
+          "author": "Nil Thyrion",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "Four ideas in one mark, and none of them reads",
+      "blurb": "Creative Bloq tests the 2027 FIVB Men's Volleyball World Cup logo against what a sports mark has to do: work tiny and huge, and make its idea obvious to people who barely look. The emblem combines trophy, globe and more, and the verdict is that it doesn't clearly resemble anything.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/the-volleyball-world-cup-logo-looks-wrong",
+          "headline": "The volleyball World Cup logo looks... wrong",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "This year's film title cards, read as storytelling",
+      "blurb": "Six title cards from 2026 films, judged by what they do in the sequence rather than how they look: The Bone Temple's hand-drawn scrawl as a pause after a violent opening, Wuthering Heights' stop-motion title made from hair. Short, but a useful reference set for anyone doing type in motion.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/features/2026-is-the-year-of-the-majestic-movie-title-card",
+          "headline": "2026 is the year of the majestic movie title card",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Megascans goes free for good, and its scans may now train AI",
+      "blurb": "Epic is making the whole Quixel Megascans library of around 23,000 scanned assets free on Fab, with listings updating until 12 November and refunds for recent buyers. The licence change matters as much: Megascans and Megaplants assets may now be used to train AI models.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/the-worlds-biggest-library-of-scanned-assets-for-3d-artists-is-now-free-and-it-seems-that-this-time-its-for-good",
+          "headline": "The world's biggest library of scanned 3D assets is now free – and it seems that this time it's for good",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 23,
+      "examples": [
+        "RetailMeNot Kicks Off Its 20th Holiday Season With Annual Cash Back Day Event, Live Now Across 3,500+ Retailers and This Year, Your Shopping Could Send You Home for the Holidays",
+        "Liam Parker Appointed US CEO of The Ogilvy Group",
+        "“Nice one”: Liverpool FC uses its annual Christmas campaign this year to deliver football’s biggest ever ‘thank you’ to fans"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "generated_for": "2026-11-08",
+    "window": "2026-11-06..2026-11-08",
+    "sources_scanned": 64,
+    "items_in_window": 134,
+    "lang": "de",
+    "note": "Vier Stücke mit deutschsprachiger Leitquelle, alle von PAGE. Nicht genommen: der t3n-Beitrag zu Typographic Intelligence (gesponsert), der t3n-Praxistest zu Claude Motion (Plus-Artikel, gesperrt), t3n zu Texten für KI-Suche, Raumfahrt, Hardware und Rechenzentren, PAGE-Termine und Aufrufe (Verlosung, Masterclass, Webinar, German Brand Award, HAICA-Abstimmung), Slanted zur Creative Paper Conference (Text englisch), The Decoder zu Börsengang, Finanzierung, Benchmarks und Agenten, heise Developer-Meldungen. Feed userresearchstrategist.com ausgefallen."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design-Praxis",
+      "title": "Mutabor: Kollaboratives Lernen setzt Können voraus",
+      "blurb": "Steffen Granz, ECD bei Mutabor, beschreibt Lernen im Team als Organisationsfrage, nicht als Soft Skill. Er unterscheidet T-shaped- von X-shaped-Profilen, also Leuten, die zusätzlich Wissen zurück ins Team tragen. Nicht alle müssen alles können, aber alle müssen anschlussfähig sein, gerade bei Werkzeugen, die sich laufend konsolidieren.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/branche-karriere/peer-to-peer-learning-warum-kollaboration-erst-dann-multipliziert-wenn-exzellenz-schon-da-ist/",
+          "headline": "Peer-to-peer-Learning: Warum Kollaboration erst dann multipliziert, wenn Exzellenz schon da ist",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "toom erzählt zum Mauerfall von einem Fluchttunnel",
+      "blurb": "Scholz & Friends verlängert den Claim »Respekt, wer’s selber macht« in die Zeitgeschichte. Der Spot »Berlin, 1964: Der Tunnel« erzählt von Achim Neumann, der unter der Bernauer Straße mitgrub, und der Spaten wird zum Werkzeug der Freiheit. Nach »Irmela vs. Nazis« 2025 der zweite Fall, in dem die Baumarktmarke ihr DIY-Versprechen politisch auflädt.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/besonderes-gedenken-zum-mauerfall-scholz-friends-fuer-toom-baumarkt/",
+          "headline": "Besonderes Gedenken zum Mauerfall: Scholz Friends für toom Baumarkt",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Ein Hospiz wirbt mit dem, was am Ende noch geht",
+      "blurb": "Nikels geht für das CS Hospiz Wien in die zweite Runde von »Ich darf alles«. Statt Krankheit und Einschränkung zeigen die Plakate, was kurz vor dem Tod möglich ist: rauchen, fluchen, tanzen. Ein Beispiel dafür, wie man ein Tabuthema über Möglichkeiten statt über Verlust erzählt.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/auch-so-kann-eine-kampagne-fuer-ein-hospiz-aussehen/",
+          "headline": "Auch so kann eine Kampagne für ein Hospiz aussehen!",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Havas-Studie: Was Gamer von Marken erwarten",
+      "blurb": "Die Studie »Open World« sieht Gaming als Erweiterung des Lebens, mit großem Generationenabstand: 44 Prozent der Gen Z zählen es zu ihrer Identität, bei Boomern 14 Prozent. Wer sich dort positionieren will, soll laut Studie Sinn stiften und die Schattenseiten wie Sucht, Toxizität und Glücksspiel ernst nehmen. PAGE referiert die Zusammenfassung für den deutschen Markt.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/branche-karriere/das-wuenscht-sich-die-gaming-community-von-marken/",
+          "headline": "Das wünscht sich die Gaming-Community von Marken",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "RetailMeNot Kicks Off Its 20th Holiday Season With Annual Cash Back Day Event, Live Now Across 3,500+ Retailers and This Year, Your Shopping Could Send You Home for the Holidays",
+        "Liam Parker Appointed US CEO of The Ogilvy Group",
+        "“Nice one”: Liverpool FC uses its annual Christmas campaign this year to deliver football’s biggest ever ‘thank you’ to fans"
+      ]
+    }
+  ]
+}
