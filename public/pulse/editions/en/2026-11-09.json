@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "generated_for": "2026-11-09",
+    "window": "2026-11-07..2026-11-09",
+    "sources_scanned": 64,
+    "items_in_window": 55,
+    "lang": "en",
+    "note": "Five stories from a thin window that overlaps with the last two days; no Roastbrief items came through. Already covered and not repeated: the volleyball logo, film title cards, Megascans and 'Otherwise you're just a machine'. Not taken: the 20 single-voice pages behind It's Nice That's careers feature (the feature itself is in); Creative Bloq on the tagged GTA VI mural (comment thread, no takeaway), deals, laptops, headphones and Apple rumours; Design Week's Paul Mabin interview (same verdict as yesterday); Department of Product on agentic checkout (newsletter teaser only); TechCrunch and The Verge on Nvidia, data centres, Siri, Anthropic's automation report and the NYT Cooking assistant. No AI model story held up. Feed userresearchstrategist.com failed again; the State of Brand sitemap returned no pages in the window."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "A dense 3D landscape, built from basic geometry and displacement",
+      "blurb": "Calder Moore walks through a fantasy scene from thumbnail sketch to Photoshop paint-over. The reusable moves: lock the camera early and build to that shot, let displacement textures carry the detail on simple geometry, desaturate to check values, render Z-depth, bloom and object-ID passes, and add grain at the end to lose the 3D look.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/how-to/how-to-make-a-detailed-3d-landscape-using-photoshop-with-cinema-4d-and-zbrush",
+          "headline": "How to make a detailed 3D landscape using Photoshop, Cinema 4D and ZBrush",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Cut the portfolio deck to the slides that prove a decision",
+      "blurb": "Marina Krutchinsky took a Staff designer's Director-panel deck from 41 slides to 10 with one test: which decision of mine does this slide prove? Slides without a decision, such as research grids, process diagrams and timelines, move to an appendix and come back as answers when the panel asks.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Marina Krutchinsky",
+          "url": "https://uxmentor.substack.com/p/how-to-cut-your-panel-presentation",
+          "headline": "How to cut your panel presentation down to the slides that get you hired",
+          "kind": "person",
+          "author": "Marina Krutchinsky"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "GTA VI advertises its world through fake brands",
+      "blurb": "Alongside the key art, Rockstar runs billboards and kiosk ads in Miami for in-game parody brands, with only a small logo and QR code pointing back to the game. Creative Bloq's reading: the ads sell the game's satirical tone without showing gameplay, puzzle newcomers into talking, and work as inside jokes for long-time players.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/the-cleverest-gta-vi-adverts-dont-even-show-the-game",
+          "headline": "The cleverest GTA VI adverts don't even show the game",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Junior design roles down 81% at one recruiter, and 25 views on what follows",
+      "blurb": "Represent worked on 118 junior roles in 2016 and 22 so far this year. Creative Lives in Progress asked 25 studio owners, recruiters and educators what comes next: several expect a correction once talent pipelines dry up, others warn that routes bypassing education will favour people with money and connections.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/features/starting-a-creative-career-has-never-felt-harder",
+          "headline": "Starting a creative career has never felt harder – 28 industry voices on what comes next",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Suno sued under Tennessee's voice-cloning law",
+      "blurb": "Elvis Presley's rights holders and an Eminem publisher have filed two more suits against Suno; the Presley complaint invokes the ELVIS Act, which bans AI cloning of a singer's voice. Like the Isbell case in September, the claims target imitation of artists rather than copyright directly.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+          "headline": "Elvis and Eminem rights holders are suing Suno",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": []
+}

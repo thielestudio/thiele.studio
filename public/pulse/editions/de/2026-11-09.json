@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "generated_for": "2026-11-09",
+    "window": "2026-11-07..2026-11-09",
+    "sources_scanned": 64,
+    "items_in_window": 94,
+    "lang": "de",
+    "note": "Vier Stücke mit deutschsprachiger Leitquelle. Die Havas-Studie zur Gaming-Community stand gestern schon drin. Nicht genommen: PAGE zu LinkedIn-Kundengewinnung (Vertrieb, keine Marke), zur Graphic Novel von »Geister«, zum HAICA-Publikumspreis und die Ticketverlosung; t3n zu Hardware, GTA-Speicherplatz, Raumfahrt, Klima, Mail-Anbietern und KI-Meldungen ohne Bezug zu kreativer Arbeit; The Decoder zu Benchmarks, Börsengang und Karpathys Hacker-News-Projekt; heise Developer-Meldungen. Feed userresearchstrategist.com erneut ausgefallen."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Die ersten Weihnachtsspots setzen auf Bewährtes",
+      "blurb": "PAGE sichtet die ersten Spots der Saison und findet bisher keine Überraschung. Walmart zitiert mit den Muppets »A Christmas Carol«. Tescos Film von BBH London mit Roisin Conaty erzählt die Versöhnung zweier Freundinnen über eine falsch adressierte Lieferung und ist bislang der Favorit der Redaktion.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/weihnachten-ist-da/",
+          "headline": "Weihnachten ist da!",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Red Dot Brands & Communication: Elastique ist Agentur des Jahres",
+      "blurb": "Die Kölner Agentur Elastique gewinnt einen Grand Prix für die KUKA Twinbots, die Tanzbewegungen zweier Zwillinge auf Roboter übertragen. Unter den Best-of-the-Best stehen die Hausschrift FC Sans Pauli von Karl Anders und die Identity des Stadtmuseums Oldenburg von Heine/Lenz/Ziska. Der Junior Prize geht an Yiyang Li, dessen Schriftsystem nach Oulipo-Regeln neue Formen erzeugt.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/das-sind-die-red-dot-gewinner-brands-communication-design/",
+          "headline": "Das sind die Red Dot Gewinner »Brands Communication Design«",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Canva baut 22 Prozent der Belegschaft um",
+      "blurb": "1.271 Beschäftigte verlieren ihre Stelle oder wechseln die Position, Produkt-, Wachstums- und Plattform-Teams werden zusammengelegt. t3n nennt gestiegene Kosten durch KI-Werkzeuge, ein Wachstum unter den Erwartungen und eine Bewertung, die von 42 auf 34,9 Milliarden Dollar gesunken ist. Im Raum steht der für 2027 geplante Börsengang.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/massenentlassungen-bei-canva-warum-das-unternehmen-trotzdem-gefeiert-wird-1772223/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "Massenentlassungen bei Canva: Warum das Unternehmen trotzdem gefeiert wird",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Jedes Sprachmodell hat eigene Lieblingswörter",
+      "blurb": "Graphite Growth ließ Modelle 10.000 Artikel aus der Zeit vor ChatGPT neu schreiben und fand rund 13.000 Phrasen, die mindestens doppelt so oft vorkommen wie bei Menschen. Die Muster unterscheiden sich je Modellversion. Claude nähert sich laut Studie der menschlichen Wortverteilung an, GPT entfernt sich davon.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/ki-texte-erkennen-chatgpt-claude-phrasen-1766310/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "Warum KI-Texte immer gleich klingen: Die Lieblingswörter von GPT Claude",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": []
+}
