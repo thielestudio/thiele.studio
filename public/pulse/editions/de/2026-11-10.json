@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "generated_for": "2026-11-10",
+    "window": "2026-11-08..2026-11-10",
+    "sources_scanned": 64,
+    "items_in_window": 152,
+    "lang": "de",
+    "note": "Sechs Stücke mit deutschsprachiger Leitquelle. Die Red-Dot-Gewinner standen gestern schon drin. Nicht genommen: PAGE zur Handweberei (Haltung ohne übertragbaren Kern), zum HAICA-Publikumspreis und zur Ticketverlosung; t3n zu Black Friday, Raumfahrt, Klima, Betrugsmaschen, Nvidia-Affäre, Anthropic-Börsengang und Ifo-Arbeitsmarktstudie (nicht auf kreative Berufe bezogen); The Decoder zu Chips, Bewusstseinsdebatte und Karpathys Hacker-News-Projekt. Feeds export.arxiv.org und userresearchstrategist.com ausgefallen."
+  },
+  "stories": [
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Die Schönsten Deutschen Bücher: Der Katalog macht Reproduktion zum Prinzip",
+      "blurb": "Studio Pandan zeigt die 25 prämierten Bücher als Reproduktionen im Buch und lässt Farbverschiebungen, isolierte Details und Passermarken stehen, statt sie zu glätten. Zum 60. Jubiläum der Stiftung Buchkunst kamen elf Druckfarben und Archivmaterial aus sechs Jahrzehnten dazu.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Slanted",
+          "url": "https://www.slanted.de/die-schonsten-deutschen-bucher-2026/",
+          "headline": "Die Schönsten Deutschen Bücher 2026",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Rentenpflicht für Selbstständige: 84 Prozent würden aussteigen",
+      "blurb": "In einer Befragung von freelance.de und VGSD unter 826 Selbstständigen lehnen knapp 84 Prozent eine Rentenversicherungspflicht ab und würden die Opt-out-Möglichkeit nutzen. Der Gesetzentwurf soll bis Ende 2026 kommen. Für KSK-Mitglieder ändert sich laut PAGE vorerst nichts.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/branche-karriere/rentenpflicht-fuer-selbststaendige-wie-findet-ihr-das/",
+          "headline": "Rentenpflicht für Selbstständige – wie findet ihr das?",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Disney lässt Adobe eigene Modelle auf seine Figuren trainieren",
+      "blurb": "Über Firefly Foundry entstehen Modelle, die Figuren, Umgebungen und Stile von Disney kennen und intern bleiben, von Imagineering bis ESPN. Vorher hatte Disney einen Deal mit OpenAI geschlossen und wieder beendet. Für Agenturen heißt das: Ein Softwarehersteller übernimmt Arbeit, die bisher bei ihnen lag.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/disney-und-adobe-entwickeln-gemeinsam-ki-modelle-fuer-parks-studios-und-espn/",
+          "headline": "Disney und Adobe entwickeln gemeinsam KI-Modelle für Parks, Studios und ESPN",
+          "kind": "portal"
+        },
+        {
+          "name": "State of Brand",
+          "url": "https://www.thestateofbrand.com/news/disney-adobe-firefly-foundry-private-ai-models",
+          "headline": "Disney Walked Away From OpenAI. Today It Signed With Adobe to Train AI on Its Own Characters. | State of Brand",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Claude Fable 5.2 führt die Rangliste an, hohe Qualität kostet",
+      "blurb": "Fable 5.2 erreicht im Intelligence-Index von Artificial Analysis 65 Punkte und liegt damit vorn, maximale Qualität kostet aber im Schnitt 26,50 Dollar pro Aufgabe. Mythos 5.2 ohne einige Sperren gibt es nur für geprüfte Organisationen. Für den Alltag soll Opus 5.5 das bevorzugte Modell bleiben.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/zurueck-an-die-ki-spitze-anthropic-stellt-claude-fable-5-2-und-mythos-5-2-vor/",
+          "headline": "Zurück an die KI-Spitze: Anthropic stellt Claude Fable 5.2 und Mythos 5.2 vor",
+          "kind": "portal"
+        },
+        {
+          "name": "heise online",
+          "url": "https://www.heise.de/news/Anthropic-Claude-Fable-5-2-ist-guenstiger-aber-Tempo-kostet-extra-11518102.html",
+          "headline": "Anthropic Claude Fable 5.2 ist günstiger, aber Tempo kostet extra",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Seedream 5.5 liefert freigestellte Bilder und hält 100 Editierrunden",
+      "blurb": "Bytedances neues Bildmodell erzeugt nativ RGBA-Dateien mit transparentem Hintergrund, generierte Elemente gehen also ohne Freistellen ins Layout. Unveränderte Bildbereiche sollen über bis zu 100 Bearbeitungsrunden pixelgenau erhalten bleiben. Ausgerollt wird zunächst über Bytedances eigene Dienste.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/seedream-5-5-bytedance-will-mit-stabilem-multi-edit-und-transparenz-professionelle-workflows-bedienen/",
+          "headline": "Seedream 5.5: Bytedance will mit stabilem Multi-Edit und Transparenz professionelle Workflows bedienen",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Coding-Agenten legen Zugangsdaten in öffentlichen Repositories ab",
+      "blurb": "Das Sicherheitsunternehmen Apiiro fand Passwörter und API-Token in Einstellungsdateien von Claude Code auf GitHub. Wer einen Befehl dauerhaft freigibt, speichert ihn samt Zugangsdaten in der lokalen Einstellungsdatei, und die landet im Repository, wenn sie nicht ausgeschlossen ist.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "heise online",
+          "url": "https://www.heise.de/news/KI-Coding-Agenten-verfrachten-Zugangsdaten-in-oeffentliche-Repositories-11517278.html",
+          "headline": "KI-Coding-Agenten verfrachten Zugangsdaten in öffentliche Repositories",
+          "kind": "portal"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
+          "headline": "Claude Code is accidentally exposing secrets all over GitHub",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 24,
+      "examples": [
+        "Audi Celebrates The Legacy Of Quattro From Rally Racing To The All-new Audi Q7 In New Campaign",
+        "Morrisons Gets Christmas ‘Just Right’ With A Modern Take On Goldilocks And The Three Bears",
+        "2027 Kia Telluride Hybrid Named “Favorite Family Vehicle” At Midwest Automotive Media Association’s (MAMA) Fall Fest"
+      ]
+    }
+  ]
+}

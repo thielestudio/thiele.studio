@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "generated_for": "2026-11-10",
+    "window": "2026-11-08..2026-11-10",
+    "sources_scanned": 64,
+    "items_in_window": 113,
+    "lang": "en",
+    "note": "Eleven pieces. Not repeated from yesterday: GTA VI parody brands and It's Nice That's junior-careers series (both ran on 9 November). Dropped: Creative Bloq deals and gadget items, the Nvidia/Jensen Huang scandal cluster (no bearing on creative work), Christmas launch press releases without craft analysis, two UX Collective member-only pieces (Wrapped, ruler). Feeds export.arxiv.org and userresearchstrategist.com failed."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Paper Mario depth from flat PNGs and Unity scene settings",
+      "blurb": "Ogre Pixel builds Castlebound entirely from flat sprites exported as PNGs; the 3D look comes from Unity scene configuration, and lighting settings alone shift levels between day, noon and night. A useful pattern for teams who want depth without a 3D asset pipeline.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/features/castlebound-devs-explain-a-unique-unity-technique-behind-its-paper-mario-like-visuals",
+          "headline": "Castlebound devs explain a unique Unity technique behind its Paper Mario-like visuals",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "The Balbusso Twins use a reduced palette as narrative device",
+      "blurb": "For the Folio Society Handmaid's Tale the twins limited colour to white, black, grey and red to mirror the regime's reduction of thought, then extended it with Gilead's own colour codes for The Testaments. Hand-made textures are scanned and layered in Photoshop, and a new plate was added to echo the sequel's final image.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/insight/the-balbusso-twins-on-the-handmaids-tale-and-why-illustrating-a-book-is-like-making-a-movie/",
+          "headline": "The Balbusso Twins on revisiting The Handmaid s Tale, and why book illustration is like making a movie",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "From typesetter to desktop publisher, a template for AI-era roles",
+      "blurb": "Christian Crumlish recalls how PCs folded the work of word processor, typesetter and layout artist into one desktop-publishing job at Sybex. Typesetters who refused retraining lost their careers, those who took it became desktop publishers. He expects teams to shrink the same way now and calls the current stretch an in-between phase before new titles settle.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/five-pairs-of-hands-what-the-typesetters-can-teach-designers-about-ai-9d6b8e8c2285?source=rss----138adf9c44c---4",
+          "headline": "Five pairs of hands: what the typesetters can teach designers about AI",
+          "kind": "person",
+          "author": "Vlad Derdeicea",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Matalan borrows luxury fashion film grammar, then pulls back",
+      "blurb": "Ozo's Be the Occasion opens with the moody close-ups of high-end fashion advertising and then reveals an ordinary woman getting ready for Christmas at home. Creative Boom's point: the joke lands on the genre's conventions, not on the audience, and needs no words.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/ozos-campaign-for-matalan-pulls-off-a-clever-catwalk-switcheroo/",
+          "headline": "Ozo s campaign for Matalan pulls off a clever catwalk switcheroo",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Sapjack builds a brand world to sell a whole category",
+      "blurb": "The brand is number one in organic pure maple syrup, but household penetration of real maple is low. Heart Soul Marketing chose an animated forest world built around its steamcrafting process instead of telling buyers they had chosen the wrong syrup.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/sapjack-is-creating-a-brand-world-for-maple-syrup/",
+          "headline": "Sapjack Is Creating a Brand World for Maple Syrup",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Disney pays Adobe for private models trained on its characters",
+      "blurb": "After its OpenAI deal fell apart, Disney is using Firefly Foundry to build models on its characters, environments and styles that stay in-house, from Imagineering to ESPN. State of Brand reads it as a warning to agencies: a software vendor now does work that used to sit with them, and brand archives become training data.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "State of Brand",
+          "url": "https://www.thestateofbrand.com/news/disney-adobe-firefly-foundry-private-ai-models",
+          "headline": "Disney Walked Away From OpenAI. Today It Signed With Adobe to Train AI on Its Own Characters. | State of Brand",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
+          "headline": "Disney and Adobe are building generative AI tools together",
+          "kind": "portal"
+        },
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/disneys-ai-deal-with-adobe-is-raising-eyebrows",
+          "headline": "Disney's AI deal with Adobe is raising eyebrows",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Ogilvy and CAA turn one celebrity shoot into licensed AI variants",
+      "blurb": "ECHO generates localised extension assets from a single hero shoot, using talent scans stored in the CAA Vault, with contract rules enforced by the system and talent sign-off required on every asset. It is a press release, but it shows how agencies plan to package likeness rights.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/ogilvy-launches-echo-the-industrys-first-talent-consent-based-creative-ai-platform/",
+          "headline": "Ogilvy Launches ECHO, the Industry s First Talent Consent-Based Creative AI Platform",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "US art school costs $77,700 a year while schools close",
+      "blurb": "Elizabeth Goodspeed puts the average cost of a private US art school at about $370 per enrolled day and lists closures since 2022, including the San Francisco Art Institute. Her question is why the field accepts that only those who can pay get an art education.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/elizabeth-goodspeed-art-school-economics-education-creative-industry-091126",
+          "headline": "Elizabeth Goodspeed on the impossible economics of art education in the US",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Anthropic releases Claude Fable 5.2 and a gated Mythos 5.2",
+      "blurb": "Anthropic claims gains in coding, reasoning and vision plus faster output than 5.1; Fable is available today, Mythos only to vetted organisations. Ethan Mollick, who tested it before launch, calls the state \"Jagged AGI\": expert-level on many computer tasks, still uneven in ways that are harder to describe than plain errors.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+          "headline": "Anthropic launches new Claude Fable and Mythos 5.2 models",
+          "kind": "portal"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+          "headline": "Anthropic releases new Mythos and Fable models amid RSI concerns",
+          "kind": "portal"
+        },
+        {
+          "name": "One Useful Thing",
+          "url": "https://www.oneusefulthing.org/p/fable-52-and-jagged-agi",
+          "headline": "Fable 5.2 and Jagged AGI",
+          "kind": "person",
+          "author": "Ethan Mollick",
+          "channel": "One Useful Thing"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Claude Code's \"don't ask again\" writes secrets into repos",
+      "blurb": "Apiiro found thousands of passwords, API tokens and root logins in .claude/settings.local.json files on public GitHub. Approving a shell command permanently stores the command as written, credentials included. Anyone prototyping with Claude Code should check that file is gitignored.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
+          "headline": "Claude Code is accidentally exposing secrets all over GitHub",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Instagram lets anyone prompt their own Stories filters",
+      "blurb": "Effect Builder takes a text prompt plus optional style reference images, previews the result on your photos and submits it for a safety review before others can use it. In The Verge's test, the AI-rewritten long prompt produced almost the same filter as the one-liner.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1030061/instagram-ai-effect-builder-filters",
+          "headline": "Instagram’s Effect Builder makes new filters from AI prompts",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 22,
+      "examples": [
+        "Audi Celebrates The Legacy Of Quattro From Rally Racing To The All-new Audi Q7 In New Campaign",
+        "Morrisons Gets Christmas ‘Just Right’ With A Modern Take On Goldilocks And The Three Bears",
+        "2027 Kia Telluride Hybrid Named “Favorite Family Vehicle” At Midwest Automotive Media Association’s (MAMA) Fall Fest"
+      ]
+    }
+  ]
+}
