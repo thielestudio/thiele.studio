@@ -14,6 +14,13 @@
   ],
   "editions": [
     {
+      "date": "2026-11-11",
+      "label": {
+        "en": "11 November 2026",
+        "de": "11. November 2026"
+      }
+    },
+    {
       "date": "2026-11-10",
       "label": {
         "en": "10 November 2026",

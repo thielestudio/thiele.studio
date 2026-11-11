@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "generated_for": "2026-11-11",
+    "window": "2026-11-09..2026-11-11",
+    "sources_scanned": 64,
+    "items_in_window": 165,
+    "lang": "en",
+    "note": "Twelve pieces. Adobe MAX and the model releases make this an AI-heavy day. Two Substack posts turned out to be paid on reading and were dropped (UX Movement on bulk edit, Department of Product on mobile UX); the Substack audience check failed for all six feeds, so nothing was removed upstream. Not repeated from the last two days: Disney and Adobe, Castlebound, the Balbusso twins, the junior-careers series, Claude Code secrets. Dropped: Creative Bloq deals and gadgets, the Nvidia/Jensen Huang cluster and the Anthropic IPO (no bearing on creative work), event and webinar announcements, Schweppes and other press releases without analysis. Feed userresearchstrategist.com failed."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Why AI builders hand back a lookalike of your design system",
+      "blurb": "Christine Vallaure shows that builders which \"connect your design system\" mostly rebuild it, usually on shadcn and Tailwind, instead of using the real components, and gives two prompts to check what a tool actually did. The routes that work are built by developers: a Storybook MCP as the quick option, or a custom MCP that also carries the team's agreed patterns and rules.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/ai-prototyping-inside-your-design-system-a-hands-on-guide-for-design-product-teams-44825904c08d?source=rss----138adf9c44c---4",
+          "headline": "AI Prototyping inside your design system. A hands-on guide for design & product teams.",
+          "kind": "person",
+          "author": "Christine Vallaure",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Bad Appel sells calvados as a cocktail ingredient, not a digestif",
+      "blurb": "Butterfly Cannon delivered strategy, naming, packaging and a custom bottle for a category only 35% of UK adults have heard of. The design runs on one collision: classical illustration under hand-drawn red type, with a snake cast into the glass at the bottle neck.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/butterfly-cannon-reimagines-calvados-with-disruptive-bad-appel-brand-identity/",
+          "headline": "Butterfly Cannon reimagines calvados with disruptive Bad Appel brand identity",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Klaviyo borrows its creative standard from its own customers",
+      "blurb": "Rival software firms describe themselves in the same few adjectives, so CMO Jamie Domenici copied how the consumer brands on her customer list advertise. Where others named their AI agent a sidekick, the campaign by Gus casts Klaviyo as a marketer's work best friend. She tracks organic traffic against spend and admits brand payback is hard to pin down.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "State of Brand",
+          "url": "https://www.thestateofbrand.com/news/klaviyo-gus-b2b-marketing-campaign-best-friend-spencer-lavallee-jamie-domenici",
+          "headline": "Klaviyo Takes Its Creative Standard From The Consumer Brands On Its Customer List | State of Brand",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "64% of young Americans say brand posts blend together",
+      "blurb": "Born Social surveyed 2,019 US adults aged 18 to 34. Half of recent social discoveries came through a creator, 34% through brand content, and 44% prefer partnerships in the creator's own style against 11% in the brand's. The agency's reading: brands confuse control with consistency. It is agency research delivered by press release, so weigh it as such.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/64-of-young-americans-say-brand-social-posts-are-starting-to-blend-together-while-creators-outpace-brands-in-social-discovery-new-research-finds/",
+          "headline": "64% of young Americans say brand social posts are starting to blend together, while creators outpace brands in social discovery, new research finds",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Craft & Judgment",
+      "title": "How the symbol system of Bon Iver's 22, A Million was built",
+      "blurb": "Ten years on, Eric Timothy Carlson describes the making: 100 sketched symbols that had to read like real ones, printed and assembled into three 33 by 33 inch collages. The lyric videos, made with Aaron Anderson almost entirely from phone footage, screen captures and After Effects, carried the album's digital half.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "It's Nice That",
+          "url": "https://www.itsnicethat.com/articles/eric-timothy-carlson-bon-iver-22-a-million-graphic-design-101126",
+          "headline": "Decoding 22, A Million: Eric Timothy Carlson on carving Bon Iver’s iconic visual universe ten years later",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Half of creatives using AI have not told the client",
+      "blurb": "Envato surveyed 1,033 creative professionals: 58% use AI daily, and 53% of AI users have used it on key client work without disclosure. Taste and judgment rank first as drivers of quality (53%), prompt skill last (19%). 49% say AI makes them faster, 7% say it raised their earnings. A vendor survey, delivered by press release.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/beyond-the-hype-the-state-of-ai-in-creative-work-envatos-second-annual-report-finds-ai-adoption-has-outrun-the-rules/",
+          "headline": "“Beyond The Hype: The State Of Ai In Creative Work”. Envato’s Second Annual Report Finds Ai Adoption Has Outrun The Rules",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Brands can now claim and correct their profile in ChatGPT",
+      "blurb": "OpenAI's Businesses in ChatGPT beta lets companies verify a profile, edit their details, upload product feeds and see mentions, profile views and clicks. The prompts behind those mentions stay hidden. Eligible US businesses can also sponsor their Business Agent as an ad destination, so the ad product arrived on launch day.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "State of Brand",
+          "url": "https://www.thestateofbrand.com/news/chatgpt-business-hub-brand-mentions-clicks",
+          "headline": "ChatGPT Just Became the New Google Business Profile, and CMOs Finally Get the Numbers | State of Brand",
+          "kind": "portal"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/",
+          "headline": "OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+          "headline": "ChatGPT is getting verified AI ‘Business Agents’",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "ArtStation hides declared AI work by default and leans on user reports",
+      "blurb": "Uploads now need a declaration (primarily generative, mixed or none), and a new report channel feeds a filter with strict, balanced and loose settings. Creative Bloq's open points: detection depends on users judging correctly, and it is unclear whether artists are told when their work is flagged or can contest it.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/is-artstations-new-ai-art-policy-good-enough",
+          "headline": "Is ArtStation's new AI art policy good enough?",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Adobe opens Creative Cloud to outside AI agents",
+      "blurb": "At MAX, Adobe previewed native MCP support for Photoshop, Illustrator, Premiere and After Effects. Third-party agents work on native project files while layers, vectors and sequences stay editable; the private beta is due in early 2027. Also new in Photoshop beta: Convert to Text Layers rebuilds type in a flat JPEG as live text matched against Adobe Fonts.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/adobe-max-2026-all-the-big-announcements/",
+          "headline": "Bring your own agent: Adobe opens Creative Cloud to outside AI",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates",
+          "headline": "Adobe is going all in on agentic AI",
+          "kind": "portal"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/",
+          "headline": "Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Gemini 4 Carbon is out, priced well below its rivals",
+      "blurb": "Google opens Carbon to paying developers, enterprises and AI Ultra subscribers and positions it above Argon for long, multi-step work. Introductory pricing is $2 per million input and $10 per million output tokens, doubling at the end of November. A swarm preview in Antigravity turns one prompt into a coordinated team of agents.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+          "headline": "Google releases Gemini 4 Carbon with agent ‘swarm’ feature",
+          "kind": "portal"
+        },
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+          "headline": "Gemini 4 Carbon is now available",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Claude gets Meetings, Sheets and Whiteboards",
+      "blurb": "All three launch in beta, and Claude Data is now generally available on paid plans. Interactive connectors embed partner apps inside Claude, for example Adobe's PDF editor or a HubSpot campaign tracker. The Verge reads it as a push toward non-technical knowledge workers ahead of the IPO.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
+          "headline": "Anthropic has its own AI-powered office suite now",
+          "kind": "portal"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
+          "headline": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Mollick on Fable 5.2: expert work, but no sense of when it is too much",
+      "blurb": "Ethan Mollick ran the model as filmmaker, hardware hacker, researcher and world builder and calls the result almost AGI. The gap he found is judgment: it did not notice when its own work was too long, repetitive or joyless, and its built-in critics only caught errors. That call stayed with him.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "One Useful Thing",
+          "url": "https://www.oneusefulthing.org/p/fable-52-and-jagged-agi",
+          "headline": "Fable 5.2 and Jagged AGI",
+          "kind": "person",
+          "author": "Ethan Mollick",
+          "channel": "One Useful Thing"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 23,
+      "examples": [
+        "AB InBev’s Flying Fish Beer gives fans a chance to rave at Dracula’s castle with help from Wieden+ Kennedy Mexico and We Are Collider",
+        "Schweppes Launches New Brand Platform – Surely It’s Schweppes, Via Kerfuffle",
+        "Amid dipping optimism, marketers find reasons for resilience in 2027"
+      ]
+    }
+  ]
+}

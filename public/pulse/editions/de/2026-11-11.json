@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "generated_for": "2026-11-11",
+    "window": "2026-11-09..2026-11-11",
+    "sources_scanned": 64,
+    "items_in_window": 211,
+    "lang": "de",
+    "note": "Sieben Stücke mit deutschsprachiger Leitquelle. Zu Adobe MAX lag kein deutschsprachiges Stück im Fenster, das Thema steht nur in der EN-Ausgabe. Nicht genommen: PAGE zur Lufthansa-Loungewear (Lob ohne übertragbaren Kern), zum Agenturwachstum (Unternehmensführung), zur Handweberei, zum HAICA-Publikumspreis und zur Ticketverlosung; Slanted mit Yearbook of Type #8 (Eigenprodukt) und dem Hochschulprojekt FORMA; t3n zu Black Friday, Raumfahrt, Fritzbox, Nvidia-Affäre und Anthropic-Börsengang; The Decoder zu Robotik, Pariser Aufruf und Muse Ember. Red Dot, Rentenpflicht und Schönste Bücher standen schon drin. Feed userresearchstrategist.com ausgefallen."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Avignon kehrt zum Wappen zurück, entwickelt ohne Agentur",
+      "blurb": "Der Claim heißt jetzt „Cité des Papes & des Arts“, das Logo zeigt eine Neuinterpretation des Stadtwappens mit zwei Falken, drei Schlüsseln und Krone. Entstanden ist das Erscheinungsbild in den kommunalen Teams. Das Designtagebuch hält die Serifenschrift Begum für gut gewählt, die Linienführung des Signets aber für unfertig.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Designtagebuch",
+          "url": "https://www.designtagebuch.de/wappenmotiv-praegt-avignons-neue-visuelle-identitaet/",
+          "headline": "Wappenmotiv prägt Avignons neue visuelle Identität",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Aura als Baukasten: Mythos, Sinnlichkeit, Geheimnis, Ritual",
+      "blurb": "PAGE zerlegt Markenaura in vier Bausteine und belegt sie mit Beispielen vom Plopp der Flensburger Flasche bis zur Farbe der Telekom. Als Lehrstück dient die Kooperation von Adidas mit der Laufmarke Satisfy: Leistung und Reichweite hier, Haltung und Nähe dort. Ein Denkrahmen, keine Anleitung.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/erfolgsfaktor-aura/",
+          "headline": "Erfolgsfaktor Aura",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Digital Fairness Act: Die EU will Dark Patterns einzeln benennen",
+      "blurb": "Die Kommission stellt den Entwurf voraussichtlich am Mittwoch vor. Laut Euronews listet er manipulative Gestaltung auf: erschwerte Kündigung, versteckte Verlängerungsbedingungen, wiederholtes Nachfragen, falsche Knappheit im Checkout. Autoplay und Streaks sollen sich abschalten lassen, Gratisphasen nur mit aktiver Zustimmung ins Bezahlabo übergehen.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "t3n",
+          "url": "https://t3n.de/news/digital-fairness-act-eu-plant-strengere-regeln-gegen-abofallen-und-manipulative-online-tricks-1772628/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+          "headline": "Digital Fairness Act: EU plant strengere Regeln gegen Abofallen und manipulative Online-Tricks",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industrie & Markt",
+      "title": "Unternehmen können ihr Profil in ChatGPT jetzt selbst pflegen",
+      "blurb": "Über den Business Hub aktualisieren Firmen ihre Angaben, hinterlegen Produktfeeds und sehen, wie oft sie erwähnt und angeklickt werden. Nutzergespräche gibt OpenAI nicht weiter. Business Agents für den Kundenkontakt gibt es zunächst nur für E-Commerce und Online-Dienste in den USA, sie lassen sich auch als Ziel für ChatGPT-Werbung nutzen.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/businesses-in-chatgpt-openai-macht-chatgpt-zur-unternehmensplattform-mit-ki-agenten-fuer-den-kundenkontakt/",
+          "headline": "Businesses in ChatGPT : OpenAI macht ChatGPT zur Unternehmensplattform mit KI-Agenten für den Kundenkontakt",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+          "headline": "ChatGPT is getting verified AI ‘Business Agents’",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Fable 5.2 besteht 41 Prozent echter Freelance-Aufträge",
+      "blurb": "Im Remote Labor Index prüfen menschliche Experten 240 abgeschlossene Upwork-Projekte gegen die Arbeit des Freelancers. Vor einem Jahr lag der Bestwert bei 2,5 Prozent, die nächstbesten Modelle kommen heute auf rund 21. Stark ist das Modell bei Audio, Architektur und 3D, schwach bleiben industrielles Produktdesign und Animation.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/anthropics-fable-5-2-erledigt-ueber-40-prozent-echter-freelance-auftraege-in-profiqualitaet/",
+          "headline": "Anthropics Fable 5.2 erledigt über 40 Prozent echter Freelance-Aufträge in Profiqualität",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Gemini 4 Carbon ist verfügbar und deutlich günstiger als Fable 5.2",
+      "blurb": "Google gibt das Modell für zahlende Entwickler und Unternehmenskunden frei, zum Einführungspreis von zwei Dollar je Million Input- und zehn Dollar je Million Output-Tokens. Im Test von Artificial Analysis liegt Fable 5.2 zwei Punkte vorn, kostet je Aufgabe aber mehr. Die Vorschau „/swarm“ macht aus einem Prompt ein Team koordinierter Agenten.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/google-startet-gemini-4-carbon-mit-neuer-agenten-schwarm-funktion/",
+          "headline": "Google startet Gemini 4 Carbon mit neuer Agenten-Schwarm-Funktion",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+          "headline": "Google releases Gemini 4 Carbon with agent ‘swarm’ feature",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Claude bekommt Tabellen, Whiteboards und eingebettete Partner-Apps",
+      "blurb": "Sheets und Whiteboards sind für die Zusammenarbeit im Team gedacht, Claude Data baut Dashboards aus angebundenen Quellen. Über Interactive Connectors betten Partner wie Adobe, Atlassian und Salesforce ihre Anwendungen direkt in Claude ein.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/claude-app-bekommt-tabellen-whiteboards-und-eingebettete-partner-apps/",
+          "headline": "Claude-App bekommt Tabellen, Whiteboards und eingebettete Partner-Apps",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
+          "headline": "Anthropic has its own AI-powered office suite now",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "AB InBev’s Flying Fish Beer gives fans a chance to rave at Dracula’s castle with help from Wieden+ Kennedy Mexico and We Are Collider",
+        "Schweppes Launches New Brand Platform – Surely It’s Schweppes, Via Kerfuffle",
+        "Amid dipping optimism, marketers find reasons for resilience in 2027"
+      ]
+    }
+  ]
+}
