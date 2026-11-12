@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "generated_for": "2026-11-12",
+    "window": "2026-11-10..2026-11-12",
+    "sources_scanned": 64,
+    "items_in_window": 197,
+    "lang": "de",
+    "note": "Zwei Stücke mit deutschsprachiger Leitquelle, ein dünner Tag. Zu Adobe MAX lag wieder kein deutschsprachiges Stück im Fenster. Schon in den Vortagen: Avignon, Aura, Claude-Bürofunktionen, Fable 5.2. Nicht genommen: PAGE zur Lufthansa-Loungewear und zum Agenturwachstum (Unternehmensführung); Slanted mit Ride or Art, Yearbook of Type #8 und FORMA; The Decoder zu Gemini Decisions, DeepL Voice, Ramp-Index, britischer Hochschulaufsicht, Helsing, OpenAI-Umsatz; t3n und heise durchgehend ohne Bezug zu kreativer Arbeit. Feeds export.arxiv.org und userresearchstrategist.com ausgefallen."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Jung von Matt startet für die Bahn mit einem Eingeständnis",
+      "blurb": "Die erste Kampagne nach dem neuen Erscheinungsbild heißt „Wir wissen, wir sind noch nicht da, aber wir machen Strecke!“ und zeigt das Personal, vom Gleisbau bis zum Café-Service. Die Unpünktlichkeit wird nicht ausgeblendet. Laut Agentur lag die Aufgabe darin, langfristige Infrastrukturprojekte und heute schon spürbare Verbesserungen glaubwürdig zu verbinden. PAGE findet das klug.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/die-erste-kampagne-von-jung-von-matt-fuer-die-deutsche-bahn-ist-da/",
+          "headline": "Die erste Kampagne von Jung von Matt für die Deutsche Bahn ist da!",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Mit Grok gebaute Apps stehen fast immer offen im Netz",
+      "blurb": "Die Sicherheitsfirma Claroc konnte 35.578 von 37.571 geprüften Apps ohne Anmeldung aufrufen, darunter Patientendaten, Klartext-Passwörter und Interna des Herstellers selbst. Hauptursache ist die Voreinstellung „Anyone with the link“ beim Veröffentlichen. Dazu kommen leicht auffindbare Adressen und fehlerhafte Zugriffskontrollen im erzeugten Code.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/grok-apps-legen-interna-von-spacexsi-und-x-sowie-patientendaten-offen/",
+          "headline": "Grok-Apps legen Interna von SpaceXSI und X sowie Patientendaten offen",
+          "kind": "portal"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+          "headline": "Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "Taylors of Harrogate brings new global brand platform ‘Steeped in Thought’ to The New Yorker Festival",
+        "Art Directors Club Names Global Finalists For ADC Young Guns 24",
+        "Crystal Ski Takes Winter Escapes to New Heights for Latest Campaign"
+      ]
+    }
+  ]
+}

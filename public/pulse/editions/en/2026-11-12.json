@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "generated_for": "2026-11-12",
+    "window": "2026-11-10..2026-11-12",
+    "sources_scanned": 64,
+    "items_in_window": 154,
+    "lang": "en",
+    "note": "Eleven pieces, no Craft & Judgment today. Adobe MAX still dominates the tool news; the MCP opening, Firefly and yesterday’s other stories are not repeated (also not repeated: Bad Appel, Klaviyo, Bon Iver, ChatGPT business profiles, ArtStation, Gemini 4 Carbon, Claude office tools). Five Substack posts turned out to be paid on reading and were dropped (UX Movement on bulk edit, UX Mentor on design decisions, Department of Product on mobile UX, Slow AI on error spotting, Peter Yang on Fable vs Opus); the Substack audience check failed for all ten feeds, so nothing was removed upstream. Dropped: the Nvidia/Jensen Huang cluster, Anthropic IPO and chip funding (no bearing on creative work), Creative Bloq deals, reviews and gadgets, event and webinar announcements, Roastbrief press releases. Considered and left out: Caixa rebrand, Mars on agentic shopping, Sitting Wren, Johnnie Walker, Harry Potter posters, Google Tabletop. Feeds export.arxiv.org and userresearchstrategist.com failed."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "One prototype that travels from code to Figma and back",
+      "blurb": "Christine Vallaure keeps the canvas for what a prompt box does badly: putting versions side by side. She cites a Stanford study in which designers who compared several versions made better work than those refining one. The round trip only holds if the Figma component carries the exact name and properties of the code component.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/in-system-design-from-code-to-figma-and-back-prototyping-in-your-real-design-system-7372b128de9a?source=rss----138adf9c44c---4",
+          "headline": "In-system design: from code to Figma and back. Prototyping in your real design system",
+          "kind": "person",
+          "author": "Christine Vallaure",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Design exploration, read as a search algorithm",
+      "blurb": "Matt Ström-Awn asks why some designers keep hundreds of variants in view and others a few artboards, and answers with computer science: depth-first, breadth-first, then beam search, which scores candidates and keeps only the best few. His framing is that product design looks more like chess than a Rubik’s cube, with hundreds of dimensions and expensive evaluation.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Matthew Strom-Awn",
+          "url": "https://mattstromawn.com/writing/design-is-a-search-problem/",
+          "headline": "Design is a search problem",
+          "kind": "person",
+          "author": "Matthew Strom-Awn"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Usage-based AI pricing turns cost into a design material",
+      "blurb": "Arin Bhowmick lists what he treats as non-negotiable: the estimate next to the button, a confirmation before expensive tasks, cost per task, early warnings and user-set caps. His own addition is to translate credits into work, such as “enough for about three more prototypes”, and to give each AI feature a cost budget before it is built.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/every-click-has-a-price-now-who-designs-how-that-feels-e3f00b6cabb8?source=rss----138adf9c44c---4",
+          "headline": "Every click has a price now. Who designs how that “feels”?",
+          "kind": "person",
+          "author": "Arin Bhowmick",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Research platforms make method decisions most teams never review",
+      "blurb": "Saeideh Bakhshi walks through where tools decide for the researcher: which study designs are possible, who gets recruited and excluded, what counts as task success. A platform without randomization or counterbalancing quietly changes what a comparison can conclude. Her ask is to evaluate a tool’s methods with the scrutiny applied to one’s own research.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Saeideh Bakhshi",
+          "url": "https://saeidehbakhshi.substack.com/p/ux-research-tools-methodological-risks",
+          "headline": "The Research Tooling Industry Is Selling Us Methodological Shortcuts",
+          "kind": "person",
+          "author": "Saeideh Bakhshi"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Koto hides a signpost in the Giffgaff wordmark and builds the system on it",
+      "blurb": "The final f now ends in a pointed tip, and that arrow recurs across the identity to point at prices and offers. The brief was the usual challenger problem: evolve for a crowded market without losing the personality people signed up for.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/koto-points-giffgaff-towards-its-next-chapter-with-an-arrow-led-rebrand/",
+          "headline": "Koto points Giffgaff towards its next chapter with a signpost-led rebrand",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "HOW+HOW gives Pets a brand architecture for insurance, a kids club and a foundation",
+      "blurb": "Each sub-brand gets its own positioning, verbal identity and visual system, tied to the masterbrand by shared devices. Pet Pals is built like an animated series around a character called Pogo, the Foundation uses fluid vector paths the studio calls zoomies.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/howhow-creates-unified-sub-brand-system-for-pet-retailer-pets/",
+          "headline": "HOW+HOW creates unified sub-brand system for pet retailer Pets",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Ironman’s women’s community becomes Woven, with a tone that skips the cheerleading",
+      "blurb": "Essential Viewing handled naming, strategy, identity, tone of voice, merch and launch campaign. Three chevrons for swim, bike and run interlock into a W, the campaign line is “I Am Not One Thing”, and the grainy gradients borrow from 90s UK garage rather than sports branding.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/news/this-new-identity-for-a-womens-sports-community-swaps-cheerleading-for-real-talk/",
+          "headline": "This identity for a women s sports community swaps cheerleading for real talk",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "AI job interviewers are brand touchpoints, and people film themselves trolling them",
+      "blurb": "Clips of candidates baiting interview avatars reach millions of views, and the audience attaches a logo whether or not the system is verified, as with an unconfirmed Burger King clip. State of Brand’s argument: automating an interaction makes it matter more, because a bad default hits every candidate, and an avatar’s irritated mood is a product decision someone made.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "State of Brand",
+          "url": "https://www.thestateofbrand.com/news/ai-interviewer-trolling-brand-risk",
+          "headline": "Your AI Interviewer Is Now a Brand Spokesperson. The Internet Is Testing Its Temper by Trolling It. | State of Brand",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "19 IGF jurors refuse any game made with generative AI, Big Walk discloses ten lines",
+      "blurb": "The jurors want the festival to ban games containing any AI-generated work. House House then disclosed that LLMs were used sparingly on Big Walk, for a Unity shadow bug among other things, amounting to well under 0.1% of the code. The case shows how little room the disclosure debate leaves between none and some.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/",
+          "headline": "Big Walk used AI to fix a bug. Now the indie gaming world is having a reckoning.",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
+          "headline": "The indie game community is in disarray over AI and Big Walk",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Adobe Sneaks: explorable photos, characters directed by talking, edits that copy themselves",
+      "blurb": "Sight Span turns a flat image into a 3D space to pick a new angle from, Screen Test shapes an AI character in an audition-style conversation, Rinse Repeat applies a retouch to other subjects in the same photo. Scene Sweep carries one edit across every shot of a sequence. All of it is experimental, with no word on if or where it ships.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+          "headline": "Adobe’s AI experiments let you walk around in photos and interview your characters",
+          "kind": "portal"
+        },
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/5-wild-adobe-sneaks-that-creatives-need-to-know-about",
+          "headline": "5 wild Adobe Sneaks that creatives need to know about",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Photoshop 2027 gets layer-based Relight and Restyle, Premiere gets the Creative Agent",
+      "blurb": "Relight places up to three virtual lights, Generative Restyle has a strength slider, and both stay editable as layers. In beta: a tool that turns flattened graphics such as a flyer or PDF into editable layers. Premiere generates video, sound and music in the timeline and opens to third-party models such as Kling and Seedance.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/adobe-unveils-photoshop-2027-with-a-host-of-new-ai-features",
+          "headline": "Adobe unveils Photoshop 2027 with a host of new AI features",
+          "kind": "portal"
+        },
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/adobe-premiere-pro-is-getting-an-ai-agent-to-do-the-boring-editing-jobs",
+          "headline": "Adobe Premiere Pro is getting an AI agent to do the boring editing jobs",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "Taylors of Harrogate brings new global brand platform ‘Steeped in Thought’ to The New Yorker Festival",
+        "Art Directors Club Names Global Finalists For ADC Young Guns 24",
+        "Crystal Ski Takes Winter Escapes to New Heights for Latest Campaign"
+      ]
+    }
+  ]
+}
