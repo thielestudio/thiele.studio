@@ -1,0 +1,162 @@
+---
+// Pixelaugen beim Überfahren eines Case: Zwei Augen aus Pixeln in der Akzentfarbe
+// sitzen an der Stelle des Mauszeigers, die Pupillen schauen in Pixelschritten von
+// links nach rechts und zurück. Nach Daniels Vorlage: 10 × 6 Zellen, die Augen teilen
+// sich in der Mitte je eine Wand, Pupille eine Zelle breit und zwei hoch.
+// Um die Augen kreist „VIEW CASE“ als Schriftring. Solange die Augen sichtbar sind,
+// ist der Mauszeiger aus dem Layout (das rosa Quadrat) ausgeblendet.
+// Nur mit Maus; ohne Darüberfahren (Touch) bleibt alles wie bisher.
+// Stand 24.10.2026, Test auf Testseite 7.
+const CELL = 8; // px Raster
+const SIZE = 7; // px Pixel, 1 px Fuge wie in der Vorlage
+const RING = 160; // px Kantenlänge des Schriftrings
+const R = 58; // px Radius der Schriftlinie
+// viermal, damit der Ring ohne große Sperrung voll wird
+const TEXT = "VIEW CASE · ".repeat(4);
+const ringPath = `M${RING / 2},${RING / 2} m-${R},0 a${R},${R} 0 1,1 ${2 * R},0 a${R},${R} 0 1,1 -${2 * R},0`;
+
+// Umriss beider Augen als [Spalte, Zeile]
+const lids: [number, number][] = [];
+for (const [left, right] of [[0, 4], [5, 9]]) {
+  for (let c = left + 1; c < right; c++) lids.push([c, 0], [c, 5]);
+  for (let r = 1; r <= 4; r++) lids.push([left, r], [right, r]);
+}
+// Pupillen in Ausgangslage ganz links im Auge
+const pupils: [number, number][] = [[1, 2], [1, 3], [6, 2], [6, 3]];
+---
+
+<div class="pixel-eyes" data-pixel-eyes aria-hidden="true">
+  <svg class="pixel-eyes__ring" viewBox={`0 0 ${RING} ${RING}`} width={RING} height={RING}>
+    <defs><path id="pixel-eyes-ring" d={ringPath} /></defs>
+    <text>
+      <textPath href="#pixel-eyes-ring" textLength={Math.floor(2 * Math.PI * R)} lengthAdjust="spacing">{TEXT}</textPath>
+    </text>
+  </svg>
+  <svg class="pixel-eyes__eyes" viewBox={`0 0 ${CELL * 10} ${CELL * 6}`} width={CELL * 10} height={CELL * 6} shape-rendering="crispEdges">
+    {lids.map(([c, r]) => <rect x={c * CELL} y={r * CELL} width={SIZE} height={SIZE} />)}
+    <g class="pixel-eyes__pupils">
+      {pupils.map(([c, r]) => <rect x={c * CELL} y={r * CELL} width={SIZE} height={SIZE} />)}
+    </g>
+  </svg>
+</div>
+
+<script>
+  const eyes = document.querySelector<HTMLElement>("[data-pixel-eyes]");
+  const hover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+  if (eyes && hover) {
+    document.documentElement.classList.add("has-pixel-eyes");
+    let x = -1;
+    let y = -1;
+    let raf = 0;
+    const place = () => {
+      raf = 0;
+      eyes.style.transform = `translate(${x}px, ${y}px)`;
+    };
+    const show = (on: boolean) => {
+      eyes.classList.toggle("is-on", on);
+      document.documentElement.classList.toggle("pixel-eyes-on", on);
+    };
+
+    document.addEventListener(
+      "pointermove",
+      (ev) => {
+        if (ev.pointerType !== "mouse") return;
+        x = ev.clientX;
+        y = ev.clientY;
+        show(!!(ev.target as Element | null)?.closest?.("a.item"));
+        if (!raf) raf = requestAnimationFrame(place);
+      },
+      { passive: true },
+    );
+    // beim Scrollen wandert der Case unter der stehenden Maus weg oder herein
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (x < 0) return;
+        show(!!document.elementFromPoint(x, y)?.closest("a.item"));
+      },
+      { passive: true },
+    );
+    document.documentElement.addEventListener("mouseleave", () => {
+      show(false);
+      x = -1;
+    });
+  }
+</script>
+
+<style>
+  .pixel-eyes {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9998;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .pixel-eyes svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    /* Mitte auf dem Mauszeiger */
+    translate: -50% -50%;
+    fill: var(--color-accent);
+    overflow: visible;
+  }
+
+  .pixel-eyes__ring {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    opacity: 0;
+    scale: 0.8;
+    transition: opacity 0.25s ease, scale 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .pixel-eyes.is-on {
+    visibility: visible;
+  }
+
+  .pixel-eyes.is-on .pixel-eyes__ring {
+    opacity: 1;
+    scale: 1;
+    animation: pixel-eyes-spin 12s linear infinite;
+  }
+
+  @keyframes pixel-eyes-spin {
+    to { rotate: 360deg; }
+  }
+
+  /* das Quadrat aus dem Layout weicht den Augen */
+  :global(html.pixel-eyes-on .cursor) {
+    opacity: 0 !important;
+  }
+
+  /* links halten, Mitte, rechts halten, Mitte: in ganzen Pixeln, ohne Gleiten */
+  .pixel-eyes.is-on .pixel-eyes__pupils {
+    animation: pixel-eyes-look 2.4s step-end infinite;
+  }
+
+  @keyframes pixel-eyes-look {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(8px); }
+    30% { transform: translateX(16px); }
+    70% { transform: translateX(8px); }
+    80% { transform: translateX(0); }
+  }
+
+  /* auf den Cases ersetzen die Augen den Mauszeiger */
+  :global(.has-pixel-eyes a.item),
+  :global(.has-pixel-eyes a.item *) {
+    cursor: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .pixel-eyes.is-on .pixel-eyes__pupils,
+    .pixel-eyes.is-on .pixel-eyes__ring {
+      animation: none;
+    }
+  }
+</style>

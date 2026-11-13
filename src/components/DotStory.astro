@@ -1,0 +1,674 @@
+---
+// Pixelraster-Bühne für den About-Teil. Ein festes, symmetrisches Raster;
+// jedes Motiv ändert nur Größe und Helligkeit der Pixel. Beides wird pro Bild
+// in JavaScript berechnet (zwei Werte pro Rasterzelle) und als kleine Textur an
+// einen Shader gegeben, der die Pixel zeichnet. Kein Three.js.
+//
+// Motive (data-shape auf den Screens): noise, statement, differ, elevate,
+// iterate, quiet, portrait. Platzhalter, bis Daniels Motive als Graustufenbilder
+// vorliegen; dann ersetzt ein Bild-Sampler die jeweilige Funktion.
+// Das Porträt wird schon aus einem Bild gelesen (Graustufen mit Alphakanal).
+interface Props {
+  portrait?: string;
+}
+const { portrait = "/images/portrait-daniel.png" } = Astro.props;
+---
+
+<div class="dot-stage" data-dot-stage data-portrait={portrait} aria-hidden="true">
+  <canvas></canvas>
+</div>
+
+<script>
+  const SPACING_WIDE = 12; // Rasterabstand in CSS-Pixeln
+  const SPACING_NARROW = 10;
+  const COLOR: [number, number, number] = [0.969, 0.957, 0.925]; // #f7f4ec
+
+  // ---------- kleine Helfer ----------
+  const clamp01 = (x: number) => Math.min(Math.max(x, 0), 1);
+  const smooth = (a: number, b: number, x: number) => {
+    const t = clamp01((x - a) / (b - a));
+    return t * t * (3 - 2 * t);
+  };
+  const hash = (x: number, y: number) => {
+    const s = Math.sin(x * 127.1 + y * 311.7) * 43758.5453;
+    return s - Math.floor(s);
+  };
+  const vnoise = (x: number, y: number) => {
+    const xi = Math.floor(x), yi = Math.floor(y);
+    const xf = x - xi, yf = y - yi;
+    const u = xf * xf * (3 - 2 * xf), v = yf * yf * (3 - 2 * yf);
+    const a = hash(xi, yi), b = hash(xi + 1, yi), c = hash(xi, yi + 1), d = hash(xi + 1, yi + 1);
+    return a + (b - a) * u + (c - a) * v + (a - b - c + d) * u * v;
+  };
+  const mulberry32 = (seed: number) => () => {
+    seed |= 0;
+    seed = (seed + 0x6d2b79f5) | 0;
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+
+  // ---------- Shader ----------
+  const VERT = `
+    attribute vec2 aPos;
+    void main() { gl_Position = vec4(aPos, 0.0, 1.0); }
+  `;
+  const FRAG = `
+    precision highp float;
+    uniform sampler2D uField;
+    uniform vec2 uGrid;
+    uniform float uS;
+    uniform vec2 uRes;
+    uniform vec3 uBig;
+    uniform vec3 uColor;
+    uniform vec4 uHead;      // x, y, halbe Kantenlänge, an (1) / aus (0)
+    uniform vec3 uTrail[32]; // Lichtspur: x, y, Stärke (< 0 = leer), älteste zuerst
+    uniform float uTrailW;   // halbe Linienbreite
+    void main() {
+      vec2 p = vec2(gl_FragCoord.x, uRes.y - gl_FragCoord.y);
+      vec2 cell = floor(p / uS);
+      vec2 center = (cell + 0.5) * uS;
+      vec4 tx = texture2D(uField, (cell + 0.5) / uGrid);
+      float raw = tx.r;
+      float a = 0.0;
+      if (raw > 0.002) {
+        float v = clamp((raw * 255.0 - 1.0) / 254.0, 0.0, 1.0);
+        float hs = uS * (0.08 + 0.35 * v);
+        vec2 d = abs(p - center);
+        float box = max(d.x, d.y);
+        a = (1.0 - smoothstep(hs - 0.5, hs + 0.5, box)) * tx.a;
+      }
+      vec2 bd = abs(p - uBig.xy);
+      float bigBox = max(bd.x, bd.y);
+      float big = (1.0 - smoothstep(uBig.z - 0.5, uBig.z + 0.5, bigBox)) * step(1.0, uBig.z) * 0.85;
+      a = max(a, big);
+      if (uHead.w > 0.5) {
+        float trail = 0.0;
+        for (int i = 0; i < 31; i++) {
+          vec3 ta = uTrail[i];
+          vec3 tb = uTrail[i + 1];
+          if (ta.z < 0.0 || tb.z < 0.0) continue;
+          vec2 pa = p - ta.xy, ba = tb.xy - ta.xy;
+          float h = clamp(dot(pa, ba) / max(dot(ba, ba), 0.0001), 0.0, 1.0);
+          float dl = length(pa - ba * h);
+          float line = 1.0 - smoothstep(uTrailW - 0.5, uTrailW + 0.5, dl);
+          trail = max(trail, line * mix(ta.z, tb.z, h));
+        }
+        a = max(a, trail * 0.55);
+        vec2 hd = abs(p - uHead.xy);
+        a = max(a, (1.0 - smoothstep(uHead.z - 0.5, uHead.z + 0.5, max(hd.x, hd.y))) * 0.95);
+      }
+      gl_FragColor = vec4(uColor * a, a);
+    }
+  `;
+
+  function compile(gl: WebGLRenderingContext, type: number, src: string) {
+    const s = gl.createShader(type)!;
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(s) ?? "shader");
+    return s;
+  }
+
+  function init(stage: HTMLElement) {
+    const canvas = stage.querySelector("canvas") as HTMLCanvasElement;
+    const section = stage.closest("section") as HTMLElement;
+    const screens = [...section.querySelectorAll<HTMLElement>("[data-shape]")];
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const gl = canvas.getContext("webgl", { premultipliedAlpha: true, antialias: false, alpha: true });
+    if (!gl) { stage.style.display = "none"; return; }
+
+    const prog = gl.createProgram()!;
+    gl.attachShader(prog, compile(gl, gl.VERTEX_SHADER, VERT));
+    gl.attachShader(prog, compile(gl, gl.FRAGMENT_SHADER, FRAG));
+    gl.linkProgram(prog);
+    gl.useProgram(prog);
+
+    const buf = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
+    const aPos = gl.getAttribLocation(prog, "aPos");
+    gl.enableVertexAttribArray(aPos);
+    gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+
+    const tex = gl.createTexture();
+    gl.bindTexture(gl.TEXTURE_2D, tex);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.pixelStorei(gl.UNPACK_ALIGNMENT, 1);
+
+    const U = {
+      grid: gl.getUniformLocation(prog, "uGrid"),
+      s: gl.getUniformLocation(prog, "uS"),
+      res: gl.getUniformLocation(prog, "uRes"),
+      big: gl.getUniformLocation(prog, "uBig"),
+      head: gl.getUniformLocation(prog, "uHead"),
+      trail: gl.getUniformLocation(prog, "uTrail"),
+      trailW: gl.getUniformLocation(prog, "uTrailW"),
+      color: gl.getUniformLocation(prog, "uColor"),
+    };
+    gl.uniform3f(U.color, ...COLOR);
+    gl.enable(gl.BLEND);
+    gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+
+    // ---------- Layout ----------
+    let W = 0, H = 0, dpr = 1, S = SPACING_WIDE, cols = 0, rows = 0;
+    let vx = 0, vy = 0, vb = 0; // Mitte und Größe des Motivfelds (CSS px)
+    let wide = true;
+    let field = new Uint8Array(0);
+    let pathCells = new Map<string, { order: number; root: number; len: number; branch: boolean }>();
+    let pathTotal = 1;
+    let boxCol0 = 0, boxRow0 = 0;
+
+    // Pfad für „Form Follows Fuckups": auf dem Raster selbst, in kurzen Schritten
+    // nach oben, mit Treppen, Umwegen und Sackgassen
+    const buildPath = () => {
+      pathCells = new Map();
+      const bw = Math.max(12, Math.floor((vb * 1.15) / S));
+      const bh = Math.max(12, Math.floor(vb / S));
+      boxCol0 = Math.round(vx / S - bw / 2);
+      boxRow0 = Math.round(vy / S - bh / 2);
+      const rnd = mulberry32(7);
+      let x = 1, y = bh - 2, order = 0;
+      const put = (cx: number, cy: number, o: number, root: number, len: number, branch: boolean) => {
+        const key = `${cx},${cy}`;
+        if (!pathCells.has(key) || !branch) pathCells.set(key, { order: o, root, len, branch });
+      };
+      put(x, y, order, 0, 0, false);
+      let horizontal = true;
+      while (y > 1 && order < 400) {
+        let steps: number, dx = 0, dy = 0;
+        if (horizontal) {
+          const goLeft = x > bw * 0.5 && rnd() < 0.25;
+          steps = 2 + Math.floor(rnd() * 4);
+          dx = goLeft ? -1 : 1;
+          if (!goLeft && x + steps > bw - 2) dx = -1;
+        } else {
+          steps = 1 + Math.floor(rnd() * 3);
+          dy = -1;
+        }
+        for (let k = 0; k < steps && y > 1; k++) {
+          x = Math.min(Math.max(x + dx, 1), bw - 2);
+          y += dy;
+          order++;
+          put(x, y, order, 0, 0, false);
+        }
+        // Sackgasse: kurzer Abzweig, der früh endet
+        if (rnd() < 0.5) {
+          const len = 2 + Math.floor(rnd() * 3);
+          const bdx = horizontal ? 0 : rnd() < 0.5 ? -1 : 1;
+          const bdy = horizontal ? (rnd() < 0.6 ? -1 : 1) : 0;
+          let bx = x, by = y;
+          for (let k = 1; k <= len; k++) {
+            bx += bdx; by += bdy;
+            if (bx < 0 || bx >= bw || by < 0 || by >= bh) break;
+            put(bx, by, order + k, order, len, true);
+          }
+        }
+        horizontal = !horizontal;
+      }
+      pathTotal = order;
+    };
+
+    // Porträt: das Bild wird auf genau so viele Pixel verkleinert, wie das Raster
+    // im Motivfeld Zellen hat; Helligkeit wird zur Pixelgröße
+    const pImg = new Image();
+    let pReady = false;
+    let pField = new Float32Array(0);
+    let pc0 = 0, pr0 = 0, pw = 0, ph = 0;
+    const buildPortrait = () => {
+      if (!pReady) return;
+      const hPx = wide ? Math.min(H * 0.8, W * 0.5) : Math.min(H * 0.34, W * 0.8);
+      const cyPx = wide ? vy : H - 24 - hPx / 2;
+      ph = Math.max(8, Math.round(hPx / S));
+      pw = Math.max(8, Math.round((ph * pImg.naturalWidth) / pImg.naturalHeight));
+      pc0 = Math.round(vx / S - pw / 2);
+      pr0 = Math.round(cyPx / S - ph / 2);
+      const cv = document.createElement("canvas");
+      cv.width = pw;
+      cv.height = ph;
+      const g = cv.getContext("2d", { willReadFrequently: true })!;
+      g.imageSmoothingQuality = "high";
+      g.drawImage(pImg, 0, 0, pw, ph);
+      const d = g.getImageData(0, 0, pw, ph).data;
+      pField = new Float32Array(pw * ph);
+      for (let i = 0; i < pw * ph; i++) {
+        const l = d[i * 4] / 255, al = d[i * 4 + 3] / 255;
+        pField[i] = al * (0.08 + 0.92 * Math.pow(l, 1.8));
+      }
+    };
+    pImg.onload = () => { pReady = true; buildPortrait(); };
+    if (stage.dataset.portrait) pImg.src = stage.dataset.portrait;
+
+    const resize = () => {
+      const rect = stage.getBoundingClientRect();
+      W = rect.width; H = rect.height;
+      if (!W || !H) return;
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.round(W * dpr);
+      canvas.height = Math.round(H * dpr);
+      gl.viewport(0, 0, canvas.width, canvas.height);
+      wide = W >= 769;
+      S = wide ? SPACING_WIDE : SPACING_NARROW;
+      cols = Math.ceil(W / S) + 1;
+      rows = Math.ceil(H / S) + 1;
+      field = new Uint8Array(cols * rows * 2); // je Zelle: Größe, Helligkeit
+      if (wide) { vx = W * 0.72; vy = H * 0.5; vb = Math.min(W * 0.4, H * 0.72); }
+      else { vx = W * 0.5; vy = H * 0.85; vb = Math.min(W * 0.7, H * 0.22); }
+      buildPath();
+      buildPortrait();
+      gl.uniform2f(U.grid, cols, rows);
+      gl.uniform1f(U.s, S * dpr);
+      gl.uniform2f(U.res, canvas.width, canvas.height);
+    };
+    window.addEventListener("resize", resize);
+    resize();
+
+    // ---------- Motive ----------
+    // c, r: Rasterzelle; qx, qy: Position im Motivfeld (−1..1, y nach unten); lp: Scrollfortschritt des Screens (−1..1)
+    type FieldFn = (c: number, r: number, qx: number, qy: number, lp: number, t: number) => number;
+
+    const discMask = (qx: number, qy: number, rad: number) => 1 - smooth(rad - 0.15, rad, Math.hypot(qx * 0.85, qy));
+    const fields: Record<string, FieldFn> = {
+      // leises Rauschen, nur im Motivfeld; auf dem Handy gar keins, dort liegen die Logos
+      noise: (c, r, qx, qy, _lp, t) => {
+        if (!wide) return 0;
+        const m = discMask(qx, qy, 1.05);
+        if (m <= 0) return 0;
+        const n = vnoise(c * 0.11 + t * 0.05, r * 0.11 - t * 0.025) * 0.7 + vnoise(c * 0.37, r * 0.37 + t * 0.12) * 0.3;
+        return clamp01((n - 0.55) * 2.2) * 0.4 * m;
+      },
+      // gleichmäßiges Raster, ein einziger Punkt wird groß (Kreis im Shader)
+      statement: () => 0,
+      // alle Punkte gehen mit der Welle, ein kleiner Verband bleibt stehen
+      differ: (c, r, qx, qy, _lp, t) => {
+        const m = discMask(qx, qy, 1.05);
+        if (m <= 0) return 0;
+        const tc = Math.round((vx + 0.32 * vb * 0.5) / S);
+        const tr = Math.round((vy + 0.22 * vb * 0.5) / S);
+        if (Math.hypot(c - tc, r - tr) <= 1.5) return 1;
+        const w = 0.5 + 0.5 * Math.sin(t * 1.4 - (qx * 1.4 + qy * 0.7));
+        return (0.15 + 0.3 * w) * m;
+      },
+      // Elevation: die Linie unter dem Text zeichnet drawWave()
+      elevate: () => 0,
+      // Pfad in kurzen Schritten nach oben, Sackgassen tauchen auf und verblassen
+      iterate: (c, r, _qx, _qy, lp) => {
+        const cell = pathCells.get(`${c - boxCol0},${r - boxRow0}`);
+        if (!cell) return 0;
+        const pr = smooth(-0.85, 0.35, lp) * (pathTotal + 6);
+        if (cell.order > pr) return 0;
+        if (!cell.branch) return 0.85;
+        const fade = 1 - smooth(cell.root + cell.len + 2, cell.root + cell.len + 14, pr);
+        return 0.6 * fade;
+      },
+      // Leistungen: fast still
+      quiet: () => 0,
+      // Porträt aus Daniels Foto
+      portrait: (c, r) => {
+        const x = c - pc0, y = r - pr0;
+        if (x < 0 || y < 0 || x >= pw || y >= ph) return 0;
+        return pField[y * pw + x];
+      },
+    };
+
+    // ---------- Scroll ----------
+    const mixState = () => {
+      const mid = window.innerHeight / 2;
+      const info = screens.map((s) => {
+        const rc = s.getBoundingClientRect();
+        return { center: rc.top + rc.height / 2, h: rc.height || 1 };
+      });
+      const local = (i: number) => Math.max(-1, Math.min(1, (mid - info[i].center) / info[i].h));
+      if (mid <= info[0].center) return { a: 0, b: 0, t: 0, la: local(0), lb: local(0) };
+      for (let i = 0; i < info.length - 1; i++) {
+        if (mid < info[i + 1].center) {
+          const raw = (mid - info[i].center) / (info[i + 1].center - info[i].center);
+          return { a: i, b: i + 1, t: smooth(0.25, 0.75, raw), la: local(i), lb: local(i + 1) };
+        }
+      }
+      const last = info.length - 1;
+      return { a: last, b: last, t: 0, la: local(last), lb: local(last) };
+    };
+
+    // Zelle heller und größer machen, nie dunkler
+    const lift = (c: number, r: number, size: number, bright: number) => {
+      if (c < 0 || c >= cols || r < 0 || r >= rows) return;
+      const i = (r * cols + c) * 2;
+      const sz = 1 + Math.round(clamp01(size) * 254);
+      const br = Math.round(clamp01(bright) * 255);
+      if (sz > field[i]) field[i] = sz;
+      if (br > field[i + 1]) field[i + 1] = br;
+    };
+
+    // ---------- Maus: genau ein Rasterpixel ist hervorgehoben ----------
+    // Er gleitet auf den Linien des Rasters zum Zeiger (erst in der längeren
+    // Richtung, dann um die Ecke), schnell los und langsam an, und zieht eine
+    // 2 px feine Lichtspur hinter sich her. Er folgt der Maus mit Verzögerung:
+    // Ziel ist immer die Position, an der die Maus vor LAG_MS war.
+    const pointer = { active: false };
+    const LAG_MS = 300;
+    const history: { x: number; y: number; t: number }[] = [];
+    const TRAIL_MS = 240;
+    const MAX_TRAIL = 32;
+    let headOn = false;
+    let hx = 0, hy = 0; // Position in CSS px
+    type Glide = { pts: [number, number][]; leg: number; len: number; t0: number; dur: number; s: number };
+    let glide: Glide | null = null;
+    let goal = { x: NaN, y: NaN };
+    const trail: { x: number; y: number; t: number }[] = [];
+    const trailBuf = new Float32Array(MAX_TRAIL * 3);
+    window.addEventListener("pointermove", (e) => {
+      if (e.pointerType !== "mouse") return;
+      const rc = stage.getBoundingClientRect();
+      history.push({ x: e.clientX - rc.left, y: e.clientY - rc.top, t: performance.now() });
+      if (history.length > 240) history.shift(); // falls gerade kein Bild läuft
+      pointer.active = true;
+      lastActivity = performance.now();
+      pongArmed = true;
+      if (pong) pong.moved = true;
+    });
+    document.documentElement.addEventListener("mouseleave", () => { pointer.active = false; });
+
+    // liegt v auf einer Linie des sichtbaren Rasters (jede zweite Zelle)?
+    const onLine = (v: number) => {
+      const k = (v / S - 0.5) / 2;
+      return Math.abs(k - Math.round(k)) < 1e-3;
+    };
+    const ease = (u: number) => 1 - Math.pow(1 - u, 3); // schnell los, langsam an
+
+    const moveHead = (now: number) => {
+      if (!pointer.active) { headOn = false; glide = null; trail.length = 0; history.length = 0; return; }
+      // Mausposition von vor LAG_MS; bei reduzierter Bewegung die aktuelle
+      const cutoff = reduce ? Infinity : now - LAG_MS;
+      while (history.length > 1 && history[1].t <= cutoff) history.shift();
+      const src = history[0];
+      if (!src || src.t > cutoff) {
+        if (!headOn) return;
+      } else {
+        // Ziel ist der nächste sichtbare Rasterpunkt
+        const tx = (2 * Math.round((src.x / S - 0.5) / 2) + 0.5) * S;
+        const ty = (2 * Math.round((src.y / S - 0.5) / 2) + 0.5) * S;
+        if (!headOn || reduce) { hx = tx; hy = ty; headOn = true; glide = null; goal = { x: tx, y: ty }; return; }
+        if (tx !== goal.x || ty !== goal.y) {
+          goal = { x: tx, y: ty };
+          // Neuer Weg ab der aktuellen Position. Liegt sie zwischen zwei Rasterpunkten,
+          // geht es zuerst auf derselben Linie weiter, damit der Pixel auf dem Raster bleibt.
+          const horizontalFirst = !onLine(hx) ? true : !onLine(hy) ? false : Math.abs(tx - hx) >= Math.abs(ty - hy);
+          const corner: [number, number] = horizontalFirst ? [tx, hy] : [hx, ty];
+          const leg = Math.abs(corner[0] - hx) + Math.abs(corner[1] - hy);
+          const len = leg + Math.abs(tx - corner[0]) + Math.abs(ty - corner[1]);
+          glide = len > 0 ? { pts: [[hx, hy], corner, [tx, ty]], leg, len, t0: now, dur: Math.min(260 + len * 0.6, 900), s: 0 } : null;
+        }
+      }
+      if (glide) {
+        const u = Math.min((now - glide.t0) / glide.dur, 1);
+        const sNew = ease(u) * glide.len;
+        const [p0, pc, p1] = glide.pts;
+        // Ecke als eigener Spurpunkt, sonst schneidet die Spur sie ab
+        if (glide.s < glide.leg && sNew >= glide.leg) trail.push({ x: pc[0], y: pc[1], t: now });
+        if (sNew <= glide.leg) {
+          const f = glide.leg ? sNew / glide.leg : 1;
+          hx = p0[0] + (pc[0] - p0[0]) * f; hy = p0[1] + (pc[1] - p0[1]) * f;
+        } else {
+          const f = (sNew - glide.leg) / (glide.len - glide.leg);
+          hx = pc[0] + (p1[0] - pc[0]) * f; hy = pc[1] + (p1[1] - pc[1]) * f;
+        }
+        glide.s = sNew;
+        if (u >= 1) { hx = p1[0]; hy = p1[1]; glide = null; }
+      }
+      const lastPt = trail[trail.length - 1];
+      if (!lastPt || lastPt.x !== hx || lastPt.y !== hy) trail.push({ x: hx, y: hy, t: now });
+      while (trail.length && now - trail[0].t > TRAIL_MS) trail.shift();
+      if (trail.length > MAX_TRAIL) trail.splice(0, trail.length - MAX_TRAIL);
+    };
+
+    const drawHighlight = (now: number) => {
+      trailBuf.fill(-1);
+      for (let i = 0; i < MAX_TRAIL; i++) {
+        const tp = trail[i];
+        if (!tp) break;
+        trailBuf[i * 3] = tp.x * dpr;
+        trailBuf[i * 3 + 1] = tp.y * dpr;
+        trailBuf[i * 3 + 2] = Math.max(0, 1 - (now - tp.t) / TRAIL_MS);
+      }
+      // der jüngste Punkt ist der Pixel selbst
+      if (trail.length) trailBuf[(Math.min(trail.length, MAX_TRAIL) - 1) * 3 + 2] = 1;
+      gl.uniform3fv(U.trail, trailBuf);
+      gl.uniform1f(U.trailW, dpr);
+      gl.uniform4f(U.head, hx * dpr, hy * dpr, S * dpr * (0.08 + 0.35 * 0.28), headOn ? 1 : 0);
+    };
+
+    // ---------- Easter Egg: Pong ----------
+    // Bleibt die Maus 15 s still, wird der Pixel zum Schläger. Scrollen oder Esc beendet
+    // das Spiel. Wer gar nicht reagiert, verliert drei Bälle, dann ist wieder Ruhe.
+    const IDLE_MS = 15000;
+    const PADDLE = 9; // Schlägerhöhe in Zellen
+    let lastActivity = performance.now();
+    let pongArmed = true;
+    type Pong = {
+      t0: number; side: -1 | 1; px0: number; py: number; ay: number;
+      bx: number; by: number; vx: number; vy: number; serveAt: number; serveDir: -1 | 1;
+      me: number; cpu: number; lostIdle: number; moved: boolean;
+    };
+    let pong: Pong | null = null;
+    const endPong = () => {
+      pong = null;
+      headOn = false; glide = null; trail.length = 0;
+    };
+    const activity = () => { lastActivity = performance.now(); };
+    for (const ev of ["wheel", "pointerdown", "touchstart"]) window.addEventListener(ev, activity, { passive: true });
+    window.addEventListener("scroll", () => { activity(); if (pong) endPong(); }, { passive: true });
+    window.addEventListener("keydown", (e) => { activity(); if (pong && e.key === "Escape") endPong(); });
+
+    const DIGITS = ["111101101101111", "010110010010111", "111001111100111", "111001111001111", "101101111001001",
+      "111100111001111", "111100111101111", "111001001001001", "111101111101111", "111101111001111"];
+    const drawNumber = (n: number, c0: number, r0: number) => {
+      const str = String(Math.min(n, 99));
+      [...str].forEach((ch, k) => {
+        const g = DIGITS[+ch];
+        for (let i = 0; i < 15; i++) if (g[i] === "1") lift(c0 + k * 4 + (i % 3), r0 + Math.floor(i / 3), 0.75, 0.8);
+      });
+    };
+    const edgeX = (side: -1 | 1) => (side < 0 ? 6.5 : Math.floor(W / S) - 6.5) * S;
+
+    const maybeStartPong = (now: number) => {
+      if (pong || !pongArmed || reduce || !wide || !headOn || glide) return;
+      if (now - lastActivity < IDLE_MS) return;
+      const sr = section.getBoundingClientRect();
+      if (sr.top > 1 || sr.bottom < H - 1) return; // nur, wenn der About-Teil den ganzen Schirm füllt
+      const side = hx < W / 2 ? -1 : 1;
+      pong = {
+        t0: now, side, px0: hx, py: hy, ay: H / 2, bx: W / 2, by: H / 2, vx: 0, vy: 0,
+        serveAt: now + 1300, serveDir: side, me: 0, cpu: 0, lostIdle: 0, moved: false,
+      };
+      pongArmed = false;
+    };
+
+    const updatePong = (now: number, dt: number) => {
+      const g = pong!;
+      const grow = ease(clamp01((now - g.t0) / 350));
+      const slide = ease(clamp01((now - g.t0 - 250) / 650));
+      const myX = g.px0 + (edgeX(g.side) - g.px0) * slide;
+      const half = (PADDLE * S) / 2;
+      // eigener Schläger folgt der Maus, der andere dem Ball (mit Tempolimit, schlagbar)
+      const last = history[history.length - 1];
+      if (last && slide >= 1) g.py += (Math.min(Math.max(last.y, half), H - half) - g.py) * 0.35;
+      const aiMax = 330 * dt;
+      g.ay += Math.max(-aiMax, Math.min(aiMax, g.by - g.ay));
+      // Ball
+      const br = S * 0.43;
+      if (now >= g.serveAt && g.vx === 0) {
+        g.vx = 380 * g.serveDir;
+        g.vy = (Math.random() - 0.5) * 300;
+      }
+      if (g.vx !== 0) {
+        g.bx += g.vx * dt;
+        g.by += g.vy * dt;
+        if (g.by < S + br) { g.by = S + br; g.vy = Math.abs(g.vy); }
+        if (g.by > H - S - br) { g.by = H - S - br; g.vy = -Math.abs(g.vy); }
+        const paddles: { x: number; y: number }[] = [
+          { x: edgeX(-1), y: g.side < 0 ? g.py : g.ay },
+          { x: edgeX(1), y: g.side > 0 ? g.py : g.ay },
+        ];
+        for (const [i, pd] of paddles.entries()) {
+          const dir = i === 0 ? 1 : -1; // Richtung nach dem Abprallen
+          const facing = dir > 0 ? g.vx < 0 : g.vx > 0;
+          if (!facing || Math.abs(g.bx - pd.x) > S * 0.5 + br || Math.abs(g.by - pd.y) > half + br) continue;
+          g.vx = dir * Math.min(Math.abs(g.vx) * 1.06, 950);
+          g.vy = Math.max(-620, Math.min(620, g.vy + ((g.by - pd.y) / half) * 220));
+          g.bx = pd.x + dir * (S * 0.5 + br);
+        }
+        if (g.bx < -S || g.bx > W + S) {
+          const leftMissed = g.bx < 0;
+          const iMissed = (leftMissed && g.side < 0) || (!leftMissed && g.side > 0);
+          if (iMissed) { g.cpu++; if (!g.moved && ++g.lostIdle >= 3) { endPong(); return; } }
+          else g.me++;
+          g.bx = W / 2; g.by = H / 2; g.vx = 0; g.vy = 0;
+          g.serveAt = now + 900;
+          g.serveDir = leftMissed ? -1 : 1;
+        }
+      }
+      // Zeichnen: Mittellinie, Punktestand, Schläger
+      const mid = Math.round(W / 2 / S - 0.5);
+      for (let r = 1; r < rows - 1; r++) if (r % 4 < 2) lift(mid, r, 0.3, 0.4);
+      const leftScore = g.side < 0 ? g.me : g.cpu;
+      const rightScore = g.side < 0 ? g.cpu : g.me;
+      drawNumber(leftScore, mid - 3 - String(leftScore).length * 4 + 1, 4);
+      drawNumber(rightScore, mid + 3, 4);
+      const bar = (x: number, y: number, h: number) => {
+        const c = Math.round(x / S - 0.5);
+        const r0 = Math.round(y / S - 0.5) - Math.floor(h / 2);
+        for (let r = r0; r < r0 + h; r++) lift(c, r, 0.95, 0.9);
+      };
+      bar(myX, g.py, Math.max(1, Math.round(1 + (PADDLE - 1) * grow)));
+      const aiIn = ease(clamp01((now - g.t0 - 600) / 400));
+      if (aiIn > 0) bar(edgeX((-g.side) as -1 | 1), g.ay, Math.max(1, Math.round(PADDLE * aiIn)));
+      // Ball als eigener Pixel, ohne Spur
+      trailBuf.fill(-1);
+      gl.uniform3fv(U.trail, trailBuf);
+      gl.uniform4f(U.head, g.bx * dpr, g.by * dpr, br * dpr, now > g.t0 + 900 ? 1 : 0);
+    };
+
+    // ---------- Elevation: eine Linie über die ganze Breite, unter dem Text ----------
+    // Erst unruhig wie eine Tonspur, mit dem Text kommt sie zur Ruhe:
+    // am Ende eine gleichmäßige, ausgeglichene Welle.
+    const elevIdx = screens.findIndex((s) => s.dataset.shape === "elevate");
+    const elevText = elevIdx >= 0 ? [...screens[elevIdx].querySelectorAll<HTMLElement>("p")].pop() ?? null : null;
+    const drawWave = (t: number) => {
+      if (!elevText) return;
+      const sr = stage.getBoundingClientRect();
+      const scr = screens[elevIdx].getBoundingClientRect();
+      if (scr.bottom < sr.top || scr.top > sr.bottom) return;
+      const lineY = elevText.getBoundingClientRect().bottom - sr.top + (wide ? 96 : 56);
+      const amp = (wide ? 4 : 3) * S;
+      if (lineY < -amp || lineY > H + amp) return;
+      const lp = Math.max(-1, Math.min(1, (window.innerHeight / 2 - (scr.top + scr.height / 2)) / scr.height));
+      const level = smooth(-0.25, 0.2, lp);
+      let prev = -1;
+      for (let c = 0; c < cols; c++) {
+        // unruhig: Ausschläge unterschiedlicher Höhe
+        const env = vnoise(c * 0.09, t * 0.7) ** 2;
+        const yRough = env * (Math.sin(c * 1.3 + t * 7) * 0.6 + Math.sin(c * 0.53 - t * 4.1) * 0.4) * amp;
+        // ausgeglichen: gleich hohe, ruhige Welle
+        const yEven = Math.sin(c * 0.32 - t * 1.6) * amp * 0.45;
+        const row = Math.round((lineY + yRough + (yEven - yRough) * level) / S - 0.5);
+        const lo = prev < 0 ? row : Math.min(row, prev);
+        const hi = prev < 0 ? row : Math.max(row, prev);
+        for (let r = lo; r <= hi; r++) lift(c, r, 0.45, 0.6);
+        prev = row;
+      }
+    };
+
+    // ---------- Bild ----------
+    let running = false;
+    let raf = 0;
+    const t0 = performance.now();
+    let lastFrame = t0;
+
+    const frame = () => {
+      const now = performance.now();
+      const t = reduce ? 0 : (now - t0) / 1000;
+      const { a, b, t: k, la, lb } = mixState();
+      const fa = fields[screens[a].dataset.shape as string] ?? fields.quiet;
+      const fb = fields[screens[b].dataset.shape as string] ?? fields.quiet;
+      const ua = 1 - k;
+      const dt = Math.min((now - lastFrame) / 1000, 0.05);
+      lastFrame = now;
+      if (!pong) moveHead(now);
+
+      const inv = 2 / vb;
+      for (let r = 0; r < rows; r++) {
+        const cy = (r + 0.5) * S;
+        const qy = (cy - vy) * inv;
+        for (let c = 0; c < cols; c++) {
+          const cx = (c + 0.5) * S;
+          const qx = (cx - vx) * inv;
+          let v = 0;
+          if (ua > 0.001) v += fa(c, r, qx, qy, la, t) * ua;
+          if (k > 0.001) v += fb(c, r, qx, qy, lb, t) * k;
+          v = clamp01(v);
+          // Kein sichtbares Grundraster: Pixel erscheinen nur, wo ein Motiv sitzt
+          const i = (r * cols + c) * 2;
+          field[i] = v < 0.06 ? 0 : 1 + Math.round(v * 254);
+          field[i + 1] = Math.round((0.16 + 0.54 * v) * 255);
+        }
+      }
+      drawWave(t);
+      if (pong) updatePong(now, dt);
+      else { drawHighlight(now); maybeStartPong(now); }
+
+      gl.bindTexture(gl.TEXTURE_2D, tex);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.LUMINANCE_ALPHA, cols, rows, 0, gl.LUMINANCE_ALPHA, gl.UNSIGNED_BYTE, field);
+
+      // Der eine große Punkt beim Versprechen
+      const wa = screens[a].dataset.shape === "statement" ? ua : 0;
+      const wb = screens[b].dataset.shape === "statement" ? k : 0;
+      const wBig = wa + wb;
+      const lpBig = wa >= wb ? la : lb;
+      const grow = smooth(-0.9, -0.1, lpBig);
+      const target = vb * 0.26 * wBig * grow * (1 + (reduce ? 0 : 0.03 * Math.sin(t * 1.6)));
+      // wächst in ganzen Rasterschritten, die Kante liegt auf der Kante eines vollen Pixels
+      const radius = target < S * 0.5 ? 0 : Math.floor(target / S) * S + S * 0.43;
+      // auf eine Rasterzelle gesetzt: der Pixel ist einer aus dem Raster
+      const bx = (Math.round(vx / S) + 0.5) * S;
+      const by = (Math.round(vy / S) + 0.5) * S;
+      gl.uniform3f(U.big, bx * dpr, by * dpr, radius * dpr);
+
+      gl.clearColor(0, 0, 0, 0);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+      gl.drawArrays(gl.TRIANGLES, 0, 3);
+      if (running) raf = requestAnimationFrame(frame);
+    };
+
+    new IntersectionObserver((entries) => {
+      const on = entries.some((e) => e.isIntersecting);
+      if (on && !running) { running = true; raf = requestAnimationFrame(frame); }
+      else if (!on) { running = false; cancelAnimationFrame(raf); }
+    }).observe(section);
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-dot-stage]").forEach(init);
+</script>
+
+<style>
+  .dot-stage {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    height: 100svh;
+    margin-bottom: -100vh;
+    margin-bottom: -100svh;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .dot-stage canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+</style>

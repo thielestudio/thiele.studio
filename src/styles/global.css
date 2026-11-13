@@ -17,10 +17,16 @@
 :root {
   --color-bg: #f7f4ec;
   --color-fg: #111;
+  --color-accent: #ff3ea5;
   --color-muted: #999;
 
   --pad: 48px;
   --gap: 48px;
+
+  /* Eine linke und rechte Kante für alle Bereiche: mindestens --pad,
+     auf breiten Screens bündig mit dem 1400px-Raster. */
+  --container: 1400px;
+  --edge: max(var(--pad), calc((100% - var(--container)) / 2));
 
   --fs-h1: 80px;
   --lh-h1: 0.9;

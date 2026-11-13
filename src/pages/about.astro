@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import PixelButton from "../components/PixelButton.astro";
 
 const clients = [
   "AMG",
@@ -7,7 +8,7 @@ const clients = [
   "Campany",
   "Nike",
   "Red Bull",
-  "Federal Ministry of Education & Research",
+  "Federal Ministry of Research, Technology and Space",
   "Wikinger Reisen",
 ];
 
@@ -153,10 +154,8 @@ const faq = [
         just the problem you're trying to solve.
       </p>
       <div class="cta-links">
-        <a href="#" class="cta-primary">Book a call (Cal.com Placeholder)</a>
-        <a href="mailto:post@thiele.studio" class="cta-secondary">
-          post@thiele.studio
-        </a>
+        <PixelButton href="#" label="Book a call" />
+        <PixelButton href="mailto:post@thiele.studio" label="post@thiele.studio" class="pxbtn--keep-case" />
       </div>
     </section>
   </article>
@@ -370,22 +369,8 @@ const faq = [
 
   .cta-links {
     display: flex;
-    gap: var(--gap);
+    gap: calc(var(--gap) * 0.5);
     flex-wrap: wrap;
-    font-size: var(--fs-h3);
-    font-weight: 500;
-  }
-
-  .cta-primary,
-  .cta-secondary {
-    padding-bottom: 4px;
-    border-bottom: 2px solid var(--color-fg);
-    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
-  }
-
-  .cta-primary:hover,
-  .cta-secondary:hover {
-    transform: translateX(6px);
   }
 
   @media (max-width: 900px) {

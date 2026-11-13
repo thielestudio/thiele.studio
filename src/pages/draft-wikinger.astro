@@ -1,0 +1,266 @@
+---
+// Entwurf Wikinger-Case, Fassung 3b (27.10.2026). Nicht verlinkt, nicht committet.
+// Blöcke und Texte: Vault, Projects/website-relaunch-2026/cases/wikinger/case-konzeption-2026-10-13.md
+import Layout from "../layouts/Layout.astro";
+
+const img = (f: string) => `/images/cases/wikinger/v2/${f}`;
+---
+
+<Layout title="Wikinger Reisen — Draft" description="Draft">
+  <article class="wk">
+    <!-- 00 Opener -->
+    <header class="wk-head">
+      <p class="small wk-label">Wikinger Reisen · Design system · 2021–2026</p>
+      <h1>A relaunch without the relaunch.</h1>
+    </header>
+    <figure class="wk-media wk-browser">
+      <div class="wk-browser-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+      <video src={img("00-scroll-loop.mp4")} poster={img("00-poster.jpg")} autoplay muted loop playsinline></video>
+    </figure>
+
+    <!-- 01 Fallhöhe -->
+    <section class="wk-split">
+      <img src={img("01-photo.jpg")} alt="Wikinger Reisen trip page, Madeira" loading="lazy" />
+      <ul class="wk-facts">
+        <li>Leading provider of hiking and activity tours in German-speaking countries</li>
+        <li><b>60,000+</b> guests a year</li>
+        <li><b>2.3 million</b> users a year</li>
+        <li><b>€100M+</b> annual turnover</li>
+      </ul>
+    </section>
+
+    <!-- 02 Status quo -->
+    <section class="wk-block">
+      <p class="small wk-label">Status quo</p>
+      <h2>Everyone had a version of the brand. None of them was made for screens.</h2>
+    </section>
+    <figure class="wk-media"><img src={img("02-desktop.jpg")} alt="" loading="lazy" /></figure>
+
+    <!-- 03 Bestandsaufnahme -->
+    <section class="wk-block">
+      <p class="small wk-label">Step 1 · Inventory</p>
+      <h2>28 greys. 26 font sizes. One brand.</h2>
+    </section>
+    <figure class="wk-media"><img src={img("03-inventory.jpg")} alt="" loading="lazy" /></figure>
+
+    <!-- 04 System -->
+    <section class="wk-block">
+      <p class="small wk-label">Step 2 · System</p>
+      <h2>One library. Every state drawn.</h2>
+      <p class="wk-line">28 component sets · 342 components and variants</p>
+    </section>
+    <figure class="wk-media"><img src={img("04-library.jpg")} alt="" loading="lazy" /></figure>
+    <figure class="wk-media">
+      <video src={img("04-pricing-loop.mp4")} poster={img("04-pricing-poster.jpg")} autoplay muted loop playsinline></video>
+    </figure>
+
+    <!-- 05 Übersetzung -->
+    <section class="wk-block">
+      <p class="small wk-label">Step 3 · Translation</p>
+      <h2>Designed in Figma. Built into the stack they already had.</h2>
+      <p class="wk-line">No replatforming. Built by the client's in-house and external developers.</p>
+    </section>
+    <figure class="wk-media"><img src={img("05-translation.jpg")} alt="" loading="lazy" /></figure>
+
+    <!-- 06 Zeitleiste -->
+    <section class="wk-block">
+      <p class="small wk-label">2021–2026</p>
+      <h2>Same foundation since 2021. A different website on top.</h2>
+    </section>
+    <figure class="wk-media"><img src={img("06-timeline.jpg")} alt="" loading="lazy" /></figure>
+
+    <!-- 07 Ergebnis -->
+    <section class="wk-block">
+      <p class="small wk-label">Results</p>
+    </section>
+    <section class="wk-tiles">
+      <div><b>0</b><span>relaunches</span></div>
+      <div><b>79</b><span>design briefs shipped to development, 2021–2026</span></div>
+      <div class="ph"><b>[n] %</b><span>of page types on the system</span></div>
+      <div class="ph"><b>+6.4 pp</b><span>mobile, personal details → booking, vs. same weeks 2025</span></div>
+    </section>
+    <p class="wk-block wk-line">[Line: why absolute figures are not shown]</p>
+
+    <!-- Richtung D, zur Auswahl -->
+    <section class="wk-block wk-alt">
+      <p class="small wk-label">Alternative image · direction D</p>
+    </section>
+    <figure class="wk-media"><img src={img("D-exploded.jpg")} alt="" loading="lazy" /></figure>
+
+    <!-- 08 Nächstes Projekt -->
+    <a href="/projects/slow-supply" class="wk-next">
+      <span class="small wk-label">Next Project</span>
+      <span class="wk-next-title">Slow Supply →</span>
+    </a>
+  </article>
+</Layout>
+
+<script>
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.querySelectorAll<HTMLVideoElement>(".wk video").forEach((v) => {
+      v.removeAttribute("autoplay");
+      v.pause();
+    });
+  }
+</script>
+
+<style>
+  .wk {
+    padding-top: calc(var(--pad) * 4);
+  }
+  .wk-label {
+    color: var(--color-muted);
+    margin-bottom: 16px;
+  }
+  .wk-head,
+  .wk-block {
+    padding: 0 var(--edge);
+    max-width: calc(var(--edge) * 2 + 1100px);
+  }
+  .wk-head h1 {
+    font-weight: 500;
+    letter-spacing: -0.03em;
+  }
+  .wk-block {
+    margin-top: calc(var(--pad) * 4);
+  }
+  .wk-block h2 {
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  .wk-line {
+    margin-top: 20px;
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    color: #555;
+  }
+  .wk-media {
+    margin: var(--gap) 0 0;
+    padding: 0 var(--edge);
+  }
+  .wk-media img,
+  .wk-media video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .wk-browser {
+    margin-top: calc(var(--pad) * 2);
+  }
+  .wk-browser-bar {
+    height: 28px;
+    background: #e9e5da;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    padding: 0 12px;
+  }
+  .wk-browser-bar i {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #cfc9ba;
+  }
+  .wk-browser video {
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.25);
+  }
+  .wk-split {
+    margin-top: calc(var(--pad) * 4);
+    padding: 0 var(--edge);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    align-items: end;
+  }
+  .wk-split img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    display: block;
+  }
+  .wk-facts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: var(--fs-h3);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+  .wk-facts li {
+    padding: 18px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .wk-facts b {
+    font-weight: 500;
+  }
+  .wk-tiles {
+    margin-top: 24px;
+    padding: 0 var(--edge);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .wk-tiles div {
+    background: #fff;
+    border-radius: 6px;
+    padding: 28px 24px 24px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .wk-tiles b {
+    font-size: var(--fs-h2);
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+  }
+  .wk-tiles span {
+    font-size: 15px;
+    line-height: 1.35;
+    color: #555;
+  }
+  .wk-tiles .ph {
+    background: transparent;
+    border: 1px dashed #c9c2b0;
+  }
+  .wk-tiles + .wk-line {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .wk-alt {
+    border-top: 1px dashed #c9c2b0;
+    padding-top: 24px;
+  }
+  .wk-next {
+    display: block;
+    margin-top: calc(var(--pad) * 4);
+    padding: calc(var(--pad) * 3) var(--edge) calc(var(--pad) * 4);
+    text-decoration: none;
+    color: inherit;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .wk-next-title {
+    display: block;
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  @media (max-width: 768px) {
+    .wk-split {
+      grid-template-columns: 1fr;
+    }
+    .wk-tiles {
+      grid-template-columns: 1fr 1fr;
+    }
+    .wk-tiles div {
+      min-height: 160px;
+    }
+    .wk-block {
+      margin-top: calc(var(--pad) * 3);
+    }
+  }
+</style>

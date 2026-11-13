@@ -1,0 +1,600 @@
+---
+// Papierflieger wie ein Segelflieger in der Thermik: Er kreist immer in
+// dieselbe Richtung auf seiner Ellipse, hinten klein, vorn groß. Scrollen greift
+// nie direkt in den Flug ein, es verschiebt nur Ziele: Nach oben scrollen hebt die
+// Zielhöhe, nach unten senkt sie, und der Flieger steigt oder sinkt mit begrenzter
+// Rate allmählich dorthin, während er seine Bahn weiterfliegt. Kräftiges Scrollen
+// weitet die Kreise und macht ihn schneller, beides träge nachgezogen.
+// In der hinteren Hälfte des Kreises fliegt er hinter den Bildern, vorn davor,
+// als läge die ganze Seite in einem Raum. Die Ebene liegt immer über der Seite;
+// hinten werden die Flächen der sichtbaren Bilder aus dem Bild geschnitten
+// (Scissor), das gibt pixelgenaue Kanten und kostet kaum Rechenzeit.
+// Nur Konturen in der Akzentfarbe, Low Poly aus vier Dreiecken.
+// Logo: Oben links neben dem Namen sitzt der Flieger flach als Zeichen (SVG,
+// Platzhalter bis zur Kontur aus Daniels Tattoo). Beim ersten Scrollen kippt er
+// aus genau dieser Stelle in den Raum und fliegt in seine Bahn, ganz oben landet
+// er wieder und wird zum Zeichen. Ohne WebGL oder bei reduzierter Bewegung bleibt
+// das Zeichen einfach stehen.
+// Maus über einem Case: Der Flieger verlässt seine Bahn, fliegt zum Mauszeiger und
+// kreist in kleinen Runden darum, solange die Maus auf dem Case bleibt (nur Maus,
+// Touch hat kein Darüberfahren). Danach fädelt er wieder in seine Bahn ein.
+// Klick auf einen Case: Der Flieger fliegt beschleunigt zum Klickpunkt, erst dann
+// startet der Seitenübergang und der Case öffnet sich.
+// Funktioniert mit Maus, Trackpad und Touch, weil nur die Scrollbewegung zählt.
+// Stand 20.10.2026, Test auf Testseite 7.
+---
+
+<div class="paper-plane" data-paper-plane aria-hidden="true"></div>
+
+<span class="plane-mark" data-plane-mark aria-hidden="true">
+  <svg viewBox="0 0 28 22" width="28" height="22">
+    <path d="M27 11 L1 1 L1 11 M27 11 L1 21 L1 11 M27 11 L1 11" />
+  </svg>
+</span>
+
+<script>
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Zeichen in den Kopf neben den Namen setzen
+  const mark = document.querySelector<HTMLElement>("[data-plane-mark]");
+  const header = document.querySelector<HTMLElement>(".site-header");
+  if (mark && header) {
+    header.prepend(mark);
+    // Zeichen und Name links nebeneinander (der Kopf verteilt sonst auf beide Ränder)
+    header.style.justifyContent = "flex-start";
+    header.style.gap = "10px";
+  }
+  const DOCK_AT = 10; // px Scrollhöhe, ab der er abhebt (wie der Logo-Scramble)
+  const DOCK_MS = 1700; // so lange dauern Start und Landung
+  const STRIKE_MS = 750; // Flug zum angeklickten Case
+  const HOVER = {
+    in: 0.6, // s bis er beim Mauszeiger kreist
+    out: 0.8, // s bis er wieder in seiner Bahn ist
+    radius: 70, // px, Kreis um den Mauszeiger
+    size: 60, // px, so lang wirkt der Flieger dort
+    turn: 2.6, // rad/s, eine Runde in gut 2 s
+    follow: 0.12, // s, so dicht folgt der Kreis dem Mauszeiger
+  };
+
+  const FLIGHT = {
+    center: -3.2, // Mitte des Kreises in der Tiefe (Kamera bei z 6)
+    rMin: 2.2, // Kreisradius in Ruhe
+    rMax: 7, // Kreisradius bei schnellem Scrollen; darf aus dem Bild führen
+    grow: 0.6, // s, so weich wächst und schrumpft der Kreis mit dem Scrolltempo
+    turn: 0.42, // rad/s in Ruhe
+    turnMax: 2.4, // rad/s bei schnellem Scrollen
+    push: 0.25, // s, so direkt folgt das Tempo auf der Bahn dem Scrollen
+    pushFull: 3, // px/ms Scrolltempo für volles Tempo
+    rest: -0.3, // Ruhehöhe
+    aim: 0.0015, // so weit verschiebt 1 px Scrollen die Zielhöhe (nach oben scrollen: höher)
+    aimRelax: 6, // s, so langsam kehrt die Zielhöhe zur Ruhehöhe zurück
+    climb: 0.35, // größte Steig- und Sinkrate (Einheiten/s): er fliegt seine Bahn weiter und steigt allmählich
+    calm: 900, // ms, so schnell beruhigt sich der Schwung
+    ease: 1.4, // s, so träge folgen Kreisgröße und Tempo dem Schwung
+    lineWidth: 1.6, // px
+    frontAbove: 0.3, // ab diesem Schwung fliegt er vor den Bildern
+  };
+
+  async function init(root: HTMLElement) {
+    const THREE = await import("three");
+    const { LineSegments2 } = await import("three/examples/jsm/lines/LineSegments2.js");
+    const { LineSegmentsGeometry } = await import("three/examples/jsm/lines/LineSegmentsGeometry.js");
+    const { LineMaterial } = await import("three/examples/jsm/lines/LineMaterial.js");
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.setClearColor(0x000000, 0);
+    root.appendChild(renderer.domElement);
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
+    camera.position.set(0, 0.4, 6);
+    camera.lookAt(0, -0.2, FLIGHT.center);
+
+    // Pfeil-Flieger, Spitze nach +z, Flügel mit leichter V-Stellung, Kiel nach unten
+    const nose = [0, 0, 1.6];
+    const tailL = [-1, 0.14, -1];
+    const tailR = [1, 0.14, -1];
+    const tailC = [0, -0.06, -1];
+    const keel = [0, -0.42, -1];
+    const lines = [
+      nose, tailL, tailL, tailC, // linker Flügel
+      nose, tailR, tailR, tailC, // rechter Flügel
+      nose, tailC, // Mittelfalz
+      nose, keel, keel, tailC, // Kiel
+    ].flat();
+    const geo = new LineSegmentsGeometry();
+    geo.setPositions(lines.map((v) => v * 0.26));
+    const mat = new LineMaterial({ color: 0xff3ea5, linewidth: FLIGHT.lineWidth, transparent: true });
+    const plane = new LineSegments2(geo, mat);
+    plane.computeLineDistances();
+    const body = new THREE.Group();
+    body.add(plane);
+    scene.add(body);
+
+    const syncColor = () => {
+      const c = getComputedStyle(document.documentElement).getPropertyValue("--color-accent").trim() || "#ff3ea5";
+      mat.color.set(c);
+    };
+    syncColor();
+
+    let W = window.innerWidth;
+    let H = window.innerHeight;
+    const resize = () => {
+      const w = (W = window.innerWidth);
+      const h = (H = window.innerHeight);
+      renderer.setSize(w, h);
+      mat.resolution.set(w, h);
+      camera.aspect = w / h;
+      // schmale Bildschirme: weiter zurück, damit der Kreis reinpasst
+      camera.position.z = w / h < 1 ? 10 : 6;
+      camera.updateProjectionMatrix();
+    };
+    window.addEventListener("resize", resize);
+    resize();
+
+    // ---------- Bilder, hinter denen er verschwindet. Bei den Cases zählt der
+    // Rahmen (.item), nicht das größere Bild darin, das für die Parallaxe übersteht.
+    // Die Liste wird einmal gesammelt, die Flächen je Bild einmal pro Bild gelesen.
+    let occluders: Element[] = [];
+    const collect = () => {
+      const els = new Set<Element>(document.querySelectorAll(".item"));
+      document.querySelectorAll("img, video").forEach((el) => {
+        if (!el.closest(".item")) els.add(el);
+      });
+      occluders = [...els];
+    };
+    collect();
+    // Sichtbare Bildflächen dieses Bildes, einmal pro Bild abgefragt
+    type Box = { x1: number; y1: number; x2: number; y2: number };
+    let boxes: Box[] = [];
+    const readBoxes = () => {
+      boxes = [];
+      for (const el of occluders) {
+        const r = el.getBoundingClientRect();
+        if (r.bottom <= 0 || r.top >= H || r.right <= 0 || r.left >= W) continue;
+        boxes.push({ x1: Math.max(0, r.left), y1: Math.max(0, r.top), x2: Math.min(W, r.right), y2: Math.min(H, r.bottom) });
+      }
+    };
+    // Löcher in die gerenderte Fläche schneiden, genau in Bildgröße
+    const cutOccluders = () => {
+      if (!boxes.length) return;
+      renderer.setScissorTest(true);
+      for (const b of boxes) {
+        renderer.setScissor(b.x1, H - b.y2, b.x2 - b.x1, b.y2 - b.y1);
+        renderer.clear();
+      }
+      renderer.setScissorTest(false);
+    };
+    // Fläche, die der Flieger gerade auf dem Bildschirm einnimmt
+    const corners = [nose, tailL, tailR, keel].map((v) => new THREE.Vector3(v[0] * 0.26, v[1] * 0.26, v[2] * 0.26));
+    const cv = new THREE.Vector3();
+    const planeBox = (): Box => {
+      body.updateMatrixWorld();
+      let x1 = Infinity, y1 = Infinity, x2 = -Infinity, y2 = -Infinity;
+      for (const c of corners) {
+        cv.copy(c).applyMatrix4(body.matrixWorld).project(camera);
+        const x = ((cv.x + 1) / 2) * W;
+        const y = ((1 - cv.y) / 2) * H;
+        x1 = Math.min(x1, x); y1 = Math.min(y1, y); x2 = Math.max(x2, x); y2 = Math.max(y2, y);
+      }
+      return { x1: x1 - 3, y1: y1 - 3, x2: x2 + 3, y2: y2 + 3 };
+    };
+    const touchesImage = (pb: Box) => boxes.some((b) => pb.x1 < b.x2 && pb.x2 > b.x1 && pb.y1 < b.y2 && pb.y2 > b.y1);
+
+    // ---------- Andockpunkt: Lage und Größe des Zeichens im Raum
+    const dockPos = new THREE.Vector3();
+    const dockQuat = new THREE.Quaternion();
+    const dockFwd = new THREE.Vector3(1, 0, 0); // Flugrichtung am Zeichen: nach rechts
+    const dockBack = new THREE.Vector3(0, 0, 1); // Oberseite am Zeichen: zur Kamera
+    const tmpV = new THREE.Vector3();
+    const fwd = new THREE.Vector3();
+    const basis = new THREE.Matrix4();
+    const updateDock = () => {
+      if (!mark) return;
+      const r = mark.getBoundingClientRect();
+      if (!r.width) return;
+      const cx = r.left + r.width / 2;
+      const cy = r.top + r.height / 2;
+      // so weit weg, dass die Länge des Fliegers der Breite des Zeichens entspricht
+      const length = 2.6 * 0.26;
+      const dist = (length * H) / (2 * r.width * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)));
+      camera.updateMatrixWorld();
+      camera.getWorldDirection(fwd);
+      tmpV.set((cx / W) * 2 - 1, -(cy / H) * 2 + 1, 0.5).unproject(camera).sub(camera.position).normalize();
+      dockPos.copy(camera.position).addScaledVector(tmpV, dist / tmpV.dot(fwd));
+      // flach von oben: Nase nach rechts, Oberseite zur Kamera
+      dockBack.copy(fwd).negate();
+      dockFwd.set(1, 0, 0).applyQuaternion(camera.quaternion);
+      const localX = new THREE.Vector3().crossVectors(dockBack, dockFwd);
+      basis.makeBasis(localX, dockBack, dockFwd);
+      dockQuat.setFromRotationMatrix(basis);
+    };
+    window.addEventListener("resize", () => requestAnimationFrame(updateDock));
+    updateDock();
+    // Start und Landung als Flug entlang einer Kurve (Bézier): Sie beginnt in der
+    // aktuellen Flugrichtung und mündet tangential in die Kreisbahn bzw. von links
+    // kommend ins Zeichen. Die Nase zeigt immer in Flugrichtung, die Oberseite dreht
+    // sich zwischen „zur Kamera" (Zeichen) und „nach oben" (Flug).
+    let settled: 0 | 1 = window.scrollY > DOCK_AT ? 1 : 0; // 0 angedockt, 1 im Flug
+    type Trans = { to: 0 | 1; t0: number; fromDock: boolean; from: InstanceType<typeof THREE.Vector3>; dir: InstanceType<typeof THREE.Vector3>; upFrom: InstanceType<typeof THREE.Vector3> };
+    let trans: Trans | null = null;
+    type Strike = { t0: number; from: InstanceType<typeof THREE.Vector3>; dir: InstanceType<typeof THREE.Vector3>; upFrom: InstanceType<typeof THREE.Vector3>; target: InstanceType<typeof THREE.Vector3>; done: boolean; onDone: () => void };
+    let strike: Strike | null = null;
+    const lastPos = new THREE.Vector3();
+    const lastDir = new THREE.Vector3(1, 0, 0);
+    const lastUp = new THREE.Vector3(0, 1, 0);
+    const worldUp = new THREE.Vector3(0, 1, 0);
+    const b0 = new THREE.Vector3(), b1 = new THREE.Vector3(), b2 = new THREE.Vector3(), b3 = new THREE.Vector3();
+    const bp = new THREE.Vector3(), bt = new THREE.Vector3(), upV = new THREE.Vector3(), endTan = new THREE.Vector3();
+    const smooth = (u: number) => u * u * (3 - 2 * u);
+    // Tempo: Start beschleunigt (langsam los), Landung bremst (langsam an)
+    const easeStart = (u: number) => u * u * (2 - u) * 0.5 + u * u * u * 0.5;
+    const easeLand = (u: number) => 1 - Math.pow(1 - u, 2.4);
+    const bezier = (e: number, out: InstanceType<typeof THREE.Vector3>) => {
+      const m = 1 - e;
+      return out.set(0, 0, 0)
+        .addScaledVector(b0, m * m * m).addScaledVector(b1, 3 * m * m * e)
+        .addScaledVector(b2, 3 * m * e * e).addScaledVector(b3, e * e * e);
+    };
+    const bezierTan = (e: number, out: InstanceType<typeof THREE.Vector3>) => {
+      const m = 1 - e;
+      out.set(0, 0, 0)
+        .addScaledVector(b1.clone().sub(b0), 3 * m * m)
+        .addScaledVector(b2.clone().sub(b1), 6 * m * e)
+        .addScaledVector(b3.clone().sub(b2), 3 * e * e);
+      return out.lengthSq() > 1e-8 ? out.normalize() : out.copy(endTan);
+    };
+    if (mark) mark.classList.add("is-live");
+
+    // ---------- Zustand
+    let angle = Math.PI * 0.25;
+    let energy = 0; // 0 … 1, Schwung vom Scrollen (springt mit dem Scrollen)
+    let flow = 0; // 0 … 1, derselbe Schwung träge geglättet: davon hängt die Bahn ab
+    let y = FLIGHT.rest;
+    let vy = 0;
+    let aimY = FLIGHT.rest; // Höhe, zu der er allmählich hinsteigt
+    let scrollSpeed = 0; // px/ms, klingt schnell ab
+    let boost = 0; // 0 … 1, Tempo auf der Bahn, folgt dem Scrollen fast direkt
+    let widen = 0; // 0 … 1, Kreisgröße, folgt dem Scrolltempo etwas weicher
+    let behind = false;
+    let lastNow = performance.now();
+    // Kreisen um den Mauszeiger
+    let attend = 0; // 0 … 1, wie weit er von seiner Bahn zum Mauszeiger übergegangen ist
+    let hoverOn = false;
+    let mouseX = -1;
+    let mouseY = -1;
+    let hAngle = 0;
+    let hcLive = false;
+    const hc = new THREE.Vector3(); // Kreismitte, folgt dem Mauszeiger
+    const hTarget = new THREE.Vector3();
+    const hp = new THREE.Vector3();
+    const hDir = new THREE.Vector3(1, 0, 0);
+    const hUp = new THREE.Vector3();
+    const hVel = new THREE.Vector3();
+    const prevPos = new THREE.Vector3();
+    const rel = new THREE.Vector3();
+    const aim = new THREE.Object3D();
+    const camRight = new THREE.Vector3(1, 0, 0).applyQuaternion(camera.quaternion);
+    const camUp = new THREE.Vector3(0, 1, 0).applyQuaternion(camera.quaternion);
+    const camBack = new THREE.Vector3(0, 0, 1).applyQuaternion(camera.quaternion);
+    // Bildschirmpunkt in der Tiefe, in der der Flieger px Pixel lang wirkt
+    const atScreen = (x: number, y: number, px: number, out: InstanceType<typeof THREE.Vector3>) => {
+      const dist = (2.6 * 0.26 * H) / (2 * px * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)));
+      camera.updateMatrixWorld();
+      camera.getWorldDirection(fwd);
+      tmpV.set((x / W) * 2 - 1, -(y / H) * 2 + 1, 0.5).unproject(camera).sub(camera.position).normalize();
+      return out.copy(camera.position).addScaledVector(tmpV, dist / tmpV.dot(fwd));
+    };
+    // Weltgröße eines Pixels in dieser Tiefe
+    const pxUnit = (px: number) => (2.6 * 0.26) / px;
+
+    const p = new THREE.Vector3();
+    const q = new THREE.Vector3();
+    const point = (a: number, r: number, height: number, out: InstanceType<typeof THREE.Vector3>) =>
+      out.set(Math.cos(a) * r, height, FLIGHT.center + Math.sin(a) * r * 1.1);
+
+    const frame = (now: number) => {
+      const dt = Math.min(now - lastNow, 50) / 1000;
+      lastNow = now;
+
+      energy *= Math.exp(-(dt * 1000) / FLIGHT.calm);
+      flow += (energy - flow) * (1 - Math.exp(-dt / FLIGHT.ease));
+      // Tempo auf der Bahn hängt direkt am Scrollen, die Kreisgröße bleibt träge
+      scrollSpeed *= Math.exp(-dt / FLIGHT.push);
+      boost += (Math.min(scrollSpeed / FLIGHT.pushFull, 1) - boost) * (1 - Math.exp(-dt / FLIGHT.push));
+      const turn = FLIGHT.turn + (FLIGHT.turnMax - FLIGHT.turn) * boost;
+      // Kreisgröße wächst im selben Verhältnis wie das Tempo, nur weicher
+      widen += (Math.min(scrollSpeed / FLIGHT.pushFull, 1) - widen) * (1 - Math.exp(-dt / FLIGHT.grow));
+      const r = FLIGHT.rMin + (FLIGHT.rMax - FLIGHT.rMin) * widen;
+      angle += turn * dt;
+
+      // Steigen und Sinken: Feder zur Ruhehöhe, gedämpft
+      // Zielhöhe kehrt langsam zur Ruhe zurück; er steigt oder sinkt mit begrenzter Rate darauf zu
+      aimY += (FLIGHT.rest - aimY) * (1 - Math.exp(-dt / FLIGHT.aimRelax));
+      const wantVy = Math.max(-FLIGHT.climb, Math.min(FLIGHT.climb, (aimY - y) * 0.9));
+      vy += (wantVy - vy) * (1 - Math.exp(-dt / 0.6));
+      y = Math.max(-1.3, Math.min(1.5, y + vy * dt));
+
+      point(angle, r, y, p);
+      point(angle + 0.03, r, y + vy * 0.03 / Math.max(turn, 0.1), q);
+      body.position.copy(p);
+      body.up.set(0, 1, 0);
+      body.lookAt(q);
+      // in die Kurve neigen: engerer Kreis und mehr Tempo, stärkere Neigung
+      body.rotateZ(-(0.35 + flow * 0.4));
+
+      // ---------- Start und Landung
+      const target: 0 | 1 = window.scrollY > DOCK_AT ? 1 : 0;
+      if ((trans ? trans.to : settled) !== target) {
+        // neuer Start oder Landung, auch mitten in einer Gegenbewegung: aus der aktuellen Lage
+        const atDock = settled === 0 && !trans;
+        trans = {
+          to: target,
+          t0: now,
+          fromDock: atDock,
+          from: (atDock ? dockPos : lastPos).clone(),
+          dir: (atDock ? dockFwd : lastDir).clone(),
+          upFrom: (atDock ? dockBack : lastUp).clone(),
+        };
+      }
+      if (trans) {
+        const u = Math.min((now - trans.t0) / DOCK_MS, 1);
+        const e = trans.to === 1 ? easeStart(u) : easeLand(u);
+        // Ziel: in die Kreisbahn einfädeln oder von links ins Zeichen gleiten
+        if (trans.to === 1) {
+          b3.copy(p);
+          endTan.subVectors(q, p).normalize();
+        } else {
+          b3.copy(dockPos);
+          endTan.copy(dockFwd);
+        }
+        b0.copy(trans.from);
+        // Am Zeichen kurze Anlaufstrecke (ein paar Logobreiten), sonst holt er
+        // beim Landen weit aus dem Bild aus; in der Bahn proportional zur Strecke
+        const k = b0.distanceTo(b3) * 0.38;
+        const kFrom = trans.fromDock ? Math.min(k, 4) : k;
+        const kTo = trans.to === 0 ? Math.min(k, 3) : k;
+        b1.copy(b0).addScaledVector(trans.dir, kFrom);
+        b2.copy(b3).addScaledVector(endTan, -kTo);
+        bezier(e, bp);
+        bezierTan(e, bt);
+        const upTo = trans.to === 1 ? worldUp : dockBack;
+        upV.copy(trans.upFrom).lerp(upTo, smooth(u)).normalize();
+        body.position.copy(bp);
+        body.up.copy(upV);
+        body.lookAt(bp.clone().add(bt));
+        // Neigung in die Kurve nur im Flug, am Zeichen liegt er flach
+        const bankW = trans.to === 1 ? smooth(u) : 1 - smooth(u);
+        body.rotateZ(-(0.35 + flow * 0.4) * bankW);
+        if (u >= 1) {
+          settled = trans.to;
+          trans = null;
+          if (settled === 0) body.quaternion.copy(dockQuat);
+        }
+      }
+      // ---------- Klick auf einen Case: er fliegt beschleunigt dorthin, dann öffnet sich der Case
+      if (strike) {
+        const u = Math.min((now - strike.t0) / STRIKE_MS, 1);
+        const e = Math.pow(u, 2.2); // langsam los, immer schneller
+        b0.copy(strike.from);
+        b3.copy(strike.target);
+        const k = b0.distanceTo(b3) * 0.35;
+        endTan.subVectors(b3, b0).normalize();
+        b1.copy(b0).addScaledVector(strike.dir, k);
+        b2.copy(b3).addScaledVector(endTan, -k * 0.6);
+        bezier(e, bp);
+        bezierTan(e, bt);
+        upV.copy(strike.upFrom).lerp(worldUp, smooth(u)).normalize();
+        body.position.copy(bp);
+        body.up.copy(upV);
+        body.lookAt(bp.clone().add(bt));
+        if (u >= 1 && !strike.done) {
+          strike.done = true;
+          strike.onDone();
+        }
+      }
+
+      // ---------- Maus über einem Case: zum Mauszeiger fliegen und darum kreisen.
+      // Die eigene Lage (Bahn, Start/Landung oder Zeichen) läuft weiter und wird
+      // nur überblendet, so fädelt er beim Wegfahren von selbst wieder ein.
+      attend = Math.max(0, Math.min(1, attend + (hoverOn && !strike ? dt / HOVER.in : -dt / HOVER.out)));
+      if (attend > 0 && !strike) {
+        if (settled === 0 && !trans) {
+          body.position.copy(dockPos);
+          body.quaternion.copy(dockQuat);
+        }
+        atScreen(mouseX, mouseY, HOVER.size, hTarget);
+        if (!hcLive) {
+          // Einstieg in den Kreis dort, wo er gerade herkommt
+          hc.copy(hTarget);
+          rel.subVectors(body.position, hc);
+          hAngle = Math.atan2(rel.dot(camBack) + rel.dot(camUp) * 0.3, rel.dot(camRight));
+          hcLive = true;
+        }
+        hc.lerp(hTarget, 1 - Math.exp(-dt / HOVER.follow));
+        hAngle += HOVER.turn * dt;
+        const R = HOVER.radius * pxUnit(HOVER.size);
+        // kleiner Thermikkreis: leicht von oben gesehen, hinten kleiner
+        hp.copy(hc)
+          .addScaledVector(camRight, Math.cos(hAngle) * R)
+          .addScaledVector(camBack, Math.sin(hAngle) * R)
+          .addScaledVector(camUp, Math.sin(hAngle) * R * 0.3);
+        const s = smooth(attend);
+        body.position.lerp(hp, s);
+        // Nase in die tatsächliche Flugrichtung, Oberseite in die Kurve geneigt
+        hVel.subVectors(body.position, prevPos);
+        if (hVel.lengthSq() > 1e-10) hDir.lerp(hVel.normalize(), 1 - Math.exp(-dt / 0.06)).normalize();
+        hUp.subVectors(hc, body.position).normalize().multiplyScalar(0.45).add(worldUp).normalize();
+        aim.position.copy(body.position);
+        aim.up.copy(hUp);
+        aim.lookAt(tmpV.copy(body.position).add(hDir));
+        body.quaternion.slerp(aim.quaternion, s);
+      } else if (attend === 0) {
+        hcLive = false;
+      }
+      prevPos.copy(body.position);
+
+      const docked = settled === 0 && !trans && !strike && attend === 0;
+      body.visible = !docked;
+      if (mark) mark.classList.toggle("is-flying", !docked);
+      // aktuelle Lage merken, falls die nächste Bewegung von hier aus startet
+      lastPos.copy(body.position);
+      lastDir.set(0, 0, 1).applyQuaternion(body.quaternion);
+      lastUp.set(0, 1, 0).applyQuaternion(body.quaternion);
+
+      // Hintere Kreishälfte: hinter den Bildern, vordere: davor. Bei kräftigem
+      // Scrollen hebt die Thermik ihn nach vorn, sonst rauschen die Bilder vor ihm
+      // vorbei und er flackert. Gewechselt wird nur, wenn er gerade über keinem
+      // Bild ist, damit er nie mitten im Bild auftaucht oder verschwindet.
+      // Bei Start und Landung fliegt er immer vorn.
+      readBoxes();
+      const want = p.z < FLIGHT.center && flow < FLIGHT.frontAbove && settled === 1 && !trans && !strike && attend === 0;
+      // beim Kreisen über dem Case immer vorn, sonst wäre er hinter genau diesem Bild
+      if (attend > 0) behind = false;
+      else if (want !== behind && !touchesImage(planeBox())) behind = want;
+
+      renderer.render(scene, camera);
+      if (behind) cutOccluders();
+      requestAnimationFrame(frame);
+    };
+    requestAnimationFrame(frame);
+
+    // ---------- Scrollen gibt Auftrieb und Schwung, ändert aber nie die Richtung
+    let lastY = window.scrollY;
+    let lastT = performance.now();
+    window.addEventListener(
+      "scroll",
+      () => {
+        const now = performance.now();
+        const sy = window.scrollY;
+        const dt = Math.max(now - lastT, 1);
+        // nach einer Pause neu ansetzen, Sprünge (Anker, Zurück-Taste) begrenzen
+        const dy = dt > 300 ? 0 : Math.max(-120, Math.min(120, sy - lastY));
+        lastY = sy;
+        lastT = now;
+        const speed = Math.abs(dy) / dt; // px/ms
+        // Scrollen verschiebt nur das Ziel, nie den Flieger selbst
+        aimY = Math.max(-1.2, Math.min(1.4, aimY - dy * FLIGHT.aim));
+        energy = Math.min(1, energy + speed * 0.015);
+        scrollSpeed = Math.max(scrollSpeed, speed);
+        // beim Scrollen wandert der Case unter der stehenden Maus weg oder herein
+        if (mouseX >= 0) checkHover();
+      },
+      { passive: true },
+    );
+
+    // Maus über einem Case? Nur echte Maus, Touch löst kein Darüberfahren aus
+    const checkHover = () => {
+      const el = document.elementFromPoint(mouseX, mouseY);
+      hoverOn = !!el?.closest("a.item");
+    };
+    document.addEventListener(
+      "pointermove",
+      (ev) => {
+        if (ev.pointerType !== "mouse") return;
+        mouseX = ev.clientX;
+        mouseY = ev.clientY;
+        hoverOn = !!(ev.target as Element | null)?.closest?.("a.item");
+      },
+      { passive: true },
+    );
+    document.documentElement.addEventListener("mouseleave", () => {
+      hoverOn = false;
+      mouseX = -1;
+    });
+    window.addEventListener("blur", () => (hoverOn = false));
+
+    // Klick auf einen Case abfangen, Flug starten, danach den Klick weitergeben
+    // (dann läuft wie gewohnt der Dither-Übergang und die Case-Seite lädt)
+    document.addEventListener(
+      "click",
+      (ev) => {
+        if (ev.defaultPrevented || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+        const a = (ev.target as Element | null)?.closest?.<HTMLAnchorElement>("a.item");
+        if (!a || a.dataset.planeGo) return;
+        ev.preventDefault();
+        ev.stopImmediatePropagation();
+        if (strike) return;
+        // Ziel: der Klickpunkt, in einer Tiefe, in der der Flieger gut sichtbar groß ist
+        const length = 2.6 * 0.26;
+        const dist = (length * H) / (2 * 70 * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)));
+        camera.updateMatrixWorld();
+        camera.getWorldDirection(fwd);
+        tmpV.set((ev.clientX / W) * 2 - 1, -(ev.clientY / H) * 2 + 1, 0.5).unproject(camera).sub(camera.position).normalize();
+        const target = camera.position.clone().addScaledVector(tmpV, dist / tmpV.dot(fwd));
+        const atDock = settled === 0 && !trans;
+        strike = {
+          t0: performance.now(),
+          from: (atDock ? dockPos : lastPos).clone(),
+          dir: (atDock ? dockFwd : lastDir).clone(),
+          upFrom: (atDock ? dockBack : lastUp).clone(),
+          target,
+          done: false,
+          onDone: () => {
+            a.dataset.planeGo = "1";
+            a.click();
+          },
+        };
+      },
+      true,
+    );
+
+    // Zurück-Taste aus dem Seiten-Cache: Flug zurücksetzen, Links wieder abfangen
+    window.addEventListener("pageshow", (ev) => {
+      if (!ev.persisted) return;
+      strike = null;
+      document.querySelectorAll<HTMLElement>("a.item[data-plane-go]").forEach((el) => delete el.dataset.planeGo);
+    });
+
+    if (import.meta.env.DEV) (window as any).__plane = { scene, camera, occluders: () => occluders.length, state: () => ({ angle, energy, flow, boost, widen, y, vy, aimY, behind, attend, hoverOn }), set: (a: number) => (angle = a), dock: () => (trans ? `${trans.to ? 'start' : 'landung'} ${((performance.now() - trans.t0) / DOCK_MS).toFixed(2)}` : settled), box: () => planeBox(), strike: () => strike && { done: strike.done, u: Math.min((performance.now() - strike.t0) / STRIKE_MS, 1) } };
+  }
+
+  if (!reduce) {
+    document.querySelectorAll<HTMLElement>("[data-paper-plane]").forEach((root) => {
+      const start = () => init(root);
+      if ("requestIdleCallback" in window) (window as any).requestIdleCallback(start, { timeout: 2000 });
+      else setTimeout(start, 800);
+    });
+  }
+</script>
+
+<style>
+  .paper-plane {
+    position: fixed;
+    inset: 0;
+    z-index: 6;
+    pointer-events: none;
+  }
+
+  /* Zeichen neben dem Namen im Kopf */
+  .plane-mark {
+    display: inline-flex;
+    width: 28px;
+    height: 22px;
+    flex: none;
+  }
+
+  .plane-mark svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: var(--color-accent);
+    stroke-width: 1.6;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+  }
+
+  /* im Flug übernimmt der 3D-Flieger, das Zeichen ist leer */
+  .plane-mark.is-live.is-flying {
+    visibility: hidden;
+  }
+
+  .paper-plane :global(canvas) {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+</style>

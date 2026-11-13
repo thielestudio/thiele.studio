@@ -1,0 +1,341 @@
+---
+// Kleine Pixel-Szenen für die drei How-Abschnitte, als Analogie aus alten
+// Videospielen. Eigene Zeichnungen, keine Kopien der Originalgrafiken.
+//   invaders  Differentiate: Eine Formation marschiert im Gleichschritt, einer
+//             ist anders (Akzentfarbe) und läuft gegen den Strom.
+//   powerups  Elevate: Stern, Pilz, Feder, Feuerblume schweben nacheinander hoch.
+//   hearts    Iterate: Zwei Herzen gehen verloren, „RETRY?" blinkt, die Herzen
+//             füllen sich wieder.
+// Farben aus --color-fg und --color-accent. Jede Szene steht allein auf ihrem
+// Bildschirm, deshalb richtet sich die Pixelgröße nach der Szene, nicht nach den anderen.
+interface Props {
+  scene: "invaders" | "powerups" | "hearts";
+}
+const { scene } = Astro.props;
+---
+
+<div class="pillar-sprite" data-pillar-sprite={scene} aria-hidden="true">
+  <canvas></canvas>
+</div>
+
+<script>
+  type Sprite = string[];
+
+  const SPRITES: Record<string, Sprite> = {
+    alienA: [
+      "...XXXXX...",
+      ".XXXXXXXXX.",
+      "XX..XXX..XX",
+      "XX..XXX..XX",
+      "XXXXXXXXXXX",
+      ".XXX...XXX.",
+      "..X.X.X.X..",
+      ".X.X...X.X.",
+    ],
+    alienB: [
+      "...XXXXX...",
+      ".XXXXXXXXX.",
+      "XX..XXX..XX",
+      "XX..XXX..XX",
+      "XXXXXXXXXXX",
+      ".XXX...XXX.",
+      ".X..X.X..X.",
+      "X.X.....X.X",
+    ],
+    star: [
+      ".....XX.....",
+      ".....XX.....",
+      "....XXXX....",
+      "XXXXXXXXXXXX",
+      ".XXX.XX.XXX.",
+      "..XX.XX.XX..",
+      "...XXXXXX...",
+      "...XXXXXX...",
+      "..XXXXXXXX..",
+      "..XXX..XXX..",
+      ".XXX....XXX.",
+      ".XX......XX.",
+    ],
+    mushroom: [
+      "....XXXX....",
+      "..XXX..XXX..",
+      ".XXX....XXX.",
+      ".XXXX..XXXX.",
+      "X..XXXXXX..X",
+      "X..XXXXXX..X",
+      "XXXXXXXXXXXX",
+      ".XXXXXXXXXX.",
+      "...XXXXXX...",
+      "...X.XX.X...",
+      "...XXXXXX...",
+      "....XXXX....",
+    ],
+    feather: [
+      "........XXX.",
+      ".......XXXXX",
+      "......XXXX.X",
+      ".....XXXX.XX",
+      "....XXXX.XXX",
+      "...XXXX.XXX.",
+      "..XXXX.XXX..",
+      "..XXX.XXX...",
+      "..XX.XXX....",
+      ".X..XX......",
+      "X...........",
+      "............",
+    ],
+    flower: [
+      "...XXXXXX...",
+      ".XX......XX.",
+      "XX.XXXXXX.XX",
+      "X.XX.XX.XX.X",
+      "XX.XXXXXX.XX",
+      ".XX......XX.",
+      "...XXXXXX...",
+      ".....XX.....",
+      ".XX..XX..XX.",
+      "..XX.XX.XX..",
+      "...XXXXXX...",
+      ".....XX.....",
+    ],
+    heart: [
+      ".XXX...XXX.",
+      "XX.XX.XXXXX",
+      "X.XXXXXXXXX",
+      "XXXXXXXXXXX",
+      "XXXXXXXXXXX",
+      ".XXXXXXXXX.",
+      "..XXXXXXX..",
+      "...XXXXX...",
+      "....XXX....",
+      ".....X.....",
+    ],
+    heartEmpty: [
+      ".XXX...XXX.",
+      "X...X.X...X",
+      "X....X....X",
+      "X.........X",
+      "X.........X",
+      ".X.......X.",
+      "..X.....X..",
+      "...X...X...",
+      "....X.X....",
+      ".....X.....",
+    ],
+  };
+
+  // 3×5-Schrift, nur die Zeichen, die gebraucht werden
+  const FONT: Record<string, Sprite> = {
+    R: ["XX.", "X.X", "XX.", "X.X", "X.X"],
+    E: ["XXX", "X..", "XX.", "X..", "XXX"],
+    T: ["XXX", ".X.", ".X.", ".X.", ".X."],
+    Y: ["X.X", "X.X", ".X.", ".X.", ".X."],
+    "?": ["XXX", "..X", ".X.", "...", ".X."],
+  };
+
+  interface Paint {
+    sprite(s: Sprite, x: number, y: number, color: string): void;
+    text(str: string, x: number, y: number, color: string): void;
+    fg: string;
+    accent: string;
+  }
+
+  interface Scene {
+    w: number; // in Szenenpixeln
+    h: number;
+    still: number; // Zeitpunkt für reduzierte Bewegung
+    fill: number; // höchstens dieser Anteil der Spaltenbreite
+    draw(t: number, p: Paint): void;
+  }
+
+  // Differentiate: 6 × 3 Aliens im Gleichschritt, einer in Akzentfarbe läuft gegengleich
+  const INV = { cols: 6, rows: 3, dx: 19, dy: 14, amp: 3, step: 550, odd: { c: 3, r: 1 } };
+  const invaders: Scene = {
+    w: (INV.cols - 1) * INV.dx + 11 + INV.amp * 2,
+    h: (INV.rows - 1) * INV.dy + 8,
+    still: 0,
+    fill: 0.9,
+    draw(t, p) {
+      const step = Math.floor(t / INV.step);
+      const k = step % (INV.amp * 4);
+      const off = k < INV.amp * 2 ? k - INV.amp : INV.amp * 3 - k; // -3 … 3 … -2
+      const frame = step % 2;
+      for (let r = 0; r < INV.rows; r++) {
+        for (let c = 0; c < INV.cols; c++) {
+          const odd = r === INV.odd.r && c === INV.odd.c;
+          const x = INV.amp + c * INV.dx + (odd ? -off : off);
+          const f = odd ? 1 - frame : frame;
+          p.sprite(f ? SPRITES.alienB : SPRITES.alienA, x, r * INV.dy, odd ? p.accent : p.fg);
+        }
+      }
+    },
+  };
+
+  // Elevate: vier Power-ups, die nacheinander hochschweben
+  const PU = { icons: ["star", "mushroom", "feather", "flower"], dx: 20, lift: 4, period: 1800 };
+  const powerups: Scene = {
+    w: (PU.icons.length - 1) * PU.dx + 12,
+    h: 12 + PU.lift,
+    still: 300,
+    fill: 0.9,
+    draw(t, p) {
+      PU.icons.forEach((name, i) => {
+        const u = t / PU.period - i * 0.14;
+        const rise = Math.round(PU.lift * (0.5 - 0.5 * Math.cos(u * Math.PI * 2)));
+        p.sprite(SPRITES[name], i * PU.dx, PU.lift - rise, p.fg);
+      });
+    },
+  };
+
+  // Iterate: Herzen gehen verloren, RETRY? blinkt, Herzen füllen sich wieder
+  const HE = { dx: 14, loop: 7000 };
+  const hearts: Scene = {
+    w: HE.dx * 2 + 11,
+    h: 10 + 5 + 5,
+    still: 4000,
+    fill: 0.6,
+    draw(t, p) {
+      const u = t % HE.loop;
+      // je Herz: wann es getroffen wird (blinkt 500 ms) und wann es zurückkommt
+      const hits = [Infinity, 2300, 1000];
+      const back = [Infinity, 6000, 6250];
+      for (let i = 0; i < 3; i++) {
+        let full = true;
+        if (u >= hits[i] && u < back[i]) {
+          const since = u - hits[i];
+          full = since < 500 ? Math.floor(since / 100) % 2 === 1 : false;
+        }
+        p.sprite(full ? SPRITES.heart : SPRITES.heartEmpty, i * HE.dx, 0, p.fg);
+      }
+      if (u >= 3300 && u < 5800 && (u - 3300) % 700 < 450) {
+        const str = "RETRY?";
+        const tw = str.length * 4 - 1;
+        p.text(str, Math.round((hearts.w - tw) / 2), 15, p.fg);
+      }
+    },
+  };
+
+  const SCENES: Record<string, Scene> = { invaders, powerups, hearts };
+
+  interface Inst {
+    scene: Scene;
+    canvas: HTMLCanvasElement;
+    ctx: CanvasRenderingContext2D;
+    cell: number;
+    dpr: number;
+    visible: boolean;
+  }
+
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const insts: Inst[] = [];
+  let fg = "#f7f4ec";
+  let accent = "#ff3ea5";
+
+  const readColors = () => {
+    const cs = getComputedStyle(document.documentElement);
+    fg = cs.getPropertyValue("--color-fg").trim() || fg;
+    accent = cs.getPropertyValue("--color-accent").trim() || accent;
+  };
+
+  const render = (it: Inst, t: number) => {
+    const { ctx, cell, dpr, scene, canvas } = it;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // in Gerätepixeln rechnen, damit jede Zelle gleich groß und scharf bleibt
+    const cd = Math.round(cell * dpr);
+    const gap = cd >= 5 ? Math.round(cd * 0.2) : 0;
+    const dot = (x: number, y: number) => ctx.fillRect(x * cd, y * cd, cd - gap, cd - gap);
+    const paint: Paint = {
+      fg,
+      accent,
+      sprite(s, x, y, color) {
+        ctx.fillStyle = color;
+        for (let r = 0; r < s.length; r++)
+          for (let c = 0; c < s[r].length; c++) if (s[r][c] === "X") dot(x + c, y + r);
+      },
+      text(str, x, y, color) {
+        [...str].forEach((ch, i) => {
+          const g = FONT[ch];
+          if (g) paint.sprite(g, x + i * 4, y, color);
+        });
+      },
+    };
+    scene.draw(reduce ? scene.still : t, paint);
+  };
+
+  const fit = (it: Inst) => {
+    const box = it.canvas.parentElement!.clientWidth;
+    it.dpr = Math.min(window.devicePixelRatio || 1, 2);
+    // ganze Gerätepixel je Zelle, höchstens 10 CSS-Pixel
+    const cd = Math.max(2, Math.floor(((box * it.scene.fill) / it.scene.w) * it.dpr));
+    it.cell = Math.min(10, cd / it.dpr);
+    const w = it.scene.w * it.cell;
+    const h = it.scene.h * it.cell;
+    it.canvas.style.width = `${w}px`;
+    it.canvas.style.height = `${h}px`;
+    it.canvas.width = Math.round(w * it.dpr);
+    it.canvas.height = Math.round(h * it.dpr);
+    render(it, performance.now());
+  };
+
+  let raf = 0;
+  const loop = (now: number) => {
+    raf = 0;
+    let any = false;
+    for (const it of insts) {
+      if (!it.visible) continue;
+      render(it, now);
+      any = true;
+    }
+    if (any && !reduce) raf = requestAnimationFrame(loop);
+  };
+  const kick = () => {
+    if (!raf && !reduce) raf = requestAnimationFrame(loop);
+  };
+
+  readColors();
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      const it = insts.find((i) => i.canvas === e.target);
+      if (it) it.visible = e.isIntersecting;
+    }
+    kick();
+  });
+  const ro = new ResizeObserver((entries) => {
+    for (const e of entries) {
+      const it = insts.find((i) => i.canvas.parentElement === e.target);
+      if (it) fit(it);
+    }
+  });
+
+  document.querySelectorAll<HTMLElement>("[data-pillar-sprite]").forEach((root) => {
+    const scene = SCENES[root.dataset.pillarSprite ?? ""];
+    const canvas = root.querySelector("canvas");
+    const ctx = canvas?.getContext("2d");
+    if (!scene || !canvas || !ctx) return;
+    const it: Inst = { scene, canvas, ctx, cell: 6, dpr: 1, visible: false };
+    insts.push(it);
+    fit(it);
+    io.observe(canvas);
+    ro.observe(root);
+  });
+
+  // Hell/dunkel wechselt über eine Klasse am html-Element
+  new MutationObserver(() => {
+    readColors();
+    insts.forEach((it) => render(it, performance.now()));
+  }).observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+</script>
+
+<style>
+  .pillar-sprite {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  .pillar-sprite canvas {
+    display: block;
+  }
+</style>

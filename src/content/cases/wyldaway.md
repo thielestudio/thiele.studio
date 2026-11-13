@@ -10,15 +10,20 @@ deliverables:
   - "Brand Design"
   - "Digital Product Design"
 order: 5
-cover: "/images/cases/wyldaway/wyldaway-00.jpg"
+cover: "/images/cases/wyldaway/wyldaway-brand-l-01.jpg"
 images:
-  - "/images/cases/wyldaway/wyldaway-00.jpg"
-  - "/images/cases/wyldaway/wyldaway-01.jpg"
-  - "/images/cases/wyldaway/wyldaway-02.jpg"
-  - "/images/cases/wyldaway/wyldaway-03.jpg"
-  - "/images/cases/wyldaway/wyldaway-04.jpg"
-  - "/images/cases/wyldaway/wyldaway-05.jpg"
-  - "/images/cases/wyldaway/wyldaway-06.jpg"
+  - "/images/cases/wyldaway/wyldaway-brand-l-01.jpg"
+  - "/images/cases/wyldaway/wyldaway-brand-l-02.jpg"
+  - "/images/cases/wyldaway/wyldaway-brand-l-03.jpg"
+  - "/images/cases/wyldaway/wyldaway-brand-l-04.jpg"
+  - "/images/cases/wyldaway/wyldaway-brand-l-05.jpg"
+  - "/images/cases/wyldaway/wyldaway-brand-l-06.jpg"
+  - "/images/cases/wyldaway/wyldaway-brand-s-01.jpg"
+  - "/images/cases/wyldaway/wyldaway-brand-s-02.jpg"
+  - "/images/cases/wyldaway/wyldaway-brand-s-03.jpg"
+  - "/images/cases/wyldaway/wyldaway-brand-s-04.jpg"
+  - "/images/cases/wyldaway/wyldaway-brand-s-05.jpg"
+  - "/images/cases/wyldaway/wyldaway-brand-s-06.jpg"
 ---
 
 In order to meet the demands of a new generation of adventure-seeking travelers, our client decided to develop a new brand specifically geared towards these needs in addition to its main brand.

@@ -1,0 +1,259 @@
+---
+// Partikelkopf, der dem Mauszeiger folgt.
+// Platzhalter: Der Kopf wird aus einer Formel (Signed Distance Field) erzeugt.
+// Sobald ein 3D-Scan vorliegt (GLB), ersetzt er buildHeadGeometry().
+---
+
+<div class="particle-head" data-particle-head aria-hidden="true">
+  <canvas></canvas>
+</div>
+
+<script>
+  type Vec3 = [number, number, number];
+
+  // ---------- Kopf als Signed Distance Field ----------
+  const sdEllipsoid = (p: Vec3, c: Vec3, r: Vec3) => {
+    const x = (p[0] - c[0]) / r[0];
+    const y = (p[1] - c[1]) / r[1];
+    const z = (p[2] - c[2]) / r[2];
+    const k0 = Math.hypot(x, y, z);
+    const k1 = Math.hypot(x / r[0], y / r[1], z / r[2]);
+    return k1 === 0 ? -Math.min(...r) : (k0 * (k0 - 1)) / k1;
+  };
+
+  const sdSphere = (p: Vec3, c: Vec3, r: number) =>
+    Math.hypot(p[0] - c[0], p[1] - c[1], p[2] - c[2]) - r;
+
+  const sdCapsuleY = (p: Vec3, x: number, z: number, y0: number, y1: number, r: number) => {
+    const y = Math.min(Math.max(p[1], y0), y1);
+    return Math.hypot(p[0] - x, p[1] - y, p[2] - z) - r;
+  };
+
+  const smin = (a: number, b: number, k: number) => {
+    const h = Math.min(Math.max(0.5 + (0.5 * (b - a)) / k, 0), 1);
+    return b * (1 - h) + a * h - k * h * (1 - h);
+  };
+  const ssub = (a: number, b: number, k: number) => -smin(-a, b, k);
+
+  function headSDF(p: Vec3): number {
+    let d = sdEllipsoid(p, [0, 0.25, -0.05], [0.78, 0.88, 0.92]); // Schädel
+    d = smin(d, sdEllipsoid(p, [0, -0.25, 0.18], [0.62, 0.72, 0.68]), 0.25); // Gesicht
+    d = smin(d, sdEllipsoid(p, [0, -0.72, 0.3], [0.36, 0.22, 0.3]), 0.2); // Kinn
+    for (const s of [-1, 1]) {
+      d = smin(d, sdEllipsoid(p, [0.38 * s, -0.12, 0.5], [0.22, 0.16, 0.2]), 0.15); // Wangen
+      d = smin(d, sdEllipsoid(p, [0.8 * s, -0.02, -0.02], [0.08, 0.22, 0.14]), 0.06); // Ohren
+    }
+    d = smin(d, sdEllipsoid(p, [0, 0.17, 0.74], [0.52, 0.1, 0.18]), 0.12); // Brauenbogen
+    d = smin(d, sdEllipsoid(p, [0, -0.1, 0.88], [0.09, 0.25, 0.15]), 0.1); // Nasenrücken
+    d = smin(d, sdSphere(p, [0, -0.3, 1.0], 0.1), 0.08); // Nasenspitze
+    for (const s of [-1, 1]) {
+      d = ssub(d, sdSphere(p, [0.27 * s, 0.03, 0.9], 0.16), 0.08); // Augenhöhlen
+      d = smin(d, sdSphere(p, [0.27 * s, 0.04, 0.72], 0.11), 0.03); // Augäpfel
+    }
+    d = smin(d, sdEllipsoid(p, [0, -0.5, 0.8], [0.2, 0.07, 0.08]), 0.06); // Lippen
+    d = ssub(d, sdEllipsoid(p, [0, -0.5, 0.88], [0.18, 0.014, 0.06]), 0.02); // Mundlinie
+    d = smin(d, sdCapsuleY(p, 0, -0.12, -1.5, -0.7, 0.38), 0.2); // Hals
+    return Math.max(d, -1.35 - p[1]); // Hals unten abschneiden
+  }
+
+  // Strahl von außen zur Mitte, bis zur Oberfläche (Sphere Tracing)
+  const CENTER: Vec3 = [0, -0.2, 0];
+  function projectToSurface(dir: Vec3): Vec3 {
+    let t = 2.4;
+    for (let i = 0; i < 96; i++) {
+      const p: Vec3 = [CENTER[0] + dir[0] * t, CENTER[1] + dir[1] * t, CENTER[2] + dir[2] * t];
+      const d = headSDF(p);
+      if (Math.abs(d) < 0.0008) break;
+      t -= d * 0.8;
+      if (t < 0) { t = 0; break; }
+    }
+    return [CENTER[0] + dir[0] * t, CENTER[1] + dir[1] * t, CENTER[2] + dir[2] * t];
+  }
+
+  async function init(root: HTMLElement) {
+    const THREE = await import("three");
+    const { MeshSurfaceSampler } = await import("three/examples/jsm/math/MeshSurfaceSampler.js");
+    const { mergeVertices } = await import("three/examples/jsm/utils/BufferGeometryUtils.js");
+
+    const canvas = root.querySelector("canvas") as HTMLCanvasElement;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const noHover = window.matchMedia("(hover: none)").matches;
+    const fg = getComputedStyle(document.documentElement).getPropertyValue("--color-fg").trim() || "#111";
+
+    // Kopfgeometrie aus der Formel
+    const buildHeadGeometry = (detail: number) => {
+      let g: THREE.BufferGeometry = new THREE.IcosahedronGeometry(1, detail);
+      g.deleteAttribute("normal");
+      g.deleteAttribute("uv");
+      g = mergeVertices(g);
+      const pos = g.getAttribute("position") as THREE.BufferAttribute;
+      for (let i = 0; i < pos.count; i++) {
+        const v = new THREE.Vector3(pos.getX(i), pos.getY(i), pos.getZ(i)).normalize();
+        const p = projectToSurface([v.x, v.y, v.z]);
+        pos.setXYZ(i, p[0], p[1], p[2]);
+      }
+      g.computeVertexNormals();
+      return g;
+    };
+
+    const headGeo = buildHeadGeometry(40);
+    const wireGeo = new THREE.WireframeGeometry(buildHeadGeometry(10));
+
+    // Partikel gleichmäßig über die Oberfläche verteilen
+    const COUNT = 14000;
+    const sampler = new MeshSurfaceSampler(new THREE.Mesh(headGeo)).build();
+    const positions = new Float32Array(COUNT * 3);
+    const normals = new Float32Array(COUNT * 3);
+    const rands = new Float32Array(COUNT);
+    const p = new THREE.Vector3();
+    const n = new THREE.Vector3();
+    for (let i = 0; i < COUNT; i++) {
+      sampler.sample(p, n);
+      positions.set([p.x, p.y, p.z], i * 3);
+      normals.set([n.x, n.y, n.z], i * 3);
+      rands[i] = Math.random();
+    }
+    const pointsGeo = new THREE.BufferGeometry();
+    pointsGeo.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+    pointsGeo.setAttribute("aNormal", new THREE.BufferAttribute(normals, 3));
+    pointsGeo.setAttribute("aRand", new THREE.BufferAttribute(rands, 1));
+
+    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(30, 1, 0.1, 50);
+    camera.position.set(0, -0.1, 5.4);
+
+    const head = new THREE.Group();
+    scene.add(head);
+
+    const pointsMat = new THREE.ShaderMaterial({
+      transparent: true,
+      depthWrite: false,
+      uniforms: {
+        uTime: { value: 0 },
+        uSize: { value: 16 },
+        uPixelRatio: { value: renderer.getPixelRatio() },
+        uColor: { value: new THREE.Color(fg) },
+      },
+      vertexShader: `
+        attribute vec3 aNormal;
+        attribute float aRand;
+        uniform float uTime;
+        uniform float uSize;
+        uniform float uPixelRatio;
+        varying float vAlpha;
+        void main() {
+          vec3 pos = position + aNormal * sin(uTime * 1.2 + aRand * 6.2831) * 0.008;
+          vec4 mv = modelViewMatrix * vec4(pos, 1.0);
+          gl_Position = projectionMatrix * mv;
+          gl_PointSize = uSize * uPixelRatio * (0.35 + aRand * 0.65) / -mv.z;
+          vec3 nrm = normalize(normalMatrix * aNormal);
+          float light = clamp(dot(nrm, normalize(vec3(0.45, 0.55, 0.7))), 0.0, 1.0);
+          float shade = 1.0 - light;
+          float rim = 1.0 - clamp(abs(nrm.z), 0.0, 1.0);
+          float front = smoothstep(-0.35, 0.15, nrm.z);
+          vAlpha = clamp(0.15 + 0.65 * shade + 0.3 * rim, 0.0, 1.0) * front;
+        }
+      `,
+      fragmentShader: `
+        uniform vec3 uColor;
+        varying float vAlpha;
+        void main() {
+          float d = length(gl_PointCoord - 0.5);
+          if (d > 0.5) discard;
+          gl_FragColor = vec4(uColor, smoothstep(0.5, 0.15, d) * vAlpha);
+        }
+      `,
+    });
+    head.add(new THREE.Points(pointsGeo, pointsMat));
+
+    const wire = new THREE.LineSegments(
+      wireGeo,
+      new THREE.LineBasicMaterial({ color: new THREE.Color(fg), transparent: true, opacity: 0.06 })
+    );
+    head.add(wire);
+
+    // Größe an den Container anpassen
+    const resize = () => {
+      const { width, height } = root.getBoundingClientRect();
+      if (!width || !height) return;
+      renderer.setSize(width, height, false);
+      camera.aspect = width / height;
+      camera.updateProjectionMatrix();
+    };
+    new ResizeObserver(resize).observe(root);
+    resize();
+
+    // Mauszeiger, weich nachgezogen
+    const target = { x: 0, y: 0 };
+    const current = { x: 0, y: 0 };
+    window.addEventListener("pointermove", (e) => {
+      if (e.pointerType !== "mouse") return;
+      target.y = (e.clientX / window.innerWidth - 0.5) * 1.1;
+      target.x = (e.clientY / window.innerHeight - 0.5) * 0.5;
+    });
+
+    if (reduce) {
+      renderer.render(scene, camera);
+      return;
+    }
+
+    let visible = false;
+    let raf = 0;
+    const clock = new THREE.Clock();
+    const tick = () => {
+      const t = clock.getElapsedTime();
+      if (noHover) {
+        target.y = Math.sin(t * 0.3) * 0.45;
+        target.x = Math.sin(t * 0.2) * 0.08;
+      }
+      current.x += (target.x - current.x) * 0.05;
+      current.y += (target.y - current.y) * 0.05;
+      head.rotation.set(current.x, current.y, 0);
+      pointsMat.uniforms.uTime.value = t;
+      renderer.render(scene, camera);
+      if (visible) raf = requestAnimationFrame(tick);
+    };
+
+    new IntersectionObserver((entries) => {
+      const nowVisible = entries.some((en) => en.isIntersecting);
+      if (nowVisible && !visible) {
+        visible = true;
+        raf = requestAnimationFrame(tick);
+      } else if (!nowVisible) {
+        visible = false;
+        cancelAnimationFrame(raf);
+      }
+    }).observe(root);
+  }
+
+  // Three.js erst laden, wenn der Kopf in die Nähe kommt
+  document.querySelectorAll<HTMLElement>("[data-particle-head]").forEach((root) => {
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          io.disconnect();
+          init(root);
+        }
+      },
+      { rootMargin: "400px 0px" }
+    );
+    io.observe(root);
+  });
+</script>
+
+<style>
+  .particle-head {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+  }
+
+  .particle-head canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+</style>

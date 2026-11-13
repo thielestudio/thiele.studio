@@ -1,0 +1,151 @@
+---
+// Button mit Pixel-Füllung beim Überfahren, nach dem Menü von heronaiapp.com.
+// Beim Hinfahren läuft die Akzentfarbe von links nach rechts über die Fläche,
+// mit einer weichen Kante aus Pixeln, die einzeln einblenden. Beim Wegfahren
+// läuft eine Fläche in Hintergrundfarbe in derselben Richtung darüber. Die
+// Beschriftung rutscht nach oben und kommt von unten nach.
+//
+// Die Maske liegt in public/pixel-mask.svg (20 Bilder nebeneinander, erzeugt
+// von scripts/pixel-mask.mjs) und wird per mask-position in 19 Schritten
+// durchgeschaltet. Zwei Schichten, damit beide Richtungen nach rechts laufen:
+//   __fill  Akzentfarbe, Maske 0 → 100 % beim Hinfahren
+//   __wipe  Hintergrundfarbe, Maske 0 → 100 % beim Wegfahren, deckt __fill zu;
+//           __fill springt danach auf leer. In Ruhe steht __wipe auf 100 %
+//           (Hintergrund auf Hintergrund, unsichtbar).
+// Ohne JavaScript.
+interface Props {
+  href?: string;
+  label: string;
+  class?: string;
+}
+const { href, label, class: className } = Astro.props;
+const Tag = href ? "a" : "button";
+---
+
+<Tag class:list={["pxbtn", className]} href={href} type={href ? undefined : "button"}>
+  <span class="pxbtn__fill" aria-hidden="true"></span>
+  <span class="pxbtn__wipe" aria-hidden="true"></span>
+  <span class="pxbtn__label">
+    <span class="pxbtn__text">{label}</span>
+    <span class="pxbtn__text pxbtn__text--next" aria-hidden="true">{label}</span>
+  </span>
+</Tag>
+
+<style>
+  .pxbtn {
+    --pxbtn-ease: cubic-bezier(0.625, 0.05, 0, 1);
+    --pxbtn-run: 0.58s steps(19);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 14px 22px;
+    border: 1px solid currentColor;
+    background: none;
+    color: var(--color-fg);
+    font: inherit;
+    font-size: var(--fs-small);
+    line-height: var(--lh-small);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s var(--pxbtn-ease);
+  }
+
+  /* Für Adressen und Namen, die nicht in Versalien stehen sollen */
+  .pxbtn--keep-case {
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .pxbtn__fill,
+  .pxbtn__wipe {
+    position: absolute;
+    inset: 0;
+    -webkit-mask-image: url("/pixel-mask.svg");
+    mask-image: url("/pixel-mask.svg");
+    -webkit-mask-size: 2000% 100%;
+    mask-size: 2000% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+
+  .pxbtn__fill {
+    background: var(--color-accent);
+    -webkit-mask-position: 0% 0;
+    mask-position: 0% 0;
+    /* erst leer, nachdem die Wegfahr-Fläche sie zugedeckt hat */
+    transition: -webkit-mask-position 0s 0.58s, mask-position 0s 0.58s;
+  }
+
+  .pxbtn__wipe {
+    background: var(--color-bg);
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+    transition: -webkit-mask-position var(--pxbtn-run), mask-position var(--pxbtn-run);
+  }
+
+  .pxbtn__label {
+    position: relative;
+    display: grid;
+    overflow: hidden;
+  }
+
+  .pxbtn__text {
+    grid-area: 1 / 1;
+    transition: transform 0.48s var(--pxbtn-ease);
+  }
+
+  .pxbtn__text--next {
+    transform: translateY(100%);
+  }
+
+  .pxbtn:hover,
+  .pxbtn:focus-visible {
+    color: #111;
+  }
+
+  .pxbtn:hover .pxbtn__fill,
+  .pxbtn:focus-visible .pxbtn__fill {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+    transition: -webkit-mask-position var(--pxbtn-run), mask-position var(--pxbtn-run);
+  }
+
+  .pxbtn:hover .pxbtn__wipe,
+  .pxbtn:focus-visible .pxbtn__wipe {
+    -webkit-mask-position: 0% 0;
+    mask-position: 0% 0;
+    transition: none;
+  }
+
+  .pxbtn:hover .pxbtn__text,
+  .pxbtn:focus-visible .pxbtn__text {
+    transform: translateY(-100%);
+  }
+
+  .pxbtn:hover .pxbtn__text--next,
+  .pxbtn:focus-visible .pxbtn__text--next {
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .pxbtn,
+    .pxbtn__fill,
+    .pxbtn__wipe,
+    .pxbtn__text {
+      transition: none;
+    }
+
+    .pxbtn:hover .pxbtn__text,
+    .pxbtn:focus-visible .pxbtn__text {
+      transform: none;
+    }
+
+    .pxbtn__text--next {
+      display: none;
+    }
+  }
+</style>

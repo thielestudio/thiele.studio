@@ -1,0 +1,340 @@
+---
+// Pixel-Motive als 3D-Objekte aus Würfeln (Voxel), im Look der Referenz
+// about-visual-referenz-01.png (Vault): fast schwarzes Material mit Körnung,
+// violettes Streiflicht, Dreiviertelansicht, viel Leere.
+// Test, Stand 13.10.: nur die Invader-Formation für „Differentiate". Alle
+// marschieren im Gleichschritt, einer leuchtet pink und läuft gegen den Strom.
+interface Props {
+  scene: "invaders";
+}
+const { scene } = Astro.props;
+---
+
+<div class="voxel-scene" data-voxel-scene={scene} aria-hidden="true"></div>
+
+<script>
+  const ALIEN_A = [
+    "...XXXXX...",
+    ".XXXXXXXXX.",
+    "XX..XXX..XX",
+    "XX..XXX..XX",
+    "XXXXXXXXXXX",
+    ".XXX...XXX.",
+    "..X.X.X.X..",
+    ".X.X...X.X.",
+  ];
+  const ALIEN_B = [
+    "...XXXXX...",
+    ".XXXXXXXXX.",
+    "XX..XXX..XX",
+    "XX..XXX..XX",
+    "XXXXXXXXXXX",
+    ".XXX...XXX.",
+    ".X..X.X..X.",
+    "X.X.....X.X",
+  ];
+
+  const COLS = 6;
+  const ROWS = 3;
+  const DX = 18; // Abstand der Aliens in Würfeln, Lücke bleibt größer als 2 × AMP
+  const DY = 11;
+  const AMP = 3; // so weit marschiert die Formation zu jeder Seite
+  const STEP_MS = 550;
+  const GLIDE_MS = 110; // jeder Schritt gleitet kurz statt zu springen
+  const ODD = { c: 3, r: 1 };
+  const PINK = 0xff3ea5;
+
+  // Stellschrauben für Licht, Material und Kamera. Im Dev-Modus über ?vx={…} überschreibbar.
+  const P = {
+    view: [-0.55, 0.22, 1] as number[], // Blickrichtung von der Formation zur Kamera
+    fov: 26,
+    left: -0.78, // linke Kante der Formation im Bild (-1 … 1)
+    span: 0.38, // halbe Höhe der Formation im Bild (Anteil der halben Bildhöhe)
+    exposure: 1,
+    keyColor: 0x9d6bff,
+    key: 12000, // violettes Licht von links vorn, streift die Fronten und fällt nach rechts ab
+    keyPos: [-66, 4, 10] as number[],
+    hemi: 0.03,
+    rim: 9, // Streiflicht von oben hinten auf die Oberkanten
+    rimDir: [-0.6, 1, -0.25] as number[],
+    env: 0.05,
+    color: 0x3a3a44,
+    rough: 0.6,
+    metal: 0.1,
+    grain: 0.15, // Körnung in der Oberfläche (Facetten)
+    grainTone: 0.6, // Körnung in der Farbe (0 … 1)
+    grainPx: 0.8, // Korngröße in Bildschirmpixeln
+    depth: 2.2,
+    bevel: 0, // 0 = glatte Flächen ohne Fugen zwischen den Würfeln
+    pinkEmissive: 0.18,
+    glow: 700,
+    still: false,
+  };
+  if (import.meta.env.DEV) {
+    const q = new URLSearchParams(location.search).get("vx");
+    if (q) Object.assign(P, JSON.parse(q));
+  }
+
+  // Würfel einer Figur, Mitte der Figur im Ursprung, y nach oben
+  const voxels = (sprite: string[]) => {
+    const out: [number, number][] = [];
+    sprite.forEach((row, r) =>
+      [...row].forEach((ch, c) => {
+        if (ch === "X") out.push([c - (row.length - 1) / 2, (sprite.length - 1) / 2 - r]);
+      }),
+    );
+    return out;
+  };
+  const FRAMES = [voxels(ALIEN_A), voxels(ALIEN_B)];
+  const PER = Math.max(FRAMES[0].length, FRAMES[1].length);
+
+  // Seitlicher Versatz der Formation im Schritt n: -3 … 3 … -2, dann von vorn
+  const offsetAt = (n: number) => {
+    const k = ((n % (AMP * 4)) + AMP * 4) % (AMP * 4);
+    return k < AMP * 2 ? k - AMP : AMP * 3 - k;
+  };
+
+  async function init(root: HTMLElement) {
+    const THREE = await import("three");
+    const { RoundedBoxGeometry } = await import("three/examples/jsm/geometries/RoundedBoxGeometry.js");
+    const { RoomEnvironment } = await import("three/examples/jsm/environments/RoomEnvironment.js");
+
+    let renderer: InstanceType<typeof THREE.WebGLRenderer>;
+    try {
+      renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: import.meta.env.DEV });
+    } catch {
+      return;
+    }
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = P.exposure;
+    renderer.setClearColor(0x000000, 0);
+    root.appendChild(renderer.domElement);
+
+    const scene = new THREE.Scene();
+    const pmrem = new THREE.PMREMGenerator(renderer);
+    scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+    scene.environmentIntensity = P.env;
+
+    const camera = new THREE.PerspectiveCamera(P.fov, 1, 5, 2000);
+
+    // Licht wie in der Referenz: eine violette Lichtquelle seitlich, die über die
+    // Flächen streift und nach hinten abfällt; sonst fast nichts
+    const key = new THREE.PointLight(P.keyColor, P.key, 0, 2);
+    key.position.set(P.keyPos[0], P.keyPos[1], P.keyPos[2]);
+    scene.add(key);
+    scene.add(new THREE.HemisphereLight(0x22223a, 0x000000, P.hemi));
+    const rim = new THREE.DirectionalLight(P.keyColor, P.rim);
+    rim.position.set(P.rimDir[0] * 100, P.rimDir[1] * 100, P.rimDir[2] * 100);
+    scene.add(rim);
+
+    // Körnung: Die Oberfläche bekommt winzige zufällige Facetten, die das Licht
+    // einzeln fangen. Zellgröße folgt der Bildschirmgröße, siehe fit().
+    const grain = { value: P.grain };
+    const grainTone = { value: P.grainTone };
+    const grainFreq = { value: 6 };
+    const addGrain = (m: InstanceType<typeof THREE.MeshStandardMaterial>) => {
+      m.onBeforeCompile = (sh) => {
+        sh.uniforms.uGrain = grain;
+        sh.uniforms.uGrainTone = grainTone;
+        sh.uniforms.uGrainFreq = grainFreq;
+        sh.fragmentShader = sh.fragmentShader
+          .replace(
+            "#include <common>",
+            `#include <common>
+            uniform float uGrain;
+            uniform float uGrainTone;
+            uniform float uGrainFreq;
+            float gHash(vec3 p) {
+              p = fract(p * 0.3183099 + 0.1);
+              p *= 17.0;
+              return fract(p.x * p.y * p.z * (p.x + p.y + p.z));
+            }`,
+          )
+          .replace(
+            "#include <color_fragment>",
+            `#include <color_fragment>
+            vec3 gp = floor(-vViewPosition * uGrainFreq);
+            vec3 gn = vec3(gHash(gp), gHash(gp + 19.19), gHash(gp + 47.47)) - 0.5;
+            diffuseColor.rgb *= 1.0 + gn.x * 2.0 * uGrainTone;`,
+          )
+          .replace(
+            "#include <normal_fragment_maps>",
+            `#include <normal_fragment_maps>
+            normal = normalize(normal + gn * uGrain);`,
+          );
+      };
+    };
+
+    const geo = P.bevel > 0 ? new RoundedBoxGeometry(1, 1, P.depth, 2, P.bevel) : new THREE.BoxGeometry(1, 1, P.depth);
+    const darkMat = new THREE.MeshStandardMaterial({ color: P.color, roughness: P.rough, metalness: P.metal });
+    const pinkMat = new THREE.MeshStandardMaterial({
+      color: 0x2a0816,
+      roughness: 0.45,
+      metalness: 0.1,
+      emissive: PINK,
+      emissiveIntensity: P.pinkEmissive,
+    });
+    addGrain(darkMat);
+    addGrain(pinkMat);
+
+    const crowd = new THREE.InstancedMesh(geo, darkMat, PER * (COLS * ROWS - 1));
+    const odd = new THREE.InstancedMesh(geo, pinkMat, PER);
+    scene.add(crowd, odd);
+
+    // Der pinke leuchtet auf seine Nachbarn
+    const glow = new THREE.PointLight(PINK, P.glow, 0, 2);
+    scene.add(glow);
+
+    const m = new THREE.Matrix4();
+    const hidden = new THREE.Matrix4().makeScale(0, 0, 0);
+    const place = (
+      mesh: InstanceType<typeof THREE.InstancedMesh>,
+      start: number,
+      frame: [number, number][],
+      x: number,
+      y: number,
+    ) => {
+      for (let i = 0; i < PER; i++) {
+        const v = frame[i];
+        mesh.setMatrixAt(start + i, v ? m.makeTranslation(x + v[0], y + v[1], 0) : hidden);
+      }
+    };
+
+    // Formation für Schritt n, mit Gleitanteil u (0 … 1) vom vorigen Schritt
+    const layout = (n: number, u: number) => {
+      const off = offsetAt(n - 1) + (offsetAt(n) - offsetAt(n - 1)) * u;
+      const frame = FRAMES[((n % 2) + 2) % 2];
+      const oddFrame = FRAMES[(((n + 1) % 2) + 2) % 2];
+      let slot = 0;
+      for (let r = 0; r < ROWS; r++) {
+        for (let c = 0; c < COLS; c++) {
+          const bx = (c - (COLS - 1) / 2) * DX;
+          const by = ((ROWS - 1) / 2 - r) * DY;
+          if (r === ODD.r && c === ODD.c) {
+            place(odd, 0, oddFrame, bx - off, by);
+            glow.position.set(bx - off, by, 6);
+          } else {
+            place(crowd, slot * PER, frame, bx + off, by);
+            slot++;
+          }
+        }
+      }
+      crowd.instanceMatrix.needsUpdate = true;
+      odd.instanceMatrix.needsUpdate = true;
+    };
+
+    // Kamera so setzen, dass die vorderste Spalte ganz im Bild steht (linke Kante
+    // bei P.left) und die Formation P.span der Bildhöhe einnimmt; nach rechts
+    // läuft sie in die Tiefe und darf dort angeschnitten sein.
+    const hx = ((COLS - 1) / 2) * DX + 5.5 + AMP;
+    const hy = ((ROWS - 1) / 2) * DY + 4;
+    const hz = P.depth / 2;
+    const corners = [-1, 1].flatMap((sx) =>
+      [-1, 1].flatMap((sy) => [-1, 1].map((sz) => new THREE.Vector3(sx * hx, sy * hy, sz * hz))),
+    );
+    const dir = new THREE.Vector3(P.view[0], P.view[1], P.view[2]).normalize();
+    const look = new THREE.Vector3();
+    const tmp = new THREE.Vector3();
+    const fit = () => {
+      let dist = 160;
+      look.set(0, 0, 0);
+      for (let i = 0; i < 60; i++) {
+        camera.position.copy(look).addScaledVector(dir, dist);
+        camera.lookAt(look);
+        camera.updateMatrixWorld();
+        let minx = Infinity, miny = Infinity, maxy = -Infinity;
+        for (const c of corners) {
+          tmp.copy(c).project(camera);
+          minx = Math.min(minx, tmp.x);
+          miny = Math.min(miny, tmp.y);
+          maxy = Math.max(maxy, tmp.y);
+        }
+        look.x += (minx - P.left) * 12;
+        look.y += ((miny + maxy) / 2) * 8;
+        dist *= 1 + ((maxy - miny) / 2 - P.span) * 0.5;
+      }
+      const h = root.clientHeight;
+      const pxPerUnit = h / (2 * dist * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)));
+      grainFreq.value = pxPerUnit / P.grainPx;
+    };
+
+    const resize = () => {
+      const w = root.clientWidth;
+      const h = root.clientHeight;
+      if (!w || !h) return;
+      renderer.setSize(w, h, false);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+      fit();
+    };
+
+    const reduce = P.still || window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let visible = false;
+    let raf = 0;
+    let lastN = -1;
+    const t0 = performance.now();
+
+    const frame = (now: number) => {
+      raf = 0;
+      const t = now - t0;
+      const n = reduce ? 0 : Math.floor(t / STEP_MS);
+      const into = t - n * STEP_MS;
+      const u = reduce ? 1 : Math.min(into / GLIDE_MS, 1);
+      const easeU = 1 - Math.pow(1 - u, 3);
+      if (n !== lastN || u < 1) {
+        layout(n, easeU);
+        renderer.render(scene, camera);
+        lastN = u >= 1 ? n : -1;
+      }
+      if (visible && !reduce) raf = requestAnimationFrame(frame);
+    };
+    const kick = () => {
+      if (!raf) raf = requestAnimationFrame(frame);
+    };
+
+    new ResizeObserver(() => {
+      resize();
+      lastN = -1;
+      kick();
+    }).observe(root);
+    new IntersectionObserver(([e]) => {
+      visible = e.isIntersecting;
+      if (visible) kick();
+    }).observe(root);
+
+    resize();
+    layout(0, 1);
+    renderer.render(scene, camera);
+    root.dataset.ready = "1";
+  }
+
+  // three.js erst laden, wenn die Szene in die Nähe kommt, spätestens kurz nach dem Laden der Seite
+  document.querySelectorAll<HTMLElement>("[data-voxel-scene]").forEach((root) => {
+    let started = false;
+    const start = () => {
+      if (started) return;
+      started = true;
+      io.disconnect();
+      init(root);
+    };
+    const io = new IntersectionObserver(([e]) => e.isIntersecting && start(), { rootMargin: "100% 0px" });
+    io.observe(root);
+    window.addEventListener("load", () => setTimeout(start, 1500), { once: true });
+  });
+</script>
+
+<style>
+  .voxel-scene {
+    width: 100%;
+    aspect-ratio: 6 / 5;
+    pointer-events: none;
+  }
+
+  .voxel-scene :global(canvas) {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+</style>

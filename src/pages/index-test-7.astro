@@ -1,0 +1,933 @@
+---
+// Testseite 7: About in drei Bildschirmen. Headline, Intro, Logos; dann
+// „Form follows fuckups" mit Absatz allein; dann links fest die Erfahrungszeile,
+// rechts laufen die Leistungen durch. Text von Daniel, Stand 14.10.2026, Entwurf.
+// Text aus Vault: Business/thiele.studio/Projects/website-relaunch-2026/about-verdichtet.md
+import Layout from "../layouts/Layout.astro";
+import SectionFx from "../components/SectionFx.astro";
+import PixelEyes from "../components/PixelEyes.astro";
+import PixelCursor from "../components/PixelCursor.astro";
+import PixelImages from "../components/PixelImages.astro";
+
+const cases = [
+  { slug: "campany", title: "Campany Vans", cover: "/images/cases/campany/campany-01.png" },
+  { slug: "qruise", title: "Qruise", cover: "/images/cases/qruise/qruise-00.jpg" },
+  { slug: "wikinger", title: "Wikinger Reisen", cover: "/images/cases/wikinger/wikinger-case-01.png" },
+  { slug: "anny-herbs", title: "Anny Herbs", cover: "/images/cases/anny-herbs/annyherbs-06.jpg" },
+  { slug: "slow-supply", title: "Slow Supply", cover: "/images/cases/slow-supply/slowsupply-branding-00.jpg" },
+  { slug: "wyldaway", title: "Wyldaway", cover: "/images/cases/wyldaway/wyldaway-brand-l-01.jpg" },
+];
+
+const services = [
+  {
+    title: "Brand Foundation",
+    items: [
+      "Brand Audit, Strategy & Architecture",
+      "Brand Naming",
+      "Visual Identity & Design Systems",
+      "AI Guardrails & Guidelines",
+    ],
+  },
+  {
+    title: "Digital Product & Service Design",
+    items: [
+      "Creative Direction",
+      "Service Innovation",
+      "UX Research & Concept",
+      "Product Design Systems",
+      "Rapid Prototyping & Usability Testing",
+    ],
+  },
+  {
+    title: "Connection & Growth",
+    items: [
+      "Growth Marketing Strategy",
+      "Campaign Ideation",
+      "Data driven CRO",
+      "Fractional Leadership",
+    ],
+  },
+];
+
+// Logos im Laufband, einfarbig über CSS-Maske (Farbe folgt --color-fg).
+// ar = Seitenverhältnis der SVG-Fläche (viewBox auf den sichtbaren Inhalt beschnitten),
+// h = optischer Ausgleich: Wortmarken gleich hoch, Bildzeichen etwas, gestapelte Marken deutlich höher.
+// Dateien in public/images/logos/, Auswahl Daniel 14.10.2026.
+const logos = [
+  { name: "Wikinger Reisen", file: "wikinger", ar: 1.473, h: 1.5 },
+  { name: "WYLDAWAY", file: "wyldaway", ar: 7.864, h: 0.8 },
+  { name: "Red Bull", file: "redbull", ar: 4.202, h: 0.85 },
+  { name: "New Balance", file: "newbalance", ar: 2.080, h: 0.9 },
+  { name: "Nike", file: "nike", ar: 2.856, h: 0.8 },
+  { name: "Audi", file: "audi", ar: 2.885, h: 0.8 },
+  { name: "Bundesministerium für Bildung und Forschung", file: "bmbf", ar: 1.991, h: 1.45 },
+  { name: "Lemonaid", file: "lemonaid", ar: 4.351, h: 0.85 },
+  { name: "ChariTea", file: "charitea", ar: 5.219, h: 0.85 },
+  { name: "Twothirds", file: "twothirds", ar: 7.461, h: 0.75 },
+  { name: "Qruise", file: "qruise", ar: 3.505, h: 1.0 },
+];
+---
+<Layout>
+  <section class="hero" id="work">
+    <div class="hero-intro">
+      <h1>Design that makes a difference in a way that makes sense.</h1>
+    </div>
+
+    <div class="case-grid">
+      {
+        cases.map((c, i) => {
+          const speeds = [0.85, 1.18, 0.92, 1.12, 0.88, 1.15];
+          return (
+            <a
+              href={`/projects/${c.slug}`}
+              class={`item item-${i + 1}`}
+              aria-label={c.title}
+              data-speed={speeds[i]}
+            >
+              <img src={c.cover} alt={c.title} loading="eager" />
+            </a>
+          );
+        })
+      }
+    </div>
+  </section>
+
+  <section class="about" id="about">
+
+    <div class="screen screen--intro" data-shape="quiet">
+      <div class="inner">
+        <h2 class="about-headline" data-decode>Driving growth through clarity.</h2>
+        <p class="about-what" data-reveal>
+          While looking good is free now, being chosen gets tougher. I help
+          startups and digital-native brands decide what deserves to be heard,
+          seen and understood. Then we make it unmistakable.
+        </p>
+      </div>
+      <div class="marquee" data-reveal role="img" aria-label={`Clients & projects: ${logos.map((l) => l.name).join(", ")}`}>
+        <div class="marquee-track" aria-hidden="true">
+          {[0, 1].map(() =>
+            logos.map((l) => (
+              <span
+                class="client-logo"
+                style={`--src: url(/images/logos/${l.file}.svg); --ar: ${l.ar.toFixed(3)}; --h: ${l.h}`}
+              />
+            )),
+          )}
+        </div>
+      </div>
+    </div>
+
+    <div class="screen" data-shape="quiet">
+      <div class="inner">
+        <div class="how" data-reveal>
+          <h3 class="how-title" aria-label="Form follows fuckups">
+            <span aria-hidden="true">Form follows</span>{" "}
+            <span class="how-word" data-how-word aria-hidden="true">
+              <span>function</span>
+              <span>feelings</span>
+              <span class="how-word--accent">fuckups</span>
+            </span>
+          </h3>
+          <p class="how-body">
+            Clear strategy separates brands that set the pace from those that
+            follow. The ones that move the needle challenge assumptions early,
+            while failures don't hurt and learnings keep them focused. Sharp
+            brand systems carry focus across all touchpoints,
+            because trust is built in the experience, not the promise.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen" data-shape="quiet">
+      <div class="inner services">
+        <h3 class="services-intro" data-reveal>
+          20 years of experience. A trusted network of professionals.<br />
+          No Overhead.
+        </h3>
+        <ol class="services-groups">
+          {
+            services.map((s, i) => (
+              <li class="service" data-reveal style={`--i:${i + 1}`}>
+                <h3 class="service-title">
+                  {String(i + 1).padStart(2, "0")} — {s.title}
+                </h3>
+                <ul class="service-list">
+                  {s.items.map((item) => <li>{item}</li>)}
+                </ul>
+              </li>
+            ))
+          }
+        </ol>
+      </div>
+    </div>
+  </section>
+  <SectionFx />
+  <PixelCursor />
+  <PixelEyes />
+  <PixelImages selector=".item img" />
+</Layout>
+
+<script>
+  // About als dunkles Kapitel: Sobald der About-Teil die Bildschirmmitte
+  // erreicht, tauschen Hintergrund- und Textfarbe der ganzen Seite weich.
+  const aboutSection = document.querySelector<HTMLElement>(".about");
+  const syncDark = () => {
+    if (!aboutSection) return;
+    const dark = aboutSection.getBoundingClientRect().top < window.innerHeight * 0.5;
+    document.documentElement.classList.toggle("about-dark", dark);
+  };
+  window.addEventListener("scroll", syncDark, { passive: true });
+  window.addEventListener("resize", syncDark);
+  syncDark();
+</script>
+
+<script>
+  // „Form follows …“: Das letzte Wort rollt durch, während der Absatz durchs Bild
+  // läuft. Erstes Drittel function, zweites feelings, ab dem letzten fuckups.
+  // Zurückscrollen rollt zurück.
+  const howWord = document.querySelector<HTMLElement>("[data-how-word]");
+  const howBody = document.querySelector<HTMLElement>(".how-body");
+  if (howWord && howBody) {
+    const words = [...howWord.children] as HTMLElement[];
+    let current = -1;
+    const syncWord = () => {
+      const r = howBody.getBoundingClientRect();
+      const H = window.innerHeight;
+      // 0, wenn der Absatz unten ins Bild kommt (75 %), 1, wenn er oben bei 30 % endet
+      const p = Math.min(Math.max((H * 0.75 - r.top) / (r.height + H * 0.45), 0), 1);
+      const i = Math.min(words.length - 1, Math.floor(p * words.length));
+      if (i === current) return;
+      current = i;
+      words.forEach((w, k) => {
+        w.classList.toggle("is-on", k === i);
+        w.classList.toggle("is-past", k < i);
+      });
+    };
+    window.addEventListener("scroll", syncWord, { passive: true });
+    window.addEventListener("resize", syncWord);
+    syncWord();
+  }
+</script>
+
+<script>
+  // Logo-Laufband wird beim Scrollen mitgeschoben, egal in welche Richtung:
+  // Jeder gescrollte Pixel schiebt das Band um PUSH Pixel weiter, zusätzlich zu
+  // seinem Grundtempo. Das weiche Auslaufen kommt vom weichen Scrollen (Lenis).
+  // Die CSS-Animation bleibt, nur ihre Zeit wird vorgestellt.
+  const PUSH = 1.2; // px Band je px Scrollen
+  const track = document.querySelector<HTMLElement>(".marquee-track");
+  if (track) {
+    let lastY = window.scrollY;
+    window.addEventListener(
+      "scroll",
+      () => {
+        const y = window.scrollY;
+        // Sprünge (Anker, Zurück-Taste) begrenzen
+        const dy = Math.min(Math.abs(y - lastY), 200);
+        lastY = y;
+        // erst hier holen: im Entwicklungsmodus kommt das CSS nach diesem Skript
+        const run = track.getAnimations()[0];
+        if (!run || !dy) return;
+        const duration = Number(run.effect?.getTiming().duration) || 0;
+        const half = track.scrollWidth / 2; // eine Runde = halbe Bandbreite
+        if (!duration || !half) return;
+        run.currentTime = (Number(run.currentTime) || 0) + (dy * PUSH * duration) / half;
+      },
+      { passive: true },
+    );
+  }
+</script>
+
+<script>
+  // Logo oben verschwindet beim Scrollen: Die Buchstaben rauschen von rechts nach
+  // links durch Zufallszeichen und lösen sich auf. Ganz oben baut es sich von links
+  // nach rechts wieder auf. Takt wie der Hover-Scramble in Layout.astro.
+  const logo = document.querySelector<HTMLElement>(".site-header .logo");
+  if (logo) {
+    const GLYPHS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#%*/·";
+    const TICK = 28;
+    const STAGGER = 18; // Takte, über die sich der Start von links nach rechts verteilt
+    const NOISE = 7; // Takte Rauschen pro Zeichen
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const original = (logo.textContent ?? "").trim();
+    const len = original.length;
+    logo.setAttribute("aria-label", original);
+    let shown = true;
+    let timer = 0;
+
+    const animate = (out: boolean) => {
+      window.clearInterval(timer);
+      window.clearInterval(Number(logo.dataset.timer)); // Hover-Scramble aus dem Layout stoppen
+      logo.style.pointerEvents = "none";
+      if (reduceMotion) {
+        logo.style.transition = "opacity 300ms ease";
+        logo.style.opacity = out ? "0" : "1";
+        if (!out) logo.style.pointerEvents = "";
+        return;
+      }
+      logo.style.opacity = "1";
+      let frame = 0;
+      const total = STAGGER + NOISE + 1;
+      timer = window.setInterval(() => {
+        frame++;
+        let text = "";
+        for (let i = 0; i < len; i++) {
+          const ch = original[i];
+          // rein von links nach rechts, raus von rechts nach links
+          const start = ((out ? len - 1 - i : i) / len) * STAGGER;
+          const phase = frame - start; // < 0: noch nicht dran, 0..NOISE: rauscht, danach fertig
+          const visible = out ? phase < NOISE : phase >= 0;
+          if (!visible) continue;
+          if (ch === " " || phase < 0 || phase >= NOISE) text += ch;
+          else text += GLYPHS[(Math.random() * GLYPHS.length) | 0];
+        }
+        logo.textContent = text;
+        if (frame >= total) {
+          window.clearInterval(timer);
+          logo.textContent = out ? "" : original;
+          if (!out) logo.style.pointerEvents = "";
+        }
+      }, TICK);
+    };
+
+    const check = () => {
+      const atTop = window.scrollY <= 10;
+      if (atTop !== shown) {
+        shown = atTop;
+        animate(!atTop);
+      }
+    };
+    window.addEventListener("scroll", check, { passive: true });
+    if (window.scrollY > 10) { shown = false; logo.textContent = ""; logo.style.pointerEvents = "none"; }
+  }
+</script>
+
+<script>
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const about = document.querySelector<HTMLElement>(".about");
+
+  // ---------- Einblenden: Blöcke gleiten weich ein, Text steigt wortweise auf
+  if (about && !reduce) {
+    about.querySelectorAll<HTMLElement>("[data-rise]").forEach((el) => {
+      const words = (el.textContent ?? "").trim().split(/\s+/);
+      el.textContent = "";
+      words.forEach((word, i) => {
+        const w = document.createElement("span");
+        w.className = "w";
+        w.style.setProperty("--i", String(i));
+        w.textContent = word;
+        el.appendChild(w);
+        if (i < words.length - 1) el.appendChild(document.createTextNode(" "));
+      });
+    });
+
+    about.classList.add("anim");
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("is-in");
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: "0px 0px -5% 0px" }
+    );
+    about.querySelectorAll("[data-reveal], [data-rise]").forEach((el) => io.observe(el));
+  }
+
+  // ---------- Decode: Zeichenrauschen löst sich in den Text auf.
+  // Takt wie der Hover-Scramble in Layout.astro. Jedes Zeichen bekommt eine
+  // Zelle in seiner echten Breite, das Rauschen nimmt nur Glyphen ähnlicher
+  // Breite. So bleibt die Wortform stehen und nichts läuft ineinander.
+  const GLYPHS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#%*/·";
+  const GLYPHS_LOWER = "abcdefghijklmnopqrstuvwxyz";
+  const ALL = [...new Set(GLYPHS + GLYPHS_LOWER)];
+  const TOTAL = 40;
+  const TICK = 28;
+  const FIT = 1.1;
+  const MIN_FIT = 0.8;
+
+  const isLower = (ch: string) => ch !== ch.toUpperCase();
+
+  function initDecode(el: HTMLElement) {
+    const original = (el.textContent ?? "").trim();
+    const len = original.length;
+    let started = false;
+    let cells: { el: HTMLElement; ch: string; pool: string[] }[] = [];
+
+    el.setAttribute("aria-label", original);
+
+    const measureGlyphs = () => {
+      const probe = document.createElement("span");
+      probe.style.cssText = "position:absolute;visibility:hidden;white-space:pre";
+      el.appendChild(probe);
+      const widths = new Map<string, number>();
+      for (const g of ALL) {
+        probe.textContent = g;
+        widths.set(g, probe.getBoundingClientRect().width);
+      }
+      probe.remove();
+      return widths;
+    };
+
+    const poolFor = (ch: string, cellW: number, widths: Map<string, number>) => {
+      const primary = [...(isLower(ch) ? GLYPHS_LOWER : GLYPHS)];
+      const fits = (g: string) => {
+        const w = widths.get(g) ?? Infinity;
+        return w >= cellW * MIN_FIT && w <= cellW * FIT;
+      };
+      let pool = primary.filter(fits);
+      if (pool.length < 3) pool = ALL.filter(fits);
+      if (pool.length < 3) {
+        pool = [...ALL]
+          .sort((x, y) => Math.abs((widths.get(x) ?? 0) - cellW) - Math.abs((widths.get(y) ?? 0) - cellW))
+          .slice(0, 4);
+      }
+      return pool;
+    };
+
+    const lock = () => {
+      el.textContent = original;
+      const node = el.firstChild as Text;
+      const range = document.createRange();
+      const charW: number[] = [];
+      for (let i = 0; i < len; i++) {
+        range.setStart(node, i);
+        range.setEnd(node, i + 1);
+        charW.push(range.getBoundingClientRect().width);
+      }
+      const widths = measureGlyphs();
+
+      el.textContent = "";
+      cells = [];
+      let i = 0;
+      original.split(" ").forEach((word, wi, arr) => {
+        const w = document.createElement("span");
+        w.className = "dw";
+        w.setAttribute("aria-hidden", "true");
+        for (const ch of word) {
+          const c = document.createElement("span");
+          c.className = "dc";
+          c.style.width = `${charW[i]}px`;
+          c.textContent = ch;
+          w.appendChild(c);
+          cells.push({ el: c, ch, pool: /[.,:]/.test(ch) ? [ch] : poolFor(ch, charW[i], widths) });
+          i++;
+        }
+        el.appendChild(w);
+        if (wi < arr.length - 1) {
+          el.appendChild(document.createTextNode(" "));
+          i++;
+        }
+      });
+    };
+
+    const render = (frame: number) => {
+      let idx = 0;
+      let ci = 0;
+      for (const ch of original) {
+        if (ch !== " ") {
+          const cell = cells[ci++];
+          const revealAt = (idx / len) * TOTAL * 0.7;
+          cell.el.textContent = frame >= revealAt
+            ? cell.ch
+            : cell.pool[(Math.random() * cell.pool.length) | 0];
+        }
+        idx++;
+      }
+    };
+
+    const run = () => {
+      started = true;
+      let frame = 0;
+      const timer = window.setInterval(() => {
+        frame++;
+        render(frame);
+        if (frame >= TOTAL) {
+          window.clearInterval(timer);
+          el.textContent = original;
+        }
+      }, TICK);
+    };
+
+    lock();
+    render(-1);
+
+    window.addEventListener("resize", () => {
+      if (started) return;
+      lock();
+      render(-1);
+    });
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          io.disconnect();
+          run();
+        }
+      },
+      { threshold: 0.6 }
+    );
+    io.observe(el);
+  }
+
+  if (!reduce) {
+    document.fonts.ready.then(() => {
+      document.querySelectorAll<HTMLElement>("[data-decode]").forEach(initDecode);
+    });
+  }
+</script>
+
+<style>
+  .hero {
+    padding: calc(var(--pad) * 3) var(--edge) var(--pad);
+  }
+
+  .hero-intro {
+    margin: 0 0 calc(var(--pad) * 2);
+  }
+
+  .hero-intro h1 {
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    max-width: 18ch;
+  }
+
+  .case-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: auto;
+    column-gap: var(--gap);
+    row-gap: calc(var(--gap) * 2);
+    align-items: start;
+  }
+
+  .item {
+    display: block;
+    overflow: hidden;
+  }
+
+  .item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .item:hover img {
+    transform: scale(1.02);
+  }
+
+  .item-1 { grid-column: 1 / span 7;  grid-row: 1; }
+  .item-2 { grid-column: 9 / span 4;  grid-row: 1; margin-top: calc(var(--gap) * 2); }
+  .item-3 { grid-column: 2 / span 5;  grid-row: 2; margin-top: calc(var(--gap) * 3); }
+  .item-4 { grid-column: 8 / span 5;  grid-row: 2; }
+  .item-5 { grid-column: 1 / span 7;  grid-row: 3; }
+  .item-6 { grid-column: 9 / span 4;  grid-row: 3; margin-top: calc(var(--gap) * 2); }
+
+  :global(html),
+  :global(body) {
+    transition:
+      background-color 0.9s cubic-bezier(0.2, 0.8, 0.2, 1),
+      color 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  /* heller Teil oben: hellstes Grau statt Creme (Test 03.11.2026) */
+  :global(html:not(.about-dark)) {
+    --color-bg: #f5f5f5;
+  }
+
+  :global(html.about-dark) {
+    --color-bg: #111;
+    --color-fg: #f7f4ec;
+    --color-muted: #8a8780;
+  }
+
+  :global(html.about-dark .site-footer) {
+    border-top-color: rgba(247, 244, 236, 0.12);
+  }
+
+  /* About in Screens: jeder Abschnitt nimmt eine Bildschirmhöhe ein.
+     laut  = Headline (--fs-h1) und Versprechen (--fs-h2), ab Spalte 1
+     leise = Begleittext (--fs-body), rechte Hälfte ab Spalte 7 */
+  .about {
+    --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+    position: relative;
+  }
+
+  .screen {
+    position: relative;
+    z-index: 1;
+  }
+
+  .screen {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: calc(var(--pad) * 2);
+    padding: calc(var(--pad) * 2) 0;
+  }
+
+  .inner {
+    width: 100%;
+    padding: 0 var(--edge);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: var(--gap);
+    row-gap: var(--gap);
+  }
+
+  .screen--intro .inner {
+    margin-top: auto;
+  }
+
+  .about-headline {
+    grid-column: 1 / -1;
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  .about-headline :global(.dw) {
+    white-space: nowrap;
+  }
+
+  .about-headline :global(.dc) {
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0;
+  }
+
+  .about-promise {
+    grid-column: 1 / span 7;
+    font-size: var(--fs-h2);
+    line-height: 1.15;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  /* Intro-Absatz unter der Headline: was ich tue, für wen */
+  .about-what {
+    grid-column: 1 / span 7;
+    font-size: var(--fs-h3);
+    line-height: 1.3;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  /* Logo-Laufband, randlos */
+  .marquee {
+    margin-top: auto;
+    overflow: hidden;
+    padding: var(--gap) 0;
+  }
+
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 40s linear infinite;
+  }
+
+  .marquee-track {
+    align-items: center;
+  }
+
+  .client-logo {
+    --logo-h: 28px;
+    flex-shrink: 0;
+    height: calc(var(--logo-h) * var(--h));
+    aspect-ratio: var(--ar);
+    margin-right: calc(var(--gap) * 1.5);
+    background: var(--color-fg);
+    -webkit-mask: var(--src) center / contain no-repeat;
+    mask: var(--src) center / contain no-repeat;
+    transition: background-color 0.4s;
+  }
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .pillar {
+    grid-column: 1 / span 5;
+  }
+
+  .pillar-num {
+    margin-bottom: var(--gap);
+  }
+
+  .pillar-title {
+    font-size: var(--fs-h2);
+    line-height: var(--lh-h2);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-bottom: var(--gap);
+  }
+
+  .pillar-title :global(.dw) {
+    white-space: nowrap;
+  }
+
+  .pillar-title :global(.dc) {
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0;
+  }
+
+  .pillar-body {
+    font-size: var(--fs-h3);
+    line-height: 1.3;
+  }
+
+
+
+  .label {
+    color: var(--color-muted);
+    margin-bottom: calc(var(--gap) * 0.5);
+  }
+
+  .service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .service-list li {
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+  }
+
+  /* Leistungen nach dem Muster von the-echo-book.com:
+     links bleibt die Einleitung stehen, rechts laufen die Gruppen durch.
+     Beide Spalten starten auf derselben Höhe. */
+  .services {
+    align-items: start;
+  }
+
+  /* gleiche Größe wie „Form follows fuckups" */
+  .services-intro {
+    grid-column: 1 / span 5;
+    position: sticky;
+    top: calc(var(--pad) * 3);
+    font-size: var(--fs-h2);
+    line-height: 0.98; /* wie der Absatz darüber, etwas luftiger als 0.9 */
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  /* Titel links und mitlaufend, Absatz rechts, wie bei den Leistungen */
+  .how {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+    align-items: start;
+  }
+
+  .how-title {
+    grid-column: 1 / span 5;
+    position: sticky;
+    top: calc(var(--pad) * 3);
+    font-size: var(--fs-h2);
+    line-height: 0.98;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  /* Das letzte Wort rollt beim Lesen durch: function, feelings, fuckups.
+     Alle drei liegen übereinander, das Feld ist so breit wie das längste. */
+  .how-word {
+    display: inline-grid;
+    overflow: hidden;
+    vertical-align: bottom;
+    /* Platz für die Unterlänge im „p“, sonst schneidet die Maske sie ab */
+    padding-bottom: 0.14em;
+    margin-bottom: -0.14em;
+  }
+
+  .how-word > span {
+    grid-area: 1 / 1;
+    transform: translateY(130%);
+    transition: transform 0.6s cubic-bezier(0.625, 0.05, 0, 1);
+  }
+
+  .how-word > span.is-past {
+    transform: translateY(-130%);
+  }
+
+  .how-word > span.is-on {
+    transform: none;
+  }
+
+  .how-word--accent {
+    color: var(--color-accent);
+  }
+
+  /* Absatz so groß wie der Titel (Daniel, 24.10.2026) */
+  .how-body {
+    grid-column: 7 / span 6;
+    font-size: var(--fs-h2);
+    line-height: 0.98; /* etwas luftiger als der Titelsatz (0.9) */
+    letter-spacing: -0.01em;
+    /* erste Zeile um eine Rasterspalte eingerückt (Absatz ist 6 Spalten breit) */
+    text-indent: calc((100% - 5 * var(--gap)) / 6 + var(--gap));
+  }
+
+  .service-title {
+    font-size: var(--fs-h3);
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-bottom: calc(var(--gap) * 0.5);
+  }
+
+  .services-groups {
+    grid-column: 7 / span 6;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--gap) * 2);
+  }
+
+  .service-num {
+    display: inline-block;
+    min-width: calc(var(--gap) * 0.5);
+    margin-right: calc(var(--gap) * 0.5);
+  }
+
+  .about-close {
+    grid-column: 1 / span 7;
+    font-size: var(--fs-h2);
+    line-height: 1.15;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  /* Bewegung, nur wenn das Script .anim setzt. Der Übergang hängt am
+     Einblenden (.is-in), das Ausblenden beim Start passiert sofort. */
+  .about.anim [data-reveal] {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  .about.anim [data-reveal].is-in {
+    opacity: 1;
+    transform: none;
+    transition:
+      opacity 0.9s var(--ease),
+      transform 0.9s var(--ease);
+    transition-delay: calc(var(--i, 0) * 120ms);
+  }
+
+  .about.anim [data-rise] :global(.w) {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(0.35em);
+  }
+
+  .about.anim [data-rise].is-in :global(.w) {
+    opacity: 1;
+    transform: none;
+    transition:
+      opacity 0.8s var(--ease),
+      transform 0.8s var(--ease);
+    transition-delay: calc(var(--i) * 35ms);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+      animation: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding-top: calc(var(--pad) * 4);
+    }
+
+    .hero-intro {
+      margin-bottom: var(--gap);
+    }
+
+    .case-grid {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap);
+    }
+
+    .item-1,
+    .item-2,
+    .item-3,
+    .item-4,
+    .item-5,
+    .item-6 {
+      grid-column: auto;
+      grid-row: auto;
+      width: 100%;
+      margin-top: 0;
+      transform: none !important;
+    }
+
+    .screen {
+      gap: var(--pad);
+    }
+
+    .inner {
+      grid-template-columns: 1fr;
+    }
+
+    .about-headline,
+    .about-promise,
+    .about-what,
+    .how,
+    .services-intro,
+    .services-groups,
+    .about-close {
+      grid-column: 1 / -1;
+    }
+
+    .pillar-body,
+    .about-what {
+      font-size: var(--fs-body);
+      line-height: var(--lh-body);
+    }
+
+    .how-title {
+      grid-column: 1 / -1;
+      position: static;
+      font-size: var(--fs-h3);
+      margin-bottom: var(--gap);
+    }
+
+    .how-body {
+      grid-column: 1 / -1;
+      font-size: var(--fs-h3);
+      line-height: 1.2;
+    }
+
+    .services-intro {
+      position: static;
+      font-size: var(--fs-h3);
+      line-height: 1.2;
+    }
+
+    .about-promise,
+    .about-close {
+      font-size: var(--fs-h3);
+      line-height: 1.2;
+    }
+
+    .client-logo {
+      --logo-h: 20px;
+    }
+  }
+</style>

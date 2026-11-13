@@ -1,0 +1,1249 @@
+---
+// Testseite 10: nach Daniels Figma-Entwurf „MacBook Pro 16' - 19“
+// (Portfolio-Danielthiele, node 3398:14743), Stand 08.11.2026, und dem
+// mobilen Ablauf (Figma 3405:15344, 09.11.2026).
+// Desktop und Mobil folgen demselben Ablauf (Daniel, 10.11.2026): Cases nacheinander,
+// jede Geste ein ganzer Wechsel, am Ende der Kontakt. Desktop zeigt die
+// Querformate im 16:9-Feld unten rechts, Mobil die Hochformate in 4:5.
+// Raster: 28 Spalten, 20 px Rand und Spaltenabstand.
+import fs from "node:fs";
+import path from "node:path";
+import { getCollection } from "astro:content";
+import { imageSize } from "image-size";
+import Layout from "../layouts/Layout.astro";
+
+const services = [
+  "Visual Identity & Design Systems",
+  "Digital Product & Service Design",
+  "Growth Advisory & Fractional Leadership",
+];
+
+const cases = await getCollection("cases");
+
+// Je Case die Bilder aus dem Case-Ordner (ohne Unterordner): Hochformate für
+// Mobil, Querformate für Desktop (Daniel, 09./10.11.2026). Startbild je Case
+// wie im Entwurf, sonst nach Dateiname.
+const FIRST: Record<string, string> = {};
+const LEAD = ["qruise", "wyldaway", "campany"];
+const rank = (id: string) => (LEAD.includes(id) ? LEAD.indexOf(id) : LEAD.length);
+const deck = [...cases]
+  .sort((a, b) => rank(a.id) - rank(b.id))
+  .map((c) => {
+    const dir = path.join(process.cwd(), "public/images/cases", c.id);
+    const files = fs.existsSync(dir)
+      ? fs.readdirSync(dir).filter((f) => /\.(jpe?g|png|webp)$/i.test(f)).sort()
+      : [];
+    const size = (f: string) => imageSize(fs.readFileSync(path.join(dir, f)));
+    // Streifen (mehrere Bilder untereinander in einer Datei) zählen nicht als Hochformat
+    const ratio = (f: string) => (size(f).height ?? 0) / (size(f).width || 1);
+    const tall = files.filter((f) => ratio(f) > 1 && ratio(f) <= 3);
+    const wide = files.filter((f) => (size(f).width ?? 0) > (size(f).height ?? 0));
+    const first = FIRST[c.id];
+    if (first && tall.includes(first)) tall.unshift(...tall.splice(tall.indexOf(first), 1));
+    const src = (f: string) => `/images/cases/${c.id}/${f}`;
+    return { slug: c.id, title: c.data.title, tall: tall.map(src), wide: wide.map(src) };
+  })
+  .filter((c) => c.tall.length || c.wide.length)
+  // vorerst nur die Cases mit neuen Bildern (Daniel, 09.11.2026)
+  .filter((c) => LEAD.includes(c.slug));
+const pad = (n: number) => String(n).padStart(2, "0");
+
+// Pixelaugen: 2 Einheiten je Pixel, Pupille wandert im Inneren (x 2/4, y 2/4/6)
+const lids: [number, number][] = [
+  [0, 2], [0, 4], [0, 6], [2, 0], [4, 0], [2, 8], [4, 8], [6, 2], [6, 4], [6, 6],
+  [9, 2], [9, 4], [9, 6], [11, 0], [13, 0], [11, 8], [13, 8], [15, 2], [15, 4], [15, 6],
+];
+---
+<Layout>
+  <!-- Preloader nur am Desktop und einmal je Sitzung: vor dem ersten Bild
+       entscheiden, sonst blitzt die fertige Seite kurz auf. Bleibt das
+       Seitenskript aus, steht die Seite nach 5 s trotzdem. -->
+  <script is:inline>
+    (() => {
+      // zurück von About: Seite steht am Kontakt, das Pink-Porträt liegt noch darüber
+      if (new URLSearchParams(location.search).get("from") === "about") {
+        document.documentElement.dataset.from = "about";
+        return;
+      }
+      if (matchMedia("(max-width: 768px)").matches || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      try {
+        if (sessionStorage.getItem("home-pre") === "1") return;
+      } catch (e) {}
+      document.documentElement.dataset.pre = "count";
+      setTimeout(() => {
+        if (!window.__pre) delete document.documentElement.dataset.pre;
+      }, 5000);
+    })();
+  </script>
+  <section class="home" data-home>
+    <!-- Zähler 001–100 in Pixelziffern (Figma 3434:4594), per Script gefüllt -->
+    <svg class="pre" viewBox="0 0 28 10" shape-rendering="crispEdges" aria-hidden="true" data-pre-num></svg>
+    <a href="/" class="name">Daniel Thiele<br />Strategy &amp; Design</a>
+    <time class="clock" data-clock>12:34PM CET</time>
+
+    <!-- Desktop: Wrapper ohne eigene Box (display: contents), die Kinder sitzen
+         im Raster. Mobil: oberste Ebene mit Hintergrund, Typo und Augen; ihre
+         Unterkante fährt hoch und legt die Cases frei (Figma 3405:15344). -->
+    <div class="pin" data-pin>
+      <div class="intro">
+        <div class="intro-in">
+          <h1 class="claim">Clarity &amp; Character for vicious brands who dare</h1>
+          <ul class="services">
+            {services.map((s) => <li>{s}</li>)}
+          </ul>
+        </div>
+      </div>
+
+      <svg class="eyes" viewBox="0 0 17 10" shape-rendering="crispEdges" aria-hidden="true" data-eyes>
+        <!-- Mobil, erste Interaktion: die obere Reihe springt hoch, beide
+             Seitenwände je Auge ziehen sich lang, der Rest springt nach (Figma 3406:15347) -->
+        <rect class="bridge" data-bridge x="0" y="2" width="2" height="0" />
+        <rect class="bridge" data-bridge x="6" y="2" width="2" height="0" />
+        <rect class="bridge" data-bridge x="9" y="2" width="2" height="0" />
+        <rect class="bridge" data-bridge x="15" y="2" width="2" height="0" />
+        <g data-lid-top>
+          {lids.filter(([, y]) => y === 0).map(([x, y]) => <rect x={x} y={y} width="2" height="2" />)}
+        </g>
+        <g data-lid-rest>
+          {lids.filter(([, y]) => y !== 0).map(([x, y]) => <rect x={x} y={y} width="2" height="2" />)}
+          <rect class="pupil" data-pupil x="4" y="4" width="2" height="2" />
+          <rect class="pupil" data-pupil x="13" y="4" width="2" height="2" />
+        </g>
+      </svg>
+    </div>
+
+    <!-- Cases als Stapel (Mobil unter der Bühne, Figma 3398:14653; Desktop im
+         16:9-Feld unten rechts). Der obere Case fährt nach oben weg und legt
+         den nächsten frei. -->
+    <div class="cases" data-cases>
+      {deck.map((c, i) => (
+        <article class="case" data-case data-name={c.title} style={`z-index: ${deck.length - i}`}>
+          {c.tall.map((src, j) => (
+            <img data-src={src} class:list={["tall", { "is-on": j === 0 }]} alt="" decoding="async" />
+          ))}
+          {c.wide.map((src, j) => (
+            <img data-src={src} class:list={["wide", { "is-on": j === 0 }]} alt="" decoding="async" />
+          ))}
+        </article>
+      ))}
+      <!-- Titel und Zähler stehen fest am unteren Bildrand und fahren nicht
+           mit; beim Case-Wechsel kippen sie nach oben (Daniel, 09.11.2026) -->
+      <div class="case-meta" style={`z-index: ${deck.length + 1}`}>
+        <p class="case-title">
+          <span class="cube" data-title>
+            <span class="face" data-face>{deck[0]?.title}</span>
+            <span class="face is-next" data-next aria-hidden="true" />
+          </span>
+        </p>
+        <p class="case-count">
+          <span class="cube count-num" data-cube>
+            <span class="face" data-face>{pad(1)}</span>
+            <span class="face is-next" data-next aria-hidden="true" />
+          </span>
+          <span class="count-bar" data-bar />
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doppelte Zwischenlage zu About (Daniel, 13.11.2026), wie ein
+       Papierstapel: erst Schwarz, dann Pink (Figma 3413:15635: copybob-landscape
+       kopfüber, Pink mit „Aufhellen“, Name schwarz), dann About; rückwärts
+       umgekehrt -->
+  <div class="hop-black" aria-hidden="true" data-hop-black></div>
+  <div class="hop" aria-hidden="true" data-hop>
+    <img src="/images/copybob-landscape.png" alt="" decoding="async" />
+    <span class="hop-pink"></span>
+    <span class="hop-name">Daniel Thiele<br />Strategy &amp; Design</span>
+  </div>
+</Layout>
+
+<script>
+  // Uhrzeit im Studio (Bochum), Format wie im Entwurf: 12:34PM CET
+  const clock = document.querySelector<HTMLElement>("[data-clock]");
+  if (clock) {
+    const time = new Intl.DateTimeFormat("en-US", {
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+      timeZone: "Europe/Berlin",
+    });
+    const zone = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Berlin", timeZoneName: "short" });
+    const set = () => {
+      const now = new Date();
+      const tz = zone.formatToParts(now).find((p) => p.type === "timeZoneName")?.value ?? "";
+      clock.textContent = `${time.format(now).replace(/\s/g, "")} ${tz}`;
+      clock.setAttribute("datetime", now.toISOString());
+    };
+    set();
+    setInterval(set, 10_000);
+  }
+
+  // Augen folgen dem Zeiger, in ganzen Pixeln: Pupille links/rechts und
+  // oben/Mitte/unten, je nach Richtung vom Auge zum Zeiger.
+  const eyes = document.querySelector<SVGSVGElement>("[data-eyes]");
+  if (eyes) {
+    const pupils = [...eyes.querySelectorAll<SVGRectElement>("[data-pupil]")];
+    const home = [2, 11]; // linke Innenspalte je Auge (x)
+    const look = (mx: number, my: number) => {
+      const r = eyes.getBoundingClientRect();
+      const u = r.width / 17; // Pixel je Einheit
+      pupils.forEach((p, k) => {
+        const cx = r.left + (home[k] + 2) * u;
+        const cy = r.top + 5 * u;
+        const dx = mx - cx;
+        const dy = my - cy;
+        const d = Math.hypot(dx, dy) || 1;
+        const ny = dy / d;
+        const x = home[k] + (dx < 0 ? 0 : 2);
+        const y = ny < -0.38 ? 2 : ny > 0.38 ? 6 : 4;
+        p.setAttribute("x", String(x));
+        p.setAttribute("y", String(y));
+      });
+    };
+    addEventListener("pointermove", (e) => {
+      eyes.classList.add("is-tracking");
+      look(e.clientX, e.clientY);
+    }, { passive: true });
+  }
+
+  // Ablauf (Figma 3405:15344, Daniel 09.11.2026; Desktop gleich, 10.11.2026).
+  // Kein Seitenscrollen, jede Geste löst genau einen ganzen Wechsel aus,
+  // rückwärts exakt dieselbe Strecke. Desktop beginnt beim ersten Case (2),
+  // Start und Intro (0, 1) gibt es nur mobil:
+  //   0  Start: Augen unten (3405:15222)
+  //   1  erste Interaktion (Tippen oder Scrollen): Augen springen mit Federung
+  //      nach oben, Typo fährt von unten herein (3406:15347 → 3405:15281)
+  //   2… je Case ein Schritt: Unterkante der Bühne fährt hoch und legt das Bild
+  //      frei (3405:15194 → 3398:14653), danach fährt jeder Case nach oben weg
+  //      und legt den nächsten frei; Titel wechselt, Zähler steht auf 01
+  //   …  Kontakt: die ganze Ebene fährt nach oben weg (3405:15335 → 3402:14988)
+  // Wischen links/rechts im Case wie die Maus am Desktop: solange der Finger
+  // liegt, je SCRUB px Weg ein harter Bildwechsel, also so schnell wie der
+  // Finger (Daniel, 09.11.2026); nach links vor, nach rechts zurück, der
+  // Zähler zählt mit. Am Desktop schaltet der Mausweg weiter, je SCRUB px ein Bild.
+  const homeEl = document.querySelector<HTMLElement>("[data-home]");
+  const deckEls = [...document.querySelectorAll<HTMLElement>("[data-case]")];
+  if (homeEl && eyes && deckEls.length) {
+    const mobile = matchMedia("(max-width: 768px)");
+    const reduce = matchMedia("(prefers-reduced-motion: reduce)");
+    const SWITCH = 550; // ms je Wechsel, wie --lift (Daniel, 10.11.2026: knackiger)
+    const LOCK = 420; // ms Sperre nach einem Wechsel
+    const pace = () => (reduce.matches ? 150 : SWITCH);
+    const lock = () => (reduce.matches ? 150 : LOCK);
+    const SCRUB = 70; // px Fingerweg je Bild, wie STEP am Desktop
+    const HOLD = 2500; // ms Standzeit je Bild im Selbstlauf (Daniel, 09.11.2026)
+    const N = deckEls.length;
+    const LAST = N + 1; // letzter Case, danach Übergang zu About
+    // mobil ohne den Augen-Bildschirm (Schritt 0), Augen erstmal raus
+    // (Daniel, 13.11.2026)
+    const first = () => (mobile.matches ? 1 : 2);
+    const back = document.documentElement.dataset.from === "about";
+    let step = back ? LAST : first();
+    let busyUntil = 0;
+    let loading = false; // Preloader läuft: keine Eingaben, kein Selbstlauf
+    const shown = deckEls.map(() => 0);
+
+    // Bilder: erst laden, wenn der Case dran oder als nächster dran ist
+    const load = (img: HTMLImageElement | null | undefined) => {
+      if (img && !img.src && img.dataset.src) img.src = img.dataset.src;
+    };
+    // je Gerät eigene Bildliste: Hochformate mobil, Querformate am Desktop
+    const imgsOf = (c: number) =>
+      deckEls[c]?.querySelectorAll<HTMLImageElement>(mobile.matches ? "img.tall" : "img.wide") ?? [];
+    const warm = (c: number) => imgsOf(c).forEach(load);
+
+    // Würfel für Titel und Zahl. Achse "y": dreht um die senkrechte Achse,
+    // vorwärts kommt das Neue von rechts (Bildwechsel). Achse "x": kippt nach
+    // oben, vorwärts kommt das Neue von unten (Case-Wechsel). Rückwärts jeweils
+    // umgekehrt. Kommt eine Drehung in eine laufende, steht vorne sofort deren
+    // Ziel (schnelles Wischen).
+    const pad = (n: number) => String(n).padStart(2, "0");
+    const titleCube = homeEl.querySelector<HTMLElement>("[data-title]")!;
+    const countCube = homeEl.querySelector<HTMLElement>("[data-cube]")!;
+    const line = homeEl.querySelector<HTMLElement>("[data-bar]")!;
+    const turn = (cube: HTMLElement, text: string, axis: "x" | "y" | "" = "", dir = 1, ms = 450) => {
+      const front = cube.querySelector<HTMLElement>("[data-face]")!;
+      const next = cube.querySelector<HTMLElement>("[data-next]")!;
+      const running = cube.getAnimations();
+      if (running.length) {
+        running.forEach((a) => a.cancel());
+        front.textContent = next.textContent;
+      }
+      front.style.transform = "";
+      if (!axis || reduce.matches || front.textContent === text) {
+        front.textContent = text;
+        return;
+      }
+      const d = (axis === "y" ? cube.offsetWidth : cube.offsetHeight) / 2;
+      const rot = axis === "y" ? "rotateY" : "rotateX";
+      const a = (axis === "y" ? 90 : -90) * dir;
+      next.textContent = text;
+      next.style.transform = `${rot}(${a}deg) translateZ(${d}px)`;
+      front.style.transform = `translateZ(${d}px)`;
+      const spin = cube.animate(
+        [
+          { transform: `translateZ(${-d}px) ${rot}(0deg)` },
+          { transform: `translateZ(${-d}px) ${rot}(${-a}deg)` },
+        ],
+        { duration: ms, easing: "cubic-bezier(0.7, 0, 0.2, 1)", fill: "forwards" },
+      );
+      spin.finished
+        .then(() => {
+          front.textContent = text;
+          front.style.transform = "";
+          spin.cancel();
+        })
+        .catch(() => {}); // abgebrochen: neueres Ziel hat übernommen
+    };
+
+    // Bild im Case wechseln; count: Zahl drehen ("y"), setzen ("") oder
+    // unverändert lassen (null, beim Betreten eines Cases kippt go() sie)
+    const showImage = (c: number, j: number, count: "y" | "" | null = "") => {
+      const imgs = imgsOf(c);
+      if (!imgs.length) return;
+      const k = (j + imgs.length) % imgs.length;
+      const dir = Math.sign(j - shown[c]) || 1;
+      imgs[shown[c]].classList.remove("is-on");
+      load(imgs[k]);
+      imgs[k].classList.add("is-on");
+      shown[c] = k;
+      // beim Wischen kürzer, damit die Zahl mit dem Finger mithält
+      if (count !== null) turn(countCube, pad(k + 1), count, dir, scrubbing ? 260 : 450);
+    };
+
+    // Selbstlauf im Case: die Linie unter der Zahl wächst über die Standzeit,
+    // ist sie durchgezogen, kommt das nächste Bild und die Zahl dreht um.
+    // Erst wenn der Case freigelegt ist, also nach dem Wechsel (SWITCH).
+    // Wischt der Finger, steht der Selbstlauf, nach dem Loslassen läuft er neu an.
+    let bar: Animation | null = null;
+    let scrubbing = false;
+    const stopAuto = () => {
+      bar?.cancel();
+      bar = null;
+    };
+    const startAuto = (delay = 0) => {
+      stopAuto();
+      const c = step - 2;
+      if (loading || scrubbing || c < 0 || c >= N) return;
+      const run = line.animate([{ transform: "scaleX(0)" }, { transform: "scaleX(1)" }], {
+        duration: HOLD,
+        delay,
+        easing: "linear",
+        fill: "both",
+      });
+      bar = run;
+      run.finished
+        .then(() => {
+          if (bar !== run) return;
+          showImage(c, shown[c] + 1, "y");
+          startAuto();
+        })
+        .catch(() => {});
+    };
+
+    // Augen: Strecke von unten (Start) nach oben, in SVG-Einheiten
+    const top = eyes.querySelector<SVGGElement>("[data-lid-top]")!;
+    const rest = eyes.querySelector<SVGGElement>("[data-lid-rest]")!;
+    const bridges = [...eyes.querySelectorAll<SVGRectElement>("[data-bridge]")];
+    let fly: Animation[] = [];
+    // Neu aufbauen bei Größenänderung. iOS meldet resize auch, wenn die
+    // Browserleiste sich bewegt, oft genau beim ersten Wischen: dann den
+    // laufenden Flug mit Stand und Richtung übernehmen statt ans Ende zu springen.
+    const build = () => {
+      const prev = fly[0];
+      const keep = prev && {
+        t: prev.currentTime,
+        rate: prev.playbackRate,
+        running: prev.playState === "running",
+      };
+      fly.forEach((a) => a.cancel());
+      fly = [];
+      if (!mobile.matches) return;
+      const r = eyes.getBoundingClientRect();
+      if (!r.width) return; // noch nicht ausgelegt, resize baut neu
+      const u = r.width / 17;
+      // Start: Augen 19 px über dem unteren Rand (Figma 3405:15222)
+      const h = homeEl.getBoundingClientRect();
+      const d = (h.bottom - 19 - r.height - r.top) / u;
+      bridges.forEach((b) => b.setAttribute("height", String(d)));
+      const down = `translateY(${d}px)`;
+      const up = "translateY(0px)";
+      const out = "cubic-bezier(0.3, 0, 0.2, 1)";
+      const bounce = "cubic-bezier(0.34, 1.56, 0.64, 1)";
+      const opts: KeyframeAnimationOptions = { duration: SWITCH, fill: "both" };
+      fly = [
+        top.animate([{ transform: down, easing: out }, { transform: up, offset: 0.3 }, { transform: up }], opts),
+        rest.animate(
+          [{ transform: down }, { transform: down, offset: 0.3, easing: bounce }, { transform: up }],
+          opts,
+        ),
+        ...bridges.map((b) =>
+          b.animate(
+            [
+              { transform: "scaleY(0)", easing: out },
+              { transform: "scaleY(1)", offset: 0.3, easing: out },
+              { transform: "scaleY(0)", offset: 0.62 },
+              { transform: "scaleY(0)" },
+            ],
+            opts,
+          ),
+        ),
+      ];
+      fly.forEach((a) => {
+        a.pause();
+        if (keep && keep.t !== null) {
+          a.playbackRate = keep.rate;
+          a.currentTime = keep.t;
+          if (keep.running) a.play();
+        } else a.currentTime = step >= 1 ? SWITCH : 0;
+      });
+    };
+    const flyEyes = (forward: boolean) => {
+      fly.forEach((a) => {
+        a.playbackRate = forward ? 1 : -1;
+        if (reduce.matches) a.currentTime = forward ? SWITCH : 0;
+        else a.play();
+      });
+    };
+
+    const render = (from: number) => {
+      const c = Math.min(Math.max(step - 2, 0), N - 1);
+      homeEl.classList.toggle("is-intro", step >= 1);
+      homeEl.classList.toggle("is-open", step >= 2);
+      deckEls.forEach((el, i) => el.classList.toggle("is-gone", step >= 2 && i < c));
+      if ((from < 1) !== (step < 1)) flyEyes(step >= 1);
+      warm(c);
+      warm(c + 1);
+      if (step >= 2) startAuto(pace());
+      else stopAuto();
+    };
+
+    // Übergang zu About wie ein Papierstapel: Schwarz schiebt sich über den
+    // letzten Case, dann Pink über Schwarz, dann übernimmt About und schiebt
+    // sich über Pink.
+    // Zeitgeber statt Animationsende, wie beim Preloader
+    const hop = document.querySelector<HTMLElement>("[data-hop]");
+    const hopBlack = document.querySelector<HTMLElement>("[data-hop-black]");
+    const EASE = "cubic-bezier(0.2, 0, 0, 1)";
+    const slide = (el: HTMLElement, show: boolean, delay: number) => {
+      const ms = reduce.matches ? 1 : SWITCH;
+      setTimeout(() => {
+        el.getAnimations().forEach((a) => a.cancel());
+        el.classList.add("is-on");
+        const run = el.animate(
+          show
+            ? [{ transform: "translateY(100%)" }, { transform: "translateY(0)" }]
+            : [{ transform: "translateY(0)" }, { transform: "translateY(100%)" }],
+          { duration: ms, easing: EASE, fill: "forwards" },
+        );
+        if (!show)
+          setTimeout(() => {
+            el.classList.remove("is-on");
+            run.cancel();
+          }, ms + 30);
+      }, delay);
+      return delay + ms;
+    };
+    const toAbout = () => {
+      busyUntil = Infinity;
+      if (!hop || !hopBlack) return location.assign("/about-test?from=home");
+      const step1 = slide(hopBlack, true, 0);
+      const step2 = slide(hop, true, step1);
+      setTimeout(() => location.assign("/about-test?from=home"), step2 + 30);
+    };
+    // Rückweg: About ist auf der About-Seite schon nach unten weggezogen,
+    // hier liegen Pink und Schwarz noch obenauf und ziehen nacheinander weg
+    const uncover = () => {
+      busyUntil = Infinity;
+      if (!hop || !hopBlack) {
+        delete document.documentElement.dataset.from;
+        busyUntil = 0;
+        return;
+      }
+      hop.classList.add("is-on");
+      hopBlack.classList.add("is-on");
+      delete document.documentElement.dataset.from;
+      const step1 = slide(hop, false, 0);
+      const step2 = slide(hopBlack, false, step1);
+      setTimeout(() => (busyUntil = 0), step2 + 40);
+    };
+    // Browser-Zurück aus dem Cache: Seite liegt noch unter den Lagen
+    addEventListener("pageshow", (e) => {
+      if (e.persisted && hop?.classList.contains("is-on")) uncover();
+      else if (e.persisted) busyUntil = 0;
+    });
+
+    const go = (to: number) => {
+      if (to > LAST && step === LAST && Date.now() >= busyUntil) return toAbout();
+      to = Math.min(Math.max(to, first()), LAST);
+      if (to === step || Date.now() < busyUntil) return;
+      // betretener Case beginnt bei 01; von Case zu Case kippen Titel und
+      // Zahl, vom Intro aus legt der Vorhang sie mit frei
+      const c = to - 2;
+      if (c >= 0 && c < N && c !== step - 2) {
+        showImage(c, 0, null);
+        const tilt = step >= 2 ? "x" : "";
+        const dir = Math.sign(to - step);
+        const ms = 420;
+        turn(titleCube, deckEls[c].dataset.name || "", tilt, dir, ms);
+        turn(countCube, pad(1), tilt, dir, ms);
+      }
+      const from = step;
+      step = to;
+      busyUntil = Date.now() + lock();
+      render(from);
+    };
+    const swap = (dir: number, spin = false) => {
+      const c = step - 2;
+      if (c < 0 || c >= N || Date.now() < busyUntil) return;
+      showImage(c, shown[c] + dir, spin ? "y" : "");
+      stopAuto();
+      if (!scrubbing) startAuto();
+    };
+
+    // Tippen: auf dem Startscreen zur Typo, aufs Casebild zum nächsten Bild
+    // (Daniel, 09.11.2026), Zahl dreht dabei wie im Selbstlauf
+    homeEl.addEventListener("click", (e) => {
+      if (axis) return; // nach einem Wischer kein Tippen
+      if (step === 0 && mobile.matches) {
+        e.preventDefault();
+        go(1);
+      } else if (step >= 2 && (e.target as Element).closest("[data-case]")) {
+        swap(1, true);
+      }
+    });
+
+    // horizontaler Weg (Finger oder Trackpad) in Bildwechsel umrechnen
+    let acc = 0;
+    const scrub = (px: number) => {
+      acc += px;
+      while (Math.abs(acc) >= SCRUB) {
+        const dir = Math.sign(acc);
+        acc -= dir * SCRUB;
+        swap(dir, true);
+      }
+    };
+
+    // Wischen: die Richtung entscheidet sich nach den ersten 10 px.
+    // Senkrecht = ein ganzer Wechsel beim Loslassen, waagerecht = Bilder
+    // laufen mit, solange der Finger liegt.
+    let sx = 0;
+    let sy = 0;
+    let lx = 0;
+    let axis: "" | "x" | "y" = "";
+    addEventListener("touchstart", (e) => {
+      sx = lx = e.touches[0].clientX;
+      sy = e.touches[0].clientY;
+      axis = "";
+      acc = 0;
+    }, { passive: true });
+    addEventListener("touchmove", (e) => {
+      if (!mobile.matches) return;
+      e.preventDefault();
+      const x = e.touches[0].clientX;
+      const y = e.touches[0].clientY;
+      if (!axis && Math.max(Math.abs(x - sx), Math.abs(y - sy)) > 10) {
+        axis = Math.abs(x - sx) > Math.abs(y - sy) ? "x" : "y";
+        lx = sx; // der Weg bis zur Entscheidung zählt mit
+        if (axis === "x" && step >= 2) {
+          scrubbing = true;
+          stopAuto();
+        }
+      }
+      if (axis === "x") scrub(lx - x);
+      lx = x;
+    }, { passive: false });
+    addEventListener("touchend", (e) => {
+      if (scrubbing) {
+        scrubbing = false;
+        startAuto();
+      }
+      if (!mobile.matches || axis !== "y") return;
+      const dy = sy - e.changedTouches[0].clientY;
+      if (Math.abs(dy) >= 40) go(step + Math.sign(dy));
+    });
+
+    // Mausrad und Trackpad: eine Geste = ein Wechsel. Der Nachlauf des
+    // Trackpads fällt nur ab und zählt nicht; eine neue Geste erkennt man an
+    // einer Pause oder daran, dass der Ausschlag wieder wächst
+    let wheelAt = 0;
+    let wheelAbs = 0;
+    addEventListener("wheel", (e) => {
+      e.preventDefault();
+      // waagerecht wie der Finger: Bilder laufen mit dem Weg
+      if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return scrub(e.deltaX);
+      const now = Date.now();
+      const abs = Math.abs(e.deltaY);
+      const fresh = now - wheelAt > 120 || abs > wheelAbs * 1.4 + 2;
+      wheelAt = now;
+      wheelAbs = abs;
+      if (!fresh || abs < 4 || now < busyUntil) return;
+      go(step + Math.sign(e.deltaY));
+    }, { passive: false });
+
+    // Tastatur
+    addEventListener("keydown", (e) => {
+      const k = e.key;
+      if (k === "ArrowDown" || k === "PageDown" || k === " ") go(step + 1);
+      else if (k === "ArrowUp" || k === "PageUp") go(step - 1);
+      else if (k === "ArrowRight") swap(1, true);
+      else if (k === "ArrowLeft") swap(-1, true);
+      else return;
+      e.preventDefault();
+    });
+
+    // Desktop: Mausweg schaltet die Bilder im Case weiter (wie das Wischen),
+    // der Selbstlauf steht, solange die Maus sich bewegt, und läuft 400 ms
+    // nach dem letzten Weg neu an
+    let mx = -1;
+    let my = -1;
+    let still = 0;
+    addEventListener("pointermove", (e) => {
+      if (e.pointerType !== "mouse" || mobile.matches || step < 2) return;
+      if (mx >= 0) {
+        if (!scrubbing) {
+          scrubbing = true;
+          stopAuto();
+        }
+        scrub(Math.hypot(e.clientX - mx, e.clientY - my));
+      }
+      mx = e.clientX;
+      my = e.clientY;
+      clearTimeout(still);
+      still = window.setTimeout(() => {
+        scrubbing = false;
+        acc = 0;
+        if (step >= 2) startAuto();
+      }, 400);
+    }, { passive: true });
+
+    // Wechsel zwischen Mobil und Desktop: Ablauf von vorn, jeder Case auf
+    // sein erstes Bild der passenden Liste
+    const reset = () => {
+      stopAuto();
+      deckEls.forEach((el, i) => {
+        el.querySelectorAll("img").forEach((img) => img.classList.remove("is-on"));
+        el.querySelectorAll("img.tall")[0]?.classList.add("is-on");
+        el.querySelectorAll("img.wide")[0]?.classList.add("is-on");
+        shown[i] = 0;
+      });
+      const from = step;
+      step = first();
+      turn(titleCube, deckEls[0].dataset.name || "");
+      turn(countCube, pad(1));
+      render(from);
+      build();
+    };
+    addEventListener("resize", build);
+    mobile.addEventListener("change", reset);
+    build();
+    if (back) {
+      // sofort und ohne Fahrt auf dem letzten Case; About zieht darüber nach unten weg
+      turn(titleCube, deckEls[N - 1].dataset.name || "");
+      homeEl.style.transition = "none";
+      render(step);
+      homeEl.getBoundingClientRect();
+      homeEl.style.transition = "";
+      history.replaceState(null, "", location.pathname);
+      uncover();
+    } else render(step);
+
+    // Preloader, nur Desktop und einmal je Sitzung (Figma 3434:4593, Daniel
+    // 11.11.2026): Zähler 001–100 in Pixelziffern. Bei 100 fällt die 1 hart
+    // weg, die zwei Nullen sind die Augen. Die Augen strecken sich nach unten
+    // (alles außer der oberen Reihe fällt, die obere Reihe federt nach, wie
+    // mobil, nur abwärts). Dann fahren die Cases nacheinander von unten
+    // übereinander, der erste zuletzt obenauf. Zuletzt kommen Claim und
+    // Leistungen von oben. Abfolge über Zeitgeber, nicht über das Ende der
+    // Animationen, damit sie auch in einem verdeckten Fenster durchläuft.
+    const root = document.documentElement;
+    const num = homeEl.querySelector<SVGSVGElement>("[data-pre-num]");
+    // Ziffern 1:1 aus Figma 3434:4594, die 0 ist das Auge ohne Pupille
+    const DIGITS: Record<string, string[]> = {
+      "0": [".##.", "#..#", "#..#", "#..#", ".##."],
+      "1": [".##", "#.#", "..#", "..#", "..#"],
+      "2": ["##.", "..#", "##.", "#..", "###"],
+      "3": [".##", "#..", ".#.", "#..", "###"],
+      "4": [".##", "#..", "#.#", ".##", "..#"],
+      "5": [".##", "#..", ".##", "..#", "###"],
+      "6": [".##", "#..", "###", "#.#", "###"],
+      "7": ["##.", "#.#", "..#", ".#.", ".#."],
+      "8": [".##", "#.#", ".#.", "#.#", "##."],
+      "9": [".##", "#.#", ".##", "..#", "..#"],
+    };
+    const draw = (n: number) => {
+      let x = 0;
+      let cells = "";
+      for (const ch of String(n).padStart(3, "0")) {
+        const g = DIGITS[ch];
+        g.forEach((row, r) =>
+          [...row].forEach((px, c) => {
+            if (px === "#") cells += `<rect x="${x + c * 2}" y="${r * 2}" width="2" height="2"/>`;
+          }),
+        );
+        x += g[0].length * 2 + 2; // ein Pixel Abstand
+      }
+      if (num) num.innerHTML = cells;
+    };
+    const wait = (ms: number) => new Promise<void>((done) => setTimeout(done, ms));
+    const intro = async () => {
+      (window as unknown as { __pre: boolean }).__pre = true;
+      loading = true;
+      busyUntil = Infinity;
+      stopAuto();
+      // erstes Bild jedes Cases laden; der Zähler wartet bei 99 darauf, höchstens 4 s
+      const firsts = deckEls.map((_, c) => imgsOf(c)[0]).filter(Boolean);
+      firsts.forEach(load);
+      const loaded = (img: HTMLImageElement) =>
+        new Promise<void>((done) => {
+          if (img.complete) return done();
+          img.addEventListener("load", () => done(), { once: true });
+          img.addEventListener("error", () => done(), { once: true });
+        });
+      const ready = Promise.race([Promise.all(firsts.map(loaded)), wait(4000)]);
+      // Zähler und Augen erstmal raus (Daniel, 13.11.2026); Code für beides
+      // liegt in der Sicherung index-test-10.before-noeyes.astro
+      await ready;
+
+      // Cases von unten, der letzte zuerst, der erste zuletzt obenauf
+      const ease = "cubic-bezier(0.2, 0, 0, 1)";
+      // jeder Case soll einzeln zu sehen sein, bevor der nächste darüberfährt
+      // (Daniel, 11.11.2026: 110 ms Versatz war viel zu schnell)
+      const GAP = 320;
+      const IN = 650;
+      [...deckEls].reverse().forEach((el, k) =>
+        el.animate([{ transform: "translateY(100%)" }, { transform: "translateY(0)" }], {
+          duration: IN,
+          delay: k * GAP,
+          easing: ease,
+          fill: "backwards",
+        }),
+      );
+      root.dataset.pre = "cases";
+      await wait((N - 1) * GAP + IN - 120);
+
+      // Titel und Zahl stehen, Claim und Leistungen fahren von oben herein
+      const lines = [homeEl.querySelector<HTMLElement>(".claim"), homeEl.querySelector<HTMLElement>(".services")];
+      lines.forEach((el, k) => {
+        if (!el) return;
+        el.animate([{ transform: `translateY(${-el.getBoundingClientRect().bottom}px)` }, { transform: "translateY(0)" }], {
+          duration: 500,
+          delay: k * 60,
+          easing: ease,
+          fill: "backwards",
+        });
+      });
+      root.dataset.pre = "text";
+      await wait(560);
+
+      delete root.dataset.pre;
+      try {
+        sessionStorage.setItem("home-pre", "1");
+      } catch {}
+      loading = false;
+      busyUntil = 0;
+      if (step >= 2) startAuto();
+    };
+    if (root.dataset.pre && num && !mobile.matches) intro();
+    else delete root.dataset.pre;
+  }
+</script>
+
+<style>
+  :global(html:root) {
+    --color-bg: #e0dfd9;
+    --m: 20px; /* Rand und Spaltenabstand */
+  }
+
+  /* Kopf- und Fußzeile aus dem Layout weichen dem Entwurf */
+  :global(html:root .site-header),
+  :global(html:root .site-footer) {
+    display: none;
+  }
+
+  /* kein Seitenscrollen, jede Geste ein ganzer Wechsel */
+  :global(html) {
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+
+  /* Bühne über dem Kontakt; fährt am Ende ganz nach oben weg */
+  .home {
+    --ease: cubic-bezier(0.2, 0, 0, 1);
+    --lift: 0.55s var(--ease);
+    --eye-d: min(222.7px, 13.02vw);
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    height: 100svh;
+    background: var(--color-bg);
+    transition: transform var(--lift);
+    display: grid;
+    grid-template-columns: repeat(28, minmax(0, 1fr));
+    grid-template-rows: auto auto 1fr;
+    column-gap: var(--m);
+    align-items: start;
+    padding: 20px var(--m) 0;
+    color: #000;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  h1, ul {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    letter-spacing: 0;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  /* Desktop: Wrapper ohne eigene Box, Kinder liegen im Raster */
+  .pin,
+  .intro,
+  .intro-in {
+    display: contents;
+  }
+
+  /* über zwei Zeilen, sonst schiebt der zweizeilige Name die Leistungen
+     nach unten (Entwurf: Leistungen bei 68 px) */
+  .name {
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 2;
+  }
+
+  .claim {
+    grid-column: 10 / span 14;
+    grid-row: 1;
+    letter-spacing: -0.44px;
+  }
+
+  .clock {
+    grid-column: 24 / -1;
+    grid-row: 1;
+    justify-self: end;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .services {
+    grid-column: 10 / span 8;
+    grid-row: 2;
+    margin-top: 24px;
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  /* Desktop-Typo nach Figma 3434:4530 (Daniel, 11.11.2026): Claim und Uhr
+     18 px statt 22 px, Leistungen 13 px statt 15 px; Name und Subline
+     ebenfalls 18 px (Daniel, abweichend vom Frame). Leistungen weiter bei
+     68 px von oben. */
+  @media (min-width: 769px) {
+    .name,
+    .claim,
+    .clock {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    .claim {
+      letter-spacing: -0.36px;
+    }
+
+    .services {
+      margin-top: 28px;
+      font-size: 13px;
+      line-height: 14px;
+    }
+  }
+
+  /* Cases: 16:9-Feld von Spalte 10 bis an den rechten Rand, unten bündig mit
+     dem Fenster (wie das Showreel im Entwurf); der obere Case fährt nach oben
+     weg und legt den nächsten frei */
+  .cases {
+    grid-column: 10 / -1;
+    grid-row: 3;
+    align-self: end;
+    position: relative;
+    isolation: isolate;
+    margin: 48px calc(-1 * var(--m)) 0 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #b8b8b8;
+  }
+
+  .case {
+    position: absolute;
+    inset: 0;
+    background: #b8b8b8;
+    transition: transform var(--lift);
+  }
+
+  .case.is-gone {
+    transform: translateY(-100%);
+  }
+
+  /* Bild füllt den Container (cover); Desktop Querformate, mobil Hochformate */
+  .case img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    visibility: hidden;
+  }
+
+  .case img.is-on {
+    visibility: visible;
+  }
+
+  .case img.tall {
+    display: none;
+  }
+
+  /* 26,2 px je Pixel bei 1710 px Breite, höchstens so groß (Figma 3434:4530,
+     Daniel 11.11.2026), unten links 23 px über dem Rand */
+  .eyes {
+    position: absolute;
+    left: var(--m);
+    bottom: 23px;
+    width: var(--eye-d);
+    height: auto;
+    overflow: visible;
+    fill: #fff;
+  }
+
+  /* Zähler des Preloaders: gleiche Pixelgröße wie die Augen, links, senkrecht mittig */
+  .pre {
+    display: none;
+    position: absolute;
+    left: var(--m);
+    top: 50%;
+    width: calc(var(--eye-d) * 28 / 17);
+    height: auto;
+    transform: translateY(-50%);
+    fill: #fff;
+  }
+
+  /* Augen und Zähler erstmal raus, mobil und Desktop (Daniel, 13.11.2026) */
+  .eyes,
+  .pre {
+    display: none !important;
+  }
+
+  /* Preloader-Phasen am Desktop: Laden (count) → cases → text */
+  @media (min-width: 769px) {
+    :global(html[data-pre]:not([data-pre="text"])) .claim,
+    :global(html[data-pre]:not([data-pre="text"])) .services {
+      visibility: hidden;
+    }
+
+    :global(html[data-pre="count"]) .cases,
+    :global(html[data-pre="eyes"]) .cases,
+    :global(html[data-pre]:not([data-pre="text"])) .case-meta {
+      opacity: 0;
+    }
+
+    :global(html[data-pre]) .cases {
+      background: transparent;
+    }
+  }
+
+  /* bis die Maus sich bewegt, schauen die Pupillen von selbst hin und her */
+  .eyes:not(.is-tracking) .pupil {
+    animation: eyes-look 3.2s step-end infinite;
+  }
+
+  @keyframes eyes-look {
+    0% { transform: translateX(0); }
+    45% { transform: translateX(-2px); }
+    90% { transform: translateX(0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .eyes .pupil {
+      animation: none;
+    }
+  }
+
+  /* Titel links, Zähler rechts, fest 18 px über der Bildunterkante
+     (Abstände wie Figma 3398:14653, Position Daniel 09.11.2026) */
+  /* difference: Weiß invertiert das Bild darunter, Schrift bleibt auf
+     Hell und Dunkel lesbar (Daniel, 09.11.2026). Auf der Ebene selbst, weil
+     sie mit z-index eine eigene Gruppe bildet. */
+  .case-meta {
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 0;
+    color: #fff;
+    mix-blend-mode: difference;
+  }
+
+  .case-title,
+  .case-count {
+    position: absolute;
+    bottom: 18px;
+    margin: 0;
+    perspective: 200px;
+  }
+
+  .case-title {
+    left: var(--m);
+  }
+
+  /* Zähler als Zeitanzeige: Linie wächst bis zum nächsten Bild
+     (Linie wie Codrops LineHoverStyles #4). Zwei Ziffern in
+     Tabellenziffern = 2ch breit. */
+  .case-count {
+    right: 19px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Würfel: Vorder- und Folgeseite, Drehung per Script */
+  .cube {
+    position: relative;
+    display: block;
+    transform-style: preserve-3d;
+  }
+
+  .count-num {
+    width: 2ch;
+  }
+
+  .face {
+    display: block;
+    white-space: nowrap;
+    backface-visibility: hidden;
+  }
+
+  .face.is-next {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateX(-90deg);
+  }
+
+  .count-bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
+  }
+
+  /* Pink-Lage (Figma 3413:15635): Bild 1728 × 966 kopfüber, oben bündig,
+     Pink darüber mit „Aufhellen“; Name schwarz obenauf */
+  .hop {
+    position: fixed;
+    inset: 0;
+    z-index: 6;
+    overflow: hidden;
+    visibility: hidden;
+    background: #ea60ba;
+    pointer-events: none;
+  }
+
+  .hop.is-on,
+  .hop-black.is-on,
+  :global(html[data-from="about"]) .hop,
+  :global(html[data-from="about"]) .hop-black {
+    visibility: visible;
+  }
+
+  /* erste Lage des doppelten Übergangs: Schwarz, unter Pink */
+  .hop-black {
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+    visibility: hidden;
+    background: #000;
+    pointer-events: none;
+  }
+
+
+  .hop img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: 50% 100%;
+    transform: scaleY(-1);
+  }
+
+  .hop-pink {
+    position: absolute;
+    inset: 0;
+    background: #ea60ba;
+    mix-blend-mode: lighten;
+  }
+
+  .hop-name {
+    position: absolute;
+    top: 20px;
+    left: var(--m);
+    color: #000;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    .hop-name {
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+
+  /* Rückkehr von About: letzter Case steht sofort, ohne Fahrt */
+  :global(html[data-from="about"]) .home *,
+  :global(html[data-from="about"]) .home {
+    transition: none !important;
+  }
+
+  /* nur für den Sprung der Augen mobil */
+  .bridge {
+    transform-box: fill-box;
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+
+  @media (max-width: 768px) {
+    /* Mobil, Ebenen von oben nach unten (Figma 3405:15344, Daniel 09.11.2026):
+       Bühne (Hintergrund, Typo, Augen) über dem Case-Stapel, alles zusammen
+       über dem Kontakt. Maße bei 414 × 843: Augen 374 × 220 ab 88 px, am Start
+       ab 604 px. Casebild in voller Breite und ganzer Höhe unten bündig,
+       Kante darüber (Daniel, 09.11.2026). */
+    :global(html) {
+      touch-action: none;
+    }
+
+    .home {
+      --eye-w: calc(100vw - 2 * var(--m));
+      --eye-h: calc(var(--eye-w) * 10 / 17);
+      --eyes-top: 88px;
+      /* Bildcontainer 1080 × 1350 (4:5) in voller Breite, unten bündig; die
+         Kante liegt darüber und schneidet notfalls die Augen (Daniel, 09.11.2026) */
+      --case-h: min(100svh, 100vw * 1350 / 1080);
+      --case-top: calc(100svh - var(--case-h));
+      display: block;
+      padding: 0;
+    }
+
+    .name {
+      position: absolute;
+      top: 20px;
+      left: var(--m);
+      z-index: 3;
+    }
+
+    .clock {
+      display: none;
+    }
+
+    /* Bühne: Unterkante fährt bis über das Casebild hoch, der Inhalt bleibt
+       stehen (Figma 3405:15194: Typo verschwindet unter der Kante) */
+    .pin {
+      display: block;
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: var(--color-bg);
+      clip-path: inset(0 0 0 0);
+      transition: clip-path var(--lift);
+    }
+
+    .home.is-open .pin {
+      clip-path: inset(0 0 calc(100svh - var(--case-top)) 0);
+    }
+
+    /* Typo unten, fährt bei der ersten Interaktion von unten herein */
+    .intro {
+      display: block;
+      position: absolute;
+      bottom: 24px;
+      left: var(--m);
+      right: var(--m);
+      overflow: hidden;
+    }
+
+    .intro-in {
+      display: block;
+      transform: translateY(101%);
+      transition: transform 0.45s var(--ease);
+    }
+
+    .home.is-intro .intro-in {
+      transform: none;
+      transition-delay: 0.28s;
+    }
+
+    /* Figma 278 px in ABC Areal; Switzer läuft schmaler, 260 px hält den
+       Umbruch nach „for“ wie im Entwurf */
+    .claim {
+      max-width: 260px;
+    }
+
+    .services {
+      margin-top: 24px;
+    }
+
+    /* volle Breite, 44 px je Pixel bei 414 px; Sprung per Script */
+    .eyes {
+      top: var(--eyes-top);
+      bottom: auto;
+      width: var(--eye-w);
+      overflow: visible;
+    }
+
+    /* Cases: ganzer Screen unter der Bühne, jeder Case unten bündig in 4:5 */
+    .cases {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      margin: 0;
+      aspect-ratio: auto;
+      background: none;
+    }
+
+    .case {
+      inset: auto 0 0 0;
+      height: var(--case-h);
+      background: var(--color-bg);
+    }
+
+    .case.is-gone {
+      transform: translateY(-100svh);
+    }
+
+    .case img.tall {
+      display: block;
+    }
+
+    .case img.wide {
+      display: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .home,
+    .case {
+      transition: none;
+    }
+  }
+
+  @media (max-width: 768px) and (prefers-reduced-motion: reduce) {
+    .pin,
+    .intro-in {
+      transition: none;
+    }
+  }
+</style>

@@ -16,12 +16,18 @@ order: 2
 cover: "/images/cases/qruise/qruise-00.jpg"
 images:
   - "/images/cases/qruise/qruise-00.jpg"
-  - "/images/cases/qruise/qruise-01.jpg"
-  - "/images/cases/qruise/qruise-02.jpg"
   - "/images/cases/qruise/qruise-03.jpg"
-  - "/images/cases/qruise/qruise-04.jpg"
-  - "/images/cases/qruise/qruise-05.jpg"
-  - "/images/cases/qruise/qruise-06.jpg"
+  - "/images/cases/qruise/qruise-mockup-1-01-B.jpg"
+  - "/images/cases/qruise/qruise-mockup-1-03-P.jpg"
+  - "/images/cases/qruise/qruise-mockup-1-04-B.jpg"
+  - "/images/cases/qruise/qruise-mockup-1-05-A.jpg"
+  - "/images/cases/qruise/qruise-mockup-2-02-B.jpg"
+  - "/images/cases/qruise/qruise-mockup-2-04-A.jpg"
+  - "/images/cases/qruise/qruise-mockup-3-01-A.jpg"
+  - "/images/cases/qruise/qruise-mockup-3-02-A.jpg"
+  - "/images/cases/qruise/qruise-mockup-3-04-A.jpg"
+  - "/images/cases/qruise/qruise-mockup-3-05-B.jpg"
+  - "/images/cases/qruise/qruise-mockup-4-01-A.jpg"
 ---
 
 Qruise is a pioneering German science-tech startup using advanced machine learning to accelerate quantum research. The challenge: to translate highly complex scientific content into a brand that feels both intelligent and approachable, without losing the edge that sets Qruise apart in a fast-evolving field.

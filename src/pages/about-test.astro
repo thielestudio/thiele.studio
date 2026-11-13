@@ -1,0 +1,801 @@
+---
+// About, Testseite nach Daniels Entwurf „MacBook Pro 16' - 82“
+// (Portfolio-Danielthiele, node 3445:2170), Stand 13.11.2026.
+// Hintergrund: ein Feld aus Arbeiten, das beim Scrollen mitläuft und sich
+// endlos wiederholt (Vorbild generaladmission.house, Daniel 13.11.2026);
+// die Bilder blenden zufällig aus und ein und tauschen dabei die Plätze.
+// Vorerst mit Casebildern, Arbeiten und Logos der letzten 20 Jahre liefert
+// Daniel nach. Raster wie die Startseite: 28 Spalten, 20 px Rand und Abstand.
+// Seitenwechsel zur Startseite wie ein Papierstapel (Daniel, 13.11.2026).
+import fs from "node:fs";
+import path from "node:path";
+import { imageSize } from "image-size";
+import Layout from "../layouts/Layout.astro";
+
+// alle Bilder aus den Case-Ordnern; Streifen (mehrere Bilder untereinander
+// in einer Datei) bleiben draußen
+const root = path.join(process.cwd(), "public/images/cases");
+const field = fs
+  .readdirSync(root)
+  .filter((d) => fs.statSync(path.join(root, d)).isDirectory())
+  .sort()
+  .flatMap((d) =>
+    fs
+      .readdirSync(path.join(root, d))
+      .filter((f) => /\.(jpe?g|png|webp)$/i.test(f))
+      .sort()
+      .map((f) => {
+        const s = imageSize(fs.readFileSync(path.join(root, d, f)));
+        return { src: `/images/cases/${d}/${f}`, w: s.width ?? 1, h: s.height ?? 1 };
+      })
+      .filter((i) => i.h / i.w <= 3),
+  );
+---
+<Layout title="About - Daniel Thiele">
+  <!-- Kommt man von der Startseite, liegt die Seite zuerst unter dem Rand und
+       Pink obenauf, damit beim Laden nichts aufblitzt -->
+  <script is:inline>
+    // Schreibanimation: Text bis zum Script verborgen
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.dataset.tw = "";
+    if (new URLSearchParams(location.search).get("from") === "home") {
+      document.documentElement.dataset.from = "home";
+      history.scrollRestoration = "manual";
+    }
+  </script>
+
+
+  <!-- Pink-Lage aus dem Übergang (Figma 3413:15635), liegt unter der Seite -->
+  <div class="hop" aria-hidden="true">
+    <img src="/images/copybob-landscape.png" alt="" decoding="async" />
+    <span class="hop-pink"></span>
+    <span class="hop-name">Daniel Thiele<br />Strategy &amp; Design</span>
+  </div>
+
+  <!-- die ganze Seite als eine Lage, damit sie sich im Übergang über Pink schiebt -->
+  <div class="page" data-page>
+  <!-- Feld aus Arbeiten hinter allem, per Script verteilt -->
+  <div class="field" aria-hidden="true" data-field data-items={JSON.stringify(field)}></div>
+
+  <!-- Glasränder oben und unten: Kopie von Feld und Text hinter gebogenem Glas -->
+  <div class="edges" aria-hidden="true" data-edges></div>
+
+  <a href="/index-test-10" class="name">Daniel Thiele<br />Strategy &amp; Design</a>
+  <time class="clock" data-clock>12:34PM CET</time>
+
+  <main class="about">
+    <div class="text" data-text>
+      <p class="tag">(W)</p>
+      <p class="lead white indent tight">
+        I support founders through strategic advisory, scalable brand foundations and design systems that reduce noise, raise trust and elevate sustainable growth.
+      </p>
+      <p class="lead pink">Design that makes a difference in a way that makes sense.</p>
+
+      <p class="tag">(T)</p>
+      <div class="lead white">
+        <p class="indent">
+          In a world that tends toward the average and the convenient, the ability to decide what deserves to be heard, seen, and understood—and to define what makes a brand distinctive—sets tomorrow’s brands apart.
+        </p>
+        <p class="gap">Because trust is built through experience, not promises.</p>
+      </div>
+
+      <p class="tag">(F)</p>
+      <p class="lead pink">Form Follows Fuckups.</p>
+      <p class="lead white indent">
+        That's how I approach design. Question what everyone takes for granted, challenge the status quo, and don't be afraid to break things to make them better. I'm driven by curiosity and the belief that good questions lead to better ideas.
+      </p>
+
+      <p class="tag">¯\_(ツ)_/¯</p>
+      <p class="lead pink">Not convinced yet?</p>
+      <p class="lead white indent">
+        20 Years Experience in Brand &amp; Product for/with Audi, Demodern, Denkwerk, Dayy, New Balance, Red Bull, Nike, Federal Ministry of Research, Technology and Space, Sapient/Razorfish, Lemonaid, ChariTea, Twothirds, Qruise and some international awards and recognition.
+      </p>
+    </div>
+  </main>
+  </div>
+</Layout>
+
+<script>
+  import { edgeLens } from "../lib/glassLens";
+
+  // Uhrzeit im Studio (Bochum), Format wie im Entwurf: 12:34PM CET
+  const clock = document.querySelector<HTMLElement>("[data-clock]");
+  if (clock) {
+    const time = new Intl.DateTimeFormat("en-US", {
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+      timeZone: "Europe/Berlin",
+    });
+    const zone = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Berlin", timeZoneName: "short" });
+    const set = () => {
+      const now = new Date();
+      const tz = zone.formatToParts(now).find((p) => p.type === "timeZoneName")?.value ?? "";
+      clock.textContent = `${time.format(now).replace(/\s/g, "")} ${tz}`;
+      clock.setAttribute("datetime", now.toISOString());
+    };
+    set();
+    setInterval(set, 10_000);
+  }
+
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)");
+
+  // Schreibanimation (Daniel, 13.11.2026): jeder Textteil schreibt sich beim
+  // ersten Erscheinen Zeichen für Zeichen hin. Der nächste Teil setzt ein,
+  // bevor der vorige fertig ist. Die Kopien in den Glasrändern tragen dieselben
+  // Zeichen und Klassen und schreiben mit.
+  if (document.documentElement.dataset.tw !== undefined) {
+    const CHAR = 8; // ms je Zeichen (Daniel, 13.11.2026)
+    const OVERLAP = 380; // spätestens dann setzt der nächste Teil ein
+    const blocks = [...document.querySelectorAll<HTMLElement>("[data-text] > *")];
+    const len: number[] = [];
+    blocks.forEach((b, k) => {
+      b.dataset.type = String(k);
+      let i = 0;
+      const walk = (n: Node) =>
+        [...n.childNodes].forEach((c) => {
+          if (c.nodeType !== Node.TEXT_NODE) return walk(c);
+          const frag = document.createDocumentFragment();
+          (c.textContent || "").split(/(\s+)/).forEach((part) => {
+            if (!part) return;
+            if (/^\s+$/.test(part)) return frag.append(" ");
+            // Wort zusammenhalten, damit es nicht mitten im Wort umbricht
+            const w = document.createElement("span");
+            w.className = "tw-w";
+            [...part].forEach((ch) => {
+              const span = document.createElement("span");
+              span.className = "tw-c";
+              span.style.setProperty("--i", String(i++));
+              span.textContent = ch;
+              w.append(span);
+            });
+            frag.append(w);
+          });
+          c.replaceWith(frag);
+        });
+      walk(b);
+      len[k] = i;
+    });
+    // alle Fassungen eines Teils: Original und Kopien in den Glasrändern
+    const all = (k: number) => document.querySelectorAll<HTMLElement>(`[data-type="${k}"]`);
+    let next = 0;
+    const type = (k: number) => {
+      const at = Math.max(performance.now(), next);
+      const dur = len[k] * CHAR;
+      next = at + Math.min(dur, OVERLAP);
+      setTimeout(() => {
+        all(k).forEach((el) => el.classList.add("is-typing"));
+        setTimeout(() => all(k).forEach((el) => el.classList.replace("is-typing", "is-typed")), dur + 60);
+      }, at - performance.now());
+    };
+    // Teile, die ins Bild kommen, in Lesereihenfolge anstoßen
+    const wait = new Set(blocks.keys());
+    const check = () =>
+      [...wait].forEach((k) => {
+        const r = blocks[k].getBoundingClientRect();
+        if (r.top < innerHeight * 0.92 && r.bottom > 0) {
+          wait.delete(k);
+          type(k);
+        }
+      });
+    // von der Startseite erst schreiben, wenn die Seite oben angekommen ist
+    // dazu ein ruhiger Takt, falls kein Scrollereignis kommt
+    setTimeout(() => {
+      check();
+      addEventListener("scroll", check, { passive: true });
+      const tick = setInterval(() => (wait.size ? check() : clearInterval(tick)), 200);
+    }, document.documentElement.dataset.from === "home" ? 650 : 150);
+  }
+
+  // Feld aus Arbeiten: eine Kachel mit einem Platz je Bild (je Zelle höchstens
+  // eins, drei Größen, versetzt), zweimal untereinander. Beim Scrollen läuft
+  // das Feld mit, leicht nachgezogen, und springt am Ende einer Kachel
+  // unsichtbar auf den Anfang zurück. Laufend blendet ein Bild im Blick aus
+  // und kommt mit dem Bild eines anderen Platzes wieder, neu bemessen.
+  const fieldEl = document.querySelector<HTMLElement>("[data-field]");
+  if (fieldEl) {
+    type Item = { src: string; w: number; h: number };
+    type Slot = { c: number; r: number; item: number; x: number; y: number; w: number; h: number };
+    // Bilder vorerst aus (Daniel, 13.11.2026: „sieht so nicht aus, wie ich
+    // mir das vorgestellt habe“); auf true stellen, dann läuft das Feld wieder
+    const SHOW_FIELD = false;
+    const items: Item[] = SHOW_FIELD ? JSON.parse(fieldEl.dataset.items || "[]") : [];
+    // feste Zufallsfolge für den Aufbau, damit das Feld bei jedem Aufruf gleich liegt
+    let seed = 7;
+    const rnd = () => ((seed = (seed * 16807) % 2147483647) - 1) / 2147483646;
+
+    let tileH = 0;
+    let cw = 0;
+    let x0 = 0;
+    let ch = 0;
+    let sizes: number[] = [];
+    let slots: Slot[] = [];
+    let els: HTMLImageElement[][] = [];
+    let tiles: HTMLElement[] = [];
+    let bands: HTMLElement[] = [];
+    let ghosts: HTMLElement[] = [];
+    const edgesEl = document.querySelector<HTMLElement>("[data-edges]");
+    const mainEl = document.querySelector<HTMLElement>("main.about");
+    // untere Kopie so verschieben, dass sie genau den unteren Rand zeigt
+    // halb so hoch wie zuerst (Daniel, 13.11.2026)
+    const BAND = 50;
+    const fitBands = () => {
+      const low = bands[1]?.querySelector<HTMLElement>(".layer");
+      if (low) low.style.top = `${BAND - fieldEl.clientHeight}px`;
+    };
+    // Textkopien stehen dort, wo der echte Text gerade durch den Streifen läuft
+    const placeGhosts = () => {
+      const h = fieldEl.clientHeight;
+      // per top statt transform: transform wäre eine eigene Ebene, dann rechnet
+      // difference nicht mehr mit Grund und Feld des Streifens
+      ghosts.forEach((g, i) => (g.style.top = `${-scrollY - (i ? h - BAND : 0)}px`));
+    };
+
+    // Größe und Lage eines Bildes in seiner Zelle, zufällig
+    const fit = (s: Slot, random: () => number) => {
+      const it = items[s.item];
+      let w = innerWidth * sizes[Math.floor(random() * sizes.length)];
+      w = Math.min(w, cw);
+      let h = (w * it.h) / it.w;
+      if (h > ch * 0.92) {
+        h = ch * 0.92;
+        w = (h * it.w) / it.h;
+      }
+      s.w = w;
+      s.h = h;
+      s.x = x0 + s.c * cw + random() * Math.max(cw - w, 0);
+      s.y = s.r * ch + random() * Math.max(ch - h, 0);
+    };
+    const paint = (k: number) => {
+      const s = slots[k];
+      els[k].forEach((img) => {
+        img.src = items[s.item].src;
+        img.style.cssText = `left:${s.x.toFixed(1)}px;top:${s.y.toFixed(1)}px;width:${s.w.toFixed(1)}px;height:${s.h.toFixed(1)}px`;
+      });
+    };
+
+    const build = () => {
+      const vw = innerWidth;
+      const vh = innerHeight;
+      // Desktop: nur die Freifläche links vom Text, mit Rand (Daniel,
+      // 13.11.2026); mobil liegt der Text über voller Breite, dort bleibt das Feld ganz
+      const wide = vw > 768;
+      const text = document.querySelector<HTMLElement>(".about");
+      const edge = wide && text ? text.getBoundingClientRect().left : vw;
+      x0 = wide ? 20 : 0;
+      // Bilder links erst ab 478 px (früherer Textanfang), auch seit der Text
+      // bei 68 px beginnt
+      start = wide ? 478 : 0;
+      const areaW = wide ? edge - 40 : vw;
+      const cols = wide ? 2 : 3;
+      cw = areaW / cols;
+      // Dichte wie im ersten Stand, dafür alle Bilder untereinander: das Feld
+      // reicht viele Bildschirme nach unten, bevor es sich wiederholt
+      // (Daniel, 13.11.2026). Gut die Hälfte der Zellen ist belegt.
+      ch = cw;
+      sizes = wide ? [0.07, 0.11, 0.15] : [0.17, 0.24, 0.3];
+      const rows = Math.max(Math.ceil(items.length / (cols * 0.54)), Math.ceil((vh * 2) / ch));
+      tileH = rows * ch;
+      seed = 7;
+      const cells = [...Array(cols * rows).keys()].sort(() => rnd() - 0.5).slice(0, items.length);
+      slots = cells.map((cell, k) => {
+        const s = { c: cell % cols, r: Math.floor(cell / cols), item: k, x: 0, y: 0, w: 0, h: 0 };
+        fit(s, rnd);
+        return s;
+      });
+      const tile = `<div class="tile" style="height:${tileH}px">${slots
+        .map(() => `<img alt="" loading="lazy" decoding="async">`)
+        .join("")}</div>`;
+      const pair = tile + tile;
+      // Feld einmal im Hintergrund, dazu oben und unten je ein Glasrand über
+      // dem Text mit Kopie von Feld und Text (Daniel, 13.11.2026: über die
+      // ganze Breite, Glas wie raggededge.com)
+      fieldEl.innerHTML = `<div class="layer">${pair}</div>`;
+      if (edgesEl) {
+        edgesEl.innerHTML = `<div class="band top"><div class="layer">${pair}</div></div><div class="band bottom"><div class="layer">${pair}</div></div>`;
+        bands = [...edgesEl.querySelectorAll<HTMLElement>(".band")];
+        ghosts = bands.map((b) => {
+          const g = document.createElement("div");
+          g.className = "ghost";
+          if (mainEl) g.append(mainEl.cloneNode(true));
+          b.append(g);
+          return g;
+        });
+      }
+      fitBands();
+      placeGhosts();
+      lens();
+      tiles = [...document.querySelectorAll<HTMLElement>("[data-field] .tile, [data-edges] .tile")];
+      els = slots.map((_, k) => tiles.map((t) => t.children[k] as HTMLImageElement));
+      slots.forEach((_, k) => paint(k));
+      // zum Start blendet jedes Bild zu einem eigenen Zeitpunkt ein
+      els.forEach((pair) => {
+        const t = Math.round(Math.random() * 1200);
+        setTimeout(() => pair.forEach((img) => img.classList.add("is-on")), 30 + t);
+      });
+      place(now);
+    };
+
+    let now = scrollY;
+    // Feld läuft dreimal so schnell wie der Text, damit beim Scrollen mehr
+    // von der Bildspalte vorbeizieht (Daniel, 13.11.2026)
+    const SPEED = 3;
+    // am Desktop beginnt das Feld weiter unten (Daniel, 13.11.2026): oben
+    // bleibt frei, bis man scrollt; danach endlos
+    let start = 0;
+    const offset = (y: number) => {
+      const raw = y * SPEED - start;
+      return raw < 0 ? raw : ((raw % tileH) + tileH) % tileH;
+    };
+    const place = (y: number) => {
+      const off = offset(y);
+      tiles.forEach((t, i) => (t.style.transform = `translate3d(0, ${(i % 2) * tileH - off}px, 0)`));
+    };
+    // Glasränder: Karte je Breite und Höhe neu, Textkopie läuft im selben
+    // Bild wie das Scrollen von Lenis mit
+    const lens = () => {
+      if (reduce.matches) return;
+      bands.forEach((b, i) =>
+        (b.style.filter = edgeLens(i ? "lens-bottom" : "lens-top", innerWidth, BAND, i ? "bottom" : "top", innerHeight)),
+      );
+    };
+    const hook = (tries = 0) => {
+      const l = (window as unknown as { lenis?: { on: (e: string, f: () => void) => void } }).lenis;
+      if (l) l.on("scroll", placeGhosts);
+      else if (tries < 40) setTimeout(() => hook(tries + 1), 50);
+    };
+    hook();
+    let raf = 0;
+    const loop = () => {
+      const target = scrollY;
+      now += (target - now) * (reduce.matches ? 1 : 0.12);
+      if (Math.abs(target - now) < 0.3) now = target;
+      place(now);
+      raf = now === target ? 0 : requestAnimationFrame(loop);
+    };
+    addEventListener("scroll", () => {
+      placeGhosts();
+      if (!raf) raf = requestAnimationFrame(loop);
+    }, { passive: true });
+
+    // liegt ein Platz gerade im Blick (in einer der beiden Kacheln)?
+    const inView = (s: Slot) => {
+      const off = offset(now);
+      return [0, tileH].some((t) => {
+        const y = s.y + t - off;
+        return y + s.h > 0 && y < innerHeight;
+      });
+    };
+    const busy = new Set<number>();
+    const FADE = 380;
+    const shuffle = () => {
+      const seen = slots.map((s, k) => k).filter((k) => !busy.has(k) && inView(slots[k]));
+      if (!seen.length) return;
+      const a = seen[Math.floor(Math.random() * seen.length)];
+      // Tauschpartner bevorzugt außer Sicht, damit dort nichts springt
+      const away = slots.map((s, k) => k).filter((k) => k !== a && !busy.has(k) && !inView(slots[k]));
+      const pool = away.length ? away : slots.map((s, k) => k).filter((k) => k !== a && !busy.has(k));
+      const b = pool[Math.floor(Math.random() * pool.length)];
+      if (b === undefined) return;
+      busy.add(a);
+      els[a].forEach((img) => img.classList.remove("is-on"));
+      // ausgeblendet bleiben zwischen 0,2 und 1,2 s, dann mit dem Bild von b zurück
+      setTimeout(() => {
+        [slots[a].item, slots[b].item] = [slots[b].item, slots[a].item];
+        fit(slots[a], Math.random);
+        fit(slots[b], Math.random);
+        paint(a);
+        paint(b);
+        els[a].forEach((img) => img.classList.add("is-on"));
+        setTimeout(() => busy.delete(a), FADE);
+      }, FADE + 200 + Math.random() * 1000);
+    };
+    // Takt passend zur Dichte: etwa jedes vierte Bild im Blick ist gerade weg
+    if (!reduce.matches) setInterval(shuffle, 550);
+
+    let wide = innerWidth;
+    addEventListener("resize", () => {
+      // iOS meldet resize auch beim Ein- und Ausfahren der Browserleiste:
+      // nur bei neuer Breite neu verteilen
+      fitBands();
+      placeGhosts();
+      if (innerWidth === wide) {
+        lens();
+        return;
+      }
+      wide = innerWidth;
+      busy.clear();
+      build();
+    });
+    build();
+  }
+
+  // Übergang von und zur Startseite wie ein Papierstapel (Daniel,
+  // 13.11.2026): Startseite, Schwarz, Pink, About. Hin schiebt sich die Seite
+  // von unten über Pink, zurück zieht sie nach unten weg, dann übernimmt die
+  // Startseite.
+  {
+    const SWITCH = 550;
+    const EASE = "cubic-bezier(0.2, 0, 0, 1)";
+    const root = document.documentElement;
+    const page = document.querySelector<HTMLElement>("[data-page]")!;
+    const ms = reduce.matches ? 1 : SWITCH;
+
+    if (root.dataset.from === "home") {
+      scrollTo(0, 0);
+      history.replaceState(null, "", location.pathname);
+      const run = page.animate([{ transform: "translateY(100vh)" }, { transform: "translateY(0)" }], {
+        duration: ms,
+        easing: EASE,
+        fill: "both",
+      });
+      // Zeitgeber statt Animationsende, wie auf der Startseite
+      setTimeout(() => {
+        delete root.dataset.from;
+        run.cancel();
+      }, ms + 30);
+    }
+
+    let leaving = false;
+    const toHome = () => {
+      if (leaving) return;
+      leaving = true;
+      root.dataset.from = "leave";
+      page.animate([{ transform: "translateY(0)" }, { transform: "translateY(100vh)" }], {
+        duration: ms,
+        easing: EASE,
+        fill: "forwards",
+      });
+      setTimeout(() => location.assign("/index-test-10?from=about"), ms + 30);
+    };
+    // Browser-Zurück aus dem Cache: Seite wieder hinstellen
+    addEventListener("pageshow", (e) => {
+      if (!e.persisted || !leaving) return;
+      page.getAnimations().forEach((a) => a.cancel());
+      page.style.filter = "";
+      delete root.dataset.from;
+      leaving = false;
+    });
+    let wheelAt = 0;
+    let wheelAbs = 0;
+    let topSince = 0;
+    addEventListener("scroll", () => {
+      topSince = scrollY <= 0 ? topSince || Date.now() : 0;
+    }, { passive: true });
+    addEventListener("wheel", (e) => {
+      const t = Date.now();
+      const abs = Math.abs(e.deltaY);
+      const fresh = t - wheelAt > 120 || abs > wheelAbs * 1.4 + 2;
+      wheelAt = t;
+      wheelAbs = abs;
+      // erst eine neue Geste, nachdem die Seite oben angekommen ist
+      if (fresh && e.deltaY < -4 && scrollY <= 0 && Date.now() - topSince > 250) toHome();
+    }, { passive: true });
+    addEventListener("keydown", (e) => {
+      if ((e.key === "ArrowUp" || e.key === "PageUp") && scrollY <= 0) toHome();
+    });
+    let sy = 0;
+    addEventListener("touchstart", (e) => (sy = scrollY <= 0 ? e.touches[0].clientY : -1), { passive: true });
+    addEventListener("touchend", (e) => {
+      if (sy >= 0 && scrollY <= 0 && e.changedTouches[0].clientY - sy > 80) toHome();
+    }, { passive: true });
+    topSince = scrollY <= 0 ? Date.now() : 0;
+
+    // Maus wie auf der Startseite (Daniel, 13.11.2026): der Weg der Maus
+    // treibt die Seite, hier nur hoch und runter. Maus nach unten = Seite
+    // nach unten; ein Mausweg über 80 % der Bildschirmhöhe reicht für die
+    // ganze Seite.
+    type L = { targetScroll: number; limit: number; scrollTo: (y: number, o?: { lerp?: number; programmatic?: boolean }) => void };
+    const fine = matchMedia("(hover: hover) and (pointer: fine)");
+    let my = -1;
+    addEventListener("pointermove", (e) => {
+      if (e.pointerType !== "mouse" || !fine.matches || reduce.matches || leaving) return;
+      const l = (window as unknown as { lenis?: L }).lenis;
+      if (my >= 0 && l && e.clientY !== my) {
+        const gain = Math.max(1, l.limit / (innerHeight * 0.8));
+        const y = Math.min(l.limit, Math.max(0, l.targetScroll + (e.clientY - my) * gain));
+        // wie ein Radschritt, damit Rad und Maus dasselbe Ziel fortschreiben
+        l.scrollTo(y, { lerp: 0.1, programmatic: false });
+      }
+      my = e.clientY;
+    }, { passive: true });
+    // Maus verlässt das Fenster: beim Wiederkommen nicht springen
+    document.documentElement.addEventListener("mouseleave", () => (my = -1));
+  }
+</script>
+
+<style>
+  :global(html:root) {
+    --m: 20px; /* Rand und Spaltenabstand */
+    --col: calc((100vw - 2 * var(--m) - 27 * var(--m)) / 28);
+    --pink: #ea60ba;
+  }
+
+  :global(html:root body) {
+    background: #e2e1dd;
+  }
+
+  /* Kopf- und Fußzeile aus dem Layout weichen dem Entwurf */
+  :global(html:root .site-header),
+  :global(html:root .site-footer) {
+    display: none;
+  }
+
+  /* Feld liegt fest hinter allem und bewegt sich nur per Script */
+  .field {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+
+  /* Die Seite ist eine Lage mit eigenem Grund; darunter liegt Pink für den
+     Übergang. Die Seite ist eine eigene Ebene, difference rechnet darin mit
+     Grund und Feld */
+  .page {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    background: #e2e1dd;
+  }
+
+  /* kommt man von der Startseite, steht die Seite bis zum Script unter dem Rand */
+  :global(html[data-from="home"]) .page {
+    transform: translateY(100vh);
+  }
+
+  /* Pink-Lage wie auf der Startseite, nur im Übergang zu sehen */
+  .hop {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    visibility: hidden;
+    background: var(--pink);
+    pointer-events: none;
+  }
+
+  :global(html[data-from]) .hop {
+    visibility: visible;
+  }
+
+  .hop img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: 50% 100%;
+    transform: scaleY(-1);
+  }
+
+  .hop-pink {
+    position: absolute;
+    inset: 0;
+    background: var(--pink);
+    mix-blend-mode: lighten;
+  }
+
+  .hop-name {
+    position: absolute;
+    top: 20px;
+    left: var(--m);
+    color: #000;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  /* Glasränder: oben und unten je 50 px über dem Text, mit eigenem
+     Grund, Kopie des Feldes und Kopie des Textes; Filter per Script */
+  .edges {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .edges :global(.band) {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background: #e2e1dd;
+  }
+
+  .edges :global(.band.top) {
+    top: 0;
+  }
+
+  .edges :global(.band.bottom) {
+    bottom: 0;
+  }
+
+  .edges :global(.layer) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .edges :global(.ghost) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .field :global(.layer) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .field :global(.tile),
+  .edges :global(.tile) {
+    position: absolute;
+    inset: 0 0 auto 0;
+    will-change: transform;
+  }
+
+  .field :global(img),
+  .edges :global(img) {
+    position: absolute;
+    max-width: none;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.38s linear;
+  }
+
+  .field :global(img.is-on),
+  .edges :global(img.is-on) {
+    opacity: 1;
+  }
+
+  /* Kopfzeile bleibt stehen; Größe wie auf der Startseite (18 px).
+     Ohne eigenen z-index, damit difference mit dem Feld darunter rechnet */
+  .name,
+  .clock {
+    position: fixed;
+    top: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  /* über den Glasrändern */
+  .name,
+  .clock {
+    z-index: 2;
+  }
+
+  .name {
+    left: var(--m);
+    color: #000;
+  }
+
+  /* difference: Weiß kehrt um, was darunter liegt, und bleibt auf Hell und
+     Dunkel lesbar (Daniel, 13.11.2026, wie Titel und Zähler der Startseite) */
+  .clock {
+    right: var(--m);
+    color: #fff;
+    mix-blend-mode: difference;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  /* Inhalt ab Spalte 10 bis 20 px vor dem rechten Rand (Figma: 563 px bei 1710).
+     Kein z-index: der Text soll mit dem Feld verrechnet werden */
+  .about {
+    position: relative;
+    margin-left: calc(var(--m) + 9 * (var(--col) + var(--m)));
+    margin-right: var(--m);
+    padding-top: 68px;
+    padding-bottom: 200px;
+  }
+
+  /* Text ab 68 px von oben (Figma 3446:3057), 27 px Abstand zwischen den Teilen */
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+  }
+
+  .tag {
+    font-family: "ABC Areal Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #000;
+  }
+
+  /* 44 px bei 1710 px Breite, darunter mitlaufend */
+  .lead {
+    font-size: min(44px, calc(44 / 1710 * 100vw));
+    line-height: 1.09;
+    font-weight: 600;
+  }
+
+  .white {
+    color: #fff;
+    mix-blend-mode: difference;
+  }
+
+  .lead.tight {
+    line-height: calc(43 / 44);
+    max-width: calc(1061 / 1127 * 100%);
+  }
+
+  /* Pink bleibt Pink, auf dem hellen Grund ohnehin lesbar */
+  .pink {
+    color: var(--pink);
+  }
+
+  /* Einzug der ersten Zeile, zwei Spalten */
+  .indent {
+    text-indent: calc(2 * (var(--col) + var(--m)));
+  }
+
+  .gap {
+    margin-top: 1.09em;
+  }
+
+  /* Schreibanimation: Zeichen erscheinen nacheinander, der Platz steht schon */
+  :global(html[data-tw]) .text > * {
+    visibility: hidden;
+  }
+
+  :global(html[data-tw]) .text > :global(.is-typing),
+  :global(html[data-tw]) .text > :global(.is-typed) {
+    visibility: visible;
+  }
+
+  :global(.tw-w) {
+    white-space: nowrap;
+  }
+
+  :global(html[data-tw] .tw-c) {
+    opacity: 0;
+  }
+
+  :global(.is-typing .tw-c) {
+    animation: tw-in 1ms linear both;
+    animation-delay: calc(var(--i) * 8ms);
+  }
+
+  :global(html[data-tw] .is-typed .tw-c) {
+    opacity: 1;
+  }
+
+  @keyframes tw-in {
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .name {
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+    .about {
+      margin-left: var(--m);
+      padding-top: 88px;
+    }
+
+    .lead {
+      font-size: 26px;
+    }
+
+    .indent {
+      text-indent: 2em;
+    }
+  }
+</style>

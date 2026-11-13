@@ -1,0 +1,392 @@
+---
+// Testseite 8: zweite Richtung neben der Pixel-Route (Testseite 7).
+// Maximal reduziert, Typografie, ein technisches Merkmal: die Heatmap im
+// Hintergrund, die aus Mausbewegung, Verweilen und Klicks entsteht.
+// Aufbau und Text nach Daniels Figma-Entwurf „MacBook Pro 16' - 5“
+// (Portfolio-Danielthiele, node 3352:68), Stand 04.11.2026.
+// Raster: 28 Spalten, 20 px Rand und Spaltenabstand (bei 1728 px: 41 px Spalte).
+// Graue Fläche = Platz fürs Showreel. Das Bild unten hängt fest hinter der Seite,
+// die Seite zieht sich beim Scrollen wie ein Vorhang davon weg (Daniel, 04.11.2026).
+import Layout from "../layouts/Layout.astro";
+import Heatmap from "../components/Heatmap.astro";
+
+const services = [
+  "Visual Identity & Design Systems",
+  "Digital Product & Service Design",
+  "Marketing Advisory & Fractional Leadership",
+];
+
+const clients =
+  "Audi, Demodern, Dayy, New Balance, Red Bull, Nike, Bundesministerium für Bildung und Forschung, Lemonaid, ChariTea, Twothirds, Qruise...";
+
+// Pixelaugen oben links: 2-px-Pixel, Koordinaten aus Figma (Ursprung 24/21)
+const lids: [number, number][] = [
+  [0, 2], [0, 4], [0, 6], [2, 0], [4, 0], [2, 8], [4, 8], [6, 2], [6, 4], [6, 6],
+  [9, 2], [9, 4], [9, 6], [11, 0], [13, 0], [11, 8], [13, 8], [15, 2], [15, 4], [15, 6],
+];
+const pupils: [number, number][] = [[4, 4], [13, 4]];
+---
+<Layout>
+  <section class="intro">
+    <a href="/" class="brand">
+      <svg class="eyes" viewBox="0 0 17 10" width="17" height="10" shape-rendering="crispEdges" aria-hidden="true">
+        {lids.map(([x, y]) => <rect x={x} y={y} width="2" height="2" />)}
+        <g class="eyes__pupils">
+          {pupils.map(([x, y]) => <rect x={x} y={y} width="2" height="2" />)}
+        </g>
+      </svg>
+      <span class="name">Daniel Thiele<br />Strategy &amp; Design</span>
+    </a>
+
+    <h1 class="statement">
+      Helping Brands decide what deserves to be heard, seen and understood to
+      define what’s unmistakable.<br />
+      Because trust is built in the experience, not the promise.
+    </h1>
+
+    <a href="#contact" class="contact">CONTACT</a>
+    <div class="meta">
+      <a href="#" class="lab">(LAB)</a>
+      <time class="clock" data-clock>12:34PM</time>
+    </div>
+
+    <p class="fine label-what">What</p>
+    <div class="fine services">
+      <ul>
+        {services.map((s) => <li>{s}</li>)}
+      </ul>
+      <a href="#" class="more">(MORE)</a>
+    </div>
+    <p class="fine label-for">For</p>
+    <p class="fine clients">{clients}</p>
+
+    <div class="reel" aria-label="Showreel"></div>
+    <Heatmap />
+  </section>
+
+  <section class="poster" id="contact">
+    <img src="/images/copybob-landscape.png" alt="" width="1344" height="752" />
+    <h2 class="big poster-title" aria-label="Form follows fuckups">
+      <span aria-hidden="true">FORM FOLLOWS</span>{" "}
+      <span class="roll" data-roll aria-hidden="true">
+        <span>FUNCTION</span>
+        <span>FEELINGS</span>
+        <span>FUCKUPS</span>
+      </span>
+    </h2>
+    <div class="big poster-foot">
+      <a href="mailto:hi@thiele.studio">HI(AT)THIELE.STUDIO</a>
+      <span class="social">
+        <a href="#" aria-label="Instagram">IN</a>
+        <a href="https://www.linkedin.com/in/danielthi3le/" target="_blank" rel="noopener" aria-label="LinkedIn">LI</a>
+      </span>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  // Uhrzeit im Studio (Bochum), Format wie im Entwurf: 12:34PM
+  const clock = document.querySelector<HTMLElement>("[data-clock]");
+  if (clock) {
+    const fmt = new Intl.DateTimeFormat("en-US", {
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+      timeZone: "Europe/Berlin",
+    });
+    const set = () => {
+      const now = new Date();
+      clock.textContent = fmt.format(now).replace(/\s/g, "");
+      clock.setAttribute("datetime", now.toISOString());
+    };
+    set();
+    setInterval(set, 10_000);
+  }
+
+  // „FORM FOLLOWS …“: das letzte Wort rollt durch, während der Vorhang das Bild
+  // freigibt; ganz frei steht FUCKUPS. Zurückscrollen rollt zurück.
+  const roll = document.querySelector<HTMLElement>("[data-roll]");
+  const intro = document.querySelector<HTMLElement>(".intro");
+  const poster = document.querySelector<HTMLElement>(".poster");
+  if (roll && intro && poster) {
+    const words = [...roll.children] as HTMLElement[];
+    let current = -1;
+    const sync = () => {
+      const open = innerHeight - intro.getBoundingClientRect().bottom;
+      const p = Math.min(Math.max(open / poster.offsetHeight, 0), 1);
+      const i = Math.min(words.length - 1, Math.floor(p * words.length));
+      if (i === current) return;
+      current = i;
+      words.forEach((w, k) => {
+        w.classList.toggle("is-on", k === i);
+        w.classList.toggle("is-past", k < i);
+      });
+    };
+    addEventListener("scroll", sync, { passive: true });
+    addEventListener("resize", sync);
+    sync();
+  }
+</script>
+
+<style>
+  :global(html:root) {
+    --color-bg: #f7f7f7;
+    --m: 20px; /* Rand und Spaltenabstand */
+  }
+
+  /* Kopf- und Fußzeile aus dem Layout weichen dem Entwurf */
+  :global(html:root .site-header),
+  :global(html:root .site-footer) {
+    display: none;
+  }
+
+  :global(main) {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Vorhang: deckt das Bild ab, solange er davor liegt. Die Heatmap sitzt darin
+     zwischen Hintergrund und Text; clip-path hält sie auf dem Vorhang. */
+  .intro {
+    position: relative;
+    z-index: 1;
+    background: var(--color-bg);
+    clip-path: inset(0);
+    display: grid;
+    grid-template-columns: repeat(28, minmax(0, 1fr));
+    column-gap: var(--m);
+    align-items: start;
+    padding: 11px var(--m) 0;
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 600;
+  }
+
+  h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    letter-spacing: 0;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .brand {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+
+  .eyes {
+    grid-column: 1;
+    margin: 10px 0 0 4px;
+    fill: #de4b97;
+  }
+
+  /* Pupillen schauen in ganzen Pixeln nach rechts und links */
+  .eyes__pupils {
+    animation: eyes-look 3.2s step-end infinite;
+  }
+
+  @keyframes eyes-look {
+    0% { transform: translateX(0); }
+    45% { transform: translateX(-2px); }
+    90% { transform: translateX(0); }
+  }
+
+  .name {
+    grid-column: 2 / -1;
+  }
+
+  .statement {
+    grid-column: 8 / span 11;
+    grid-row: 1;
+    max-width: 621px;
+    /* Einzug um eine Spalte, wie im Entwurf */
+    text-indent: calc((100vw - 29 * var(--m)) / 28 + var(--m));
+  }
+
+  .contact {
+    grid-column: 21 / span 3;
+    grid-row: 1;
+  }
+
+  .meta {
+    grid-column: 24 / -1;
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--m);
+  }
+
+  .lab {
+    color: #000dff;
+  }
+
+  .clock {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fine {
+    grid-row: 2;
+    margin-top: 64px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .label-what { grid-column: 1; }
+  .services { grid-column: 2 / span 5; }
+  .label-for { grid-column: 7; }
+  .clients { grid-column: 8 / span 8; }
+
+  .more {
+    display: inline-block;
+    margin-top: 18px;
+    color: #fe076a;
+  }
+
+  .reel {
+    grid-column: 14 / -1;
+    grid-row: 3;
+    margin: 195px calc(-1 * var(--m)) 0 0;
+    aspect-ratio: 16 / 9;
+    background: #b8b8b8;
+  }
+
+  /* klebt unten im Fenster, also steht still, während der Vorhang hochfährt;
+     auf niedrigen Fenstern höchstens fensterhoch, damit Kopf- und Fußzeile drin sind */
+  .poster {
+    position: sticky;
+    bottom: 0;
+    z-index: 0;
+    height: min(calc(100vw * 966 / 1728), 100svh);
+    color: #fff;
+  }
+
+  .poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* wächst mit der Satzbreite (1728 − Ränder = 1688 px → 130 px; Entwurf 132 px,
+     2 px kleiner, damit FORM FOLLOWS FUNCTION in die Zeile passt) */
+  .big {
+    position: absolute;
+    left: var(--m);
+    right: var(--m);
+    font-size: calc((100vw - 2 * var(--m)) * 0.0769);
+    line-height: 1.3;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .poster-title {
+    top: -1.16vw;
+  }
+
+  .poster-foot {
+    bottom: 1.3vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social {
+    display: flex;
+    gap: 0.3em;
+  }
+
+  .social a {
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .roll {
+    display: inline-grid;
+    overflow: hidden;
+    vertical-align: bottom;
+  }
+
+  .roll > span {
+    grid-area: 1 / 1;
+    transform: translateY(110%);
+    transition: transform 0.6s cubic-bezier(0.625, 0.05, 0, 1);
+  }
+
+  .roll > span.is-past {
+    transform: translateY(-110%);
+  }
+
+  .roll > span.is-on {
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .eyes__pupils {
+      animation: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .intro {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      row-gap: 29px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .brand {
+      grid-column: 1 / span 3;
+      display: flex;
+      gap: 12px;
+    }
+
+    .eyes {
+      margin: 7px 0 0;
+    }
+
+    .meta {
+      grid-column: 4;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0;
+    }
+
+    .contact {
+      grid-column: 1 / -1;
+      grid-row: 3;
+    }
+
+    .statement {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      text-indent: 0;
+    }
+
+    .fine {
+      margin-top: 0;
+      grid-row: auto;
+    }
+
+    .label-what,
+    .label-for {
+      grid-column: 1;
+    }
+
+    .services,
+    .clients {
+      grid-column: 2 / -1;
+    }
+
+    .reel {
+      grid-column: 1 / -1;
+      grid-row: auto;
+      margin: 29px calc(-1 * var(--m)) 0;
+    }
+  }
+</style>

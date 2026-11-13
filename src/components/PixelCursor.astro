@@ -1,0 +1,292 @@
+---
+// Ein einzelner Pixel folgt der Maus über die ganze Seite. Er gleitet mit
+// Verzögerung auf den Linien eines unsichtbaren Rasters zum Zeiger (erst in der
+// längeren Richtung, dann um die Ecke), schnell los und langsam an, mit einer
+// 2 px feinen Lichtspur. Kommt er nach einem längeren Weg am Zeiger an, gibt es
+// einen kleinen Blitz aus Pixeln. Farbe: --color-accent (Pink).
+// Pong ist seit 20.10.2026 raus (Daniel). Stand 24.10.2026, Test auf Testseite 7.
+---
+
+<div class="pixel-cursor" data-pixel-cursor aria-hidden="true">
+  <canvas></canvas>
+</div>
+
+<script>
+  const S = 12; // Rasterabstand in CSS-Pixeln; der Pixel läuft auf jeder zweiten Zelle
+  const LAG_MS = 300; // Verzögerung, bevor der Pixel der Maus folgt
+  const TRAIL_MS = 240; // so lange leuchtet die Spur nach
+  const MAX_TRAIL = 32;
+  const FLASH_MS = 320; // Dauer des Blitzes beim Ankommen
+  const FLASH_MIN = 4 * S; // erst ab diesem Weg (px) blitzt es, sonst flackert es bei kleinen Bewegungen
+
+  const ease = (u: number) => 1 - Math.pow(1 - u, 3); // schnell los, langsam an
+
+  const VERT = `
+    attribute vec2 aPos;
+    void main() { gl_Position = vec4(aPos, 0.0, 1.0); }
+  `;
+  // Pixel, Spur und Blitz
+  const FRAG = `
+    precision highp float;
+    uniform float uS;
+    uniform vec2 uRes;
+    uniform vec3 uColor;
+    uniform vec4 uHead;      // x, y, halbe Kantenlänge, an (1) / aus (0)
+    uniform vec3 uTrail[32]; // x, y, Stärke (< 0 = leer), älteste zuerst
+    uniform float uTrailW;   // halbe Linienbreite
+    uniform vec4 uFlash;     // x, y, Verlauf 0 … 1, an (1) / aus (0)
+    float box(vec2 d, float hs) {
+      return 1.0 - smoothstep(hs - 0.5, hs + 0.5, max(d.x, d.y));
+    }
+    void main() {
+      vec2 p = vec2(gl_FragCoord.x, uRes.y - gl_FragCoord.y);
+      float a = 0.0;
+      if (uHead.w > 0.5) {
+        float trail = 0.0;
+        for (int i = 0; i < 31; i++) {
+          vec3 ta = uTrail[i];
+          vec3 tb = uTrail[i + 1];
+          if (ta.z < 0.0 || tb.z < 0.0) continue;
+          vec2 pa = p - ta.xy, ba = tb.xy - ta.xy;
+          float h = clamp(dot(pa, ba) / max(dot(ba, ba), 0.0001), 0.0, 1.0);
+          float dl = length(pa - ba * h);
+          float line = 1.0 - smoothstep(uTrailW - 0.5, uTrailW + 0.5, dl);
+          trail = max(trail, line * mix(ta.z, tb.z, h));
+        }
+        a = max(a, trail * 0.55);
+        a = max(a, box(abs(p - uHead.xy), uHead.z) * 0.95);
+      }
+      // Blitz: Pixel fliegen in acht Richtungen auseinander und verlöschen,
+      // der Pixel selbst leuchtet kurz größer auf
+      if (uFlash.w > 0.5) {
+        float e = uFlash.z;
+        float fade = 1.0 - e;
+        float f = box(abs(p - uFlash.xy), uS * (0.16 + 0.22 * fade)) * fade;
+        float hs = uS * 0.13 * (1.0 - 0.5 * e);
+        float d1 = uS * (0.7 + 1.1 * e);
+        float d2 = d1 * 0.72;
+        f = max(f, box(abs(p - uFlash.xy - vec2(d1, 0.0)), hs) * fade);
+        f = max(f, box(abs(p - uFlash.xy + vec2(d1, 0.0)), hs) * fade);
+        f = max(f, box(abs(p - uFlash.xy - vec2(0.0, d1)), hs) * fade);
+        f = max(f, box(abs(p - uFlash.xy + vec2(0.0, d1)), hs) * fade);
+        f = max(f, box(abs(p - uFlash.xy - vec2(d2, d2)), hs) * fade);
+        f = max(f, box(abs(p - uFlash.xy + vec2(d2, d2)), hs) * fade);
+        f = max(f, box(abs(p - uFlash.xy - vec2(d2, -d2)), hs) * fade);
+        f = max(f, box(abs(p - uFlash.xy + vec2(d2, -d2)), hs) * fade);
+        a = max(a, f);
+      }
+      gl_FragColor = vec4(uColor * a, a);
+    }
+  `;
+
+  function compile(gl: WebGLRenderingContext, type: number, src: string) {
+    const s = gl.createShader(type)!;
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(s) ?? "shader");
+    return s;
+  }
+
+  function parseColor(css: string): [number, number, number] {
+    let h = css.trim().replace("#", "");
+    if (h.length === 3) h = [...h].map((ch) => ch + ch).join("");
+    const n = parseInt(h, 16);
+    if (Number.isNaN(n) || h.length !== 6) return [1, 0.243, 0.647];
+    return [((n >> 16) & 255) / 255, ((n >> 8) & 255) / 255, (n & 255) / 255];
+  }
+
+  function init(root: HTMLElement) {
+    const fine = window.matchMedia("(pointer: fine)").matches;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!fine) { root.style.display = "none"; return; }
+    const canvas = root.querySelector("canvas") as HTMLCanvasElement;
+    const gl = canvas.getContext("webgl", { premultipliedAlpha: true, antialias: false, alpha: true });
+    if (!gl) { root.style.display = "none"; return; }
+
+    const prog = gl.createProgram()!;
+    gl.attachShader(prog, compile(gl, gl.VERTEX_SHADER, VERT));
+    gl.attachShader(prog, compile(gl, gl.FRAGMENT_SHADER, FRAG));
+    gl.linkProgram(prog);
+    gl.useProgram(prog);
+    const buf = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
+    const aPos = gl.getAttribLocation(prog, "aPos");
+    gl.enableVertexAttribArray(aPos);
+    gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+    gl.enable(gl.BLEND);
+    gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+    const U = {
+      s: gl.getUniformLocation(prog, "uS"),
+      res: gl.getUniformLocation(prog, "uRes"),
+      color: gl.getUniformLocation(prog, "uColor"),
+      head: gl.getUniformLocation(prog, "uHead"),
+      trail: gl.getUniformLocation(prog, "uTrail"),
+      trailW: gl.getUniformLocation(prog, "uTrailW"),
+      flash: gl.getUniformLocation(prog, "uFlash"),
+    };
+
+    const syncColor = () => {
+      const css = getComputedStyle(document.documentElement).getPropertyValue("--color-accent");
+      gl.uniform3f(U.color, ...parseColor(css));
+      wake();
+    };
+    new MutationObserver(syncColor).observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+
+    // ---------- Layout ----------
+    let dpr = 1;
+    const resize = () => {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.round(window.innerWidth * dpr);
+      canvas.height = Math.round(window.innerHeight * dpr);
+      gl.viewport(0, 0, canvas.width, canvas.height);
+      gl.uniform1f(U.s, S * dpr);
+      gl.uniform2f(U.res, canvas.width, canvas.height);
+      wake();
+    };
+
+    // ---------- Pixel ----------
+    const pointer = { active: false };
+    const history: { x: number; y: number; t: number }[] = [];
+    let lastMove = 0;
+    let headOn = false;
+    let hx = 0, hy = 0;
+    type Glide = { pts: [number, number][]; leg: number; len: number; t0: number; dur: number; s: number };
+    let glide: Glide | null = null;
+    let goal = { x: NaN, y: NaN };
+    let flash: { x: number; y: number; t0: number } | null = null;
+    let flashes = 0;
+    if (import.meta.env.DEV) (window as any).__pixelCursor = { flashes: () => flashes, head: () => [hx, hy] };
+    const trail: { x: number; y: number; t: number }[] = [];
+    const trailBuf = new Float32Array(MAX_TRAIL * 3);
+
+    // liegt v auf einer Linie des Rasters (jede zweite Zelle)?
+    const onLine = (v: number) => {
+      const k = (v / S - 0.5) / 2;
+      return Math.abs(k - Math.round(k)) < 1e-3;
+    };
+
+    const moveHead = (now: number) => {
+      if (!pointer.active) { headOn = false; glide = null; trail.length = 0; history.length = 0; return; }
+      // Mausposition von vor LAG_MS; bei reduzierter Bewegung die aktuelle
+      const cutoff = reduce ? Infinity : now - LAG_MS;
+      while (history.length > 1 && history[1].t <= cutoff) history.shift();
+      const src = history[0];
+      if (!src || src.t > cutoff) {
+        if (!headOn) return;
+      } else {
+        const tx = (2 * Math.round((src.x / S - 0.5) / 2) + 0.5) * S;
+        const ty = (2 * Math.round((src.y / S - 0.5) / 2) + 0.5) * S;
+        if (!headOn || reduce) { hx = tx; hy = ty; headOn = true; glide = null; goal = { x: tx, y: ty }; return; }
+        if (tx !== goal.x || ty !== goal.y) {
+          goal = { x: tx, y: ty };
+          // Neuer Weg ab der aktuellen Position. Liegt sie zwischen zwei Rasterpunkten,
+          // geht es zuerst auf derselben Linie weiter, damit der Pixel auf dem Raster bleibt.
+          const horizontalFirst = !onLine(hx) ? true : !onLine(hy) ? false : Math.abs(tx - hx) >= Math.abs(ty - hy);
+          const corner: [number, number] = horizontalFirst ? [tx, hy] : [hx, ty];
+          const leg = Math.abs(corner[0] - hx) + Math.abs(corner[1] - hy);
+          const len = leg + Math.abs(tx - corner[0]) + Math.abs(ty - corner[1]);
+          glide = len > 0 ? { pts: [[hx, hy], corner, [tx, ty]], leg, len, t0: now, dur: Math.min(260 + len * 0.6, 900), s: 0 } : null;
+        }
+      }
+      if (glide) {
+        const u = Math.min((now - glide.t0) / glide.dur, 1);
+        const sNew = ease(u) * glide.len;
+        const [p0, pc, p1] = glide.pts;
+        // Ecke als eigener Spurpunkt, sonst schneidet die Spur sie ab
+        if (glide.s < glide.leg && sNew >= glide.leg) trail.push({ x: pc[0], y: pc[1], t: now });
+        if (sNew <= glide.leg) {
+          const f = glide.leg ? sNew / glide.leg : 1;
+          hx = p0[0] + (pc[0] - p0[0]) * f; hy = p0[1] + (pc[1] - p0[1]) * f;
+        } else {
+          const f = (sNew - glide.leg) / (glide.len - glide.leg);
+          hx = pc[0] + (p1[0] - pc[0]) * f; hy = pc[1] + (p1[1] - pc[1]) * f;
+        }
+        glide.s = sNew;
+        if (u >= 1) {
+          hx = p1[0]; hy = p1[1];
+          // angekommen: kleiner Blitz, nur nach einem richtigen Weg
+          if (glide.len >= FLASH_MIN && !reduce) {
+            flash = { x: hx, y: hy, t0: now };
+            flashes++;
+          }
+          glide = null;
+        }
+      }
+      const lastPt = trail[trail.length - 1];
+      if (!lastPt || lastPt.x !== hx || lastPt.y !== hy) trail.push({ x: hx, y: hy, t: now });
+      while (trail.length && now - trail[0].t > TRAIL_MS) trail.shift();
+      if (trail.length > MAX_TRAIL) trail.splice(0, trail.length - MAX_TRAIL);
+    };
+
+    const draw = (now: number) => {
+      trailBuf.fill(-1);
+      for (let i = 0; i < MAX_TRAIL; i++) {
+        const tp = trail[i];
+        if (!tp) break;
+        trailBuf[i * 3] = tp.x * dpr;
+        trailBuf[i * 3 + 1] = tp.y * dpr;
+        trailBuf[i * 3 + 2] = Math.max(0, 1 - (now - tp.t) / TRAIL_MS);
+      }
+      // der jüngste Punkt ist der Pixel selbst
+      if (trail.length) trailBuf[(Math.min(trail.length, MAX_TRAIL) - 1) * 3 + 2] = 1;
+      gl.uniform3fv(U.trail, trailBuf);
+      gl.uniform1f(U.trailW, dpr);
+      gl.uniform4f(U.head, hx * dpr, hy * dpr, S * dpr * (0.08 + 0.35 * 0.28), headOn ? 1 : 0);
+      const fu = flash ? (now - flash.t0) / FLASH_MS : 1;
+      if (flash && fu >= 1) flash = null;
+      gl.uniform4f(U.flash, (flash?.x ?? 0) * dpr, (flash?.y ?? 0) * dpr, ease(Math.min(fu, 1)), flash ? 1 : 0);
+    };
+
+    // ---------- Eingaben ----------
+    window.addEventListener("pointermove", (e) => {
+      if (e.pointerType !== "mouse") return;
+      const now = performance.now();
+      history.push({ x: e.clientX, y: e.clientY, t: now });
+      if (history.length > 240) history.shift();
+      pointer.active = true;
+      lastMove = now;
+      wake();
+    });
+    document.documentElement.addEventListener("mouseleave", () => { pointer.active = false; flash = null; wake(); });
+    window.addEventListener("resize", resize);
+    document.addEventListener("visibilitychange", () => wake());
+
+    // ---------- Bild ----------
+    // Läuft nur, solange sich etwas bewegt; danach bleibt das letzte Bild stehen.
+    let raf = 0;
+    function wake() {
+      if (!raf) raf = requestAnimationFrame(frame);
+    }
+    function frame() {
+      const now = performance.now();
+      moveHead(now);
+      draw(now);
+      gl.clearColor(0, 0, 0, 0);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+      gl.drawArrays(gl.TRIANGLES, 0, 3);
+      const busy = !!glide || !!flash || trail.length > 1 || (pointer.active && now - lastMove < LAG_MS + 50);
+      raf = busy ? requestAnimationFrame(frame) : 0;
+    }
+
+    resize();
+    syncColor();
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-pixel-cursor]").forEach(init);
+</script>
+
+<style>
+  .pixel-cursor {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  .pixel-cursor canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+</style>

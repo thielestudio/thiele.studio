@@ -1,0 +1,351 @@
+---
+// Testweise Übergänge für die Bildschirme im About-Teil. Ein Umschalter unten
+// links wählt die Variante über ?fx=…, damit Daniel sie direkt vergleichen kann.
+//   off       wie bisher: Blöcke gleiten weich ein
+//   scramble  Text rauscht durch Zufallszeichen und setzt sich von links nach rechts
+//   pixelate  der Bildschirm ist verpixelt und wird scharf (Unschärfe als Verpixelung)
+//   cells     eine Fläche in Hintergrundfarbe zerfällt Zelle für Zelle, links zuerst
+// Läuft bei jedem Eintreten neu, damit man beim Hin- und Herscrollen vergleichen kann.
+// Stand 20.10.2026, nur Testseite.
+const MODES = [
+  { id: "off", label: "Standard" },
+  { id: "scramble", label: "Scramble" },
+  { id: "pixelate", label: "Verpixelt" },
+  { id: "cells", label: "Pixel-Raster" },
+];
+---
+
+<nav class="fx-switch" aria-label="Übergang wählen (Test)" data-fx-switch>
+  <span class="fx-switch__label">Übergang</span>
+  {MODES.map((m) => <a href={`?fx=${m.id}`} data-fx={m.id} data-no-transition>{m.label}</a>)}
+</nav>
+
+<svg class="fx-defs" aria-hidden="true" width="0" height="0"><defs data-fx-defs></defs></svg>
+
+<script>
+  const params = new URLSearchParams(location.search);
+  const mode = params.get("fx") ?? "off";
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  document.querySelectorAll<HTMLAnchorElement>("[data-fx-switch] a").forEach((a) => {
+    if (a.dataset.fx === mode) a.setAttribute("aria-current", "true");
+  });
+
+  const about = document.querySelector<HTMLElement>(".about");
+  const screens = about ? [...about.querySelectorAll<HTMLElement>(".screen")] : [];
+
+  const easeOut = (u: number) => 1 - Math.pow(1 - u, 3);
+  const bgColor = () => getComputedStyle(document.body).backgroundColor;
+
+  // Wann ein Bildschirm startet und wann er zurückgesetzt wird
+  const watch = (el: HTMLElement, enter: () => void, leave: () => void) => {
+    let inside = false;
+    new IntersectionObserver(
+      ([e]) => {
+        if (e.intersectionRatio >= 0.3 && !inside) {
+          inside = true;
+          enter();
+        } else if (e.intersectionRatio === 0 && inside) {
+          inside = false;
+          leave();
+        }
+      },
+      { threshold: [0, 0.3] },
+    ).observe(el);
+  };
+
+  if (about && mode !== "off" && !reduce) {
+    // Die bisherigen Einblendungen abschalten, damit nur der Test-Übergang wirkt
+    about.classList.add("fx-on");
+
+    // ---------- Scramble: Wörter behalten ihre Breite, Zeichen rauschen und setzen sich
+    if (mode === "scramble") {
+      const UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      const LOWER = "abcdefghijklmnopqrstuvwxyz";
+      const DIGIT = "0123456789#%*/";
+      const glyphFor = (ch: string) => {
+        if (/[A-Z]/.test(ch)) return UPPER[(Math.random() * 26) | 0];
+        if (/[a-z]/.test(ch)) return LOWER[(Math.random() * 26) | 0];
+        if (/[0-9]/.test(ch)) return DIGIT[(Math.random() * DIGIT.length) | 0];
+        return ch;
+      };
+      const TICK = 28;
+      const FRAMES = 34;
+
+      screens.forEach((screen) => {
+        const words: { el: HTMLElement; text: string; start: number }[] = [];
+        let total = 0;
+        const walker = document.createTreeWalker(screen, NodeFilter.SHOW_TEXT, {
+          acceptNode: (n) => {
+            const p = n.parentElement;
+            if (!p || !n.textContent?.trim()) return NodeFilter.FILTER_REJECT;
+            if (p.closest("[data-decode], .marquee, script, style")) return NodeFilter.FILTER_REJECT;
+            return NodeFilter.FILTER_ACCEPT;
+          },
+        });
+        const nodes: Text[] = [];
+        while (walker.nextNode()) nodes.push(walker.currentNode as Text);
+        nodes.forEach((node) => {
+          const frag = document.createDocumentFragment();
+          node.textContent!.split(/(\s+)/).forEach((part) => {
+            if (!part) return;
+            if (/^\s+$/.test(part)) {
+              frag.appendChild(document.createTextNode(part));
+              return;
+            }
+            const w = document.createElement("span");
+            w.className = "fx-w";
+            w.textContent = part;
+            frag.appendChild(w);
+            words.push({ el: w, text: part, start: total });
+            total += part.length;
+          });
+          node.replaceWith(frag);
+        });
+        const fix = () =>
+          words.forEach((w) => {
+            w.el.style.width = "";
+            w.el.textContent = w.text;
+            w.el.style.width = `${w.el.getBoundingClientRect().width}px`;
+          });
+        document.fonts.ready.then(fix);
+        window.addEventListener("resize", fix);
+
+        let timer = 0;
+        const draw = (frame: number) => {
+          for (const w of words) {
+            let out = "";
+            for (let i = 0; i < w.text.length; i++) {
+              const at = ((w.start + i) / Math.max(total, 1)) * FRAMES * 0.75;
+              out += frame >= at ? w.text[i] : glyphFor(w.text[i]);
+            }
+            w.el.textContent = out;
+          }
+        };
+        watch(
+          screen,
+          () => {
+            window.clearInterval(timer);
+            let frame = 0;
+            draw(0);
+            timer = window.setInterval(() => {
+              frame++;
+              draw(frame);
+              if (frame >= FRAMES) {
+                window.clearInterval(timer);
+                words.forEach((w) => (w.el.textContent = w.text));
+              }
+            }, TICK);
+          },
+          () => {
+            window.clearInterval(timer);
+            draw(-1);
+          },
+        );
+        draw(-1);
+      });
+    }
+
+    // ---------- Verpixelt: SVG-Filter, Pixelgröße läuft von groß nach 1
+    if (mode === "pixelate") {
+      const defs = document.querySelector("[data-fx-defs]")!;
+      const NS = "http://www.w3.org/2000/svg";
+      const MAX = 44;
+      const DURATION = 900;
+      screens.forEach((screen, i) => {
+        const target = screen.querySelector<HTMLElement>(".inner") ?? screen;
+        const id = `fx-px-${i}`;
+        const f = document.createElementNS(NS, "filter");
+        f.setAttribute("id", id);
+        f.setAttribute("x", "0");
+        f.setAttribute("y", "0");
+        f.setAttribute("width", "1");
+        f.setAttribute("height", "1");
+        f.innerHTML =
+          '<feFlood height="2" width="2"/><feComposite/><feTile result="a"/>' +
+          '<feComposite in="SourceGraphic" in2="a" operator="in"/><feMorphology operator="dilate"/>';
+        defs.appendChild(f);
+        const [flood, crop, , , dilate] = [...f.children] as SVGElement[];
+        const setSize = (s: number) => {
+          if (s <= 1) {
+            target.style.filter = "";
+            return;
+          }
+          const half = Math.floor(s / 2);
+          flood.setAttribute("x", String(half - 1));
+          flood.setAttribute("y", String(half - 1));
+          crop.setAttribute("width", String(s));
+          crop.setAttribute("height", String(s));
+          dilate.setAttribute("radius", String(half));
+          target.style.filter = `url(#${id})`;
+        };
+        let raf = 0;
+        watch(
+          screen,
+          () => {
+            cancelAnimationFrame(raf);
+            const t0 = performance.now();
+            let last = -1;
+            const step = (now: number) => {
+              const u = Math.min((now - t0) / DURATION, 1);
+              // in festen Stufen, damit es nach Pixeln aussieht und nicht nach Zoom
+              const s = Math.max(1, Math.round((MAX * (1 - easeOut(u))) / 4) * 4);
+              if (s !== last) setSize(s);
+              last = s;
+              target.style.opacity = String(Math.min(1, u * 2.2));
+              if (u < 1) raf = requestAnimationFrame(step);
+              else setSize(1);
+            };
+            raf = requestAnimationFrame(step);
+          },
+          () => {
+            cancelAnimationFrame(raf);
+            setSize(MAX);
+            target.style.opacity = "0";
+          },
+        );
+        setSize(MAX);
+        target.style.opacity = "0";
+      });
+    }
+
+    // ---------- Pixel-Raster: Fläche in Hintergrundfarbe zerfällt Zelle für Zelle
+    if (mode === "cells") {
+      const CELL = 28;
+      const DURATION = 950;
+      const BAND = 0.45; // Anteil, um den der Einsatz von links nach rechts versetzt ist
+      const FADE = 0.28; // so lange blendet eine Zelle aus, Anteil der Dauer
+      screens.forEach((screen) => {
+        const canvas = document.createElement("canvas");
+        canvas.className = "fx-cells";
+        screen.appendChild(canvas);
+        const ctx = canvas.getContext("2d")!;
+        let cols = 0;
+        let rows = 0;
+        let jitter: number[] = [];
+        let progress = 0;
+        let raf = 0;
+        const size = () => {
+          const dpr = Math.min(window.devicePixelRatio || 1, 2);
+          const w = screen.clientWidth;
+          const h = screen.clientHeight;
+          canvas.width = Math.round(w * dpr);
+          canvas.height = Math.round(h * dpr);
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+          cols = Math.ceil(w / CELL);
+          rows = Math.ceil(h / CELL);
+          jitter = Array.from({ length: cols * rows }, () => Math.random());
+          draw();
+        };
+        const draw = () => {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          ctx.fillStyle = bgColor();
+          for (let r = 0; r < rows; r++) {
+            for (let c = 0; c < cols; c++) {
+              const start = (c / cols) * BAND + jitter[r * cols + c] * (1 - BAND - FADE);
+              const v = 1 - Math.min(Math.max((progress - start) / FADE, 0), 1);
+              if (v <= 0) continue;
+              // drei Stufen statt weich, damit es Pixel bleiben
+              ctx.globalAlpha = Math.ceil(v * 3) / 3;
+              ctx.fillRect(c * CELL, r * CELL, CELL, CELL);
+            }
+          }
+          ctx.globalAlpha = 1;
+        };
+        watch(
+          screen,
+          () => {
+            cancelAnimationFrame(raf);
+            const t0 = performance.now();
+            const step = (now: number) => {
+              const u = Math.min((now - t0) / DURATION, 1);
+              progress = u;
+              draw();
+              if (u < 1) raf = requestAnimationFrame(step);
+            };
+            raf = requestAnimationFrame(step);
+          },
+          () => {
+            cancelAnimationFrame(raf);
+            progress = 0;
+            draw();
+          },
+        );
+        new ResizeObserver(size).observe(screen);
+        // Hell/dunkel wechselt: zugedeckte Flächen nachfärben
+        new MutationObserver(() => {
+          const t0 = performance.now();
+          const tick = (now: number) => {
+            if (progress < 1) draw();
+            if (now - t0 < 900) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        }).observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+      });
+    }
+  }
+</script>
+
+<style>
+  .fx-switch {
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    z-index: 8000;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 6px;
+    background: rgba(17, 17, 17, 0.88);
+    color: #f7f4ec;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    backdrop-filter: blur(6px);
+  }
+
+  .fx-switch__label {
+    padding: 6px 8px;
+    opacity: 0.6;
+  }
+
+  .fx-switch a {
+    padding: 6px 10px;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid transparent;
+  }
+
+  .fx-switch a[aria-current] {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  .fx-defs {
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+
+  /* Bisherige Einblendungen aus, wenn ein Test-Übergang läuft */
+  :global(.about.fx-on [data-reveal]),
+  :global(.about.fx-on [data-rise] .w) {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  :global(.fx-w) {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  :global(.fx-cells) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    pointer-events: none;
+  }
+</style>

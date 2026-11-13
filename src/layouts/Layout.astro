@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import PageDither from "../components/PageDither.astro";
 
 interface Props {
   title?: string;
@@ -19,9 +20,48 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Favicon-Augen schauen hin und her wie auf der Seite (3,2 s Takt).
+         Browser spielen Animationen in SVG-Favicons nicht zuverlässig ab,
+         deshalb wechselt ein Skript zwei Bilder; ohne Skript bleibt favicon.svg. -->
+    <script is:inline>
+      (() => {
+        if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        const link = document.querySelector('link[rel="icon"]');
+        if (!link) return;
+        const px = [
+          [0,2],[0,4],[0,6],[2,0],[4,0],[2,8],[4,8],[6,2],[6,4],[6,6],
+          [9,2],[9,4],[9,6],[11,0],[13,0],[11,8],[13,8],[15,2],[15,4],[15,6],
+        ];
+        const frame = (dx) => {
+          const cells = px.concat([[4 + dx, 4], [13 + dx, 4]])
+            .map(([x, y]) => `<rect x="${x}" y="${y}" width="2" height="2"/>`).join("");
+          const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3.5 17 17" shape-rendering="crispEdges" fill="#de4b97">${cells}</svg>`;
+          return "data:image/svg+xml," + encodeURIComponent(svg);
+        };
+        const frames = [frame(0), frame(-2)];
+        // wie eyes-look: 0–45 % geradeaus, 45–90 % links, 90–100 % geradeaus
+        const steps = [[0, 1440], [1, 1440], [0, 320]];
+        let i = 0;
+        const next = () => {
+          const [f, ms] = steps[i];
+          link.href = frames[f];
+          i = (i + 1) % steps.length;
+          setTimeout(next, ms);
+        };
+        next();
+      })();
+    </script>
     <title>{title}</title>
+    <!-- Kommt die Seite über den Dither-Übergang, startet sie zugedeckt (siehe PageDither) -->
+    <script is:inline>
+      try {
+        if (sessionStorage.getItem("page-dither") === "1" && !matchMedia("(prefers-reduced-motion: reduce)").matches)
+          document.documentElement.classList.add("dither-cover");
+      } catch (e) {}
+    </script>
   </head>
   <body>
+    <PageDither />
     <header class="site-header">
       <a href="/" class="logo small">Designstudio Daniel Thiele</a>
     </header>
@@ -34,7 +74,7 @@ const {
       <div>Designstudio Daniel Thiele, {new Date().getFullYear()}</div>
       <div class="footer-links">
         <a href="mailto:post@thiele.studio">post@thiele.studio</a>
-        <a href="https://www.linkedin.com/in/danielthiele/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/danielthi3le/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="/legal">Impressum</a>
       </div>
     </footer>
@@ -49,6 +89,9 @@ const {
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
         smoothWheel: true,
       });
+
+      // für Seiten, die im selben Bild wie das Scrollen nachziehen müssen
+      (window as unknown as { lenis: Lenis }).lenis = lenis;
 
       function raf(time: number) {
         lenis.raf(time);
@@ -100,10 +143,10 @@ const {
       if (cursor && finePointer) {
         document.documentElement.classList.add("has-cursor");
 
-        // GROW: anything interactive makes the cursor expand.
-        // VIEW: only project-like targets also show the "view" label.
-        const GROW_SELECTOR = 'a, button, .item, .next-project, [data-cursor]';
-        const VIEW_SELECTOR = '.item, .next-project, [data-cursor="view"]';
+        // Only the case teasers on the home page grow the cursor into the
+        // pink square with the "view" label; other links keep the small one.
+        const GROW_SELECTOR = '.item';
+        const VIEW_SELECTOR = '.item';
         let mouseX = window.innerWidth / 2;
         let mouseY = window.innerHeight / 2;
         let curX = mouseX;
@@ -205,7 +248,7 @@ const {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: var(--pad);
+        padding: var(--pad) var(--edge);
       }
 
       .logo {
@@ -219,7 +262,7 @@ const {
       }
 
       .site-footer {
-        padding: var(--pad);
+        padding: var(--pad) var(--edge);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -251,7 +294,6 @@ const {
         left: 0;
         width: 16px;
         height: 16px;
-        border-radius: 5px;
         background: var(--color-fg);
         pointer-events: none;
         z-index: 9999;
@@ -263,7 +305,6 @@ const {
         transition:
           width 300ms cubic-bezier(0.2, 0.8, 0.2, 1),
           height 300ms cubic-bezier(0.2, 0.8, 0.2, 1),
-          border-radius 300ms cubic-bezier(0.2, 0.8, 0.2, 1),
           background 300ms ease,
           opacity 300ms ease;
         will-change: transform, width, height;
@@ -287,8 +328,11 @@ const {
       html.has-cursor .cursor.is-hover {
         width: 74px;
         height: 74px;
-        border-radius: 16px;
-        background: var(--color-bg);
+        background: var(--color-accent);
+      }
+
+      html.has-cursor .cursor.is-hover .cursor__label {
+        color: #111;
       }
 
       html.has-cursor .cursor.is-view .cursor__label {

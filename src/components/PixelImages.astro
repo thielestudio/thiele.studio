@@ -1,0 +1,320 @@
+---
+// Pixel-Effekt für Bilder, gleiche Sprache wie die Buttons: von links nach rechts,
+// mit weicher Kante, und die Pixelgröße wird zwischen ihren Stufen überblendet
+// statt hart umzuspringen.
+//   Einblenden  Kommt ein Bild ins Bild, startet es grob verpixelt und wird von
+//               links nach rechts scharf.
+//   Hover       Aus seit 24.10.2026 (Daniel: zu unscharf, Cases sollen beim Hover
+//               später ihre Bilder durchwechseln). Raster und Shader für die Spur
+//               bleiben, sie wird nur nicht mehr beschrieben.
+// Technik: ein gemeinsamer WebGL2-Kontext rechnet für jedes gerade aktive Bild ein
+// Bild und kopiert es auf eine Leinwand über dem <img>. Pixelblöcke nehmen die
+// Durchschnittsfarbe (Mipmaps), daher wirken sie ruhig statt flimmernd. Ist ein Bild
+// fertig und die Spur verklungen, verschwindet die Leinwand, und das <img> ist wieder
+// das, was man sieht. Ohne WebGL2 oder bei reduzierter Bewegung bleibt alles normal.
+// Stand 21.10.2026, Test auf Testseite 7.
+interface Props {
+  selector?: string;
+}
+const { selector = ".item img, main img" } = Astro.props;
+---
+
+<div data-pixel-images={selector} hidden></div>
+
+<script>
+  const FX = {
+    revealMs: 1100, // Dauer des Einblendens
+    band: 0.45, // Breite der weichen Kante, Anteil der Bildbreite
+    revealMax: 64, // gröbste Pixelgröße beim Einblenden (CSS-px)
+    hoverMax: 36, // gröbste Pixelgröße der Spur (CSS-px)
+    trailCell: 28, // Rastergröße der Spur (CSS-px)
+    trailRadius: 2.2, // Reichweite der Spur in Rasterzellen
+    trailGain: 0.045, // so stark wirkt 1 px/ms Mausbewegung
+    trailFade: 520, // ms, so schnell klingt die Spur ab
+    dprMax: 1.5,
+  };
+
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const conf = document.querySelector<HTMLElement>("[data-pixel-images]");
+
+  const VERT = `#version 300 es
+    in vec2 aPos;
+    out vec2 vUv;
+    void main() { vUv = aPos * 0.5 + 0.5; gl_Position = vec4(aPos, 0.0, 1.0); }`;
+
+  // Pixelgröße je Stelle: Einblenden (Welle von links) und Spur, das Gröbere zählt.
+  // Zwischen zwei Zweierpotenzen wird überblendet, damit nichts springt.
+  const FRAG = `#version 300 es
+    precision highp float;
+    in vec2 vUv;
+    out vec4 outColor;
+    uniform sampler2D uTex;
+    uniform sampler2D uTrail;
+    uniform vec2 uRes;      // Leinwand in Gerätepixeln
+    uniform float uDpr;
+    uniform float uReveal;  // 0 … 1
+    uniform float uBand;
+    uniform float uRevealMax;
+    uniform float uHoverMax;
+    uniform vec2 uTexSize;  // Bild in Pixeln
+    float smootherstep(float a, float b, float x) {
+      float t = clamp((x - a) / (b - a), 0.0, 1.0);
+      return t * t * t * (t * (t * 6.0 - 15.0) + 10.0);
+    }
+    vec4 blockColor(vec2 px, float size) {
+      vec2 cell = (floor(px / size) + 0.5) * size;
+      vec2 uv = cell / uRes;
+      // Mip-Stufe passend zur Blockgröße im Bild: Durchschnittsfarbe statt Einzelpixel
+      float lod = log2(max(size * uTexSize.x / uRes.x, 1.0));
+      // Textur: Zeile 0 ist die obere Bildkante, px zählt von oben
+      return textureLod(uTex, uv, lod);
+    }
+    void main() {
+      vec2 px = vec2(vUv.x, 1.0 - vUv.y) * uRes;
+      // Einblenden: Kante wandert von links nach rechts
+      float k = smootherstep(0.0, 1.0, (uReveal * (1.0 + uBand) - vUv.x) / uBand);
+      float reveal = mix(uRevealMax, 1.0, k);
+      // Spur aus dem Raster, weich gefiltert
+      float h = texture(uTrail, vec2(vUv.x, 1.0 - vUv.y)).r;
+      float hover = mix(1.0, uHoverMax, smootherstep(0.0, 1.0, h));
+      float size = max(reveal, hover) * uDpr;
+      // zwischen den zwei nächsten Zweierpotenzen überblenden
+      float l = log2(max(size, 1.0));
+      float l0 = floor(l);
+      float f = smootherstep(0.0, 1.0, l - l0);
+      float s0 = exp2(l0);
+      float s1 = exp2(l0 + 1.0);
+      vec4 c = mix(blockColor(px, s0), blockColor(px, s1), f);
+      if (size <= 1.01 * uDpr) c = textureLod(uTex, vec2(vUv.x, vUv.y) * vec2(1.0, -1.0) + vec2(0.0, 1.0), 0.0);
+      // ganz am Anfang aus dem Nichts einblenden
+      float alpha = smootherstep(0.0, 0.35, uReveal * (1.0 + uBand) - vUv.x + uBand);
+      outColor = vec4(c.rgb * alpha, alpha);
+    }`;
+
+  type Item = {
+    img: HTMLImageElement;
+    canvas: HTMLCanvasElement;
+    ctx: CanvasRenderingContext2D;
+    tex: WebGLTexture | null;
+    trail: Float32Array;
+    trailBytes: Uint8Array;
+    cols: number;
+    rows: number;
+    revealT0: number; // -1: noch nicht gestartet
+    revealed: boolean;
+    active: boolean;
+    lastX: number;
+    lastY: number;
+    lastT: number;
+  };
+
+  function init(selector: string) {
+    const glCanvas = document.createElement("canvas");
+    const gl = glCanvas.getContext("webgl2", { premultipliedAlpha: true, alpha: true, preserveDrawingBuffer: false });
+    if (!gl) return;
+
+    const compile = (type: number, src: string) => {
+      const s = gl.createShader(type)!;
+      gl.shaderSource(s, src);
+      gl.compileShader(s);
+      if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(s) ?? "shader");
+      return s;
+    };
+    const prog = gl.createProgram()!;
+    try {
+      gl.attachShader(prog, compile(gl.VERTEX_SHADER, VERT));
+      gl.attachShader(prog, compile(gl.FRAGMENT_SHADER, FRAG));
+    } catch (e) {
+      console.warn("PixelImages: Shader", e);
+      return;
+    }
+    gl.linkProgram(prog);
+    gl.useProgram(prog);
+    const buf = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
+    const aPos = gl.getAttribLocation(prog, "aPos");
+    gl.enableVertexAttribArray(aPos);
+    gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+    const U = Object.fromEntries(
+      ["uTex", "uTrail", "uRes", "uDpr", "uReveal", "uBand", "uRevealMax", "uHoverMax", "uTexSize"].map((n) => [
+        n,
+        gl.getUniformLocation(prog, n),
+      ]),
+    ) as Record<string, WebGLUniformLocation | null>;
+    gl.uniform1i(U.uTex, 0);
+    gl.uniform1i(U.uTrail, 1);
+    gl.uniform1f(U.uBand, FX.band);
+    gl.uniform1f(U.uRevealMax, FX.revealMax);
+    gl.uniform1f(U.uHoverMax, FX.hoverMax);
+    gl.pixelStorei(gl.UNPACK_ALIGNMENT, 1);
+
+    const trailTex = gl.createTexture();
+    gl.activeTexture(gl.TEXTURE1);
+    gl.bindTexture(gl.TEXTURE_2D, trailTex);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.activeTexture(gl.TEXTURE0);
+
+    const dpr = () => Math.min(window.devicePixelRatio || 1, FX.dprMax);
+
+    const uploadImage = (it: Item) => {
+      const tex = gl.createTexture();
+      gl.bindTexture(gl.TEXTURE_2D, tex);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, it.img);
+      gl.generateMipmap(gl.TEXTURE_2D);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_LINEAR);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+      it.tex = tex;
+    };
+
+    const fit = (it: Item) => {
+      const w = it.img.offsetWidth;
+      const h = it.img.offsetHeight;
+      const d = dpr();
+      it.canvas.style.left = `${it.img.offsetLeft}px`;
+      it.canvas.style.top = `${it.img.offsetTop}px`;
+      it.canvas.style.width = `${w}px`;
+      it.canvas.style.height = `${h}px`;
+      it.canvas.width = Math.max(1, Math.round(w * d));
+      it.canvas.height = Math.max(1, Math.round(h * d));
+      it.cols = Math.max(1, Math.ceil(w / FX.trailCell));
+      it.rows = Math.max(1, Math.ceil(h / FX.trailCell));
+      it.trail = new Float32Array(it.cols * it.rows);
+      it.trailBytes = new Uint8Array(it.cols * it.rows);
+    };
+
+    const draw = (it: Item, now: number) => {
+      if (!it.tex) uploadImage(it);
+      const w = it.canvas.width;
+      const h = it.canvas.height;
+      if (glCanvas.width < w) glCanvas.width = w;
+      if (glCanvas.height < h) glCanvas.height = h;
+      gl.viewport(0, 0, w, h);
+      gl.clearColor(0, 0, 0, 0);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+      gl.activeTexture(gl.TEXTURE0);
+      gl.bindTexture(gl.TEXTURE_2D, it.tex);
+      gl.activeTexture(gl.TEXTURE1);
+      gl.bindTexture(gl.TEXTURE_2D, trailTex);
+      for (let i = 0; i < it.trail.length; i++) it.trailBytes[i] = Math.min(255, it.trail[i] * 255) | 0;
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.R8, it.cols, it.rows, 0, gl.RED, gl.UNSIGNED_BYTE, it.trailBytes);
+      gl.activeTexture(gl.TEXTURE0);
+      const reveal = it.revealT0 < 0 ? 0 : Math.min((now - it.revealT0) / FX.revealMs, 1);
+      gl.uniform2f(U.uRes, w, h);
+      gl.uniform1f(U.uDpr, dpr());
+      gl.uniform1f(U.uReveal, reveal);
+      gl.uniform2f(U.uTexSize, it.img.naturalWidth || w, it.img.naturalHeight || h);
+      gl.drawArrays(gl.TRIANGLES, 0, 3);
+      it.ctx.clearRect(0, 0, w, h);
+      // die WebGL-Leinwand ist größer als nötig: unten links liegt das Ergebnis
+      it.ctx.drawImage(glCanvas, 0, glCanvas.height - h, w, h, 0, 0, w, h);
+      if (reveal >= 1) it.revealed = true;
+    };
+
+    const items: Item[] = [];
+    const active = new Set<Item>();
+    let raf = 0;
+    let last = performance.now();
+
+    const loop = (now: number) => {
+      raf = 0;
+      const dt = Math.min(now - last, 50);
+      last = now;
+      for (const it of active) {
+        // Spur klingt ab
+        let sum = 0;
+        const decay = Math.exp(-dt / FX.trailFade);
+        for (let i = 0; i < it.trail.length; i++) {
+          it.trail[i] *= decay;
+          sum += it.trail[i];
+        }
+        draw(it, now);
+        const idle = it.revealed && sum < 0.02;
+        if (idle) {
+          it.trail.fill(0);
+          it.canvas.style.visibility = "hidden";
+          it.img.style.opacity = "";
+          active.delete(it);
+        }
+      }
+      if (active.size) raf = requestAnimationFrame(loop);
+    };
+    const wake = (it: Item) => {
+      if (!active.has(it)) {
+        active.add(it);
+        it.canvas.style.visibility = "visible";
+      }
+      if (!raf) {
+        last = performance.now();
+        raf = requestAnimationFrame(loop);
+      }
+    };
+
+    const setup = (img: HTMLImageElement) => {
+      const parent = img.parentElement;
+      if (!parent || img.dataset.pixelReady) return;
+      img.dataset.pixelReady = "1";
+      if (getComputedStyle(parent).position === "static") parent.style.position = "relative";
+      const canvas = document.createElement("canvas");
+      canvas.className = "pixel-img";
+      canvas.setAttribute("aria-hidden", "true");
+      parent.appendChild(canvas);
+      const ctx = canvas.getContext("2d")!;
+      const it: Item = {
+        img, canvas, ctx, tex: null, trail: new Float32Array(1), trailBytes: new Uint8Array(1),
+        cols: 1, rows: 1, revealT0: -1, revealed: false, active: false, lastX: 0, lastY: 0, lastT: 0,
+      };
+      items.push(it);
+      // bis zum Einblenden ist das Bild leer, die Leinwand übernimmt
+      img.style.opacity = "0";
+      const ready = () => {
+        fit(it);
+        new IntersectionObserver(
+          ([e], io) => {
+            if (!e.isIntersecting) return;
+            io.disconnect();
+            it.revealT0 = performance.now();
+            wake(it);
+          },
+          { threshold: 0.15 },
+        ).observe(img);
+      };
+      if (img.complete && img.naturalWidth) ready();
+      else img.addEventListener("load", ready, { once: true });
+    };
+
+    document.querySelectorAll<HTMLImageElement>(selector).forEach(setup);
+    window.addEventListener("resize", () => items.forEach((it) => it.revealT0 >= 0 && fit(it)));
+  }
+
+  if (conf && !reduce) {
+    try {
+      init(conf.dataset.pixelImages || ".item img");
+    } catch (e) {
+      console.warn("PixelImages", e);
+    }
+  }
+</script>
+
+<style>
+  :global(.pixel-img) {
+    position: absolute;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  /* gleiche leichte Vergrößerung wie das Bild beim Hover über einen Case */
+  :global(.item .pixel-img) {
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transform-origin: center;
+  }
+
+  :global(.item:hover .pixel-img) {
+    transform: scale(1.02);
+  }
+</style>
