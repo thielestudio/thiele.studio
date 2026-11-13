@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "generated_for": "2026-11-13",
+    "window": "2026-11-11..2026-11-13",
+    "sources_scanned": 64,
+    "items_in_window": 137,
+    "lang": "en",
+    "note": "Eight pieces, no Craft & Judgment today. Much of the window repeats yesterday (Christine Vallaure, Matthew Strom-Awn, Arin Bhowmick, Saeideh Bakhshi, Giffgaff, HOW+HOW, Woven, AI interviewers, Big Walk, Adobe Sneaks) and is not repeated. Paid on reading and dropped: Slow AI on error spotting, UX Mentor on design decisions, Peter Yang on Fable vs Opus; the Substack audience check failed for all ten feeds, so nothing was removed upstream. Dropped: the Nvidia/Jensen Huang cluster, Anthropic IPO, Creative Bloq deals, reviews and gadgets, event announcements, Roastbrief press releases, Vucko for Etsy (sponsored content). Considered and left out: Caixa and Mars again, Adobe Project Link Up, Phota Labs, Hugging Face 3D fine-tuning guide, Alex M H Smith on value (business, not brand). Feed userresearchstrategist.com failed."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Find the break-even line before an AI feature gets designed",
+      "blurb": "Victor Yocco opens with a health insurer whose AI-written appeal determinations took specialists longer to check than to write; a second version that only surfaced relevant policy and precedent cut review time. Same model, different slice of the task. Yocco’s four questions locate a break-even line: the attention a feature costs has to come back, for instance as errors caught or consistency across people.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Smashing Magazine",
+          "url": "https://smashingmagazine.com/2026/11/should-you-add-ai-audit-product-teams/",
+          "headline": "Should You Actually Add AI To That? A Four-Question Audit For Product Teams",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Converting Carbon’s button to Figma takes 30 seconds, passing the check takes a month",
+      "blurb": "TJ Pitre reports that 40 of 84 generated variants passed a visual check against the original. Tuned on known kits the engine scored about 70%, on an unseen kit about 13%, so the team now works one design system at a time and lets the converter refuse rather than guess.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "TJ Pitre",
+          "url": "https://southleft.substack.com/p/why-a-button-takes-a-month",
+          "headline": "Why a Button Takes a Month",
+          "kind": "person",
+          "author": "TJ Pitre"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Rival 50: the challenger playbook no longer sets brands apart",
+      "blurb": "Rival screened 2,039 brands with Imperial College and names four moves behind this year’s leaders: flipping the category’s emotional code, building from inside a microculture, shipping the brand deliberately unfinished, and designing for disagreement. A press release, but the criteria are usable as a positioning checklist.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/the-challenger-playbook-is-now-table-stakes-rivals-2026-index-reveals-what-comes-next/",
+          "headline": "The Challenger Playbook Is Now Table Stakes. Rival s 2026 Index Reveals What Comes Next",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Springetts at 50: design brands for longevity, not novelty",
+      "blurb": "The agency behind Frubes and The Happy Egg Co. publishes a field guide built on restraint: tie new ideas to what customers already recognise instead of tearing the brand up every few years. Its framework sorts brands into life stages, each with its own job, starting with launch, grow and extend.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Boom",
+          "url": "https://www.creativeboom.com/insight/what-50-years-in-business-has-taught-springetts-about-building-brands-that-thrive/",
+          "headline": "What 50 years in business has taught Springetts about building brands that thrive",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Tomy becomes Takara Tomy worldwide, with a symbol few can read",
+      "blurb": "The first rebrand in 20 years unifies the name and replaces the blue wordmark with a gradient symbol built from the katakana for “asobi”, play. The quieter idea sits in the wordmark, where every T and A is drawn slightly differently; the symbol itself is puzzling people even in Japan.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/the-toy-company-tomy-has-a-new-logo-and-people-are-baffled",
+          "headline": "The toy company Tomy has a new logo, and people are baffled",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "GDC survey: 22% of game developers use generative AI for concept art",
+      "blurb": "Overall use rose to 40% from 36%, mostly for research, summaries and code; only 8% use it for final assets. A third of respondents say they were laid off in the past two years.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
+          "headline": "More game developers are starting to use generative AI",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "industry-market",
+      "theme_label": "Industry & Market",
+      "title": "Chatbots send shoppers to fake and lapsed brand domains",
+      "blurb": "In 6,795 answers about 151 brands, Perplexity showed risky sites in 15% of answers, ChatGPT in 8% and Gemini in 4%, including old brand domains re-registered by others. Smaller brands were hit about twice as often. The study comes from an IP protection firm with its own prompts.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+          "headline": "AI chatbots are recommending fake retail websites, study finds",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI Models (+Tools)",
+      "title": "Gemini 4 Hydrogen replaces Flash and outscores Argon",
+      "blurb": "Google prices the fast model at $1.50 per million input tokens and puts it slightly above the larger Argon on the Artificial Analysis index. A new Orchestrator in Antigravity switches between Carbon and Hydrogen within one session.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+          "headline": "Introducing Gemini 4 Hydrogen",
+          "kind": "portal"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
+          "headline": "Google rolls out Gemini 4 Hydrogen, finally replacing 3.8 Flash",
+          "kind": "portal"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+          "headline": "Google’s new Gemini model is better at understanding complicated questions",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 24,
+      "examples": [
+        "The OREO Brand Releases Its First New Holiday Ad in Five Years",
+        "Neville Brody Takes Up Creative Chair Role At Toaster, Joining Its Mission To Build Brands That Stand Apart In The Ai Era",
+        "Barclays Takes On The Nation s Biggest Money Challenges With The Best Of Their People And Tech"
+      ]
+    }
+  ]
+}

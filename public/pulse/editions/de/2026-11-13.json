@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "generated_for": "2026-11-13",
+    "window": "2026-11-11..2026-11-13",
+    "sources_scanned": 64,
+    "items_in_window": 195,
+    "lang": "de",
+    "note": "Drei Stücke mit deutschsprachiger Leitquelle, ein dünner Tag. Schon in den Vortagen: Jung von Matt für die Bahn, Claude Meetings, Claude Code und Spiele-Nachbauten. Nicht genommen: PAGE zum HAICA-Ergebnis (wie am Vortag ohne übertragbaren Kern) und zu zwei Seminaren; Design Tagebuch zu Warsteiner (nur die Meldung, kein Befund); Werbewoche zu Ovomaltine, Benu, NeoVac und Dr. Oetker (Mitteilungen ohne Einordnung); Slanted mit NoGood Book und Ride or Art; The Decoder zu Elevenlabs, AlphaGenome, Gedankenketten, Australien; t3n und heise durchgehend ohne Bezug zu kreativer Arbeit. Feed userresearchstrategist.com ausgefallen."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Toiletpaper fotografiert das Schaubühnen-Ensemble in 28 Motiven",
+      "blurb": "Seit über zehn Jahren lässt die Schaubühne ihre Spielzeitkampagne jedes Jahr von anderen Künstler:innen gestalten, diesmal von Maurizio Cattelan und Pierpaolo Ferrari. Kulissen, Kostüm und Maske kamen aus den Gewerken des Hauses. PAGE sieht reduzierte Bildsprache bei maximalem Ausdruck, merkt aber an, dass sich die Toiletpaper-Ästhetik seit 16 Jahren kaum bewegt hat.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/bild/surreal-leuchtend-von-toiletpaper-die-spielzeit-kampagne-der-schaubuehne/",
+          "headline": "Surreal, leuchtend von Toiletpaper: Die Spielzeit-Kampagne der Schaubühne",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "craft-judgment",
+      "theme_label": "Handwerk & Urteil",
+      "title": "Kaybe Serif: Barock-Antiqua für Titel, mit über 100 Schwungversalien",
+      "blurb": "Moritz Kleinsorge setzt die Schrift zwischen Renaissance-Antiqua und Didone, mit kleiner x-Höhe und Serifen, die im Druck Fleckenbildung vermeiden sollen. 16 Schnitte, die Schwungbuchstaben liegen in der Kursiven auf Stilset 01.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/typografie/kaybe-serif-dramatischer-auftritt/",
+          "headline": "Kaybe Serif: Dramatischer Auftritt",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "ai-models",
+      "theme_label": "AI-Modelle (+Tools)",
+      "title": "Gemini 4 Hydrogen löst Flash ab und überholt Argon",
+      "blurb": "Google verlangt 1,50 Dollar pro Million Input-Token und sieht das schnelle Modell im Artificial-Analysis-Index knapp vor dem größeren Argon. The Decoder hält fest, dass Argon damit nach nicht einmal vier Wochen überholt ist, obwohl Google es zwei Tage zuvor noch für die tägliche Coding-Arbeit empfahl.",
+      "cluster": true,
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.de/google-stellt-gemini-4-hydrogen-vor-schnelles-ki-modell-fuer-den-alltag-fuer-weniger-geld/",
+          "headline": "Google stellt Gemini 4 Hydrogen vor: Schnelles KI-Modell für den Alltag für weniger Geld",
+          "kind": "portal"
+        },
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+          "headline": "Introducing Gemini 4 Hydrogen",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 24,
+      "examples": [
+        "The OREO Brand Releases Its First New Holiday Ad in Five Years",
+        "Neville Brody Takes Up Creative Chair Role At Toaster, Joining Its Mission To Build Brands That Stand Apart In The Ai Era",
+        "Barclays Takes On The Nation s Biggest Money Challenges With The Best Of Their People And Tech"
+      ]
+    }
+  ]
+}
