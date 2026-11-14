@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "generated_for": "2026-11-14",
+    "window": "2026-11-12..2026-11-14",
+    "sources_scanned": 64,
+    "items_in_window": 123,
+    "lang": "en",
+    "note": "Six pieces, a thin window dominated by the Nvidia/Jensen Huang story, which is dropped except where it turns into a brand question. No Craft & Judgment, Industry & Market or AI Models today. Dropped: Creative Bloq deals, reviews and gadgets, ChatGPT Wallet, Claude Duet, Gemini 4 Hydrogen follow-ups, Roastbrief press releases, Vucko for Etsy and Queenzine (sponsored), Studio Up North for Ignition Works (a spark metaphor, little else), Jan Zepp in UE5 (too thin). Considered and left out: Patrizia Bertini on decision design and Dan Maccarone on the AI mind tax (general work, not design), 11:11’s Caboré stunt. Repeats from yesterday not repeated (Smashing on AI features, TJ Pitre, Springetts, Tomy, fake retail sites). The Substack audience check failed for all seven feeds, nothing removed upstream. Feed userresearchstrategist.com failed."
+  },
+  "stories": [
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Design for the spread of model answers, not the best one",
+      "blurb": "Patrick Neeman calls the usual AI screen a one-sample mockup: it shows the answer the model gives on its best day, while the product is the distribution. His fix is a small sampling loop that asks one question over and over until the model’s habits show, the same bench work Bauhaus students did with wood and early web designers did with hand-coded HTML.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "UX Collective",
+          "url": "https://uxdesign.cc/ai-is-the-new-old-design-material-0e7f83540c9a?source=rss----138adf9c44c---4",
+          "headline": "AI is the new old design material",
+          "kind": "person",
+          "author": "Patrick Neeman",
+          "channel": "UX Collective"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Yoto’s new players were designed against screen time",
+      "blurb": "Heirloom’s Jack Godfrey Wood describes a brief measured by how often the player gets used, not how long eyes stay on it, so the sharper screens stay in pixel art and an idle animation was rejected. The physical decisions follow kids’ hands: softer, longer dials and a smart button placed off-centre because children use it from the front.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/inspiration/how-do-you-redesign-a-cult-kids-product-i-asked-yotos-new-designers",
+          "headline": "How do you redesign a cult kids’ product? I asked Yoto’s new designers",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "design-practice",
+      "theme_label": "Design Practice",
+      "title": "Dispatch turned a four-video-track limit into its core mechanic",
+      "blurb": "AdHoc’s browser prototype could play only four video tracks at once, so the doughnut shop scene made attention the game: whichever camera you watched decided what you learned. The scene survived every draft from live action to the animated game and served as the test bed for how Dispatch would play.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Creative Bloq",
+          "url": "https://www.creativebloq.com/features/four-video-tracks-and-a-doughnut-shop-how-dispatch-got-its-start",
+          "headline": "Four video tracks and a doughnut shop – how Dispatch got its start",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Aer Lingus becomes ‘The Irish Airline’ in the US",
+      "blurb": "Uncommon’s campaign starts from the problem that most Americans don’t know Aer Lingus is an airline, let alone an Irish one, and has Sharon Horgan propose the literal descriptor. The airline calls the North American strategy “just telling people who we are”, with the line as a platform for the European network and Dublin preclearance.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Roastbrief",
+          "url": "https://roastbrief.us/sharon-horgan-keeps-it-literal-for-an-american-audience-in-new-aer-lingus-ad-the-irish-airline-created-by-uncommon/",
+          "headline": "Sharon Horgan Keeps It Literal For An American Audience In New Aer Lingus Ad: ‘The Irish Airline’, Created By Uncommon",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Supplements borrow the look of the sweetshop",
+      "blurb": "Gummies, jelly sticks and chaos packaging are replacing tubs, from Boots’ Habi to Grüns, which Unilever agreed to buy for around $1.2bn. The author, a packaging agency founder, argues the format wins the first purchase but not the monthly reorder, which needs a pack that stays clear and consistent and a product that works.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Week",
+          "url": "https://www.designweek.co.uk/why-are-supplement-brands-starting-to-look-like-sweets/",
+          "headline": "Why are supplement brands starting to look like sweets?",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "After Huang’s exit, AI parodies own the founder’s face",
+      "blurb": "Nvidia’s short release left the obvious question open, and within hours an AI ‘Office’ episode with 4.3 million views and a 50 Cent deepfake supplied answers. State of Brand notes the likeness belongs to Huang, not the company, parody is carved out of the pending NO FAKES Act, and advises leaving satire alone while watching for fakes that could pass as real statements.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "State of Brand",
+          "url": "https://www.thestateofbrand.com/news/ensen-huang-ai-parodies-executive-likeness",
+          "headline": "Jensen Huang Is Out at Nvidia. AI Parodies Are Telling the Story Now. | State of Brand",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 24,
+      "examples": [
+        "Kiehl s Campaign: Lea Michele for Gift Like a Local Holiday Campaign",
+        "Josh Hegard Joins Arts Academy s Editorial Roster",
+        "Chivas Regal brings messages from Brazilian fans to an exclusive helmet at the São Paulo Grand Prix"
+      ]
+    }
+  ]
+}

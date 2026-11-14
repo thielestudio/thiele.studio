@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "generated_for": "2026-11-14",
+    "window": "2026-11-12..2026-11-14",
+    "sources_scanned": 64,
+    "items_in_window": 181,
+    "lang": "de",
+    "note": "Drei Stücke mit deutschsprachiger Leitquelle, alle aus Brand & Advertising. Design Tagebuch zu Warsteiner gestern verworfen, heute nach dem Lesen drin: der Artikel benennt die Eingriffe an der Wortmarke im Detail. Nicht genommen: PAGE zu den German Design Graduates (drei Interviews ohne übertragbaren Kern), HAICA und zwei Seminaren; Werbewoche zu Ovomaltine, NeoVac und Dr. Oetker (Mitteilungen ohne Einordnung); Slanted mit Parametric Fonts (englischsprachiger Text, ein deutscher Titel würde auf einem englischen Artikel landen) und NoGood Book; t3n zu Digital Fairness Act, KI-Traffic und Lightroom-Alternativen (t3n Pro, harte Sperre); The Decoder zu Claude Meetings, Claude for Manufacturing, ChatGPT Wallet und Nvidia; heise ohne Bezug zu kreativer Arbeit. Feed userresearchstrategist.com ausgefallen."
+  },
+  "stories": [
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Warsteiner schleift die Fraktur-Wortmarke ab",
+      "blurb": "Mit dem neuen Landbier-Auftritt verschwinden die feinen Zierabschlüsse an den Quadrangeln, der Stamm des t wird kürzer, die Krone reduziert. Das Logo ist beim DPMA angemeldet und läuft schon auf weiteren Sorten und Merchandise, offiziell kommuniziert hat Warsteiner es nicht.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "Design Tagebuch",
+          "url": "https://www.designtagebuch.de/warsteiner-markenlogo-erhaelt-im-zuge-des-rebrandings-der-sorte-landbier-ein-rebrush/",
+          "headline": "Warsteiner: Markenlogo erhält im Zuge des Rebrandings der Sorte Landbier ein Rebrush",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "Eine Audience kann man kaufen, eine Community nicht",
+      "blurb": "Auf der German Brand Convention trennt Matthias Kern von Mikado Culture Reichweite von Gemeinschaft: Die eine lässt sich kurzfristig aktivieren, die andere verlangt Dialog und Verständnis für ihre Codes. Bei Jägermeister, so Johannes Brunken, entstehen Formate nicht als fertiges Konzept, sondern von Anfang an gemeinsam mit Artists und Communities.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/gba/live-schlaegt-like-warum-marken-um-zugehoerigkeit-statt-um-aufmerksamkeit-kaempfen/",
+          "headline": "Live schlägt Like: Warum Marken um Zugehörigkeit statt um Aufmerksamkeit kämpfen",
+          "kind": "portal"
+        }
+      ]
+    },
+    {
+      "theme": "brand-advertising",
+      "theme_label": "Brand & Advertising",
+      "title": "DutchScot macht aus der Hausnummer 222 ein Schlafmuster",
+      "blurb": "Für die Bar Rêve in Brooklyn entwarf das Londoner Studio eine schwebende Wortmarke nach Belle-Époque-Kalligrafie. Die Hausnummer wird zu drei zzz, die als Muster durch den Auftritt laufen und sogar in den Eiswürfeln stecken, und die Website scrollt nach oben statt nach unten.",
+      "cluster": false,
+      "sources": [
+        {
+          "name": "PAGE",
+          "url": "https://page-online.de/kreation/identity-zum-traeumen-der-perfekte-abend-in-der-bar-reve/",
+          "headline": "Identity zum Träumen: Der perfekte Abend in der Bar Rêve",
+          "kind": "portal"
+        }
+      ]
+    }
+  ],
+  "voices": [],
+  "firehose": [
+    {
+      "label": "Roastbrief",
+      "count": 25,
+      "examples": [
+        "Kiehl s Campaign: Lea Michele for Gift Like a Local Holiday Campaign",
+        "Josh Hegard Joins Arts Academy s Editorial Roster",
+        "Chivas Regal brings messages from Brazilian fans to an exclusive helmet at the São Paulo Grand Prix"
+      ]
+    }
+  ]
+}
